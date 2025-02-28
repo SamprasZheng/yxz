@@ -17,3 +17,8 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+polkadot:
+  label: DOT
+  permalink: /dot
+  description: future of blockchain
