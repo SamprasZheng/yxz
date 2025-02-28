@@ -1,7 +1,7 @@
 ---
 slug: first-blog-post
 title: First Blog Post
-authors: polkasharks
+authors: [slorber, yangshun]
 tags: [hola, docusaurus]
 ---
 

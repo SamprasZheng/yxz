@@ -4,31 +4,21 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-
-
 const config: Config = {
-  title: 'Polkasharks',
-  tagline: 'Polkasharks are eating DOTs',
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  // url: 'https://your-docusaurus-site.example.com',
-  url: 'https://polkasharksyxz.github.io',  // Use your GitHub username
-  baseUrl: '/docsrsyxz/',  // Change this to your actual repo name
-  trailingSlash: false,  // Prevents GitHub Pages from adding extra slashes
+  url: 'https://your-docusaurus-site.example.com',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/',
 
-  organizationName: 'polkasharksyxz', // Your GitHub username
-  projectName: 'docsrsyxz', // Your GitHub repository name
-
-  deploymentBranch: "gh-pages", // Ensure deployment goes to the correct branch
-  // // Set the /<baseUrl>/ pathname under which your site is served
-  // // For GitHub pages deployment, it is often '/<projectName>/'
-  // baseUrl: '/',
-
-  // // GitHub pages deployment config.
-  // // If you aren't using GitHub pages, you don't need these.
-  // organizationName: 'facebook', // Usually your GitHub org/user name.
-  // projectName: 'docusaurus', // Usually your repo name.
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -118,12 +108,12 @@ const config: Config = {
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Socials',
-              href: 'https://bento.me/polkasharks',
+              label: 'Discord',
+              href: 'https://discordapp.com/invite/docusaurus',
             },
             {
               label: 'X',
-              href: 'https://x.com/Polkasharks',
+              href: 'https://x.com/docusaurus',
             },
           ],
         },
@@ -141,7 +131,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Polkasharks, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
