@@ -10,12 +10,12 @@
         <language>en</language>
         <item>
             <title><![CDATA[JAM - 可擴展無需信任虛擬機]]></title>
-            <link>https://SamprasZheng.github.io/yxz/blog/lop</link>
-            <guid>https://SamprasZheng.github.io/yxz/blog/lop</guid>
+            <link>https://SamprasZheng.github.io/yxz/blog/JAMintro</link>
+            <guid>https://SamprasZheng.github.io/yxz/blog/JAMintro</guid>
             <pubDate>Mon, 24 Feb 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Polkadot JAM（Join-Accumulate Machine）是 Polkadot 網絡的一個擬議升級，旨在取代目前的 Relay Chain（中繼鏈），使其設計更加模組化和簡約。它將 Ethereum 的智能合約功能與 Polkadot 的可擴展性結合，創造一個更靈活的開發環境。]]></description>
             <content:encoded><![CDATA[<p>Polkadot JAM（Join-Accumulate Machine）是 Polkadot 網絡的一個擬議升級，旨在取代目前的 Relay Chain（中繼鏈），使其設計更加模組化和簡約。它將 Ethereum 的智能合約功能與 Polkadot 的可擴展性結合，創造一個更靈活的開發環境。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主要特點">主要特點<a href="https://sampraszheng.github.io/yxz/blog/lop#%E4%B8%BB%E8%A6%81%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to 主要特點" title="Direct link to 主要特點">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主要特點">主要特點<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E4%B8%BB%E8%A6%81%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to 主要特點" title="Direct link to 主要特點">​</a></h2>
 <ul>
 <li><strong>權限開放</strong>：開發者可以按資源使用費部署代碼，類似於 Ethereum 的智能合約。</li>
 <li><strong>核心時間</strong>：使用「核心時間」作為計算資源指標，類似於 Ethereum 的 gas。</li>
@@ -23,10 +23,10 @@
 <li><strong>異步交互</strong>：與許多區塊鏈平台不同，JAM 的交互是異步的，提高了效率。</li>
 <li><strong>高吞吐量</strong>：通過多核計算，目標吞吐量高達 850 MB/s，超過 Ethereum 和 Solana 等平台。</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="技術與前景">技術與前景<a href="https://sampraszheng.github.io/yxz/blog/lop#%E6%8A%80%E8%A1%93%E8%88%87%E5%89%8D%E6%99%AF" class="hash-link" aria-label="Direct link to 技術與前景" title="Direct link to 技術與前景">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="技術與前景">技術與前景<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E6%8A%80%E8%A1%93%E8%88%87%E5%89%8D%E6%99%AF" class="hash-link" aria-label="Direct link to 技術與前景" title="Direct link to 技術與前景">​</a></h2>
 <p>JAM 的計算模型基於「Join-Accumulate」機制，其中「Join」和「Accumulate」功能在鏈上執行，而「Collect」和「Refine」過程在鏈下完成。這種設計減少了鏈上計算的負擔，提高了效率。根據 Polkadot Wiki，JAM 將是一個特定領域的鏈，專注於處理 roll-ups（卷積），並提供強大的安全保證。</p>
 <p>此外，JAM 支持異步交互，這與許多智能合約平台的同步交互不同。消息和代幣的發送與接收在同一個 6 秒執行周期內完成，但沒有即時返回路徑，這為未來的性能優化（如分配更多 gas）提供了可能性。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="性能目標與技術實現">性能目標與技術實現<a href="https://sampraszheng.github.io/yxz/blog/lop#%E6%80%A7%E8%83%BD%E7%9B%AE%E6%A8%99%E8%88%87%E6%8A%80%E8%A1%93%E5%AF%A6%E7%8F%BE" class="hash-link" aria-label="Direct link to 性能目標與技術實現" title="Direct link to 性能目標與技術實現">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="性能目標與技術實現">性能目標與技術實現<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E6%80%A7%E8%83%BD%E7%9B%AE%E6%A8%99%E8%88%87%E6%8A%80%E8%A1%93%E5%AF%A6%E7%8F%BE" class="hash-link" aria-label="Direct link to 性能目標與技術實現" title="Direct link to 性能目標與技術實現">​</a></h2>
 <p>JAM 的性能目標非常雄心勃勃。根據 Medium 文章，JAM 計劃使用 350 個 JAM 核心，每個核心 6 秒執行時間，輸入 5Mb，總計吞吐量可達 850 MB/s，理論上支持超過 340 萬 TPS（交易每秒）。相比之下：</p>
 <ul>
 <li>Ethereum 2.0 的吞吐量為 <strong>1.3 MB/s</strong>。</li>
@@ -39,21 +39,21 @@
 <li><strong>Polkadot Palace</strong>：位於葡萄牙里斯本的超級計算機，擁有 <strong>12,276 個核心和 16 TB RAM</strong>，可託管完整的 JAM 網絡。</li>
 <li><strong>JAM Toaster 模擬器</strong>：支持 <strong>1,023 個節點</strong>，配備 <strong>16,384 個 AMD CPU、32 TB RAM 和 20 PB 存儲</strong>。</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="經濟與治理">經濟與治理<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%B6%93%E6%BF%9F%E8%88%87%E6%B2%BB%E7%90%86" class="hash-link" aria-label="Direct link to 經濟與治理" title="Direct link to 經濟與治理">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="經濟與治理">經濟與治理<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E7%B6%93%E6%BF%9F%E8%88%87%E6%B2%BB%E7%90%86" class="hash-link" aria-label="Direct link to 經濟與治理" title="Direct link to 經濟與治理">​</a></h2>
 <p>JAM 的經濟模型以 <strong>DOT 代幣</strong> 為核心。開發者需要購買「核心時間」來執行計算，類似於 Ethereum 的 gas 購買。</p>
 <p>JAM 還將引入 <strong>Agile Coretime</strong>，這是一種更經濟的靈活模型，允許用戶按月批量購買核心時間，並可在二級市場上分割和轉售。這將提高計算資源的市場效率，所有交易都將使用 <strong>DOT 代幣</strong>。</p>
 <p>治理方面，JAM 保留了 Polkadot 的去中心化領導模式，升級需通過 DOT 持有者的投票批准。2024 年 5 月 28 日，JAM 升級以超過 <strong>3100 萬 DOT</strong> 的支持獲得近乎一致通過，標誌著社區對這一變革的認可。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="當前狀態與未來展望">當前狀態與未來展望<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%95%B6%E5%89%8D%E7%8B%80%E6%85%8B%E8%88%87%E6%9C%AA%E4%BE%86%E5%B1%95%E6%9C%9B" class="hash-link" aria-label="Direct link to 當前狀態與未來展望" title="Direct link to 當前狀態與未來展望">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="當前狀態與未來展望">當前狀態與未來展望<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E7%95%B6%E5%89%8D%E7%8B%80%E6%85%8B%E8%88%87%E6%9C%AA%E4%BE%86%E5%B1%95%E6%9C%9B" class="hash-link" aria-label="Direct link to 當前狀態與未來展望" title="Direct link to 當前狀態與未來展望">​</a></h2>
 <p>目前，JAM 仍處於開發階段，預計需要約 <strong>2 年</strong> 時間才能完全準備就緒並部署。根據 Decrypt 文章，這一升級將一次性完成，而不是逐步引入，以避免頻繁的小規模更新帶來的複雜性。儘管如此，現有 <strong>parachains</strong> 的功能不會受到影響，DOT 持有者和交易者也不會因升級而受到干擾。</p>
 <p>為了推動開發，<strong>Web3 Foundation 設立了 1000 萬 DOT 的「JAM Implementer’s Prize」</strong>，鼓勵創建多種客戶端實現，增強網絡的韌性。這一獎金池的設立體現了社區對 JAM 潛力的信心。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="開發者的影響">開發者的影響<a href="https://sampraszheng.github.io/yxz/blog/lop#%E9%96%8B%E7%99%BC%E8%80%85%E7%9A%84%E5%BD%B1%E9%9F%BF" class="hash-link" aria-label="Direct link to 開發者的影響" title="Direct link to 開發者的影響">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="開發者的影響">開發者的影響<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E9%96%8B%E7%99%BC%E8%80%85%E7%9A%84%E5%BD%B1%E9%9F%BF" class="hash-link" aria-label="Direct link to 開發者的影響" title="Direct link to 開發者的影響">​</a></h2>
 <p>對於開發者來說，JAM 提供了更大的靈活性。他們無需再通過拍賣競爭 parachain 插槽，只需指定「Refine」、「Accumulate」和「onTransfer」三個入口函數即可部署服務。這簡化了開發流程，使 Polkadot 更易於支持 <strong>智能合約、ZK-rollups 和 UTXO 模型</strong> 等多種應用。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="安全與擴展性">安全與擴展性<a href="https://sampraszheng.github.io/yxz/blog/lop#%E5%AE%89%E5%85%A8%E8%88%87%E6%93%B4%E5%B1%95%E6%80%A7" class="hash-link" aria-label="Direct link to 安全與擴展性" title="Direct link to 安全與擴展性">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="安全與擴展性">安全與擴展性<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E5%AE%89%E5%85%A8%E8%88%87%E6%93%B4%E5%B1%95%E6%80%A7" class="hash-link" aria-label="Direct link to 安全與擴展性" title="Direct link to 安全與擴展性">​</a></h2>
 <p>JAM 的安全機制包括 <strong>SAFROLE（SNARK-based block production）</strong>，這是一種基於零知識證明的區塊生產方法，提高了安全性並減少了頻繁更新的需求。</p>
 <p>同時，JAM 的 <strong>多核處理能力</strong> 增強了 Polkadot 的計算能力，使開發者以更低的成本部署應用。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="對比與競爭">對比與競爭<a href="https://sampraszheng.github.io/yxz/blog/lop#%E5%B0%8D%E6%AF%94%E8%88%87%E7%AB%B6%E7%88%AD" class="hash-link" aria-label="Direct link to 對比與競爭" title="Direct link to 對比與競爭">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="對比與競爭">對比與競爭<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E5%B0%8D%E6%AF%94%E8%88%87%E7%AB%B6%E7%88%AD" class="hash-link" aria-label="Direct link to 對比與競爭" title="Direct link to 對比與競爭">​</a></h2>
 <p>與 Ethereum 和 Solana 等平台相比，JAM 的高吞吐量和多核計算能力使其在性能上具有顯著優勢。特別是其 <strong>850 MB/s 的數據可用性目標</strong>，是目前 Polkadot（在引入 Asynchronous Backing 前的版本）的 <strong>42 倍</strong>。這一性能提升將使 Polkadot 在區塊鏈擴展性競賽中佔據更有利的位置。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="結論">結論<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%B5%90%E8%AB%96" class="hash-link" aria-label="Direct link to 結論" title="Direct link to 結論">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="結論">結論<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E7%B5%90%E8%AB%96" class="hash-link" aria-label="Direct link to 結論" title="Direct link to 結論">​</a></h2>
 <p>Polkadot JAM 是 <strong>Gavin Wood</strong> 提出的雄心勃勃的升級，旨在將 Polkadot 轉變為一個 <strong>更靈活、高效和可擴展</strong> 的區塊鏈平台。通過結合 Ethereum 的智能合約功能和 Polkadot 的多鏈架構，JAM 為開發者提供了更大的創新空間，同時保持了網絡的安全性和去中心化特性。</p>
 <p>儘管仍需數年時間才能完全實現，其潛力已被社區廣泛認可，並通過投票獲得批准。</p>
 <p><em>來自波卡鯊 Polkasharks 發佈於西行點滴</em><br>
@@ -66,50 +66,118 @@
             <guid>https://SamprasZheng.github.io/yxz/blog/lop</guid>
             <pubDate>Sun, 07 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[波卡（Polkadot）簡介]]></description>
-            <content:encoded><![CDATA[<p>Polkadot JAM（Join-Accumulate Machine）是 Polkadot 網絡的一個擬議升級，旨在取代目前的 Relay Chain（中繼鏈），使其設計更加模組化和簡約。它將 Ethereum 的智能合約功能與 Polkadot 的可擴展性結合，創造一個更靈活的開發環境。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主要特點">主要特點<a href="https://sampraszheng.github.io/yxz/blog/lop#%E4%B8%BB%E8%A6%81%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to 主要特點" title="Direct link to 主要特點">​</a></h2>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="波卡polkadot簡介">波卡（Polkadot）簡介<a href="https://sampraszheng.github.io/yxz/blog/lop#%E6%B3%A2%E5%8D%A1polkadot%E7%B0%A1%E4%BB%8B" class="hash-link" aria-label="Direct link to 波卡（Polkadot）簡介" title="Direct link to 波卡（Polkadot）簡介">​</a></h3>
+<p><strong>波卡（Polkadot）</strong> 是一個旨在實現 <strong>多鏈未來</strong> 的區塊鏈平台。它並非將所有 Web3 用例都集中在單一區塊鏈上，而是設想不同的鏈（通用或特定於應用程式）可以協同工作，使 Web3 能夠擴展以服務於日常應用。</p>
 <ul>
-<li><strong>權限開放</strong>：開發者可以按資源使用費部署代碼，類似於 Ethereum 的智能合約。</li>
-<li><strong>核心時間</strong>：使用「核心時間」作為計算資源指標，類似於 Ethereum 的 gas。</li>
-<li><strong>服務架構</strong>：運行各種服務，如處理 parachains（平行鏈）的 ChainService，使網絡更具靈活性。</li>
-<li><strong>異步交互</strong>：與許多區塊鏈平台不同，JAM 的交互是異步的，提高了效率。</li>
-<li><strong>高吞吐量</strong>：通過多核計算，目標吞吐量高達 850 MB/s，超過 Ethereum 和 Solana 等平台。</li>
+<li><strong>願景：</strong> 成為 Web3 的 AWS。</li>
+<li><strong>目標：</strong> 以去中心化的方式建立任何區塊鏈可能需要的基礎設施。</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="技術與前景">技術與前景<a href="https://sampraszheng.github.io/yxz/blog/lop#%E6%8A%80%E8%A1%93%E8%88%87%E5%89%8D%E6%99%AF" class="hash-link" aria-label="Direct link to 技術與前景" title="Direct link to 技術與前景">​</a></h2>
-<p>JAM 的計算模型基於「Join-Accumulate」機制，其中「Join」和「Accumulate」功能在鏈上執行，而「Collect」和「Refine」過程在鏈下完成。這種設計減少了鏈上計算的負擔，提高了效率。根據 Polkadot Wiki，JAM 將是一個特定領域的鏈，專注於處理 roll-ups（卷積），並提供強大的安全保證。</p>
-<p>此外，JAM 支持異步交互，這與許多智能合約平台的同步交互不同。消息和代幣的發送與接收在同一個 6 秒執行周期內完成，但沒有即時返回路徑，這為未來的性能優化（如分配更多 gas）提供了可能性。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="性能目標與技術實現">性能目標與技術實現<a href="https://sampraszheng.github.io/yxz/blog/lop#%E6%80%A7%E8%83%BD%E7%9B%AE%E6%A8%99%E8%88%87%E6%8A%80%E8%A1%93%E5%AF%A6%E7%8F%BE" class="hash-link" aria-label="Direct link to 性能目標與技術實現" title="Direct link to 性能目標與技術實現">​</a></h2>
-<p>JAM 的性能目標非常雄心勃勃。根據 Medium 文章，JAM 計劃使用 350 個 JAM 核心，每個核心 6 秒執行時間，輸入 5Mb，總計吞吐量可達 850 MB/s，理論上支持超過 340 萬 TPS（交易每秒）。相比之下：</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="主要特點">主要特點<a href="https://sampraszheng.github.io/yxz/blog/lop#%E4%B8%BB%E8%A6%81%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to 主要特點" title="Direct link to 主要特點">​</a></h4>
 <ul>
-<li>Ethereum 2.0 的吞吐量為 <strong>1.3 MB/s</strong>。</li>
-<li>Sui/Aptos 為 <strong>100 MB/s</strong>。</li>
-<li>Solana 在 Firedancer 升級後可達 <strong>1250 MB/s</strong>。</li>
-</ul>
-<p>為了實現這一目標，JAM 將使用 <strong>RISC-V 處理器架構</strong>，取代目前基於 WebAssembly 的框架。RISC-V 是一個開源且廣泛採用的處理器架構，已被 Google、Nvidia 和 Alibaba 等公司使用。這一選擇旨在提高計算效率，並支持多核並行處理。</p>
-<p>測試基礎設施包括：</p>
+<li><strong>互操作性：</strong> 通過 <strong>跨鏈消息傳遞（XCM）</strong> 實現資產轉移，在源鏈上銷毀資產，並在目標鏈上鑄造資產.</li>
+<li><strong>可擴展性：</strong> 通過 <strong>異構分片</strong> 並行執行不同的狀態轉換函數。</li>
+<li><strong>靈活性：</strong> Polkadot 不是靜態軟體，而是為 <strong>可擴展性、靈活性和未來</strong> 而構建。</li>
+<li><strong>治理：</strong> <strong>鏈上民主系統</strong>，DOT 持有者可以投票和建立提案進行討論。</li>
+<li><strong>橋接：</strong>
 <ul>
-<li><strong>Polkadot Palace</strong>：位於葡萄牙里斯本的超級計算機，擁有 <strong>12,276 個核心和 16 TB RAM</strong>，可託管完整的 JAM 網絡。</li>
-<li><strong>JAM Toaster 模擬器</strong>：支持 <strong>1,023 個節點</strong>，配備 <strong>16,384 個 AMD CPU、32 TB RAM 和 20 PB 存儲</strong>。</li>
+<li><strong>Snowbridge：</strong> Polkadot 和以太坊之間的去信任橋，使用 BEEFY 協議讓以太坊方知道 Polkadot 的最終確定性。</li>
+<li><strong>Hyperbridge：</strong> 世界首個可驗證的多鏈橋。</li>
+<li><strong>Polkadot-Kusama 橋：</strong> 安全且無縫的資產轉移和通信。</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="經濟與治理">經濟與治理<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%B6%93%E6%BF%9F%E8%88%87%E6%B2%BB%E7%90%86" class="hash-link" aria-label="Direct link to 經濟與治理" title="Direct link to 經濟與治理">​</a></h2>
-<p>JAM 的經濟模型以 <strong>DOT 代幣</strong> 為核心。開發者需要購買「核心時間」來執行計算，類似於 Ethereum 的 gas 購買。</p>
-<p>JAM 還將引入 <strong>Agile Coretime</strong>，這是一種更經濟的靈活模型，允許用戶按月批量購買核心時間，並可在二級市場上分割和轉售。這將提高計算資源的市場效率，所有交易都將使用 <strong>DOT 代幣</strong>。</p>
-<p>治理方面，JAM 保留了 Polkadot 的去中心化領導模式，升級需通過 DOT 持有者的投票批准。2024 年 5 月 28 日，JAM 升級以超過 <strong>3100 萬 DOT</strong> 的支持獲得近乎一致通過，標誌著社區對這一變革的認可。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="當前狀態與未來展望">當前狀態與未來展望<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%95%B6%E5%89%8D%E7%8B%80%E6%85%8B%E8%88%87%E6%9C%AA%E4%BE%86%E5%B1%95%E6%9C%9B" class="hash-link" aria-label="Direct link to 當前狀態與未來展望" title="Direct link to 當前狀態與未來展望">​</a></h2>
-<p>目前，JAM 仍處於開發階段，預計需要約 <strong>2 年</strong> 時間才能完全準備就緒並部署。根據 Decrypt 文章，這一升級將一次性完成，而不是逐步引入，以避免頻繁的小規模更新帶來的複雜性。儘管如此，現有 <strong>parachains</strong> 的功能不會受到影響，DOT 持有者和交易者也不會因升級而受到干擾。</p>
-<p>為了推動開發，<strong>Web3 Foundation 設立了 1000 萬 DOT 的「JAM Implementer’s Prize」</strong>，鼓勵創建多種客戶端實現，增強網絡的韌性。這一獎金池的設立體現了社區對 JAM 潛力的信心。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="開發者的影響">開發者的影響<a href="https://sampraszheng.github.io/yxz/blog/lop#%E9%96%8B%E7%99%BC%E8%80%85%E7%9A%84%E5%BD%B1%E9%9F%BF" class="hash-link" aria-label="Direct link to 開發者的影響" title="Direct link to 開發者的影響">​</a></h2>
-<p>對於開發者來說，JAM 提供了更大的靈活性。他們無需再通過拍賣競爭 parachain 插槽，只需指定「Refine」、「Accumulate」和「onTransfer」三個入口函數即可部署服務。這簡化了開發流程，使 Polkadot 更易於支持 <strong>智能合約、ZK-rollups 和 UTXO 模型</strong> 等多種應用。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="安全與擴展性">安全與擴展性<a href="https://sampraszheng.github.io/yxz/blog/lop#%E5%AE%89%E5%85%A8%E8%88%87%E6%93%B4%E5%B1%95%E6%80%A7" class="hash-link" aria-label="Direct link to 安全與擴展性" title="Direct link to 安全與擴展性">​</a></h2>
-<p>JAM 的安全機制包括 <strong>SAFROLE（SNARK-based block production）</strong>，這是一種基於零知識證明的區塊生產方法，提高了安全性並減少了頻繁更新的需求。</p>
-<p>同時，JAM 的 <strong>多核處理能力</strong> 增強了 Polkadot 的計算能力，使開發者以更低的成本部署應用。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="對比與競爭">對比與競爭<a href="https://sampraszheng.github.io/yxz/blog/lop#%E5%B0%8D%E6%AF%94%E8%88%87%E7%AB%B6%E7%88%AD" class="hash-link" aria-label="Direct link to 對比與競爭" title="Direct link to 對比與競爭">​</a></h2>
-<p>與 Ethereum 和 Solana 等平台相比，JAM 的高吞吐量和多核計算能力使其在性能上具有顯著優勢。特別是其 <strong>850 MB/s 的數據可用性目標</strong>，是目前 Polkadot（在引入 Asynchronous Backing 前的版本）的 <strong>42 倍</strong>。這一性能提升將使 Polkadot 在區塊鏈擴展性競賽中佔據更有利的位置。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="結論">結論<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%B5%90%E8%AB%96" class="hash-link" aria-label="Direct link to 結論" title="Direct link to 結論">​</a></h2>
-<p>Polkadot JAM 是 <strong>Gavin Wood</strong> 提出的雄心勃勃的升級，旨在將 Polkadot 轉變為一個 <strong>更靈活、高效和可擴展</strong> 的區塊鏈平台。通過結合 Ethereum 的智能合約功能和 Polkadot 的多鏈架構，JAM 為開發者提供了更大的創新空間，同時保持了網絡的安全性和去中心化特性。</p>
-<p>儘管仍需數年時間才能完全實現，其潛力已被社區廣泛認可，並通過投票獲得批准。</p>
-<p><em>來自波卡鯊 Polkasharks 發佈於西行點滴</em><br>
-<!-- -->🔗 <a href="https://vocus.cc/article/67bb4ddafd8978000132b720" target="_blank" rel="noopener noreferrer">原文鏈接</a></p>]]></content:encoded>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-20-的三大特點">Polkadot 2.0 的三大特點<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-20-%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to Polkadot 2.0 的三大特點" title="Direct link to Polkadot 2.0 的三大特點">​</a></h4>
+<ul>
+<li><strong>敏捷核心時間（Agile Coretime）：</strong>
+<ul>
+<li>不再需要兩年的 DOT 鎖定平行鏈拍賣。</li>
+<li>Blockspace 以彈性的方式出售，收入被燒毀。</li>
+</ul>
+</li>
+<li><strong>非同步支持（Asynchronous Backing）</strong></li>
+<li><strong>彈性擴展（Elastic Scaling）：</strong> 更靈活、更快速且可擴展的網路。<!-- -->
+<ul>
+<li>更好的使用者介面/使用者體驗。</li>
+<li>降低開發者的門檻。</li>
+<li>社群主導的鏈上治理。</li>
+<li>真正的去中心化。</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的共識機制">Polkadot 的共識機制<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-%E7%9A%84%E5%85%B1%E8%AD%98%E6%A9%9F%E5%88%B6" class="hash-link" aria-label="Direct link to Polkadot 的共識機制" title="Direct link to Polkadot 的共識機制">​</a></h4>
+<ul>
+<li><strong>BABE（區塊鏈擴展盲分配）：</strong> 區塊生產者使用 VRF 來決定是否有資格在特定時隙中生產區塊。</li>
+<li><strong>GRANDPA：</strong> 提供區塊最終性，確保 Polkadot 網路在快速擴展的同時保持安全性和穩定性。</li>
+</ul>
+<p>GRANDPA 的優勢：</p>
+<ul>
+<li><strong>快速最終性：</strong> 網路穩定時，幾秒內即可完成。</li>
+<li><strong>容錯性：</strong> 容忍部分驗證者離線或作惡，只要超過 2/3 的權重驗證者保持誠實即可。</li>
+<li><strong>批量最終性：</strong> 一次性最終化多個區塊，效率更高。</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的經濟模型">Polkadot 的經濟模型<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-%E7%9A%84%E7%B6%93%E6%BF%9F%E6%A8%A1%E5%9E%8B" class="hash-link" aria-label="Direct link to Polkadot 的經濟模型" title="Direct link to Polkadot 的經濟模型">​</a></h4>
+<ul>
+<li><strong>DOT 代幣：</strong>
+<ul>
+<li>用於支付 Coretime 的費用。</li>
+<li>用於參與 OpenGov 投票。</li>
+<li>每年鑄造 1.2 億枚 DOT。</li>
+<li>通貨膨脹率將從 10% 逐步降低至 2030 年的 6%。</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的技術堆疊">Polkadot 的技術堆疊<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-%E7%9A%84%E6%8A%80%E8%A1%93%E5%A0%86%E7%96%8A" class="hash-link" aria-label="Direct link to Polkadot 的技術堆疊" title="Direct link to Polkadot 的技術堆疊">​</a></h4>
+<ul>
+<li><strong>Substrate：</strong> 用於構建區塊鏈的 Rust 框架。</li>
+<li><strong>Polkadot SDK：</strong> 包含 Cumulus、Polkadot 和 Substrate 倉庫。</li>
+<li><strong>SCALE Codec：</strong> 用於 Polkadot 和 Substrate 的高效序列化和反序列化格式。</li>
+<li><strong>Wasm：</strong> WebAssembly，用於構建 Polkadot 運行時。</li>
+<li><strong>FRAME：</strong> 用於簡化 Substrate 運行時構建的框架。</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="jamjoin-accumulate-machine">JAM（Join-Accumulate Machine）<a href="https://sampraszheng.github.io/yxz/blog/lop#jamjoin-accumulate-machine" class="hash-link" aria-label="Direct link to JAM（Join-Accumulate Machine）" title="Direct link to JAM（Join-Accumulate Machine）">​</a></h4>
+<ul>
+<li><strong>目標：</strong> 解決區塊鏈的可擴展性和互操作性問題。</li>
+<li><strong>核心：</strong> 促進鏈協作和數據共享，並優化區塊鏈網路在去中心化計算環境中的計算和通信效率。</li>
+<li><strong>特點：</strong>
+<ul>
+<li><strong>鏈協作：</strong> 支持多條鏈的無縫數據共享，避免每條鏈都單獨計算相同的邏輯。</li>
+<li><strong>資源高效利用：</strong> 每條鏈專注於自身特定的功能和應用，避免計算和存儲資源的浪費。</li>
+<li><strong>簡化跨鏈通信：</strong> 通過設計跨鏈消息和驗證機制，提供了一種標準化的方法，使鏈與鏈之間的交互變得更高效和安全。</li>
+</ul>
+</li>
+<li><strong>Polkadot 的下一次重大升級將採用 SASSAFRAS/SAFROLE</strong>，它通過使用環形 VRF 解決多個/無區塊生產者的問題，並確保每個時隙都有一個區塊生產者。</li>
+<li><strong>預計 2025 年 7 月推出首個版本</strong>。</li>
+<li><strong>將計算分離為核心內和鏈上層</strong>。</li>
+<li><strong>將允許智能合約功能和無許可服務</strong>。</li>
+<li><strong>Jam 引入了一個去中心的混合系統，提供圍繞安全性和可擴展的 in-core/on-chain 二元性構建的智能合約功能</strong>。</li>
+<li><strong>Jam 的本質是無需許可的，允許任何人在其上部署代碼作為服務，並根據該代碼使用的資源支付相應的費用，並通過購買和分配 coretime 來引導該代碼的執行</strong>。</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="開放政府opengov">開放政府（OpenGov）<a href="https://sampraszheng.github.io/yxz/blog/lop#%E9%96%8B%E6%94%BE%E6%94%BF%E5%BA%9Copengov" class="hash-link" aria-label="Direct link to 開放政府（OpenGov）" title="Direct link to 開放政府（OpenGov）">​</a></h4>
+<ul>
+<li><strong>Polkadot 的鏈上民主系統，將權力賦予 DOT 持有者</strong>。</li>
+<li><strong>使其成為世界上最大去中心化、最大的 DAO</strong>。</li>
+<li><strong>任何 DOT 持有者都可以投票、建立提案並進行討論</strong>。</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="現有-polkadot-生態項目">現有 Polkadot 生態項目<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%8F%BE%E6%9C%89-polkadot-%E7%94%9F%E6%85%8B%E9%A0%85%E7%9B%AE" class="hash-link" aria-label="Direct link to 現有 Polkadot 生態項目" title="Direct link to 現有 Polkadot 生態項目">​</a></h4>
+<ul>
+<li>FIFA 推出 Mythical Games 傑出的足球手機遊戲，預計 2025 年夏季推出。</li>
+<li>Pudge Penguins 推出 Mythical Games 傑出的 AAA 級策略塔防遊戲，預計 2025 年夏季推出。</li>
+<li>獨特的DePIN，檢查 RWA 和 DeFi，超過 64 個DePIN 專案和 4-5 億美元融資。</li>
+<li><strong>@AcademyPolkadot</strong> 推出由 Polkadot 專家領導的 PBA-X 線上區塊鏈課程，從 2025 年 1 月開始。</li>
+<li><strong>@OpenZeppelin</strong> 是一個開放原始碼程式庫 + 工具的供應商，使團隊能夠有效且安全地管理區塊鏈專案 – 發布了 Polkadot 運行時範本。</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2025-年-polkadot-20-的路線圖">2025 年 Polkadot 2.0 的路線圖<a href="https://sampraszheng.github.io/yxz/blog/lop#2025-%E5%B9%B4-polkadot-20-%E7%9A%84%E8%B7%AF%E7%B7%9A%E5%9C%96" class="hash-link" aria-label="Direct link to 2025 年 Polkadot 2.0 的路線圖" title="Direct link to 2025 年 Polkadot 2.0 的路線圖">​</a></h4>
+<ul>
+<li><strong>智能合約即將推出（數十種程式語言）</strong>。</li>
+<li><strong>基於 RISC-V 緩慢過渡到 PVM（Polkadot 虛擬機）</strong>。</li>
+<li><strong>統一地址格式（更好的 UI/UX 用於使用者和開發者）</strong>。</li>
+<li><strong>XCM v5（甚至更好的互操作性）</strong>。</li>
+<li><strong>快速取消抵押（從 28 天到平均 2-4 天）</strong>。</li>
+<li><strong>DOT 作為通用 Gas 代幣（在 Rollup 上啟用 DOT 作為費用）</strong>。</li>
+<li><strong>500 毫秒區塊時間（在 2025 年，由於彈性擴展，一個專案甚至可以使用 12 個核心）</strong>。</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="總結">總結<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%B8%BD%E7%B5%90" class="hash-link" aria-label="Direct link to 總結" title="Direct link to 總結">​</a></h4>
+<p>Polkadot 致力於通過其獨特的多鏈架構、互操作性、可擴展性和靈活性，革新 Web3 的構建方式。 未來的 JAM 升級和 Polkadot 2.0 將進一步增強其功能，使其成為區塊鏈技術領域中一個有前途的平台。</p>]]></content:encoded>
             <category>DOT</category>
         </item>
         <item>
