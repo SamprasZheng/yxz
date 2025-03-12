@@ -66,6 +66,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/blog/tags/rf', label: 'RF', position: 'left' },
         {
           href: 'https://github.com/SamprasZheng/yxz',
           label: 'GitHub',

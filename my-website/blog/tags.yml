@@ -22,3 +22,7 @@ polkadot:
   label: DOT
   permalink: /dot
   description: future of blockchain
+rf:
+  label: rf
+  permalink: /rf
+  description: radiofrequency
