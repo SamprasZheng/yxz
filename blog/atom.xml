@@ -187,6 +187,20 @@
         <category label="DOT" term="DOT"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[RF Introduction]]></title>
+        <id>https://SamprasZheng.github.io/yxz/blog/2024/03/12/intro</id>
+        <link href="https://SamprasZheng.github.io/yxz/blog/2024/03/12/intro"/>
+        <updated>2024-03-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is an introduction to RF.]]></summary>
+        <content type="html"><![CDATA[<p>This is an introduction to RF.</p>]]></content>
+        <author>
+            <name>polkasharks</name>
+            <uri>https://github.com/Polkasharks</uri>
+        </author>
+        <category label="rf" term="rf"/>
+        <category label="technology" term="technology"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://SamprasZheng.github.io/yxz/blog/welcome</id>
         <link href="https://SamprasZheng.github.io/yxz/blog/welcome"/>
