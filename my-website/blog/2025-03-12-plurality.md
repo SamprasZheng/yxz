@@ -12,7 +12,7 @@ tags: [misc,polkadot]
 詳情可以參考唐鳳協作的書本 [Plurality GitHub Repository](https://github.com/pluralitybook/plurality)
 
 ### Web3
-web3 一詞由伍德博士(Dr.Gavin Wood)提出，指的是「基於區塊鏈的去中心化線上生態系統」，借助區塊鏈本身透明公開的特點在波卡實行OpenGov鏈上治理，有意思的是有意思的是
+web3 一詞由伍德博士(Dr.Gavin Wood)提出，指的是「基於區塊鏈的去中心化線上生態系統」，借助區塊鏈本身透明公開的特點在波卡實行OpenGov鏈上治理，有意思的是與多元宇宙的思想有幾分相似
 
 <!-- Polkadot 是一個致力於跨鏈互操作性的區塊鏈平台，其主要作為中繼鏈(接近於Layer 0的概念)讓各大項目前往部屬去提供共享安全性互操作性 -->
 

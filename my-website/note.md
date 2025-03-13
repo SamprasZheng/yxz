@@ -53,7 +53,7 @@ git remote -v
 git remote set-url origin git@github.com:SamprasZheng/ruststatemachine.git
 
 git add .
-git commit -m "test workflow"
+git commit -m "update plurality"
 git push
 
 
