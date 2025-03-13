@@ -26,3 +26,17 @@ rf:
   label: rf
   permalink: /rf
   description: radiofrequency
+space:
+  label: space
+  permalink: /space
+  description: spacetech
+
+misc:
+  label: misc
+  permalink: /misc
+  description: miscellaneous
+
+phasedarray:
+  label: phasedarray
+  permalink: /phasedarray
+  description: phasedarray

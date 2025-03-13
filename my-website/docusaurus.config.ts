@@ -23,7 +23,6 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
   presets: [
     [
       'classic',
@@ -31,24 +30,58 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/SamprasZheng/yxz/tree/main/',
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
         },
         blog: {
           showReadingTime: true,
+          editUrl: 'https://github.com/SamprasZheng/yxz/tree/main/',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl: 'https://github.com/SamprasZheng/yxz/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
         },
         theme: {
           customCss: './src/css/custom.css',
         },
-      } satisfies Preset.Options,
+      },
     ],
   ],
+  // presets: [
+  //   [
+      
+  //     'classic',
+  //     {
+  //       docs: {
+  //         sidebarPath: './sidebars.ts',
+  //         editUrl: 'https://github.com/SamprasZheng/yxz/tree/main/',
+  //         // remarkPlugins: [require('remark-math')],
+  //         // rehypePlugins: [require('rehype-katex')]
+  //       },
+  //       blog: {
+  //         remarkPlugins: [require('remark-math')],
+  //         rehypePlugins: [require('rehype-katex')],
+  //         showReadingTime: true,
+  //         feedOptions: {
+  //           type: ['rss', 'atom'],
+  //           xslt: true,
+  //         },
+  //         editUrl: 'https://github.com/SamprasZheng/yxz/tree/main/',
+  //         onInlineTags: 'warn',
+  //         onInlineAuthors: 'warn',
+  //         onUntruncatedBlogPosts: 'warn',
+  //       },
+  //       theme: {
+  //         customCss: './src/css/custom.css',
+  //       },
+  //     } satisfies Preset.Options,
+  //   ],
+  // ],
 
   themeConfig: {
     // image: 'img/docusaurus-social-card.jpg',
@@ -67,6 +100,7 @@ const config: Config = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         { to: '/blog/tags/rf', label: 'RF', position: 'left' },
+        { to: '/blog/tags', label: 'tags', position: 'right' },
         {
           href: 'https://github.com/SamprasZheng/yxz',
           label: 'GitHub',
@@ -88,11 +122,16 @@ const config: Config = {
         },
         {
           title: 'Socials',
+          
           items: [
             {
               label: 'X',
               href: 'https://x.com/polkasharks',
             },
+            {
+              label: 'Bento',
+              href: 'https://bento.me/polkasharks',
+            }
           ],
         },
         {

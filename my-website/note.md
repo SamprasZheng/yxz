@@ -53,7 +53,7 @@ git remote -v
 git remote set-url origin git@github.com:SamprasZheng/ruststatemachine.git
 
 git add .
-git commit -m "add tab"
+git commit -m "add phased array & plurality, test workflow"
 git push
 
 
