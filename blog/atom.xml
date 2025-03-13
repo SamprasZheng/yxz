@@ -2,10 +2,76 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://SamprasZheng.github.io/yxz/blog</id>
     <title>Sampras Blog</title>
-    <updated>2025-02-24T00:00:00.000Z</updated>
+    <updated>2025-03-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://SamprasZheng.github.io/yxz/blog"/>
     <subtitle>Sampras Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[多元宇宙]]></title>
+        <id>https://SamprasZheng.github.io/yxz/blog/Plurality</id>
+        <link href="https://SamprasZheng.github.io/yxz/blog/Plurality"/>
+        <updated>2025-03-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[我最初看到Plurality是因為在瀏覽Project Liberty 積極擴展DSNP (去中心化社交網路協定)於TikTok, Bluesky, Frequency等社交平台的文件時候看到前述位部長唐鳳也參與其中]]></summary>
+        <content type="html"><![CDATA[<p>我最初看到Plurality是因為在瀏覽Project Liberty 積極擴展DSNP (去中心化社交網路協定)於TikTok, Bluesky, Frequency等社交平台的文件時候看到前述位部長唐鳳也參與其中</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="plurality多元宇宙-是什麼">Plurality(多元宇宙) 是什麼？<a href="https://sampraszheng.github.io/yxz/blog/Plurality#plurality%E5%A4%9A%E5%85%83%E5%AE%87%E5%AE%99-%E6%98%AF%E4%BB%80%E9%BA%BC" class="hash-link" aria-label="Direct link to Plurality(多元宇宙) 是什麼？" title="Direct link to Plurality(多元宇宙) 是什麼？">​</a></h2>
+<p>我最初看到Plurality是因為看到Project Liberty 正在積極 主張打破傳統單一決策模式，鼓勵從多個角度切入議題，形成更具包容性與彈性的治理結構。這種多元視角讓參與者能根據不同情境探索多種可能性，而非被迫走上預設的固定路徑。<br>
+<!-- -->詳情可以參考唐鳳協作的書本 <a href="https://github.com/pluralitybook/plurality" target="_blank" rel="noopener noreferrer">Plurality GitHub Repository</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="web3">Web3<a href="https://sampraszheng.github.io/yxz/blog/Plurality#web3" class="hash-link" aria-label="Direct link to Web3" title="Direct link to Web3">​</a></h3>
+<p>web3 一詞由伍德博士(Dr.Gavin Wood)提出，指的是「基於區塊鏈的去中心化線上生態系統」，借助區塊鏈本身透明公開的特點在波卡實行OpenGov鏈上治理，有意思的是有意思的是</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的理念">Polkadot 的理念<a href="https://sampraszheng.github.io/yxz/blog/Plurality#polkadot-%E7%9A%84%E7%90%86%E5%BF%B5" class="hash-link" aria-label="Direct link to Polkadot 的理念" title="Direct link to Polkadot 的理念">​</a></h3>
+<p>Polkadot 是一個致力於跨鏈互操作性的區塊鏈平台，其核心理念包括：</p>
+<ul>
+<li><strong>去中心化</strong>：通過建立中繼鏈（Relay Chain）連接多條平行鏈，實現資源共享與安全共識。</li>
+<li><strong>互操作性</strong>：使不同區塊鏈之間能夠無縫溝通，突破孤立運作的限制。</li>
+<li><strong>靈活升級</strong>：依賴可升級的治理機制，允許網絡在面對新需求與挑戰時迅速調整。</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="opengov-的理念">OpenGov 的理念<a href="https://sampraszheng.github.io/yxz/blog/Plurality#opengov-%E7%9A%84%E7%90%86%E5%BF%B5" class="hash-link" aria-label="Direct link to OpenGov 的理念" title="Direct link to OpenGov 的理念">​</a></h3>
+<p>OpenGov（開放政府）則聚焦於政府與公民間的透明、參與與協作，其主要特點為：</p>
+<ul>
+<li><strong>透明度</strong>：透過公開政府數據與流程，使政策決策過程對公眾完全開放。</li>
+<li><strong>公民參與</strong>：鼓勵市民直接參與公共政策討論與制定，提高政府問責性。</li>
+<li><strong>責任追蹤</strong>：建立完善的監督機制，確保公共資源的公平分配與使用。</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="理念比較">理念比較<a href="https://sampraszheng.github.io/yxz/blog/Plurality#%E7%90%86%E5%BF%B5%E6%AF%94%E8%BC%83" class="hash-link" aria-label="Direct link to 理念比較" title="Direct link to 理念比較">​</a></h3>
+<p>雖然 Polkadot 與 OpenGov 都意在打破傳統集中式治理模式，但它們的側重點與實現路徑有所不同：</p>
+<ul>
+<li>
+<p><strong>技術驅動 vs. 制度改革</strong></p>
+<ul>
+<li><em>Polkadot</em> 依賴區塊鏈技術與代幣機制，強調技術層面的去中心化與網絡互操作性。</li>
+<li><em>OpenGov</em> 則著重於通過制度創新與資訊公開，促進政府與公民間的互動與協作。</li>
+</ul>
+</li>
+<li>
+<p><strong>治理模式</strong></p>
+<ul>
+<li><em>Polkadot</em> 採用鏈上治理，讓持幣者參與決策，實現自我調整與升級。</li>
+<li><em>OpenGov</em> 重視公民參與與政策透明，旨在通過公開與協商達成共識。</li>
+</ul>
+</li>
+<li>
+<p><strong>應用領域</strong></p>
+<ul>
+<li><em>Polkadot</em> 主要服務於數位資產與金融科技領域，推動去中心化網絡生態。</li>
+<li><em>OpenGov</em> 則聚焦於公共管理與政策制定，推動政府機構現代化及數據驅動決策。</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="結語">結語<a href="https://sampraszheng.github.io/yxz/blog/Plurality#%E7%B5%90%E8%AA%9E" class="hash-link" aria-label="Direct link to 結語" title="Direct link to 結語">​</a></h2>
+<p>Plurality 為我們提供了一個多元共治的框架，讓技術與民主可以並肩推進。無論是 Polkadot 在技術層面的創新，還是 OpenGov 在制度層面的改革，都在推動社會朝向更透明、包容與去中心化的未來邁進。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="參考資料">參考資料<a href="https://sampraszheng.github.io/yxz/blog/Plurality#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99" class="hash-link" aria-label="Direct link to 參考資料" title="Direct link to 參考資料">​</a></h2>
+<ul>
+<li>Plurality 專案：<a href="https://github.com/pluralitybook/plurality" target="_blank" rel="noopener noreferrer">https://github.com/pluralitybook/plurality</a></li>
+<li>Polkadot 官方網站：<a href="https://polkadot.network/" target="_blank" rel="noopener noreferrer">https://polkadot.network/</a></li>
+<li>OpenGov 官方網站：<a href="https://www.opengov.com/" target="_blank" rel="noopener noreferrer">https://www.opengov.com/</a></li>
+</ul>]]></content>
+        <author>
+            <name>Sampras Zheng</name>
+            <uri>https://github.com/SamprasZheng</uri>
+        </author>
+        <category label="misc" term="misc"/>
+        <category label="DOT" term="DOT"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[JAM - 可擴展無需信任虛擬機]]></title>
         <id>https://SamprasZheng.github.io/yxz/blog/JAMintro</id>
@@ -187,24 +253,57 @@
         <category label="DOT" term="DOT"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[RF Introduction]]></title>
-        <id>https://SamprasZheng.github.io/yxz/blog/2024/03/12/intro</id>
-        <link href="https://SamprasZheng.github.io/yxz/blog/2024/03/12/intro"/>
-        <updated>2024-03-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is an introduction to RF.]]></summary>
-        <content type="html"><![CDATA[<p>This is an introduction to RF.</p>]]></content>
+        <title type="html"><![CDATA[聊聊相位陣列]]></title>
+        <id>https://SamprasZheng.github.io/yxz/blog/PA</id>
+        <link href="https://SamprasZheng.github.io/yxz/blog/PA"/>
+        <updated>2021-01-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[脈絡]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="脈絡">脈絡<a href="https://sampraszheng.github.io/yxz/blog/PA#%E8%84%88%E7%B5%A1" class="hash-link" aria-label="Direct link to 脈絡" title="Direct link to 脈絡">​</a></h3>
+<p>無線掃描技術的發展始於19世紀末，當時透過高增益天線創造出固定窄波束。到了第二次世界大戰期間，雷達技術的發明使高增益天線能夠旋轉，以機械掃描波束，實現360°全方位覆蓋。</p>
+<p>為了消除機械旋轉、提升設備壽命並加強多目標追蹤性能，PESA（被動電子掃描陣列）技術於1960年代誕生。自1980年代起，隨著高頻半導體技術的逐步成熟，各種AESA（主動電子掃描陣列）技術相繼發展。</p>
+<p>儘管新一代的無線掃描技術比早期技術更加複雜，但其系統性能（探測距離、解析度、追蹤能力與可靠性）隨著世代更迭而大幅提升。下圖展示了無線掃描技術（雷達）的發展歷程，包括架構簡介、技術里程碑及市場挑戰。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="運作">運作<a href="https://sampraszheng.github.io/yxz/blog/PA#%E9%81%8B%E4%BD%9C" class="hash-link" aria-label="Direct link to 運作" title="Direct link to 運作">​</a></h3>
+<p>相位陣列（Phased Array）是一種透過調整天線元件的相位來控制電磁波方向的技術。相較於傳統的機械式天線轉向方式，相位陣列可以透過電子控制來快速改變波束方向，提升系統的靈活性與可靠性。</p>
+<p>相位陣列的核心概念是利用多個天線元件組成天線陣列，並透過個別調整各天線元件的相位，使得電磁波在特定方向產生建設性干涉（constructive interference），而在其他方向則產生破壞性干涉（destructive interference），進而實現波束的電子掃描。其數學模型如下：</p>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi mathvariant="normal">Θ</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>d</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mi>λ</mi></mfrac></mrow><annotation encoding="application/x-tex">\Delta\Theta = \frac{2\pi d \sin\theta}{\lambda}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord">ΔΘ</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:2.0574em;vertical-align:-0.686em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em"><span style="top:-2.314em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord mathnormal">λ</span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.677em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03588em">π</span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.02778em">θ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
+<p>其中：</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">d</span></span></span></span> 為天線單元間距</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">λ</span></span></span></span> 為波長</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal" style="margin-right:0.02778em">θ</span></span></span></span> 為波束指向角度</li>
+</ul>
+<p>此相位調整機制允許系統透過改變各天線單元的相位來動態調整波束方向，而無需物理移動天線結構。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="應用">應用<a href="https://sampraszheng.github.io/yxz/blog/PA#%E6%87%89%E7%94%A8" class="hash-link" aria-label="Direct link to 應用" title="Direct link to 應用">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="軍事與雷達應用">軍事與雷達應用<a href="https://sampraszheng.github.io/yxz/blog/PA#%E8%BB%8D%E4%BA%8B%E8%88%87%E9%9B%B7%E9%81%94%E6%87%89%E7%94%A8" class="hash-link" aria-label="Direct link to 軍事與雷達應用" title="Direct link to 軍事與雷達應用">​</a></h3>
+<p>相位陣列技術最早應用於軍事雷達，如現代艦載雷達、預警機雷達（如 E-2D）、愛國者飛彈防禦系統等。其優勢包括：</p>
+<ul>
+<li><strong>多目標追蹤能力強</strong>：可以同時監測多個目標，適用於防空與導引系統。</li>
+<li><strong>快速波束轉向</strong>：可瞬間改變掃描方向，提升反應速度。</li>
+<li><strong>抗干擾能力強</strong>：可調整波束形狀以減少敵方干擾影響。</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5g-與無線通訊">5G 與無線通訊<a href="https://sampraszheng.github.io/yxz/blog/PA#5g-%E8%88%87%E7%84%A1%E7%B7%9A%E9%80%9A%E8%A8%8A" class="hash-link" aria-label="Direct link to 5G 與無線通訊" title="Direct link to 5G 與無線通訊">​</a></h3>
+<p>在 5G mmWave（毫米波）通訊中，相位陣列技術可實現波束成形（Beamforming），提升數據傳輸效率。應用場景包括：</p>
+<ul>
+<li><strong>基地台天線</strong>：用於 5G Massive MIMO 技術，提高信號覆蓋範圍與傳輸速率。</li>
+<li><strong>衛星通訊</strong>：LEO（低軌道衛星）通訊系統中，相位陣列可實現精確的波束控制，提升鏈路穩定性與頻譜效率​<div>oaicite:0</div>。</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="自駕車與雷達感測">自駕車與雷達感測<a href="https://sampraszheng.github.io/yxz/blog/PA#%E8%87%AA%E9%A7%95%E8%BB%8A%E8%88%87%E9%9B%B7%E9%81%94%E6%84%9F%E6%B8%AC" class="hash-link" aria-label="Direct link to 自駕車與雷達感測" title="Direct link to 自駕車與雷達感測">​</a></h3>
+<ul>
+<li><strong>毫米波雷達（mmWave Radar）</strong>：相位陣列應用於自動駕駛車輛的感測系統，可實現 360° 環繞偵測，增強安全性。</li>
+<li><strong>醫療影像</strong>：超聲波相位陣列用於醫學影像，如高解析度超音波掃描，提高診斷精準度。</li>
+</ul>]]></content>
         <author>
-            <name>polkasharks</name>
-            <uri>https://github.com/Polkasharks</uri>
+            <name>Sampras Zheng</name>
+            <uri>https://github.com/SamprasZheng</uri>
         </author>
         <category label="rf" term="rf"/>
-        <category label="technology" term="technology"/>
+        <category label="phasedarray" term="phasedarray"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://SamprasZheng.github.io/yxz/blog/welcome</id>
         <link href="https://SamprasZheng.github.io/yxz/blog/welcome"/>
-        <updated>2021-08-26T00:00:00.000Z</updated>
+        <updated>2020-08-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
         <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p>
 <p>Here are a few tips you might find useful.</p>
@@ -219,69 +318,6 @@
 <p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://sampraszheng.github.io/yxz/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
 <p>The blog supports tags as well!</p>
 <p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
-        <author>
-            <name>Sampras Zheng</name>
-            <uri>https://github.com/SamprasZheng</uri>
-        </author>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MDX Blog Post]]></title>
-        <id>https://SamprasZheng.github.io/yxz/blog/mdx-blog-post</id>
-        <link href="https://SamprasZheng.github.io/yxz/blog/mdx-blog-post"/>
-        <updated>2021-08-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></summary>
-        <content type="html"><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer">MDX</a>.</p>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Use the power of React to create interactive blog posts.</p></div></div>
-<!-- -->
-<p>For example, use JSX to create an interactive button:</p>
-<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">alert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'button clicked!'</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:#393A34">!</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">button</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<button>Click me!</button>]]></content>
-        <author>
-            <name>Sampras Zheng</name>
-            <uri>https://github.com/SamprasZheng</uri>
-        </author>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Long Blog Post]]></title>
-        <id>https://SamprasZheng.github.io/yxz/blog/long-blog-post</id>
-        <link href="https://SamprasZheng.github.io/yxz/blog/long-blog-post"/>
-        <updated>2019-05-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
-        <content type="html"><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Sampras Zheng</name>
-            <uri>https://github.com/SamprasZheng</uri>
-        </author>
-        <category label="Hello" term="Hello"/>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First Blog Post]]></title>
-        <id>https://SamprasZheng.github.io/yxz/blog/first-blog-post</id>
-        <link href="https://SamprasZheng.github.io/yxz/blog/first-blog-post"/>
-        <updated>2019-05-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet...]]></summary>
-        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
         <author>
             <name>Sampras Zheng</name>
             <uri>https://github.com/SamprasZheng</uri>
