@@ -39,10 +39,10 @@ export default function Home(): ReactNode {
               alt="Profile Picture"
               className={styles.profileImage}
             />
-            <Heading as="h2">About Me</Heading>
-            <p>
+            <Heading as="h2">Buidl Buidl Buidl</Heading>
+            {/* <p>
             Buidl Buidl Buidl
-            </p>
+            </p> */}
             <div className={styles.buttons}>
               {/* <Link
                 className="button button--secondary button--lg"
