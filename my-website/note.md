@@ -52,6 +52,8 @@ git remote -v
 
 git remote set-url origin git@github.com:SamprasZheng/ruststatemachine.git
 
+git add -A
+
 git add .
 git commit -m "sampras-ize"
 git push
