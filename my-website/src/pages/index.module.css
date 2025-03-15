@@ -21,3 +21,55 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.leftColumn {
+  flex: 1;
+  max-width: 35%;
+  background: #1e1e1e; /* Dark theme */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.rightColumn {
+  flex: 2;
+  max-width: 60%;
+  background: #252525; /* Slightly lighter dark */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profileImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+  border: 3px solid #FFFFFF; /* NVIDIA green */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #FFFFFF; /* NVIDIA green */
+}

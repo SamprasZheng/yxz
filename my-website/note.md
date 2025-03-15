@@ -53,7 +53,7 @@ git remote -v
 git remote set-url origin git@github.com:SamprasZheng/ruststatemachine.git
 
 git add .
-git commit -m "update plurality"
+git commit -m "sampras-ize"
 git push
 
 

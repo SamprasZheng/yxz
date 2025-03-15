@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Sampras',
-  tagline: 'Buidl Buidl Buidl',
+  tagline: 'Buidl Buidl BuidlBuidlBuidlBuidl',
   // favicon: 'img/favicon.ico',
 
   url: 'https://SamprasZheng.github.io',
@@ -86,7 +86,7 @@ const config: Config = {
   themeConfig: {
     // image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Sampras',
       // logo: {
       //   alt: 'My Site Logo',
       //   src: 'img/logo.svg',
@@ -100,7 +100,9 @@ const config: Config = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         { to: '/blog/tags/rf', label: 'RF', position: 'left' },
+        { to: '/blog/tags/dot', label: 'Polkadot', position: 'left' },
         { to: '/blog/tags', label: 'tags', position: 'right' },
+        
         {
           href: 'https://github.com/SamprasZheng/yxz',
           label: 'GitHub',
@@ -109,45 +111,49 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Socials',
+    //   style: 'dark',
+    //   links: [
+    //     {
+    //       title: 'Docs',
+    //       items: [
+    //         {
+    //           label: 'Tutorial',
+    //           to: '/docs/intro',
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: 'Socials',
           
-          items: [
-            {
-              label: 'X',
-              href: 'https://x.com/polkasharks',
-            },
-            {
-              label: 'Bento',
-              href: 'https://bento.me/polkasharks',
-            }
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/SamprasZheng/yxz',
-            },
-          ],
-        },
-      ],
+    //       items: [
+    //         // {
+    //       //     label: 'X',
+    //       //     href: 'https://x.com/polkasharks',
+    //       //   },
+    //         // {
+    //         //   label: 'Bento',
+    //         //   href: 'https://bento.me/polkasharks',
+    //         // }
+    //       ],
+    //     },
+    //     {
+    //       title: 'More',
+    //       items: [
+    //         {
+    //           label: 'Blog',
+    //           to: '/blog',
+    //         },
+    //         {
+    //           label: 'GitHub',
+    //           href: 'https://github.com/SamprasZheng/yxz',
+    //         },
+    //         // {
+    //         //   label: 'Contact',
+    //         //   href: '/contact',
+    //         // },
+    //       ],
+    //     },
+    //   ],
       copyright: `Copyright © ${new Date().getFullYear()} Sampras,  Built with Docusaurus.`,
     },
     prism: {

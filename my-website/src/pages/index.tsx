@@ -1,43 +1,110 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial 
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
+  const { siteConfig } = useDocusaurusContext();
+  // return (
+  //   <header className={clsx('hero hero--dark', styles.heroBanner)}>
+  //     <div className="container">
+  //       {/* <Heading as="h1" className="hero__title">
+  //         {siteConfig.title}
+  //       </Heading>
+  //       <p className="hero__subtitle">
+  //         Hardware Engineer | System Validation | Debug & Automation
+  //       </p> */}
+  //     </div>
+  //   </header>
+  // );
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Welcome to ${siteConfig.title}`}
+      description="A portfolio site showcasing experience in Hardware Validation, Debugging, and Automation."
+    >
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
+      <main className={styles.mainContent}>
+        <div className={styles.container}>
+          <div className={styles.leftColumn}>
+            <img 
+              src="https://github.com/SamprasZheng.png" 
+              alt="Profile Picture"
+              className={styles.profileImage}
+            />
+            <Heading as="h2">About Me</Heading>
+            <p>
+            Buidl Buidl Buidl
+            </p>
+            <div className={styles.buttons}>
+              {/* <Link
+                className="button button--secondary button--lg"
+                to="/resume.pdf"
+              >
+                Download Resume 📄
+              </Link>
+              <Link
+                className="button button--primary button--lg"
+                to="https://github.com/yourgithub"
+              >
+                GitHub Portfolio 💻
+              </Link> */}
+            </div>
+          </div>
+
+          <div className={styles.rightColumn}>
+            <section className={styles.section}>
+              {/* <Heading as="h2">Experience</Heading> */}
+              <div className={styles.experience}>
+                {/* <h3>🔹 TronFutureTech - System Development & Debug</h3> */}
+                <p>
+                  I was born in 1996 in Yilan, Taiwan, and from an early age, I developed a deep passion for a wide range of knowledge domains. My childhood and teenage years were surrounded by books covering diverse topics, from economic trends and history to music and coffee. 
+                </p>
+
+                <p>
+                  I graduated from National Chiao Tung University studying Electronics Engineering
+                </p>
+
+                <p>
+                  I joined {" "}<a href="https://www.tronfuture.com/">TronFutureTech </a>
+                  System Development Department working on SATCOM phased array development
+                </p>
+
+
+                <p>
+                  I then joined Qualcomm to work on RF calibration algorithm development,WiFi 7 presilicon emulation & post-silicon verification.
+                </p>
+
+                <p>
+                  Currently, I also actively learn Blockchain-related development 
+                  (Especially {" "}<a href="https://polkadot.network/">Polkadot</a>) 
+                  and contribute to {" "}<a href="https://github.com/New-JAMneration">NewJamneration</a>
+                </p>
+
+                {/* <h3>🔹 Qualcomm - Silicon Validation & Debug</h3>
+                <p>
+                  - Validated WCN6750 wireless chipset.
+                  - BIOS & driver debugging, integrating with SoC test automation.
+                  - Improved test coverage by 15% using automated debugging scripts.
+                </p> */}
+              </div>
+            </section>
+
+
+            {/* <section className={styles.section}>
+              <Heading as="h2">Contact</Heading>
+              <p>📧 Email: your.email@example.com</p>
+              <p>🔗 <Link to="https://linkedin.com/in/yourprofile">LinkedIn Profile</Link></p>
+            </section> */}
+          </div>
+        </div>
       </main>
     </Layout>
   );
