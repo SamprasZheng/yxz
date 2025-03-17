@@ -55,7 +55,9 @@ git remote set-url origin git@github.com:SamprasZheng/ruststatemachine.git
 git add -A
 
 git add .
-git commit -m "buidl"
+git add -A
+git commit -m "update react-bootstrap"
 git push
+yarn deploy
 
 

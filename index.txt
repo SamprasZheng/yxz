@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import { Col, Container, Row } from "react-bootstrap";
+
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -30,19 +30,41 @@ export default function Home(): ReactNode {
       title={`Welcome to ${siteConfig.title}`}
       description="A portfolio site showcasing experience in Hardware Validation, Debugging, and Automation."
     >
-      <main className={styles.heroBanner}>
-        <Container>
-          <Row>
-            <Col sm={12} lg={6} className="col col--6">
-              <img 
-                src="https://github.com/SamprasZheng.png" 
-                alt="Profile Picture"
-                className={styles.profileImage}
-              />
-              
-            </Col>
-            <Col sm={12} lg={6} className="col col--6">
-                <Heading as="h1">Buidl Buidl Buidl</Heading>
+      <HomepageHeader />
+      <main className={styles.mainContent}>
+        <div className={styles.container}>
+          
+          <div className={styles.leftColumn}>
+            <img 
+              src="https://github.com/SamprasZheng.png" 
+              alt="Profile Picture"
+              className={styles.profileImage}
+            />
+            <Heading as="h2">Buidl Buidl Buidl</Heading>
+            {/* <p>
+            Buidl Buidl Buidl
+            </p> */}
+            <div className={styles.buttons}>
+              {/* <Link
+                className="button button--secondary button--lg"
+                to="/resume.pdf"
+              >
+                Download Resume 📄
+              </Link>
+              <Link
+                className="button button--primary button--lg"
+                to="https://github.com/yourgithub"
+              >
+                GitHub Portfolio 💻
+              </Link> */}
+            </div>
+          </div>
+
+          <div className={styles.rightColumn}>
+            <section className={styles.section}>
+              {/* <Heading as="h2">Experience</Heading> */}
+              <div className={styles.experience}>
+                {/* <h3>🔹 TronFutureTech - System Development & Debug</h3> */}
                 <p>
                   I was born in 1996 in Yilan, Taiwan, and from an early age, I developed a deep passion for a wide range of knowledge domains. My childhood and teenage years were surrounded by books covering diverse topics, from economic trends and history to music and coffee. 
                 </p>
@@ -67,11 +89,23 @@ export default function Home(): ReactNode {
                   and contribute to {" "}<a href="https://github.com/New-JAMneration">NewJamneration</a>
                 </p>
 
-            </Col>
+                {/* <h3>🔹 Qualcomm - Silicon Validation & Debug</h3>
+                <p>
+                  - Validated WCN6750 wireless chipset.
+                  - BIOS & driver debugging, integrating with SoC test automation.
+                  - Improved test coverage by 15% using automated debugging scripts.
+                </p> */}
+              </div>
+            </section>
 
 
-          </Row>
-        </Container>
+            {/* <section className={styles.section}>
+              <Heading as="h2">Contact</Heading>
+              <p>📧 Email: your.email@example.com</p>
+              <p>🔗 <Link to="https://linkedin.com/in/yourprofile">LinkedIn Profile</Link></p>
+            </section> */}
+          </div>
+        </div>
       </main>
     </Layout>
   );
