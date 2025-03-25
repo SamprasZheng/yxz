@@ -334,6 +334,54 @@
             <category>DOT</category>
         </item>
         <item>
+            <title><![CDATA[關於輻射測試]]></title>
+            <link>https://SamprasZheng.github.io/yxz/blog/radtest</link>
+            <guid>https://SamprasZheng.github.io/yxz/blog/radtest</guid>
+            <pubDate>Wed, 13 Jan 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[輻射測試簡介]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="輻射測試簡介">輻射測試簡介<a href="https://sampraszheng.github.io/yxz/blog/radtest#%E8%BC%BB%E5%B0%84%E6%B8%AC%E8%A9%A6%E7%B0%A1%E4%BB%8B" class="hash-link" aria-label="Direct link to 輻射測試簡介" title="Direct link to 輻射測試簡介">​</a></h2>
+<p>輻射測試簡介：保障電子元件於太空環境中的可靠性
+隨著低軌道衛星與太空科技的興起，電子模組在太空環境中的可靠性變得極為重要。輻射測試成為評估元件能否在高能粒子輻射條件下穩定運作的關鍵手段。本文將簡介輻射測試的兩大類型：總電離劑量（TID）與單粒子效應（SEE），並說明其測試流程與實務考量。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="為什麼要做輻射測試">為什麼要做輻射測試？<a href="https://sampraszheng.github.io/yxz/blog/radtest#%E7%82%BA%E4%BB%80%E9%BA%BC%E8%A6%81%E5%81%9A%E8%BC%BB%E5%B0%84%E6%B8%AC%E8%A9%A6" class="hash-link" aria-label="Direct link to 為什麼要做輻射測試？" title="Direct link to 為什麼要做輻射測試？">​</a></h2>
+<p>太空環境中充滿來自太陽風、銀河宇宙射線的高能粒子，這些粒子會對電子元件造成以下兩類損害：</p>
+<p>累積性損害（TID）：長期照射導致元件性能劣化。</p>
+<p>瞬間性擾動（SEE）：單一粒子撞擊即可能改變電路行為，甚至導致錯誤或損毀。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="總電離劑量total-ionizing-dose-tid">總電離劑量（Total Ionizing Dose, TID）<a href="https://sampraszheng.github.io/yxz/blog/radtest#%E7%B8%BD%E9%9B%BB%E9%9B%A2%E5%8A%91%E9%87%8Ftotal-ionizing-dose-tid" class="hash-link" aria-label="Direct link to 總電離劑量（Total Ionizing Dose, TID）" title="Direct link to 總電離劑量（Total Ionizing Dose, TID）">​</a></h3>
+<p>TID 測試主要評估電子元件在長時間輻射暴露後的參數變異。</p>
+<p>TID 測試流程
+元件選定：選擇代表性 IC（如 FPGA、電源管理晶片等）。</p>
+<p>預測劑量：根據衛星軌道與任務時間估算總劑量（單位：krad）。</p>
+<p>照射設備：使用 Co-60 γ 射線或 X-ray 管進行長時間照射。</p>
+<p>功能測試：在不同劑量下量測元件關鍵參數（如增益、功耗、邏輯功能）。</p>
+<p>退化分析：觀察偏移、閘極漏電流增加等現象。</p>
+<p>注意事項
+測試期間元件可維持供電以模擬實際狀況。</p>
+<p>TID 效應多為不可逆，需考慮冗餘設計或使用抗輻射元件。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="單粒子效應single-event-effects-see">單粒子效應（Single Event Effects, SEE）<a href="https://sampraszheng.github.io/yxz/blog/radtest#%E5%96%AE%E7%B2%92%E5%AD%90%E6%95%88%E6%87%89single-event-effects-see" class="hash-link" aria-label="Direct link to 單粒子效應（Single Event Effects, SEE）" title="Direct link to 單粒子效應（Single Event Effects, SEE）">​</a></h3>
+<p>SEE 測試模擬單一高能粒子撞擊導致邏輯翻轉、鎖死或毀損。</p>
+<p>SEE 類型
+SEU（Single Event Upset）：暫時性錯誤，如記憶體 bit 翻轉。</p>
+<p>SEL（Single Event Latch-up）：造成電流暴增，可能導致損壞。</p>
+<p>SEB / SEGR：在功率元件中可能造成瞬間崩潰。</p>
+<p>SEE 測試流程
+粒子源：常用重離子或質子加速器（例如 NASA 或 CERN 相關設施）。</p>
+<p>預備系統：搭配遠端控制平台記錄即時錯誤事件。</p>
+<p>注束角度/能量掃描：找出元件最脆弱條件。</p>
+<p>錯誤紀錄與分析：量化錯誤率、臨界 LET 值（Linear Energy Transfer）。</p>
+<p>設計對策
+ECC / CRC 檢查與修正機制</p>
+<p>電路冗餘設計（如 Triple Modular Redundancy, TMR）電路冗餘設計（如 Triple Modular Redundancy， TMR）</p>
+<p>閘極電壓控制避免 SEL</p>
+<p>實務考量與測試計畫規劃
+進行輻射測試前應涵蓋以下幾項：</p>
+<p>選件流程：考量性價比、元件封裝與軌道預期劑量。</p>
+<p>測試分階段：先 TID，再進行 SEE。</p>
+<p>測試報告與驗證資料保存：作為設計驗證與認證依據。</p>
+<p>模組層級整合測試：非僅單晶片，需測試整體系統容錯性。</p>]]></content:encoded>
+            <category>space</category>
+            <category>rf</category>
+        </item>
+        <item>
             <title><![CDATA[聊聊相位陣列]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/PA</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/PA</guid>
