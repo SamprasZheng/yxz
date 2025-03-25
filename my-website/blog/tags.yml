@@ -40,3 +40,13 @@ phasedarray:
   label: phasedarray
   permalink: /phasedarray
   description: phasedarray
+
+wifi:
+  label: wifi
+  permalink: /wifi
+  description: wifi
+
+ai:
+  label: ai 
+  permalink: /ai
+  description: Artificial Intelligence
