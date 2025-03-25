@@ -34,7 +34,9 @@ const config: Config = {
           rehypePlugins: [require('rehype-katex')],
         },
         blog: {
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
+          // postsPerPage: 'ALL',
           editUrl: 'https://github.com/SamprasZheng/yxz/tree/main/',
           feedOptions: {
             type: ['rss', 'atom'],

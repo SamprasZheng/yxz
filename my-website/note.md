@@ -56,7 +56,7 @@ git add -A
 
 git add .
 git add -A
-git commit -m "update react-bootstrap"
+git commit -m "update wifi,ai"
 git push
 yarn deploy
 
