@@ -4,10 +4,103 @@
         <title>Sampras Blog</title>
         <link>https://SamprasZheng.github.io/yxz/blog</link>
         <description>Sampras Blog</description>
-        <lastBuildDate>Wed, 12 Mar 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 25 Mar 2025 08:46:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[AI agent]]></title>
+            <link>https://SamprasZheng.github.io/yxz/blog/AI agent</link>
+            <guid>https://SamprasZheng.github.io/yxz/blog/AI agent</guid>
+            <pubDate>Tue, 25 Mar 2025 08:46:07 GMT</pubDate>
+            <description><![CDATA[myGPTs]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mygpts">myGPTs<a href="https://sampraszheng.github.io/yxz/blog/AI%20agent#mygpts" class="hash-link" aria-label="Direct link to myGPTs" title="Direct link to myGPTs">​</a></h3>
+<ul>
+<li><a href="https://chatgpt.com/g/g-67825a109c408191aaaef28a62051059-jamia" target="_blank" rel="noopener noreferrer">Jamia</a>: about Polkadot &amp; JAM</li>
+<li><a href="https://chatgpt.com/g/g-67e254ad68e4819191ea0552732c0979-spacesharks" target="_blank" rel="noopener noreferrer">Spacesharks</a>: about SpaceTech</li>
+</ul>]]></content:encoded>
+            <category>ai</category>
+            <category>wifi</category>
+            <category>rf</category>
+        </item>
+        <item>
+            <title><![CDATA[系統除錯分析]]></title>
+            <link>https://SamprasZheng.github.io/yxz/blog/debug</link>
+            <guid>https://SamprasZheng.github.io/yxz/blog/debug</guid>
+            <pubDate>Tue, 25 Mar 2025 08:46:07 GMT</pubDate>
+            <description><![CDATA[Bugs]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bugs">Bugs<a href="https://sampraszheng.github.io/yxz/blog/debug#bugs" class="hash-link" aria-label="Direct link to Bugs" title="Direct link to Bugs">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hw">HW<a href="https://sampraszheng.github.io/yxz/blog/debug#hw" class="hash-link" aria-label="Direct link to HW" title="Direct link to HW">​</a></h3>
+<ul>
+<li>Design<!-- -->
+<ul>
+<li>symbol, package, pin</li>
+</ul>
+</li>
+<li>PCB<!-- -->
+<ul>
+<li>CAM, X-section, DRC, trace mismatch</li>
+</ul>
+</li>
+<li>PCBA<!-- -->
+<ul>
+<li>SMT, BOM, variant, alternative</li>
+</ul>
+</li>
+<li>System<!-- -->
+<ul>
+<li>interference, interconnection</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fw">FW<a href="https://sampraszheng.github.io/yxz/blog/debug#fw" class="hash-link" aria-label="Direct link to FW" title="Direct link to FW">​</a></h3>
+<ul>
+<li>OTP version of SOC, SOD<!-- -->
+<ul>
+<li>register, MCN#, variant</li>
+</ul>
+</li>
+<li>Meta of platform<!-- -->
+<ul>
+<li>ADB command, code builder</li>
+<li>regression screen, sanity check</li>
+<li>review stage, feature progress</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sw">SW<a href="https://sampraszheng.github.io/yxz/blog/debug#sw" class="hash-link" aria-label="Direct link to SW" title="Direct link to SW">​</a></h3>
+<ul>
+<li>test config.<!-- -->
+<ul>
+<li>dialog, profile, sequence, coverage</li>
+</ul>
+</li>
+<li>prerequisites<!-- -->
+<ul>
+<li>lib dependency, config. path</li>
+</ul>
+</li>
+<li>ATE<!-- -->
+<ul>
+<li>scripts, extension, package</li>
+</ul>
+</li>
+<li>review<!-- -->
+<ul>
+<li>data parser, visualize, KPI</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="environment">Environment<a href="https://sampraszheng.github.io/yxz/blog/debug#environment" class="hash-link" aria-label="Direct link to Environment" title="Direct link to Environment">​</a></h3>
+<ul>
+<li>Comparison</li>
+<li>Reproduce</li>
+<li>ATE, extension, package</li>
+<li>Compatibility</li>
+</ul>]]></content:encoded>
+            <category>wifi</category>
+            <category>rf</category>
+        </item>
         <item>
             <title><![CDATA[多元宇宙]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/Plurality</link>
@@ -117,9 +210,7 @@
 <p>與 Ethereum 和 Solana 等平台相比，JAM 的高吞吐量和多核計算能力使其在性能上具有顯著優勢。特別是其 <strong>850 MB/s 的數據可用性目標</strong>，是目前 Polkadot（在引入 Asynchronous Backing 前的版本）的 <strong>42 倍</strong>。這一性能提升將使 Polkadot 在區塊鏈擴展性競賽中佔據更有利的位置。</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="結論">結論<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E7%B5%90%E8%AB%96" class="hash-link" aria-label="Direct link to 結論" title="Direct link to 結論">​</a></h2>
 <p>Polkadot JAM 是 <strong>Gavin Wood</strong> 提出的雄心勃勃的升級，旨在將 Polkadot 轉變為一個 <strong>更靈活、高效和可擴展</strong> 的區塊鏈平台。通過結合 Ethereum 的智能合約功能和 Polkadot 的多鏈架構，JAM 為開發者提供了更大的創新空間，同時保持了網絡的安全性和去中心化特性。</p>
-<p>儘管仍需數年時間才能完全實現，其潛力已被社區廣泛認可，並通過投票獲得批准。</p>
-<p><em>來自波卡鯊 Polkasharks 發佈於西行點滴</em><br>
-<!-- -->🔗 <a href="https://vocus.cc/article/67bb4ddafd8978000132b720" target="_blank" rel="noopener noreferrer">原文鏈接</a></p>]]></content:encoded>
+<p>儘管仍需數年時間才能完全實現，其潛力已被社區廣泛認可，並通過投票獲得批准。</p>]]></content:encoded>
             <category>DOT</category>
         </item>
         <item>
