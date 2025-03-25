@@ -56,8 +56,9 @@ git add -A
 
 git add .
 git add -A
-git commit -m "update wifi,ai"
+git commit -m "update radtest"
 git push
+cd my-website
 yarn deploy
 
 
