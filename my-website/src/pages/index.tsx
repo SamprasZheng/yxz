@@ -36,7 +36,8 @@ export default function Home(): ReactNode {
             <Col sm={12} lg={6} className="col col--6">
               <img 
                 // src={"assets/images/DSC013041.jpg"}
-                src="https://github.com/SamprasZheng.png" 
+                // src="https://github.com/SamprasZheng.png" 
+                src= "assets/images/sampras.jpeg"
                 // className={styles.roundedCircle}
                 // src={"my-website/static/img/sampras.jpeg"}
                 // alt="Profile Picture"  

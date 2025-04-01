@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Bugs","children":[{"content":"HW","children":[{"content":"Design","children":[{"content":"symbol, package, pin","children":[],"payload":{"tag":"li","lines":"10,11"}}],"payload":{"tag":"li","lines":"9,11"}},{"content":"PCB","children":[{"content":"CAM, X-section, DRC, trace mismatch","children":[],"payload":{"tag":"li","lines":"12,13"}}],"payload":{"tag":"li","lines":"11,13"}},{"content":"PCBA","children":[{"content":"SMT, BOM, variant, alternative","children":[],"payload":{"tag":"li","lines":"14,15"}}],"payload":{"tag":"li","lines":"13,15"}},{"content":"System","children":[{"content":"interference, interconnection","children":[],"payload":{"tag":"li","lines":"16,17"}}],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"h3","lines":"8,9"}},{"content":"FW","children":[{"content":"OTP version of SOC, SOD","children":[{"content":"register, MCN#, variant","children":[],"payload":{"tag":"li","lines":"19,20"}}],"payload":{"tag":"li","lines":"18,20"}},{"content":"Meta of platform","children":[{"content":"ADB command, code builder","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"regression screen, sanity check","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"review stage, feature progress","children":[],"payload":{"tag":"li","lines":"23,24"}}],"payload":{"tag":"li","lines":"20,24"}}],"payload":{"tag":"h3","lines":"17,18"}},{"content":"SW","children":[{"content":"test config.","children":[{"content":"dialog, profile, sequence, coverage","children":[],"payload":{"tag":"li","lines":"26,27"}}],"payload":{"tag":"li","lines":"25,27"}},{"content":"prerequisites","children":[{"content":"lib dependency, config. path","children":[],"payload":{"tag":"li","lines":"28,29"}}],"payload":{"tag":"li","lines":"27,29"}},{"content":"ATE","children":[{"content":"scripts, extension, package","children":[],"payload":{"tag":"li","lines":"30,31"}}],"payload":{"tag":"li","lines":"29,31"}},{"content":"review","children":[{"content":"data parser, visualize, KPI","children":[],"payload":{"tag":"li","lines":"32,34"}}],"payload":{"tag":"li","lines":"31,34"}}],"payload":{"tag":"h3","lines":"24,25"}},{"content":"Environment","children":[{"content":"Comparison","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"Reproduce","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"ATE, extension, package","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"Compatibility","children":[],"payload":{"tag":"li","lines":"38,39"}}],"payload":{"tag":"h3","lines":"34,35"}}],"payload":{"tag":"h2","lines":"7,8"}},{"colorFreezeLevel":2})</script>
+</body>
+</html>
