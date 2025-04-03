@@ -56,7 +56,7 @@ git add -A
 
 git add .
 git add -A
-git commit -m "update portfolio"
+git commit -m "update mcp"
 git push
 cd my-website
 yarn deploy

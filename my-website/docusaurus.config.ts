@@ -101,9 +101,11 @@ const config: Config = {
         //   label: 'Tutorial',
         // },
         { to: '/blog', label: 'Blog', position: 'left' },
+        
         { to: '/blog/tags/rf', label: 'RF', position: 'left' },
         { to: '/blog/tags/dot', label: 'Polkadot', position: 'left' },
         { to: "/portfolio/", label: "Portfolio", position: "left" },
+        // { to: "/mcp", label: "AI", position: "left" },
         { to: '/blog/tags', label: 'tags', position: 'right' },
         
         {
