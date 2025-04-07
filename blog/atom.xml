@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://SamprasZheng.github.io/yxz/blog</id>
     <title>Sampras Blog</title>
-    <updated>2025-03-25T08:46:07.000Z</updated>
+    <updated>2025-04-07T17:37:24.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://SamprasZheng.github.io/yxz/blog"/>
     <subtitle>Sampras Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[Polkadot Resources]]></title>
+        <id>https://SamprasZheng.github.io/yxz/blog/dotrsc</id>
+        <link href="https://SamprasZheng.github.io/yxz/blog/dotrsc"/>
+        <updated>2025-04-07T17:37:24.000Z</updated>
+        <summary type="html"><![CDATA[Scalability Hackathon]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scalability-hackathon">Scalability Hackathon<a href="https://sampraszheng.github.io/yxz/blog/dotrsc#scalability-hackathon" class="hash-link" aria-label="Direct link to Scalability Hackathon" title="Direct link to Scalability Hackathon">​</a></h3>
+<p><a href="https://docs.google.com/presentation/d/1j2uaMlGiKnvOEqs9VTsA9qgkb5JyAlemGKGGPf23rkc/edit?slide=id.g3495b68f841_0_0#slide=id.g3495b68f841_0_0" target="_blank" rel="noopener noreferrer">Polkadot for Developers -Encode Club</a></p>
+<p><a href="https://encodeclub.notion.site/Polkadot-Scalability-Hackathon-Hacker-Pack-1586c123e77d8015b261c8532f0be2c4" target="_blank" rel="noopener noreferrer">Encode Notion</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mygpts">myGPTs<a href="https://sampraszheng.github.io/yxz/blog/dotrsc#mygpts" class="hash-link" aria-label="Direct link to myGPTs" title="Direct link to myGPTs">​</a></h3>
+<ul>
+<li><a href="https://chatgpt.com/g/g-67825a109c408191aaaef28a62051059-jamia" target="_blank" rel="noopener noreferrer">Jamia</a>: about Polkadot &amp; JAM</li>
+</ul>]]></content>
+        <author>
+            <name>polkasharks</name>
+            <uri>https://github.com/Polkasharks</uri>
+        </author>
+        <category label="DOT" term="DOT"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI agent]]></title>
         <id>https://SamprasZheng.github.io/yxz/blog/AI agent</id>
