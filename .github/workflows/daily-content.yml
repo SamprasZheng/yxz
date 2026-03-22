@@ -1,0 +1,49 @@
+name: Daily Living Topics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 22 * * *"
+
+jobs:
+  generate-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: my-website
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: yarn
+          cache-dependency-path: my-website/yarn.lock
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Generate living topic posts
+        run: yarn generate:living-topics
+
+      - name: Validate site build
+        run: yarn verify
+
+      - name: Commit and push content update
+        run: |
+          if [[ -n "$(git status --porcelain blog)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add blog
+            git commit -m "chore(blog): daily living topic refresh $(date -u +%F)"
+            git push origin HEAD:main
+          else
+            echo "No blog changes to commit."
+          fi

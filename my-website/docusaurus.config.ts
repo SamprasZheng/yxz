@@ -104,6 +104,9 @@ const config: Config = {
         
         { to: '/blog/tags/rf', label: 'RF', position: 'left' },
         { to: '/blog/tags/dot', label: 'Polkadot', position: 'left' },
+        { to: '/blog/tags/space', label: 'Space', position: 'left' },
+        { to: '/blog/tags/ai', label: 'AI', position: 'left' },
+        { to: '/blog/tags/macro', label: 'Macro', position: 'left' },
         { to: "/portfolio/", label: "Portfolio", position: "left" },
         // { to: "/mcp", label: "AI", position: "left" },
         { to: '/blog/tags', label: 'tags', position: 'right' },
@@ -169,4 +172,3 @@ const config: Config = {
 };
 
 export default config;
-

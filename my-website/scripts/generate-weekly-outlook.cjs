@@ -72,6 +72,82 @@ async function fetchJsonWithRetry(url, options = {}, maxRetries = 2) {
   throw lastError;
 }
 
+async function fetchTextWithRetry(url, options = {}, maxRetries = 2) {
+  let lastError = null;
+  for (let attempt = 0; attempt <= maxRetries; attempt += 1) {
+    try {
+      const res = await fetch(url, options);
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status} ${res.statusText}`);
+      }
+      return await res.text();
+    } catch (error) {
+      lastError = error;
+      if (attempt < maxRetries) {
+        await new Promise((resolve) => setTimeout(resolve, 800 * (attempt + 1)));
+      }
+    }
+  }
+  throw lastError;
+}
+
+function decodeHtml(input) {
+  return String(input || "")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'");
+}
+
+function stripTags(html) {
+  return decodeHtml(String(html || "").replace(/<[^>]*>/g, "")).trim();
+}
+
+function parseDuckDuckGo(html, limit = 20) {
+  const entries = [];
+  const regex = /<a[^>]*class="[^"]*result__a[^"]*"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g;
+  let match = regex.exec(html);
+  while (match && entries.length < limit) {
+    const href = decodeHtml(match[1]);
+    const rawTitle = stripTags(match[2]);
+    let link = href;
+    const uddgMatch = href.match(/[?&]uddg=([^&]+)/);
+    if (uddgMatch) {
+      link = decodeURIComponent(uddgMatch[1]);
+    }
+    if (rawTitle && link) {
+      entries.push({title: rawTitle, link});
+    }
+    match = regex.exec(html);
+  }
+  return entries;
+}
+
+async function getSearchSentiment(label, query) {
+  const url = `https://duckduckgo.com/html/?q=${encodeURIComponent(query)}`;
+  try {
+    const html = await fetchTextWithRetry(url, {}, 1);
+    const entries = parseDuckDuckGo(html, 20);
+    const score = entries.reduce((acc, item) => acc + scoreTextSentiment(item.title), 0);
+    return {
+      source: label,
+      usedLiveData: true,
+      notes: [],
+      sampleCount: entries.length,
+      score,
+    };
+  } catch (error) {
+    return {
+      source: label,
+      usedLiveData: false,
+      notes: [`${label} search fallback failed: ${error.message}`],
+      sampleCount: 0,
+      score: 0,
+    };
+  }
+}
+
 async function getMarketSnapshot() {
   const symbols = ["^GSPC", "^IXIC", "^DJI", "BTC-USD", "ETH-USD"];
   const url = `https://query1.finance.yahoo.com/v7/finance/quote?symbols=${encodeURIComponent(
@@ -128,12 +204,14 @@ async function getXSentiment() {
     "(macro OR economy OR inflation OR rates OR Bitcoin OR Ethereum OR SP500 OR Nasdaq) lang:en -is:retweet";
 
   if (!token) {
+    const fallback = await getSearchSentiment(
+      "X search",
+      "site:x.com (macro OR inflation OR bitcoin OR ethereum OR SP500 OR Nasdaq)"
+    );
     return {
+      ...fallback,
       source: "X",
-      usedLiveData: false,
-      notes: ["X_BEARER_TOKEN missing. X sentiment fallback applied."],
-      sampleCount: 0,
-      score: 0,
+      notes: ["X_BEARER_TOKEN missing. Switched to search-engine signals.", ...fallback.notes],
     };
   }
 
@@ -174,12 +252,17 @@ async function getMetaSentiment() {
   const facebookPageId = process.env.FB_PAGE_ID;
 
   if (!accessToken) {
+    const fallback = await getSearchSentiment(
+      "Meta platforms search",
+      "(site:threads.net OR site:instagram.com OR site:facebook.com) (macro OR inflation OR bitcoin OR ethereum OR SP500 OR Nasdaq)"
+    );
     return {
+      ...fallback,
       source: "Threads/Instagram/Facebook",
-      usedLiveData: false,
-      notes: ["META_ACCESS_TOKEN missing. Meta platform sentiment fallback applied."],
-      sampleCount: 0,
-      score: 0,
+      notes: [
+        "META_ACCESS_TOKEN missing. Switched to search-engine signals.",
+        ...fallback.notes,
+      ],
     };
   }
 

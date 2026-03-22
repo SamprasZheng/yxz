@@ -62,13 +62,19 @@ export default function Home(): ReactNode {
 
 
                 <p>
-                  I then joined Qualcomm to work on RF calibration algorithm development,WiFi 7 presilicon emulation & post-silicon verification.
+                  I then joined Qualcomm to work on RF calibration algorithm development, Wi-Fi 7 pre-silicon emulation, and post-silicon verification.
                 </p>
 
                 <p>
-                  Currently, I also actively learn Blockchain-related development 
-                  (Especially {" "}<a href="https://polkadot.network/">Polkadot</a>) 
-                  and contribute to {" "}<a href="https://github.com/New-JAMneration">NewJamneration</a>
+                  Currently I am a System-Level Product Validation Engineer at NVIDIA, focused on engineering studies for next-generation processors and graphics silicon programs including N1X-class CPU study and GB20X-class GPU chip validation.
+                </p>
+
+                <p>
+                  Over the past year, I returned to deep hands-on engineering and expanded my AI stack, including Model Context Protocol (MCP) workflows for automation and agent-driven productivity.
+                </p>
+
+                <p>
+                  I continue to build in blockchain (especially {" "}<a href="https://polkadot.network/">Polkadot</a>), space infrastructure, and RF phased-array SATCOM. My current cross-domain thesis is: AI deployment from Earth to orbit, crypto-native infrastructure in space, and radiation-validated hardware paths for commercial compute in space environments.
                 </p>
 
             </Col>

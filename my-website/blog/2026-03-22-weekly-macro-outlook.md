@@ -47,12 +47,14 @@ Source: fallback
 
 ## Automation Metadata
 
-- Generated at: 2026-03-22T05:31:18.310Z
+- Generated at: 2026-03-22T05:48:55.270Z
 - Generator: `scripts/generate-weekly-outlook.cjs`
 
 ## Data Quality and Error Handling
 
 - Market API failed: fetch failed. Using neutral placeholders.
-- X_BEARER_TOKEN missing. X sentiment fallback applied.
-- META_ACCESS_TOKEN missing. Meta platform sentiment fallback applied.
+- X_BEARER_TOKEN missing. Switched to search-engine signals.
+- X search search fallback failed: fetch failed
+- META_ACCESS_TOKEN missing. Switched to search-engine signals.
+- Meta platforms search search fallback failed: fetch failed
 

@@ -15,7 +15,9 @@
     "typecheck": "tsc",
     "verify": "yarn typecheck && yarn build",
     "generate:weekly-outlook": "node scripts/generate-weekly-outlook.cjs",
+    "generate:living-topics": "node scripts/update-living-topics.cjs",
     "deploy:auto": "node scripts/deploy-github.cjs",
+    "daily:local": "yarn generate:living-topics && yarn verify",
     "weekly:local": "yarn generate:weekly-outlook && yarn verify",
     "weekly:publish": "yarn generate:weekly-outlook && yarn verify && yarn deploy:auto"
   },

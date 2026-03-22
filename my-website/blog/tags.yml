@@ -51,3 +51,12 @@ ai:
   permalink: /ai
   description: Artificial Intelligence
 
+macro:
+  label: macro
+  permalink: /macro
+  description: macro economy and rates
+
+crypto:
+  label: crypto
+  permalink: /crypto
+  description: cryptocurrency market and infrastructure
