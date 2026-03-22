@@ -4,10 +4,58 @@
         <title>Sampras Blog</title>
         <link>https://SamprasZheng.github.io/yxz/blog</link>
         <description>Sampras Blog</description>
-        <lastBuildDate>Mon, 07 Apr 2025 17:37:24 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Mar 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Weekly Macro Outlook (2026-03-22) - US Stocks, Crypto, Social Sentiment]]></title>
+            <link>https://SamprasZheng.github.io/yxz/blog/weekly-macro-outlook-20260322</link>
+            <guid>https://SamprasZheng.github.io/yxz/blog/weekly-macro-outlook-20260322</guid>
+            <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[This post is automatically generated for the week starting 2026-03-23.]]></description>
+            <content:encoded><![CDATA[<p>This post is automatically generated for the week starting <strong>2026-03-23</strong>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary-prediction-next-week">Summary Prediction (Next Week)<a href="https://sampraszheng.github.io/yxz/blog/weekly-macro-outlook-20260322#summary-prediction-next-week" class="hash-link" aria-label="Direct link to Summary Prediction (Next Week)" title="Direct link to Summary Prediction (Next Week)">​</a></h2>
+<ul>
+<li>Macro baseline: <strong>neutral</strong></li>
+<li>US equities (S&amp;P 500 / Nasdaq / Dow): <strong>neutral</strong></li>
+<li>Crypto (BTC / ETH): <strong>neutral</strong></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="market-snapshot">Market Snapshot<a href="https://sampraszheng.github.io/yxz/blog/weekly-macro-outlook-20260322#market-snapshot" class="hash-link" aria-label="Direct link to Market Snapshot" title="Direct link to Market Snapshot">​</a></h2>
+<table><thead><tr><th>Asset</th><th style="text-align:right">Price</th><th style="text-align:right">24h Change</th></tr></thead><tbody><tr><td>S&amp;P 500 (^GSPC)</td><td style="text-align:right">N/A</td><td style="text-align:right">N/A%</td></tr><tr><td>NASDAQ (^IXIC)</td><td style="text-align:right">N/A</td><td style="text-align:right">N/A%</td></tr><tr><td>Dow Jones (^DJI)</td><td style="text-align:right">N/A</td><td style="text-align:right">N/A%</td></tr><tr><td>Bitcoin (BTC-USD)</td><td style="text-align:right">N/A</td><td style="text-align:right">N/A%</td></tr><tr><td>Ethereum (ETH-USD)</td><td style="text-align:right">N/A</td><td style="text-align:right">N/A%</td></tr></tbody></table>
+<p>Source: fallback</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="social-sentiment-inputs">Social Sentiment Inputs<a href="https://sampraszheng.github.io/yxz/blog/weekly-macro-outlook-20260322#social-sentiment-inputs" class="hash-link" aria-label="Direct link to Social Sentiment Inputs" title="Direct link to Social Sentiment Inputs">​</a></h2>
+<ul>
+<li>X.com: fallback (0 posts, score 0)</li>
+<li>Threads/Instagram/Facebook: fallback (0 posts, score 0)</li>
+<li>Combined social score: 0</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="interpretation">Interpretation<a href="https://sampraszheng.github.io/yxz/blog/weekly-macro-outlook-20260322#interpretation" class="hash-link" aria-label="Direct link to Interpretation" title="Direct link to Interpretation">​</a></h2>
+<ul>
+<li>If equities breadth holds and macro headlines stay stable, downside can remain limited.</li>
+<li>If rate-sensitive data surprises to the upside in inflation, expect risk-off pressure in both growth stocks and crypto.</li>
+<li>Crypto typically amplifies macro beta; position sizing and volatility controls remain important.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="risk-management-notes">Risk Management Notes<a href="https://sampraszheng.github.io/yxz/blog/weekly-macro-outlook-20260322#risk-management-notes" class="hash-link" aria-label="Direct link to Risk Management Notes" title="Direct link to Risk Management Notes">​</a></h2>
+<ul>
+<li>This is a directional scenario model, not investment advice.</li>
+<li>Use stop-loss and position sizing rules.</li>
+<li>Re-check CPI, labor, and Fed communication events before entering trades.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="automation-metadata">Automation Metadata<a href="https://sampraszheng.github.io/yxz/blog/weekly-macro-outlook-20260322#automation-metadata" class="hash-link" aria-label="Direct link to Automation Metadata" title="Direct link to Automation Metadata">​</a></h2>
+<ul>
+<li>Generated at: 2026-03-22T05:31:18.310Z</li>
+<li>Generator: <code>scripts/generate-weekly-outlook.cjs</code></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="data-quality-and-error-handling">Data Quality and Error Handling<a href="https://sampraszheng.github.io/yxz/blog/weekly-macro-outlook-20260322#data-quality-and-error-handling" class="hash-link" aria-label="Direct link to Data Quality and Error Handling" title="Direct link to Data Quality and Error Handling">​</a></h2>
+<ul>
+<li>Market API failed: fetch failed. Using neutral placeholders.</li>
+<li>X_BEARER_TOKEN missing. X sentiment fallback applied.</li>
+<li>META_ACCESS_TOKEN missing. Meta platform sentiment fallback applied.</li>
+</ul>]]></content:encoded>
+            <category>ai</category>
+            <category>misc</category>
+        </item>
         <item>
             <title><![CDATA[Polkadot Resources]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/dotrsc</link>
