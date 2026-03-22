@@ -4,10 +4,524 @@
         <title>Sampras Blog</title>
         <link>https://SamprasZheng.github.io/yxz/blog</link>
         <description>Sampras Blog</description>
-        <lastBuildDate>Sun, 22 Mar 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Mar 2026 05:51:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Living Tracker: Applied AI, MCP, and AI Engineering]]></title>
+            <link>https://SamprasZheng.github.io/yxz/blog/living-ai-mcp-tracker</link>
+            <guid>https://SamprasZheng.github.io/yxz/blog/living-ai-mcp-tracker</guid>
+            <pubDate>Sun, 22 Mar 2026 05:51:55 GMT</pubDate>
+            <description><![CDATA[Continuous tracking of applied AI systems, MCP workflow adoption, and deployment engineering.]]></description>
+            <content:encoded><![CDATA[<p>Continuous tracking of applied AI systems, MCP workflow adoption, and deployment engineering.</p>
+<p>This is a living post. It is designed to be continuously updated by automation.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="timeline">Timeline<a href="https://sampraszheng.github.io/yxz/blog/living-ai-mcp-tracker#timeline" class="hash-link" aria-label="Direct link to Timeline" title="Direct link to Timeline">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-ai-mcp-tracker#2026-03-22" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:51:04.829Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li><a href="https://modelcontextprotocol.io/" target="_blank" rel="noopener noreferrer">Model Context Protocol</a></li>
+<li><a href="https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/" target="_blank" rel="noopener noreferrer">NVIDIA Blackwell Architecture</a></li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li><a href="https://duckduckgo.com/?q=(MCP%20OR%20model%20context%20protocol%20OR%20applied%20AI%20engineering)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com)" target="_blank" rel="noopener noreferrer">Search this query on DuckDuckGo ((MCP OR model context protocol OR applied AI engineering) (site<!-- -->:x<!-- -->.com OR site<!-- -->:threads<!-- -->.net OR site<!-- -->:facebook<!-- -->.com OR site<!-- -->:instagram<!-- -->.com))</a></li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>]]></content:encoded>
+            <category>ai</category>
+            <category>misc</category>
+        </item>
+        <item>
+            <title><![CDATA[Living Tracker: Macro, Crypto, and US Equities]]></title>
+            <link>https://SamprasZheng.github.io/yxz/blog/living-macro-crypto-us-equities</link>
+            <guid>https://SamprasZheng.github.io/yxz/blog/living-macro-crypto-us-equities</guid>
+            <pubDate>Sun, 22 Mar 2026 05:51:55 GMT</pubDate>
+            <description><![CDATA[Continuous tracking of macro signals, cryptocurrency sentiment, and US stock market setup.]]></description>
+            <content:encoded><![CDATA[<p>Continuous tracking of macro signals, cryptocurrency sentiment, and US stock market setup.</p>
+<p>This is a living post. It is designed to be continuously updated by automation.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="timeline">Timeline<a href="https://sampraszheng.github.io/yxz/blog/living-macro-crypto-us-equities#timeline" class="hash-link" aria-label="Direct link to Timeline" title="Direct link to Timeline">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-macro-crypto-us-equities#2026-03-22" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:51:04.829Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li><a href="https://blockstream.com/satellite/" target="_blank" rel="noopener noreferrer">Blockstream Satellite</a></li>
+<li><a href="https://docs.polkadot.com/parachains/launch-a-parachain/obtain-coretime/" target="_blank" rel="noopener noreferrer">Polkadot Docs: Coretime</a></li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li><a href="https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com)" target="_blank" rel="noopener noreferrer">Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site<!-- -->:x<!-- -->.com OR site<!-- -->:threads<!-- -->.net OR site<!-- -->:facebook<!-- -->.com OR site<!-- -->:instagram<!-- -->.com))</a></li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-1">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-macro-crypto-us-equities#2026-03-22-1" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:50:26.262Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li><a href="https://blockstream.com/satellite/" target="_blank" rel="noopener noreferrer">Blockstream Satellite</a></li>
+<li><a href="https://docs.polkadot.com/parachains/launch-a-parachain/obtain-coretime/" target="_blank" rel="noopener noreferrer">Polkadot Docs: Coretime</a></li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li><a href="https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com)" target="_blank" rel="noopener noreferrer">Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site<!-- -->:x<!-- -->.com OR site<!-- -->:threads<!-- -->.net OR site<!-- -->:facebook<!-- -->.com OR site<!-- -->:instagram<!-- -->.com))</a></li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-2">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-macro-crypto-us-equities#2026-03-22-2" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:47:34.447Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-3">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-macro-crypto-us-equities#2026-03-22-3" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:47:03.489Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>]]></content:encoded>
+            <category>macro</category>
+            <category>crypto</category>
+            <category>misc</category>
+        </item>
+        <item>
+            <title><![CDATA[Living Tracker: Polkadot / Web3 Infrastructure]]></title>
+            <link>https://SamprasZheng.github.io/yxz/blog/living-polkadot-tracker</link>
+            <guid>https://SamprasZheng.github.io/yxz/blog/living-polkadot-tracker</guid>
+            <pubDate>Sun, 22 Mar 2026 05:51:55 GMT</pubDate>
+            <description><![CDATA[Continuous tracking of Polkadot ecosystem, protocol updates, and engineering signals.]]></description>
+            <content:encoded><![CDATA[<p>Continuous tracking of Polkadot ecosystem, protocol updates, and engineering signals.</p>
+<p>This is a living post. It is designed to be continuously updated by automation.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="timeline">Timeline<a href="https://sampraszheng.github.io/yxz/blog/living-polkadot-tracker#timeline" class="hash-link" aria-label="Direct link to Timeline" title="Direct link to Timeline">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-polkadot-tracker#2026-03-22" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:51:04.829Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li><a href="https://docs.polkadot.com/parachains/launch-a-parachain/obtain-coretime/" target="_blank" rel="noopener noreferrer">Polkadot Docs: Obtain Coretime</a></li>
+<li><a href="https://wiki.polkadot.com/docs/learn-elastic-scaling" target="_blank" rel="noopener noreferrer">Polkadot Wiki: Elastic Scaling</a></li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li><a href="https://duckduckgo.com/?q=(Polkadot%20OR%20JAM%20OR%20parachain%20OR%20coretime)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com)" target="_blank" rel="noopener noreferrer">Search this query on DuckDuckGo ((Polkadot OR JAM OR parachain OR coretime) (site<!-- -->:x<!-- -->.com OR site<!-- -->:threads<!-- -->.net OR site<!-- -->:facebook<!-- -->.com OR site<!-- -->:instagram<!-- -->.com))</a></li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-1">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-polkadot-tracker#2026-03-22-1" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:50:26.262Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li><a href="https://docs.polkadot.com/parachains/launch-a-parachain/obtain-coretime/" target="_blank" rel="noopener noreferrer">Polkadot Docs: Obtain Coretime</a></li>
+<li><a href="https://wiki.polkadot.com/docs/learn-elastic-scaling" target="_blank" rel="noopener noreferrer">Polkadot Wiki: Elastic Scaling</a></li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li><a href="https://duckduckgo.com/?q=(Polkadot%20OR%20JAM%20OR%20parachain%20OR%20coretime)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com)" target="_blank" rel="noopener noreferrer">Search this query on DuckDuckGo ((Polkadot OR JAM OR parachain OR coretime) (site<!-- -->:x<!-- -->.com OR site<!-- -->:threads<!-- -->.net OR site<!-- -->:facebook<!-- -->.com OR site<!-- -->:instagram<!-- -->.com))</a></li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-2">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-polkadot-tracker#2026-03-22-2" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:47:34.447Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-3">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-polkadot-tracker#2026-03-22-3" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:47:03.489Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>]]></content:encoded>
+            <category>DOT</category>
+            <category>ai</category>
+        </item>
+        <item>
+            <title><![CDATA[Living Tracker: RF Phased Array and SATCOM]]></title>
+            <link>https://SamprasZheng.github.io/yxz/blog/living-rf-phased-array-satcom-tracker</link>
+            <guid>https://SamprasZheng.github.io/yxz/blog/living-rf-phased-array-satcom-tracker</guid>
+            <pubDate>Sun, 22 Mar 2026 05:51:55 GMT</pubDate>
+            <description><![CDATA[Continuous tracking of phased array systems, SATCOM links, and related validation technology.]]></description>
+            <content:encoded><![CDATA[<p>Continuous tracking of phased array systems, SATCOM links, and related validation technology.</p>
+<p>This is a living post. It is designed to be continuously updated by automation.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="timeline">Timeline<a href="https://sampraszheng.github.io/yxz/blog/living-rf-phased-array-satcom-tracker#timeline" class="hash-link" aria-label="Direct link to Timeline" title="Direct link to Timeline">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-rf-phased-array-satcom-tracker#2026-03-22" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:51:04.829Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li><a href="https://ntrs.nasa.gov/citations/20040105615" target="_blank" rel="noopener noreferrer">NASA NTRS: Adaptive and Phased Array Antennas</a></li>
+<li><a href="https://www.nasa.gov/game-changing-development-projects/high-performance-spaceflight-computing-hpsc/" target="_blank" rel="noopener noreferrer">NASA HPSC</a></li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li><a href="https://duckduckgo.com/?q=(phased%20array%20OR%20SATCOM%20OR%20beamforming%20OR%20satellite%20communication)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com)" target="_blank" rel="noopener noreferrer">Search this query on DuckDuckGo ((phased array OR SATCOM OR beamforming OR satellite communication) (site<!-- -->:x<!-- -->.com OR site<!-- -->:threads<!-- -->.net OR site<!-- -->:facebook<!-- -->.com OR site<!-- -->:instagram<!-- -->.com))</a></li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-1">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-rf-phased-array-satcom-tracker#2026-03-22-1" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:50:26.262Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li><a href="https://ntrs.nasa.gov/citations/20040105615" target="_blank" rel="noopener noreferrer">NASA NTRS: Adaptive and Phased Array Antennas</a></li>
+<li><a href="https://www.nasa.gov/game-changing-development-projects/high-performance-spaceflight-computing-hpsc/" target="_blank" rel="noopener noreferrer">NASA HPSC</a></li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li><a href="https://duckduckgo.com/?q=(phased%20array%20OR%20SATCOM%20OR%20beamforming%20OR%20satellite%20communication)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com)" target="_blank" rel="noopener noreferrer">Search this query on DuckDuckGo ((phased array OR SATCOM OR beamforming OR satellite communication) (site<!-- -->:x<!-- -->.com OR site<!-- -->:threads<!-- -->.net OR site<!-- -->:facebook<!-- -->.com OR site<!-- -->:instagram<!-- -->.com))</a></li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-2">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-rf-phased-array-satcom-tracker#2026-03-22-2" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:47:34.447Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-3">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-rf-phased-array-satcom-tracker#2026-03-22-3" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:47:03.489Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>]]></content:encoded>
+            <category>rf</category>
+            <category>phasedarray</category>
+            <category>space</category>
+        </item>
+        <item>
+            <title><![CDATA[Living Tracker: Space Compute and Space Data Centers]]></title>
+            <link>https://SamprasZheng.github.io/yxz/blog/living-space-compute-tracker</link>
+            <guid>https://SamprasZheng.github.io/yxz/blog/living-space-compute-tracker</guid>
+            <pubDate>Sun, 22 Mar 2026 05:51:55 GMT</pubDate>
+            <description><![CDATA[Continuous tracking of in-orbit compute, space data center initiatives, and mission infrastructure.]]></description>
+            <content:encoded><![CDATA[<p>Continuous tracking of in-orbit compute, space data center initiatives, and mission infrastructure.</p>
+<p>This is a living post. It is designed to be continuously updated by automation.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="timeline">Timeline<a href="https://sampraszheng.github.io/yxz/blog/living-space-compute-tracker#timeline" class="hash-link" aria-label="Direct link to Timeline" title="Direct link to Timeline">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-space-compute-tracker#2026-03-22" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:51:04.829Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li><a href="https://ascend-horizon.eu/" target="_blank" rel="noopener noreferrer">ASCEND Project</a></li>
+<li><a href="https://cordis.europa.eu/project/id/101082517" target="_blank" rel="noopener noreferrer">CORDIS ASCEND Fact Sheet</a></li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li><a href="https://duckduckgo.com/?q=(space%20data%20center%20OR%20satellite%20compute%20OR%20orbital%20data%20center)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com)" target="_blank" rel="noopener noreferrer">Search this query on DuckDuckGo ((space data center OR satellite compute OR orbital data center) (site<!-- -->:x<!-- -->.com OR site<!-- -->:threads<!-- -->.net OR site<!-- -->:facebook<!-- -->.com OR site<!-- -->:instagram<!-- -->.com))</a></li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-1">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-space-compute-tracker#2026-03-22-1" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:50:26.262Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li><a href="https://ascend-horizon.eu/" target="_blank" rel="noopener noreferrer">ASCEND Project</a></li>
+<li><a href="https://cordis.europa.eu/project/id/101082517" target="_blank" rel="noopener noreferrer">CORDIS ASCEND Fact Sheet</a></li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li><a href="https://duckduckgo.com/?q=(space%20data%20center%20OR%20satellite%20compute%20OR%20orbital%20data%20center)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com)" target="_blank" rel="noopener noreferrer">Search this query on DuckDuckGo ((space data center OR satellite compute OR orbital data center) (site<!-- -->:x<!-- -->.com OR site<!-- -->:threads<!-- -->.net OR site<!-- -->:facebook<!-- -->.com OR site<!-- -->:instagram<!-- -->.com))</a></li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-2">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-space-compute-tracker#2026-03-22-2" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:47:34.447Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2026-03-22-3">2026-03-22<a href="https://sampraszheng.github.io/yxz/blog/living-space-compute-tracker#2026-03-22-3" class="hash-link" aria-label="Direct link to 2026-03-22" title="Direct link to 2026-03-22">​</a></h3>
+<ul>
+<li>Market/Sentiment stance: <strong>neutral</strong> (score 0)</li>
+<li>Web signals collected: 0</li>
+<li>Social-search signals collected: 0</li>
+<li>Updated at: 2026-03-22T05:47:03.489Z</li>
+</ul>
+<p>Key web signals:</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Key social-search signals (X / Threads / Instagram / Facebook via search):</p>
+<ul>
+<li>No usable links from this source in this run.</li>
+</ul>
+<p>Data quality notes:</p>
+<ul>
+<li>Web signals fetch failed: fetch failed</li>
+<li>Social-search fetch failed: fetch failed</li>
+<li>No web news signals, fallback to empty set.</li>
+<li>No social-search signals, fallback to empty set.</li>
+</ul>]]></content:encoded>
+            <category>space</category>
+            <category>ai</category>
+        </item>
+        <item>
+            <title><![CDATA[2026 Tech Roadmap: AI in Space, Crypto Infrastructure, RF SATCOM, and Radiation Validation]]></title>
+            <link>https://SamprasZheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026</link>
+            <guid>https://SamprasZheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026</guid>
+            <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[This post captures my current engineering thesis across AI systems, space infrastructure, blockchain, and RF validation.]]></description>
+            <content:encoded><![CDATA[<p>This post captures my current engineering thesis across AI systems, space infrastructure, blockchain, and RF validation.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-this-matters-now">Why This Matters Now<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026#why-this-matters-now" class="hash-link" aria-label="Direct link to Why This Matters Now" title="Direct link to Why This Matters Now">​</a></h2>
+<p>In 2026, AI deployment is moving from model demos to system-level execution. The next frontier is not only better models, but where compute runs, how data moves, and how hardware survives harsh environments.</p>
+<p>My current focus is the intersection of:</p>
+<ul>
+<li>AI engineering and MCP-enabled workflows</li>
+<li>Space compute and in-orbit infrastructure</li>
+<li>Crypto-native data and settlement layers</li>
+<li>RF phased-array communication for space-to-ground links</li>
+<li>Radiation-aware validation for commercial silicon in space missions</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="signals-i-am-tracking">Signals I Am Tracking<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026#signals-i-am-tracking" class="hash-link" aria-label="Direct link to Signals I Am Tracking" title="Direct link to Signals I Am Tracking">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-polkadot-and-scalable-on-chain-infrastructure">1) Polkadot and scalable on-chain infrastructure<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026#1-polkadot-and-scalable-on-chain-infrastructure" class="hash-link" aria-label="Direct link to 1) Polkadot and scalable on-chain infrastructure" title="Direct link to 1) Polkadot and scalable on-chain infrastructure">​</a></h3>
+<p>Polkadot’s coretime and elastic scaling model is directly relevant to bursty workloads and production-grade systems.</p>
+<p>Reference:</p>
+<ul>
+<li><a href="https://wiki.polkadot.com/docs/learn-elastic-scaling" target="_blank" rel="noopener noreferrer">Polkadot Wiki: Elastic Scaling</a></li>
+<li><a href="https://beta-docs.polkadot.com/parachains/launch-a-parachain/obtain-coretime/" target="_blank" rel="noopener noreferrer">Polkadot Docs: Obtain Coretime</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-space-data-center-and-orbital-compute-direction">2) Space data center and orbital compute direction<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026#2-space-data-center-and-orbital-compute-direction" class="hash-link" aria-label="Direct link to 2) Space data center and orbital compute direction" title="Direct link to 2) Space data center and orbital compute direction">​</a></h3>
+<p>The industry is testing what it means to run compute off-Earth. This creates a new systems question: power, cooling, communication, and fault tolerance as a single architecture.</p>
+<p>Reference:</p>
+<ul>
+<li><a href="https://www.esa.int/Applications/Connectivity_and_Secure_Communications/Advanced_Space_Cloud_for_European_Net_zero_emission_and_Data_sovereignty_ASCEND" target="_blank" rel="noopener noreferrer">ESA: ASCEND (Advanced Space Cloud for European Net zero emission and Data sovereignty)</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-ai-hardware-scaling-and-system-level-integration">3) AI hardware scaling and system-level integration<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026#3-ai-hardware-scaling-and-system-level-integration" class="hash-link" aria-label="Direct link to 3) AI hardware scaling and system-level integration" title="Direct link to 3) AI hardware scaling and system-level integration">​</a></h3>
+<p>NVIDIA’s Blackwell generation reflects the trend toward tightly integrated compute + networking + memory system design, not just isolated chip metrics.</p>
+<p>Reference:</p>
+<ul>
+<li><a href="https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/" target="_blank" rel="noopener noreferrer">NVIDIA Blackwell Platform</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-crypto--satellite-communication-as-resilient-infrastructure">4) Crypto + satellite communication as resilient infrastructure<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026#4-crypto--satellite-communication-as-resilient-infrastructure" class="hash-link" aria-label="Direct link to 4) Crypto + satellite communication as resilient infrastructure" title="Direct link to 4) Crypto + satellite communication as resilient infrastructure">​</a></h3>
+<p>Crypto systems increasingly intersect with non-terrestrial communication paths, including satellite relay concepts.</p>
+<p>Reference:</p>
+<ul>
+<li><a href="https://blockstream.com/satellite/" target="_blank" rel="noopener noreferrer">Blockstream Satellite</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-radiation-verification-for-space-deployment">5) Radiation verification for space deployment<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026#5-radiation-verification-for-space-deployment" class="hash-link" aria-label="Direct link to 5) Radiation verification for space deployment" title="Direct link to 5) Radiation verification for space deployment">​</a></h3>
+<p>Using commercial compute hardware in space requires disciplined radiation effects analysis and qualification strategy.</p>
+<p>Reference:</p>
+<ul>
+<li><a href="https://ntrs.nasa.gov/citations/20040105615" target="_blank" rel="noopener noreferrer">NASA NTRS: Optimizing Satellite Communications With Adaptive and Phased Array Antennas</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="engineering-hypothesis">Engineering Hypothesis<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026#engineering-hypothesis" class="hash-link" aria-label="Direct link to Engineering Hypothesis" title="Direct link to Engineering Hypothesis">​</a></h2>
+<ul>
+<li>AI will increasingly require distributed compute beyond terrestrial data centers.</li>
+<li>Space compute can amplify demand for secure coordination and settlement layers, where crypto-native primitives may become practical infrastructure.</li>
+<li>RF phased arrays are not optional in this stack; they are foundational for reliable high-throughput links.</li>
+<li>Commercial silicon in space will succeed only with rigorous validation, especially radiation-related risk control.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-i-will-keep-updating">What I Will Keep Updating<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026#what-i-will-keep-updating" class="hash-link" aria-label="Direct link to What I Will Keep Updating" title="Direct link to What I Will Keep Updating">​</a></h2>
+<ul>
+<li>Weekly macro + crypto + US equities outlook</li>
+<li>Daily/continuous living trackers for AI, space, RF, Polkadot, and investing</li>
+<li>Implementation notes from validation engineering and automation workflows</li>
+</ul>]]></content:encoded>
+            <category>ai</category>
+            <category>space</category>
+            <category>rf</category>
+            <category>crypto</category>
+            <category>macro</category>
+            <category>DOT</category>
+        </item>
         <item>
             <title><![CDATA[Weekly Macro Outlook (2026-03-22) - US Stocks, Crypto, Social Sentiment]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/weekly-macro-outlook-20260322</link>
@@ -44,14 +558,16 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="automation-metadata">Automation Metadata<a href="https://sampraszheng.github.io/yxz/blog/weekly-macro-outlook-20260322#automation-metadata" class="hash-link" aria-label="Direct link to Automation Metadata" title="Direct link to Automation Metadata">​</a></h2>
 <ul>
-<li>Generated at: 2026-03-22T05:31:18.310Z</li>
+<li>Generated at: 2026-03-22T05:48:55.270Z</li>
 <li>Generator: <code>scripts/generate-weekly-outlook.cjs</code></li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="data-quality-and-error-handling">Data Quality and Error Handling<a href="https://sampraszheng.github.io/yxz/blog/weekly-macro-outlook-20260322#data-quality-and-error-handling" class="hash-link" aria-label="Direct link to Data Quality and Error Handling" title="Direct link to Data Quality and Error Handling">​</a></h2>
 <ul>
 <li>Market API failed: fetch failed. Using neutral placeholders.</li>
-<li>X_BEARER_TOKEN missing. X sentiment fallback applied.</li>
-<li>META_ACCESS_TOKEN missing. Meta platform sentiment fallback applied.</li>
+<li>X_BEARER_TOKEN missing. Switched to search-engine signals.</li>
+<li>X search search fallback failed: fetch failed</li>
+<li>META_ACCESS_TOKEN missing. Switched to search-engine signals.</li>
+<li>Meta platforms search search fallback failed: fetch failed</li>
 </ul>]]></content:encoded>
             <category>ai</category>
             <category>misc</category>
