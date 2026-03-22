@@ -1,0 +1,56 @@
+name: Weekly Outlook Content
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 23 * * 0"
+
+jobs:
+  generate-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: my-website
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: yarn
+          cache-dependency-path: my-website/yarn.lock
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Generate weekly outlook post
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          X_QUERY: ${{ secrets.X_QUERY }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+        run: yarn generate:weekly-outlook
+
+      - name: Validate site build
+        run: yarn verify
+
+      - name: Commit and push blog update
+        run: |
+          if [[ -n "$(git status --porcelain blog)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add blog
+            git commit -m "chore(blog): weekly macro outlook $(date -u +%F)"
+            git push origin HEAD:main
+          else
+            echo "No blog changes to commit."
+          fi

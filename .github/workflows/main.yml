@@ -8,21 +8,28 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     defaults:
       run:
-        working-directory: my-website  # 指定工作目錄
+        working-directory: my-website
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'  # 根據你的需求選擇 Node 版本
+          node-version: "20"
+          cache: yarn
+          cache-dependency-path: my-website/yarn.lock
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
 
       - name: Deploy website
+        env:
+          GIT_USER: github-actions[bot]
+          GIT_PASS: ${{ secrets.GITHUB_TOKEN }}
         run: yarn deploy
