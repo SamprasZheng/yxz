@@ -15,6 +15,32 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ### 2026-03-22
 
+- Market/Sentiment stance: **neutral** (score 2)
+- Web signals collected: 10
+- Social-search signals collected: 10
+- Updated at: 2026-03-22T22:50:06.873Z
+
+Key web signals:
+- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
+- [NVIDIA Takes AI Computing to Orbit With New Space Platforms - Security Boulevard](https://news.google.com/rss/articles/CBMinwFBVV95cUxOd1Q5VWlfN0tOTzdQWERRSEhsYi04THViTUFmaUpuaUpZVFIyX3JHczlDN3NZM2tkNEtfZ3BSQ0ZqSVU4V1NPSC1yQ3l4dTlrNmVsbnRXeHMtT0xLZTBGNGJOMU41a2ZwZm1DU3RwNTFORmRLZV96NjJyTkhMR2hRaUJUZllBTzBia2JiaFNLRmVGeTF1OXZkaUplNERwOXc?oc=5)
+- [Nvidia Takes AI to Orbit with Vera Rubin Space-1 Chip System - The Tech Buzz](https://news.google.com/rss/articles/CBMimAFBVV95cUxNUk9HUVFwQ1EzbWhXampMal9LdVlGVlVhc2tCOUVKMW4yQ0lNSm90NjEtOW1ELW1fLV9uUXNjcFFPVXJzR1UwZ19sYmxldW9IblVwSmVaQU04cUk0YWlzVGJyeERBVjY2bTU2TjdwcjRSVlNnZnBZRk9TMlh4SGJTcVZBZTN5UU9CNS1QMlJEZ0UwZXpDMDFaaw?oc=5)
+- [Sophia Space raises $10M to accelerate creation of orbital computing systems - GeekWire](https://news.google.com/rss/articles/CBMie0FVX3lxTE94VEl0ZDN5Q2lHUzNuQmJJNlJoTldpZVlMdlhlZUFLWUVoaGRxRTBSdmNxeU85bGhtQWVwQXhVeDMtNkFESXdjX1hHR1hYRDF0bTBfM1BfSGM1MzhxdzBfYllKc3VEaEhtcTNRb2x3djZKOXBULXlHTHlIOA?oc=5)
+- [Exploring a space-based, scalable AI infrastructure system design - Research at Google](https://news.google.com/rss/articles/CBMimgFBVV95cUxNME1JUnFDODB3UktzYm1MMHpwb193anRMdUpfTFlTdFRyMEtaZ0hoUWNHWldlbzdDQ3V1aEJLbkdCZkRsOTFSQi1XalltV3VFdkZRZ29uV20xWWNEcGdVRlg0ZnhRQU45dktEZ3o2bXh1RnBpU2FwV1pLTmo1VXA0R21XLWwwUWxXcDZFT216TF9kQmplNWRRTDdB?oc=5)
+- [Kepler Deploys Distributed On-Orbit Compute Across Optical Data Relay Constellation - The Fast Mode](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNblpQWU4tSGxsbm5rSXZSeVhTLUhxemlicV93RGlnazJ6R0MzVV9KZTMzTEFieXVLb1N5WHZuaWx1cm51eVFTUENNNWduVVZwN1pHOTh2LXZoSVZXQXZGOTZja3dOZ3oxLTFqckdpaUdrNksxT2drQjNTX0JFbDdXT05yYTBSSk1zQ1RxYU92RGppZXpaYktzUlZlXzJHWDlXYTBib3A5MGRWc0t4elpwQWoyVUgxNXpjWWVLTzZZeEhiN1lESXh3YkZxLXk3blM4dEN6RQ?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Kardashev II loading… SpaceX filed for 1M orbital data center ...](https://x.com/SpaceInvestor_D/status/2034762817845231650)
+- [Instagram](https://www.instagram.com/reel/DQJK2noE0eB/)
+- [Beyond Earth: The Next Frontier in Data Centers What if the ... - Facebook](https://www.facebook.com/reel/825759886487738/)
+- [NVIDIA today announced that its latest accelerated computing platforms ...](https://x.com/SpaceInvestor_D/status/2033637920939376792)
+- [Instagram](https://www.instagram.com/p/DUTA2aVCNoZ/)
+- [AI data centres in space are coming… and the companies ... - Facebook](https://www.facebook.com/reel/1509599513486289/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
+### 2026-03-22
+
 - Market/Sentiment stance: **neutral** (score 0)
 - Web signals collected: 0
 - Social-search signals collected: 0

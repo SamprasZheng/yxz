@@ -15,6 +15,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ### 2026-03-22
 
+- Market/Sentiment stance: **neutral** (score 1)
+- Web signals collected: 1
+- Social-search signals collected: 10
+- Updated at: 2026-03-22T22:50:06.873Z
+
+Key web signals:
+- [Polkadot Review: The Internet of Blockchains Explained - MEXC](https://news.google.com/rss/articles/CBMiR0FVX3lxTE1VbG9hN1VyY3ZpclJUc2wzUkVCVURtR3FwU05pZTVZemx4cEpSb2xkX3l4b0lVbnFsdkVWZnN5TmliREFQVkN3?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Over the weekend, 12 Polkadot cores were purchased. Each core ...](https://x.com/its_ravii/status/2030769624133087577)
+- [Polkadot - Facebook](https://www.facebook.com/polkadotnetwork/)
+- [Polkadot (@Polkadot) / Posts / X - Twitter](https://x.com/Polkadot)
+- [Polkadot is often misinterpreted as just another blockchain bridged to ...](https://x.com/paritytech/status/2034925459125780833)
+- [Seen some FUD on Polkadot activity. Like "Last transaction was 12h ago ...](https://x.com/Defi_Warhol/status/2028843351391560134)
+- [Polkadot v2.1.1 runtime upgrade is now up for vote! This upgrade is ...](https://x.com/polkaworld_org/status/2034347857680200097)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
+### 2026-03-22
+
 - Market/Sentiment stance: **neutral** (score 0)
 - Web signals collected: 0
 - Social-search signals collected: 0
