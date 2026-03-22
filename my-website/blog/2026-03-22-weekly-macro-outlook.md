@@ -29,9 +29,9 @@ Source: fallback
 
 ## Social Sentiment Inputs
 
-- X.com: fallback (0 posts, score 0)
-- Threads/Instagram/Facebook: fallback (0 posts, score 0)
-- Combined social score: 0
+- X.com: live API data (10 posts, score 1)
+- Threads/Instagram/Facebook: live API data (10 posts, score -2)
+- Combined social score: -1
 
 ## Interpretation
 
@@ -47,14 +47,12 @@ Source: fallback
 
 ## Automation Metadata
 
-- Generated at: 2026-03-22T05:48:55.270Z
+- Generated at: 2026-03-22T23:22:43.783Z
 - Generator: `scripts/generate-weekly-outlook.cjs`
 
 ## Data Quality and Error Handling
 
-- Market API failed: fetch failed. Using neutral placeholders.
+- Market API failed: HTTP 401 Unauthorized. Using neutral placeholders.
 - X_BEARER_TOKEN missing. Switched to search-engine signals.
-- X search search fallback failed: fetch failed
 - META_ACCESS_TOKEN missing. Switched to search-engine signals.
-- Meta platforms search search fallback failed: fetch failed
 
