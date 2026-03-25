@@ -1,0 +1,39 @@
+---
+slug: radtest
+title: "Radiation Test Playbook: TID / SEE with Simple Orbit Calculators"
+authors: ["sampras"]
+tags: [space, rf]
+---
+
+import RadiationCalculators from "@site/src/components/RadiationCalculators";
+
+This page updates my radiation test blog into a practical engineering workflow and includes simple simulation tools.
+
+These two calculators are for quick mission trade studies, not qualification signoff.
+
+<!-- truncate -->
+
+<RadiationCalculators />
+
+## Practical Flow (Aligned with TI-style Radiation Qualification)
+
+1. Define mission profile first: orbit, lifetime, shielding stack-up, reliability target.
+2. Screen TID margin with system-level assumptions.
+3. Characterize SEE sensitivity (SEU/SEL/SEFI/SET) using LET threshold and cross-section from test data.
+4. Build mitigation at design level:
+   - ECC/scrubbing for memory
+   - watchdog/recovery paths for functional interrupts
+   - current limiting and latch-up protection for SEL risk
+5. Re-run mission-level estimates with mitigation assumptions, then lock test plan.
+
+## Notes on Model Limits
+
+- TID model here is an exponential shielding trend approximation.
+- SEE model here is a Poisson-style expectation model using orbit-dependent baseline.
+- For production decisions, use full environment tools and part-level radiation reports.
+
+## References
+
+- Space Radiation Services free tools: [https://www.spaceradiationservices.com/free-radiation-tools](https://www.spaceradiationservices.com/free-radiation-tools)
+- TI radiation webinar (includes handbook/resources links): [https://www.youtube.com/watch?v=m9Nk1aQarGw](https://www.youtube.com/watch?v=m9Nk1aQarGw)
+- NASA HPSC context: [https://www.nasa.gov/game-changing-development-projects/high-performance-spaceflight-computing-hpsc/](https://www.nasa.gov/game-changing-development-projects/high-performance-spaceflight-computing-hpsc/)
