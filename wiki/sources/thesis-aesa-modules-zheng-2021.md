@@ -143,4 +143,5 @@ Build-in self test 在相位陣列設計中不可或缺。
 - [[concepts/tid-total-ionizing-dose]] — 論文輻射測試 TID 實踐
 - [[concepts/see-single-event-effects]] — 論文 SEE 測試規劃
 - [[concepts/dpd-digital-predistortion]] — 論文 Chapter 4
+- [[sources/hsieh-xband-leo-transmitter-2020]] — 同一 RFVLSI Lab，謝書超碩士論文：XT-144 up-converter 子系統的 Zero-IF 傳輸器設計與 EVM 校正
 - [[sources/hybrid-xband-phased-array-icase-2020]] — 同一系統的 conference paper

@@ -5,6 +5,10 @@
 <!-- grep "^## \[" log.md | tail -10   ← last 10 entries -->
 <!-- grep "^## \[.*\] ingest" log.md   ← all ingests -->
 
+## [2026-04-19] ingest | AESA 相位陣列 — NCTU 碩士論文 + iCASE 2020 conference paper
+來源：D:\career\ee\Thesis_0850193.pdf（鄭亦翔 NCTU 碩士論文 Jan 2021）+ D:\career\ee\Hybrid X-band Phased Array Transmitter.pdf（iCASE 2020）。
+新建：[[sources/thesis-aesa-modules-zheng-2021]]（S-band 模組設計 PLL/OA/電力；X-band XT-144 可靠度測試 TID/SEE/熱 + 溫度補償；DPD PA 線性化 NN+CUDA；8-way power divider）、[[sources/hybrid-xband-phased-array-icase-2020]]（144 元件混合 X-band 傳輸器，EIRP 64 dBm，800 Mbps 16-APSK）。新建實體：[[entities/tron-future-tech]]（創未來科技，NCTU 衍生）、[[entities/nspo]]（國家太空中心）。新建概念：[[concepts/aesa]]（演進+SWAP+數學）、[[concepts/hybrid-phased-array]]（XT-144 完整規格）、[[concepts/dpd-digital-predistortion]]（三方法比較，NMSE −26 dB）。更新部落格：blog/2021-01-12-phasedarray.md 大幅擴充論文實作內容。7 個新 wiki 頁面，index + log 更新。
+
 ## [2026-04-19] ingest | LEO radiation effects — gap research
 WebSearch + WebFetch across 7 gap areas. Key new findings: (1) Solar Cycle 25 stronger than predicted — May 2024 G5 superstorm created two new transient radiation belts (6.8–20 MeV proton belt still present Feb 2025; peak dose rate 2200 μGy/h), now documented in new [[concepts/solar-cycle-25-leo-radiation]]. (2) Taiwan radiation test ecosystem is NOT blank — NSPO consortium since 2020 (Chang Gung proton + INER Co-60); NSPO × NTU Cancer Center MoU 2022 (superconducting cyclotron operational 2023); corrected [[concepts/rha-radiation-hardening]] from ★☆☆☆☆ to ★★☆☆☆, new page [[concepts/taiwan-radiation-test-ecosystem]]. (3) Aitech S-A2300 (NVIDIA Orin) passed TID test May 2025: 10 krad bare, 20 krad with Al shielding; H100 has ECC on HBM3+caches but no TID/SEL protection — documented in new [[concepts/cots-gpu-radiation-risk]]. Commercial lab landscape (TRAD, Zero-G Radiation Assurance's 6000-entry COTS database) added to RHA page. Null results: specific HBM3 SEU cross-section measurements not publicly available; Starlink V3 radiation specs not disclosed; definitive 550 km SER multiplier not in public literature. 3 pages created, 4 pages updated. Rate limit: 0 hits.
 
@@ -40,3 +44,8 @@ X.com profiles are auth-gated; handle `_PoKasuKa_` found in search results but u
 
 ## [2026-04-19] ingest | PolkaSharks 波卡鯊 — vocus.cc content batch
 Fetched 7 articles from https://vocus.cc/salon/Polkasharks. Created: [[sources/polkasharks-ep1-polkadot-intro]], [[sources/polkasharks-ep3-hydration]], [[sources/polkasharks-ep4-mythical-games]], [[sources/polkasharks-ep6-agile-coretime]], [[sources/polkasharks-ep7-regionx]], [[sources/polkasharks-ep10-2024-annual]], [[sources/polkasharks-jam-article]]. Created entities: [[entities/polkasharks]], [[entities/polkadot]], [[entities/mythical-games]]. Created concepts: [[concepts/jam]], [[concepts/agile-coretime]], [[concepts/hydration-omnipool]], [[concepts/regionx]], [[concepts/xcm]]. 15 pages total. Coverage: Polkadot 波卡解碼 EP1/EP3/EP4/EP6/EP7/EP10 + JAM standalone. Missing: EP2, EP5 (peaq/DePIN), EP8 (Astar), EP9 (Algem), 波卡鯊速報 content.
+
+
+## [2026-04-19] ingest | X-band LEO 傳輸器 — 謝書超 NCTU 碩士論文 (2020)
+
+來源：D:/0750203_Thesis_Main.pdf（62頁）。謝書超（Shu-Chao Hsieh），指導教授王毓駒/陳柏宏，NCTU 電子研究所，2020-10。本論文為 XT-144 陣列的 Zero-IF X-band up-converter 子系統，與 [[sources/thesis-aesa-modules-zheng-2021]] 同一 RFVLSI Lab。新建：[[sources/hsieh-xband-leo-transmitter-2020]]（系統規格/四板架構/校正流程/SEM分析/BIST原理），[[concepts/zero-if-transmitter]]（架構比較/LO洩漏/IQ不對稱/DAC量化雜訊），[[concepts/evm-calibration]]（VSA六視窗診斷法/三元搜尋LO校正/IQ Pre-distortion矩陣/低高符號率根因）。更新：[[concepts/aesa]]（新增論文交叉連結），[[sources/thesis-aesa-modules-zheng-2021]]（新增交叉連結）。關鍵洞察：三元搜尋演算法用於 LO leakage 校正；10-bit DAC 才能穩定通過 X-band SEM；BIST 對大型陣列的相位校正具規模化優勢。同步輸出 blog post。

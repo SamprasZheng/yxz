@@ -20,6 +20,9 @@ type: index
 - [[sources/x402-protocol-coinbase-2025]] — x402 協議完整解析：HTTP 402 復活為 AI agent 自動 USDC 支付標準；Coinbase 2025/05 發布；Cloudflare/Google/Solana 等生態支援；每筆 $0.0001、< 2 秒結算；agentic commerce 預估 2030 年媒介 $3–5 兆美元 (ingested 2026-04-19)
 - [[sources/leo-space-datacenter-analysis-2025]] — LEO 太空資料中心產業分析：2025–2026 五大熱點 + 上中下游拆解；台灣廠商競爭力地圖（穩懋/昇達科/華通）（ingested 2026-04-19）
 - [[sources/space-radiation-tid-see-2025]] — 太空輻射深度解析：TID（Co-60/ELDR）、SEE 完整分類（SEU/SET/SEFI/SEL/SEB/SEGR）、RHA 輻射硬化保證；輻射認證為台灣 LEO 供應鏈隱性門檻（ingested 2026-04-19）
+- [[sources/thesis-aesa-modules-zheng-2021]] — NCTU 碩士論文（鄭亦翔/Sampras）：S-band 風電 AESA 模組 + X-band XT-144 LEO 傳輸器可靠度測試（TID/SEE/熱）+ DPD PA 線性化（ingested 2026-04-19）
+- [[sources/hybrid-xband-phased-array-icase-2020]] — iCASE 2020：X-band 混合相位陣列傳輸器（Tron Future Tech × NSPO）；144 元件；EIRP 64 dBm；±65°；800 Mbps 16-APSK（ingested 2026-04-19）
+- [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU 碩士論文（謝書超）：XT-144 用 X-band Zero-IF 傳輸器；QPSK/16APSK 800 Mbps；LO 洩漏/IQ 不對稱校正；三元搜尋演算法；SEM + DAC 量化雜訊分析；BIST 相位校正架構（ingested 2026-04-19）
 
 ## Entities
 
@@ -42,6 +45,8 @@ type: index
 - [[entities/ascend-tech]] — 昇達科技（3491）；濾波器/波導管；已入 Starlink & Kuiper 鏈；毛利 >50%
 - [[entities/huatong-pcb]] — 華通電腦；低軌衛星專用 PCB 全球市佔 ~80%；2025 Q4 LEO 板營收 >155 億新台幣
 - [[entities/google-suncatcher]] — Google 軌道 TPU 算力計畫；光學通訊整合；科技巨頭進場 ODC 的關鍵訊號
+- [[entities/tron-future-tech]] — 台灣 RF/AESA 新創（創未來科技）；S-band 風電雷達（S-Family）+ X-band LEO 傳輸器（XT-144）；NCTU 王毓駒實驗室衍生
+- [[entities/nspo]] — 國家太空中心；台灣 LEO 衛星任務主管機構；XT-144 合作單位；NSPO-P-108083
 - [[entities/polkaworld]] — Largest Polkadot community in Asia since 2019; Chinese/English media; founders Xiaojie Pang & Guanghua Guo; 12 consecutive Treasury approvals; co-hosted Gavin Wood's China JAM Tour (874 attendees)
 - [[entities/shawn-tabrizi]] — Polkadot Technical Fellowship Architect; PBA lead instructor; coined "Polkadot Cloud" framing; "JAM is the beginning of the Polkadot cloud"; shawntabrizi.com
 - [[entities/bill-laboon]] — Web3 Foundation VP of Ecosystem (promoted Nov 2025); former Director of Education; launched Polkadot Agents Program; ex-CS lecturer at U of Pittsburgh
@@ -69,6 +74,11 @@ type: index
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 強於預測；2024-05 G5 超強磁暴創生兩條新暫態輻射帶（6.8–20 MeV 質子帶仍在）；峰值劑量率 2200 μGy/h；LEO RDM 應保守調高
 - [[concepts/cots-gpu-radiation-risk]] — H100 ECC 覆蓋 HBM3+快取但無 TID/SEL 保護；Aitech S-A2300 Orin 2025-05 TID 測試（10 krad 裸機通過，帶鋁屏蔽等效 20 krad）；Starcloud V1 在軌緩解策略
 - [[concepts/taiwan-radiation-test-ecosystem]] — 台灣 2020 年建立輻射測試聯盟；2022 NSPO×台大癌症中心 MoU（超導回旋加速器，2023 起運作）；INER 負責 TID；重離子仍須赴 LBNL/TRIUMF
+- [[concepts/aesa]] — AESA 技術演進（固定→機械→PESA→AESA→全數位）；SWAP 突破；波束成形數學；Tron Future Tech 實作案例
+- [[concepts/hybrid-phased-array]] — 混合相位陣列架構（數位+類比相移）；XT-144 規格：EIRP 64 dBm、±65°、800 Mbps 16-APSK、<90W；冗餘架構
+- [[concepts/dpd-digital-predistortion]] — PA 線性化：無記憶/記憶多項式/NN-LM；NN DPD NMSE −26 dB、ACPR −4 dB；Indirect Learning；CUDA 加速
+- [[concepts/zero-if-transmitter]] — 直接轉換架構：最低 DAC 取樣率；LO 洩漏 + IQ 不對稱為核心挑戰；DAC 量化雜訊 vs SEM；Delta-sigma 雜訊整形
+- [[concepts/evm-calibration]] — EVM 量測 + 校正技術：VSA 六視窗診斷法；LO 洩漏三元搜尋；IQ Pre-distortion 矩陣；低/高符號率 EVM 問題根因
 
 ## Synthesis
 
