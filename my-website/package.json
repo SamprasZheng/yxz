@@ -20,7 +20,10 @@
     "deploy:auto": "node scripts/deploy-github.cjs",
     "daily:local": "yarn generate:living-topics && yarn verify",
     "weekly:local": "yarn generate:weekly-outlook && yarn verify",
-    "weekly:publish": "yarn generate:weekly-outlook && yarn verify && yarn deploy:auto"
+    "weekly:publish": "yarn generate:weekly-outlook && yarn verify && yarn deploy:auto",
+    "video:script": "node scripts/blog-to-script.cjs",
+    "video:audio": "python scripts/tts.py",
+    "video:render": "node scripts/audio-to-video.cjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",

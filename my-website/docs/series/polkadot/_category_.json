@@ -1,10 +1,10 @@
 {
-  "label": "Polkadot 學習路徑",
+  "label": "Polkadot Learning Path",
   "position": 1,
   "link": {
     "type": "generated-index",
     "slug": "/series/polkadot",
-    "title": "Polkadot 系列：從 1.0 到 JAM",
-    "description": "按這個順序讀部落格，能把 Polkadot 從基本概念、2.0 升級、到下一代 JAM 架構的脈絡一次補齊。"
+    "title": "Polkadot Series: From 1.0 to JAM",
+    "description": "Read the blog posts in this order to build a complete picture of Polkadot — from core concepts to the 2.0 upgrade and the next-generation JAM architecture."
   }
 }
