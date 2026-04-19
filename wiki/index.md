@@ -41,6 +41,32 @@ type: index
 - [[concepts/technological-republic]] — Thesis that US power is rooted in state-directed engineering ambition; Silicon Valley has abandoned this heritage for consumer trivialities
 - [[concepts/soft-belief]] — Shared national/cultural purpose and willingness to confront ideas; cultural prerequisite for civilization-scale achievement
 
+- [[sources/x402-protocol-coinbase-2025]] — x402 協議完整解析：HTTP 402 復活為 AI agent 自動 USDC 支付標準；Coinbase 2025/05 發布；Cloudflare/Google/Solana 等生態支援；每筆 $0.0001、< 2 秒結算；agentic commerce 預估 2030 年媒介 $3–5 兆美元 (ingested 2026-04-19)
+
+## Entities (continued)
+
+- [[entities/coinbase]] — 美國加密交易所（NASDAQ: COIN）；x402 協議發起者；Base L2 發行方；CDP 開發者平台
+
+## Concepts (continued)
+
+- [[concepts/x402-protocol]] — HTTP 402 Payment Required 復活為 M2M 自動支付標準；< 2 秒結算；$0.0001/筆；支援 Base/Polygon/Solana/Stellar/Algorand
+- [[concepts/agentic-payments]] — AI agents 無人工介入自主發起支付；涵蓋 API 按次計費、跨 agent 交易、資料按需購買；McKinsey 預估 2030 年 $3–5 兆規模
+
+- [[sources/leo-space-datacenter-analysis-2025]] — LEO 太空資料中心產業分析：2025–2026 五大熱點 + 上中下游拆解；台灣廠商競爭力地圖（穩懋/昇達科/華通）（ingested 2026-04-19）
+
+## Entities (LEO / Space)
+
+- [[entities/starcloud]] — 美國太空算力新創；Starcloud-1 搭載 NVIDIA H100，首個在太空訓練 LLM（2025-11）
+- [[entities/ada-space]] — 中國國家背景軌道超算星座；目標 2800 顆衛星 × 744 TOPS/顆；2025-05 首批 12 顆發射
+- [[entities/win-semiconductors]] — 穩懋半導體（3105）；全球 LEO 規格 PA 代工龍頭
+- [[entities/ascend-tech]] — 昇達科技（3491）；濾波器/波導管；已入 Starlink & Kuiper 鏈；毛利 >50%
+- [[entities/huatong-pcb]] — 華通電腦；低軌衛星專用 PCB 全球市佔 ~80%；2025 Q4 LEO 板營收 >155 億新台幣
+
+## Concepts (LEO / Space)
+
+- [[concepts/orbital-data-center]] — 軌道資料中心（ODC）：太空邊緣算力；7×24 太陽能 + 輻射冷卻；關鍵玩家 Starcloud/Axiom/ADA Space
+- [[concepts/leo-value-chain]] — LEO 產業上中下游：RF元件→PCB→發射→ODC→地面基礎設施→終端應用；台灣缺席中游 C
+
 ## Synthesis
 
 <!-- filed answers to queries go here -->

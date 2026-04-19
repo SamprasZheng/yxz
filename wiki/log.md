@@ -5,6 +5,12 @@
 <!-- grep "^## \[" log.md | tail -10   ← last 10 entries -->
 <!-- grep "^## \[.*\] ingest" log.md   ← all ingests -->
 
+## [2026-04-19] ingest | LEO 太空資料中心產業分析 2025–2026
+User-provided synthesis。建立 [[sources/leo-space-datacenter-analysis-2025]]（五大熱點 + 上中下游完整拆解）。新實體：[[entities/starcloud]]（首個在軌 LLM 訓練，搭載 H100）、[[entities/ada-space]]（中國 2800 顆軌道超算星座，744 TOPS/顆）、[[entities/win-semiconductors]]（穩懋 3105，LEO PA 代工龍頭）、[[entities/ascend-tech]]（昇達科 3491，濾波器/波導管，毛利 >50%）、[[entities/huatong-pcb]]（華通，低軌 PCB 全球八成市佔，2025 Q4 >155 億新台幣）。新概念：[[concepts/orbital-data-center]]（ODC：7×24 太陽能 + 輻射冷卻；Bezos 長期成本判斷；在軌 AI 場景）、[[concepts/leo-value-chain]]（上中下游台灣競爭力地圖；結構性缺口：中游 C ODC 硬體整合幾乎缺席）。共 8 個新頁面。領域首次：RF/硬體/太空產業線。
+
+## [2026-04-19] ingest | x402 Protocol — Coinbase Internet-Native Payments Standard (2025)
+Web search-based ingest，來源：x402.org、Coinbase CDP docs、Cloudflare blog、AWS、CoinDesk 等。建立 [[sources/x402-protocol-coinbase-2025]]（技術流程、產業支援、應用場景、市場數據）、[[entities/coinbase]]（交易所 + x402/Base/CDP）、[[concepts/x402-protocol]]（HTTP 402 復活、< 2 秒結算、$0.0001/筆、支援 5 條鏈）、[[concepts/agentic-payments]]（AI agent 自主支付框架、McKinsey $3–5 兆預測）。4 個新頁面。與現有 [[concepts/xcm]] 有 M2M 自動化支付的概念交集，但屬不同生態（x402=HTTP+USDC，XCM=Polkadot 跨鏈）。現況注意：2026 Q1 真實交易量僅 $28,000/日，商業需求仍待驗證。
+
 ## [2026-04-19] ingest | The Technological Republic — Karp & Zamiska (2025)
 User-provided summary. Created [[sources/technological-republic-karp-2025]], [[entities/alexander-karp]], [[entities/palantir]], [[concepts/technological-republic]], [[concepts/soft-belief]]. 5 new pages. No cross-references to existing Polkadot content (different domain). Notable: first non-crypto/non-Polkadot source in the wiki — AI/geopolitics domain.
 
