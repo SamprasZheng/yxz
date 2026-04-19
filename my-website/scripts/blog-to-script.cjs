@@ -134,6 +134,7 @@ async function main() {
   const draft = {
     title,
     slug,
+    blogFilePath: filePath,
     ogImagePath: ogImagePath && fs.existsSync(ogImagePath) ? ogImagePath : null,
     script,
   };

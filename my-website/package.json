@@ -25,6 +25,7 @@
     "video:audio": "D:\\ai_streamer\\venv\\Scripts\\python.exe scripts/tts.py",
     "video:render": "node scripts/audio-to-video.cjs",
     "video:upload": "node scripts/youtube-upload.cjs",
+    "video:embed": "node scripts/embed-video.cjs",
     "video:publish": "node scripts/video-pipeline.cjs"
   },
   "dependencies": {

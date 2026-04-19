@@ -59,7 +59,7 @@ async function main() {
 
   const blogArg = args.find((a) => !a.startsWith("--")) || "";
   const doUpload = args.includes("--upload");
-  const privacy = (args.find((a) => ["--public", "--unlisted", "--private"].includes(a)) || "--private").slice(2);
+  const privacy = (args.find((a) => ["--public", "--unlisted", "--private"].includes(a)) || "--public").slice(2);
 
   if (!blogArg) {
     console.error("Missing blog file or slug argument.");
@@ -103,10 +103,14 @@ async function main() {
   if (doUpload) {
     console.log("\n[4/4] Uploading to YouTube...");
     run("node", ["scripts/youtube-upload.cjs", slug, `--${privacy}`]);
+
+    console.log("\n[5/5] Embedding TLDR in blog post...");
+    run("node", ["scripts/embed-video.cjs", slug]);
   } else {
     const draft = JSON.parse(fs.readFileSync(draftPath, "utf-8"));
-    console.log(`\n[4/4] Skipped upload. To upload:`);
-    console.log(`   node scripts/youtube-upload.cjs ${slug} --private`);
+    console.log(`\n[4/4] Skipped upload. To upload + embed:`);
+    console.log(`   node scripts/youtube-upload.cjs ${slug} --public`);
+    console.log(`   node scripts/embed-video.cjs ${slug}`);
     console.log(`   MP4: ${draft.mp4Path}`);
   }
 

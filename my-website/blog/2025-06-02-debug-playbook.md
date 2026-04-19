@@ -11,6 +11,19 @@ Bugs in NPI (New Product Introduction) are rarely a pure "typo on line N" softwa
 
 This post writes out the checklist I use on Wi-Fi / RF SoC product lines to "classify first, then find root cause" — so any new case can be screened systematically.
 
+
+:::info 📺 影片版 TLDR
+<iframe
+  width="100%"
+  style={{aspectRatio: '16/9'}}
+  src="https://www.youtube.com/embed/356hMg9Vdr8"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
+/>
+:::
+
 <!-- truncate -->
 
 ## Layer 1: Hardware (HW)
