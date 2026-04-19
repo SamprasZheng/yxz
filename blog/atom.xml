@@ -185,6 +185,70 @@
         <category label="macro" term="macro"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Space Radiation Testing in the New Space Era: When the Rules Change]]></title>
+        <id>https://SamprasZheng.github.io/yxz/blog/new-space-radiation-reality</id>
+        <link href="https://SamprasZheng.github.io/yxz/blog/new-space-radiation-reality"/>
+        <updated>2026-04-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Matthew Gill of Space Radiation Services makes a contrarian case: sometimes skipping radiation testing is the right call. Here's what New Space companies actually face — and what the data says about on-orbit failures.]]></summary>
+        <content type="html"><![CDATA[<p>The traditional space industry has a simple answer to radiation qualification: test everything, apply 2× design margin, use MIL-spec parts. That answer costs time and money that New Space companies often don't have. <a href="https://www.spaceradiationservices.com/about" target="_blank" rel="noopener noreferrer">Matthew Gill</a> — PhD nuclear engineer, former Director at Apollo Fusion, consultant on radiation for over 200 systems sold to Maxar, Airbus, OneWeb, and York Space — makes a more nuanced argument. Sometimes skipping formal radiation testing is the right engineering decision.</p>
+<p>Here's what I took from his work.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-environment-varies-more-than-you-think">The Environment Varies More Than You Think<a href="https://sampraszheng.github.io/yxz/blog/new-space-radiation-reality#the-environment-varies-more-than-you-think" class="hash-link" aria-label="Direct link to The Environment Varies More Than You Think" title="Direct link to The Environment Varies More Than You Think">​</a></h2>
+<p>Before getting into testing philosophy, the key calibration is: <strong>not all orbits are equal</strong>.</p>
+<p>Nine charts from Gill's <a href="https://www.spaceradiationservices.com/post/key-space-radiation-insights" target="_blank" rel="noopener noreferrer">key radiation insights post</a> that I keep coming back to:</p>
+<table><thead><tr><th>Insight</th><th>Implication</th></tr></thead><tbody><tr><td>Radiation is a common failure source for high-reliability satellites</td><td>Even curated, tested hardware fails</td></tr><tr><td>COTS parts fail when TID exceeds ~25 krad(Si)</td><td>Most COTS has a hard ceiling below typical LEO mission dose</td></tr><tr><td>Shielding has limited value for TID in high LEO / MEO</td><td>You can't bulk-shield your way out of the problem</td></tr><tr><td>High LEO (&gt;1000 km) SEE rates can be <strong>worse than GEO</strong></td><td>Counterintuitive — altitude is not monotonically safer</td></tr><tr><td>Inclination significantly affects SEE rates</td><td>Two missions at the same altitude but different inclinations are not equivalent</td></tr><tr><td>Shielding cannot prevent destructive SEE (SEL, SEB, SEGR)</td><td>No amount of aluminum stops a single heavy ion from latching up a MOSFET</td></tr><tr><td>De-rating power devices reduces destructive SEE risk</td><td>One of few cost-effective hardware mitigations</td></tr><tr><td>Proton SEE testing has limits vs. heavy ion</td><td>Proton data alone may underestimate sensitivity to heavy GCR ions</td></tr></tbody></table>
+<p>The practical takeaway: if you're building for sun-synchronous orbit at 500–600 km with a 2-year mission, your total dose budget is manageable. If you're at 1200 km polar orbit for 5 years, you're in a different regime entirely. <a href="https://www.spaceradiationservices.com/post/radiation-in-different-orbit-model" target="_blank" rel="noopener noreferrer">His free orbit models</a> let you sanity-check both scenarios before committing to a test plan.</p>
+<p>For a quick engineering estimate of your own mission, the calculator on my earlier <a href="https://sampraszheng.github.io/yxz/blog/radtest">Radiation Test Playbook</a> post covers the same trade-space interactively.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="when-skipping-testing-is-defensible">When Skipping Testing Is Defensible<a href="https://sampraszheng.github.io/yxz/blog/new-space-radiation-reality#when-skipping-testing-is-defensible" class="hash-link" aria-label="Direct link to When Skipping Testing Is Defensible" title="Direct link to When Skipping Testing Is Defensible">​</a></h2>
+<p>This is where Gill's perspective diverges from textbook aerospace. From his <a href="https://www.spaceradiationservices.com/post/new-space-radiation-testing" target="_blank" rel="noopener noreferrer">February 2024 post</a>:</p>
+<p><strong>Case 1 — Short demonstration missions</strong></p>
+<p>A proof-of-concept payload on a 6-month LEO demo doesn't need the same qualification standard as a 7-year GEO communications satellite. The TID budget is low, mission criticality is bounded, and the cost of testing may exceed the value of the information it generates. Fail fast, learn, iterate.</p>
+<p><strong>Case 2 — Long missions where the math works without testing</strong></p>
+<p>If you've done orbit dose analysis, chosen components with known heritage, applied COTS selection rules, and the failure probability is within your risk budget — testing may not add enough information to justify the cost. This is the actuarial version of radiation engineering.</p>
+<p>The catch: "most situations require formal testing." This isn't a license to ignore radiation. It's a decision framework.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-the-on-orbit-data-actually-shows">What the On-Orbit Data Actually Shows<a href="https://sampraszheng.github.io/yxz/blog/new-space-radiation-reality#what-the-on-orbit-data-actually-shows" class="hash-link" aria-label="Direct link to What the On-Orbit Data Actually Shows" title="Direct link to What the On-Orbit Data Actually Shows">​</a></h2>
+<p>The most honest section of Gill's <a href="https://www.spaceradiationservices.com/post/on-orbit-radiation-failures-and-published-data" target="_blank" rel="noopener noreferrer">September 2023 post</a> is the admission: reliable on-orbit failure attribution data is <strong>almost impossible to get</strong>. Companies rarely disclose causes; failures are hard to characterize even when observed.</p>
+<p>What we do know:</p>
+<ul>
+<li><strong>Device resets are the dominant early failure mode</strong> in LEO — primarily affecting radios and onboard computers</li>
+<li>The most commonly cited concrete data point: <strong>Xilinx Zynq-7000 at 800 km altitude — approximately 3 SEU-induced resets per day</strong>, caused by the absence of built-in ECC on its internal SRAM</li>
+<li>Standard 6-source reference set from NASA, NSREC, and Petersen methodology remains the empirical baseline; not much has been published since</li>
+</ul>
+<p>The Zynq example is clarifying. The Zynq-7000 is one of the most widely used SoCs in CubeSat and small satellite platforms. Three resets per day is operationally significant — it's not a catastrophic failure, but it means your system is rebooting itself multiple times daily, losing state, and potentially corrupting mission data. The fix (external ECC, scrubbing, watchdog recovery) is well-understood; skipping it because "we're using COTS" is an engineering error, not a cost saving.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="risk-mitigation-without-full-testing">Risk Mitigation Without Full Testing<a href="https://sampraszheng.github.io/yxz/blog/new-space-radiation-reality#risk-mitigation-without-full-testing" class="hash-link" aria-label="Direct link to Risk Mitigation Without Full Testing" title="Direct link to Risk Mitigation Without Full Testing">​</a></h2>
+<p>For programs where formal TID/SEE testing isn't feasible, Gill recommends a hierarchy of alternatives:</p>
+<ol>
+<li><strong>Use hardware with flight heritage</strong> — even without specific test documentation, something that has flown successfully has empirical evidence of survival</li>
+<li><strong>Mine public radiation databases</strong> — NSREC and RADECS conference proceedings contain test data for common components, especially microcontrollers and FPGAs; the data exists, it just takes effort to find</li>
+<li><strong>Avoid complex ICs with no history</strong> — dense power management ICs with no test data are high-risk; simpler discrete designs are more predictable</li>
+<li><strong>Apply standard design-level mitigations</strong> — ECC/memory scrubbing, watchdog timers, redundancy, power de-rating, current limiting, and health monitoring add meaningful protection at low cost</li>
+</ol>
+<p>The underlying logic: radiation engineering is risk management, not binary pass/fail. You can reduce the expected failure rate substantially through design choices without a single trip to an accelerator facility.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-taiwan-leo-supply-chain-angle">The Taiwan LEO Supply Chain Angle<a href="https://sampraszheng.github.io/yxz/blog/new-space-radiation-reality#the-taiwan-leo-supply-chain-angle" class="hash-link" aria-label="Direct link to The Taiwan LEO Supply Chain Angle" title="Direct link to The Taiwan LEO Supply Chain Angle">​</a></h2>
+<p>Reading Gill's framework from a Taiwan supply chain perspective (穩懋, 昇達科, 華通 are the dominant upper-tier suppliers), there's a structural observation that rarely gets discussed:</p>
+<p><strong>Radiation test certification is an invisible entry barrier.</strong> These companies have evidently passed some form of TID qualification to be in Starlink and Kuiper supply chains — but Taiwan has no domestic heavy-ion accelerator or large Co-60 facility capable of full SEE+TID qualification to MIL-STD-883 TM1019 standards.</p>
+<p>Every certification cycle currently requires overseas travel (LBNL in Berkeley, TRIUMF in Vancouver, GANIL in France, GSI in Germany). For a Tier-1 supplier to a Tier-1 satellite constellation, that's manageable overhead. For a new entrant trying to qualify a novel component, it's a significant time and cost multiplier.</p>
+<p>Gill's position is that the traditional testing industry is "rigid and slow" — which is exactly why he founded Space Radiation Services to offer flexible, cost/schedule-aware consulting. The same market gap that created his consultancy exists in Asia: the testing infrastructure that would let Taiwan's hardware ecosystem iterate faster simply isn't here yet.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="resources">Resources<a href="https://sampraszheng.github.io/yxz/blog/new-space-radiation-reality#resources" class="hash-link" aria-label="Direct link to Resources" title="Direct link to Resources">​</a></h2>
+<ul>
+<li>Matthew Gill's blog: <a href="https://www.spaceradiationservices.com/blog" target="_blank" rel="noopener noreferrer">spaceradiationservices.com</a></li>
+<li>Free TID and SEE orbit models: <a href="https://www.spaceradiationservices.com/free-radiation-tools" target="_blank" rel="noopener noreferrer">spaceradiationservices.com/free-radiation-tools</a></li>
+<li>Radiation GPT (Gill's AI assistant for radiation questions): on the same site</li>
+<li>NSREC proceedings (public SEE data): <a href="https://nsrec.com/" target="_blank" rel="noopener noreferrer">nsrec.com</a></li>
+<li>My earlier <a href="https://sampraszheng.github.io/yxz/blog/radtest">Radiation Test Playbook</a> with orbit calculators</li>
+</ul>]]></content>
+        <author>
+            <name>Sampras Zheng</name>
+            <uri>https://github.com/SamprasZheng</uri>
+        </author>
+        <category label="space" term="space"/>
+        <category label="rf" term="rf"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2026 Tech Roadmap: AI in Space, Crypto Infrastructure, RF SATCOM, and Radiation Validation]]></title>
         <id>https://SamprasZheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026</id>
         <link href="https://SamprasZheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026"/>
@@ -318,6 +382,7 @@
         <summary type="html"><![CDATA[A systematic debug checklist for wireless/SoC product engineers — from PCB layer to OTP programming, ATE test scripts, and environmental compatibility, covering common bug types and root-cause entry points at every layer.]]></summary>
         <content type="html"><![CDATA[<p>Bugs in NPI (New Product Introduction) are rarely a pure "typo on line N" software issue — eight out of ten are <strong>cross-layer interactions</strong>: hardware design passes but SMT variation breaks a batch; ATE passes but the system hits a firmware corner case due to a different profile; works fine in the lab but coexistence interference surfaces only in the customer's environment.</p>
 <p>This post writes out the checklist I use on Wi-Fi / RF SoC product lines to "classify first, then find root cause" — so any new case can be screened systematically.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>📺 影片版 TLDR</div><div class="admonitionContent_BuS1"><iframe width="100%" style="aspect-ratio:16/9" src="https://www.youtube.com/embed/356hMg9Vdr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-1-hardware-hw">Layer 1: Hardware (HW)<a href="https://sampraszheng.github.io/yxz/blog/debug#layer-1-hardware-hw" class="hash-link" aria-label="Direct link to Layer 1: Hardware (HW)" title="Direct link to Layer 1: Hardware (HW)">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="design-phase">Design Phase<a href="https://sampraszheng.github.io/yxz/blog/debug#design-phase" class="hash-link" aria-label="Direct link to Design Phase" title="Direct link to Design Phase">​</a></h3>
 <table><thead><tr><th>Item</th><th>Common bugs</th></tr></thead><tbody><tr><td>Symbol / Package / Pin</td><td>Wrong footprint, pin swap, power/ground routed to wrong layer</td></tr><tr><td>Schematic</td><td>Power sequence, clock tree, RF matching — missing components or misuse</td></tr><tr><td>Simulation</td><td>S-parameters not verified, antenna tuning based on simulator results only</td></tr></tbody></table>
