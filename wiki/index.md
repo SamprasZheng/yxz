@@ -20,9 +20,11 @@ type: index
 - [[sources/x402-protocol-coinbase-2025]] — x402 協議完整解析：HTTP 402 復活為 AI agent 自動 USDC 支付標準；Coinbase 2025/05 發布；Cloudflare/Google/Solana 等生態支援；每筆 $0.0001、< 2 秒結算；agentic commerce 預估 2030 年媒介 $3–5 兆美元 (ingested 2026-04-19)
 - [[sources/leo-space-datacenter-analysis-2025]] — LEO 太空資料中心產業分析：2025–2026 五大熱點 + 上中下游拆解；台灣廠商競爭力地圖（穩懋/昇達科/華通）（ingested 2026-04-19）
 - [[sources/space-radiation-tid-see-2025]] — 太空輻射深度解析：TID（Co-60/ELDR）、SEE 完整分類（SEU/SET/SEFI/SEL/SEB/SEGR）、RHA 輻射硬化保證；輻射認證為台灣 LEO 供應鏈隱性門檻（ingested 2026-04-19）
+- [[entities/matthew-gill]] — Space Radiation Services 創辦人/CEO；PhD 核工；>200 系統 TID/SEE 測試；New Space 務實測試哲學；Xilinx Zynq-7000 3 resets/day 數據
 
 ## Entities
 
+- [[entities/matthew-gill]] — Space Radiation Services founder/CEO; PhD Nuclear Engineering; New Space pragmatic testing philosophy; Zynq-7000 3 SEU-resets/day benchmark; spaceradiationservices.com
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; 波卡解碼 & 波卡鯊速報 series
 - [[entities/polkadot]] — Layer-0 relay chain + parachain protocol; DOT token; JAM roadmap; DOT hard cap March 2026
 - [[entities/mythical-games]] — Web3 gaming studio; migrated ETH→Polkadot 2024; MYTH token; NFL Rivals, Nitro Nation
