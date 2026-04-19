@@ -37,15 +37,27 @@ Developers purchase "core time" in DOT to run services — analogous to gas fees
 
 ## Status
 
-- Gray paper published: Q2 2024
-- Community approval: May 2024 (31M+ DOT in support)
-- Development timeline: ~2 years to full deployment (mainnet target ~2026)
+| Milestone | Date |
+|---|---|
+| Gray Paper v0.6 published | Q2 2024 |
+| Community approval | May 2024 (31M+ DOT in support) |
+| JAM Toaster (1,023-node test cluster) | 2025 |
+| Gray Paper v0.8 (near-final pre-audit) | Early 2026 |
+| JAM Testnet (open network) | January 2026 |
+| JAM Mainnet | Post-2026 (stabilization phase through 2026) |
+
+Gavin Wood's framing (2025):
+> *"After EVM, JAM will become the new industry consensus."*
+
+Community debate: whether to call the JAM transition **"Polkadot 3.0"** — supporters see it as a clear system upgrade; critics argue this undersells JAM as a foundational transformation beyond versioning.
 
 ## Sources
 
 - [[sources/polkasharks-jam-article]] — most detailed PolkaSharks coverage
 - [[sources/polkasharks-ep1-polkadot-intro]] — first mention
 - [[sources/polkasharks-ep10-2024-annual]] — deployment context
+- [[sources/gavin-wood-second-era-2025]] — Berlin Web3 Summit framing
+- [[sources/polkadot-roundup-2025]] — 2026 roadmap and testnet status
 
 ## Related concepts
 

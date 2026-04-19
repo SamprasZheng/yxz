@@ -21,7 +21,7 @@ tags: [leo, space, data-center, ai, edge-computing, energy, hybrid-cloud, defens
 
 ## 三大核心要素
 
-1. **算力**：商用 GPU（如 NVIDIA H100）需進行輻射防護或選用太空硬化元件；商用現貨（COTS）與太空硬化（Space-hardened）之間的取捨是最大工程挑戰。
+1. **算力**：商用 GPU（如 NVIDIA H100）需進行輻射防護或選用太空硬化元件；商用現貨（COTS）與太空硬化（Space-hardened）之間的取捨是最大工程挑戰。COTS GPU 最主要的輻射威脅是 [[concepts/see-single-event-effects]]（SEU 翻轉 SRAM 快取 + SEL 閂鎖燒毀），需通過 [[concepts/rha-radiation-hardening]] 認證流程（RDM ≥ 1.5）。
 2. **電信**：透過光學鏈路（如 Kepler Communications 光學中繼網）連接地面與其他節點；ISL 光學通訊決定節點間延遲。
 3. **儲存**：低延遲在軌快取 + 批量下傳地面；地空 DC 混合架構（見下）是最可行的商業落點。
 
