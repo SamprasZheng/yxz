@@ -23,7 +23,8 @@
     "weekly:publish": "yarn generate:weekly-outlook && yarn verify && yarn deploy:auto",
     "handdrawn:scene": "node scripts/handdrawn-poc/blog-to-handdrawn-scene.cjs",
     "handdrawn:render": "node scripts/handdrawn-poc/render-mp4.cjs",
-    "handdrawn:video": "node scripts/handdrawn-poc/handdrawn-pipeline.cjs"
+    "handdrawn:video": "node scripts/handdrawn-poc/handdrawn-pipeline.cjs",
+    "upload:youtube": "node scripts/upload-youtube.cjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
