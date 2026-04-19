@@ -26,7 +26,7 @@ except ModuleNotFoundError:
     sys.exit(1)
 
 DRAFTS_DIR = Path(__file__).parent / "video-drafts"
-DEFAULT_VOICE = "zh-TW-HsiaoChenNeural"
+DEFAULT_VOICE = "en-US-GuyNeural"
 
 
 async def main() -> None:

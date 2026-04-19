@@ -109,20 +109,20 @@ async function main() {
   console.log(`   Slug: ${slug}`);
   console.log(`   OG image: ${ogImagePath && fs.existsSync(ogImagePath) ? ogImagePath : "(not found)"}\n`);
 
-  const systemPrompt = `你是一位科技 YouTuber 的腳本撰稿人，專長是 RF 硬體工程與區塊鏈。
-任務：把技術部落格文章改寫成適合口說旁白的繁體中文腳本。
+  const systemPrompt = `You are a scriptwriter for a tech YouTube channel specialising in RF/hardware engineering and blockchain.
+Task: rewrite a technical blog post into a natural spoken-word English narration script.
 
-撰寫規則：
-- 使用口語化、流暢的繁體中文，語氣自然像在跟朋友解釋
-- 每段 3-5 個句子，不超過 70 字，段落之間空一行
-- 術語第一次出現時用括號加白話解釋，例如「OTP（一次性寫入的晶片設定記憶體）」
-- 不要直接念出 Markdown 標題層級，改用引導語，例如「先來看硬體層面」
-- 不念清單符號、表格、程式碼；把重點資訊融入口說句子
-- 🎯 等 emoji 改用「重點來了」「關鍵是」等說法帶過
-- 開頭：1-2 句吸引人的 hook，點出這篇文章的核心價值或痛點
-- 結尾：20-30 字的 call-to-action，邀請訂閱或留言
+Rules:
+- Use conversational, flowing English — sound like you're explaining to a smart colleague, not reading a paper
+- 3-5 sentences per paragraph, blank line between paragraphs
+- On first use, briefly define jargon in parentheses, e.g. "OTP (one-time programmable memory — write-once chip config)"
+- Never read out Markdown heading levels; use natural transitions like "Let's start with the hardware layer"
+- Skip bullet symbols, tables, and code blocks; weave the key points into spoken sentences
+- Treat emojis like 🎯 as emphasis cues — say "The key takeaway here is..." instead
+- Opening: 1-2 hook sentences that surface the core problem or value of this post
+- Closing: a 20-30 word call-to-action — invite viewers to subscribe or leave a comment
 
-輸出：純文字，段落之間空行分隔，不加段落編號或任何 Markdown 標記`;
+Output: plain text only, paragraphs separated by blank lines, no numbering or Markdown markup`;
 
   const script = await callClaude(
     systemPrompt,

@@ -21,6 +21,7 @@
 ANTHROPIC_API_KEY=<from env or .env.local> node scripts/blog-to-script.cjs <blog-file>
 ```
 執行完成後，讀取 `scripts/video-drafts/<slug>.json` 顯示腳本預覽（前 500 字）。
+腳本為**英文**，語氣與 blog 文章一致。
 詢問用戶：「腳本是否滿意？是否需要修改？(y/n)」
 - 如果需要修改：讓用戶說明修改方向，直接編輯 JSON 中的 `script` 欄位，再確認一次
 - 滿意則繼續
@@ -50,6 +51,20 @@ node scripts/youtube-upload.cjs <slug> --<privacy>
 完成後顯示 YouTube URL，並提醒：
 - 若上傳為 private，記得在 YouTube Studio 補充縮圖、說明、標籤
 - 確認無誤後再改為 public
+
+### Step 5 — 嵌入 Blog 並部署
+執行：
+```bash
+node scripts/embed-video.cjs <slug>
+```
+完成後顯示修改的 blog 檔案路徑與 YouTube URL。
+
+提交並部署：
+```bash
+git add my-website/blog/<blog-file>
+git commit -m "feat(video): embed YouTube TLDR in <slug> post"
+GIT_USER=SamprasZheng yarn deploy
+```
 
 ## 注意事項
 - 所有指令在 `my-website/` 目錄下執行
