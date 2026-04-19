@@ -16,6 +16,8 @@ type: index
 - [[sources/polkasharks-jam-article]] — JAM deep-dive: RISC-V, 3.4M TPS, async model, 3 entry functions (2025-02-24)
 - [[sources/gavin-wood-second-era-2025]] — Berlin Web3 Summit July 2025: DOT hard cap 2.1B, Proof of Personhood, pUSD, validator halving, Polkadot Hub
 - [[sources/polkadot-roundup-2025]] — Gavin Wood annual roundup: Hub migration (1.6B DOT/8hr), 100K TPS, 2026 roadmap (NOMT, BASTI, CoreChain)
+- [[sources/newtype-huangyihe-reference]] — newtype 社群完整解析：付費社群模型（380+成員/150天）、AI學習工作流（Gemini→NotebookLM→Cursor）、多Agent架構（Chief/Deputy/Specialist）、Super Analyst Claude Skill
+- [[sources/chichieh-huang-site-reference]] — chichieh-huang.com 站點參考：Chirpy Jekyll、兩層分類法、雙語發文、Medium sync；改進 yxz 的設計/內容策略參考
 - [[sources/technological-republic-karp-2025]] — *The Technological Republic* (2025): Karp/Zamiska manifesto calling for tech-gov alliance, AI-era patriotism, "new Manhattan Project"; NYT #1 bestseller
 - [[sources/x402-protocol-coinbase-2025]] — x402 協議完整解析：HTTP 402 復活為 AI agent 自動 USDC 支付標準；Coinbase 2025/05 發布；Cloudflare/Google/Solana 等生態支援；每筆 $0.0001、< 2 秒結算；agentic commerce 預估 2030 年媒介 $3–5 兆美元 (ingested 2026-04-19)
 - [[sources/leo-space-datacenter-analysis-2025]] — LEO 太空資料中心產業分析：2025–2026 五大熱點 + 上中下游拆解；台灣廠商競爭力地圖（穩懋/昇達科/華通）（ingested 2026-04-19）
@@ -32,6 +34,7 @@ type: index
 - [[entities/alice-und-bob]] — Tommi Enenkel; Polkadot Head Ambassador; ChaosDAO + OpenGov.Watch co-founder; ~30K X followers
 - [[entities/insight-caijing]] — Chinese crypto media (insightcj.com); DOT coverage primarily 2021 bull cycle; YouTube/Bilibili/X presence
 - [[entities/ycc-duo-nine]] — Duo Nine YCC (@DU09BTC); Western crypto educator; occasional DOT TA; Bitcoin-first altcoin skeptic
+- [[entities/huangyihe]] — newtype 社群主理人；AI × 個人主權定位；多 agent 架構實踐者；Claude Skill 開發者
 - [[entities/alexander-karp]] — Palantir CEO, social theory PhD, author of *The Technological Republic*; advocates defense-tech patriotism
 - [[entities/palantir]] — US defense/intelligence data analytics company (Gotham, Foundry, AIP); co-founded by Karp and Peter Thiel
 - [[entities/coinbase]] — 美國加密交易所（NASDAQ: COIN）；x402 協議發起者；Base L2 發行方；CDP 開發者平台
@@ -64,3 +67,5 @@ type: index
 ## Synthesis
 
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × 台灣「上游很強、中游 C 缺席」結構性缺口；ODC 商業化窗口與三條突圍路徑（PCB 整合 / 國防催生 / 上游延伸）
+- [[synthesis/site-reference-chichieh-huang]] — chichieh-huang.com vs yxz 對比分析；6 大改進方向 + 優先行動清單（About 改版 / 分類法 / 雙語 / RSS / Archives）
+- [[synthesis/site-reference-newtype]] — newtype × yxz 改進分析：讀者身份定位、agent=新內容、wiki→blog管道、多平台同步、skill公開化；整合版優先行動清單 — chichieh-huang.com vs yxz 對比分析；6 大改進方向 + 優先行動清單（About 改版 / 分類法 / 雙語 / RSS / Archives） — 2026 LEO × 台灣「上游很強、中游 C 缺席」結構性缺口；ODC 商業化窗口與三條突圍路徑（PCB 整合 / 國防催生 / 上游延伸）

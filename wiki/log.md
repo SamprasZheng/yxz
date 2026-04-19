@@ -5,6 +5,12 @@
 <!-- grep "^## \[" log.md | tail -10   ← last 10 entries -->
 <!-- grep "^## \[.*\] ingest" log.md   ← all ingests -->
 
+## [2026-04-19] ingest | newtype 社群 — huangyihe (newtype.pro)
+Fetched homepage、about、核心文章 ×4（newtype定義、AI學習工作流、AI內容創作系統、Claude Skill、比GenAI更大的機會）、Medium社群介紹。Created [[sources/newtype-huangyihe-reference]]、[[entities/huangyihe]]。Filed [[synthesis/site-reference-newtype]]：6大改進方向（讀者身份定位 / agent=新內容 / wiki→blog管道 / 多平台同步 / skill公開化 / 付費社群長期）+ 整合兩份參考的優先行動清單（9項）。關鍵洞察：「Agent即新內容」範式 + wiki→blog上下游管道 是 yxz 最高槓桿改進點。
+
+## [2026-04-19] ingest | chichieh-huang.com — site reference for yxz improvement
+Fetched homepage, about, categories, archives. Created [[sources/chichieh-huang-site-reference]]. Filed improvement synthesis as [[synthesis/site-reference-chichieh-huang]]: 6 actionable areas (About page redesign ⭐⭐⭐, categories taxonomy ⭐⭐⭐, RSS navbar ⭐⭐, archives page ⭐⭐, bilingual posts ⭐, Medium sync ⭐). Key insight: chichieh-huang's edge is content depth + taxonomy clarity, not tech stack — Docusaurus + wiki architecture already surpasses Jekyll/Chirpy.
+
 ## [2026-04-19] synthesis | LEO × 台灣「中游 C 缺席」結構性缺口
 首篇 synthesis 產出：[[synthesis/leo-taiwan-odc-gap]]。整合 [[sources/leo-space-datacenter-analysis-2025]] + [[concepts/orbital-data-center]] + [[concepts/leo-value-chain]]，提出台灣「上游龍頭、中游 C 缺席」論點；給出三條突圍路徑（上游廠商系統化 / PCB 廠整合板延伸 / 國防主權雲催生）與 2026–2028 商業化窗口時程。同步釋出對外長文到 blog：`/blog/leo-odc-taiwan-gap`。更新 [[index]] 新增 Synthesis 區塊第一筆。
 

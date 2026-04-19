@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /d/DOT/yxz -maxdepth 2 -type f -name .cursorrules -o -name .claude* -o -name *copilot* -o -name docusaurus.config.js -o -name tsconfig.json -o -name .github)",
+      "Bash(mkdir -p /d/DOT/yxz/.claude/agents)",
+      "Bash(cp ~/.claude/agents/git-commit-push.md /d/DOT/yxz/.claude/agents/git-commit-push.md)",
+      "Bash(rm ~/.claude/agents/git-commit-push.md)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:gist.github.com)",
+      "Bash(gh pr create --title 'feat: LLM wiki docs, Obsidian vault, and ingest/lint skills' --body ' *)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/User/AppData/Local/Programs/**)",
+      "Bash(find /c -name \"gh.exe\")",
+      "WebSearch",
+      "WebFetch(domain:vocus.cc)",
+      "WebFetch(domain:linktr.ee)",
+      "WebFetch(domain:x.com)",
+      "WebFetch(domain:bento.me)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:www.youtube.com)",
+      "WebFetch(domain:aliceundbob.medium.com)",
+      "Bash(node scripts/embed-video.cjs debug)",
+      "Bash(GIT_USER=SamprasZheng yarn deploy)"
+    ]
+  }
+}
