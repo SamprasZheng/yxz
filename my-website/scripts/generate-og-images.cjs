@@ -70,40 +70,20 @@ function parseFrontMatter(raw) {
 }
 
 /**
- * Break title into lines of roughly charsPerLine (CJK counts as 2).
- * Keeps words intact for Latin, hard-wraps otherwise.
+ * Break English title into lines of roughly charsPerLine characters.
+ * Word-wraps on whitespace boundaries only.
  */
-function wrapTitle(title, charsPerLine = 28, maxLines = 4) {
-  const weight = (ch) => (/[\u4e00-\u9fff\u3400-\u4dbf\u3000-\u303f\uff00-\uffef]/.test(ch) ? 2 : 1);
+function wrapTitle(title, charsPerLine = 34, maxLines = 4) {
   const tokens = title.split(/(\s+)/);
   const lines = [];
   let cur = '';
-  let curW = 0;
   for (const tok of tokens) {
-    const tokW = [...tok].reduce((s, c) => s + weight(c), 0);
-    if (curW + tokW > charsPerLine && cur.trim()) {
+    if (cur.length + tok.length > charsPerLine && cur.trim()) {
       lines.push(cur.trim());
       cur = '';
-      curW = 0;
       if (lines.length === maxLines) break;
     }
-    // Hard-wrap long unbroken CJK token
-    if (tokW > charsPerLine) {
-      for (const c of tok) {
-        const w = weight(c);
-        if (curW + w > charsPerLine) {
-          lines.push(cur);
-          cur = '';
-          curW = 0;
-          if (lines.length === maxLines) break;
-        }
-        cur += c;
-        curW += w;
-      }
-    } else {
-      cur += tok;
-      curW += tokW;
-    }
+    cur += tok;
   }
   if (cur.trim() && lines.length < maxLines) lines.push(cur.trim());
   if (lines.length === maxLines && cur && !lines[lines.length - 1].endsWith('…')) {
@@ -121,7 +101,7 @@ function pickTheme(tags) {
 }
 
 function buildSVG({ title, tags, theme }) {
-  const lines = wrapTitle(title, 26, 4);
+  const lines = wrapTitle(title, 34, 4);
   const lineHeight = 82;
   const startY = 300 - ((lines.length - 1) * lineHeight) / 2;
   const titleTspans = lines
@@ -135,7 +115,7 @@ function buildSVG({ title, tags, theme }) {
       return `
         <g transform="translate(${x} 520)">
           <rect rx="18" ry="18" width="120" height="44" fill="rgba(255,255,255,0.06)" stroke="${theme.accent}" stroke-width="1.5"/>
-          <text x="60" y="28" text-anchor="middle" font-family="Inter, 'Noto Sans TC', system-ui, sans-serif" font-size="18" fill="#E5E7EB" font-weight="500">${esc('#' + t)}</text>
+          <text x="60" y="28" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#E5E7EB" font-weight="500">${esc('#' + t)}</text>
         </g>`;
     })
     .join('');
@@ -156,7 +136,7 @@ function buildSVG({ title, tags, theme }) {
   <rect width="1200" height="630" fill="url(#glow)"/>
   <rect x="0" y="0" width="8" height="630" fill="${theme.accent}"/>
 
-  <g font-family="Inter, 'Noto Sans TC', system-ui, sans-serif">
+  <g font-family="Inter, system-ui, sans-serif">
     <text x="80" y="110" font-size="22" font-weight="600" fill="${theme.accent}" letter-spacing="3">${esc(theme.label.toUpperCase())}</text>
 
     <text font-size="64" font-weight="700" fill="#F9FAFB" style="line-height:1.1">
