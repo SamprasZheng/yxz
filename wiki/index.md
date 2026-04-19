@@ -19,6 +19,7 @@ type: index
 - [[sources/technological-republic-karp-2025]] — *The Technological Republic* (2025): Karp/Zamiska manifesto calling for tech-gov alliance, AI-era patriotism, "new Manhattan Project"; NYT #1 bestseller
 - [[sources/x402-protocol-coinbase-2025]] — x402 協議完整解析：HTTP 402 復活為 AI agent 自動 USDC 支付標準；Coinbase 2025/05 發布；Cloudflare/Google/Solana 等生態支援；每筆 $0.0001、< 2 秒結算；agentic commerce 預估 2030 年媒介 $3–5 兆美元 (ingested 2026-04-19)
 - [[sources/leo-space-datacenter-analysis-2025]] — LEO 太空資料中心產業分析：2025–2026 五大熱點 + 上中下游拆解；台灣廠商競爭力地圖（穩懋/昇達科/華通）（ingested 2026-04-19）
+- [[sources/space-radiation-tid-see-2025]] — 太空輻射深度解析：TID（Co-60/ELDR）、SEE 完整分類（SEU/SET/SEFI/SEL/SEB/SEGR）、RHA 輻射硬化保證；輻射認證為台灣 LEO 供應鏈隱性門檻（ingested 2026-04-19）
 
 ## Entities
 
@@ -53,8 +54,11 @@ type: index
 - [[concepts/x402-protocol]] — HTTP 402 Payment Required 復活為 M2M 自動支付標準；< 2 秒結算；$0.0001/筆；支援 Base/Polygon/Solana/Stellar/Algorand
 - [[concepts/agentic-payments]] — AI agents 無人工介入自主發起支付；涵蓋 API 按次計費、跨 agent 交易、資料按需購買；McKinsey 預估 2030 年 $3–5 兆規模
 - [[concepts/orbital-data-center]] — 軌道資料中心（ODC）：太空邊緣算力；7×24 太陽能 + 輻射冷卻；關鍵玩家 Starcloud/Axiom/ADA Space
-- [[concepts/leo-value-chain]] — LEO 產業上中下游完整拆解：RF/PCB/ISL/算力模組→發射/頻譜/去軌→ODC→地面基礎設施→終端；台灣缺席中游 C ODC
+- [[concepts/leo-value-chain]] — LEO 產業上中下游完整拆解：RF/PCB/ISL/算力模組→發射/頻譜/去軌→ODC→地面基礎設施→終端；台灣缺席中游 C ODC；輻射測試基礎設施為隱性門檻
+- [[concepts/tid-total-ionizing-dose]] — 累積型輻射損傷：SiO₂ 電洞捕獲→閾值漂移；Co-60 測試（MIL-STD-883 TM1019）；雙極元件 ELDR 效應；RDM ≥ 1.5
+- [[concepts/see-single-event-effects]] — 單粒子效應完整分類：SEU/SET/SEFI（軟錯誤）+ SEL/SEB/SEGR（硬錯誤）；重離子截面量測；SEL 優先測試原則；2025 JetBlue 案例
+- [[concepts/rha-radiation-hardening]] — 輻射硬化保證流程：RDM 計算、COTS 上篩選、90Sr/90Y 新測試源；台灣無本地設施為結構性弱點
 
 ## Synthesis
 
-<!-- filed answers to queries go here -->
+- [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × 台灣「上游很強、中游 C 缺席」結構性缺口；ODC 商業化窗口與三條突圍路徑（PCB 整合 / 國防催生 / 上游延伸）

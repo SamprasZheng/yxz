@@ -1,0 +1,8 @@
+{
+  "label": "Series / 系列文",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Curated reading paths through the blog — pick a track and read in order instead of chronologically."
+  }
+}

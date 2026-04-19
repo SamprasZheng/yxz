@@ -101,7 +101,8 @@ const config: Config = {
         //   label: 'Tutorial',
         // },
         { to: '/blog', label: 'Blog', position: 'left' },
-        
+        { to: '/docs/series/polkadot', label: 'Series', position: 'left' },
+
         { to: '/blog/tags/rf', label: 'RF', position: 'left' },
         { to: '/blog/tags/dot', label: 'Polkadot', position: 'left' },
         { to: '/blog/tags/space', label: 'Space', position: 'left' },

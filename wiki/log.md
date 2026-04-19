@@ -5,6 +5,12 @@
 <!-- grep "^## \[" log.md | tail -10   ← last 10 entries -->
 <!-- grep "^## \[.*\] ingest" log.md   ← all ingests -->
 
+## [2026-04-19] synthesis | LEO × 台灣「中游 C 缺席」結構性缺口
+首篇 synthesis 產出：[[synthesis/leo-taiwan-odc-gap]]。整合 [[sources/leo-space-datacenter-analysis-2025]] + [[concepts/orbital-data-center]] + [[concepts/leo-value-chain]]，提出台灣「上游龍頭、中游 C 缺席」論點；給出三條突圍路徑（上游廠商系統化 / PCB 廠整合板延伸 / 國防主權雲催生）與 2026–2028 商業化窗口時程。同步釋出對外長文到 blog：`/blog/leo-odc-taiwan-gap`。更新 [[index]] 新增 Synthesis 區塊第一筆。
+
+## [2026-04-19] ingest | 太空輻射環境深度解析 — TID / SEE / RHA
+用戶提供系統性技術分析。新建 [[sources/space-radiation-tid-see-2025]]。新概念：[[concepts/tid-total-ionizing-dose]]（Co-60 測試標準、ELDR 雙極效應、Vth 漂移機制）、[[concepts/see-single-event-effects]]（SEU/SET/SEFI 軟錯誤 + SEL/SEB/SEGR 硬錯誤完整分類、LBNL BASE 設施、截面量測方法、2025 JetBlue 位元翻轉案例）、[[concepts/rha-radiation-hardening]]（RDM 計算、COTS 上篩選流程、90Sr/90Y 替代源、台灣無本地設施的結構性空白）。更新：[[concepts/leo-value-chain]]（新增輻射測試隱性門檻★☆ 行 + ⚠️ 警語）、[[concepts/orbital-data-center]]（COTS GPU 的 SEU/SEL 風險與 RDM 要求補充）。4 個新頁面，2 個更新。跨領域連結：RF/硬體工程 × LEO 供應鏈 × 台灣競爭力分析。
+
 ## [2026-04-19] ingest | LEO 價值鏈互動圖表擴充 — Google Suncatcher、ISL、地空混合雲、去軌管理
 來源：用戶截圖（互動式 LEO 上中下游流程圖）。新增元素：**上游**增補高頻PCB/基板（HDI/低損耗微波板）子類。**中游A**新增星上算力模組（GPU cluster/散熱）、雷射星間鏈路ISL（光學通訊/精密指向PAT）。**中游B**新增軌道槽位/頻譜稀缺（ITU Ku/Ka/V）、生命週期管理（去軌/碎片規避）。**中游C**新增 AI推論訓練子類，引入 [[entities/google-suncatcher]]（Google TPU+光通訊）。**下游A**新增地面站網路（信關站）、地空DC混合架構（地空混合雲/Downlink）。**下游B**新增國防/主權雲端（安全儲存/邊緣AI）。更新：[[concepts/leo-value-chain]]（全面擴充）、[[concepts/orbital-data-center]]（加入地空混合雲、Google Suncatcher、主權雲端場景）。新建：[[entities/google-suncatcher]]。3 個頁面更新/新增。
 
