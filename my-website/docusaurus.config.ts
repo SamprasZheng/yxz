@@ -86,7 +86,7 @@ const config: Config = {
   // ],
 
   themeConfig: {
-    // image: 'img/docusaurus-social-card.jpg',
+    image: 'img/og/default.png',
     navbar: {
       title: 'Sampras',
       // logo: {

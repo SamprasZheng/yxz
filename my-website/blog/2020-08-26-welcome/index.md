@@ -3,6 +3,8 @@ slug: welcome
 title: Welcome
 authors: [sampras]
 tags: [docusaurus]
+description: First post — site intro and a short tour of how this Docusaurus blog is laid out.
+image: /img/og/welcome.png
 ---
 
 [Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).

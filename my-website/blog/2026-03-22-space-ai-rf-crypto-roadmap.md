@@ -3,6 +3,8 @@ slug: space-ai-rf-crypto-roadmap-2026
 title: "2026 Tech Roadmap: AI in Space, Crypto Infrastructure, RF SATCOM, and Radiation Validation"
 authors: ["sampras"]
 tags: [ai, space, rf, crypto, macro, polkadot]
+description: A 2026 engineering thesis across AI workflows, in-orbit compute, Polkadot settlement, phased-array SATCOM, and radiation-aware silicon validation.
+image: /img/og/space-ai-rf-crypto-roadmap-2026.png
 ---
 
 This post captures my current engineering thesis across AI systems, space infrastructure, blockchain, and RF validation.

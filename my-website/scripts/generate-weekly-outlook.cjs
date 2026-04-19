@@ -400,11 +400,14 @@ function buildMarkdown(payload) {
     .map((n) => `- ${n}`)
     .join("\n");
 
+  const slug = `weekly-macro-outlook-${postDate.replace(/-/g, "")}`;
   return `---
-slug: weekly-macro-outlook-${postDate.replace(/-/g, "")}
+slug: ${slug}
 title: Weekly Macro Outlook (${postDate}) - US Stocks, Crypto, Social Sentiment
 authors: ["sampras"]
-tags: [ai, misc]
+tags: [ai, macro, misc]
+description: "Auto-generated macro outlook for ${nextWeekDate} — US equities, BTC/ETH snapshot, X/Threads sentiment, and a directional bias read."
+image: /img/og/${slug}.png
 ---
 
 This post is automatically generated for the week starting **${nextWeekDate}**.

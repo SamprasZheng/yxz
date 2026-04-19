@@ -3,6 +3,8 @@ slug: PA
 title: 聊聊相位陣列
 authors: ["sampras"]
 tags: [rf,phasedarray]
+description: 從二戰雷達到 PESA、AESA 的相位陣列技術演進 — 數學原理、波束控制與 5G/6G 應用的實務切入。
+image: /img/og/PA.png
 ---
 ### 脈絡
 

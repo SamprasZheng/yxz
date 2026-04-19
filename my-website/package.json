@@ -16,6 +16,7 @@
     "verify": "yarn typecheck && yarn build",
     "generate:weekly-outlook": "node scripts/generate-weekly-outlook.cjs",
     "generate:living-topics": "node scripts/update-living-topics.cjs",
+    "generate:og": "node scripts/generate-og-images.cjs",
     "deploy:auto": "node scripts/deploy-github.cjs",
     "daily:local": "yarn generate:living-topics && yarn verify",
     "weekly:local": "yarn generate:weekly-outlook && yarn verify",
@@ -29,6 +30,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@giscus/react": "^3.1.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "markmap-lib": "^0.18.11",
@@ -43,6 +45,7 @@
     "@docusaurus/module-type-aliases": "3.7.0",
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "3.7.0",
+    "sharp": "^0.34.5",
     "typescript": "~5.6.2"
   },
   "browserslist": {

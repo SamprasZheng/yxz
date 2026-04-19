@@ -3,6 +3,8 @@ slug: lop
 title: 波卡(Polkadot) - 下一代的區塊鏈
 authors: [polkasharks]
 tags: [polkadot]
+description: Polkadot 2.0 的核心概念速覽 — 從 XCM 跨鏈、異構分片、敏捷核心時間到 OpenGov 鏈上治理的一次總整理。
+image: /img/og/lop.png
 ---
 
 ### 波卡（Polkadot）簡介

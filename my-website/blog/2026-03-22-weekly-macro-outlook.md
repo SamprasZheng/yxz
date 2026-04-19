@@ -2,7 +2,9 @@
 slug: weekly-macro-outlook-20260322
 title: Weekly Macro Outlook (2026-03-22) - US Stocks, Crypto, Social Sentiment
 authors: ["sampras"]
-tags: [ai, misc]
+tags: [ai, macro, misc]
+description: "Auto-generated macro outlook for 2026-03-23 — US equities, BTC/ETH snapshot, X/Threads sentiment, and a directional bias read."
+image: /img/og/weekly-macro-outlook-20260322.png
 ---
 
 This post is automatically generated for the week starting **2026-03-23**.

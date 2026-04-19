@@ -3,6 +3,8 @@ slug: Plurality
 title: 多元宇宙
 authors: ["sampras"]
 tags: [misc,polkadot]
+description: 從唐鳳協作的《Plurality》談起 — 多元視角的政治哲學如何與 Polkadot OpenGov 鏈上治理、DSNP 去中心化社交協定互相呼應。
+image: /img/og/Plurality.png
 ---
 我最初看到Plurality是因為在瀏覽Project Liberty 積極擴展DSNP (去中心化社交網路協定)於TikTok, Bluesky, Frequency等社交平台的文件時候看到前述位部長唐鳳也參與其中
 
