@@ -1,0 +1,8 @@
+{
+  "useMarkdownLinks": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "sources",
+  "attachmentFolderPath": "raw/assets",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": false
+}
