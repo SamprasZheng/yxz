@@ -109,7 +109,7 @@ async function getAccessToken(clientId, clientSecret) {
   authUrl.searchParams.set("response_type", "code");
   authUrl.searchParams.set("scope", SCOPE);
   authUrl.searchParams.set("access_type", "offline");
-  authUrl.searchParams.set("prompt", "consent");
+  authUrl.searchParams.set("prompt", "select_account consent");
 
   console.log("\n🔐 需要 Google 授權，正在開啟瀏覽器...");
   console.log("   若未自動開啟，請手動前往：");
