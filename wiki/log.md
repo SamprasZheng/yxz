@@ -49,3 +49,7 @@ Fetched 7 articles from https://vocus.cc/salon/Polkasharks. Created: [[sources/p
 ## [2026-04-19] ingest | X-band LEO 傳輸器 — 謝書超 NCTU 碩士論文 (2020)
 
 來源：D:/0750203_Thesis_Main.pdf（62頁）。謝書超（Shu-Chao Hsieh），指導教授王毓駒/陳柏宏，NCTU 電子研究所，2020-10。本論文為 XT-144 陣列的 Zero-IF X-band up-converter 子系統，與 [[sources/thesis-aesa-modules-zheng-2021]] 同一 RFVLSI Lab。新建：[[sources/hsieh-xband-leo-transmitter-2020]]（系統規格/四板架構/校正流程/SEM分析/BIST原理），[[concepts/zero-if-transmitter]]（架構比較/LO洩漏/IQ不對稱/DAC量化雜訊），[[concepts/evm-calibration]]（VSA六視窗診斷法/三元搜尋LO校正/IQ Pre-distortion矩陣/低高符號率根因）。更新：[[concepts/aesa]]（新增論文交叉連結），[[sources/thesis-aesa-modules-zheng-2021]]（新增交叉連結）。關鍵洞察：三元搜尋演算法用於 LO leakage 校正；10-bit DAC 才能穩定通過 X-band SEM；BIST 對大型陣列的相位校正具規模化優勢。同步輸出 blog post。
+
+## [2026-04-19] synthesis | RF 相位陣列設計決策整合 — blog 輸出
+
+整合 [[concepts/aesa]]、[[concepts/hybrid-phased-array]]、[[concepts/zero-if-transmitter]]、[[concepts/evm-calibration]]、[[concepts/dpd-digital-predistortion]]、[[sources/hybrid-xband-phased-array-icase-2020]]、[[sources/thesis-aesa-modules-zheng-2021]]、[[sources/hsieh-xband-leo-transmitter-2020]] 等 8 個 wiki 頁面。輸出 blog: `blog/2026-04-19-leo-phased-array-design.md`。核心框架：六個設計決定（混合架構選型 / Zero-IF up-converter / 兩層 EVM 校正 / NN DPD / 輻射可靠度測試體系 / BIST 規劃），以 XT-144 系統為主線串接所有知識點。
