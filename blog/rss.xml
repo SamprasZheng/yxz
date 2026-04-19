@@ -9,170 +9,170 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[2026 LEO × 台灣 — 上游很強、中游 C 缺席的結構性缺口]]></title>
+            <title><![CDATA[2026 LEO × Taiwan — World-Class Upstream, Missing from the ODC Mid-Chain]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/leo-odc-taiwan-gap</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/leo-odc-taiwan-gap</guid>
             <pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[台灣在 LEO 衛星上游（RF PA、濾波器、高頻 PCB）是世界級龍頭，但在 2026 最熱的軌道資料中心（ODC）硬體整合層幾乎缺席。拆解這個結構性缺口背後的機會與時程。]]></description>
-            <content:encoded><![CDATA[<p>台灣在 LEO 衛星產業鏈的<strong>上游</strong>（RF PA、濾波器、高頻 PCB）幾乎是世界級龍頭，在<strong>下游</strong>（地面終端、天線）也有不錯的參與度；但在 2025–2026 年最熱的新題材 — <strong>中游 C 太空資料中心（Orbital Data Center, ODC）硬體整合</strong> — 存在一個結構性的空白。</p>
-<p>這不是意外，是一個<strong>結構性機會窗口</strong>。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="為什麼-odc-現在會起來">為什麼 ODC 現在會起來<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#%E7%82%BA%E4%BB%80%E9%BA%BC-odc-%E7%8F%BE%E5%9C%A8%E6%9C%83%E8%B5%B7%E4%BE%86" class="hash-link" aria-label="Direct link to 為什麼 ODC 現在會起來" title="Direct link to 為什麼 ODC 現在會起來">​</a></h2>
-<p>三條線同時撞在一起：</p>
+            <description><![CDATA[Taiwan dominates the LEO satellite upstream (RF PA, filters, high-frequency PCB) at a world-class level — but is nearly absent from 2026's hottest new segment: orbital data center (ODC) hardware integration. A breakdown of this structural gap, its causes, and the opportunity window.]]></description>
+            <content:encoded><![CDATA[<p>Taiwan's position in the LEO satellite supply chain is world-class <strong>upstream</strong> (RF PA, filters, high-frequency PCB) and solid <strong>downstream</strong> (ground terminals, antennas) — but a structural blank exists in 2025–2026's hottest new segment: <strong>mid-chain C, Orbital Data Center (ODC) hardware integration</strong>.</p>
+<p>This isn't accidental. It's a <strong>structural opportunity window</strong>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-odc-is-taking-off-now">Why ODC Is Taking Off Now<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#why-odc-is-taking-off-now" class="hash-link" aria-label="Direct link to Why ODC Is Taking Off Now" title="Direct link to Why ODC Is Taking Off Now">​</a></h2>
+<p>Three converging forces:</p>
 <ol>
-<li><strong>地面資料中心能耗爆炸</strong>：2024 年全球 DC 耗電量 415 TWh，預計 2026 年突破 650 TWh。電網與冷卻是天花板。</li>
-<li><strong>太空免費能源</strong>：7×24 小時無遮蔽太陽能 + 向宇宙背景的被動輻射冷卻。Bezos 公開判斷未來數十年內 ODC 建設成本將<strong>低於</strong>地面 DC。</li>
-<li><strong>商用 GPU 上天被驗證可行</strong>：<!-- -->
+<li><strong>Ground data center power consumption is hitting a ceiling:</strong> Global DC power usage was 415 TWh in 2024, projected to exceed 650 TWh by 2026. The grid and cooling infrastructure are the bottleneck.</li>
+<li><strong>Free energy in space:</strong> 7×24 unobstructed solar power + passive radiative cooling toward the cosmic background. Bezos has publicly stated that over the next few decades, ODC construction costs will be <strong>lower</strong> than ground-based DCs.</li>
+<li><strong>Commercial GPUs in orbit — validated:</strong>
 <ul>
-<li>2025-11：Starcloud 把 NVIDIA H100 送上 Starcloud-1，完成首次太空 LLM 訓練</li>
-<li>2026-01-11：Axiom Space 發射 ODC Node 1 &amp; 2，接上 Kepler Communications 光學中繼</li>
-<li>2026 GTC：黃仁勳正式宣示「太空運算，終極前沿，已經到來」</li>
+<li>2025-11: Starcloud put an NVIDIA H100 on Starcloud-1, completing the first LLM training in space</li>
+<li>2026-01-11: Axiom Space launched ODC Node 1 &amp; 2, connected to Kepler Communications optical relay</li>
+<li>2026 GTC: Jensen Huang officially declared "Space computing — the ultimate frontier — has arrived"</li>
 </ul>
 </li>
 </ol>
-<p>三件事疊起來意味著：<strong>ODC 不再是 science fiction，而是 2026–2030 的 capex 戰場</strong>。延伸閱讀：我的 <a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026">2026 Tech Roadmap</a> 中的 Space 段。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="台灣現況--上游王者中游-c-缺席">台灣現況 — 上游王者、中游 C 缺席<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#%E5%8F%B0%E7%81%A3%E7%8F%BE%E6%B3%81--%E4%B8%8A%E6%B8%B8%E7%8E%8B%E8%80%85%E4%B8%AD%E6%B8%B8-c-%E7%BC%BA%E5%B8%AD" class="hash-link" aria-label="Direct link to 台灣現況 — 上游王者、中游 C 缺席" title="Direct link to 台灣現況 — 上游王者、中游 C 缺席">​</a></h2>
-<table><thead><tr><th>環節</th><th>台灣存在感</th><th>代表廠商</th></tr></thead><tbody><tr><td>上游 RF PA</td><td>★★★★★ 世界龍頭</td><td>穩懋（3105）</td></tr><tr><td>上游濾波器／波導管</td><td>★★★★★</td><td>昇達科（3491），毛利 &gt;50%，已進 Starlink/Kuiper 供應鏈</td></tr><tr><td>上游高頻 PCB</td><td>★★★★★</td><td>華通（LEO 專用 PCB 全球 ~80% 市佔，2025 Q4 LEO 板營收突破 155 億元）</td></tr><tr><td>中游 A ISL 光學通訊</td><td>★★☆☆☆</td><td>精密光學非台廠強項，被 Mynaric、SA Photonics 主導</td></tr><tr><td><strong>中游 C ODC 硬體整合</strong></td><td><strong>★☆☆☆☆</strong></td><td><strong>幾乎沒有主導廠商</strong></td></tr><tr><td>下游地面端</td><td>★★★★</td><td>天線、LNB、電源廠商</td></tr></tbody></table>
-<p>中游 C 實際要整合的東西是：</p>
+<p>These three converging forces mean: <strong>ODC is no longer science fiction; 2026–2030 is the first capex battleground.</strong> See also: the Space section of my <a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026">2026 Tech Roadmap</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="taiwans-position--upstream-king-mid-chain-c-absent">Taiwan's Position — Upstream King, Mid-Chain C Absent<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#taiwans-position--upstream-king-mid-chain-c-absent" class="hash-link" aria-label="Direct link to Taiwan's Position — Upstream King, Mid-Chain C Absent" title="Direct link to Taiwan's Position — Upstream King, Mid-Chain C Absent">​</a></h2>
+<table><thead><tr><th>Segment</th><th>Taiwan presence</th><th>Representative companies</th></tr></thead><tbody><tr><td>Upstream RF PA</td><td>★★★★★ World leader</td><td>WIN Semiconductors (3105)</td></tr><tr><td>Upstream filters / waveguides</td><td>★★★★★</td><td>Sheng Da Tech (3491), margin &gt;50%, in Starlink/Kuiper supply chain</td></tr><tr><td>Upstream high-freq PCB</td><td>★★★★★</td><td>Compeq (~80% global LEO PCB share, LEO board revenue exceeded NT$15.5B in Q4 2025)</td></tr><tr><td>Mid-chain A ISL optical comms</td><td>★★☆☆☆</td><td>Precision optics not a Taiwan strength — dominated by Mynaric, SA Photonics</td></tr><tr><td><strong>Mid-chain C ODC hardware integration</strong></td><td><strong>★☆☆☆☆</strong></td><td><strong>Virtually no dominant player</strong></td></tr><tr><td>Downstream ground segment</td><td>★★★★</td><td>Antenna, LNB, power supply vendors</td></tr></tbody></table>
+<p>Mid-chain C requires integrating:</p>
 <ul>
-<li><strong>抗輻射算力晶片</strong>（COTS vs space-hardened 的取捨）</li>
-<li><strong>散熱系統</strong>（無對流環境，只能靠輻射冷卻 + 導熱板）</li>
-<li><strong>高功率電源管理</strong>（10 kW+ 的太陽能陣列 → 算力模組 → 負載）</li>
-<li><strong>系統整合與在軌部署能力</strong>（火箭 + 地面站 + 光通訊一起打包）</li>
+<li><strong>Radiation-tolerant compute chips</strong> (COTS vs. space-hardened trade-off)</li>
+<li><strong>Thermal management</strong> (no convection — only radiative cooling + conduction plates)</li>
+<li><strong>High-power energy management</strong> (10 kW+ solar array → compute module → load)</li>
+<li><strong>System integration and in-orbit deployment capability</strong> (launch + ground station + optical comms bundled together)</li>
 </ul>
-<p>前三項都是台廠「會做、但還沒做到 space grade」的狀態；第四項需要時間累積，不是靠單一公司能補完。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="三條可能的突圍路徑">三條可能的突圍路徑<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#%E4%B8%89%E6%A2%9D%E5%8F%AF%E8%83%BD%E7%9A%84%E7%AA%81%E5%9C%8D%E8%B7%AF%E5%BE%91" class="hash-link" aria-label="Direct link to 三條可能的突圍路徑" title="Direct link to 三條可能的突圍路徑">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="路徑-a上游廠商往中游-c-延伸">路徑 A：上游廠商往中游 C 延伸<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#%E8%B7%AF%E5%BE%91-a%E4%B8%8A%E6%B8%B8%E5%BB%A0%E5%95%86%E5%BE%80%E4%B8%AD%E6%B8%B8-c-%E5%BB%B6%E4%BC%B8" class="hash-link" aria-label="Direct link to 路徑 A：上游廠商往中游 C 延伸" title="Direct link to 路徑 A：上游廠商往中游 C 延伸">​</a></h3>
-<p>穩懋、昇達科這類已經打進 Starlink 供應鏈的廠商，技術上最接近中游 C。挑戰是商業模式從「賣元件」變成「賣子系統」— 對毛利率敏感的代工文化來說，這是文化轉型，不是業務轉型。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="路徑-bpcb-廠把板卡整合層拉高">路徑 B：PCB 廠把板卡整合層拉高<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#%E8%B7%AF%E5%BE%91-bpcb-%E5%BB%A0%E6%8A%8A%E6%9D%BF%E5%8D%A1%E6%95%B4%E5%90%88%E5%B1%A4%E6%8B%89%E9%AB%98" class="hash-link" aria-label="Direct link to 路徑 B：PCB 廠把板卡整合層拉高" title="Direct link to 路徑 B：PCB 廠把板卡整合層拉高">​</a></h3>
-<p>華通、欣興這種手握 LEO PCB 的玩家，有機會往「ODC 運算板組件」延伸（GPU mezzanine、散熱板整合、背板電源）。這條線<strong>最有可能出黑馬</strong> — 因為 PCB 廠已經做慣系統級整合板卡，只差 space-grade 驗證。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="路徑-c從國防主權雲切入">路徑 C：從國防／主權雲切入<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#%E8%B7%AF%E5%BE%91-c%E5%BE%9E%E5%9C%8B%E9%98%B2%E4%B8%BB%E6%AC%8A%E9%9B%B2%E5%88%87%E5%85%A5" class="hash-link" aria-label="Direct link to 路徑 C：從國防／主權雲切入" title="Direct link to 路徑 C：從國防／主權雲切入">​</a></h3>
-<p>ODC 最早期的<strong>付費場景</strong>其實不是純商業雲，是國防 / 主權雲端：</p>
+<p>Taiwan companies "can do" the first three items but haven't reached space grade; the fourth requires accumulated experience no single company can shortcut.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="three-possible-breakout-paths">Three Possible Breakout Paths<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#three-possible-breakout-paths" class="hash-link" aria-label="Direct link to Three Possible Breakout Paths" title="Direct link to Three Possible Breakout Paths">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="path-a-upstream-players-extend-into-mid-chain-c">Path A: Upstream players extend into mid-chain C<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#path-a-upstream-players-extend-into-mid-chain-c" class="hash-link" aria-label="Direct link to Path A: Upstream players extend into mid-chain C" title="Direct link to Path A: Upstream players extend into mid-chain C">​</a></h3>
+<p>Companies like WIN Semiconductors and Sheng Da Tech — already in the Starlink supply chain — are technically closest to mid-chain C. The challenge is shifting the business model from "selling components" to "selling subsystems." For a margin-sensitive contract manufacturing culture, this is a cultural transformation, not just a business expansion.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="path-b-pcb-makers-move-up-the-integration-stack">Path B: PCB makers move up the integration stack<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#path-b-pcb-makers-move-up-the-integration-stack" class="hash-link" aria-label="Direct link to Path B: PCB makers move up the integration stack" title="Direct link to Path B: PCB makers move up the integration stack">​</a></h3>
+<p>Compeq, Unimicron — holding LEO PCB share — have a plausible path to "ODC compute board assemblies" (GPU mezzanines, thermal board integration, backplane power). This path is <strong>most likely to produce a dark horse</strong> — PCB houses already do system-level board integration; they just need the space-grade qualification step.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="path-c-enter-via-defense--sovereign-cloud-procurement">Path C: Enter via defense / sovereign cloud procurement<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#path-c-enter-via-defense--sovereign-cloud-procurement" class="hash-link" aria-label="Direct link to Path C: Enter via defense / sovereign cloud procurement" title="Direct link to Path C: Enter via defense / sovereign cloud procurement">​</a></h3>
+<p>The earliest <strong>paying customer</strong> for ODC isn't pure commercial cloud — it's defense / sovereign cloud:</p>
 <ul>
-<li>地理獨立性（不受地面衝突影響）</li>
-<li>難以實體摧毀</li>
-<li>全球覆蓋</li>
+<li>Geographic independence (immune to ground-level conflict)</li>
+<li>Hard to physically destroy</li>
+<li>Global coverage</li>
 </ul>
-<p>台灣國防採購如果往這個方向投錢，會<strong>強制</strong>長出一家中游 C 廠商。這是最確定的催化劑，但時程取決於政策意志。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="對比中國的三體計算星座">對比：中國的三體計算星座<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#%E5%B0%8D%E6%AF%94%E4%B8%AD%E5%9C%8B%E7%9A%84%E4%B8%89%E9%AB%94%E8%A8%88%E7%AE%97%E6%98%9F%E5%BA%A7" class="hash-link" aria-label="Direct link to 對比：中國的三體計算星座" title="Direct link to 對比：中國的三體計算星座">​</a></h2>
-<p>中國 ADA Space 2025-05 發射首批 12 顆衛星，每顆 <strong>100 Gbps 光學鏈路 + 744 TOPS 在軌加速器</strong>。目標 2800 顆分散式軌道超算網路。</p>
-<p>這不是一家公司在搞，是<strong>國家級戰略規模化</strong>。</p>
-<p>對比之下，台灣若完全沒有中游 C 的玩家，未來即便全球 LEO 市場持續成長，附加價值會從「硬體毛利」逐步轉移到「ODC 算力與資料服務」層 — 上游的高毛利元件供應可能被壓縮成純 OEM/ODM 模式。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="時程敏感度">時程敏感度<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#%E6%99%82%E7%A8%8B%E6%95%8F%E6%84%9F%E5%BA%A6" class="hash-link" aria-label="Direct link to 時程敏感度" title="Direct link to 時程敏感度">​</a></h2>
-<table><thead><tr><th>時間</th><th>事件</th></tr></thead><tbody><tr><td>2025-11</td><td>Starcloud-1 發射（首顆 H100 in orbit）</td></tr><tr><td>2025 底 – 2026 初</td><td>ITU 頻譜／軌道槽位分配備忘錄（500–1200 km + Ku/Ka/V 進入枯竭）</td></tr><tr><td>2026-01-11</td><td>Axiom Space ODC Node 1 &amp; 2</td></tr><tr><td>2026 GTC</td><td>NVIDIA 正式把太空運算列為終極前沿</td></tr><tr><td>2026–2028</td><td>中游 C 第一波商業化窗口</td></tr></tbody></table>
-<p>ITU 頻譜備忘錄特別值得注意：<strong>先申報者先得</strong>。SpaceX、OneWeb、Kuiper 已經卡位，晚到的玩家機會只剩 ODC 這種「新型態衛星」題材。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="結論">結論<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#%E7%B5%90%E8%AB%96" class="hash-link" aria-label="Direct link to 結論" title="Direct link to 結論">​</a></h2>
+<p>If Taiwan's defense procurement moves in this direction, it will <strong>force</strong> a mid-chain C manufacturer into existence. This is the most certain catalyst — timing depends on policy will.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="contrast-chinas-three-body-computing-constellation">Contrast: China's Three-Body Computing Constellation<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#contrast-chinas-three-body-computing-constellation" class="hash-link" aria-label="Direct link to Contrast: China's Three-Body Computing Constellation" title="Direct link to Contrast: China's Three-Body Computing Constellation">​</a></h2>
+<p>China's ADA Space launched its first 12 satellites in May 2025, each carrying <strong>100 Gbps optical links + 744 TOPS on-orbit accelerators</strong>. Target: a 2,800-satellite distributed orbital supercomputing network.</p>
+<p>This isn't a startup venture — it's <strong>national-strategic-scale deployment</strong>.</p>
+<p>By contrast, if Taiwan has no mid-chain C players, the value in the global LEO market will gradually migrate from "hardware margin" to "ODC compute and data services" — and upstream high-margin component supply may compress into a pure OEM/ODM role. This is the Taiwan PC OEM story repeating itself.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="timeline-sensitivity">Timeline Sensitivity<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#timeline-sensitivity" class="hash-link" aria-label="Direct link to Timeline Sensitivity" title="Direct link to Timeline Sensitivity">​</a></h2>
+<table><thead><tr><th>Date</th><th>Event</th></tr></thead><tbody><tr><td>2025-11</td><td>Starcloud-1 launch (first H100 in orbit)</td></tr><tr><td>Late 2025 – early 2026</td><td>ITU spectrum/orbital slot allocation memo (500–1200 km + Ku/Ka/V bands entering saturation)</td></tr><tr><td>2026-01-11</td><td>Axiom Space ODC Node 1 &amp; 2</td></tr><tr><td>2026 GTC</td><td>NVIDIA officially designates space computing as the ultimate frontier</td></tr><tr><td>2026–2028</td><td>Mid-chain C first commercialization window</td></tr></tbody></table>
+<p>The ITU spectrum memo is especially worth noting: <strong>first-filed, first-served.</strong> SpaceX, OneWeb, and Kuiper have already secured positions. Late entrants' only remaining differentiation is ODC-class "new-type satellites" — where value doesn't depend on spectrum scarcity but compute supply scarcity.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
 <ol>
-<li>台灣在 LEO 上游的優勢是真的，但<strong>不等於對中游 C 自動延伸</strong>。</li>
-<li>2026–2028 是中游 C 商業化第一波窗口；台灣需要至少一家廠商走出去。</li>
-<li>最可能的候選：PCB 廠往 ODC 運算板整合延伸（路徑 B），或國防採購催生（路徑 C）。</li>
-<li>純上游代工廠（路徑 A）文化轉型最慢，但技術最接近 — 需要一個策略併購或合資事件才會動。</li>
+<li>Taiwan's upstream LEO advantage is real — but <strong>does not automatically extend to mid-chain C</strong>.</li>
+<li>2026–2028 is mid-chain C's first commercialization window; Taiwan needs at least one player to step in.</li>
+<li>Most likely candidates: PCB houses extending into ODC compute board integration (Path B), or defense procurement forcing one into existence (Path C).</li>
+<li>Pure upstream contract manufacturers (Path A) have the slowest cultural transformation but are technically closest — a strategic acquisition or JV event is probably needed to break the inertia.</li>
 </ol>
 <hr>
-<p>這篇是我 Obsidian wiki 裡 <code>synthesis/leo-taiwan-odc-gap.md</code> 的對外版本；背後的原始資料、實體與概念頁（ADA Space、Starcloud、穩懋、昇達科、華通、軌道資料中心、LEO 產業鏈）大部分會在後續陸續釋出。如果你想直接和基於這批資料的 GPT 聊，可以試試 <a href="https://chatgpt.com/g/g-67e254ad68e4819191ea0552732c0979-spacesharks" target="_blank" rel="noopener noreferrer">Spacesharks</a>（詳情：<a href="https://sampraszheng.github.io/yxz/blog/ai-agent">我的 AI Agent</a>）。</p>]]></content:encoded>
+<p>This post is the public version of <code>synthesis/leo-taiwan-odc-gap.md</code> in my Obsidian wiki. The underlying source material, entities, and concept pages (ADA Space, Starcloud, WIN Semiconductors, Sheng Da Tech, Compeq, Orbital Data Center, LEO supply chain) will gradually be released. If you want to query directly against this dataset, try <a href="https://chatgpt.com/g/g-67e254ad68e4819191ea0552732c0979-spacesharks" target="_blank" rel="noopener noreferrer">Spacesharks</a> (more details: <a href="https://sampraszheng.github.io/yxz/blog/ai-agent">my AI Agents post</a>).</p>]]></content:encoded>
             <category>space</category>
             <category>rf</category>
             <category>ai</category>
             <category>macro</category>
         </item>
         <item>
-            <title><![CDATA[太空算力元年：2026 LEO 產業五大熱點與投資地圖]]></title>
+            <title><![CDATA[Year One of Space Compute: Five Flashpoints in the 2026 LEO Industry]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/leo-space-landscape-2026</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/leo-space-landscape-2026</guid>
             <pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[黃仁勳說「太空運算，終極前沿，已經到來」。2026 年 LEO 產業正在五條線同時引爆——軌道資料中心、頻譜稀缺、中國三體星座、Amazon Kuiper 商轉、Starlink V3 升級。這篇拆解完整上中下游，找出台灣廠商在這場算力轉移中的座標。]]></description>
-            <content:encoded><![CDATA[<p>2026 年 3 月，黃仁勳在 GTC 舞台上說了一句話：</p>
+            <description><![CDATA[Jensen Huang said 'Space computing — the ultimate frontier — has arrived.' Five forces are igniting the 2026 LEO industry simultaneously: orbital data centers, spectrum scarcity, China's three-body constellation, Amazon Kuiper's commercial launch, and Starlink V3 upgrades. A full upstream-to-downstream breakdown and Taiwan's coordinates in this compute migration.]]></description>
+            <content:encoded><![CDATA[<p>At GTC 2026, Jensen Huang said:</p>
 <blockquote>
-<p><strong>「太空運算，終極前沿，已經到來。」</strong></p>
+<p><strong>"Space computing — the ultimate frontier — has arrived."</strong></p>
 </blockquote>
-<p>這不是比喻。2025 年 11 月，美國新創 Starcloud 把一顆 NVIDIA H100 送上軌道（Starcloud-1），完成人類第一次在太空中訓練大型語言模型。兩個月後，2026 年 1 月 11 日，Axiom Space 發射兩個軌道資料中心節點（ODC Node 1 &amp; 2），接上 Kepler Communications 的光學中繼網路，開始對外提供雲端算力服務。</p>
-<p>地球軌道，正式成為資料中心的新區位。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2026-年的五個引爆點">2026 年的五個引爆點<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#2026-%E5%B9%B4%E7%9A%84%E4%BA%94%E5%80%8B%E5%BC%95%E7%88%86%E9%BB%9E" class="hash-link" aria-label="Direct link to 2026 年的五個引爆點" title="Direct link to 2026 年的五個引爆點">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-軌道資料中心odc進入實戰期">1. 軌道資料中心（ODC）進入實戰期<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#1-%E8%BB%8C%E9%81%93%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83odc%E9%80%B2%E5%85%A5%E5%AF%A6%E6%88%B0%E6%9C%9F" class="hash-link" aria-label="Direct link to 1. 軌道資料中心（ODC）進入實戰期" title="Direct link to 1. 軌道資料中心（ODC）進入實戰期">​</a></h3>
-<p>這件事之所以現在發生，而不是十年後，是三條線同時撞在一起：</p>
-<p><strong>地面能耗已到天花板</strong>。2024 年全球資料中心耗電 415 TWh；2026 年預計突破 650 TWh。台灣的電力網就是一個縮影——AI 算力爆炸，電從哪來是每個 IDC 業者的頭號問題。</p>
-<p><strong>太空有免費能源</strong>。軌道上沒有雲、沒有雨、沒有白天黑夜的切換——7×24 小時太陽能，發電效率遠高於地面板。散熱呢？更簡單：直接對宇宙背景輻射，不需要任何壓縮機或冷卻水塔。Jeff Bezos 的判斷是：在未來數十年內，ODC 的建設成本將<strong>低於</strong>地面資料中心。</p>
-<p><strong>商用 GPU 上天被驗證可行</strong>。這是最關鍵的一步。Starcloud-1 用的不是什麼特規太空硬化晶片，而是你在地面伺服器機架裡就能看到的 NVIDIA H100。商用現貨（COTS）能在軌道輻射環境下穩定運作，意味著地面整個 GPU 生態系的技術積累可以直接複用。</p>
-<p>三條線疊起來的結論是：<strong>ODC 不再是 science fiction，2026–2030 是第一波 capex 戰場。</strong></p>
+<p>This isn't a metaphor. In November 2025, US startup Starcloud put an NVIDIA H100 into orbit (Starcloud-1), completing the first large language model training in space. Two months later, on January 11, 2026, Axiom Space launched two Orbital Data Center nodes (ODC Node 1 &amp; 2), connected to Kepler Communications' optical relay network, and began offering cloud compute services commercially.</p>
+<p>Earth orbit has officially become a new datacenter location.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="five-flashpoints-of-2026">Five Flashpoints of 2026<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#five-flashpoints-of-2026" class="hash-link" aria-label="Direct link to Five Flashpoints of 2026" title="Direct link to Five Flashpoints of 2026">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-orbital-data-centers-odc-enter-real-world-operation">1. Orbital Data Centers (ODC) Enter Real-World Operation<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#1-orbital-data-centers-odc-enter-real-world-operation" class="hash-link" aria-label="Direct link to 1. Orbital Data Centers (ODC) Enter Real-World Operation" title="Direct link to 1. Orbital Data Centers (ODC) Enter Real-World Operation">​</a></h3>
+<p>This is happening now — not ten years from now — because three trends converged simultaneously:</p>
+<p><strong>Ground-level power consumption has hit the ceiling.</strong> Global datacenter electricity use was 415 TWh in 2024; the 2026 forecast exceeds 650 TWh. Taiwan's power grid is a microcosm of this — AI compute is exploding and "where will the electricity come from" is every IDC operator's top problem.</p>
+<p><strong>Space has free energy.</strong> No clouds, no rain, no day-night switching — 7×24 solar generation at efficiencies far exceeding ground panels. Cooling? Even simpler: radiate directly to the cosmic microwave background; no compressors, no cooling towers. Bezos' thesis: within the next few decades, ODC construction costs will be <strong>lower</strong> than ground datacenter construction costs.</p>
+<p><strong>Commercial GPUs in orbit have been validated.</strong> This is the critical step. Starcloud-1 used not a specialized space-hardened chip, but an off-the-shelf NVIDIA H100 from a standard server rack. COTS hardware surviving and functioning stably in orbital radiation conditions means the entire GPU ecosystem's accumulated engineering can be reused directly.</p>
+<p>The conclusion from these three converging forces: <strong>ODC is no longer science fiction — 2026–2030 is the first capex battleground.</strong></p>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-頻譜與軌道槽位進入稀缺危機">2. 頻譜與軌道槽位進入稀缺危機<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#2-%E9%A0%BB%E8%AD%9C%E8%88%87%E8%BB%8C%E9%81%93%E6%A7%BD%E4%BD%8D%E9%80%B2%E5%85%A5%E7%A8%80%E7%BC%BA%E5%8D%B1%E6%A9%9F" class="hash-link" aria-label="Direct link to 2. 頻譜與軌道槽位進入稀缺危機" title="Direct link to 2. 頻譜與軌道槽位進入稀缺危機">​</a></h3>
-<p>LEO 的「地皮」不是無限的。根據 ITU 2025 底至 2026 初的頻譜分配備忘錄，500–1200 公里高商業價值軌道傾角，以及 Ku/Ka/V 頻段，已面臨枯竭。</p>
-<p>這意味著幾件事：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-spectrum-and-orbital-slots-enter-scarcity-crisis">2. Spectrum and Orbital Slots Enter Scarcity Crisis<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#2-spectrum-and-orbital-slots-enter-scarcity-crisis" class="hash-link" aria-label="Direct link to 2. Spectrum and Orbital Slots Enter Scarcity Crisis" title="Direct link to 2. Spectrum and Orbital Slots Enter Scarcity Crisis">​</a></h3>
+<p>LEO's "real estate" isn't unlimited. According to ITU frequency allocation memos from late 2025 to early 2026, commercially valuable orbital inclinations at 500–1,200 km altitude, combined with Ku/Ka/V-band spectrum, are approaching exhaustion.</p>
+<p>What this means:</p>
 <ul>
-<li>SpaceX（Starlink）、OneWeb、Amazon Kuiper 已經先申報先卡位，後來者在傳統通訊衛星題材上機會已非常有限。</li>
-<li>ITU 規則是「先申報先得」——這場資源搶佔戰，早已在 2020–2023 年決定大局。</li>
-<li>晚到的玩家，只剩 ODC 這種「新型態衛星」才有差異化空間——因為 ODC 的商業模式不依賴頻譜稀缺性，而依賴算力供給稀缺性。</li>
+<li>SpaceX (Starlink), OneWeb, and Amazon Kuiper filed first and claimed their positions. Late entrants have very limited opportunity in traditional communications satellite plays.</li>
+<li>ITU rules are first-come, first-served — this resource land-grab was decided largely in 2020–2023.</li>
+<li>Late players' only remaining differentiation is in "new-format satellites" like ODC — because ODC's business model depends on compute supply scarcity, not spectrum scarcity.</li>
 </ul>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-中國三體計算星座--ada-space">3. 中國三體計算星座 — ADA Space<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#3-%E4%B8%AD%E5%9C%8B%E4%B8%89%E9%AB%94%E8%A8%88%E7%AE%97%E6%98%9F%E5%BA%A7--ada-space" class="hash-link" aria-label="Direct link to 3. 中國三體計算星座 — ADA Space" title="Direct link to 3. 中國三體計算星座 — ADA Space">​</a></h3>
-<p>2025 年 5 月，中國 ADA Space 發射首批 12 顆衛星。每顆搭載：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-chinas-three-body-computing-constellation--ada-space">3. China's Three-Body Computing Constellation — ADA Space<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#3-chinas-three-body-computing-constellation--ada-space" class="hash-link" aria-label="Direct link to 3. China's Three-Body Computing Constellation — ADA Space" title="Direct link to 3. China's Three-Body Computing Constellation — ADA Space">​</a></h3>
+<p>In May 2025, China's ADA Space launched its first 12 satellites, each equipped with:</p>
 <ul>
-<li><strong>100 Gbps 光學鏈路</strong>（星間通訊）</li>
-<li><strong>744 TOPS 在軌加速器</strong>（AI 推論）</li>
+<li><strong>100 Gbps optical links</strong> (inter-satellite communications)</li>
+<li><strong>744 TOPS on-orbit accelerators</strong> (AI inference)</li>
 </ul>
-<p>目標：2800 顆衛星組成的分散式軌道超算網路。</p>
-<p>這不是一家創業公司在搞，是<strong>國家級戰略規模化</strong>。AI、感測、通訊三位一體——軌道算力成為新的戰略資源，和頻譜、稀土一樣。</p>
-<p>對比之下，美國這邊是 Starcloud（商業創新）+ Axiom Space（ODC 節點）+ Google Suncatcher（TPU 上天，接光學通訊），走的是市場驅動路線。兩邊正在打一場「誰的在軌算力更快達到規模化」的競賽。</p>
+<p>Target: a 2,800-satellite distributed orbital supercomputing network.</p>
+<p>This isn't a startup. It's <strong>national-strategic-scale deployment</strong>. AI, sensing, and communications unified — orbital compute becomes a new strategic resource alongside spectrum and rare earths.</p>
+<p>By comparison, the US side is Starcloud (commercial innovation) + Axiom Space (ODC nodes) + Google Suncatcher (TPU in orbit, connected to optical comms) — market-driven routes. Both sides are racing to see whose in-orbit compute reaches scale first.</p>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-amazon-kuiper-商轉倒數">4. Amazon Kuiper 商轉倒數<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#4-amazon-kuiper-%E5%95%86%E8%BD%89%E5%80%92%E6%95%B8" class="hash-link" aria-label="Direct link to 4. Amazon Kuiper 商轉倒數" title="Direct link to 4. Amazon Kuiper 商轉倒數">​</a></h3>
-<p>Amazon 原 Project Kuiper 已發射超過 150 顆衛星，目標 3236 顆星座。相比 Starlink，Kuiper 是「後發者」，但 Amazon 的資本實力與 AWS 地面雲整合優勢不可忽視。</p>
-<p>台灣的動向值得關注：遠傳電信計畫透過與 Amazon Kuiper 合作，把服務引進台灣市場。這是第一個非 Starlink LEO 服務進入台灣生態的明確訊號。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-amazon-kuiper-commercial-launch-countdown">4. Amazon Kuiper Commercial Launch Countdown<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#4-amazon-kuiper-commercial-launch-countdown" class="hash-link" aria-label="Direct link to 4. Amazon Kuiper Commercial Launch Countdown" title="Direct link to 4. Amazon Kuiper Commercial Launch Countdown">​</a></h3>
+<p>Amazon's Project Kuiper has launched over 150 satellites toward its 3,236-satellite constellation target. Compared to Starlink, Kuiper is the "late entrant," but Amazon's capital strength and AWS ground-cloud integration advantages are not to be dismissed.</p>
+<p>One development worth watching in Taiwan: Far EasTone Telecom plans to partner with Amazon Kuiper to bring the service to the Taiwan market. This is the first clear signal of a non-Starlink LEO service entering Taiwan's ecosystem.</p>
 <hr>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-starlink-v3-升級--電力需求暴增">5. Starlink V3 升級 × 電力需求暴增<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#5-starlink-v3-%E5%8D%87%E7%B4%9A--%E9%9B%BB%E5%8A%9B%E9%9C%80%E6%B1%82%E6%9A%B4%E5%A2%9E" class="hash-link" aria-label="Direct link to 5. Starlink V3 升級 × 電力需求暴增" title="Direct link to 5. Starlink V3 升級 × 電力需求暴增">​</a></h3>
-<p>Starlink 二代衛星升至 V3 規格：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-starlink-v3-upgrade--soaring-power-demand">5. Starlink V3 Upgrade × Soaring Power Demand<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#5-starlink-v3-upgrade--soaring-power-demand" class="hash-link" aria-label="Direct link to 5. Starlink V3 Upgrade × Soaring Power Demand" title="Direct link to 5. Starlink V3 Upgrade × Soaring Power Demand">​</a></h3>
+<p>Starlink's second-generation satellites are upgraded to V3 specs:</p>
 <ul>
-<li><strong>雷射星間鏈路（ISL）比例大幅增加</strong>——不再完全依賴地面站中轉，衛星直接「光速繞地球」</li>
-<li>單顆衛星電力需求從 2 kW 暴增至 <strong>10 kW 以上</strong></li>
+<li><strong>Significantly increased laser inter-satellite link (ISL) ratio</strong> — no longer fully dependent on ground station relay; satellites communicate directly at light-speed around the globe</li>
+<li>Per-satellite power demand jumped from 2 kW to <strong>over 10 kW</strong></li>
 </ul>
-<p>這兩件事對供應鏈的影響是：RF 元件與散熱需求的技術門檻持續拉高，低規格供應商被淘汰，高規格廠商的技術壁壘進一步加深。</p>
+<p>The supply chain impact of both: RF component and thermal management technical requirements continue rising, low-spec suppliers are weeded out, and the technical moat for high-spec suppliers deepens further.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="完整上中下游拆解">完整上中下游拆解<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#%E5%AE%8C%E6%95%B4%E4%B8%8A%E4%B8%AD%E4%B8%8B%E6%B8%B8%E6%8B%86%E8%A7%A3" class="hash-link" aria-label="Direct link to 完整上中下游拆解" title="Direct link to 完整上中下游拆解">​</a></h2>
-<p>理解 LEO 產業，最重要的是理解它不是一條線，而是五段結構非常不同的產業。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="上游核心元件台灣的主場">上游：核心元件（台灣的主場）<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#%E4%B8%8A%E6%B8%B8%E6%A0%B8%E5%BF%83%E5%85%83%E4%BB%B6%E5%8F%B0%E7%81%A3%E7%9A%84%E4%B8%BB%E5%A0%B4" class="hash-link" aria-label="Direct link to 上游：核心元件（台灣的主場）" title="Direct link to 上游：核心元件（台灣的主場）">​</a></h3>
-<table><thead><tr><th>類別</th><th>代表廠商</th><th>台灣地位</th></tr></thead><tbody><tr><td>RF 功率放大器（GaAs PA）</td><td>穩懋半導體（3105）</td><td>★★★★★ 全球龍頭</td></tr><tr><td>濾波器 / 波導管</td><td>昇達科技（3491）</td><td>★★★★★ 毛利 &gt;50%，Starlink &amp; Kuiper 供應鏈</td></tr><tr><td>低軌衛星專用 PCB</td><td>華通電腦</td><td>★★★★★ 全球 ~80% 市佔</td></tr><tr><td>高效率太陽能電池</td><td>（多方競爭，無台廠主導）</td><td>—</td></tr><tr><td>抗輻射算力晶片</td><td>（無台廠主導）</td><td>—</td></tr></tbody></table>
-<p>台灣在上游的地位是真正的世界級。穩懋的 GaAs PA 是 LEO 高頻通訊的必需品；昇達科打進了全球兩大 LEO 星座供應鏈；華通的低軌衛星 PCB 市佔率堪稱壟斷（2025 Q4 LEO 板營收突破 155 億元新台幣）。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="中游-a衛星本體與系統整合">中游 A：衛星本體與系統整合<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#%E4%B8%AD%E6%B8%B8-a%E8%A1%9B%E6%98%9F%E6%9C%AC%E9%AB%94%E8%88%87%E7%B3%BB%E7%B5%B1%E6%95%B4%E5%90%88" class="hash-link" aria-label="Direct link to 中游 A：衛星本體與系統整合" title="Direct link to 中游 A：衛星本體與系統整合">​</a></h3>
-<p>衛星本體由星座營運商主導（SpaceX 大量自製），台廠的切入點是板卡與結構件。</p>
-<p>重要子題：<strong>雷射星間鏈路（ISL）</strong>。Starlink V3 增加了 ISL 比例，讓衛星之間可以用光速直接傳訊，不需要每次都繞回地面。ISL 需要高精度的指向/追蹤/捕獲（PAT）系統，這是精密光學領域，目前由 Mynaric、SA Photonics 等歐美廠主導，台廠在此幾乎缺席。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="中游-b發射服務與在軌生命週期">中游 B：發射服務與在軌生命週期<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#%E4%B8%AD%E6%B8%B8-b%E7%99%BC%E5%B0%84%E6%9C%8D%E5%8B%99%E8%88%87%E5%9C%A8%E8%BB%8C%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F" class="hash-link" aria-label="Direct link to 中游 B：發射服務與在軌生命週期" title="Direct link to 中游 B：發射服務與在軌生命週期">​</a></h3>
-<p>2025 年全球 LEO 相關投資超過 450 億美元（比 2024 年的 250 億美元成長八成）。這筆錢大量流向發射。SpaceX Falcon 9 與 Starship 的成本持續壓低是整個生命週期商業可行性的關鍵槓桿——沒有便宜的發射，ODC 的 Bezos 算術根本不成立。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="中游-c太空資料中心最熱新題材台灣最大缺口">中游 C：太空資料中心（最熱新題材，台灣最大缺口）<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#%E4%B8%AD%E6%B8%B8-c%E5%A4%AA%E7%A9%BA%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83%E6%9C%80%E7%86%B1%E6%96%B0%E9%A1%8C%E6%9D%90%E5%8F%B0%E7%81%A3%E6%9C%80%E5%A4%A7%E7%BC%BA%E5%8F%A3" class="hash-link" aria-label="Direct link to 中游 C：太空資料中心（最熱新題材，台灣最大缺口）" title="Direct link to 中游 C：太空資料中心（最熱新題材，台灣最大缺口）">​</a></h3>
-<p>這是 2026 年整個 LEO 產業最值得關注的新環節，也是台灣最明顯缺席的地方。</p>
-<p>中游 C 需要整合：</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="full-upstream-to-downstream-breakdown">Full Upstream-to-Downstream Breakdown<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#full-upstream-to-downstream-breakdown" class="hash-link" aria-label="Direct link to Full Upstream-to-Downstream Breakdown" title="Direct link to Full Upstream-to-Downstream Breakdown">​</a></h2>
+<p>Understanding the LEO industry requires understanding that it's not one linear chain — it's five structurally distinct segments.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="upstream-core-components-taiwans-home-turf">Upstream: Core Components (Taiwan's Home Turf)<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#upstream-core-components-taiwans-home-turf" class="hash-link" aria-label="Direct link to Upstream: Core Components (Taiwan's Home Turf)" title="Direct link to Upstream: Core Components (Taiwan's Home Turf)">​</a></h3>
+<table><thead><tr><th>Category</th><th>Representative companies</th><th>Taiwan position</th></tr></thead><tbody><tr><td>RF power amplifiers (GaAs PA)</td><td>WIN Semiconductors (3105)</td><td>★★★★★ Global leader</td></tr><tr><td>Filters / waveguides</td><td>Sheng Da Tech (3491)</td><td>★★★★★ Margin &gt;50%, in Starlink &amp; Kuiper supply chains</td></tr><tr><td>LEO-specific PCB</td><td>Compeq</td><td>★★★★★ ~80% global market share</td></tr><tr><td>High-efficiency solar cells</td><td>(Multi-player competition, no Taiwan leader)</td><td>—</td></tr><tr><td>Radiation-hardened compute chips</td><td>(No Taiwan leader)</td><td>—</td></tr></tbody></table>
+<p>Taiwan's upstream position is genuinely world-class. WIN Semiconductors' GaAs PA is a necessity for LEO high-frequency communications; Sheng Da Tech has entered the global top two LEO constellation supply chains; Compeq's LEO PCB share is near-monopoly (LEO board revenue exceeded NT$15.5B in Q4 2025).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mid-chain-a-satellite-bus-and-systems-integration">Mid-Chain A: Satellite Bus and Systems Integration<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#mid-chain-a-satellite-bus-and-systems-integration" class="hash-link" aria-label="Direct link to Mid-Chain A: Satellite Bus and Systems Integration" title="Direct link to Mid-Chain A: Satellite Bus and Systems Integration">​</a></h3>
+<p>Satellite buses are dominated by constellation operators (SpaceX makes most of its own). Taiwan's entry points are boards and structural components.</p>
+<p>Important sub-topic: <strong>Laser inter-satellite links (ISL)</strong>. Starlink V3's increased ISL ratio lets satellites communicate directly at light-speed without routing back through ground stations. ISL requires high-precision pointing/acquisition/tracking (PAT) systems — a precision optics domain currently led by Mynaric, SA Photonics, and other Western players. Taiwan is almost entirely absent here.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mid-chain-b-launch-services-and-in-orbit-lifecycle">Mid-Chain B: Launch Services and In-Orbit Lifecycle<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#mid-chain-b-launch-services-and-in-orbit-lifecycle" class="hash-link" aria-label="Direct link to Mid-Chain B: Launch Services and In-Orbit Lifecycle" title="Direct link to Mid-Chain B: Launch Services and In-Orbit Lifecycle">​</a></h3>
+<p>In 2025, global LEO-related investment exceeded <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>45</mn><mi>b</mi><mi>i</mi><mi>l</mi><mi>l</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo stretchy="false">(</mo><mi>u</mi><mi>p</mi><mn>80</mn></mrow><annotation encoding="application/x-tex">45 billion (up 80% from </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord">45</span><span class="mord mathnormal">bi</span><span class="mord mathnormal" style="margin-right:0.01968em">ll</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mopen">(</span><span class="mord mathnormal">u</span><span class="mord mathnormal">p</span><span class="mord">80</span></span></span></span>25 billion in 2024). Much of this flows into launch. The continued cost reduction of SpaceX Falcon 9 and Starship is the key leverage point for the entire lifecycle's commercial viability — without cheap launch, Bezos' ODC arithmetic simply doesn't work.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mid-chain-c-space-datacenters-hottest-new-segment--taiwans-biggest-gap">Mid-Chain C: Space Datacenters (Hottest New Segment — Taiwan's Biggest Gap)<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#mid-chain-c-space-datacenters-hottest-new-segment--taiwans-biggest-gap" class="hash-link" aria-label="Direct link to Mid-Chain C: Space Datacenters (Hottest New Segment — Taiwan's Biggest Gap)" title="Direct link to Mid-Chain C: Space Datacenters (Hottest New Segment — Taiwan's Biggest Gap)">​</a></h3>
+<p>This is the most important new link in the 2026 LEO industry to watch, and also where Taiwan is most conspicuously absent.</p>
+<p>Mid-chain C requires integrating:</p>
 <ol>
-<li><strong>算力硬體</strong>（COTS GPU vs space-hardened 的工程取捨）</li>
-<li><strong>散熱系統</strong>（無對流環境，只能靠輻射冷卻 + 導熱板）</li>
-<li><strong>電源管理</strong>（10 kW+ 太陽能陣列 → 算力模組）</li>
-<li><strong>光學通訊</strong>（與地面及星間節點的高速 Downlink）</li>
-<li><strong>系統整合能力</strong>（要和發射方、地面站、光通訊一起打包）</li>
+<li><strong>Compute hardware</strong> (COTS GPU vs. space-hardened engineering trade-offs)</li>
+<li><strong>Thermal management</strong> (no convection environment — only radiative cooling + conduction plates)</li>
+<li><strong>Power management</strong> (10 kW+ solar arrays → compute module)</li>
+<li><strong>Optical communications</strong> (high-speed downlinks to ground and inter-node links)</li>
+<li><strong>Systems integration capability</strong> (launch partner + ground station + optical comms bundled)</li>
 </ol>
-<p>台廠前三項「會做但沒做到 space grade」，第四、五項幾乎沒有積累。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="下游-a地面基礎設施">下游 A：地面基礎設施<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#%E4%B8%8B%E6%B8%B8-a%E5%9C%B0%E9%9D%A2%E5%9F%BA%E7%A4%8E%E8%A8%AD%E6%96%BD" class="hash-link" aria-label="Direct link to 下游 A：地面基礎設施" title="Direct link to 下游 A：地面基礎設施">​</a></h3>
-<p>地面站（信關站）、用戶終端（天線、LNB、路由器）、地空混合架構。</p>
-<p>地空 DC 混合雲是 ODC 商業化最現實的第一落點：ODC 節點做推論/邊緣計算，地面 DC 做訓練/儲存，用高速 Downlink 連起來。企業不需要完全遷離地面，漸進採用。</p>
-<p>台灣在地面終端這段（天線、LNB、電源）有不錯的參與度（★★★★）。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="下游-b終端服務">下游 B：終端服務<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#%E4%B8%8B%E6%B8%B8-b%E7%B5%82%E7%AB%AF%E6%9C%8D%E5%8B%99" class="hash-link" aria-label="Direct link to 下游 B：終端服務" title="Direct link to 下游 B：終端服務">​</a></h3>
-<table><thead><tr><th>場景</th><th>說明</th></tr></thead><tbody><tr><td>直連手機（D2D/NTN）</td><td>T-Mobile × SpaceX；AT&amp;T/Verizon × AST SpaceMobile</td></tr><tr><td>地球觀測 AI</td><td>在軌即時處理衛星影像；野火偵測、農業監測、船隻識別</td></tr><tr><td>國防 / 主權雲端</td><td>地理獨立、難以摧毀、全球覆蓋；最早期的付費場景</td></tr><tr><td>航空 / 海事</td><td>Starlink Aviation 機上 Wi-Fi；已是成熟市場</td></tr></tbody></table>
+<p>Taiwan companies "can do" items 1–3 but haven't reached space grade; items 4–5 have almost no accumulated capability.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="downstream-a-ground-infrastructure">Downstream A: Ground Infrastructure<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#downstream-a-ground-infrastructure" class="hash-link" aria-label="Direct link to Downstream A: Ground Infrastructure" title="Direct link to Downstream A: Ground Infrastructure">​</a></h3>
+<p>Ground stations (gateway stations), user terminals (antennas, LNBs, routers), ground-space hybrid architecture.</p>
+<p>Ground-space DC hybrid cloud is the most realistic first commercial landing for ODC: ODC nodes handle inference/edge compute, ground DCs handle training/storage, connected by high-speed downlinks. Enterprises don't need to fully leave the ground — they can adopt incrementally.</p>
+<p>Taiwan has strong participation in the ground terminal segment (antennas, LNBs, power supply) — ★★★★.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="downstream-b-end-services">Downstream B: End Services<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#downstream-b-end-services" class="hash-link" aria-label="Direct link to Downstream B: End Services" title="Direct link to Downstream B: End Services">​</a></h3>
+<table><thead><tr><th>Scenario</th><th>Description</th></tr></thead><tbody><tr><td>Direct-to-device (D2D/NTN)</td><td>T-Mobile × SpaceX; AT&amp;T/Verizon × AST SpaceMobile</td></tr><tr><td>Earth observation AI</td><td>In-orbit real-time satellite imagery processing; wildfire detection, agricultural monitoring, vessel identification</td></tr><tr><td>Defense / sovereign cloud</td><td>Geographically independent, hard to destroy, global coverage — earliest paid use case</td></tr><tr><td>Aviation / maritime</td><td>Starlink Aviation in-flight Wi-Fi; already a mature market</td></tr></tbody></table>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="台灣的機會與風險">台灣的機會與風險<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#%E5%8F%B0%E7%81%A3%E7%9A%84%E6%A9%9F%E6%9C%83%E8%88%87%E9%A2%A8%E9%9A%AA" class="hash-link" aria-label="Direct link to 台灣的機會與風險" title="Direct link to 台灣的機會與風險">​</a></h2>
-<p>台灣的 LEO 供應鏈地位可以用一句話總結：<strong>上游王者，中游 C 缺席。</strong></p>
-<table><thead><tr><th>環節</th><th>存在感</th></tr></thead><tbody><tr><td>上游 RF / PCB</td><td>★★★★★</td></tr><tr><td>中游 A（板卡整合）</td><td>★★★</td></tr><tr><td>中游 A（ISL 光學）</td><td>★★</td></tr><tr><td><strong>中游 C（ODC 硬體整合）</strong></td><td><strong>★</strong></td></tr><tr><td>下游地面端</td><td>★★★★</td></tr></tbody></table>
-<p>上游的高毛利是真實的，但它建立在「賣元件」的商業模式上。如果未來 ODC 成熟，算力服務的附加價值主要落在中游 C 和下游服務層，上游元件廠商可能逐漸被壓縮成純 OEM/ODM 模式——就像台灣 PC 代工業的歷史重演。</p>
-<p><strong>2026–2028 是中游 C 商業化的第一波窗口。</strong></p>
-<p>三條可能路徑：</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="taiwans-opportunities-and-risks">Taiwan's Opportunities and Risks<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#taiwans-opportunities-and-risks" class="hash-link" aria-label="Direct link to Taiwan's Opportunities and Risks" title="Direct link to Taiwan's Opportunities and Risks">​</a></h2>
+<p>Taiwan's LEO supply chain position can be summarized in one sentence: <strong>world-class upstream, absent from mid-chain C.</strong></p>
+<table><thead><tr><th>Segment</th><th>Presence</th></tr></thead><tbody><tr><td>Upstream RF / PCB</td><td>★★★★★</td></tr><tr><td>Mid-chain A (board integration)</td><td>★★★</td></tr><tr><td>Mid-chain A (ISL optics)</td><td>★★</td></tr><tr><td><strong>Mid-chain C (ODC hardware integration)</strong></td><td><strong>★</strong></td></tr><tr><td>Downstream ground segment</td><td>★★★★</td></tr></tbody></table>
+<p>The upstream high margins are real, but they're built on a "sell components" business model. If ODC matures and the value-added in compute services shifts primarily to mid-chain C and downstream service layers, upstream component manufacturers may gradually compress into a pure OEM/ODM role — a replay of Taiwan's PC manufacturing history.</p>
+<p><strong>2026–2028 is the first commercialization window for mid-chain C.</strong></p>
+<p>Three possible paths:</p>
 <ul>
-<li><strong>路徑 A</strong>：穩懋、昇達科這類上游廠商往中游 C 延伸。技術最接近，但文化轉型最難（從「賣元件」到「賣子系統」）。</li>
-<li><strong>路徑 B</strong>：華通、欣興這類 PCB 廠把板卡整合層拉高，往 ODC 運算板組件延伸。<strong>最可能出黑馬</strong>，因為 PCB 廠本來就做慣系統級整合。</li>
-<li><strong>路徑 C</strong>：國防 / 主權雲採購催生。台灣若把 ODC 納入國防採購，會強制長出一家中游 C 廠商——這是最確定的催化劑，時程取決於政策意志。</li>
+<li><strong>Path A:</strong> Companies like WIN Semiconductors and Sheng Da Tech extend from upstream into mid-chain C. Technically closest, but cultural transformation hardest (from "sell components" to "sell subsystems").</li>
+<li><strong>Path B:</strong> PCB houses like Compeq and Unimicron lift the board integration layer toward ODC compute board assemblies. <strong>Most likely to produce a dark horse</strong> — PCB makers are already accustomed to system-level board integration, just need the space-grade qualification.</li>
+<li><strong>Path C:</strong> Defense / sovereign cloud procurement acts as catalyst. If Taiwan incorporates ODC into defense procurement, it will force a mid-chain C manufacturer into existence — this is the most certain catalyst; timeline depends on policy will.</li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="時程表">時程表<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#%E6%99%82%E7%A8%8B%E8%A1%A8" class="hash-link" aria-label="Direct link to 時程表" title="Direct link to 時程表">​</a></h2>
-<table><thead><tr><th>時間</th><th>事件</th></tr></thead><tbody><tr><td>2025-05</td><td>ADA Space 發射首批 12 顆衛星（744 TOPS/顆）</td></tr><tr><td>2025-11</td><td>Starcloud-1 發射，H100 in orbit，太空 LLM 訓練首次成功</td></tr><tr><td>2025 底 – 2026 初</td><td>ITU 頻譜分配備忘錄：500–1200 km + Ku/Ka/V 進入枯竭</td></tr><tr><td>2026-01-11</td><td>Axiom Space ODC Node 1 &amp; 2 發射，Kepler 光學中繼接通</td></tr><tr><td>2026 GTC</td><td>黃仁勳：「太空運算，終極前沿，已經到來」</td></tr><tr><td>2026–2028</td><td>中游 C 第一波商業化窗口</td></tr><tr><td>2030 預估</td><td>McKinsey：agentic commerce（含太空算力）媒介 $3–5 兆美元</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="timeline">Timeline<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#timeline" class="hash-link" aria-label="Direct link to Timeline" title="Direct link to Timeline">​</a></h2>
+<table><thead><tr><th>Date</th><th>Event</th></tr></thead><tbody><tr><td>2025-05</td><td>ADA Space launches first 12 satellites (744 TOPS/satellite)</td></tr><tr><td>2025-11</td><td>Starcloud-1 launches, H100 in orbit, first space LLM training completed</td></tr><tr><td>Late 2025 – early 2026</td><td>ITU spectrum allocation memo: 500–1,200 km + Ku/Ka/V bands entering saturation</td></tr><tr><td>2026-01-11</td><td>Axiom Space ODC Node 1 &amp; 2 launched, Kepler optical relay connected</td></tr><tr><td>2026 GTC</td><td>Jensen Huang: "Space computing — the ultimate frontier — has arrived"</td></tr><tr><td>2026–2028</td><td>Mid-chain C first commercialization window</td></tr><tr><td>2030 est.</td><td>McKinsey: agentic commerce (incl. space compute) mediates $3–5 trillion</td></tr></tbody></table>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="結論">結論<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#%E7%B5%90%E8%AB%96" class="hash-link" aria-label="Direct link to 結論" title="Direct link to 結論">​</a></h2>
-<p>LEO 產業在 2026 年同時引爆了五條線：ODC 驗證可行、頻譜稀缺戰略化、中國三體星座規模化、Amazon Kuiper 商轉、Starlink V3 升級。這不是「下一個五年的事」，是現在正在發生的 capex 部署。</p>
-<p>台灣的上游 RF 與 PCB 廠商是這輪行情中最確定的受益者。但真正的長線問題是：台灣能不能在 2026–2028 的視窗期，長出一家中游 C 的玩家——在太空算力的附加價值徹底往服務層轉移之前，先站進去。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="https://sampraszheng.github.io/yxz/blog/leo-space-landscape-2026#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>The LEO industry has simultaneously ignited five fronts in 2026: ODC validated as viable, spectrum scarcity becoming strategic, China's three-body constellation scaling, Amazon Kuiper's commercial launch, and Starlink V3 upgrades. This isn't "a story for the next five years" — it's capex deployment happening right now.</p>
+<p>Taiwan's upstream RF and PCB manufacturers are the most certain beneficiaries of this cycle. But the real long-term question is: can Taiwan, within the 2026–2028 window, produce a mid-chain C player — and stake a position before the value in space compute fully migrates to the service layer?</p>
 <hr>
-<p><em>深度分析：<a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap">台灣 LEO 結構性缺口與三條突圍路徑</a></em></p>]]></content:encoded>
+<p><em>Deep analysis: <a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap">Taiwan's Structural LEO Gap and Three Breakout Paths</a></em></p>]]></content:encoded>
             <category>space</category>
             <category>rf</category>
             <category>ai</category>
@@ -297,378 +297,377 @@
             <category>misc</category>
         </item>
         <item>
-            <title><![CDATA[RF / SoC 系統除錯分析 — 從硬體到韌體到 ATE 的 Bug 分類學]]></title>
+            <title><![CDATA[RF / SoC Debug Playbook — A Bug Taxonomy from Hardware to ATE]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/debug</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/debug</guid>
             <pubDate>Mon, 02 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[一份給無線通訊 / SoC 產品工程師的系統除錯 checklist — 從 PCB 層到 OTP 烙碼、ATE 測試腳本、再到環境相容性，每一層常見 bug 類型與根因切入點。]]></description>
-            <content:encoded><![CDATA[<p>量產導入（NPI）階段的 bug，八成不是「哪一行寫錯」那種純軟體問題，而是<strong>跨層交互</strong>：硬體設計過關但 SMT 變異讓某個批次掛掉、ATE 測試通過但系統端因為 profile 不同踩到韌體 corner case、實驗室好好的到了客戶環境因為共存（coexistence）干擾才浮現。</p>
-<p>這篇把我自己在 Wi-Fi / RF SoC 產品線上用來「先找分類、再找根因」的 checklist 完整寫出來，未來新 case 進來可以照著刷一輪。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第一層硬體hw">第一層：硬體（HW）<a href="https://sampraszheng.github.io/yxz/blog/debug#%E7%AC%AC%E4%B8%80%E5%B1%A4%E7%A1%AC%E9%AB%94hw" class="hash-link" aria-label="Direct link to 第一層：硬體（HW）" title="Direct link to 第一層：硬體（HW）">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="設計階段">設計階段<a href="https://sampraszheng.github.io/yxz/blog/debug#%E8%A8%AD%E8%A8%88%E9%9A%8E%E6%AE%B5" class="hash-link" aria-label="Direct link to 設計階段" title="Direct link to 設計階段">​</a></h3>
-<table><thead><tr><th>項目</th><th>常見 bug</th></tr></thead><tbody><tr><td>Symbol / Package / Pin</td><td>footprint 繪錯、pin swap、power/ground 拉錯層</td></tr><tr><td>Schematic</td><td>電源序列、clock 樹、RF matching 缺元件或誤用</td></tr><tr><td>模擬</td><td>S-parameter 沒驗、antenna tuning 只靠 simulator 結果</td></tr></tbody></table>
-<p>🎯 <strong>切入點</strong>：任何新量產前，用 golden board 逐 pin 對照 BOM + layout 再跑一次 DRC。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pcb-階段">PCB 階段<a href="https://sampraszheng.github.io/yxz/blog/debug#pcb-%E9%9A%8E%E6%AE%B5" class="hash-link" aria-label="Direct link to PCB 階段" title="Direct link to PCB 階段">​</a></h3>
+            <description><![CDATA[A systematic debug checklist for wireless/SoC product engineers — from PCB layer to OTP programming, ATE test scripts, and environmental compatibility, covering common bug types and root-cause entry points at every layer.]]></description>
+            <content:encoded><![CDATA[<p>Bugs in NPI (New Product Introduction) are rarely a pure "typo on line N" software issue — eight out of ten are <strong>cross-layer interactions</strong>: hardware design passes but SMT variation breaks a batch; ATE passes but the system hits a firmware corner case due to a different profile; works fine in the lab but coexistence interference surfaces only in the customer's environment.</p>
+<p>This post writes out the checklist I use on Wi-Fi / RF SoC product lines to "classify first, then find root cause" — so any new case can be screened systematically.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-1-hardware-hw">Layer 1: Hardware (HW)<a href="https://sampraszheng.github.io/yxz/blog/debug#layer-1-hardware-hw" class="hash-link" aria-label="Direct link to Layer 1: Hardware (HW)" title="Direct link to Layer 1: Hardware (HW)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="design-phase">Design Phase<a href="https://sampraszheng.github.io/yxz/blog/debug#design-phase" class="hash-link" aria-label="Direct link to Design Phase" title="Direct link to Design Phase">​</a></h3>
+<table><thead><tr><th>Item</th><th>Common bugs</th></tr></thead><tbody><tr><td>Symbol / Package / Pin</td><td>Wrong footprint, pin swap, power/ground routed to wrong layer</td></tr><tr><td>Schematic</td><td>Power sequence, clock tree, RF matching — missing components or misuse</td></tr><tr><td>Simulation</td><td>S-parameters not verified, antenna tuning based on simulator results only</td></tr></tbody></table>
+<p>🎯 <strong>Entry point:</strong> Before any new production run, use a golden board to cross-check every pin against BOM + layout, then run DRC one more time.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pcb-phase">PCB Phase<a href="https://sampraszheng.github.io/yxz/blog/debug#pcb-phase" class="hash-link" aria-label="Direct link to PCB Phase" title="Direct link to PCB Phase">​</a></h3>
 <ul>
-<li>CAM 輸出比對原圖（Gerber / ODB++ diff）</li>
-<li>X-section 驗層壓結構（介電層厚度直接影響 50 Ω 阻抗）</li>
-<li>DRC：trace width、spacing、via-in-pad、differential pair skew</li>
-<li>模組區（RF / DDR / clock）單獨審圖</li>
+<li>CAM output vs. original (Gerber / ODB++ diff)</li>
+<li>Cross-section to verify stackup (dielectric thickness directly affects 50 Ω impedance)</li>
+<li>DRC: trace width, spacing, via-in-pad, differential pair skew</li>
+<li>Review RF / DDR / clock regions separately</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：量產板先抓 10 片做 TDR 與 VNA sweep，比對設計值。Impedance 偏移超過 ±10% 先停線。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pcba-階段">PCBA 階段<a href="https://sampraszheng.github.io/yxz/blog/debug#pcba-%E9%9A%8E%E6%AE%B5" class="hash-link" aria-label="Direct link to PCBA 階段" title="Direct link to PCBA 階段">​</a></h3>
+<p>🎯 <strong>Entry point:</strong> Pull 10 boards from the first production run, run TDR and VNA sweep, compare against design targets. Impedance deviation &gt; ±10%: stop the line.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pcba-phase">PCBA Phase<a href="https://sampraszheng.github.io/yxz/blog/debug#pcba-phase" class="hash-link" aria-label="Direct link to PCBA Phase" title="Direct link to PCBA Phase">​</a></h3>
 <ul>
-<li>SMT：爐溫 profile、回流焊缺陷、冷焊、tombstone</li>
-<li>BOM 管理：alternative part 換料時 datasheet 差異（尤其 capacitor ESR、inductor Q）</li>
-<li>Variant：同一 SoC 多變體（WiFi-only vs WiFi+BT）的料件差異</li>
+<li>SMT: oven temperature profile, reflow defects, cold solder joints, tombstoning</li>
+<li>BOM management: datasheet differences when switching to alternate parts (especially capacitor ESR, inductor Q)</li>
+<li>Variants: component differences across SoC variants (Wi-Fi-only vs. Wi-Fi+BT)</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：BOM diff + X-ray 抽檢。alt. part 換料後必須跑完整 RF 認證（不是只跑 sanity）。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="系統整合">系統整合<a href="https://sampraszheng.github.io/yxz/blog/debug#%E7%B3%BB%E7%B5%B1%E6%95%B4%E5%90%88" class="hash-link" aria-label="Direct link to 系統整合" title="Direct link to 系統整合">​</a></h3>
+<p>🎯 <strong>Entry point:</strong> BOM diff + X-ray spot check. Alternate part changes require a full RF certification run — not just sanity.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="system-integration">System Integration<a href="https://sampraszheng.github.io/yxz/blog/debug#system-integration" class="hash-link" aria-label="Direct link to System Integration" title="Direct link to System Integration">​</a></h3>
 <ul>
-<li>模組間干擾：WiFi 2.4G × BT × LTE B40 共存是經典</li>
-<li>Interconnect：FFC/FPC 長度、屏蔽接地迴路</li>
-<li>ESD / EMC：整機才看得見</li>
+<li>Module-to-module interference: Wi-Fi 2.4 GHz × BT × LTE Band 40 coexistence is a classic</li>
+<li>Interconnect: FFC/FPC length, shield ground loops</li>
+<li>ESD / EMC: only visible at the full-system level</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：用 spectrum analyzer 抓帶外雜散（spurious），對應到時間軸看是哪個子系統啟動時出現。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第二層韌體fw">第二層：韌體（FW）<a href="https://sampraszheng.github.io/yxz/blog/debug#%E7%AC%AC%E4%BA%8C%E5%B1%A4%E9%9F%8C%E9%AB%94fw" class="hash-link" aria-label="Direct link to 第二層：韌體（FW）" title="Direct link to 第二層：韌體（FW）">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="otp--soc-配置">OTP / SoC 配置<a href="https://sampraszheng.github.io/yxz/blog/debug#otp--soc-%E9%85%8D%E7%BD%AE" class="hash-link" aria-label="Direct link to OTP / SoC 配置" title="Direct link to OTP / SoC 配置">​</a></h3>
+<p>🎯 <strong>Entry point:</strong> Use a spectrum analyzer to capture out-of-band spurious emissions — correlate to the timeline to identify which subsystem is active at the time.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-2-firmware-fw">Layer 2: Firmware (FW)<a href="https://sampraszheng.github.io/yxz/blog/debug#layer-2-firmware-fw" class="hash-link" aria-label="Direct link to Layer 2: Firmware (FW)" title="Direct link to Layer 2: Firmware (FW)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="otp--soc-configuration">OTP / SoC Configuration<a href="https://sampraszheng.github.io/yxz/blog/debug#otp--soc-configuration" class="hash-link" aria-label="Direct link to OTP / SoC Configuration" title="Direct link to OTP / SoC Configuration">​</a></h3>
 <ul>
-<li>OTP 版本 × MCN#（Mask Change Number）× variant 對照</li>
-<li>寫入 register 的前後順序（啟動序列錯了，下一層就全錯）</li>
-<li>Calibration 資料：RX gain table、TX power table、antenna switch mapping</li>
+<li>OTP version × MCN# (Mask Change Number) × variant cross-reference</li>
+<li>Register write order (wrong startup sequence corrupts every downstream layer)</li>
+<li>Calibration data: RX gain table, TX power table, antenna switch mapping</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：所有 FW issue 先確認 OTP version 與 MCN# 匹配。<strong>最便宜的 root cause 就是烙錯料</strong>。</p>
+<p>🎯 <strong>Entry point:</strong> For every FW issue, first confirm OTP version matches MCN#. <strong>The cheapest root cause is always wrong parts.</strong></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="platform-meta">Platform Meta<a href="https://sampraszheng.github.io/yxz/blog/debug#platform-meta" class="hash-link" aria-label="Direct link to Platform Meta" title="Direct link to Platform Meta">​</a></h3>
 <ul>
-<li>ADB command 腳本（Android）或 host interface 指令序列</li>
-<li>Code builder（compile flag、branch、tag）</li>
-<li>Regression screen 與 sanity check 的差異：regression 是<strong>全量</strong>，sanity 是<strong>最低可接受</strong>；別混用</li>
-<li>Review stage：從 RTL → FW → FW+SW → 系統的階段界線</li>
+<li>ADB command scripts (Android) or host interface command sequence</li>
+<li>Code builder: compile flags, branch, tag</li>
+<li>Regression vs. sanity: regression is <strong>full coverage</strong>, sanity is <strong>minimum viable pass</strong> — never conflate them</li>
+<li>Review stages: RTL → FW → FW+SW → system — know the boundaries</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：把「哪個版本、哪個 branch、什麼 config、什麼 flag」四個參數記在 bug ticket 上。缺任何一個都先別 debug。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第三層軟體--測試sw--ate">第三層：軟體 / 測試（SW / ATE）<a href="https://sampraszheng.github.io/yxz/blog/debug#%E7%AC%AC%E4%B8%89%E5%B1%A4%E8%BB%9F%E9%AB%94--%E6%B8%AC%E8%A9%A6sw--ate" class="hash-link" aria-label="Direct link to 第三層：軟體 / 測試（SW / ATE）" title="Direct link to 第三層：軟體 / 測試（SW / ATE）">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="測試-config">測試 config<a href="https://sampraszheng.github.io/yxz/blog/debug#%E6%B8%AC%E8%A9%A6-config" class="hash-link" aria-label="Direct link to 測試 config" title="Direct link to 測試 config">​</a></h3>
+<p>🎯 <strong>Entry point:</strong> Record four parameters on every bug ticket — version, branch, config, flags. If any one is missing, don't debug yet.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-3-software--test-sw--ate">Layer 3: Software / Test (SW / ATE)<a href="https://sampraszheng.github.io/yxz/blog/debug#layer-3-software--test-sw--ate" class="hash-link" aria-label="Direct link to Layer 3: Software / Test (SW / ATE)" title="Direct link to Layer 3: Software / Test (SW / ATE)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-config">Test Config<a href="https://sampraszheng.github.io/yxz/blog/debug#test-config" class="hash-link" aria-label="Direct link to Test Config" title="Direct link to Test Config">​</a></h3>
 <ul>
-<li>Dialog：測試流程對話（DUT ↔ tester 互動）</li>
-<li>Profile：頻道、頻寬、調變（MCS）、天線組合</li>
-<li>Sequence：Pre-cal → calibration → verification → stress</li>
-<li>Coverage：corner case 是否有覆蓋（低溫、高溫、低 Vbat）</li>
+<li>Dialog: test flow dialogue (DUT ↔ tester interaction)</li>
+<li>Profile: channel, bandwidth, modulation (MCS), antenna combo</li>
+<li>Sequence: pre-cal → calibration → verification → stress</li>
+<li>Coverage: are corner cases covered? (low temp, high temp, low Vbat)</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="前置條件">前置條件<a href="https://sampraszheng.github.io/yxz/blog/debug#%E5%89%8D%E7%BD%AE%E6%A2%9D%E4%BB%B6" class="hash-link" aria-label="Direct link to 前置條件" title="Direct link to 前置條件">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="https://sampraszheng.github.io/yxz/blog/debug#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h3>
 <ul>
-<li>Library dependency（ATE 廠商提供的 DLL / .so 版本）</li>
-<li>Config file path（local vs network）</li>
-<li>Tester firmware 與 DUT firmware 的版本相容表</li>
+<li>Library dependencies (DLL / .so versions from ATE vendor)</li>
+<li>Config file paths (local vs. network)</li>
+<li>Tester firmware × DUT firmware compatibility matrix</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ate-本體">ATE 本體<a href="https://sampraszheng.github.io/yxz/blog/debug#ate-%E6%9C%AC%E9%AB%94" class="hash-link" aria-label="Direct link to ATE 本體" title="Direct link to ATE 本體">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ate-platform">ATE Platform<a href="https://sampraszheng.github.io/yxz/blog/debug#ate-platform" class="hash-link" aria-label="Direct link to ATE Platform" title="Direct link to ATE Platform">​</a></h3>
 <ul>
-<li>Script（Python / TCL / C#）</li>
-<li>Extension / plug-in 與 tester SDK 版本匹配</li>
-<li>Package 管理（尤其團隊內多條線共用 tester 時）</li>
+<li>Script (Python / TCL / C#)</li>
+<li>Extension / plug-in compatibility with tester SDK version</li>
+<li>Package management (especially when multiple product lines share a tester)</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="資料-review">資料 review<a href="https://sampraszheng.github.io/yxz/blog/debug#%E8%B3%87%E6%96%99-review" class="hash-link" aria-label="Direct link to 資料 review" title="Direct link to 資料 review">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-review">Data Review<a href="https://sampraszheng.github.io/yxz/blog/debug#data-review" class="hash-link" aria-label="Direct link to Data Review" title="Direct link to Data Review">​</a></h3>
 <ul>
-<li>Parser：raw log → structured data</li>
-<li>Visualize：boxplot、yield map、wafer map</li>
-<li>KPI：yield、Cpk、outlier 分布</li>
+<li>Parser: raw log → structured data</li>
+<li>Visualize: boxplot, yield map, wafer map</li>
+<li>KPI: yield, Cpk, outlier distribution</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：所有 ATE 問題先問「log 看得懂嗎」。看得懂就是資料問題（script bug、config 錯），看不懂就是工具問題（parser 壞、tester 版本不匹配）。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第四層環境environment">第四層：環境（Environment）<a href="https://sampraszheng.github.io/yxz/blog/debug#%E7%AC%AC%E5%9B%9B%E5%B1%A4%E7%92%B0%E5%A2%83environment" class="hash-link" aria-label="Direct link to 第四層：環境（Environment）" title="Direct link to 第四層：環境（Environment）">​</a></h2>
-<p>這層是最坑的，因為它<strong>看起來不是 bug，是玄學</strong>。</p>
-<table><thead><tr><th>類別</th><th>動作</th></tr></thead><tbody><tr><td>Comparison</td><td>同樣 DUT 在兩個環境跑，diff 出差異（溫度、濕度、電源純淨度、鄰近設備）</td></tr><tr><td>Reproduce</td><td>先在實驗室能 100% 重現，才算有 bug。重現不了就先記錄環境變數</td></tr><tr><td>ATE / extension / package</td><td>工具鏈版本再查一輪（是的，就是那個再查一輪）</td></tr><tr><td>Compatibility</td><td>相容性：同一韌體在不同 host、不同 AP/Router、不同國家法規 region code</td></tr></tbody></table>
-<p>🎯 <strong>切入點</strong>：現場 escalation 先問三件事 — (1) 幾支 DUT 有問題、(2) 隔壁測試站有沒有、(3) 上次通過是哪個 build。答不出來就回原廠重測。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="除錯的心智模型">除錯的心智模型<a href="https://sampraszheng.github.io/yxz/blog/debug#%E9%99%A4%E9%8C%AF%E7%9A%84%E5%BF%83%E6%99%BA%E6%A8%A1%E5%9E%8B" class="hash-link" aria-label="Direct link to 除錯的心智模型" title="Direct link to 除錯的心智模型">​</a></h2>
-<p>實務上我會跑這個 flow：</p>
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"> 1. 現象分類（HW / FW / SW / ENV 哪一層？）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 2. 版本凍結（locked config：OTP / branch / ATE / platform）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 3. 比對 golden（同版本 golden board 能過嗎？）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 4. 二分法（哪個 commit / 哪個料件 / 哪個 test item 開始掛？）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 5. Reproduce on demand（能按鈕重現才算真 bug）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 6. Root cause + Mitigation + Prevention</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>第 5 步卡住時，通常是<strong>跨層問題</strong>：單層都沒事、合起來才爆。那就回到第 1 步，重新分類，這次把「上游 batch」、「下游 platform」一起放進分類樹。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="下一步">下一步<a href="https://sampraszheng.github.io/yxz/blog/debug#%E4%B8%8B%E4%B8%80%E6%AD%A5" class="hash-link" aria-label="Direct link to 下一步" title="Direct link to 下一步">​</a></h2>
-<p>這份清單還會延伸成兩個方向的文章：</p>
+<p>🎯 <strong>Entry point:</strong> For every ATE issue, first ask "can I read the log?" If yes → data problem (script bug, wrong config). If no → tooling problem (broken parser, tester version mismatch).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-4-environment">Layer 4: Environment<a href="https://sampraszheng.github.io/yxz/blog/debug#layer-4-environment" class="hash-link" aria-label="Direct link to Layer 4: Environment" title="Direct link to Layer 4: Environment">​</a></h2>
+<p>This layer is the trickiest because <strong>it looks like voodoo, not a bug.</strong></p>
+<table><thead><tr><th>Category</th><th>Action</th></tr></thead><tbody><tr><td>Comparison</td><td>Run the same DUT in two environments and diff the result (temperature, humidity, power supply cleanliness, adjacent equipment)</td></tr><tr><td>Reproduce</td><td>You don't have a bug until you can reproduce it 100% in the lab. Can't reproduce? Document all environment variables first.</td></tr><tr><td>ATE / extension / package</td><td>Check the toolchain versions again. Yes, again.</td></tr><tr><td>Compatibility</td><td>Same firmware, different host / AP-router / country region code</td></tr></tbody></table>
+<p>🎯 <strong>Entry point:</strong> For on-site escalations, ask three things first — (1) how many DUTs are affected, (2) does the adjacent test station show it, (3) what was the last passing build. If any answer is unknown, send it back for in-factory retest.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-debug-mental-model">The Debug Mental Model<a href="https://sampraszheng.github.io/yxz/blog/debug#the-debug-mental-model" class="hash-link" aria-label="Direct link to The Debug Mental Model" title="Direct link to The Debug Mental Model">​</a></h2>
+<p>In practice, I run this flow:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"> 1. Classify the symptom (HW / FW / SW / ENV — which layer?)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 2. Lock the version (frozen config: OTP / branch / ATE / platform)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 3. Compare against golden (does the same config pass on a golden board?)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 4. Bisect (which commit / which part / which test item started failing?)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 5. Reproduce on demand (it's not a real bug until you can trigger it with a button)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 6. Root cause + Mitigation + Prevention</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>When step 5 is stuck, it's usually a <strong>cross-layer problem</strong>: each layer passes individually but fails combined. Go back to step 1, reclassify — this time put "upstream batch" and "downstream platform" both into the classification tree.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next<a href="https://sampraszheng.github.io/yxz/blog/debug#whats-next" class="hash-link" aria-label="Direct link to What's Next" title="Direct link to What's Next">​</a></h2>
+<p>This checklist will branch into two follow-up posts:</p>
 <ul>
-<li><strong>相位陣列專屬的 debug checklist</strong>（pattern measurement、calibration drift、beam steering error）— 接在 <a href="https://sampraszheng.github.io/yxz/blog/PA">聊聊相位陣列</a> 後面</li>
-<li><strong>Radiation-aware debug for space silicon</strong> — 接 <a href="https://sampraszheng.github.io/yxz/blog/radtest">Radiation Test Playbook</a>，加上 TID drift / SEU 復原的 field debug 流程</li>
+<li><strong>Phased-array-specific debug checklist</strong> (pattern measurement, calibration drift, beam steering error) — following on from <a href="https://sampraszheng.github.io/yxz/blog/PA">Phased Arrays</a></li>
+<li><strong>Radiation-aware debug for space silicon</strong> — following on from <a href="https://sampraszheng.github.io/yxz/blog/radtest">Radiation Test Playbook</a>, adding TID drift / SEU recovery field debug flows</li>
 </ul>]]></content:encoded>
             <category>rf</category>
             <category>wifi</category>
             <category>phasedarray</category>
         </item>
         <item>
-            <title><![CDATA[領域特化 AI Agent — 我為什麼自己做 myGPTs]]></title>
+            <title><![CDATA[Domain-Specific AI Agents — Why I Build My Own myGPTs]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/ai-agent</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/ai-agent</guid>
             <pubDate>Thu, 15 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[為什麼通用 ChatGPT 不夠用？從 Jamia（Polkadot/JAM）到 Spacesharks（太空產業），介紹我自建的領域 GPT 與它們背後的 Obsidian 知識庫。]]></description>
-            <content:encoded><![CDATA[<p>通用大型語言模型強，但在<strong>特定領域做深度分析</strong>時有兩個硬傷：知識時效性落後，以及對小眾領域的事實稀釋。以 Polkadot 生態為例，2.0 版本的 Agile Coretime、RegionX、JAM 這些 2024–2026 之間的關鍵迭代，通用模型要嘛答不出、要嘛抓到過時版本。</p>
-<p>解法不是換更大的模型 — 是<strong>給模型一個結構化、可信的外部知識庫</strong>，然後在前面包一層人格與任務 prompt。這就是我在做 myGPTs 的動機。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="目前在用的兩個">目前在用的兩個<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#%E7%9B%AE%E5%89%8D%E5%9C%A8%E7%94%A8%E7%9A%84%E5%85%A9%E5%80%8B" class="hash-link" aria-label="Direct link to 目前在用的兩個" title="Direct link to 目前在用的兩個">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="jamia--polkadot--jam-專家">Jamia — Polkadot × JAM 專家<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#jamia--polkadot--jam-%E5%B0%88%E5%AE%B6" class="hash-link" aria-label="Direct link to Jamia — Polkadot × JAM 專家" title="Direct link to Jamia — Polkadot × JAM 專家">​</a></h3>
+            <description><![CDATA[Why general-purpose ChatGPT isn't enough — from Jamia (Polkadot/JAM) to Spacesharks (space industry), an introduction to my domain-specific GPTs and the Obsidian knowledge base behind them.]]></description>
+            <content:encoded><![CDATA[<p>General-purpose large language models are powerful, but they have two hard limitations when it comes to <strong>deep domain analysis</strong>: knowledge staleness and factual dilution in niche areas. Take the Polkadot ecosystem — key 2024–2026 developments like Agile Coretime, RegionX, and JAM are either unanswerable by general models or pulled from outdated versions.</p>
+<p>The solution isn't a bigger model — it's <strong>giving the model a structured, trustworthy external knowledge base</strong> and wrapping it with a persona and task prompt. That's why I build myGPTs.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-two-im-currently-running">The Two I'm Currently Running<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#the-two-im-currently-running" class="hash-link" aria-label="Direct link to The Two I'm Currently Running" title="Direct link to The Two I'm Currently Running">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="jamia--polkadot--jam-expert">Jamia — Polkadot × JAM Expert<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#jamia--polkadot--jam-expert" class="hash-link" aria-label="Direct link to Jamia — Polkadot × JAM Expert" title="Direct link to Jamia — Polkadot × JAM Expert">​</a></h3>
 <ul>
 <li>🔗 <a href="https://chatgpt.com/g/g-67825a109c408191aaaef28a62051059-jamia" target="_blank" rel="noopener noreferrer">Jamia on ChatGPT</a></li>
-<li>餵的資料：Gavin Wood 演講逐字稿、JAM Gray Paper 摘要、Polkadot Wiki、Polkasharks podcast 十集以上的跨源整理</li>
-<li>擅長：JAM 架構、Coretime 經濟學、XCM 跨鏈訊息、OpenGov 治理分析</li>
-<li>不擅長：即時價格、單純名詞定義（這些丟給 Grok/ChatGPT 更快）</li>
+<li><strong>Training data:</strong> Gavin Wood talk transcripts, JAM Gray Paper summaries, Polkadot Wiki, cross-source synthesis from 10+ Polkasharks podcast episodes</li>
+<li><strong>Strong at:</strong> JAM architecture, Coretime economics, XCM cross-chain messaging, OpenGov governance analysis</li>
+<li><strong>Weak at:</strong> live prices, basic term definitions (faster to ask Grok/ChatGPT for those)</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="spacesharks--太空產業分析師">Spacesharks — 太空產業分析師<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#spacesharks--%E5%A4%AA%E7%A9%BA%E7%94%A2%E6%A5%AD%E5%88%86%E6%9E%90%E5%B8%AB" class="hash-link" aria-label="Direct link to Spacesharks — 太空產業分析師" title="Direct link to Spacesharks — 太空產業分析師">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="spacesharks--space-industry-analyst">Spacesharks — Space Industry Analyst<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#spacesharks--space-industry-analyst" class="hash-link" aria-label="Direct link to Spacesharks — Space Industry Analyst" title="Direct link to Spacesharks — Space Industry Analyst">​</a></h3>
 <ul>
 <li>🔗 <a href="https://chatgpt.com/g/g-67e254ad68e4819191ea0552732c0979-spacesharks" target="_blank" rel="noopener noreferrer">Spacesharks on ChatGPT</a></li>
-<li>餵的資料：LEO 產業上中下游拆解、軌道資料中心（ODC）主要玩家、台廠供應鏈地圖（穩懋、昇達科、華通等）</li>
-<li>擅長：LEO 生命週期分析、Starlink/Amazon Leo/Starcloud 差異、ISL 光學通訊、台灣在全球 LEO 生態的定位</li>
-<li>延伸閱讀：<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026">2026 Tech Roadmap</a> 的 Space 段</li>
+<li><strong>Training data:</strong> Full LEO industry upstream/midstream/downstream breakdown, orbital data center (ODC) key players, Taiwan supply chain map (WIN Semiconductors, Sheng Da Tech, Compeq, etc.)</li>
+<li><strong>Strong at:</strong> LEO lifecycle analysis, Starlink/Amazon LEO/Starcloud comparisons, ISL optical communications, Taiwan's positioning in the global LEO ecosystem</li>
+<li><strong>Further reading:</strong> <a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026">2026 Tech Roadmap</a> — Space section</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="背後的系統obsidian-wiki--llm-ingest-loop">背後的系統：Obsidian Wiki + LLM Ingest Loop<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#%E8%83%8C%E5%BE%8C%E7%9A%84%E7%B3%BB%E7%B5%B1obsidian-wiki--llm-ingest-loop" class="hash-link" aria-label="Direct link to 背後的系統：Obsidian Wiki + LLM Ingest Loop" title="Direct link to 背後的系統：Obsidian Wiki + LLM Ingest Loop">​</a></h2>
-<p>這兩個 GPT 都不是瞎調出來的。它們共用一個 Obsidian vault 當知識骨架：</p>
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">wiki/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── sources/      一源一檔，逐篇 ingest 的原始資料</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── entities/     人物、公司、產品的實體頁</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── concepts/     協定、架構、產業鏈等概念</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└── synthesis/    跨源整合後產出的對外長文</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>每次讀到新資料（podcast、論文、財報），我會走這條流程：</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-system-behind-it-obsidian-wiki--llm-ingest-loop">The System Behind It: Obsidian Wiki + LLM Ingest Loop<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#the-system-behind-it-obsidian-wiki--llm-ingest-loop" class="hash-link" aria-label="Direct link to The System Behind It: Obsidian Wiki + LLM Ingest Loop" title="Direct link to The System Behind It: Obsidian Wiki + LLM Ingest Loop">​</a></h2>
+<p>These two GPTs aren't improvised. They share an Obsidian vault as their knowledge backbone:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">wiki/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── sources/      one file per source — raw ingested material</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── entities/     people, companies, products</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── concepts/     protocols, architectures, supply chains</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└── synthesis/    long-form cross-source analyses for publishing</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Every time I read new material (podcast, paper, earnings call), I run this loop:</p>
 <ol>
-<li>和 Claude Code 討論 key takeaway</li>
-<li>寫成 <code>sources/&lt;slug&gt;.md</code></li>
-<li>更新或新開相關的 <code>entities/</code> 與 <code>concepts/</code>（一次 ingest 通常牽動 5–15 頁）</li>
-<li>更新 <code>index.md</code> 與 <code>log.md</code></li>
+<li>Discuss key takeaways with Claude Code</li>
+<li>Write to <code>sources/&lt;slug&gt;.md</code></li>
+<li>Update or create related <code>entities/</code> and <code>concepts/</code> pages (one ingest typically touches 5–15 pages)</li>
+<li>Update <code>index.md</code> and <code>log.md</code></li>
 </ol>
-<p>這個 vault 的<strong>文字內容</strong>就是餵給 Jamia/Spacesharks 的素材。當讀者問一個跨源的問題，模型其實是在我手工建的 context graph 上做檢索，不是在整個 internet 裡面猜。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="為什麼不直接用-rag-或-api-串">為什麼不直接用 RAG 或 API 串？<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#%E7%82%BA%E4%BB%80%E9%BA%BC%E4%B8%8D%E7%9B%B4%E6%8E%A5%E7%94%A8-rag-%E6%88%96-api-%E4%B8%B2" class="hash-link" aria-label="Direct link to 為什麼不直接用 RAG 或 API 串？" title="Direct link to 為什麼不直接用 RAG 或 API 串？">​</a></h2>
-<p>我試過。對一個人維護的知識庫來說，Custom GPT 的優勢是：</p>
-<table><thead><tr><th>需求</th><th>Custom GPT</th><th>自建 RAG</th></tr></thead><tbody><tr><td>零後端、免費分享</td><td>✅</td><td>❌ 要 host vector store</td></tr><tr><td>10 MB 以下的知識體量</td><td>✅ 直接上傳</td><td>⚠️ 過度工程</td></tr><tr><td>前端 UX（手機也能聊）</td><td>✅ ChatGPT app</td><td>❌ 要自己寫</td></tr><tr><td>客製工具（抓新聞 / 查價）</td><td>⚠️ action 有限</td><td>✅ 完全可控</td></tr></tbody></table>
-<p>等知識規模或互動模式突破 Custom GPT 的上限，再搬去 RAG / Agent 架構也不遲。<strong>先把知識寫對、再談系統</strong>。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="下一步">下一步<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#%E4%B8%8B%E4%B8%80%E6%AD%A5" class="hash-link" aria-label="Direct link to 下一步" title="Direct link to 下一步">​</a></h2>
+<p>The <strong>text content</strong> of this vault is what gets fed into Jamia and Spacesharks. When a reader asks a cross-source question, the model is retrieving across a hand-built context graph — not guessing from the entire internet.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-not-just-use-rag-or-an-api">Why Not Just Use RAG or an API?<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#why-not-just-use-rag-or-an-api" class="hash-link" aria-label="Direct link to Why Not Just Use RAG or an API?" title="Direct link to Why Not Just Use RAG or an API?">​</a></h2>
+<p>I tried. For a knowledge base maintained by one person, Custom GPT has real advantages:</p>
+<table><thead><tr><th>Requirement</th><th>Custom GPT</th><th>Self-hosted RAG</th></tr></thead><tbody><tr><td>Zero backend, free to share</td><td>✅</td><td>❌ need to host vector store</td></tr><tr><td>Sub-10 MB knowledge corpus</td><td>✅ direct upload</td><td>⚠️ over-engineering</td></tr><tr><td>Front-end UX (mobile too)</td><td>✅ ChatGPT app</td><td>❌ need to build UI</td></tr><tr><td>Custom tools (news fetch / price query)</td><td>⚠️ limited actions</td><td>✅ fully controllable</td></tr></tbody></table>
+<p>When knowledge scale or interaction patterns exceed Custom GPT's limits, migrating to RAG/Agent architecture is always an option. <strong>Get the knowledge right first — then worry about the system.</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#whats-next" class="hash-link" aria-label="Direct link to What's Next" title="Direct link to What's Next">​</a></h2>
 <ul>
-<li><code>wiki/synthesis/</code> 目前的長文會陸續釋出到本站部落格，先看 <a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap">LEO × 台灣 ODC 缺口</a> 這篇。</li>
-<li>Jamia、Spacesharks 的 <code>action</code>（可以抓市場價 / 鏈上資料）還在路上，完成後會另發一篇。</li>
-<li>下一個 myGPT 大概是 RF/硬體領域的 debug 助手，基底就是 <a href="https://sampraszheng.github.io/yxz/blog/debug">系統除錯分析</a> 那篇的 taxonomy。</li>
+<li>Long-form pieces from <code>wiki/synthesis/</code> will gradually be published here. Start with <a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap">LEO × Taiwan ODC Gap</a>.</li>
+<li>Actions for Jamia and Spacesharks (live market data / on-chain queries) are in progress — a separate post when complete.</li>
+<li>The next myGPT will probably be an RF/hardware debug assistant, built on the taxonomy in <a href="https://sampraszheng.github.io/yxz/blog/debug">the debug playbook</a>.</li>
 </ul>]]></content:encoded>
             <category>ai</category>
             <category>DOT</category>
             <category>space</category>
         </item>
         <item>
-            <title><![CDATA[多元宇宙]]></title>
+            <title><![CDATA[Plurality × Polkadot: Convergence of Decentralized Governance]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/Plurality</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/Plurality</guid>
             <pubDate>Wed, 12 Mar 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[從唐鳳協作的《Plurality》談起 — 多元視角的政治哲學如何與 Polkadot OpenGov 鏈上治理、DSNP 去中心化社交協定互相呼應。]]></description>
-            <content:encoded><![CDATA[<p>我最初看到Plurality是因為在瀏覽Project Liberty 積極擴展DSNP (去中心化社交網路協定)於TikTok, Bluesky, Frequency等社交平台的文件時候看到前述位部長唐鳳也參與其中</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="plurality多元宇宙-是什麼">Plurality(多元宇宙) 是什麼？<a href="https://sampraszheng.github.io/yxz/blog/Plurality#plurality%E5%A4%9A%E5%85%83%E5%AE%87%E5%AE%99-%E6%98%AF%E4%BB%80%E9%BA%BC" class="hash-link" aria-label="Direct link to Plurality(多元宇宙) 是什麼？" title="Direct link to Plurality(多元宇宙) 是什麼？">​</a></h2>
-<p>我最初看到Plurality是因為看到Project Liberty 正在積極 主張打破傳統單一決策模式，鼓勵從多個角度切入議題，形成更具包容性與彈性的治理結構。這種多元視角讓參與者能根據不同情境探索多種可能性，而非被迫走上預設的固定路徑。<br>
-<!-- -->詳情可以參考唐鳳協作的書本 <a href="https://github.com/pluralitybook/plurality" target="_blank" rel="noopener noreferrer">Plurality GitHub Repository</a></p>
+            <description><![CDATA[Starting from Audrey Tang's collaborative book Plurality — how multi-perspective political philosophy resonates with Polkadot's OpenGov on-chain governance and the DSNP decentralized social protocol.]]></description>
+            <content:encoded><![CDATA[<p>I first encountered Plurality while reviewing Project Liberty's documentation on actively expanding DSNP (Decentralized Social Networking Protocol) across TikTok, Bluesky, Frequency, and other social platforms — and noticed that Taiwan's former Digital Minister Audrey Tang had co-authored the book.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-plurality">What is Plurality?<a href="https://sampraszheng.github.io/yxz/blog/Plurality#what-is-plurality" class="hash-link" aria-label="Direct link to What is Plurality?" title="Direct link to What is Plurality?">​</a></h2>
+<p>Plurality challenges the traditional single-decision-making model, advocating that issues be approached from multiple perspectives to create more inclusive and adaptable governance structures. This pluralistic viewpoint allows participants to explore many possibilities based on different contexts, rather than being forced down a single predetermined path.</p>
+<p>For the full text, see Audrey Tang's collaborative book: <a href="https://github.com/pluralitybook/plurality" target="_blank" rel="noopener noreferrer">Plurality GitHub Repository</a></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="web3">Web3<a href="https://sampraszheng.github.io/yxz/blog/Plurality#web3" class="hash-link" aria-label="Direct link to Web3" title="Direct link to Web3">​</a></h3>
-<p>web3 一詞由伍德博士(Dr.Gavin Wood)提出，指的是「基於區塊鏈的去中心化線上生態系統」，借助區塊鏈本身透明公開的特點在波卡實行OpenGov鏈上治理，有意思的是與多元宇宙的思想有幾分相似</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的理念">Polkadot 的理念<a href="https://sampraszheng.github.io/yxz/blog/Plurality#polkadot-%E7%9A%84%E7%90%86%E5%BF%B5" class="hash-link" aria-label="Direct link to Polkadot 的理念" title="Direct link to Polkadot 的理念">​</a></h3>
-<p>Polkadot 是一個致力於跨鏈互操作性的區塊鏈平台，其核心理念包括：</p>
+<p>The term "Web3" was coined by Dr. Gavin Wood to describe "a blockchain-based decentralized online ecosystem." Polkadot implements OpenGov — on-chain governance — leveraging blockchain's inherent transparency. Interestingly, this philosophy aligns closely with Plurality's thinking.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="polkadots-philosophy">Polkadot's Philosophy<a href="https://sampraszheng.github.io/yxz/blog/Plurality#polkadots-philosophy" class="hash-link" aria-label="Direct link to Polkadot's Philosophy" title="Direct link to Polkadot's Philosophy">​</a></h3>
+<p>Polkadot is a blockchain platform committed to cross-chain interoperability. Its core principles include:</p>
 <ul>
-<li><strong>去中心化</strong>：通過建立中繼鏈（Relay Chain）連接多條平行鏈，實現資源共享與安全共識。</li>
-<li><strong>互操作性</strong>：使不同區塊鏈之間能夠無縫溝通，突破孤立運作的限制。</li>
-<li><strong>靈活升級</strong>：依賴可升級的治理機制，允許網絡在面對新需求與挑戰時迅速調整。</li>
+<li><strong>Decentralization:</strong> A Relay Chain connects multiple parachains for shared resources and security consensus.</li>
+<li><strong>Interoperability:</strong> Seamless communication between different blockchains, breaking down isolated silos.</li>
+<li><strong>Flexible upgrades:</strong> An upgradeable governance mechanism that lets the network adapt quickly to new requirements and challenges.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="opengov-的理念">OpenGov 的理念<a href="https://sampraszheng.github.io/yxz/blog/Plurality#opengov-%E7%9A%84%E7%90%86%E5%BF%B5" class="hash-link" aria-label="Direct link to OpenGov 的理念" title="Direct link to OpenGov 的理念">​</a></h3>
-<p>OpenGov（開放政府）則聚焦於政府與公民間的透明、參與與協作，其主要特點為：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="opengov">OpenGov<a href="https://sampraszheng.github.io/yxz/blog/Plurality#opengov" class="hash-link" aria-label="Direct link to OpenGov" title="Direct link to OpenGov">​</a></h3>
+<p>OpenGov (Open Government) focuses on transparency, participation, and collaboration between government and citizens:</p>
 <ul>
-<li><strong>透明度</strong>：透過公開政府數據與流程，使政策決策過程對公眾完全開放。</li>
-<li><strong>公民參與</strong>：鼓勵市民直接參與公共政策討論與制定，提高政府問責性。</li>
-<li><strong>責任追蹤</strong>：建立完善的監督機制，確保公共資源的公平分配與使用。</li>
+<li><strong>Transparency:</strong> Government data and processes are fully open to the public, making policy decisions visible.</li>
+<li><strong>Citizen participation:</strong> Citizens directly engage in public policy discussion and formulation, increasing government accountability.</li>
+<li><strong>Accountability tracking:</strong> Strong oversight mechanisms ensure fair allocation and use of public resources.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="理念比較">理念比較<a href="https://sampraszheng.github.io/yxz/blog/Plurality#%E7%90%86%E5%BF%B5%E6%AF%94%E8%BC%83" class="hash-link" aria-label="Direct link to 理念比較" title="Direct link to 理念比較">​</a></h3>
-<p>雖然 Polkadot 與 OpenGov 都意在打破傳統集中式治理模式，但它們的側重點與實現路徑有所不同：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="comparing-the-two">Comparing the Two<a href="https://sampraszheng.github.io/yxz/blog/Plurality#comparing-the-two" class="hash-link" aria-label="Direct link to Comparing the Two" title="Direct link to Comparing the Two">​</a></h3>
+<p>Both Polkadot and OpenGov aim to break traditional centralized governance models, but they differ in emphasis and approach:</p>
 <ul>
 <li>
-<p><strong>技術驅動 vs. 制度改革</strong></p>
+<p><strong>Technology-driven vs. institutional reform</strong></p>
 <ul>
-<li><em>Polkadot</em> 依賴區塊鏈技術與代幣機制，強調技術層面的去中心化與網絡互操作性。</li>
-<li><em>OpenGov</em> 則著重於通過制度創新與資訊公開，促進政府與公民間的互動與協作。</li>
+<li><em>Polkadot</em> relies on blockchain technology and token mechanisms, emphasizing technical-layer decentralization and network interoperability.</li>
+<li><em>OpenGov</em> focuses on institutional innovation and information transparency to foster government-citizen interaction and collaboration.</li>
 </ul>
 </li>
 <li>
-<p><strong>治理模式</strong></p>
+<p><strong>Governance model</strong></p>
 <ul>
-<li><em>Polkadot</em> 採用鏈上治理，讓持幣者參與決策，實現自我調整與升級。</li>
-<li><em>OpenGov</em> 重視公民參與與政策透明，旨在通過公開與協商達成共識。</li>
+<li><em>Polkadot</em> uses on-chain governance — token holders vote to drive self-adjustment and upgrades.</li>
+<li><em>OpenGov</em> values citizen participation and policy transparency, reaching consensus through openness and negotiation.</li>
 </ul>
 </li>
 <li>
-<p><strong>應用領域</strong></p>
+<p><strong>Domain</strong></p>
 <ul>
-<li><em>Polkadot</em> 主要服務於數位資產與金融科技領域，推動去中心化網絡生態。</li>
-<li><em>OpenGov</em> 則聚焦於公共管理與政策制定，推動政府機構現代化及數據驅動決策。</li>
+<li><em>Polkadot</em> primarily serves digital assets and fintech, advancing a decentralized network ecosystem.</li>
+<li><em>OpenGov</em> focuses on public administration and policymaking, modernizing government institutions and enabling data-driven decisions.</li>
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="結語">結語<a href="https://sampraszheng.github.io/yxz/blog/Plurality#%E7%B5%90%E8%AA%9E" class="hash-link" aria-label="Direct link to 結語" title="Direct link to 結語">​</a></h2>
-<p>Plurality 為我們提供了一個多元共治的框架，讓技術與民主可以並肩推進。無論是 Polkadot 在技術層面的創新，還是 OpenGov 在制度層面的改革，都在推動社會朝向更透明、包容與去中心化的未來邁進。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="參考資料">參考資料<a href="https://sampraszheng.github.io/yxz/blog/Plurality#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99" class="hash-link" aria-label="Direct link to 參考資料" title="Direct link to 參考資料">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="https://sampraszheng.github.io/yxz/blog/Plurality#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>Plurality provides a framework for multi-stakeholder co-governance, where technology and democracy advance together. Both Polkadot's technical innovation and OpenGov's institutional reform are pushing society toward a more transparent, inclusive, and decentralized future.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="references">References<a href="https://sampraszheng.github.io/yxz/blog/Plurality#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
 <ul>
-<li>Plurality 專案：<a href="https://github.com/pluralitybook/plurality" target="_blank" rel="noopener noreferrer">https://github.com/pluralitybook/plurality</a></li>
-<li>Polkadot 官方網站：<a href="https://polkadot.network/" target="_blank" rel="noopener noreferrer">https://polkadot.network/</a></li>
-<li>OpenGov 官方網站：<a href="https://www.opengov.com/" target="_blank" rel="noopener noreferrer">https://www.opengov.com/</a></li>
+<li>Plurality project: <a href="https://github.com/pluralitybook/plurality" target="_blank" rel="noopener noreferrer">https://github.com/pluralitybook/plurality</a></li>
+<li>Polkadot official site: <a href="https://polkadot.network/" target="_blank" rel="noopener noreferrer">https://polkadot.network/</a></li>
+<li>OpenGov official site: <a href="https://www.opengov.com/" target="_blank" rel="noopener noreferrer">https://www.opengov.com/</a></li>
 </ul>]]></content:encoded>
             <category>misc</category>
             <category>DOT</category>
         </item>
         <item>
-            <title><![CDATA[JAM - 可擴展無需信任虛擬機]]></title>
+            <title><![CDATA[JAM — The Scalable Trustless Virtual Machine]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/JAMintro</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/JAMintro</guid>
             <pubDate>Mon, 24 Feb 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[解析 Polkadot JAM（Join-Accumulate Machine）：目標 850 MB/s 吞吐量、340 萬 TPS 的異步多核架構，以及與 Ethereum / Solana 的對位比較。]]></description>
-            <content:encoded><![CDATA[<p>Polkadot JAM（Join-Accumulate Machine）是 Polkadot 網絡的一個擬議升級，旨在取代目前的 Relay Chain（中繼鏈），使其設計更加模組化和簡約。它將 Ethereum 的智能合約功能與 Polkadot 的可擴展性結合，創造一個更靈活的開發環境。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主要特點">主要特點<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E4%B8%BB%E8%A6%81%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to 主要特點" title="Direct link to 主要特點">​</a></h2>
+            <description><![CDATA[A deep-dive into Polkadot JAM (Join-Accumulate Machine): targeting 850 MB/s throughput and 3.4M TPS via an async multi-core architecture — and how it stacks up against Ethereum and Solana.]]></description>
+            <content:encoded><![CDATA[<p>Polkadot JAM (Join-Accumulate Machine) is a proposed upgrade to the Polkadot network that would replace the current Relay Chain with a more modular and minimal design. It combines Ethereum's smart-contract capabilities with Polkadot's scalability to create a more flexible development environment.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-features">Key Features<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#key-features" class="hash-link" aria-label="Direct link to Key Features" title="Direct link to Key Features">​</a></h2>
 <ul>
-<li><strong>權限開放</strong>：開發者可以按資源使用費部署代碼，類似於 Ethereum 的智能合約。</li>
-<li><strong>核心時間</strong>：使用「核心時間」作為計算資源指標，類似於 Ethereum 的 gas。</li>
-<li><strong>服務架構</strong>：運行各種服務，如處理 parachains（平行鏈）的 ChainService，使網絡更具靈活性。</li>
-<li><strong>異步交互</strong>：與許多區塊鏈平台不同，JAM 的交互是異步的，提高了效率。</li>
-<li><strong>高吞吐量</strong>：通過多核計算，目標吞吐量高達 850 MB/s，超過 Ethereum 和 Solana 等平台。</li>
+<li><strong>Permissionless:</strong> Developers can deploy code for a resource-usage fee, similar to Ethereum smart contracts.</li>
+<li><strong>Coretime:</strong> Uses "coretime" as the unit of compute resource — analogous to Ethereum's gas.</li>
+<li><strong>Service architecture:</strong> Runs various services (e.g., ChainService for processing parachains), making the network more flexible.</li>
+<li><strong>Async interactions:</strong> Unlike many blockchain platforms, JAM interactions are asynchronous, improving throughput.</li>
+<li><strong>High throughput:</strong> Targets 850 MB/s via multi-core computation — exceeding Ethereum and Solana.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="技術與前景">技術與前景<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E6%8A%80%E8%A1%93%E8%88%87%E5%89%8D%E6%99%AF" class="hash-link" aria-label="Direct link to 技術與前景" title="Direct link to 技術與前景">​</a></h2>
-<p>JAM 的計算模型基於「Join-Accumulate」機制，其中「Join」和「Accumulate」功能在鏈上執行，而「Collect」和「Refine」過程在鏈下完成。這種設計減少了鏈上計算的負擔，提高了效率。根據 Polkadot Wiki，JAM 將是一個特定領域的鏈，專注於處理 roll-ups（卷積），並提供強大的安全保證。</p>
-<p>此外，JAM 支持異步交互，這與許多智能合約平台的同步交互不同。消息和代幣的發送與接收在同一個 6 秒執行周期內完成，但沒有即時返回路徑，這為未來的性能優化（如分配更多 gas）提供了可能性。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="性能目標與技術實現">性能目標與技術實現<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E6%80%A7%E8%83%BD%E7%9B%AE%E6%A8%99%E8%88%87%E6%8A%80%E8%A1%93%E5%AF%A6%E7%8F%BE" class="hash-link" aria-label="Direct link to 性能目標與技術實現" title="Direct link to 性能目標與技術實現">​</a></h2>
-<p>JAM 的性能目標非常雄心勃勃。根據 Medium 文章，JAM 計劃使用 350 個 JAM 核心，每個核心 6 秒執行時間，輸入 5Mb，總計吞吐量可達 850 MB/s，理論上支持超過 340 萬 TPS（交易每秒）。相比之下：</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="architecture-and-technical-foundation">Architecture and Technical Foundation<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#architecture-and-technical-foundation" class="hash-link" aria-label="Direct link to Architecture and Technical Foundation" title="Direct link to Architecture and Technical Foundation">​</a></h2>
+<p>JAM's compute model is based on the "Join-Accumulate" mechanism. The <strong>Join</strong> and <strong>Accumulate</strong> functions execute on-chain, while <strong>Collect</strong> and <strong>Refine</strong> run off-chain. This offloads work from the chain and increases efficiency. Per the Polkadot Wiki, JAM is a domain-specific chain focused on processing roll-ups with strong security guarantees.</p>
+<p>JAM also supports asynchronous interactions — a departure from the synchronous model of most smart-contract platforms. Messages and token transfers complete within the same 6-second execution epoch, but without an instant return path, opening the door to future performance optimizations like dynamic gas allocation.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="performance-targets">Performance Targets<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#performance-targets" class="hash-link" aria-label="Direct link to Performance Targets" title="Direct link to Performance Targets">​</a></h2>
+<p>JAM's performance targets are ambitious. According to published specs, JAM plans to use <strong>350 cores</strong>, each with a 6-second execution window and 5 MB input — yielding <strong>850 MB/s total throughput</strong> and theoretically supporting <strong>over 3.4 million TPS</strong>. For comparison:</p>
 <ul>
-<li>Ethereum 2.0 的吞吐量為 <strong>1.3 MB/s</strong>。</li>
-<li>Sui/Aptos 為 <strong>100 MB/s</strong>。</li>
-<li>Solana 在 Firedancer 升級後可達 <strong>1250 MB/s</strong>。</li>
+<li>Ethereum 2.0: <strong>1.3 MB/s</strong></li>
+<li>Sui / Aptos: <strong>100 MB/s</strong></li>
+<li>Solana (post-Firedancer): <strong>1,250 MB/s</strong></li>
 </ul>
-<p>為了實現這一目標，JAM 將使用 <strong>RISC-V 處理器架構</strong>，取代目前基於 WebAssembly 的框架。RISC-V 是一個開源且廣泛採用的處理器架構，已被 Google、Nvidia 和 Alibaba 等公司使用。這一選擇旨在提高計算效率，並支持多核並行處理。</p>
-<p>測試基礎設施包括：</p>
+<p>To achieve this, JAM will use a <strong>RISC-V processor architecture</strong>, replacing the current WebAssembly-based framework. RISC-V is an open-source, widely-adopted ISA already used by Google, NVIDIA, and Alibaba — chosen to improve computational efficiency and enable multi-core parallel execution.</p>
+<p><strong>Testing infrastructure:</strong></p>
 <ul>
-<li><strong>Polkadot Palace</strong>：位於葡萄牙里斯本的超級計算機，擁有 <strong>12,276 個核心和 16 TB RAM</strong>，可託管完整的 JAM 網絡。</li>
-<li><strong>JAM Toaster 模擬器</strong>：支持 <strong>1,023 個節點</strong>，配備 <strong>16,384 個 AMD CPU、32 TB RAM 和 20 PB 存儲</strong>。</li>
+<li><strong>Polkadot Palace:</strong> A supercomputer in Lisbon, Portugal with <strong>12,276 cores and 16 TB RAM</strong> — capable of hosting a full JAM network.</li>
+<li><strong>JAM Toaster simulator:</strong> Supports <strong>1,023 nodes</strong>, equipped with <strong>16,384 AMD CPUs, 32 TB RAM, and 20 PB storage</strong>.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="經濟與治理">經濟與治理<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E7%B6%93%E6%BF%9F%E8%88%87%E6%B2%BB%E7%90%86" class="hash-link" aria-label="Direct link to 經濟與治理" title="Direct link to 經濟與治理">​</a></h2>
-<p>JAM 的經濟模型以 <strong>DOT 代幣</strong> 為核心。開發者需要購買「核心時間」來執行計算，類似於 Ethereum 的 gas 購買。</p>
-<p>JAM 還將引入 <strong>Agile Coretime</strong>，這是一種更經濟的靈活模型，允許用戶按月批量購買核心時間，並可在二級市場上分割和轉售。這將提高計算資源的市場效率，所有交易都將使用 <strong>DOT 代幣</strong>。</p>
-<p>治理方面，JAM 保留了 Polkadot 的去中心化領導模式，升級需通過 DOT 持有者的投票批准。2024 年 5 月 28 日，JAM 升級以超過 <strong>3100 萬 DOT</strong> 的支持獲得近乎一致通過，標誌著社區對這一變革的認可。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="當前狀態與未來展望">當前狀態與未來展望<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E7%95%B6%E5%89%8D%E7%8B%80%E6%85%8B%E8%88%87%E6%9C%AA%E4%BE%86%E5%B1%95%E6%9C%9B" class="hash-link" aria-label="Direct link to 當前狀態與未來展望" title="Direct link to 當前狀態與未來展望">​</a></h2>
-<p>目前，JAM 仍處於開發階段，預計需要約 <strong>2 年</strong> 時間才能完全準備就緒並部署。根據 Decrypt 文章，這一升級將一次性完成，而不是逐步引入，以避免頻繁的小規模更新帶來的複雜性。儘管如此，現有 <strong>parachains</strong> 的功能不會受到影響，DOT 持有者和交易者也不會因升級而受到干擾。</p>
-<p>為了推動開發，<strong>Web3 Foundation 設立了 1000 萬 DOT 的「JAM Implementer’s Prize」</strong>，鼓勵創建多種客戶端實現，增強網絡的韌性。這一獎金池的設立體現了社區對 JAM 潛力的信心。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="開發者的影響">開發者的影響<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E9%96%8B%E7%99%BC%E8%80%85%E7%9A%84%E5%BD%B1%E9%9F%BF" class="hash-link" aria-label="Direct link to 開發者的影響" title="Direct link to 開發者的影響">​</a></h2>
-<p>對於開發者來說，JAM 提供了更大的靈活性。他們無需再通過拍賣競爭 parachain 插槽，只需指定「Refine」、「Accumulate」和「onTransfer」三個入口函數即可部署服務。這簡化了開發流程，使 Polkadot 更易於支持 <strong>智能合約、ZK-rollups 和 UTXO 模型</strong> 等多種應用。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="安全與擴展性">安全與擴展性<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E5%AE%89%E5%85%A8%E8%88%87%E6%93%B4%E5%B1%95%E6%80%A7" class="hash-link" aria-label="Direct link to 安全與擴展性" title="Direct link to 安全與擴展性">​</a></h2>
-<p>JAM 的安全機制包括 <strong>SAFROLE（SNARK-based block production）</strong>，這是一種基於零知識證明的區塊生產方法，提高了安全性並減少了頻繁更新的需求。</p>
-<p>同時，JAM 的 <strong>多核處理能力</strong> 增強了 Polkadot 的計算能力，使開發者以更低的成本部署應用。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="對比與競爭">對比與競爭<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E5%B0%8D%E6%AF%94%E8%88%87%E7%AB%B6%E7%88%AD" class="hash-link" aria-label="Direct link to 對比與競爭" title="Direct link to 對比與競爭">​</a></h2>
-<p>與 Ethereum 和 Solana 等平台相比，JAM 的高吞吐量和多核計算能力使其在性能上具有顯著優勢。特別是其 <strong>850 MB/s 的數據可用性目標</strong>，是目前 Polkadot（在引入 Asynchronous Backing 前的版本）的 <strong>42 倍</strong>。這一性能提升將使 Polkadot 在區塊鏈擴展性競賽中佔據更有利的位置。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="結論">結論<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E7%B5%90%E8%AB%96" class="hash-link" aria-label="Direct link to 結論" title="Direct link to 結論">​</a></h2>
-<p>Polkadot JAM 是 <strong>Gavin Wood</strong> 提出的雄心勃勃的升級，旨在將 Polkadot 轉變為一個 <strong>更靈活、高效和可擴展</strong> 的區塊鏈平台。通過結合 Ethereum 的智能合約功能和 Polkadot 的多鏈架構，JAM 為開發者提供了更大的創新空間，同時保持了網絡的安全性和去中心化特性。</p>
-<p>儘管仍需數年時間才能完全實現，其潛力已被社區廣泛認可，並通過投票獲得批准。</p>]]></content:encoded>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="economics-and-governance">Economics and Governance<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#economics-and-governance" class="hash-link" aria-label="Direct link to Economics and Governance" title="Direct link to Economics and Governance">​</a></h2>
+<p>JAM's economic model centers on the <strong>DOT token</strong>. Developers purchase "coretime" to run computations — analogous to buying gas on Ethereum.</p>
+<p>JAM will also introduce <strong>Agile Coretime</strong>, a more economical flexible model allowing users to bulk-purchase coretime by the month and split or resell it on secondary markets. All transactions use <strong>DOT</strong>. This market mechanism improves capital efficiency of compute resources.</p>
+<p>On governance: JAM preserves Polkadot's decentralized leadership model — upgrades require approval by DOT-holder vote. On May 28, 2024, the JAM upgrade passed with near-unanimous support from over <strong>31 million DOT</strong>, signaling strong community endorsement.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="current-status">Current Status<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#current-status" class="hash-link" aria-label="Direct link to Current Status" title="Direct link to Current Status">​</a></h2>
+<p>JAM is still in development, estimated to take approximately <strong>2 years</strong> to be fully deployment-ready. The upgrade will ship as a single transition rather than a series of incremental steps, to avoid the complexity of multiple small-scale updates. Existing <strong>parachain</strong> functionality will not be disrupted, and DOT holders and traders will not face interruption during the upgrade.</p>
+<p>To accelerate development, the <strong>Web3 Foundation has set aside a 10 million DOT "JAM Implementer's Prize"</strong> to encourage multiple independent client implementations — strengthening network resilience.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="developer-impact">Developer Impact<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#developer-impact" class="hash-link" aria-label="Direct link to Developer Impact" title="Direct link to Developer Impact">​</a></h2>
+<p>For developers, JAM removes the need to compete in parachain slot auctions. A service is deployed by specifying just three entry functions: <strong>Refine</strong>, <strong>Accumulate</strong>, and <strong>onTransfer</strong>. This simplifies the development pipeline and makes it easier for Polkadot to support <strong>smart contracts, ZK-rollups, UTXO models</strong>, and other paradigms.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-and-scalability">Security and Scalability<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#security-and-scalability" class="hash-link" aria-label="Direct link to Security and Scalability" title="Direct link to Security and Scalability">​</a></h2>
+<p>JAM's security mechanism includes <strong>SAFROLE (SNARK-based block production)</strong> — a zero-knowledge-proof-based block production method that raises the security bar and reduces the need for disruptive updates.</p>
+<p>JAM's <strong>multi-core processing</strong> significantly expands Polkadot's compute capacity, enabling developers to deploy applications at lower cost.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="positioning-vs-ethereum-and-solana">Positioning vs. Ethereum and Solana<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#positioning-vs-ethereum-and-solana" class="hash-link" aria-label="Direct link to Positioning vs. Ethereum and Solana" title="Direct link to Positioning vs. Ethereum and Solana">​</a></h2>
+<p>Compared to Ethereum and Solana, JAM's high throughput and multi-core architecture give it a significant performance advantage. Its <strong>850 MB/s data-availability target</strong> is <strong>42×</strong> the current Polkadot capacity (pre-Async Backing baseline). This performance leap positions Polkadot favorably in the ongoing blockchain scalability race.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>Polkadot JAM is an ambitious upgrade proposed by <strong>Gavin Wood</strong> to transform Polkadot into a <strong>more flexible, efficient, and scalable</strong> blockchain platform. By combining Ethereum's smart-contract capabilities with Polkadot's multi-chain architecture, JAM gives developers a larger innovation surface while preserving network security and decentralization.</p>
+<p>Though full deployment is still years away, the potential has been widely recognized by the community — and approved by vote.</p>]]></content:encoded>
             <category>DOT</category>
         </item>
         <item>
-            <title><![CDATA[波卡(Polkadot) - 下一代的區塊鏈]]></title>
+            <title><![CDATA[Polkadot — The Next-Generation Blockchain]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/lop</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/lop</guid>
             <pubDate>Sun, 07 Apr 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Polkadot 2.0 的核心概念速覽 — 從 XCM 跨鏈、異構分片、敏捷核心時間到 OpenGov 鏈上治理的一次總整理。]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="波卡polkadot簡介">波卡（Polkadot）簡介<a href="https://sampraszheng.github.io/yxz/blog/lop#%E6%B3%A2%E5%8D%A1polkadot%E7%B0%A1%E4%BB%8B" class="hash-link" aria-label="Direct link to 波卡（Polkadot）簡介" title="Direct link to 波卡（Polkadot）簡介">​</a></h3>
-<p><strong>波卡（Polkadot）</strong> 是一個旨在實現 <strong>多鏈未來</strong> 的區塊鏈平台。它並非將所有 Web3 用例都集中在單一區塊鏈上，而是設想不同的鏈（通用或特定於應用程式）可以協同工作，使 Web3 能夠擴展以服務於日常應用。</p>
+            <description><![CDATA[A fast-track overview of Polkadot 2.0 — XCM cross-chain messaging, heterogeneous sharding, Agile Coretime, and OpenGov on-chain governance.]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-polkadot">What is Polkadot?<a href="https://sampraszheng.github.io/yxz/blog/lop#what-is-polkadot" class="hash-link" aria-label="Direct link to What is Polkadot?" title="Direct link to What is Polkadot?">​</a></h3>
+<p><strong>Polkadot</strong> is a blockchain platform designed for a <strong>multi-chain future</strong>. Rather than forcing all Web3 use cases onto a single chain, it envisions different chains — general-purpose or application-specific — working together so that Web3 can scale to serve everyday applications.</p>
 <ul>
-<li><strong>願景：</strong> 成為 Web3 的 AWS。</li>
-<li><strong>目標：</strong> 以去中心化的方式建立任何區塊鏈可能需要的基礎設施。</li>
+<li><strong>Vision:</strong> Be the AWS of Web3.</li>
+<li><strong>Goal:</strong> Build the infrastructure that any blockchain could need, in a decentralized way.</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="主要特點">主要特點<a href="https://sampraszheng.github.io/yxz/blog/lop#%E4%B8%BB%E8%A6%81%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to 主要特點" title="Direct link to 主要特點">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="key-features">Key Features<a href="https://sampraszheng.github.io/yxz/blog/lop#key-features" class="hash-link" aria-label="Direct link to Key Features" title="Direct link to Key Features">​</a></h4>
 <ul>
-<li><strong>互操作性：</strong> 通過 <strong>跨鏈消息傳遞（XCM）</strong> 實現資產轉移，在源鏈上銷毀資產，並在目標鏈上鑄造資產.</li>
-<li><strong>可擴展性：</strong> 通過 <strong>異構分片</strong> 並行執行不同的狀態轉換函數。</li>
-<li><strong>靈活性：</strong> Polkadot 不是靜態軟體，而是為 <strong>可擴展性、靈活性和未來</strong> 而構建。</li>
-<li><strong>治理：</strong> <strong>鏈上民主系統</strong>，DOT 持有者可以投票和建立提案進行討論。</li>
-<li><strong>橋接：</strong>
+<li><strong>Interoperability:</strong> Asset transfers via <strong>Cross-Chain Messaging (XCM)</strong> — burn on the source chain, mint on the destination chain.</li>
+<li><strong>Scalability:</strong> Parallel execution of different state-transition functions through <strong>heterogeneous sharding</strong>.</li>
+<li><strong>Flexibility:</strong> Polkadot is not static software — it is built for <strong>extensibility, flexibility, and the future</strong>.</li>
+<li><strong>Governance:</strong> An <strong>on-chain democratic system</strong> where DOT holders vote and create proposals.</li>
+<li><strong>Bridges:</strong>
 <ul>
-<li><strong>Snowbridge：</strong> Polkadot 和以太坊之間的去信任橋，使用 BEEFY 協議讓以太坊方知道 Polkadot 的最終確定性。</li>
-<li><strong>Hyperbridge：</strong> 世界首個可驗證的多鏈橋。</li>
-<li><strong>Polkadot-Kusama 橋：</strong> 安全且無縫的資產轉移和通信。</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-20-的三大特點">Polkadot 2.0 的三大特點<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-20-%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to Polkadot 2.0 的三大特點" title="Direct link to Polkadot 2.0 的三大特點">​</a></h4>
-<ul>
-<li><strong>敏捷核心時間（Agile Coretime）：</strong>
-<ul>
-<li>不再需要兩年的 DOT 鎖定平行鏈拍賣。</li>
-<li>Blockspace 以彈性的方式出售，收入被燒毀。</li>
-</ul>
-</li>
-<li><strong>非同步支持（Asynchronous Backing）</strong></li>
-<li><strong>彈性擴展（Elastic Scaling）：</strong> 更靈活、更快速且可擴展的網路。<!-- -->
-<ul>
-<li>更好的使用者介面/使用者體驗。</li>
-<li>降低開發者的門檻。</li>
-<li>社群主導的鏈上治理。</li>
-<li>真正的去中心化。</li>
+<li><strong>Snowbridge:</strong> A trustless bridge between Polkadot and Ethereum, using the BEEFY protocol to let Ethereum verify Polkadot's finality.</li>
+<li><strong>Hyperbridge:</strong> The world's first verifiable multi-chain bridge.</li>
+<li><strong>Polkadot–Kusama Bridge:</strong> Secure, seamless asset transfer and communication between the two networks.</li>
 </ul>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的共識機制">Polkadot 的共識機制<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-%E7%9A%84%E5%85%B1%E8%AD%98%E6%A9%9F%E5%88%B6" class="hash-link" aria-label="Direct link to Polkadot 的共識機制" title="Direct link to Polkadot 的共識機制">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="three-pillars-of-polkadot-20">Three Pillars of Polkadot 2.0<a href="https://sampraszheng.github.io/yxz/blog/lop#three-pillars-of-polkadot-20" class="hash-link" aria-label="Direct link to Three Pillars of Polkadot 2.0" title="Direct link to Three Pillars of Polkadot 2.0">​</a></h4>
 <ul>
-<li><strong>BABE（區塊鏈擴展盲分配）：</strong> 區塊生產者使用 VRF 來決定是否有資格在特定時隙中生產區塊。</li>
-<li><strong>GRANDPA：</strong> 提供區塊最終性，確保 Polkadot 網路在快速擴展的同時保持安全性和穩定性。</li>
+<li><strong>Agile Coretime:</strong>
+<ul>
+<li>No more two-year DOT lock-ups for parachain slot auctions.</li>
+<li>Blockspace sold elastically; revenue is burned.</li>
 </ul>
-<p>GRANDPA 的優勢：</p>
+</li>
+<li><strong>Asynchronous Backing</strong></li>
+<li><strong>Elastic Scaling:</strong> A more flexible, faster, and scalable network.<!-- -->
 <ul>
-<li><strong>快速最終性：</strong> 網路穩定時，幾秒內即可完成。</li>
-<li><strong>容錯性：</strong> 容忍部分驗證者離線或作惡，只要超過 2/3 的權重驗證者保持誠實即可。</li>
-<li><strong>批量最終性：</strong> 一次性最終化多個區塊，效率更高。</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的經濟模型">Polkadot 的經濟模型<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-%E7%9A%84%E7%B6%93%E6%BF%9F%E6%A8%A1%E5%9E%8B" class="hash-link" aria-label="Direct link to Polkadot 的經濟模型" title="Direct link to Polkadot 的經濟模型">​</a></h4>
-<ul>
-<li><strong>DOT 代幣：</strong>
-<ul>
-<li>用於支付 Coretime 的費用。</li>
-<li>用於參與 OpenGov 投票。</li>
-<li>每年鑄造 1.2 億枚 DOT。</li>
-<li>通貨膨脹率將從 10% 逐步降低至 2030 年的 6%。</li>
+<li>Better UI/UX.</li>
+<li>Lower barrier to entry for developers.</li>
+<li>Community-driven on-chain governance.</li>
+<li>True decentralization.</li>
 </ul>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的技術堆疊">Polkadot 的技術堆疊<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-%E7%9A%84%E6%8A%80%E8%A1%93%E5%A0%86%E7%96%8A" class="hash-link" aria-label="Direct link to Polkadot 的技術堆疊" title="Direct link to Polkadot 的技術堆疊">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="consensus-mechanism">Consensus Mechanism<a href="https://sampraszheng.github.io/yxz/blog/lop#consensus-mechanism" class="hash-link" aria-label="Direct link to Consensus Mechanism" title="Direct link to Consensus Mechanism">​</a></h4>
 <ul>
-<li><strong>Substrate：</strong> 用於構建區塊鏈的 Rust 框架。</li>
-<li><strong>Polkadot SDK：</strong> 包含 Cumulus、Polkadot 和 Substrate 倉庫。</li>
-<li><strong>SCALE Codec：</strong> 用於 Polkadot 和 Substrate 的高效序列化和反序列化格式。</li>
-<li><strong>Wasm：</strong> WebAssembly，用於構建 Polkadot 運行時。</li>
-<li><strong>FRAME：</strong> 用於簡化 Substrate 運行時構建的框架。</li>
+<li><strong>BABE (Blind Assignment for Blockchain Extension):</strong> Block producers use a VRF to determine eligibility to produce a block in a given slot.</li>
+<li><strong>GRANDPA:</strong> Provides block finality, ensuring Polkadot stays secure and stable as it scales.</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="jamjoin-accumulate-machine">JAM（Join-Accumulate Machine）<a href="https://sampraszheng.github.io/yxz/blog/lop#jamjoin-accumulate-machine" class="hash-link" aria-label="Direct link to JAM（Join-Accumulate Machine）" title="Direct link to JAM（Join-Accumulate Machine）">​</a></h4>
+<p>GRANDPA advantages:</p>
 <ul>
-<li><strong>目標：</strong> 解決區塊鏈的可擴展性和互操作性問題。</li>
-<li><strong>核心：</strong> 促進鏈協作和數據共享，並優化區塊鏈網路在去中心化計算環境中的計算和通信效率。</li>
-<li><strong>特點：</strong>
+<li><strong>Fast finality:</strong> Completes in seconds when the network is stable.</li>
+<li><strong>Fault tolerance:</strong> Tolerates some validators going offline or acting maliciously, as long as more than 2/3 of stake weight remains honest.</li>
+<li><strong>Batch finality:</strong> Finalizes multiple blocks in one step — more efficient.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="economic-model">Economic Model<a href="https://sampraszheng.github.io/yxz/blog/lop#economic-model" class="hash-link" aria-label="Direct link to Economic Model" title="Direct link to Economic Model">​</a></h4>
 <ul>
-<li><strong>鏈協作：</strong> 支持多條鏈的無縫數據共享，避免每條鏈都單獨計算相同的邏輯。</li>
-<li><strong>資源高效利用：</strong> 每條鏈專注於自身特定的功能和應用，避免計算和存儲資源的浪費。</li>
-<li><strong>簡化跨鏈通信：</strong> 通過設計跨鏈消息和驗證機制，提供了一種標準化的方法，使鏈與鏈之間的交互變得更高效和安全。</li>
+<li><strong>DOT token:</strong>
+<ul>
+<li>Used to pay for Coretime.</li>
+<li>Used to participate in OpenGov voting.</li>
+<li>120 million DOT minted per year.</li>
+<li>Inflation rate gradually decreasing from 10% toward 6% by 2030.</li>
 </ul>
 </li>
-<li><strong>Polkadot 的下一次重大升級將採用 SASSAFRAS/SAFROLE</strong>，它通過使用環形 VRF 解決多個/無區塊生產者的問題，並確保每個時隙都有一個區塊生產者。</li>
-<li><strong>預計 2025 年 7 月推出首個版本</strong>。</li>
-<li><strong>將計算分離為核心內和鏈上層</strong>。</li>
-<li><strong>將允許智能合約功能和無許可服務</strong>。</li>
-<li><strong>Jam 引入了一個去中心的混合系統，提供圍繞安全性和可擴展的 in-core/on-chain 二元性構建的智能合約功能</strong>。</li>
-<li><strong>Jam 的本質是無需許可的，允許任何人在其上部署代碼作為服務，並根據該代碼使用的資源支付相應的費用，並通過購買和分配 coretime 來引導該代碼的執行</strong>。</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="開放政府opengov">開放政府（OpenGov）<a href="https://sampraszheng.github.io/yxz/blog/lop#%E9%96%8B%E6%94%BE%E6%94%BF%E5%BA%9Copengov" class="hash-link" aria-label="Direct link to 開放政府（OpenGov）" title="Direct link to 開放政府（OpenGov）">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="technical-stack">Technical Stack<a href="https://sampraszheng.github.io/yxz/blog/lop#technical-stack" class="hash-link" aria-label="Direct link to Technical Stack" title="Direct link to Technical Stack">​</a></h4>
 <ul>
-<li><strong>Polkadot 的鏈上民主系統，將權力賦予 DOT 持有者</strong>。</li>
-<li><strong>使其成為世界上最大去中心化、最大的 DAO</strong>。</li>
-<li><strong>任何 DOT 持有者都可以投票、建立提案並進行討論</strong>。</li>
+<li><strong>Substrate:</strong> A Rust framework for building blockchains.</li>
+<li><strong>Polkadot SDK:</strong> Includes the Cumulus, Polkadot, and Substrate repositories.</li>
+<li><strong>SCALE Codec:</strong> An efficient serialization/deserialization format for Polkadot and Substrate.</li>
+<li><strong>Wasm:</strong> WebAssembly, used to build the Polkadot runtime.</li>
+<li><strong>FRAME:</strong> A framework for simplifying Substrate runtime development.</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="現有-polkadot-生態項目">現有 Polkadot 生態項目<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%8F%BE%E6%9C%89-polkadot-%E7%94%9F%E6%85%8B%E9%A0%85%E7%9B%AE" class="hash-link" aria-label="Direct link to 現有 Polkadot 生態項目" title="Direct link to 現有 Polkadot 生態項目">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="jam-join-accumulate-machine">JAM (Join-Accumulate Machine)<a href="https://sampraszheng.github.io/yxz/blog/lop#jam-join-accumulate-machine" class="hash-link" aria-label="Direct link to JAM (Join-Accumulate Machine)" title="Direct link to JAM (Join-Accumulate Machine)">​</a></h4>
 <ul>
-<li>FIFA 推出 Mythical Games 傑出的足球手機遊戲，預計 2025 年夏季推出。</li>
-<li>Pudge Penguins 推出 Mythical Games 傑出的 AAA 級策略塔防遊戲，預計 2025 年夏季推出。</li>
-<li>獨特的DePIN，檢查 RWA 和 DeFi，超過 64 個DePIN 專案和 4-5 億美元融資。</li>
-<li><strong>@AcademyPolkadot</strong> 推出由 Polkadot 專家領導的 PBA-X 線上區塊鏈課程，從 2025 年 1 月開始。</li>
-<li><strong>@OpenZeppelin</strong> 是一個開放原始碼程式庫 + 工具的供應商，使團隊能夠有效且安全地管理區塊鏈專案 – 發布了 Polkadot 運行時範本。</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2025-年-polkadot-20-的路線圖">2025 年 Polkadot 2.0 的路線圖<a href="https://sampraszheng.github.io/yxz/blog/lop#2025-%E5%B9%B4-polkadot-20-%E7%9A%84%E8%B7%AF%E7%B7%9A%E5%9C%96" class="hash-link" aria-label="Direct link to 2025 年 Polkadot 2.0 的路線圖" title="Direct link to 2025 年 Polkadot 2.0 的路線圖">​</a></h4>
+<li><strong>Goal:</strong> Solve blockchain scalability and interoperability.</li>
+<li><strong>Core idea:</strong> Facilitate chain collaboration and data sharing; optimize computation and communication efficiency in decentralized environments.</li>
+<li><strong>Key properties:</strong>
 <ul>
-<li><strong>智能合約即將推出（數十種程式語言）</strong>。</li>
-<li><strong>基於 RISC-V 緩慢過渡到 PVM（Polkadot 虛擬機）</strong>。</li>
-<li><strong>統一地址格式（更好的 UI/UX 用於使用者和開發者）</strong>。</li>
-<li><strong>XCM v5（甚至更好的互操作性）</strong>。</li>
-<li><strong>快速取消抵押（從 28 天到平均 2-4 天）</strong>。</li>
-<li><strong>DOT 作為通用 Gas 代幣（在 Rollup 上啟用 DOT 作為費用）</strong>。</li>
-<li><strong>500 毫秒區塊時間（在 2025 年，由於彈性擴展，一個專案甚至可以使用 12 個核心）</strong>。</li>
+<li><strong>Chain collaboration:</strong> Seamless data sharing across chains, eliminating redundant computation of the same logic.</li>
+<li><strong>Efficient resource utilization:</strong> Each chain focuses on its specific function, avoiding wasted compute and storage.</li>
+<li><strong>Simplified cross-chain communication:</strong> A standardized method for chain-to-chain interaction that is both efficient and secure.</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="總結">總結<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%B8%BD%E7%B5%90" class="hash-link" aria-label="Direct link to 總結" title="Direct link to 總結">​</a></h4>
-<p>Polkadot 致力於通過其獨特的多鏈架構、互操作性、可擴展性和靈活性，革新 Web3 的構建方式。 未來的 JAM 升級和 Polkadot 2.0 將進一步增強其功能，使其成為區塊鏈技術領域中一個有前途的平台。</p>]]></content:encoded>
+</li>
+<li><strong>Polkadot's next major upgrade adopts SASSAFRAS/SAFROLE</strong>, which uses a Ring-VRF to guarantee exactly one block producer per slot, solving the multi-producer/no-producer problem.</li>
+<li><strong>First release targeted for July 2025.</strong></li>
+<li><strong>Separates computation into in-core and on-chain layers.</strong></li>
+<li><strong>Enables smart-contract functionality and permissionless services.</strong></li>
+<li><strong>JAM is permissionless by nature</strong> — anyone can deploy code as a service, paying proportionally to resource usage, and bootstrapping execution via coretime purchases.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="opengov">OpenGov<a href="https://sampraszheng.github.io/yxz/blog/lop#opengov" class="hash-link" aria-label="Direct link to OpenGov" title="Direct link to OpenGov">​</a></h4>
+<ul>
+<li><strong>Polkadot's on-chain democratic system, placing power in the hands of DOT holders.</strong></li>
+<li><strong>Makes Polkadot the world's largest decentralized DAO.</strong></li>
+<li><strong>Any DOT holder can vote, create proposals, and participate in discussion.</strong></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ecosystem-projects">Ecosystem Projects<a href="https://sampraszheng.github.io/yxz/blog/lop#ecosystem-projects" class="hash-link" aria-label="Direct link to Ecosystem Projects" title="Direct link to Ecosystem Projects">​</a></h4>
+<ul>
+<li>FIFA-licensed football mobile game by Mythical Games — expected summer 2025.</li>
+<li>Pudgy Penguins-branded AAA tower-defense game by Mythical Games — expected summer 2025.</li>
+<li>Unique DePIN focus: RWA and DeFi integrations, 64+ DePIN projects and $400–500M raised.</li>
+<li><strong>@AcademyPolkadot</strong> PBA-X online blockchain course led by Polkadot experts, starting January 2025.</li>
+<li><strong>@OpenZeppelin</strong> open-source library and tooling provider — published Polkadot runtime templates.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2025-polkadot-20-roadmap">2025 Polkadot 2.0 Roadmap<a href="https://sampraszheng.github.io/yxz/blog/lop#2025-polkadot-20-roadmap" class="hash-link" aria-label="Direct link to 2025 Polkadot 2.0 Roadmap" title="Direct link to 2025 Polkadot 2.0 Roadmap">​</a></h4>
+<ul>
+<li><strong>Smart contracts shipping (dozens of programming languages).</strong></li>
+<li><strong>Gradual RISC-V migration to PVM (Polkadot Virtual Machine).</strong></li>
+<li><strong>Unified address format (better UI/UX for users and developers).</strong></li>
+<li><strong>XCM v5 (improved interoperability).</strong></li>
+<li><strong>Fast unstaking (from 28 days down to an average 2–4 days).</strong></li>
+<li><strong>DOT as universal gas token (enabling DOT as fees on rollups).</strong></li>
+<li><strong>500 ms block time (in 2025, a single project can use up to 12 cores via elastic scaling).</strong></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://sampraszheng.github.io/yxz/blog/lop#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h4>
+<p>Polkadot is committed to revolutionizing how Web3 is built through its unique multi-chain architecture, interoperability, scalability, and flexibility. The upcoming JAM upgrade and Polkadot 2.0 will further enhance its capabilities, making it one of the most promising platforms in the blockchain space.</p>]]></content:encoded>
             <category>DOT</category>
         </item>
         <item>
@@ -710,44 +709,44 @@
             <category>rf</category>
         </item>
         <item>
-            <title><![CDATA[聊聊相位陣列]]></title>
+            <title><![CDATA[Phased Arrays — From Mechanical Scanning to AESA]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/PA</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/PA</guid>
             <pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[從二戰雷達到 PESA、AESA 的相位陣列技術演進 — 數學原理、波束控制與 5G/6G 應用的實務切入。]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="脈絡">脈絡<a href="https://sampraszheng.github.io/yxz/blog/PA#%E8%84%88%E7%B5%A1" class="hash-link" aria-label="Direct link to 脈絡" title="Direct link to 脈絡">​</a></h3>
-<p>無線掃描技術的發展始於19世紀末，當時透過高增益天線創造出固定窄波束。到了第二次世界大戰期間，雷達技術的發明使高增益天線能夠旋轉，以機械掃描波束，實現360°全方位覆蓋。</p>
-<p>為了消除機械旋轉、提升設備壽命並加強多目標追蹤性能，PESA（被動電子掃描陣列）技術於1960年代誕生。自1980年代起，隨著高頻半導體技術的逐步成熟，各種AESA（主動電子掃描陣列）技術相繼發展。</p>
-<p>儘管新一代的無線掃描技術比早期技術更加複雜，但其系統性能（探測距離、解析度、追蹤能力與可靠性）隨著世代更迭而大幅提升。下圖展示了無線掃描技術（雷達）的發展歷程，包括架構簡介、技術里程碑及市場挑戰。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="運作">運作<a href="https://sampraszheng.github.io/yxz/blog/PA#%E9%81%8B%E4%BD%9C" class="hash-link" aria-label="Direct link to 運作" title="Direct link to 運作">​</a></h3>
-<p>相位陣列（Phased Array）是一種透過調整天線元件的相位來控制電磁波方向的技術。相較於傳統的機械式天線轉向方式，相位陣列可以透過電子控制來快速改變波束方向，提升系統的靈活性與可靠性。</p>
-<p>相位陣列的核心概念是利用多個天線元件組成天線陣列，並透過個別調整各天線元件的相位，使得電磁波在特定方向產生建設性干涉（constructive interference），而在其他方向則產生破壞性干涉（destructive interference），進而實現波束的電子掃描。其數學模型如下：</p>
+            <description><![CDATA[From WWII radar to PESA and AESA — the mathematical principles behind electronic beam steering, and how phased arrays power 5G mmWave and satellite links.]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="background">Background<a href="https://sampraszheng.github.io/yxz/blog/PA#background" class="hash-link" aria-label="Direct link to Background" title="Direct link to Background">​</a></h3>
+<p>Wireless scanning technology began in the late 19th century with fixed narrow beams formed by high-gain antennas. During World War II, radar emerged and allowed those antennas to rotate mechanically, achieving 360° coverage through physical beam sweeping.</p>
+<p>To eliminate mechanical rotation, extend equipment lifespan, and improve multi-target tracking, PESA (Passive Electronically Scanned Array) technology was introduced in the 1960s. From the 1980s onward, the maturation of high-frequency semiconductor technology drove the development of various AESA (Active Electronically Scanned Array) architectures.</p>
+<p>Although each successive generation is more complex than the last, system performance — detection range, resolution, tracking capability, and reliability — has improved dramatically with each iteration.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works">How It Works<a href="https://sampraszheng.github.io/yxz/blog/PA#how-it-works" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works">​</a></h3>
+<p>A phased array controls the direction of an electromagnetic beam by adjusting the phase of individual antenna elements. Unlike traditional mechanically steered antennas, phased arrays use electronic control to change beam direction almost instantaneously, dramatically improving system agility and reliability.</p>
+<p>The core idea: an array of antenna elements each receives an independent phase shift. By choosing those phases carefully, the radiated field adds constructively in one target direction (constructive interference) and cancels in all others (destructive interference). The phase shift required for a given steering angle is:</p>
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi mathvariant="normal">Θ</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>d</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mi>λ</mi></mfrac></mrow><annotation encoding="application/x-tex">\Delta\Theta = \frac{2\pi d \sin\theta}{\lambda}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord">ΔΘ</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:2.0574em;vertical-align:-0.686em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em"><span style="top:-2.314em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord mathnormal">λ</span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.677em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03588em">π</span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.02778em">θ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
-<p>其中：</p>
+<p>where:</p>
 <ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">d</span></span></span></span> 為天線單元間距</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">λ</span></span></span></span> 為波長</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal" style="margin-right:0.02778em">θ</span></span></span></span> 為波束指向角度</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">d</span></span></span></span> — inter-element spacing</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">λ</span></span></span></span> — wavelength</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal" style="margin-right:0.02778em">θ</span></span></span></span> — desired beam angle</li>
 </ul>
-<p>此相位調整機制允許系統透過改變各天線單元的相位來動態調整波束方向，而無需物理移動天線結構。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="應用">應用<a href="https://sampraszheng.github.io/yxz/blog/PA#%E6%87%89%E7%94%A8" class="hash-link" aria-label="Direct link to 應用" title="Direct link to 應用">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="軍事與雷達應用">軍事與雷達應用<a href="https://sampraszheng.github.io/yxz/blog/PA#%E8%BB%8D%E4%BA%8B%E8%88%87%E9%9B%B7%E9%81%94%E6%87%89%E7%94%A8" class="hash-link" aria-label="Direct link to 軍事與雷達應用" title="Direct link to 軍事與雷達應用">​</a></h3>
-<p>相位陣列技術最早應用於軍事雷達，如現代艦載雷達、預警機雷達（如 E-2D）、愛國者飛彈防禦系統等。其優勢包括：</p>
+<p>This phase-control mechanism lets the system steer the beam dynamically without any physical antenna movement.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="applications">Applications<a href="https://sampraszheng.github.io/yxz/blog/PA#applications" class="hash-link" aria-label="Direct link to Applications" title="Direct link to Applications">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="military-and-radar">Military and Radar<a href="https://sampraszheng.github.io/yxz/blog/PA#military-and-radar" class="hash-link" aria-label="Direct link to Military and Radar" title="Direct link to Military and Radar">​</a></h3>
+<p>Phased array technology was first deployed in military radar — modern ship-board radar, airborne early warning systems (e.g., the E-2D Advanced Hawkeye), and the Patriot missile defense system. Key advantages:</p>
 <ul>
-<li><strong>多目標追蹤能力強</strong>：可以同時監測多個目標，適用於防空與導引系統。</li>
-<li><strong>快速波束轉向</strong>：可瞬間改變掃描方向，提升反應速度。</li>
-<li><strong>抗干擾能力強</strong>：可調整波束形狀以減少敵方干擾影響。</li>
+<li><strong>Multi-target tracking</strong> — monitors many targets simultaneously, essential for air defense and fire-control systems.</li>
+<li><strong>Rapid beam steering</strong> — beam direction changes in microseconds, far faster than any mechanical mechanism.</li>
+<li><strong>Interference rejection</strong> — beam shape can be adapted to null out jamming sources.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5g-與無線通訊">5G 與無線通訊<a href="https://sampraszheng.github.io/yxz/blog/PA#5g-%E8%88%87%E7%84%A1%E7%B7%9A%E9%80%9A%E8%A8%8A" class="hash-link" aria-label="Direct link to 5G 與無線通訊" title="Direct link to 5G 與無線通訊">​</a></h3>
-<p>在 5G mmWave（毫米波）通訊中，相位陣列技術可實現波束成形（Beamforming），提升數據傳輸效率。應用場景包括：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5g-and-wireless-communications">5G and Wireless Communications<a href="https://sampraszheng.github.io/yxz/blog/PA#5g-and-wireless-communications" class="hash-link" aria-label="Direct link to 5G and Wireless Communications" title="Direct link to 5G and Wireless Communications">​</a></h3>
+<p>In 5G mmWave bands, phased arrays enable beamforming that concentrates energy exactly where it is needed, boosting spectral efficiency:</p>
 <ul>
-<li><strong>基地台天線</strong>：用於 5G Massive MIMO 技術，提高信號覆蓋範圍與傳輸速率。</li>
-<li><strong>衛星通訊</strong>：LEO（低軌道衛星）通訊系統中，相位陣列可實現精確的波束控制，提升鏈路穩定性與頻譜效率​<div>oaicite:0</div>。</li>
+<li><strong>Massive MIMO base stations</strong> — 5G NR Massive MIMO uses large antenna arrays to serve multiple users simultaneously on the same spectrum.</li>
+<li><strong>Satellite communications</strong> — LEO constellation terminals rely on phased arrays for precise beam tracking as satellites move rapidly across the sky, maintaining link margin without any moving parts.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="自駕車與雷達感測">自駕車與雷達感測<a href="https://sampraszheng.github.io/yxz/blog/PA#%E8%87%AA%E9%A7%95%E8%BB%8A%E8%88%87%E9%9B%B7%E9%81%94%E6%84%9F%E6%B8%AC" class="hash-link" aria-label="Direct link to 自駕車與雷達感測" title="Direct link to 自駕車與雷達感測">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="automotive-radar-and-sensing">Automotive Radar and Sensing<a href="https://sampraszheng.github.io/yxz/blog/PA#automotive-radar-and-sensing" class="hash-link" aria-label="Direct link to Automotive Radar and Sensing" title="Direct link to Automotive Radar and Sensing">​</a></h3>
 <ul>
-<li><strong>毫米波雷達（mmWave Radar）</strong>：相位陣列應用於自動駕駛車輛的感測系統，可實現 360° 環繞偵測，增強安全性。</li>
-<li><strong>醫療影像</strong>：超聲波相位陣列用於醫學影像，如高解析度超音波掃描，提高診斷精準度。</li>
+<li><strong>mmWave radar</strong> — phased arrays in ADAS radar systems (76–81 GHz) provide fine angular resolution for object detection and lane-change assist with no blind spots.</li>
+<li><strong>Medical ultrasound</strong> — phased array transducers electronically steer the acoustic beam for high-resolution cross-sectional imaging without repositioning the probe.</li>
 </ul>]]></content:encoded>
             <category>rf</category>
             <category>phasedarray</category>
