@@ -11,7 +11,7 @@
         <id>https://SamprasZheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026</id>
         <link href="https://SamprasZheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026"/>
         <updated>2026-03-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This post captures my current engineering thesis across AI systems, space infrastructure, blockchain, and RF validation.]]></summary>
+        <summary type="html"><![CDATA[A 2026 engineering thesis across AI workflows, in-orbit compute, Polkadot settlement, phased-array SATCOM, and radiation-aware silicon validation.]]></summary>
         <content type="html"><![CDATA[<p>This post captures my current engineering thesis across AI systems, space infrastructure, blockchain, and RF validation.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-this-matters-now">Why This Matters Now<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026#why-this-matters-now" class="hash-link" aria-label="Direct link to Why This Matters Now" title="Direct link to Why This Matters Now">​</a></h2>
 <p>In 2026, AI deployment is moving from model demos to system-level execution. The next frontier is not only better models, but where compute runs, how data moves, and how hardware survives harsh environments.</p>
@@ -84,7 +84,7 @@
         <id>https://SamprasZheng.github.io/yxz/blog/weekly-macro-outlook-20260322</id>
         <link href="https://SamprasZheng.github.io/yxz/blog/weekly-macro-outlook-20260322"/>
         <updated>2026-03-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This post is automatically generated for the week starting 2026-03-23.]]></summary>
+        <summary type="html"><![CDATA[Auto-generated macro outlook for 2026-03-23 — US equities, BTC/ETH snapshot, X/Threads sentiment, and a directional bias read.]]></summary>
         <content type="html"><![CDATA[<p>This post is automatically generated for the week starting <strong>2026-03-23</strong>.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary-prediction-next-week">Summary Prediction (Next Week)<a href="https://sampraszheng.github.io/yxz/blog/weekly-macro-outlook-20260322#summary-prediction-next-week" class="hash-link" aria-label="Direct link to Summary Prediction (Next Week)" title="Direct link to Summary Prediction (Next Week)">​</a></h2>
 <ul>
@@ -129,6 +129,7 @@
             <uri>https://github.com/SamprasZheng</uri>
         </author>
         <category label="ai" term="ai"/>
+        <category label="macro" term="macro"/>
         <category label="misc" term="misc"/>
     </entry>
     <entry>
@@ -256,7 +257,7 @@
         <id>https://SamprasZheng.github.io/yxz/blog/Plurality</id>
         <link href="https://SamprasZheng.github.io/yxz/blog/Plurality"/>
         <updated>2025-03-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[我最初看到Plurality是因為在瀏覽Project Liberty 積極擴展DSNP (去中心化社交網路協定)於TikTok, Bluesky, Frequency等社交平台的文件時候看到前述位部長唐鳳也參與其中]]></summary>
+        <summary type="html"><![CDATA[從唐鳳協作的《Plurality》談起 — 多元視角的政治哲學如何與 Polkadot OpenGov 鏈上治理、DSNP 去中心化社交協定互相呼應。]]></summary>
         <content type="html"><![CDATA[<p>我最初看到Plurality是因為在瀏覽Project Liberty 積極擴展DSNP (去中心化社交網路協定)於TikTok, Bluesky, Frequency等社交平台的文件時候看到前述位部長唐鳳也參與其中</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="plurality多元宇宙-是什麼">Plurality(多元宇宙) 是什麼？<a href="https://sampraszheng.github.io/yxz/blog/Plurality#plurality%E5%A4%9A%E5%85%83%E5%AE%87%E5%AE%99-%E6%98%AF%E4%BB%80%E9%BA%BC" class="hash-link" aria-label="Direct link to Plurality(多元宇宙) 是什麼？" title="Direct link to Plurality(多元宇宙) 是什麼？">​</a></h2>
 <p>我最初看到Plurality是因為看到Project Liberty 正在積極 主張打破傳統單一決策模式，鼓勵從多個角度切入議題，形成更具包容性與彈性的治理結構。這種多元視角讓參與者能根據不同情境探索多種可能性，而非被迫走上預設的固定路徑。<br>
@@ -322,7 +323,7 @@
         <id>https://SamprasZheng.github.io/yxz/blog/JAMintro</id>
         <link href="https://SamprasZheng.github.io/yxz/blog/JAMintro"/>
         <updated>2025-02-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Polkadot JAM（Join-Accumulate Machine）是 Polkadot 網絡的一個擬議升級，旨在取代目前的 Relay Chain（中繼鏈），使其設計更加模組化和簡約。它將 Ethereum 的智能合約功能與 Polkadot 的可擴展性結合，創造一個更靈活的開發環境。]]></summary>
+        <summary type="html"><![CDATA[解析 Polkadot JAM（Join-Accumulate Machine）：目標 850 MB/s 吞吐量、340 萬 TPS 的異步多核架構，以及與 Ethereum / Solana 的對位比較。]]></summary>
         <content type="html"><![CDATA[<p>Polkadot JAM（Join-Accumulate Machine）是 Polkadot 網絡的一個擬議升級，旨在取代目前的 Relay Chain（中繼鏈），使其設計更加模組化和簡約。它將 Ethereum 的智能合約功能與 Polkadot 的可擴展性結合，創造一個更靈活的開發環境。</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="主要特點">主要特點<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E4%B8%BB%E8%A6%81%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to 主要特點" title="Direct link to 主要特點">​</a></h2>
 <ul>
@@ -376,7 +377,7 @@
         <id>https://SamprasZheng.github.io/yxz/blog/lop</id>
         <link href="https://SamprasZheng.github.io/yxz/blog/lop"/>
         <updated>2024-04-07T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[波卡（Polkadot）簡介]]></summary>
+        <summary type="html"><![CDATA[Polkadot 2.0 的核心概念速覽 — 從 XCM 跨鏈、異構分片、敏捷核心時間到 OpenGov 鏈上治理的一次總整理。]]></summary>
         <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="波卡polkadot簡介">波卡（Polkadot）簡介<a href="https://sampraszheng.github.io/yxz/blog/lop#%E6%B3%A2%E5%8D%A1polkadot%E7%B0%A1%E4%BB%8B" class="hash-link" aria-label="Direct link to 波卡（Polkadot）簡介" title="Direct link to 波卡（Polkadot）簡介">​</a></h3>
 <p><strong>波卡（Polkadot）</strong> 是一個旨在實現 <strong>多鏈未來</strong> 的區塊鏈平台。它並非將所有 Web3 用例都集中在單一區塊鏈上，而是設想不同的鏈（通用或特定於應用程式）可以協同工作，使 Web3 能夠擴展以服務於日常應用。</p>
 <ul>
@@ -496,17 +497,11 @@
         <category label="DOT" term="DOT"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[radtest]]></title>
-        <id>https://SamprasZheng.github.io/yxz/blog/2021/01/13/radtest</id>
-        <link href="https://SamprasZheng.github.io/yxz/blog/2021/01/13/radtest"/>
-        <updated>2021-01-13T00:00:00.000Z</updated>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Radiation Test Playbook: TID / SEE with Simple Orbit Calculators]]></title>
         <id>https://SamprasZheng.github.io/yxz/blog/radtest</id>
         <link href="https://SamprasZheng.github.io/yxz/blog/radtest"/>
         <updated>2021-01-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This page updates my radiation test blog into a practical engineering workflow and includes simple simulation tools.]]></summary>
+        <summary type="html"><![CDATA[A practical radiation qualification workflow (TID + SEE) with inline calculators for orbit dose budgeting and LET-threshold SEE rate estimation.]]></summary>
         <content type="html"><![CDATA[<p>This page updates my radiation test blog into a practical engineering workflow and includes simple simulation tools.</p>
 <p>These two calculators are for quick mission trade studies, not qualification signoff.</p>
 <div><h3>Simple Orbital TID Calculator</h3><p>Trend-only tool: dose or shielding versus orbit across LEO/MEO/GEO/Lunar.</p><p>Orbit:<select style="margin-left:8px"><option value="LEO" selected="">LEO</option><option value="MEO">MEO</option><option value="GEO">GEO</option><option value="Lunar">Lunar</option></select></p><p>Mission duration (years):<input type="number" min="0.1" max="20" step="0.1" style="margin-left:8px" value="3"></p><p>Al equivalent shielding (mm):<input type="number" min="0" max="20" step="0.1" style="margin-left:8px" value="2"></p><p>LEO altitude (km):<input type="number" min="200" max="2000" step="10" style="margin-left:8px" value="550"></p><p>LEO inclination (deg):<input type="number" min="0" max="98" step="1" style="margin-left:8px" value="53"></p><p>Device TID limit (krad(Si)):<input type="number" min="0.1" max="2000" step="0.1" style="margin-left:8px" value="15"></p><p>Estimated mission TID: <strong>2.17<!-- --> krad(Si)</strong></p><p>Estimated shielding to meet TID limit: <strong>2<!-- --> mm Al eq.</strong></p></div><div><h3>Simple Orbital SEE Calculator</h3><p>Trend-only tool: expected SEE events across LEO/MEO/GEO/Lunar.</p><p>Orbit:<select style="margin-left:8px"><option value="LEO" selected="">LEO</option><option value="MEO">MEO</option><option value="GEO">GEO</option><option value="Lunar">Lunar</option></select></p><p>Mission duration (days):<input type="number" min="1" max="3650" step="1" style="margin-left:8px" value="365"></p><p>Al equivalent shielding (mm):<input type="number" min="0" max="20" step="0.1" style="margin-left:8px" value="2"></p><p>LET threshold (MeV*cm2/mg):<input type="number" min="1" max="120" step="0.5" style="margin-left:8px" value="20"></p><p>Device cross-section sigma (cm2/event):<input type="number" min="1e-10" max="1e-3" step="1e-8" style="margin-left:8px" value="1e-7"></p><p>Sensitive/protected bits:<input type="number" min="1" max="1000000000000" step="1000" style="margin-left:8px" value="1000000"></p><p>Estimated SEE/day: <strong>8.521e-7</strong></p><p>Expected SEE in mission: <strong>0.0003</strong></p><p>Probability of at least one SEE: <strong>0.03<!-- -->%</strong></p></div>
@@ -548,7 +543,7 @@
         <id>https://SamprasZheng.github.io/yxz/blog/PA</id>
         <link href="https://SamprasZheng.github.io/yxz/blog/PA"/>
         <updated>2021-01-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[脈絡]]></summary>
+        <summary type="html"><![CDATA[從二戰雷達到 PESA、AESA 的相位陣列技術演進 — 數學原理、波束控制與 5G/6G 應用的實務切入。]]></summary>
         <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="脈絡">脈絡<a href="https://sampraszheng.github.io/yxz/blog/PA#%E8%84%88%E7%B5%A1" class="hash-link" aria-label="Direct link to 脈絡" title="Direct link to 脈絡">​</a></h3>
 <p>無線掃描技術的發展始於19世紀末，當時透過高增益天線創造出固定窄波束。到了第二次世界大戰期間，雷達技術的發明使高增益天線能夠旋轉，以機械掃描波束，實現360°全方位覆蓋。</p>
 <p>為了消除機械旋轉、提升設備壽命並加強多目標追蹤性能，PESA（被動電子掃描陣列）技術於1960年代誕生。自1980年代起，隨著高頻半導體技術的逐步成熟，各種AESA（主動電子掃描陣列）技術相繼發展。</p>
@@ -595,7 +590,7 @@
         <id>https://SamprasZheng.github.io/yxz/blog/welcome</id>
         <link href="https://SamprasZheng.github.io/yxz/blog/welcome"/>
         <updated>2020-08-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
+        <summary type="html"><![CDATA[First post — site intro and a short tour of how this Docusaurus blog is laid out.]]></summary>
         <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p>
 <p>Here are a few tips you might find useful.</p>
 <p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
