@@ -486,378 +486,378 @@
             <category>misc</category>
         </item>
         <item>
-            <title><![CDATA[RF / SoC 系統除錯分析 — 從硬體到韌體到 ATE 的 Bug 分類學]]></title>
+            <title><![CDATA[RF / SoC System Debug — A Bug Taxonomy from Hardware to Firmware to ATE]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/debug</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/debug</guid>
             <pubDate>Mon, 02 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[一份給無線通訊 / SoC 產品工程師的系統除錯 checklist — 從 PCB 層到 OTP 烙碼、ATE 測試腳本、再到環境相容性，每一層常見 bug 類型與根因切入點。]]></description>
-            <content:encoded><![CDATA[<p>量產導入（NPI）階段的 bug，八成不是「哪一行寫錯」那種純軟體問題，而是<strong>跨層交互</strong>：硬體設計過關但 SMT 變異讓某個批次掛掉、ATE 測試通過但系統端因為 profile 不同踩到韌體 corner case、實驗室好好的到了客戶環境因為共存（coexistence）干擾才浮現。</p>
-<p>這篇把我自己在 Wi-Fi / RF SoC 產品線上用來「先找分類、再找根因」的 checklist 完整寫出來，未來新 case 進來可以照著刷一輪。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第一層硬體hw">第一層：硬體（HW）<a href="https://sampraszheng.github.io/yxz/blog/debug#%E7%AC%AC%E4%B8%80%E5%B1%A4%E7%A1%AC%E9%AB%94hw" class="hash-link" aria-label="Direct link to 第一層：硬體（HW）" title="Direct link to 第一層：硬體（HW）">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="設計階段">設計階段<a href="https://sampraszheng.github.io/yxz/blog/debug#%E8%A8%AD%E8%A8%88%E9%9A%8E%E6%AE%B5" class="hash-link" aria-label="Direct link to 設計階段" title="Direct link to 設計階段">​</a></h3>
-<table><thead><tr><th>項目</th><th>常見 bug</th></tr></thead><tbody><tr><td>Symbol / Package / Pin</td><td>footprint 繪錯、pin swap、power/ground 拉錯層</td></tr><tr><td>Schematic</td><td>電源序列、clock 樹、RF matching 缺元件或誤用</td></tr><tr><td>模擬</td><td>S-parameter 沒驗、antenna tuning 只靠 simulator 結果</td></tr></tbody></table>
-<p>🎯 <strong>切入點</strong>：任何新量產前，用 golden board 逐 pin 對照 BOM + layout 再跑一次 DRC。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pcb-階段">PCB 階段<a href="https://sampraszheng.github.io/yxz/blog/debug#pcb-%E9%9A%8E%E6%AE%B5" class="hash-link" aria-label="Direct link to PCB 階段" title="Direct link to PCB 階段">​</a></h3>
+            <description><![CDATA[A systematic debug checklist for wireless / SoC product engineers — from PCB layer to OTP burn-in, ATE test scripts, and environmental compatibility, with common bug types and root-cause entry points at each layer.]]></description>
+            <content:encoded><![CDATA[<p>Bugs encountered during New Product Introduction (NPI) are eighty percent not the "wrong line of code" variety of pure software problem — they are <strong>cross-layer interactions</strong>: hardware design passes review but SMT variation kills a certain batch; ATE test passes but the system side hits a firmware corner case because of a different profile; everything works in the lab until the customer's environment surfaces a coexistence interference issue.</p>
+<p>This post fully documents the checklist I use on Wi-Fi / RF SoC product lines to "classify first, find root cause second." Future cases can be run through this list from the top.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-1-hardware-hw">Layer 1: Hardware (HW)<a href="https://sampraszheng.github.io/yxz/blog/debug#layer-1-hardware-hw" class="hash-link" aria-label="Direct link to Layer 1: Hardware (HW)" title="Direct link to Layer 1: Hardware (HW)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="design-phase">Design Phase<a href="https://sampraszheng.github.io/yxz/blog/debug#design-phase" class="hash-link" aria-label="Direct link to Design Phase" title="Direct link to Design Phase">​</a></h3>
+<table><thead><tr><th>Item</th><th>Common bugs</th></tr></thead><tbody><tr><td>Symbol / Package / Pin</td><td>Footprint errors, pin swap, power/ground routed to wrong layer</td></tr><tr><td>Schematic</td><td>Power sequencing, clock tree, RF matching missing components or incorrect values</td></tr><tr><td>Simulation</td><td>S-parameters not verified, antenna tuning relying solely on simulator results</td></tr></tbody></table>
+<p>🎯 <strong>Entry point</strong>: Before any new production run, use a golden board to do a pin-by-pin check against the BOM + layout and re-run DRC.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pcb-phase">PCB Phase<a href="https://sampraszheng.github.io/yxz/blog/debug#pcb-phase" class="hash-link" aria-label="Direct link to PCB Phase" title="Direct link to PCB Phase">​</a></h3>
 <ul>
-<li>CAM 輸出比對原圖（Gerber / ODB++ diff）</li>
-<li>X-section 驗層壓結構（介電層厚度直接影響 50 Ω 阻抗）</li>
-<li>DRC：trace width、spacing、via-in-pad、differential pair skew</li>
-<li>模組區（RF / DDR / clock）單獨審圖</li>
+<li>Verify CAM output against source (Gerber / ODB++ diff)</li>
+<li>Cross-section to verify laminate structure (dielectric thickness directly affects 50 Ω impedance)</li>
+<li>DRC: trace width, spacing, via-in-pad, differential pair skew</li>
+<li>Separate review for RF / DDR / clock module areas</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：量產板先抓 10 片做 TDR 與 VNA sweep，比對設計值。Impedance 偏移超過 ±10% 先停線。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pcba-階段">PCBA 階段<a href="https://sampraszheng.github.io/yxz/blog/debug#pcba-%E9%9A%8E%E6%AE%B5" class="hash-link" aria-label="Direct link to PCBA 階段" title="Direct link to PCBA 階段">​</a></h3>
+<p>🎯 <strong>Entry point</strong>: Pull 10 boards from the first production run and do TDR + VNA sweeps against design values. If impedance deviates more than ±10%, stop the line first.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pcba-phase">PCBA Phase<a href="https://sampraszheng.github.io/yxz/blog/debug#pcba-phase" class="hash-link" aria-label="Direct link to PCBA Phase" title="Direct link to PCBA Phase">​</a></h3>
 <ul>
-<li>SMT：爐溫 profile、回流焊缺陷、冷焊、tombstone</li>
-<li>BOM 管理：alternative part 換料時 datasheet 差異（尤其 capacitor ESR、inductor Q）</li>
-<li>Variant：同一 SoC 多變體（WiFi-only vs WiFi+BT）的料件差異</li>
+<li>SMT: reflow oven temperature profile, reflow defects, cold joints, tombstoning</li>
+<li>BOM management: datasheet differences when swapping to alternative parts (especially capacitor ESR, inductor Q)</li>
+<li>Variants: component differences between variants of the same SoC (WiFi-only vs WiFi+BT)</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：BOM diff + X-ray 抽檢。alt. part 換料後必須跑完整 RF 認證（不是只跑 sanity）。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="系統整合">系統整合<a href="https://sampraszheng.github.io/yxz/blog/debug#%E7%B3%BB%E7%B5%B1%E6%95%B4%E5%90%88" class="hash-link" aria-label="Direct link to 系統整合" title="Direct link to 系統整合">​</a></h3>
+<p>🎯 <strong>Entry point</strong>: BOM diff + X-ray spot check. After any alt-part swap, a full RF certification run is required (not just a sanity check).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="system-integration">System Integration<a href="https://sampraszheng.github.io/yxz/blog/debug#system-integration" class="hash-link" aria-label="Direct link to System Integration" title="Direct link to System Integration">​</a></h3>
 <ul>
-<li>模組間干擾：WiFi 2.4G × BT × LTE B40 共存是經典</li>
-<li>Interconnect：FFC/FPC 長度、屏蔽接地迴路</li>
-<li>ESD / EMC：整機才看得見</li>
+<li>Module-to-module interference: WiFi 2.4G × BT × LTE B40 coexistence is the classic example</li>
+<li>Interconnect: FFC/FPC length, shielding ground loops</li>
+<li>ESD / EMC: only visible at full system level</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：用 spectrum analyzer 抓帶外雜散（spurious），對應到時間軸看是哪個子系統啟動時出現。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第二層韌體fw">第二層：韌體（FW）<a href="https://sampraszheng.github.io/yxz/blog/debug#%E7%AC%AC%E4%BA%8C%E5%B1%A4%E9%9F%8C%E9%AB%94fw" class="hash-link" aria-label="Direct link to 第二層：韌體（FW）" title="Direct link to 第二層：韌體（FW）">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="otp--soc-配置">OTP / SoC 配置<a href="https://sampraszheng.github.io/yxz/blog/debug#otp--soc-%E9%85%8D%E7%BD%AE" class="hash-link" aria-label="Direct link to OTP / SoC 配置" title="Direct link to OTP / SoC 配置">​</a></h3>
+<p>🎯 <strong>Entry point</strong>: Use a spectrum analyzer to capture out-of-band spurious emissions; correlate to the time axis to identify which subsystem causes them at startup.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-2-firmware-fw">Layer 2: Firmware (FW)<a href="https://sampraszheng.github.io/yxz/blog/debug#layer-2-firmware-fw" class="hash-link" aria-label="Direct link to Layer 2: Firmware (FW)" title="Direct link to Layer 2: Firmware (FW)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="otp--soc-configuration">OTP / SoC Configuration<a href="https://sampraszheng.github.io/yxz/blog/debug#otp--soc-configuration" class="hash-link" aria-label="Direct link to OTP / SoC Configuration" title="Direct link to OTP / SoC Configuration">​</a></h3>
 <ul>
-<li>OTP 版本 × MCN#（Mask Change Number）× variant 對照</li>
-<li>寫入 register 的前後順序（啟動序列錯了，下一層就全錯）</li>
-<li>Calibration 資料：RX gain table、TX power table、antenna switch mapping</li>
+<li>OTP version × MCN# (Mask Change Number) × variant mapping</li>
+<li>Register write order (wrong startup sequence corrupts every downstream layer)</li>
+<li>Calibration data: RX gain table, TX power table, antenna switch mapping</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：所有 FW issue 先確認 OTP version 與 MCN# 匹配。<strong>最便宜的 root cause 就是烙錯料</strong>。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="platform-meta">Platform Meta<a href="https://sampraszheng.github.io/yxz/blog/debug#platform-meta" class="hash-link" aria-label="Direct link to Platform Meta" title="Direct link to Platform Meta">​</a></h3>
+<p>🎯 <strong>Entry point</strong>: For every FW issue, first confirm OTP version matches MCN#. <strong>The cheapest root cause is a wrong part burned in.</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="platform-metadata">Platform Metadata<a href="https://sampraszheng.github.io/yxz/blog/debug#platform-metadata" class="hash-link" aria-label="Direct link to Platform Metadata" title="Direct link to Platform Metadata">​</a></h3>
 <ul>
-<li>ADB command 腳本（Android）或 host interface 指令序列</li>
-<li>Code builder（compile flag、branch、tag）</li>
-<li>Regression screen 與 sanity check 的差異：regression 是<strong>全量</strong>，sanity 是<strong>最低可接受</strong>；別混用</li>
-<li>Review stage：從 RTL → FW → FW+SW → 系統的階段界線</li>
+<li>ADB command scripts (Android) or host interface command sequences</li>
+<li>Code builder (compile flags, branch, tag)</li>
+<li>Difference between regression screen and sanity check: regression is <strong>full coverage</strong>, sanity is <strong>minimum acceptance</strong> — do not mix them</li>
+<li>Review stages: define clear boundaries from RTL → FW → FW+SW → system</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：把「哪個版本、哪個 branch、什麼 config、什麼 flag」四個參數記在 bug ticket 上。缺任何一個都先別 debug。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第三層軟體--測試sw--ate">第三層：軟體 / 測試（SW / ATE）<a href="https://sampraszheng.github.io/yxz/blog/debug#%E7%AC%AC%E4%B8%89%E5%B1%A4%E8%BB%9F%E9%AB%94--%E6%B8%AC%E8%A9%A6sw--ate" class="hash-link" aria-label="Direct link to 第三層：軟體 / 測試（SW / ATE）" title="Direct link to 第三層：軟體 / 測試（SW / ATE）">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="測試-config">測試 config<a href="https://sampraszheng.github.io/yxz/blog/debug#%E6%B8%AC%E8%A9%A6-config" class="hash-link" aria-label="Direct link to 測試 config" title="Direct link to 測試 config">​</a></h3>
+<p>🎯 <strong>Entry point</strong>: Record all four parameters — "which version, which branch, what config, what flags" — on the bug ticket. If any one is missing, don't start debugging.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-3-software--test-sw--ate">Layer 3: Software / Test (SW / ATE)<a href="https://sampraszheng.github.io/yxz/blog/debug#layer-3-software--test-sw--ate" class="hash-link" aria-label="Direct link to Layer 3: Software / Test (SW / ATE)" title="Direct link to Layer 3: Software / Test (SW / ATE)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-config">Test Config<a href="https://sampraszheng.github.io/yxz/blog/debug#test-config" class="hash-link" aria-label="Direct link to Test Config" title="Direct link to Test Config">​</a></h3>
 <ul>
-<li>Dialog：測試流程對話（DUT ↔ tester 互動）</li>
-<li>Profile：頻道、頻寬、調變（MCS）、天線組合</li>
-<li>Sequence：Pre-cal → calibration → verification → stress</li>
-<li>Coverage：corner case 是否有覆蓋（低溫、高溫、低 Vbat）</li>
+<li>Dialog: the test flow dialogue (DUT ↔ tester interaction)</li>
+<li>Profile: channel, bandwidth, modulation (MCS), antenna combination</li>
+<li>Sequence: Pre-cal → calibration → verification → stress</li>
+<li>Coverage: whether corner cases are covered (low temperature, high temperature, low Vbat)</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="前置條件">前置條件<a href="https://sampraszheng.github.io/yxz/blog/debug#%E5%89%8D%E7%BD%AE%E6%A2%9D%E4%BB%B6" class="hash-link" aria-label="Direct link to 前置條件" title="Direct link to 前置條件">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="preconditions">Preconditions<a href="https://sampraszheng.github.io/yxz/blog/debug#preconditions" class="hash-link" aria-label="Direct link to Preconditions" title="Direct link to Preconditions">​</a></h3>
 <ul>
-<li>Library dependency（ATE 廠商提供的 DLL / .so 版本）</li>
-<li>Config file path（local vs network）</li>
-<li>Tester firmware 與 DUT firmware 的版本相容表</li>
+<li>Library dependencies (DLL / .so version from ATE vendor)</li>
+<li>Config file paths (local vs. network)</li>
+<li>Version compatibility table between tester firmware and DUT firmware</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ate-本體">ATE 本體<a href="https://sampraszheng.github.io/yxz/blog/debug#ate-%E6%9C%AC%E9%AB%94" class="hash-link" aria-label="Direct link to ATE 本體" title="Direct link to ATE 本體">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ate-itself">ATE Itself<a href="https://sampraszheng.github.io/yxz/blog/debug#ate-itself" class="hash-link" aria-label="Direct link to ATE Itself" title="Direct link to ATE Itself">​</a></h3>
 <ul>
-<li>Script（Python / TCL / C#）</li>
-<li>Extension / plug-in 與 tester SDK 版本匹配</li>
-<li>Package 管理（尤其團隊內多條線共用 tester 時）</li>
+<li>Scripts (Python / TCL / C#)</li>
+<li>Extension / plug-in version match with tester SDK</li>
+<li>Package management (especially when multiple lines share a tester)</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="資料-review">資料 review<a href="https://sampraszheng.github.io/yxz/blog/debug#%E8%B3%87%E6%96%99-review" class="hash-link" aria-label="Direct link to 資料 review" title="Direct link to 資料 review">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-review">Data Review<a href="https://sampraszheng.github.io/yxz/blog/debug#data-review" class="hash-link" aria-label="Direct link to Data Review" title="Direct link to Data Review">​</a></h3>
 <ul>
-<li>Parser：raw log → structured data</li>
-<li>Visualize：boxplot、yield map、wafer map</li>
-<li>KPI：yield、Cpk、outlier 分布</li>
+<li>Parser: raw log → structured data</li>
+<li>Visualize: boxplot, yield map, wafer map</li>
+<li>KPI: yield, Cpk, outlier distribution</li>
 </ul>
-<p>🎯 <strong>切入點</strong>：所有 ATE 問題先問「log 看得懂嗎」。看得懂就是資料問題（script bug、config 錯），看不懂就是工具問題（parser 壞、tester 版本不匹配）。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第四層環境environment">第四層：環境（Environment）<a href="https://sampraszheng.github.io/yxz/blog/debug#%E7%AC%AC%E5%9B%9B%E5%B1%A4%E7%92%B0%E5%A2%83environment" class="hash-link" aria-label="Direct link to 第四層：環境（Environment）" title="Direct link to 第四層：環境（Environment）">​</a></h2>
-<p>這層是最坑的，因為它<strong>看起來不是 bug，是玄學</strong>。</p>
-<table><thead><tr><th>類別</th><th>動作</th></tr></thead><tbody><tr><td>Comparison</td><td>同樣 DUT 在兩個環境跑，diff 出差異（溫度、濕度、電源純淨度、鄰近設備）</td></tr><tr><td>Reproduce</td><td>先在實驗室能 100% 重現，才算有 bug。重現不了就先記錄環境變數</td></tr><tr><td>ATE / extension / package</td><td>工具鏈版本再查一輪（是的，就是那個再查一輪）</td></tr><tr><td>Compatibility</td><td>相容性：同一韌體在不同 host、不同 AP/Router、不同國家法規 region code</td></tr></tbody></table>
-<p>🎯 <strong>切入點</strong>：現場 escalation 先問三件事 — (1) 幾支 DUT 有問題、(2) 隔壁測試站有沒有、(3) 上次通過是哪個 build。答不出來就回原廠重測。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="除錯的心智模型">除錯的心智模型<a href="https://sampraszheng.github.io/yxz/blog/debug#%E9%99%A4%E9%8C%AF%E7%9A%84%E5%BF%83%E6%99%BA%E6%A8%A1%E5%9E%8B" class="hash-link" aria-label="Direct link to 除錯的心智模型" title="Direct link to 除錯的心智模型">​</a></h2>
-<p>實務上我會跑這個 flow：</p>
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"> 1. 現象分類（HW / FW / SW / ENV 哪一層？）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 2. 版本凍結（locked config：OTP / branch / ATE / platform）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 3. 比對 golden（同版本 golden board 能過嗎？）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 4. 二分法（哪個 commit / 哪個料件 / 哪個 test item 開始掛？）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 5. Reproduce on demand（能按鈕重現才算真 bug）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 6. Root cause + Mitigation + Prevention</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>第 5 步卡住時，通常是<strong>跨層問題</strong>：單層都沒事、合起來才爆。那就回到第 1 步，重新分類，這次把「上游 batch」、「下游 platform」一起放進分類樹。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="下一步">下一步<a href="https://sampraszheng.github.io/yxz/blog/debug#%E4%B8%8B%E4%B8%80%E6%AD%A5" class="hash-link" aria-label="Direct link to 下一步" title="Direct link to 下一步">​</a></h2>
-<p>這份清單還會延伸成兩個方向的文章：</p>
+<p>🎯 <strong>Entry point</strong>: For all ATE issues, first ask "is the log readable?" If yes, it's a data problem (script bug, wrong config). If no, it's a tooling problem (broken parser, tester version mismatch).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="layer-4-environment">Layer 4: Environment<a href="https://sampraszheng.github.io/yxz/blog/debug#layer-4-environment" class="hash-link" aria-label="Direct link to Layer 4: Environment" title="Direct link to Layer 4: Environment">​</a></h2>
+<p>This layer is the most treacherous, because it <strong>looks like black magic, not a bug</strong>.</p>
+<table><thead><tr><th>Category</th><th>Action</th></tr></thead><tbody><tr><td>Comparison</td><td>Run the same DUT in two environments and diff the difference (temperature, humidity, power cleanliness, adjacent equipment)</td></tr><tr><td>Reproduce</td><td>The bug is only real once you can reproduce it 100% in the lab. If you can't reproduce it, document the environmental variables first</td></tr><tr><td>ATE / extension / package</td><td>Check the tool chain versions again (yes, again)</td></tr><tr><td>Compatibility</td><td>Same firmware on different hosts, different APs/Routers, different country regulatory region codes</td></tr></tbody></table>
+<p>🎯 <strong>Entry point</strong>: When an escalation arrives from the field, ask three questions first — (1) how many DUTs are affected, (2) does the neighboring test station see it, (3) which build last passed. If any answer is missing, send it back for retesting at the factory.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-debug-mental-model">The Debug Mental Model<a href="https://sampraszheng.github.io/yxz/blog/debug#the-debug-mental-model" class="hash-link" aria-label="Direct link to The Debug Mental Model" title="Direct link to The Debug Mental Model">​</a></h2>
+<p>In practice I run this flow:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"> 1. Classify the symptom (HW / FW / SW / ENV — which layer?)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 2. Freeze versions (locked config: OTP / branch / ATE / platform)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 3. Compare against golden (does the same version pass on a golden board?)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 4. Binary search (which commit / which component / which test item started failing?)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 5. Reproduce on demand (only counts as a real bug if you can trigger it on command)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"> 6. Root cause + Mitigation + Prevention</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>When step 5 is stuck, the issue is usually a <strong>cross-layer interaction</strong>: each layer passes individually, but they blow up in combination. Go back to step 1, reclassify — this time put "upstream batch" and "downstream platform" into the classification tree together.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="https://sampraszheng.github.io/yxz/blog/debug#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h2>
+<p>This checklist will expand into two further articles:</p>
 <ul>
-<li><strong>相位陣列專屬的 debug checklist</strong>（pattern measurement、calibration drift、beam steering error）— 接在 <a href="https://sampraszheng.github.io/yxz/blog/PA">聊聊相位陣列</a> 後面</li>
-<li><strong>Radiation-aware debug for space silicon</strong> — 接 <a href="https://sampraszheng.github.io/yxz/blog/radtest">Radiation Test Playbook</a>，加上 TID drift / SEU 復原的 field debug 流程</li>
+<li><strong>Phased-array-specific debug checklist</strong> (pattern measurement, calibration drift, beam steering error) — follow-on to <a href="https://sampraszheng.github.io/yxz/blog/PA">Phased Arrays: From WWII Radar to LEO Satellites</a></li>
+<li><strong>Radiation-aware debug for space silicon</strong> — follow-on to <a href="https://sampraszheng.github.io/yxz/blog/radtest">Radiation Test Playbook</a>, adding a field debug workflow for TID drift and SEU recovery</li>
 </ul>]]></content:encoded>
             <category>rf</category>
             <category>wifi</category>
             <category>phasedarray</category>
         </item>
         <item>
-            <title><![CDATA[領域特化 AI Agent — 我為什麼自己做 myGPTs]]></title>
+            <title><![CDATA[Domain-Specific AI Agents — Why I Build My Own myGPTs]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/ai-agent</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/ai-agent</guid>
             <pubDate>Thu, 15 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[為什麼通用 ChatGPT 不夠用？從 Jamia（Polkadot/JAM）到 Spacesharks（太空產業），介紹我自建的領域 GPT 與它們背後的 Obsidian 知識庫。]]></description>
-            <content:encoded><![CDATA[<p>通用大型語言模型強，但在<strong>特定領域做深度分析</strong>時有兩個硬傷：知識時效性落後，以及對小眾領域的事實稀釋。以 Polkadot 生態為例，2.0 版本的 Agile Coretime、RegionX、JAM 這些 2024–2026 之間的關鍵迭代，通用模型要嘛答不出、要嘛抓到過時版本。</p>
-<p>解法不是換更大的模型 — 是<strong>給模型一個結構化、可信的外部知識庫</strong>，然後在前面包一層人格與任務 prompt。這就是我在做 myGPTs 的動機。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="目前在用的兩個">目前在用的兩個<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#%E7%9B%AE%E5%89%8D%E5%9C%A8%E7%94%A8%E7%9A%84%E5%85%A9%E5%80%8B" class="hash-link" aria-label="Direct link to 目前在用的兩個" title="Direct link to 目前在用的兩個">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="jamia--polkadot--jam-專家">Jamia — Polkadot × JAM 專家<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#jamia--polkadot--jam-%E5%B0%88%E5%AE%B6" class="hash-link" aria-label="Direct link to Jamia — Polkadot × JAM 專家" title="Direct link to Jamia — Polkadot × JAM 專家">​</a></h3>
+            <description><![CDATA[Why general-purpose ChatGPT isn't enough? From Jamia (Polkadot/JAM) to Spacesharks (space industry) — introducing the domain GPTs I've built and the Obsidian knowledge base powering them.]]></description>
+            <content:encoded><![CDATA[<p>General-purpose LLMs are powerful, but when it comes to <strong>deep analysis in specialized domains</strong>, they have two hard limitations: knowledge that lags behind the cutting edge, and factual dilution for niche fields. Take the Polkadot ecosystem as an example — key 2024–2026 developments like Agile Coretime, RegionX, and JAM are either unanswerable by general models, or return outdated information.</p>
+<p>The solution is not a bigger model — it's <strong>giving the model a structured, trustworthy external knowledge base</strong>, then wrapping it with a persona and task prompt. That's the motivation behind my myGPTs.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-two-i-currently-use">The Two I Currently Use<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#the-two-i-currently-use" class="hash-link" aria-label="Direct link to The Two I Currently Use" title="Direct link to The Two I Currently Use">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="jamia--polkadot--jam-expert">Jamia — Polkadot × JAM Expert<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#jamia--polkadot--jam-expert" class="hash-link" aria-label="Direct link to Jamia — Polkadot × JAM Expert" title="Direct link to Jamia — Polkadot × JAM Expert">​</a></h3>
 <ul>
 <li>🔗 <a href="https://chatgpt.com/g/g-67825a109c408191aaaef28a62051059-jamia" target="_blank" rel="noopener noreferrer">Jamia on ChatGPT</a></li>
-<li>餵的資料：Gavin Wood 演講逐字稿、JAM Gray Paper 摘要、Polkadot Wiki、Polkasharks podcast 十集以上的跨源整理</li>
-<li>擅長：JAM 架構、Coretime 經濟學、XCM 跨鏈訊息、OpenGov 治理分析</li>
-<li>不擅長：即時價格、單純名詞定義（這些丟給 Grok/ChatGPT 更快）</li>
+<li>Training data: Gavin Wood talk transcripts, JAM Gray Paper summaries, Polkadot Wiki, cross-source synthesis from 10+ Polkasharks podcast episodes</li>
+<li>Strengths: JAM architecture, Coretime economics, XCM cross-chain messaging, OpenGov governance analysis</li>
+<li>Weaknesses: Real-time prices, simple term definitions (use Grok/ChatGPT for those — it's faster)</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="spacesharks--太空產業分析師">Spacesharks — 太空產業分析師<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#spacesharks--%E5%A4%AA%E7%A9%BA%E7%94%A2%E6%A5%AD%E5%88%86%E6%9E%90%E5%B8%AB" class="hash-link" aria-label="Direct link to Spacesharks — 太空產業分析師" title="Direct link to Spacesharks — 太空產業分析師">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="spacesharks--space-industry-analyst">Spacesharks — Space Industry Analyst<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#spacesharks--space-industry-analyst" class="hash-link" aria-label="Direct link to Spacesharks — Space Industry Analyst" title="Direct link to Spacesharks — Space Industry Analyst">​</a></h3>
 <ul>
 <li>🔗 <a href="https://chatgpt.com/g/g-67e254ad68e4819191ea0552732c0979-spacesharks" target="_blank" rel="noopener noreferrer">Spacesharks on ChatGPT</a></li>
-<li>餵的資料：LEO 產業上中下游拆解、軌道資料中心（ODC）主要玩家、台廠供應鏈地圖（穩懋、昇達科、華通等）</li>
-<li>擅長：LEO 生命週期分析、Starlink/Amazon Leo/Starcloud 差異、ISL 光學通訊、台灣在全球 LEO 生態的定位</li>
-<li>延伸閱讀：<a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026">2026 Tech Roadmap</a> 的 Space 段</li>
+<li>Training data: Upstream/midstream/downstream breakdown of the LEO industry, key Orbital Data Center (ODC) players, Taiwan supply chain map (Qorvo/WIN Semi, Auden, Tripod, etc.)</li>
+<li>Strengths: LEO lifecycle analysis, Starlink/Amazon Leo/Starcloud comparisons, ISL optical communications, Taiwan's position in the global LEO ecosystem</li>
+<li>Further reading: The Space section of <a href="https://sampraszheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026">2026 Tech Roadmap</a></li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="背後的系統obsidian-wiki--llm-ingest-loop">背後的系統：Obsidian Wiki + LLM Ingest Loop<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#%E8%83%8C%E5%BE%8C%E7%9A%84%E7%B3%BB%E7%B5%B1obsidian-wiki--llm-ingest-loop" class="hash-link" aria-label="Direct link to 背後的系統：Obsidian Wiki + LLM Ingest Loop" title="Direct link to 背後的系統：Obsidian Wiki + LLM Ingest Loop">​</a></h2>
-<p>這兩個 GPT 都不是瞎調出來的。它們共用一個 Obsidian vault 當知識骨架：</p>
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">wiki/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── sources/      一源一檔，逐篇 ingest 的原始資料</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── entities/     人物、公司、產品的實體頁</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── concepts/     協定、架構、產業鏈等概念</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└── synthesis/    跨源整合後產出的對外長文</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>每次讀到新資料（podcast、論文、財報），我會走這條流程：</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-system-behind-them-obsidian-wiki--llm-ingest-loop">The System Behind Them: Obsidian Wiki + LLM Ingest Loop<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#the-system-behind-them-obsidian-wiki--llm-ingest-loop" class="hash-link" aria-label="Direct link to The System Behind Them: Obsidian Wiki + LLM Ingest Loop" title="Direct link to The System Behind Them: Obsidian Wiki + LLM Ingest Loop">​</a></h2>
+<p>These two GPTs are not arbitrarily tuned. They share an Obsidian vault as their knowledge backbone:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">wiki/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── sources/      one file per source, individually ingested raw material</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── entities/     pages for people, companies, and products</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── concepts/     protocols, architectures, industry chains, and other concepts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└── synthesis/    long-form pieces produced from cross-source synthesis</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Every time I read new material (podcasts, papers, earnings reports), I run this workflow:</p>
 <ol>
-<li>和 Claude Code 討論 key takeaway</li>
-<li>寫成 <code>sources/&lt;slug&gt;.md</code></li>
-<li>更新或新開相關的 <code>entities/</code> 與 <code>concepts/</code>（一次 ingest 通常牽動 5–15 頁）</li>
-<li>更新 <code>index.md</code> 與 <code>log.md</code></li>
+<li>Discuss key takeaways with Claude Code</li>
+<li>Write it into <code>sources/&lt;slug&gt;.md</code></li>
+<li>Update or create relevant <code>entities/</code> and <code>concepts/</code> pages (a single ingest typically touches 5–15 pages)</li>
+<li>Update <code>index.md</code> and <code>log.md</code></li>
 </ol>
-<p>這個 vault 的<strong>文字內容</strong>就是餵給 Jamia/Spacesharks 的素材。當讀者問一個跨源的問題，模型其實是在我手工建的 context graph 上做檢索，不是在整個 internet 裡面猜。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="為什麼不直接用-rag-或-api-串">為什麼不直接用 RAG 或 API 串？<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#%E7%82%BA%E4%BB%80%E9%BA%BC%E4%B8%8D%E7%9B%B4%E6%8E%A5%E7%94%A8-rag-%E6%88%96-api-%E4%B8%B2" class="hash-link" aria-label="Direct link to 為什麼不直接用 RAG 或 API 串？" title="Direct link to 為什麼不直接用 RAG 或 API 串？">​</a></h2>
-<p>我試過。對一個人維護的知識庫來說，Custom GPT 的優勢是：</p>
-<table><thead><tr><th>需求</th><th>Custom GPT</th><th>自建 RAG</th></tr></thead><tbody><tr><td>零後端、免費分享</td><td>✅</td><td>❌ 要 host vector store</td></tr><tr><td>10 MB 以下的知識體量</td><td>✅ 直接上傳</td><td>⚠️ 過度工程</td></tr><tr><td>前端 UX（手機也能聊）</td><td>✅ ChatGPT app</td><td>❌ 要自己寫</td></tr><tr><td>客製工具（抓新聞 / 查價）</td><td>⚠️ action 有限</td><td>✅ 完全可控</td></tr></tbody></table>
-<p>等知識規模或互動模式突破 Custom GPT 的上限，再搬去 RAG / Agent 架構也不遲。<strong>先把知識寫對、再談系統</strong>。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="下一步">下一步<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#%E4%B8%8B%E4%B8%80%E6%AD%A5" class="hash-link" aria-label="Direct link to 下一步" title="Direct link to 下一步">​</a></h2>
+<p>The <strong>text content</strong> of this vault is exactly what feeds Jamia and Spacesharks. When a reader asks a cross-source question, the model is retrieving from the context graph I built by hand — not guessing from across the entire internet.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-not-just-use-rag-or-an-api-integration">Why Not Just Use RAG or an API Integration?<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#why-not-just-use-rag-or-an-api-integration" class="hash-link" aria-label="Direct link to Why Not Just Use RAG or an API Integration?" title="Direct link to Why Not Just Use RAG or an API Integration?">​</a></h2>
+<p>I tried that. For a solo-maintained knowledge base, Custom GPTs have a clear advantage:</p>
+<table><thead><tr><th>Need</th><th>Custom GPT</th><th>Self-built RAG</th></tr></thead><tbody><tr><td>No backend, freely shareable</td><td>✅</td><td>❌ Need to host a vector store</td></tr><tr><td>Knowledge base under 10 MB</td><td>✅ Direct upload</td><td>⚠️ Over-engineering</td></tr><tr><td>Frontend UX (works on mobile)</td><td>✅ ChatGPT app</td><td>❌ Need to build your own</td></tr><tr><td>Custom tools (news fetching / price lookup)</td><td>⚠️ Limited actions</td><td>✅ Fully controllable</td></tr></tbody></table>
+<p>Once the knowledge scale or interaction patterns exceed what Custom GPT can handle, migrating to a RAG / Agent architecture is always an option. <strong>Get the knowledge right first, then worry about the system.</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="https://sampraszheng.github.io/yxz/blog/ai-agent#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h2>
 <ul>
-<li><code>wiki/synthesis/</code> 目前的長文會陸續釋出到本站部落格，先看 <a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap">LEO × 台灣 ODC 缺口</a> 這篇。</li>
-<li>Jamia、Spacesharks 的 <code>action</code>（可以抓市場價 / 鏈上資料）還在路上，完成後會另發一篇。</li>
-<li>下一個 myGPT 大概是 RF/硬體領域的 debug 助手，基底就是 <a href="https://sampraszheng.github.io/yxz/blog/debug">系統除錯分析</a> 那篇的 taxonomy。</li>
+<li>The long-form pieces currently in <code>wiki/synthesis/</code> will gradually be published to this blog — start with <a href="https://sampraszheng.github.io/yxz/blog/leo-odc-taiwan-gap">LEO × Taiwan ODC Gap</a>.</li>
+<li>Jamia and Spacesharks' <code>actions</code> (market price / on-chain data fetching) are in progress; I'll write a separate post once they're done.</li>
+<li>The next myGPT will probably be an RF/hardware domain debug assistant, grounded in the taxonomy from <a href="https://sampraszheng.github.io/yxz/blog/debug">RF/SoC Debug Playbook</a>.</li>
 </ul>]]></content:encoded>
             <category>ai</category>
             <category>DOT</category>
             <category>space</category>
         </item>
         <item>
-            <title><![CDATA[多元宇宙]]></title>
+            <title><![CDATA[Plurality: Collaborative Diversity as Governance]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/Plurality</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/Plurality</guid>
             <pubDate>Wed, 12 Mar 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[從唐鳳協作的《Plurality》談起 — 多元視角的政治哲學如何與 Polkadot OpenGov 鏈上治理、DSNP 去中心化社交協定互相呼應。]]></description>
-            <content:encoded><![CDATA[<p>我最初看到Plurality是因為在瀏覽Project Liberty 積極擴展DSNP (去中心化社交網路協定)於TikTok, Bluesky, Frequency等社交平台的文件時候看到前述位部長唐鳳也參與其中</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="plurality多元宇宙-是什麼">Plurality(多元宇宙) 是什麼？<a href="https://sampraszheng.github.io/yxz/blog/Plurality#plurality%E5%A4%9A%E5%85%83%E5%AE%87%E5%AE%99-%E6%98%AF%E4%BB%80%E9%BA%BC" class="hash-link" aria-label="Direct link to Plurality(多元宇宙) 是什麼？" title="Direct link to Plurality(多元宇宙) 是什麼？">​</a></h2>
-<p>我最初看到Plurality是因為看到Project Liberty 正在積極 主張打破傳統單一決策模式，鼓勵從多個角度切入議題，形成更具包容性與彈性的治理結構。這種多元視角讓參與者能根據不同情境探索多種可能性，而非被迫走上預設的固定路徑。<br>
-<!-- -->詳情可以參考唐鳳協作的書本 <a href="https://github.com/pluralitybook/plurality" target="_blank" rel="noopener noreferrer">Plurality GitHub Repository</a></p>
+            <description><![CDATA[Starting from Audrey Tang's collaborative book "Plurality" — how the philosophy of plural perspectives resonates with Polkadot OpenGov on-chain governance and the DSNP decentralized social protocol.]]></description>
+            <content:encoded><![CDATA[<p>I first encountered Plurality while browsing documentation about Project Liberty's efforts to expand DSNP (Decentralized Social Networking Protocol) across platforms like TikTok, Bluesky, and Frequency — and I noticed that former Minister Audrey Tang was also involved.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-plurality">What Is Plurality?<a href="https://sampraszheng.github.io/yxz/blog/Plurality#what-is-plurality" class="hash-link" aria-label="Direct link to What Is Plurality?" title="Direct link to What Is Plurality?">​</a></h2>
+<p>I first came across Plurality because I saw Project Liberty actively advocating for breaking the traditional single decision-making model — encouraging people to approach issues from multiple angles and form governance structures that are more inclusive and adaptive. This plural perspective allows participants to explore multiple possibilities in different contexts, rather than being forced down a fixed, predetermined path.
+For more details, see the book Audrey Tang co-authored: <a href="https://github.com/pluralitybook/plurality" target="_blank" rel="noopener noreferrer">Plurality GitHub Repository</a></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="web3">Web3<a href="https://sampraszheng.github.io/yxz/blog/Plurality#web3" class="hash-link" aria-label="Direct link to Web3" title="Direct link to Web3">​</a></h3>
-<p>web3 一詞由伍德博士(Dr.Gavin Wood)提出，指的是「基於區塊鏈的去中心化線上生態系統」，借助區塊鏈本身透明公開的特點在波卡實行OpenGov鏈上治理，有意思的是與多元宇宙的思想有幾分相似</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的理念">Polkadot 的理念<a href="https://sampraszheng.github.io/yxz/blog/Plurality#polkadot-%E7%9A%84%E7%90%86%E5%BF%B5" class="hash-link" aria-label="Direct link to Polkadot 的理念" title="Direct link to Polkadot 的理念">​</a></h3>
-<p>Polkadot 是一個致力於跨鏈互操作性的區塊鏈平台，其核心理念包括：</p>
+<p>The term "Web3" was coined by Dr. Gavin Wood to refer to "a decentralized online ecosystem based on blockchain." By leveraging blockchain's inherent transparency, Polkadot implements OpenGov — on-chain governance — which interestingly shares notable similarities with the ideas in Plurality.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="polkadots-philosophy">Polkadot's Philosophy<a href="https://sampraszheng.github.io/yxz/blog/Plurality#polkadots-philosophy" class="hash-link" aria-label="Direct link to Polkadot's Philosophy" title="Direct link to Polkadot's Philosophy">​</a></h3>
+<p>Polkadot is a blockchain platform committed to cross-chain interoperability. Its core philosophy includes:</p>
 <ul>
-<li><strong>去中心化</strong>：通過建立中繼鏈（Relay Chain）連接多條平行鏈，實現資源共享與安全共識。</li>
-<li><strong>互操作性</strong>：使不同區塊鏈之間能夠無縫溝通，突破孤立運作的限制。</li>
-<li><strong>靈活升級</strong>：依賴可升級的治理機制，允許網絡在面對新需求與挑戰時迅速調整。</li>
+<li><strong>Decentralization</strong>: Connecting multiple parachains via a Relay Chain to enable shared resources and security consensus.</li>
+<li><strong>Interoperability</strong>: Enabling seamless communication between different blockchains, overcoming the limitations of isolated operation.</li>
+<li><strong>Flexible upgrades</strong>: Relying on upgradeable governance mechanisms that allow the network to rapidly adapt to new requirements and challenges.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="opengov-的理念">OpenGov 的理念<a href="https://sampraszheng.github.io/yxz/blog/Plurality#opengov-%E7%9A%84%E7%90%86%E5%BF%B5" class="hash-link" aria-label="Direct link to OpenGov 的理念" title="Direct link to OpenGov 的理念">​</a></h3>
-<p>OpenGov（開放政府）則聚焦於政府與公民間的透明、參與與協作，其主要特點為：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="opengovs-philosophy">OpenGov's Philosophy<a href="https://sampraszheng.github.io/yxz/blog/Plurality#opengovs-philosophy" class="hash-link" aria-label="Direct link to OpenGov's Philosophy" title="Direct link to OpenGov's Philosophy">​</a></h3>
+<p>OpenGov (Open Government) focuses on transparency, participation, and collaboration between governments and citizens. Its key characteristics are:</p>
 <ul>
-<li><strong>透明度</strong>：透過公開政府數據與流程，使政策決策過程對公眾完全開放。</li>
-<li><strong>公民參與</strong>：鼓勵市民直接參與公共政策討論與制定，提高政府問責性。</li>
-<li><strong>責任追蹤</strong>：建立完善的監督機制，確保公共資源的公平分配與使用。</li>
+<li><strong>Transparency</strong>: Making policy decision processes fully open to the public by publishing government data and procedures.</li>
+<li><strong>Civic participation</strong>: Encouraging citizens to directly participate in public policy discussion and formulation, improving government accountability.</li>
+<li><strong>Accountability tracking</strong>: Establishing robust oversight mechanisms to ensure fair distribution and use of public resources.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="理念比較">理念比較<a href="https://sampraszheng.github.io/yxz/blog/Plurality#%E7%90%86%E5%BF%B5%E6%AF%94%E8%BC%83" class="hash-link" aria-label="Direct link to 理念比較" title="Direct link to 理念比較">​</a></h3>
-<p>雖然 Polkadot 與 OpenGov 都意在打破傳統集中式治理模式，但它們的側重點與實現路徑有所不同：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="comparing-the-two-philosophies">Comparing the Two Philosophies<a href="https://sampraszheng.github.io/yxz/blog/Plurality#comparing-the-two-philosophies" class="hash-link" aria-label="Direct link to Comparing the Two Philosophies" title="Direct link to Comparing the Two Philosophies">​</a></h3>
+<p>Although both Polkadot and OpenGov aim to break traditional centralized governance models, they differ in emphasis and implementation:</p>
 <ul>
 <li>
-<p><strong>技術驅動 vs. 制度改革</strong></p>
+<p><strong>Technology-driven vs. institutional reform</strong></p>
 <ul>
-<li><em>Polkadot</em> 依賴區塊鏈技術與代幣機制，強調技術層面的去中心化與網絡互操作性。</li>
-<li><em>OpenGov</em> 則著重於通過制度創新與資訊公開，促進政府與公民間的互動與協作。</li>
+<li><em>Polkadot</em> relies on blockchain technology and token mechanisms, emphasizing technical decentralization and network interoperability.</li>
+<li><em>OpenGov</em> focuses on institutional innovation and information transparency to facilitate interaction and collaboration between government and citizens.</li>
 </ul>
 </li>
 <li>
-<p><strong>治理模式</strong></p>
+<p><strong>Governance models</strong></p>
 <ul>
-<li><em>Polkadot</em> 採用鏈上治理，讓持幣者參與決策，實現自我調整與升級。</li>
-<li><em>OpenGov</em> 重視公民參與與政策透明，旨在通過公開與協商達成共識。</li>
+<li><em>Polkadot</em> uses on-chain governance, allowing token holders to participate in decisions, enabling self-adjustment and upgrades.</li>
+<li><em>OpenGov</em> values civic participation and policy transparency, aiming to reach consensus through openness and deliberation.</li>
 </ul>
 </li>
 <li>
-<p><strong>應用領域</strong></p>
+<p><strong>Application domains</strong></p>
 <ul>
-<li><em>Polkadot</em> 主要服務於數位資產與金融科技領域，推動去中心化網絡生態。</li>
-<li><em>OpenGov</em> 則聚焦於公共管理與政策制定，推動政府機構現代化及數據驅動決策。</li>
+<li><em>Polkadot</em> primarily serves digital assets and fintech, driving the decentralized network ecosystem.</li>
+<li><em>OpenGov</em> focuses on public administration and policy-making, modernizing government institutions and enabling data-driven decisions.</li>
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="結語">結語<a href="https://sampraszheng.github.io/yxz/blog/Plurality#%E7%B5%90%E8%AA%9E" class="hash-link" aria-label="Direct link to 結語" title="Direct link to 結語">​</a></h2>
-<p>Plurality 為我們提供了一個多元共治的框架，讓技術與民主可以並肩推進。無論是 Polkadot 在技術層面的創新，還是 OpenGov 在制度層面的改革，都在推動社會朝向更透明、包容與去中心化的未來邁進。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="參考資料">參考資料<a href="https://sampraszheng.github.io/yxz/blog/Plurality#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99" class="hash-link" aria-label="Direct link to 參考資料" title="Direct link to 參考資料">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="closing-thoughts">Closing Thoughts<a href="https://sampraszheng.github.io/yxz/blog/Plurality#closing-thoughts" class="hash-link" aria-label="Direct link to Closing Thoughts" title="Direct link to Closing Thoughts">​</a></h2>
+<p>Plurality offers us a framework for plural co-governance, allowing technology and democracy to advance side by side. Whether it is Polkadot's technical innovation or OpenGov's institutional reform, both are pushing society toward a more transparent, inclusive, and decentralized future.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="references">References<a href="https://sampraszheng.github.io/yxz/blog/Plurality#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
 <ul>
-<li>Plurality 專案：<a href="https://github.com/pluralitybook/plurality" target="_blank" rel="noopener noreferrer">https://github.com/pluralitybook/plurality</a></li>
-<li>Polkadot 官方網站：<a href="https://polkadot.network/" target="_blank" rel="noopener noreferrer">https://polkadot.network/</a></li>
-<li>OpenGov 官方網站：<a href="https://www.opengov.com/" target="_blank" rel="noopener noreferrer">https://www.opengov.com/</a></li>
+<li>Plurality project: <a href="https://github.com/pluralitybook/plurality" target="_blank" rel="noopener noreferrer">https://github.com/pluralitybook/plurality</a></li>
+<li>Polkadot official website: <a href="https://polkadot.network/" target="_blank" rel="noopener noreferrer">https://polkadot.network/</a></li>
+<li>OpenGov official website: <a href="https://www.opengov.com/" target="_blank" rel="noopener noreferrer">https://www.opengov.com/</a></li>
 </ul>]]></content:encoded>
             <category>misc</category>
             <category>DOT</category>
         </item>
         <item>
-            <title><![CDATA[JAM - 可擴展無需信任虛擬機]]></title>
+            <title><![CDATA[JAM — A Scalable, Trustless Virtual Machine]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/JAMintro</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/JAMintro</guid>
             <pubDate>Mon, 24 Feb 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[解析 Polkadot JAM（Join-Accumulate Machine）：目標 850 MB/s 吞吐量、340 萬 TPS 的異步多核架構，以及與 Ethereum / Solana 的對位比較。]]></description>
-            <content:encoded><![CDATA[<p>Polkadot JAM（Join-Accumulate Machine）是 Polkadot 網絡的一個擬議升級，旨在取代目前的 Relay Chain（中繼鏈），使其設計更加模組化和簡約。它將 Ethereum 的智能合約功能與 Polkadot 的可擴展性結合，創造一個更靈活的開發環境。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主要特點">主要特點<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E4%B8%BB%E8%A6%81%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to 主要特點" title="Direct link to 主要特點">​</a></h2>
+            <description><![CDATA[A deep dive into Polkadot JAM (Join-Accumulate Machine) — targeting 850 MB/s throughput and 3.4 million TPS with an asynchronous multi-core architecture, compared against Ethereum and Solana.]]></description>
+            <content:encoded><![CDATA[<p>Polkadot JAM (Join-Accumulate Machine) is a proposed upgrade to the Polkadot network designed to replace the current Relay Chain, making its design more modular and minimalist. It combines Ethereum-style smart contract functionality with Polkadot's scalability, creating a more flexible development environment.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-features">Key Features<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#key-features" class="hash-link" aria-label="Direct link to Key Features" title="Direct link to Key Features">​</a></h2>
 <ul>
-<li><strong>權限開放</strong>：開發者可以按資源使用費部署代碼，類似於 Ethereum 的智能合約。</li>
-<li><strong>核心時間</strong>：使用「核心時間」作為計算資源指標，類似於 Ethereum 的 gas。</li>
-<li><strong>服務架構</strong>：運行各種服務，如處理 parachains（平行鏈）的 ChainService，使網絡更具靈活性。</li>
-<li><strong>異步交互</strong>：與許多區塊鏈平台不同，JAM 的交互是異步的，提高了效率。</li>
-<li><strong>高吞吐量</strong>：通過多核計算，目標吞吐量高達 850 MB/s，超過 Ethereum 和 Solana 等平台。</li>
+<li><strong>Permissionless</strong>: Developers can deploy code and pay per resource usage, similar to Ethereum smart contracts.</li>
+<li><strong>Coretime</strong>: Uses "coretime" as a compute resource metric, analogous to Ethereum's gas.</li>
+<li><strong>Service architecture</strong>: Runs various services such as ChainService for handling parachains, making the network more flexible.</li>
+<li><strong>Asynchronous interaction</strong>: Unlike many blockchain platforms, JAM interactions are asynchronous, improving efficiency.</li>
+<li><strong>High throughput</strong>: Through multi-core computation, targets throughput of up to 850 MB/s, exceeding platforms like Ethereum and Solana.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="技術與前景">技術與前景<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E6%8A%80%E8%A1%93%E8%88%87%E5%89%8D%E6%99%AF" class="hash-link" aria-label="Direct link to 技術與前景" title="Direct link to 技術與前景">​</a></h2>
-<p>JAM 的計算模型基於「Join-Accumulate」機制，其中「Join」和「Accumulate」功能在鏈上執行，而「Collect」和「Refine」過程在鏈下完成。這種設計減少了鏈上計算的負擔，提高了效率。根據 Polkadot Wiki，JAM 將是一個特定領域的鏈，專注於處理 roll-ups（卷積），並提供強大的安全保證。</p>
-<p>此外，JAM 支持異步交互，這與許多智能合約平台的同步交互不同。消息和代幣的發送與接收在同一個 6 秒執行周期內完成，但沒有即時返回路徑，這為未來的性能優化（如分配更多 gas）提供了可能性。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="性能目標與技術實現">性能目標與技術實現<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E6%80%A7%E8%83%BD%E7%9B%AE%E6%A8%99%E8%88%87%E6%8A%80%E8%A1%93%E5%AF%A6%E7%8F%BE" class="hash-link" aria-label="Direct link to 性能目標與技術實現" title="Direct link to 性能目標與技術實現">​</a></h2>
-<p>JAM 的性能目標非常雄心勃勃。根據 Medium 文章，JAM 計劃使用 350 個 JAM 核心，每個核心 6 秒執行時間，輸入 5Mb，總計吞吐量可達 850 MB/s，理論上支持超過 340 萬 TPS（交易每秒）。相比之下：</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="technology-and-outlook">Technology and Outlook<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#technology-and-outlook" class="hash-link" aria-label="Direct link to Technology and Outlook" title="Direct link to Technology and Outlook">​</a></h2>
+<p>JAM's computation model is based on the "Join-Accumulate" mechanism, where "Join" and "Accumulate" functions execute on-chain, while "Collect" and "Refine" processes complete off-chain. This design reduces on-chain computation overhead and improves efficiency. According to the Polkadot Wiki, JAM will be a domain-specific chain focused on processing rollups and providing strong security guarantees.</p>
+<p>Additionally, JAM supports asynchronous interaction — unlike the synchronous interactions typical of many smart contract platforms. Messages and token transfers are sent and received within the same 6-second execution epoch, but there is no immediate return path, leaving room for future performance optimizations such as allocating additional gas.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="performance-targets-and-technical-implementation">Performance Targets and Technical Implementation<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#performance-targets-and-technical-implementation" class="hash-link" aria-label="Direct link to Performance Targets and Technical Implementation" title="Direct link to Performance Targets and Technical Implementation">​</a></h2>
+<p>JAM's performance targets are ambitious. According to published analyses, JAM plans to use 350 JAM cores, each with a 6-second execution window and 5 MB input, yielding a combined throughput of 850 MB/s — theoretically supporting over 3.4 million TPS (transactions per second). By comparison:</p>
 <ul>
-<li>Ethereum 2.0 的吞吐量為 <strong>1.3 MB/s</strong>。</li>
-<li>Sui/Aptos 為 <strong>100 MB/s</strong>。</li>
-<li>Solana 在 Firedancer 升級後可達 <strong>1250 MB/s</strong>。</li>
+<li>Ethereum 2.0 throughput: <strong>1.3 MB/s</strong></li>
+<li>Sui/Aptos: <strong>100 MB/s</strong></li>
+<li>Solana (post-Firedancer upgrade): <strong>1,250 MB/s</strong></li>
 </ul>
-<p>為了實現這一目標，JAM 將使用 <strong>RISC-V 處理器架構</strong>，取代目前基於 WebAssembly 的框架。RISC-V 是一個開源且廣泛採用的處理器架構，已被 Google、Nvidia 和 Alibaba 等公司使用。這一選擇旨在提高計算效率，並支持多核並行處理。</p>
-<p>測試基礎設施包括：</p>
+<p>To achieve this, JAM will use a <strong>RISC-V processor architecture</strong>, replacing the current WebAssembly-based framework. RISC-V is an open and widely adopted processor architecture already in use by companies such as Google, Nvidia, and Alibaba. This choice aims to improve computational efficiency and support multi-core parallel processing.</p>
+<p>Test infrastructure includes:</p>
 <ul>
-<li><strong>Polkadot Palace</strong>：位於葡萄牙里斯本的超級計算機，擁有 <strong>12,276 個核心和 16 TB RAM</strong>，可託管完整的 JAM 網絡。</li>
-<li><strong>JAM Toaster 模擬器</strong>：支持 <strong>1,023 個節點</strong>，配備 <strong>16,384 個 AMD CPU、32 TB RAM 和 20 PB 存儲</strong>。</li>
+<li><strong>Polkadot Palace</strong>: A supercomputer in Lisbon, Portugal, with <strong>12,276 cores and 16 TB RAM</strong>, capable of hosting the full JAM network.</li>
+<li><strong>JAM Toaster simulator</strong>: Supports <strong>1,023 nodes</strong>, equipped with <strong>16,384 AMD CPUs, 32 TB RAM, and 20 PB storage</strong>.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="經濟與治理">經濟與治理<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E7%B6%93%E6%BF%9F%E8%88%87%E6%B2%BB%E7%90%86" class="hash-link" aria-label="Direct link to 經濟與治理" title="Direct link to 經濟與治理">​</a></h2>
-<p>JAM 的經濟模型以 <strong>DOT 代幣</strong> 為核心。開發者需要購買「核心時間」來執行計算，類似於 Ethereum 的 gas 購買。</p>
-<p>JAM 還將引入 <strong>Agile Coretime</strong>，這是一種更經濟的靈活模型，允許用戶按月批量購買核心時間，並可在二級市場上分割和轉售。這將提高計算資源的市場效率，所有交易都將使用 <strong>DOT 代幣</strong>。</p>
-<p>治理方面，JAM 保留了 Polkadot 的去中心化領導模式，升級需通過 DOT 持有者的投票批准。2024 年 5 月 28 日，JAM 升級以超過 <strong>3100 萬 DOT</strong> 的支持獲得近乎一致通過，標誌著社區對這一變革的認可。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="當前狀態與未來展望">當前狀態與未來展望<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E7%95%B6%E5%89%8D%E7%8B%80%E6%85%8B%E8%88%87%E6%9C%AA%E4%BE%86%E5%B1%95%E6%9C%9B" class="hash-link" aria-label="Direct link to 當前狀態與未來展望" title="Direct link to 當前狀態與未來展望">​</a></h2>
-<p>目前，JAM 仍處於開發階段，預計需要約 <strong>2 年</strong> 時間才能完全準備就緒並部署。根據 Decrypt 文章，這一升級將一次性完成，而不是逐步引入，以避免頻繁的小規模更新帶來的複雜性。儘管如此，現有 <strong>parachains</strong> 的功能不會受到影響，DOT 持有者和交易者也不會因升級而受到干擾。</p>
-<p>為了推動開發，<strong>Web3 Foundation 設立了 1000 萬 DOT 的「JAM Implementer’s Prize」</strong>，鼓勵創建多種客戶端實現，增強網絡的韌性。這一獎金池的設立體現了社區對 JAM 潛力的信心。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="開發者的影響">開發者的影響<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E9%96%8B%E7%99%BC%E8%80%85%E7%9A%84%E5%BD%B1%E9%9F%BF" class="hash-link" aria-label="Direct link to 開發者的影響" title="Direct link to 開發者的影響">​</a></h2>
-<p>對於開發者來說，JAM 提供了更大的靈活性。他們無需再通過拍賣競爭 parachain 插槽，只需指定「Refine」、「Accumulate」和「onTransfer」三個入口函數即可部署服務。這簡化了開發流程，使 Polkadot 更易於支持 <strong>智能合約、ZK-rollups 和 UTXO 模型</strong> 等多種應用。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="安全與擴展性">安全與擴展性<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E5%AE%89%E5%85%A8%E8%88%87%E6%93%B4%E5%B1%95%E6%80%A7" class="hash-link" aria-label="Direct link to 安全與擴展性" title="Direct link to 安全與擴展性">​</a></h2>
-<p>JAM 的安全機制包括 <strong>SAFROLE（SNARK-based block production）</strong>，這是一種基於零知識證明的區塊生產方法，提高了安全性並減少了頻繁更新的需求。</p>
-<p>同時，JAM 的 <strong>多核處理能力</strong> 增強了 Polkadot 的計算能力，使開發者以更低的成本部署應用。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="對比與競爭">對比與競爭<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E5%B0%8D%E6%AF%94%E8%88%87%E7%AB%B6%E7%88%AD" class="hash-link" aria-label="Direct link to 對比與競爭" title="Direct link to 對比與競爭">​</a></h2>
-<p>與 Ethereum 和 Solana 等平台相比，JAM 的高吞吐量和多核計算能力使其在性能上具有顯著優勢。特別是其 <strong>850 MB/s 的數據可用性目標</strong>，是目前 Polkadot（在引入 Asynchronous Backing 前的版本）的 <strong>42 倍</strong>。這一性能提升將使 Polkadot 在區塊鏈擴展性競賽中佔據更有利的位置。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="結論">結論<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#%E7%B5%90%E8%AB%96" class="hash-link" aria-label="Direct link to 結論" title="Direct link to 結論">​</a></h2>
-<p>Polkadot JAM 是 <strong>Gavin Wood</strong> 提出的雄心勃勃的升級，旨在將 Polkadot 轉變為一個 <strong>更靈活、高效和可擴展</strong> 的區塊鏈平台。通過結合 Ethereum 的智能合約功能和 Polkadot 的多鏈架構，JAM 為開發者提供了更大的創新空間，同時保持了網絡的安全性和去中心化特性。</p>
-<p>儘管仍需數年時間才能完全實現，其潛力已被社區廣泛認可，並通過投票獲得批准。</p>]]></content:encoded>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="economics-and-governance">Economics and Governance<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#economics-and-governance" class="hash-link" aria-label="Direct link to Economics and Governance" title="Direct link to Economics and Governance">​</a></h2>
+<p>JAM's economic model centers on the <strong>DOT token</strong>. Developers purchase "coretime" to run computations, similar to purchasing gas on Ethereum.</p>
+<p>JAM will also introduce <strong>Agile Coretime</strong>, a more economically flexible model that allows users to purchase coretime in bulk on a monthly basis and split or resell it on secondary markets. This improves market efficiency for compute resources, and all transactions use <strong>DOT tokens</strong>.</p>
+<p>On the governance side, JAM retains Polkadot's decentralized leadership model — upgrades require approval through DOT holder voting. On May 28, 2024, the JAM upgrade passed with near-unanimous approval, supported by over <strong>31 million DOT</strong>, signaling strong community endorsement of this transformation.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="current-status-and-future-outlook">Current Status and Future Outlook<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#current-status-and-future-outlook" class="hash-link" aria-label="Direct link to Current Status and Future Outlook" title="Direct link to Current Status and Future Outlook">​</a></h2>
+<p>JAM is currently under active development and is expected to require approximately <strong>2 years</strong> before it is fully ready for deployment. The upgrade is planned as a single deployment rather than a phased rollout, to avoid the complexity of frequent incremental updates. Importantly, the functionality of existing <strong>parachains</strong> will not be affected, and DOT holders and traders will not experience disruption from the upgrade.</p>
+<p>To accelerate development, the <strong>Web3 Foundation has set aside a 10 million DOT "JAM Implementer's Prize"</strong> to encourage the creation of multiple client implementations, enhancing network resilience. The establishment of this prize pool reflects the community's confidence in JAM's potential.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="impact-on-developers">Impact on Developers<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#impact-on-developers" class="hash-link" aria-label="Direct link to Impact on Developers" title="Direct link to Impact on Developers">​</a></h2>
+<p>For developers, JAM offers significantly greater flexibility. They no longer need to compete in auctions for parachain slots; instead, deploying a service only requires specifying three entry functions: "Refine", "Accumulate", and "onTransfer". This simplifies the development workflow and makes Polkadot easier to support for a wide range of applications including <strong>smart contracts, ZK-rollups, and UTXO models</strong>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="security-and-scalability">Security and Scalability<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#security-and-scalability" class="hash-link" aria-label="Direct link to Security and Scalability" title="Direct link to Security and Scalability">​</a></h2>
+<p>JAM's security mechanism includes <strong>SAFROLE (SNARK-based block production)</strong>, a zero-knowledge proof-based block production method that improves security and reduces the need for frequent updates.</p>
+<p>At the same time, JAM's <strong>multi-core processing capability</strong> enhances Polkadot's computational power, enabling developers to deploy applications at lower cost.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="comparison-and-competition">Comparison and Competition<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#comparison-and-competition" class="hash-link" aria-label="Direct link to Comparison and Competition" title="Direct link to Comparison and Competition">​</a></h2>
+<p>Compared to platforms like Ethereum and Solana, JAM's high throughput and multi-core compute capabilities give it a significant performance advantage. In particular, its <strong>850 MB/s data availability target</strong> is <strong>42× higher</strong> than the current Polkadot (prior to introducing Asynchronous Backing). This performance improvement positions Polkadot more favorably in the blockchain scalability race.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="https://sampraszheng.github.io/yxz/blog/JAMintro#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>Polkadot JAM is an ambitious upgrade proposed by <strong>Gavin Wood</strong>, aimed at transforming Polkadot into a <strong>more flexible, efficient, and scalable</strong> blockchain platform. By combining Ethereum's smart contract capabilities with Polkadot's multi-chain architecture, JAM gives developers broader room for innovation while maintaining network security and decentralization.</p>
+<p>Although full realization will take several more years, its potential has been widely recognized by the community and approved through a governance vote.</p>]]></content:encoded>
             <category>DOT</category>
         </item>
         <item>
-            <title><![CDATA[波卡(Polkadot) - 下一代的區塊鏈]]></title>
+            <title><![CDATA[Polkadot — The Next-Generation Blockchain]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/lop</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/lop</guid>
             <pubDate>Sun, 07 Apr 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Polkadot 2.0 的核心概念速覽 — 從 XCM 跨鏈、異構分片、敏捷核心時間到 OpenGov 鏈上治理的一次總整理。]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="波卡polkadot簡介">波卡（Polkadot）簡介<a href="https://sampraszheng.github.io/yxz/blog/lop#%E6%B3%A2%E5%8D%A1polkadot%E7%B0%A1%E4%BB%8B" class="hash-link" aria-label="Direct link to 波卡（Polkadot）簡介" title="Direct link to 波卡（Polkadot）簡介">​</a></h3>
-<p><strong>波卡（Polkadot）</strong> 是一個旨在實現 <strong>多鏈未來</strong> 的區塊鏈平台。它並非將所有 Web3 用例都集中在單一區塊鏈上，而是設想不同的鏈（通用或特定於應用程式）可以協同工作，使 Web3 能夠擴展以服務於日常應用。</p>
+            <description><![CDATA[A quick overview of Polkadot 2.0's core concepts — from XCM cross-chain messaging and heterogeneous sharding to Agile Coretime and OpenGov on-chain governance.]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="introduction-to-polkadot">Introduction to Polkadot<a href="https://sampraszheng.github.io/yxz/blog/lop#introduction-to-polkadot" class="hash-link" aria-label="Direct link to Introduction to Polkadot" title="Direct link to Introduction to Polkadot">​</a></h3>
+<p><strong>Polkadot</strong> is a blockchain platform designed to enable a <strong>multi-chain future</strong>. Rather than concentrating all Web3 use cases on a single chain, it envisions different chains (general-purpose or application-specific) working together, enabling Web3 to scale for everyday applications.</p>
 <ul>
-<li><strong>願景：</strong> 成為 Web3 的 AWS。</li>
-<li><strong>目標：</strong> 以去中心化的方式建立任何區塊鏈可能需要的基礎設施。</li>
+<li><strong>Vision:</strong> Become the AWS of Web3.</li>
+<li><strong>Goal:</strong> Build the infrastructure that any blockchain might need, in a decentralized way.</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="主要特點">主要特點<a href="https://sampraszheng.github.io/yxz/blog/lop#%E4%B8%BB%E8%A6%81%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to 主要特點" title="Direct link to 主要特點">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="key-features">Key Features<a href="https://sampraszheng.github.io/yxz/blog/lop#key-features" class="hash-link" aria-label="Direct link to Key Features" title="Direct link to Key Features">​</a></h4>
 <ul>
-<li><strong>互操作性：</strong> 通過 <strong>跨鏈消息傳遞（XCM）</strong> 實現資產轉移，在源鏈上銷毀資產，並在目標鏈上鑄造資產.</li>
-<li><strong>可擴展性：</strong> 通過 <strong>異構分片</strong> 並行執行不同的狀態轉換函數。</li>
-<li><strong>靈活性：</strong> Polkadot 不是靜態軟體，而是為 <strong>可擴展性、靈活性和未來</strong> 而構建。</li>
-<li><strong>治理：</strong> <strong>鏈上民主系統</strong>，DOT 持有者可以投票和建立提案進行討論。</li>
-<li><strong>橋接：</strong>
+<li><strong>Interoperability:</strong> Asset transfers via <strong>Cross-Chain Messaging (XCM)</strong> — assets are burned on the source chain and minted on the destination chain.</li>
+<li><strong>Scalability:</strong> Parallel execution of different state transition functions through <strong>heterogeneous sharding</strong>.</li>
+<li><strong>Flexibility:</strong> Polkadot is not static software; it is built for <strong>extensibility, flexibility, and the future</strong>.</li>
+<li><strong>Governance:</strong> An <strong>on-chain democratic system</strong> where DOT holders can vote and create proposals for discussion.</li>
+<li><strong>Bridging:</strong>
 <ul>
-<li><strong>Snowbridge：</strong> Polkadot 和以太坊之間的去信任橋，使用 BEEFY 協議讓以太坊方知道 Polkadot 的最終確定性。</li>
-<li><strong>Hyperbridge：</strong> 世界首個可驗證的多鏈橋。</li>
-<li><strong>Polkadot-Kusama 橋：</strong> 安全且無縫的資產轉移和通信。</li>
-</ul>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-20-的三大特點">Polkadot 2.0 的三大特點<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-20-%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E9%BB%9E" class="hash-link" aria-label="Direct link to Polkadot 2.0 的三大特點" title="Direct link to Polkadot 2.0 的三大特點">​</a></h4>
-<ul>
-<li><strong>敏捷核心時間（Agile Coretime）：</strong>
-<ul>
-<li>不再需要兩年的 DOT 鎖定平行鏈拍賣。</li>
-<li>Blockspace 以彈性的方式出售，收入被燒毀。</li>
-</ul>
-</li>
-<li><strong>非同步支持（Asynchronous Backing）</strong></li>
-<li><strong>彈性擴展（Elastic Scaling）：</strong> 更靈活、更快速且可擴展的網路。<!-- -->
-<ul>
-<li>更好的使用者介面/使用者體驗。</li>
-<li>降低開發者的門檻。</li>
-<li>社群主導的鏈上治理。</li>
-<li>真正的去中心化。</li>
+<li><strong>Snowbridge:</strong> A trustless bridge between Polkadot and Ethereum, using the BEEFY protocol to relay Polkadot finality to Ethereum.</li>
+<li><strong>Hyperbridge:</strong> The world's first verifiable multi-chain bridge.</li>
+<li><strong>Polkadot-Kusama Bridge:</strong> Secure and seamless asset transfers and communication.</li>
 </ul>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的共識機制">Polkadot 的共識機制<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-%E7%9A%84%E5%85%B1%E8%AD%98%E6%A9%9F%E5%88%B6" class="hash-link" aria-label="Direct link to Polkadot 的共識機制" title="Direct link to Polkadot 的共識機制">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="three-pillars-of-polkadot-20">Three Pillars of Polkadot 2.0<a href="https://sampraszheng.github.io/yxz/blog/lop#three-pillars-of-polkadot-20" class="hash-link" aria-label="Direct link to Three Pillars of Polkadot 2.0" title="Direct link to Three Pillars of Polkadot 2.0">​</a></h4>
 <ul>
-<li><strong>BABE（區塊鏈擴展盲分配）：</strong> 區塊生產者使用 VRF 來決定是否有資格在特定時隙中生產區塊。</li>
-<li><strong>GRANDPA：</strong> 提供區塊最終性，確保 Polkadot 網路在快速擴展的同時保持安全性和穩定性。</li>
+<li><strong>Agile Coretime:</strong>
+<ul>
+<li>No more two-year DOT lockups for parachain slot auctions.</li>
+<li>Blockspace is sold flexibly, with revenue being burned.</li>
 </ul>
-<p>GRANDPA 的優勢：</p>
+</li>
+<li><strong>Asynchronous Backing</strong></li>
+<li><strong>Elastic Scaling:</strong> A more flexible, faster, and scalable network.<!-- -->
 <ul>
-<li><strong>快速最終性：</strong> 網路穩定時，幾秒內即可完成。</li>
-<li><strong>容錯性：</strong> 容忍部分驗證者離線或作惡，只要超過 2/3 的權重驗證者保持誠實即可。</li>
-<li><strong>批量最終性：</strong> 一次性最終化多個區塊，效率更高。</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的經濟模型">Polkadot 的經濟模型<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-%E7%9A%84%E7%B6%93%E6%BF%9F%E6%A8%A1%E5%9E%8B" class="hash-link" aria-label="Direct link to Polkadot 的經濟模型" title="Direct link to Polkadot 的經濟模型">​</a></h4>
-<ul>
-<li><strong>DOT 代幣：</strong>
-<ul>
-<li>用於支付 Coretime 的費用。</li>
-<li>用於參與 OpenGov 投票。</li>
-<li>每年鑄造 1.2 億枚 DOT。</li>
-<li>通貨膨脹率將從 10% 逐步降低至 2030 年的 6%。</li>
+<li>Improved user interface and user experience.</li>
+<li>Lower barriers for developers.</li>
+<li>Community-led on-chain governance.</li>
+<li>True decentralization.</li>
 </ul>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-的技術堆疊">Polkadot 的技術堆疊<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-%E7%9A%84%E6%8A%80%E8%A1%93%E5%A0%86%E7%96%8A" class="hash-link" aria-label="Direct link to Polkadot 的技術堆疊" title="Direct link to Polkadot 的技術堆疊">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadots-consensus-mechanism">Polkadot's Consensus Mechanism<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadots-consensus-mechanism" class="hash-link" aria-label="Direct link to Polkadot's Consensus Mechanism" title="Direct link to Polkadot's Consensus Mechanism">​</a></h4>
 <ul>
-<li><strong>Substrate：</strong> 用於構建區塊鏈的 Rust 框架。</li>
-<li><strong>Polkadot SDK：</strong> 包含 Cumulus、Polkadot 和 Substrate 倉庫。</li>
-<li><strong>SCALE Codec：</strong> 用於 Polkadot 和 Substrate 的高效序列化和反序列化格式。</li>
-<li><strong>Wasm：</strong> WebAssembly，用於構建 Polkadot 運行時。</li>
-<li><strong>FRAME：</strong> 用於簡化 Substrate 運行時構建的框架。</li>
+<li><strong>BABE (Blind Assignment for Blockchain Extension):</strong> Block producers use VRF to determine eligibility to produce a block in a given slot.</li>
+<li><strong>GRANDPA:</strong> Provides block finality, ensuring the Polkadot network remains secure and stable as it scales rapidly.</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="jamjoin-accumulate-machine">JAM（Join-Accumulate Machine）<a href="https://sampraszheng.github.io/yxz/blog/lop#jamjoin-accumulate-machine" class="hash-link" aria-label="Direct link to JAM（Join-Accumulate Machine）" title="Direct link to JAM（Join-Accumulate Machine）">​</a></h4>
+<p>Advantages of GRANDPA:</p>
 <ul>
-<li><strong>目標：</strong> 解決區塊鏈的可擴展性和互操作性問題。</li>
-<li><strong>核心：</strong> 促進鏈協作和數據共享，並優化區塊鏈網路在去中心化計算環境中的計算和通信效率。</li>
-<li><strong>特點：</strong>
+<li><strong>Fast finality:</strong> Under stable network conditions, finality is achieved within seconds.</li>
+<li><strong>Fault tolerance:</strong> Tolerates some validators going offline or acting maliciously, as long as more than 2/3 of stake-weighted validators remain honest.</li>
+<li><strong>Batch finality:</strong> Finalizes multiple blocks at once for greater efficiency.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadots-economic-model">Polkadot's Economic Model<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadots-economic-model" class="hash-link" aria-label="Direct link to Polkadot's Economic Model" title="Direct link to Polkadot's Economic Model">​</a></h4>
 <ul>
-<li><strong>鏈協作：</strong> 支持多條鏈的無縫數據共享，避免每條鏈都單獨計算相同的邏輯。</li>
-<li><strong>資源高效利用：</strong> 每條鏈專注於自身特定的功能和應用，避免計算和存儲資源的浪費。</li>
-<li><strong>簡化跨鏈通信：</strong> 通過設計跨鏈消息和驗證機制，提供了一種標準化的方法，使鏈與鏈之間的交互變得更高效和安全。</li>
+<li><strong>DOT Token:</strong>
+<ul>
+<li>Used to pay for Coretime.</li>
+<li>Used to participate in OpenGov voting.</li>
+<li>120 million DOT minted per year.</li>
+<li>Inflation rate gradually decreasing from 10% to 6% by 2030.</li>
 </ul>
 </li>
-<li><strong>Polkadot 的下一次重大升級將採用 SASSAFRAS/SAFROLE</strong>，它通過使用環形 VRF 解決多個/無區塊生產者的問題，並確保每個時隙都有一個區塊生產者。</li>
-<li><strong>預計 2025 年 7 月推出首個版本</strong>。</li>
-<li><strong>將計算分離為核心內和鏈上層</strong>。</li>
-<li><strong>將允許智能合約功能和無許可服務</strong>。</li>
-<li><strong>Jam 引入了一個去中心的混合系統，提供圍繞安全性和可擴展的 in-core/on-chain 二元性構建的智能合約功能</strong>。</li>
-<li><strong>Jam 的本質是無需許可的，允許任何人在其上部署代碼作為服務，並根據該代碼使用的資源支付相應的費用，並通過購買和分配 coretime 來引導該代碼的執行</strong>。</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="開放政府opengov">開放政府（OpenGov）<a href="https://sampraszheng.github.io/yxz/blog/lop#%E9%96%8B%E6%94%BE%E6%94%BF%E5%BA%9Copengov" class="hash-link" aria-label="Direct link to 開放政府（OpenGov）" title="Direct link to 開放政府（OpenGov）">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadots-technology-stack">Polkadot's Technology Stack<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadots-technology-stack" class="hash-link" aria-label="Direct link to Polkadot's Technology Stack" title="Direct link to Polkadot's Technology Stack">​</a></h4>
 <ul>
-<li><strong>Polkadot 的鏈上民主系統，將權力賦予 DOT 持有者</strong>。</li>
-<li><strong>使其成為世界上最大去中心化、最大的 DAO</strong>。</li>
-<li><strong>任何 DOT 持有者都可以投票、建立提案並進行討論</strong>。</li>
+<li><strong>Substrate:</strong> A Rust framework for building blockchains.</li>
+<li><strong>Polkadot SDK:</strong> Includes the Cumulus, Polkadot, and Substrate repositories.</li>
+<li><strong>SCALE Codec:</strong> An efficient serialization/deserialization format used by Polkadot and Substrate.</li>
+<li><strong>Wasm:</strong> WebAssembly, used to build Polkadot runtimes.</li>
+<li><strong>FRAME:</strong> A framework for simplifying Substrate runtime development.</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="現有-polkadot-生態項目">現有 Polkadot 生態項目<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%8F%BE%E6%9C%89-polkadot-%E7%94%9F%E6%85%8B%E9%A0%85%E7%9B%AE" class="hash-link" aria-label="Direct link to 現有 Polkadot 生態項目" title="Direct link to 現有 Polkadot 生態項目">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="jam-join-accumulate-machine">JAM (Join-Accumulate Machine)<a href="https://sampraszheng.github.io/yxz/blog/lop#jam-join-accumulate-machine" class="hash-link" aria-label="Direct link to JAM (Join-Accumulate Machine)" title="Direct link to JAM (Join-Accumulate Machine)">​</a></h4>
 <ul>
-<li>FIFA 推出 Mythical Games 傑出的足球手機遊戲，預計 2025 年夏季推出。</li>
-<li>Pudge Penguins 推出 Mythical Games 傑出的 AAA 級策略塔防遊戲，預計 2025 年夏季推出。</li>
-<li>獨特的DePIN，檢查 RWA 和 DeFi，超過 64 個DePIN 專案和 4-5 億美元融資。</li>
-<li><strong>@AcademyPolkadot</strong> 推出由 Polkadot 專家領導的 PBA-X 線上區塊鏈課程，從 2025 年 1 月開始。</li>
-<li><strong>@OpenZeppelin</strong> 是一個開放原始碼程式庫 + 工具的供應商，使團隊能夠有效且安全地管理區塊鏈專案 – 發布了 Polkadot 運行時範本。</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="2025-年-polkadot-20-的路線圖">2025 年 Polkadot 2.0 的路線圖<a href="https://sampraszheng.github.io/yxz/blog/lop#2025-%E5%B9%B4-polkadot-20-%E7%9A%84%E8%B7%AF%E7%B7%9A%E5%9C%96" class="hash-link" aria-label="Direct link to 2025 年 Polkadot 2.0 的路線圖" title="Direct link to 2025 年 Polkadot 2.0 的路線圖">​</a></h4>
+<li><strong>Goal:</strong> Address scalability and interoperability challenges in blockchain.</li>
+<li><strong>Core:</strong> Facilitate chain collaboration and data sharing, while optimizing computation and communication efficiency in a decentralized computing environment.</li>
+<li><strong>Features:</strong>
 <ul>
-<li><strong>智能合約即將推出（數十種程式語言）</strong>。</li>
-<li><strong>基於 RISC-V 緩慢過渡到 PVM（Polkadot 虛擬機）</strong>。</li>
-<li><strong>統一地址格式（更好的 UI/UX 用於使用者和開發者）</strong>。</li>
-<li><strong>XCM v5（甚至更好的互操作性）</strong>。</li>
-<li><strong>快速取消抵押（從 28 天到平均 2-4 天）</strong>。</li>
-<li><strong>DOT 作為通用 Gas 代幣（在 Rollup 上啟用 DOT 作為費用）</strong>。</li>
-<li><strong>500 毫秒區塊時間（在 2025 年，由於彈性擴展，一個專案甚至可以使用 12 個核心）</strong>。</li>
+<li><strong>Chain collaboration:</strong> Supports seamless data sharing across multiple chains, avoiding redundant computation of the same logic.</li>
+<li><strong>Efficient resource use:</strong> Each chain focuses on its specific function and application, avoiding wasted compute and storage.</li>
+<li><strong>Simplified cross-chain communication:</strong> Provides a standardized approach through designed cross-chain messaging and verification mechanisms, making chain-to-chain interactions more efficient and secure.</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="總結">總結<a href="https://sampraszheng.github.io/yxz/blog/lop#%E7%B8%BD%E7%B5%90" class="hash-link" aria-label="Direct link to 總結" title="Direct link to 總結">​</a></h4>
-<p>Polkadot 致力於通過其獨特的多鏈架構、互操作性、可擴展性和靈活性，革新 Web3 的構建方式。 未來的 JAM 升級和 Polkadot 2.0 將進一步增強其功能，使其成為區塊鏈技術領域中一個有前途的平台。</p>]]></content:encoded>
+</li>
+<li><strong>Polkadot's next major upgrade will adopt SASSAFRAS/SAFROLE</strong>, which uses ring VRF to solve the problem of multiple/no block producers per slot, ensuring exactly one block producer per slot.</li>
+<li><strong>First version expected in July 2025</strong>.</li>
+<li><strong>Separates computation into in-core and on-chain layers</strong>.</li>
+<li><strong>Will allow smart contract functionality and permissionless services</strong>.</li>
+<li><strong>JAM introduces a decentralized hybrid system providing smart contract functionality built around the in-core/on-chain security and scalability duality</strong>.</li>
+<li><strong>JAM is inherently permissionless, allowing anyone to deploy code as a service, pay for the resources that code consumes, and direct its execution by purchasing and allocating coretime</strong>.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="opengov">OpenGov<a href="https://sampraszheng.github.io/yxz/blog/lop#opengov" class="hash-link" aria-label="Direct link to OpenGov" title="Direct link to OpenGov">​</a></h4>
+<ul>
+<li><strong>Polkadot's on-chain democratic system, putting power in the hands of DOT holders</strong>.</li>
+<li><strong>Makes it the world's largest decentralized DAO</strong>.</li>
+<li><strong>Any DOT holder can vote, create proposals, and participate in discussions</strong>.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="existing-polkadot-ecosystem-projects">Existing Polkadot Ecosystem Projects<a href="https://sampraszheng.github.io/yxz/blog/lop#existing-polkadot-ecosystem-projects" class="hash-link" aria-label="Direct link to Existing Polkadot Ecosystem Projects" title="Direct link to Existing Polkadot Ecosystem Projects">​</a></h4>
+<ul>
+<li>FIFA launching a standout Mythical Games mobile soccer game, expected summer 2025.</li>
+<li>Pudgy Penguins launching a standout Mythical Games AAA strategy tower defense game, expected summer 2025.</li>
+<li>Unique DePIN projects, plus RWA and DeFi; over 64 DePIN projects and $400–500M in fundraising.</li>
+<li><strong>@AcademyPolkadot</strong> launching PBA-X, an online blockchain course led by Polkadot experts, starting January 2025.</li>
+<li><strong>@OpenZeppelin</strong> — an open-source library and tooling provider that enables teams to manage blockchain projects effectively and securely — has published a Polkadot runtime template.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="polkadot-20-roadmap-for-2025">Polkadot 2.0 Roadmap for 2025<a href="https://sampraszheng.github.io/yxz/blog/lop#polkadot-20-roadmap-for-2025" class="hash-link" aria-label="Direct link to Polkadot 2.0 Roadmap for 2025" title="Direct link to Polkadot 2.0 Roadmap for 2025">​</a></h4>
+<ul>
+<li><strong>Smart contracts coming soon (dozens of programming languages)</strong>.</li>
+<li><strong>Gradual migration to PVM (Polkadot Virtual Machine) based on RISC-V</strong>.</li>
+<li><strong>Unified address format (better UI/UX for users and developers)</strong>.</li>
+<li><strong>XCM v5 (even better interoperability)</strong>.</li>
+<li><strong>Fast unstaking (from 28 days to an average of 2–4 days)</strong>.</li>
+<li><strong>DOT as a universal gas token (enabling DOT as fees on rollups)</strong>.</li>
+<li><strong>500 ms block time (in 2025, a single project can even use 12 cores thanks to elastic scaling)</strong>.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://sampraszheng.github.io/yxz/blog/lop#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h4>
+<p>Polkadot is committed to revolutionizing how Web3 is built, through its unique multi-chain architecture, interoperability, scalability, and flexibility. The upcoming JAM upgrade and Polkadot 2.0 will further enhance its capabilities, making it a highly promising platform in the blockchain technology landscape.</p>]]></content:encoded>
             <category>DOT</category>
         </item>
         <item>
@@ -899,98 +899,85 @@
             <category>rf</category>
         </item>
         <item>
-            <title><![CDATA[聊聊相位陣列]]></title>
+            <title><![CDATA[Phased Arrays: From WWII Radar to LEO Satellites]]></title>
             <link>https://SamprasZheng.github.io/yxz/blog/PA</link>
             <guid>https://SamprasZheng.github.io/yxz/blog/PA</guid>
             <pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[從二戰雷達到 PESA、AESA 的相位陣列技術演進 — 數學原理、波束控制與 5G/6G 應用的實務切入。附 NCTU 碩士論文實作：S-band 風電雷達、X-band LEO 傳輸器、DPD PA 線性化與太空可靠度測試。]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="脈絡">脈絡<a href="https://sampraszheng.github.io/yxz/blog/PA#%E8%84%88%E7%B5%A1" class="hash-link" aria-label="Direct link to 脈絡" title="Direct link to 脈絡">​</a></h3>
-<p>無線掃描技術的發展始於19世紀末，當時透過高增益天線創造出固定窄波束。到了第二次世界大戰期間，雷達技術的發明使高增益天線能夠旋轉，以機械掃描波束，實現360°全方位覆蓋。</p>
-<p>為了消除機械旋轉、提升設備壽命並加強多目標追蹤性能，PESA（被動電子掃描陣列）技術於1960年代誕生。自1980年代起，隨著高頻半導體技術的逐步成熟，各種AESA（主動電子掃描陣列）技術相繼發展。</p>
-<p>儘管新一代的無線掃描技術比早期技術更加複雜，但其系統性能（探測距離、解析度、追蹤能力與可靠性）隨著世代更迭而大幅提升。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="運作">運作<a href="https://sampraszheng.github.io/yxz/blog/PA#%E9%81%8B%E4%BD%9C" class="hash-link" aria-label="Direct link to 運作" title="Direct link to 運作">​</a></h3>
-<p>相位陣列（Phased Array）是一種透過調整天線元件的相位來控制電磁波方向的技術。相較於傳統的機械式天線轉向方式，相位陣列可以透過電子控制來快速改變波束方向，提升系統的靈活性與可靠性。</p>
-<p>相位陣列的核心概念是利用多個天線元件組成天線陣列，並透過個別調整各天線元件的相位，使得電磁波在特定方向產生建設性干涉（constructive interference），而在其他方向則產生破壞性干涉（destructive interference），進而實現波束的電子掃描。其數學模型如下：</p>
+            <description><![CDATA[The evolution of phased array technology from WWII radar through PESA and AESA — math fundamentals, beam steering, hybrid architecture trade-offs, and space reliability testing practices.]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="background">Background<a href="https://sampraszheng.github.io/yxz/blog/PA#background" class="hash-link" aria-label="Direct link to Background" title="Direct link to Background">​</a></h3>
+<p>The development of wireless scanning technology began in the late 19th century, with fixed narrow beams produced by high-gain antennas. During World War II, the invention of radar enabled high-gain antennas to rotate mechanically, scanning the beam to achieve full 360° coverage.</p>
+<p>To eliminate mechanical rotation, extend equipment lifespan, and improve multi-target tracking capability, PESA (Passive Electronically Scanned Array) technology was introduced in the 1960s. Starting from the 1980s, as high-frequency semiconductor technology matured, various AESA (Active Electronically Scanned Array) implementations followed.</p>
+<p>While each new generation of wireless scanning technology is more complex than the last, system performance — detection range, resolution, tracking capability, and reliability — has improved dramatically with each generation.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works">How It Works<a href="https://sampraszheng.github.io/yxz/blog/PA#how-it-works" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works">​</a></h3>
+<p>A phased array is a technology that controls the direction of electromagnetic waves by adjusting the phase of individual antenna elements. Unlike conventional mechanically steered antennas, a phased array steers the beam electronically, enabling rapid beam repositioning and improving system agility and reliability.</p>
+<p>The core concept is to form an antenna array from multiple elements and individually adjust the phase of each element so that electromagnetic waves interfere constructively in a desired direction and destructively in all others — achieving electronic beam scanning. The mathematical model is:</p>
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi mathvariant="normal">Θ</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>d</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mi>λ</mi></mfrac></mrow><annotation encoding="application/x-tex">\Delta\Theta = \frac{2\pi d \sin\theta}{\lambda}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord">ΔΘ</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:2.0574em;vertical-align:-0.686em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em"><span style="top:-2.314em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord mathnormal">λ</span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.677em"><span class="pstrut" style="height:3em"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03588em">π</span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.1667em"></span><span class="mord mathnormal" style="margin-right:0.02778em">θ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
-<p>其中：</p>
+<p>Where:</p>
 <ul>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">d</span></span></span></span> 為天線單元間距</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">λ</span></span></span></span> 為波長</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal" style="margin-right:0.02778em">θ</span></span></span></span> 為波束指向角度</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">d</span></span></span></span> is the element spacing</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal">λ</span></span></span></span> is the wavelength</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal" style="margin-right:0.02778em">θ</span></span></span></span> is the beam pointing angle</li>
 </ul>
-<p>此相位調整機制允許系統透過改變各天線單元的相位來動態調整波束方向，而無需物理移動天線結構。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="應用">應用<a href="https://sampraszheng.github.io/yxz/blog/PA#%E6%87%89%E7%94%A8" class="hash-link" aria-label="Direct link to 應用" title="Direct link to 應用">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="軍事與雷達應用">軍事與雷達應用<a href="https://sampraszheng.github.io/yxz/blog/PA#%E8%BB%8D%E4%BA%8B%E8%88%87%E9%9B%B7%E9%81%94%E6%87%89%E7%94%A8" class="hash-link" aria-label="Direct link to 軍事與雷達應用" title="Direct link to 軍事與雷達應用">​</a></h3>
-<p>相位陣列技術最早應用於軍事雷達，如現代艦載雷達、預警機雷達（如 E-2D）、愛國者飛彈防禦系統等。其優勢包括：</p>
+<p>This phase adjustment mechanism allows the system to dynamically steer the beam by changing the phase of each element, without physically moving any antenna structure.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="applications">Applications<a href="https://sampraszheng.github.io/yxz/blog/PA#applications" class="hash-link" aria-label="Direct link to Applications" title="Direct link to Applications">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="military-and-radar">Military and Radar<a href="https://sampraszheng.github.io/yxz/blog/PA#military-and-radar" class="hash-link" aria-label="Direct link to Military and Radar" title="Direct link to Military and Radar">​</a></h3>
+<p>Phased array technology was first applied in military radar systems, such as modern shipborne radars, airborne early-warning radars (e.g., the E-2D), and the Patriot missile defense system. Key advantages include:</p>
 <ul>
-<li><strong>多目標追蹤能力強</strong>：可以同時監測多個目標，適用於防空與導引系統。</li>
-<li><strong>快速波束轉向</strong>：可瞬間改變掃描方向，提升反應速度。</li>
-<li><strong>抗干擾能力強</strong>：可調整波束形狀以減少敵方干擾影響。</li>
+<li><strong>Strong multi-target tracking</strong>: Can simultaneously monitor multiple targets, suited for air defense and guidance systems.</li>
+<li><strong>Rapid beam steering</strong>: Can instantaneously redirect the scan, improving response time.</li>
+<li><strong>Jamming resistance</strong>: Beam shape can be adapted to reduce the impact of adversarial interference.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5g-與無線通訊">5G 與無線通訊<a href="https://sampraszheng.github.io/yxz/blog/PA#5g-%E8%88%87%E7%84%A1%E7%B7%9A%E9%80%9A%E8%A8%8A" class="hash-link" aria-label="Direct link to 5G 與無線通訊" title="Direct link to 5G 與無線通訊">​</a></h3>
-<p>在 5G mmWave（毫米波）通訊中，相位陣列技術可實現波束成形（Beamforming），提升數據傳輸效率。應用場景包括：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5g-and-wireless-communications">5G and Wireless Communications<a href="https://sampraszheng.github.io/yxz/blog/PA#5g-and-wireless-communications" class="hash-link" aria-label="Direct link to 5G and Wireless Communications" title="Direct link to 5G and Wireless Communications">​</a></h3>
+<p>In 5G mmWave communications, phased array technology enables beamforming, improving data throughput. Application scenarios include:</p>
 <ul>
-<li><strong>基地台天線</strong>：用於 5G Massive MIMO 技術，提高信號覆蓋範圍與傳輸速率。</li>
-<li><strong>衛星通訊</strong>：LEO（低軌道衛星）通訊系統中，相位陣列可實現精確的波束控制，提升鏈路穩定性與頻譜效率。</li>
+<li><strong>Base station antennas</strong>: Used in 5G Massive MIMO to extend signal coverage and increase data rates.</li>
+<li><strong>Satellite communications</strong>: In LEO (Low Earth Orbit) satellite systems, phased arrays enable precise beam control, improving link stability and spectral efficiency.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="自駕車與雷達感測">自駕車與雷達感測<a href="https://sampraszheng.github.io/yxz/blog/PA#%E8%87%AA%E9%A7%95%E8%BB%8A%E8%88%87%E9%9B%B7%E9%81%94%E6%84%9F%E6%B8%AC" class="hash-link" aria-label="Direct link to 自駕車與雷達感測" title="Direct link to 自駕車與雷達感測">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="autonomous-vehicles-and-radar-sensing">Autonomous Vehicles and Radar Sensing<a href="https://sampraszheng.github.io/yxz/blog/PA#autonomous-vehicles-and-radar-sensing" class="hash-link" aria-label="Direct link to Autonomous Vehicles and Radar Sensing" title="Direct link to Autonomous Vehicles and Radar Sensing">​</a></h3>
 <ul>
-<li><strong>毫米波雷達（mmWave Radar）</strong>：相位陣列應用於自動駕駛車輛的感測系統，可實現 360° 環繞偵測，增強安全性。</li>
-<li><strong>醫療影像</strong>：超聲波相位陣列用於醫學影像，如高解析度超音波掃描，提高診斷精準度。</li>
+<li><strong>mmWave Radar</strong>: Phased arrays are used in sensing systems for autonomous vehicles, enabling 360° surround detection for enhanced safety.</li>
+<li><strong>Medical imaging</strong>: Ultrasound phased arrays are used in medical imaging, such as high-resolution ultrasound scans, improving diagnostic accuracy.</li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="實戰從-nctu-碩士論文到太空傳輸器">實戰：從 NCTU 碩士論文到太空傳輸器<a href="https://sampraszheng.github.io/yxz/blog/PA#%E5%AF%A6%E6%88%B0%E5%BE%9E-nctu-%E7%A2%A9%E5%A3%AB%E8%AB%96%E6%96%87%E5%88%B0%E5%A4%AA%E7%A9%BA%E5%82%B3%E8%BC%B8%E5%99%A8" class="hash-link" aria-label="Direct link to 實戰：從 NCTU 碩士論文到太空傳輸器" title="Direct link to 實戰：從 NCTU 碩士論文到太空傳輸器">​</a></h2>
-<p>以下是我在交通大學電子研究所就讀期間，於創未來科技（Tron Future Tech）實習所參與的實際系統設計與驗證工作。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="s-band-全數位-aesat-type-radar">S-band 全數位 AESA（T-type Radar）<a href="https://sampraszheng.github.io/yxz/blog/PA#s-band-%E5%85%A8%E6%95%B8%E4%BD%8D-aesat-type-radar" class="hash-link" aria-label="Direct link to S-band 全數位 AESA（T-type Radar）" title="Direct link to S-band 全數位 AESA（T-type Radar）">​</a></h3>
-<p>創未來 S-Family（S-108A/116A/132A）是 2.9–3.1 GHz 的全數位 AESA 雷達，主要市場是風電場鳥擊監控與機場無人機偵測。當時我負責的模組包括：</p>
-<p><strong>PLL 模組</strong>：低相位雜訊頻率合成器，3 GHz、輸出功率可調 −5~+5 dBm，支援 5 Gbps 高速資料傳輸，具備光纖升級空間。</p>
-<p><strong>光學轉接板（OA v2）</strong>：負責 Tier-1（FPGA）與 Tier-2 的通訊橋接。v2 的關鍵改進是把 UFL 換成 Samtec 高速傳輸線、減少 balun 數量以降低噪訊，並把 RF 路徑與數位路徑完全分離。</p>
-<p><strong>電力供應模組</strong>：48V/10.5A AC-DC 輸出。設計重點是多個 MLCC 並聯實現寬頻電容特性、對稱佈局 EMI 抑制、厚銅使 IR drop 降到 0.004V。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="x-band-混合相位陣列傳輸器xt-144">X-band 混合相位陣列傳輸器（XT-144）<a href="https://sampraszheng.github.io/yxz/blog/PA#x-band-%E6%B7%B7%E5%90%88%E7%9B%B8%E4%BD%8D%E9%99%A3%E5%88%97%E5%82%B3%E8%BC%B8%E5%99%A8xt-144" class="hash-link" aria-label="Direct link to X-band 混合相位陣列傳輸器（XT-144）" title="Direct link to X-band 混合相位陣列傳輸器（XT-144）">​</a></h3>
-<p>這是跟國家太空中心（NSPO）合作的 X-band LEO 衛星下行傳輸器，發表於 iCASE 2020 國際研討會。</p>
-<p><strong>系統規格亮點：</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hybrid-architecture-design-trade-offs-for-leo-satellite-scenarios">Hybrid Architecture: Design Trade-offs for LEO Satellite Scenarios<a href="https://sampraszheng.github.io/yxz/blog/PA#hybrid-architecture-design-trade-offs-for-leo-satellite-scenarios" class="hash-link" aria-label="Direct link to Hybrid Architecture: Design Trade-offs for LEO Satellite Scenarios" title="Direct link to Hybrid Architecture: Design Trade-offs for LEO Satellite Scenarios">​</a></h2>
+<p>In LEO satellite downlink design, the central challenge for phased arrays is achieving sufficient EIRP and modulation performance within tight power and mass budgets.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="all-digital-vs-hybrid-architecture">All-Digital vs. Hybrid Architecture<a href="https://sampraszheng.github.io/yxz/blog/PA#all-digital-vs-hybrid-architecture" class="hash-link" aria-label="Direct link to All-Digital vs. Hybrid Architecture" title="Direct link to All-Digital vs. Hybrid Architecture">​</a></h3>
+<table><thead><tr><th>Architecture</th><th>Power</th><th>Complexity</th><th>Flexibility</th></tr></thead><tbody><tr><td>Passive phased array (PESA)</td><td>Low</td><td>Low</td><td>Low</td></tr><tr><td>Hybrid phased array</td><td>Medium</td><td>Medium</td><td>Medium-high</td></tr><tr><td>All-digital phased array</td><td>High</td><td>High</td><td>Maximum</td></tr></tbody></table>
+<p>The hybrid architecture (digital phase shift + analog phase shifters) is a pragmatic compromise for space-constrained power budgets. Signal path:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">DAC → Digital phase shift → PLL (LO) → Mixer (upconvert) → Two-stage PA → Analog phase shifter → PGA → Antenna</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Publicly available validation results for X-band LEO transmitters have demonstrated that hybrid architectures can achieve:</p>
 <ul>
-<li>尺寸：41.7 × 43.2 × 27.7 cm</li>
-<li>陣列：144 TX 元件（12×12）+ 8 RX 天線</li>
-<li>EIRP：64.30 dBm（正前方）</li>
-<li>掃描角：±65°（&gt;130° 覆蓋）</li>
-<li>功耗：&lt;90W TX 平均</li>
-<li>下行速率：800 Mbps 16-APSK（EVM 6.9%）、400 Mbps QPSK（EVM 6.4%）</li>
+<li>EIRP &gt;63 dBm (broadside) for a 144-element array</li>
+<li>±65° scan angle coverage</li>
+<li>800 Mbps 16-APSK downlink rate (EVM &lt; 7%)</li>
+<li>TX average power consumption &lt;90W</li>
 </ul>
-<p><strong>架構選擇：混合（Hybrid）而非全數位</strong></p>
-<p>XT-144 採用數位相移 + 類比相移器的混合架構，而非全數位。理由很務實：在太空功耗受限的環境下，全數位的代價太高。混合架構在功耗、複雜度、功率效率之間取得最佳平衡，同時已能達到 LEO 下行鏈路的 EIRP 與調變需求。</p>
-<p>信號路徑：<code>DAC → 數位相移 → PLL（LO）→ Mixer（上頻）→ 二級 PA → 類比相移器 → CMOS PGA → 天線</code></p>
-<p><strong>CMOS N65 可程式化增益放大器（PGA）</strong></p>
-<p>TFT 自研 IC，台積電 N65 製程。量測關鍵數據：P1dB = −8 dBm、IIP3 = 0.8 dBm @ 8.2 GHz。片上 bandgap reference 讓偏壓不受溫度影響，設計了 power detector 電路做功率監控。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pa-線性化dpd-實作">PA 線性化：DPD 實作<a href="https://sampraszheng.github.io/yxz/blog/PA#pa-%E7%B7%9A%E6%80%A7%E5%8C%96dpd-%E5%AF%A6%E4%BD%9C" class="hash-link" aria-label="Direct link to PA 線性化：DPD 實作" title="Direct link to PA 線性化：DPD 實作">​</a></h3>
-<p>5G 的高 PAPR 調變（256 QAM-OFDM）會激發 PA 的非線性與記憶效應，導致相鄰頻道干擾。我實作了三種 DPD 建模方法並比較：</p>
-<table><thead><tr><th>方法</th><th>NMSE 性能</th><th>訓練速度</th></tr></thead><tbody><tr><td>無記憶多項式</td><td>中（無法建模記憶效應）</td><td>快（LS 閉合解）</td></tr><tr><td>記憶多項式</td><td>較好</td><td>快</td></tr><tr><td>神經網路（NN + LM 反傳）</td><td>最佳</td><td>慢（~15 min）</td></tr></tbody></table>
-<p>結果：NN DPD 讓測試 NMSE 比原始 PA 低 <strong>26 dB</strong>，ACPR 改善 <strong>4 dB</strong>。訓練方法採 Indirect Learning：先訓練 post-distorter，再反向用作 pre-distorter。額外實作了 CUDA 加速版本的 NN feedforward，以 2 threads 並行運算。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="太空可靠度測試把-cots-零件送上軌道">太空可靠度測試：把 COTS 零件送上軌道<a href="https://sampraszheng.github.io/yxz/blog/PA#%E5%A4%AA%E7%A9%BA%E5%8F%AF%E9%9D%A0%E5%BA%A6%E6%B8%AC%E8%A9%A6%E6%8A%8A-cots-%E9%9B%B6%E4%BB%B6%E9%80%81%E4%B8%8A%E8%BB%8C%E9%81%93" class="hash-link" aria-label="Direct link to 太空可靠度測試：把 COTS 零件送上軌道" title="Direct link to 太空可靠度測試：把 COTS 零件送上軌道">​</a></h3>
-<p>XT-144 要進太空，需要通過輻射 + 熱測試。這是我跟林志勴博士（台灣輻射測試領域的重要人物）合作的部分，也是整個碩士生涯技術密度最高的工作之一。</p>
-<p><strong>TID（全電離劑量）測試</strong></p>
-<p>設施：院轄研究院（INER）鈷-60 實驗室。
-DUT：Mixer + PLL。
-測試自動化：SCPI 控制電源 + BenchVue 功率計 + relay 模組切換 RF 開關，遠端控制避免人員曝輻射。
-結果：兩顆 IC 在累積劑量後性能降解在可接受範圍，<strong>不會成為系統單點故障</strong>。</p>
-<p><strong>SEE（單粒子效應）測試</strong></p>
-<p>計畫設施：長庚醫院第五實驗室（高 LET 質子束）。
-原因：LET 不足夠高就無法穿透 IC 封裝，SEU/SEL/SEGR 等效應驗證不完整。
-分類：軟錯誤（SEU/SEFI）→ 重開機可恢復；硬錯誤（SEL/SEB/SEGR）→ 可能永久損毀。</p>
-<p><strong>熱測試</strong></p>
-<p>溫度測試分三個等級：CTT（恆溫）&lt; TCT（熱循環）&lt; TST（熱衝擊）</p>
-<p>測試結果摘要：</p>
-<ul>
-<li>PGA CTT / TCT：性能降解可接受 ✓</li>
-<li>Frontend TCT：符合 NSPO 任務需求 ✓</li>
-<li>Frontend TST：<strong>在熱衝擊條件下性能急劇下降</strong>，確認為溫度變化率過大的效應</li>
-</ul>
-<p>溫度補償方案：前端模組裝溫度感測器，透過 I2C 讀取後用 Python 進行增益最佳化（Gain Optimization Architecture）。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pa-linearization-dpd">PA Linearization (DPD)<a href="https://sampraszheng.github.io/yxz/blog/PA#pa-linearization-dpd" class="hash-link" aria-label="Direct link to PA Linearization (DPD)" title="Direct link to PA Linearization (DPD)">​</a></h3>
+<p>High-PAPR signals from high-order modulations (16-APSK, 256 QAM-OFDM) excite PA nonlinearities, causing out-of-band spectral regrowth that interferes with adjacent channels. The solution is to add a Digital Predistortion (DPD) block at the PA input.</p>
+<p>Comparison of three modeling approaches:</p>
+<table><thead><tr><th>Method</th><th>NMSE Performance</th><th>Memory Effects</th><th>Training Speed</th></tr></thead><tbody><tr><td>Memoryless polynomial</td><td>Moderate</td><td>Cannot model</td><td>Fast</td></tr><tr><td>Memory polynomial</td><td>Better</td><td>Supported</td><td>Fast</td></tr><tr><td>Neural network (NN + LM backprop)</td><td>Best</td><td>Supported</td><td>Slow (~15 min)</td></tr></tbody></table>
+<p>Training uses Indirect Learning: first train a post-distorter, then use it in reverse as the pre-distorter.
+Measured results: NN DPD improves NMSE over the raw PA by approximately <strong>26 dB</strong>, and ACPR by <strong>4 dB</strong>.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="總結">總結<a href="https://sampraszheng.github.io/yxz/blog/PA#%E7%B8%BD%E7%B5%90" class="hash-link" aria-label="Direct link to 總結" title="Direct link to 總結">​</a></h2>
-<p>相位陣列從二戰雷達演進到今天的 LEO 衛星通訊，技術路線清晰：SWAP 問題被半導體進步解決、全數位化讓波束成形更靈活、混合架構在功耗限制場景找到平衡點。</p>
-<p>台灣在這條技術線上並非旁觀者。從 NCTU RF VLSI Lab、創未來科技到 NSPO，已有一條從晶片設計→系統整合→太空驗證的完整技術鏈。接下來的題目是：COTS 如何系統化通過輻射認證、台灣的測試基礎設施如何補齊缺口，以及 LEO 衛星酬載設計如何與 ODC（軌道資料中心）的興起結合。</p>
-<p>這些問題正是 2026 年最值得關注的 RF×Space 交叉點。</p>]]></content:encoded>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="space-reliability-the-cots-qualification-chain">Space Reliability: The COTS Qualification Chain<a href="https://sampraszheng.github.io/yxz/blog/PA#space-reliability-the-cots-qualification-chain" class="hash-link" aria-label="Direct link to Space Reliability: The COTS Qualification Chain" title="Direct link to Space Reliability: The COTS Qualification Chain">​</a></h2>
+<p>The design philosophy for LEO satellite payloads is to start from COTS (Commercial Off-The-Shelf) components and upgrade them to mission grade through rigorous testing. The core challenges are radiation effects and thermal cycling.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="radiation-testing-tid--see">Radiation Testing (TID + SEE)<a href="https://sampraszheng.github.io/yxz/blog/PA#radiation-testing-tid--see" class="hash-link" aria-label="Direct link to Radiation Testing (TID + SEE)" title="Direct link to Radiation Testing (TID + SEE)">​</a></h3>
+<p><strong>TID (Total Ionizing Dose)</strong>: Charged particles passing through the MOSFET gate oxide cause hole trapping and threshold voltage drift.
+Common facilities: INER cobalt-60 laboratory (Taiwan). Key RF components such as Mixers and PLLs are tested to evaluate whether performance degradation stays within acceptable limits.</p>
+<p><strong>SEE (Single Event Effects)</strong>:</p>
+<ul>
+<li>Soft errors (SEU/SEFI): Non-destructive; recoverable by power cycling</li>
+<li>Hard errors (SEL/SEB/SEGR): Potentially permanently destructive</li>
+</ul>
+<p>High-LET proton beam testing (e.g., Chang Gung Hospital Lab 5) can verify SEL/SEU tolerance; sufficient LET to penetrate the IC package must be confirmed.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="thermal-testing-ctt--tct--tst">Thermal Testing (CTT / TCT / TST)<a href="https://sampraszheng.github.io/yxz/blog/PA#thermal-testing-ctt--tct--tst" class="hash-link" aria-label="Direct link to Thermal Testing (CTT / TCT / TST)" title="Direct link to Thermal Testing (CTT / TCT / TST)">​</a></h3>
+<p>Three levels of temperature testing, ordered by increasing rate of temperature change: CTT (constant temperature) &lt; TCT (thermal cycling) &lt; TST (thermal shock)</p>
+<p>Key finding: <strong>Front-end module performance degrades sharply under TST (thermal shock) conditions</strong>, confirming that the rate of temperature change — not absolute temperature — is the root cause. TCT results typically meet LEO mission requirements.</p>
+<p>Temperature compensation approach: mount a temperature sensor on the front-end module, read it via I2C, and perform software gain optimization (Gain Optimization Architecture).</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://sampraszheng.github.io/yxz/blog/PA#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<p>The evolution of phased arrays from WWII radar to today's LEO satellite communications follows a clear trajectory: the SWAP problem has been addressed by semiconductor advances; full digitization has made beamforming more flexible; and hybrid architectures have found a practical balance point under power-constrained conditions.</p>
+<p>Putting COTS components into space is not a matter of "grab and go" — it requires a complete engineering chain involving radiation qualification, thermal validation, and system-level redundancy design. The maturity of this pathway will determine where Taiwanese RF hardware vendors can carve out their position in the LEO satellite payload market.</p>]]></content:encoded>
             <category>rf</category>
             <category>phasedarray</category>
         </item>
