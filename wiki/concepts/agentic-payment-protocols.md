@@ -23,21 +23,11 @@ tags: [payments, ai-agents, protocols, agentic-commerce, x402, mpp, acp, ap2, l4
 
 ### 1. x402 Protocol
 
-核心機制：HTTP 402 狀態碼觸發鏈上 USDC 支付，< 2 秒結算，每筆 ~$0.0001 手續費。
-
-**V2（2025-12-11）重大升級：**
-- 從 body-based 遷移至 **header-based** 資料傳輸
-- 引入 **Session 支援**：首次付款後後續請求免重複握手，支援訂閱制 pattern
-- 支援 **任意 ERC-20 代幣**（透過 Uniswap Permit2 + Coinbase Gas Sponsorship）
-- CAIP 標準對齊（鏈/資產標識符標準化）
-- 模組化 SDK：開發者可插件式新增鏈/資產/支付方案
-- 6 個月累積：**1 億筆以上支付**、600+ 開發者 Telegram 社群
-
-**支援鏈（V2）**：Base、Solana、其他 L2、傳統軌道（ACH / SEPA / 卡）透過 facilitator
+核心機制：HTTP 402 狀態碼觸發鏈上 USDC 支付，< 2 秒結算，每筆 ~$0.0001 手續費。V2（2025-12-11）升級為 header-based 傳輸、Session 支援、任意 ERC-20 via Permit2、CAIP 標準對齊，6 個月累積 1 億筆以上支付。
 
 **生態地位**：Stripe 同時支援 MPP 和 x402；AP2 將 x402 列為官方 crypto extension。
 
-詳見 [[concepts/x402-protocol]]。
+For x402 V2 spec details, see [[concepts/x402-protocol]].
 
 ---
 

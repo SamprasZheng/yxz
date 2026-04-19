@@ -53,7 +53,7 @@ wiki/
 └── log.md        ← append-only session history
 ```
 
-Current coverage: Polkadot (JAM, Agile Coretime, XCM, DOT hard cap, OpenGov), LEO supply chain (orbital data centers, ISL, Taiwan RF/PCB suppliers), AI payments (x402, agentic commerce), and geopolitics (The Technological Republic).
+Current coverage: Polkadot (JAM, Agile Coretime, XCM, DOT hard cap, OpenGov, KOLs: PolkaWorld/Shawn Tabrizi/Bill Laboon/DotLeap), LEO supply chain (orbital data centers, ISL, Taiwan RF/PCB suppliers, Solar Cycle 25 radiation, Taiwan radiation test ecosystem, COTS GPU risk), AI payments (x402 V2, agentic commerce, ACP/AP2/MPP/L402 protocol landscape, Stripe/Visa/Mastercard agentic strategies), and geopolitics (The Technological Republic).
 
 ---
 
