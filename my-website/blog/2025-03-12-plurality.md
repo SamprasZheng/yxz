@@ -7,6 +7,19 @@ description: "Starting from Audrey Tang's collaborative book Plurality — how m
 image: /img/og/Plurality.png
 ---
 
+:::info 📺 影片版 TLDR
+<iframe
+  width="100%"
+  style={{aspectRatio: '16/9'}}
+  src="https://www.youtube.com/embed/oaUcLKPLYkI"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
+/>
+:::
+
+
 I first encountered Plurality while reviewing Project Liberty's documentation on actively expanding DSNP (Decentralized Social Networking Protocol) across TikTok, Bluesky, Frequency, and other social platforms — and noticed that Taiwan's former Digital Minister Audrey Tang had co-authored the book.
 
 ## What is Plurality?
