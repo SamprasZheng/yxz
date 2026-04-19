@@ -1,24 +1,24 @@
 ---
 sidebar_position: 2
-title: 1️⃣ 基礎 — Polkadot 是什麼
+title: 1️⃣ Fundamentals — What Is Polkadot
 ---
 
-# 1️⃣ 基礎 — Polkadot 是什麼
+# 1️⃣ Fundamentals — What Is Polkadot
 
-**→ 閱讀主文：[波卡（Polkadot）— 下一代的區塊鏈](/blog/lop)**
+**→ Read the main article: [Polkadot — The Next-Generation Blockchain](/blog/lop)**
 
-## 這一篇要帶走的
+## Key Takeaways
 
-1. Polkadot 不是單一鏈，是「中繼鏈 + 多條平行鏈」的**多鏈協定**。
-2. 跨鏈訊息協定 **XCM** 讓資產與訊息可以在鏈之間去信任移動。
-3. **OpenGov** 是 Polkadot 的鏈上民主系統，所有協定升級都經由 DOT 持有者投票通過。
-4. Polkadot 2.0 三大特點：Agile Coretime、Elastic Scaling、Async Backing。
+1. Polkadot is not a single chain — it is a **multi-chain protocol** consisting of a Relay Chain plus multiple Parachains.
+2. The cross-chain messaging protocol **XCM** enables assets and messages to move trustlessly between chains.
+3. **OpenGov** is Polkadot's on-chain democracy system; all protocol upgrades are passed by vote of DOT holders.
+4. Three highlights of Polkadot 2.0: Agile Coretime, Elastic Scaling, and Async Backing.
 
-## 讀完之後再看
+## What to Read Next
 
-- 想了解治理哲學：[多元宇宙 Plurality × OpenGov](/blog/Plurality)
-- 想跳到下一代架構：[JAM — 可擴展無需信任虛擬機](/blog/JAMintro)
+- To understand governance philosophy: [Plurality × OpenGov](/blog/Plurality)
+- To jump to the next-generation architecture: [JAM — A Scalable Trustless Virtual Machine](/blog/JAMintro)
 
-## 關鍵詞
+## Keywords
 
-`Relay Chain`、`Parachain`、`XCM`、`Coretime`、`Snowbridge`、`Hyperbridge`、`OpenGov`、`DOT 2.1B hard cap`
+`Relay Chain`, `Parachain`, `XCM`, `Coretime`, `Snowbridge`, `Hyperbridge`, `OpenGov`, `DOT 2.1B hard cap`

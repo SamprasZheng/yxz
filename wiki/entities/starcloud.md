@@ -5,26 +5,26 @@ tags: [leo, space, data-center, ai, gpu, startup]
 
 # Starcloud
 
-## 基本資料
+## Basic Information
 
-美國太空算力新創公司，以「第一個在太空中訓練 LLM」著稱。
+US space computing startup, known as "the first company to train an LLM in space."
 
-## 關鍵里程碑
+## Key Milestones
 
-| 時間 | 事件 |
+| Date | Event |
 |------|------|
-| 2025-11 | 發射 Starcloud-1 衛星 |
+| 2025-11 | Launched Starcloud-1 satellite |
 
-## Starcloud-1 衛星
+## Starcloud-1 Satellite
 
-- 搭載一顆 **NVIDIA H100 GPU**
-- 在軌算力比此前任何在軌設備高出近百倍
-- 成為全球首個在太空中執行 LLM 訓練的公司
+- Carries one **NVIDIA H100 GPU**
+- On-orbit computing power is nearly 100× higher than any previously deployed on-orbit device
+- Became the world's first company to perform LLM training in space
 
-## 意義
+## Significance
 
-Starcloud-1 是 [[concepts/orbital-data-center]] 商業化的里程碑案例：證明消費級高效能 GPU 可在輻射環境中運作，為後續商業 ODC 鋪路。
+Starcloud-1 is a milestone commercial case for [[concepts/orbital-data-center]]: it proves that consumer-grade high-performance GPUs can operate in a radiation environment, paving the way for subsequent commercial ODC deployments.
 
-## 相關來源
+## Related Sources
 
 - [[sources/leo-space-datacenter-analysis-2025]]

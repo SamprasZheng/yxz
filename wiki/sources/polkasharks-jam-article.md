@@ -1,14 +1,14 @@
 ---
 type: source
-title: "JAM - 可擴展無需信任虛擬機"
-author: "波卡鯊 Polkasharks"
+title: "JAM — Scalable Trustless Virtual Machine"
+author: "Polkasharks"
 date: "2025-02-24"
 ingested: "2026-04-19"
 tags: [polkadot, jam, risc-v, scalability, pvm]
 url: "https://vocus.cc/article/67bb4ddafd8978000132b720"
 ---
 
-# JAM - 可擴展無需信任虛擬機
+# JAM — Scalable Trustless Virtual Machine
 
 **Author:** [[entities/polkasharks]] | **Date:** 2025-02-24
 

@@ -1,6 +1,6 @@
 ---
-title: "設計一套 LEO X-band 相位陣列傳輸器需要做哪些決定"
-description: "從架構選型、信號鏈設計、EVM 校正、PA 線性化到輻射可靠度，記錄一套 144 元件 X-band AESA 系統從概念到量測的完整設計邏輯。"
+title: "Design Decisions for a LEO X-band Phased Array Transmitter"
+description: "From architecture selection and signal chain design through EVM calibration, PA linearization, and radiation reliability — documenting the full design logic of a 144-element X-band AESA system from concept to measurement."
 slug: leo-xband-phased-array-design
 date: 2026-04-19
 authors: [sampras]
@@ -8,179 +8,179 @@ tags: [rf, phased-array, leo, hardware]
 image: /img/og/leo-phased-array.png
 ---
 
-設計一套能上太空的相位陣列傳輸器，不是把 RF 電路設計好就結束了。
+Designing a phased array transmitter for space is not just a matter of getting the RF circuitry right.
 
-架構選型、信號鏈校正、PA 線性化、散熱可靠度、輻射硬化——每一層都有取捨，每一個決定都會影響下一個。這篇文章整理自我在交大 RFVLSI Lab 與創未來科技（Tron Future Tech）期間參與 XT-144 系統的設計與量測工作，試著把這些決定的邏輯串起來。
+Architecture selection, signal chain calibration, PA linearization, thermal reliability, radiation hardening — every layer involves trade-offs, and every decision influences the next. This post is drawn from my work on the XT-144 system design and measurement during my time at the RFVLSI Lab at NCTU and at Tron Future Tech. The goal is to connect the logic behind each of those decisions.
 
 <!-- truncate -->
 
-## XT-144 是什麼
+## What Is XT-144
 
-XT-144 是一套為國家太空中心（NSPO）開發的 X-band LEO 衛星下行傳輸系統。
+XT-144 is an X-band LEO satellite downlink transmitter system developed for the National Space Program Office (NSPO).
 
-- **陣列**：144 TX 元件（12×12）+ 8 RX 天線
-- **頻段**：X-band（~8.2 GHz）
-- **EIRP**：64.30 dBm（正前方，single tone）
-- **掃描角**：±65°，超過 130°
-- **調變**：16-APSK 800 Mbps / QPSK 400 Mbps
-- **功耗**：< 90W（TX 平均）
-- **尺寸**：41.7 × 43.2 × 27.7 cm
+- **Array**: 144 TX elements (12×12) + 8 RX antennas
+- **Band**: X-band (~8.2 GHz)
+- **EIRP**: 64.30 dBm (broadside, single tone)
+- **Scan angle**: ±65°, over 130°
+- **Modulation**: 16-APSK 800 Mbps / QPSK 400 Mbps
+- **Power consumption**: <90 W (TX average)
+- **Dimensions**: 41.7 × 43.2 × 27.7 cm
 
-這套系統的設計難度在於：每一個規格之間都有互相制約。要 EIRP 高，就要功耗高；要功耗低，就得在架構上省；要 EVM 好，又要花時間校正；要上太空，還要過輻射硬化測試。
+The design challenge of this system is that every specification constrains the others. Higher EIRP requires higher power; lower power requires architectural trade-offs; better EVM requires careful calibration; and getting it into space requires passing radiation hardening tests.
 
-以下按照設計順序，記錄每個主要決定的理由。
+Below, in design order, is the reasoning behind each major decision.
 
 ---
 
-## 決定一：混合相位陣列，不是全數位
+## Decision 1: Hybrid Phased Array, Not All-Digital
 
-設計相位陣列的第一個問題：每個天線元件要不要有獨立的 DAC？
+The first question in phased array design: should every antenna element have its own dedicated DAC?
 
-| 架構 | 每元件 DAC | 功耗 | 靈活性 | 成本 |
+| Architecture | Per-element DAC | Power | Flexibility | Cost |
 |---|---|---|---|---|
-| 被動相位陣列（PESA）| 無 | 最低 | 低 | 低 |
-| **混合相位陣列** | **子陣列共用** | **中** | **中高** | **中** |
-| 全數位相位陣列 | 有 | 最高 | 最高 | 高 |
+| Passive phased array (PESA) | None | Lowest | Low | Low |
+| **Hybrid phased array** | **Shared per sub-array** | **Medium** | **Medium-high** | **Medium** |
+| All-digital phased array | Yes | Highest | Maximum | High |
 
-XT-144 選的是**混合架構**：數位相移（DSP）負責粗調，類比相移器（Analog Phase Shifter）負責細調。
+XT-144 chose the **hybrid architecture**: digital phase shift (DSP) handles coarse adjustment, analog phase shifters handle fine adjustment.
 
-信號路徑大概是這樣：
+The signal path looks roughly like this:
 
 ```
-DAC → 數位相移（DSP）→ PLL（LO）→ Mixer（上頻）→ 二級 PA → 類比相移器 → PGA → 天線
+DAC → Digital phase shift (DSP) → PLL (LO) → Mixer (upconvert) → Two-stage PA → Analog phase shifter → PGA → Antenna
 ```
 
-理由很直接：全數位架構功耗太高，144 個元件各配一套 ADC/DAC 在太空環境根本不實際。混合架構犧牲一些靈活性，換來功耗可控、系統複雜度合理、壽命更長。
+The reasoning is straightforward: all-digital architecture consumes too much power. Giving 144 elements each their own ADC/DAC set is simply not practical in a space environment. The hybrid architecture trades some flexibility for manageable power consumption, reasonable system complexity, and longer operational life.
 
-衛星是個非常 cost-sensitive 的應用——不只是錢，更是功耗和熱。每瓦都有代價。
+A satellite is an extremely cost-sensitive application — not just financially, but in terms of power and heat. Every watt has a price.
 
 ---
 
-## 決定二：Up-converter 選 Zero-IF 架構
+## Decision 2: Zero-IF Architecture for the Up-converter
 
-Up-converter 的架構選型決定後續所有問題的難度。四種主要架構：
+The up-converter architecture choice determines the difficulty of every downstream problem. The four main architectures:
 
-| 架構 | DAC 取樣率 | 濾波器需求 | 主要問題 |
+| Architecture | DAC Sample Rate | Filter Requirements | Main Issues |
 |---|---|---|---|
-| Real IF | 中 | 雙道帶通濾波 | IF 不夠高時鏡像難分離 |
-| Complex IF | 中 | 一道帶通濾波 | I/Q 不對稱，最多 −30 dB 鏡像 |
-| **Zero-IF（直接轉換）** | **最低** | **僅低通（DAC 後）** | **LO 洩漏 + IQ 不對稱** |
-| Direct RF | 最高 | 低通 | 需要超高速 DAC |
+| Real IF | Medium | Dual-path bandpass filtering | Image separation difficult when IF is not high enough |
+| Complex IF | Medium | Single bandpass filter | I/Q asymmetry; image suppression limited to −30 dB |
+| **Zero-IF (direct conversion)** | **Lowest** | **Lowpass only (after DAC)** | **LO leakage + IQ imbalance** |
+| Direct RF | Highest | Lowpass | Requires ultra-high-speed DAC |
 
-XT-144 的 up-converter 選了 **Zero-IF**（直接轉換）。
+XT-144's up-converter chose **Zero-IF** (direct conversion).
 
-吸引力只有一個：**DAC 取樣率最低**。在 GHz 射頻系統裡，降低 DAC 速率直接降低功耗和設計複雜度。代價是必須正面解決 LO 洩漏（LO Leakage）和 IQ 不對稱（IQ Imbalance）這兩個 Zero-IF 的經典毛病。
+There is only one attraction: **lowest DAC sample rate**. In a GHz RF system, reducing the DAC rate directly reduces power consumption and design complexity. The price is having to directly address LO leakage and IQ imbalance — the two classic pathologies of Zero-IF.
 
-但這兩個問題是可校正的，而「DAC 要超高速」這個硬體限制很難繞。
+But both problems are correctable, while "the DAC must run at ultra-high speed" is a hardware constraint that is very hard to route around.
 
 ---
 
-## 決定三：EVM 校正要做兩層
+## Decision 3: EVM Calibration Requires Two Layers
 
-Zero-IF 架構選定後，量測的第一個結果往往令人崩潰——星座圖是一團亂的。
+Once the Zero-IF architecture is selected, the first measurement result is often disheartening — the constellation diagram is a mess.
 
-Keysight VSA89600 是這套系統量測的主要工具。它同時顯示六個視窗：星座圖、Error vector time、頻譜、Error table、Error vector spectrum、Equalizer impulse response。
+The Keysight VSA89600 is the primary measurement tool for this system. It simultaneously displays six windows: constellation diagram, error vector time, spectrum, error table, error vector spectrum, and equalizer impulse response.
 
-診斷邏輯：先看星座圖形狀，再看 Error vector spectrum 找頻率相關問題。
+Diagnostic logic: look at the constellation diagram shape first, then examine the error vector spectrum for frequency-related issues.
 
-### 第一層：LO Leakage 校正
+### Layer 1: LO Leakage Calibration
 
-未校正之前，IQ Offset（VSA Error table 欄位）高達 **−10 dB**——本振洩漏和信號幾乎一樣強，星座圖完全被中心干擾淹沒。
+Before calibration, the IQ Offset (VSA Error table column) is as high as **−10 dB** — the local oscillator leakage is nearly as strong as the signal, and the constellation diagram is completely overwhelmed by center-point interference.
 
-方法是掃描 DAC 的直流偏置碼，找到洩漏最小的那個點。LO 洩漏量對偏置碼是單峰函數，因此用**三元搜尋（Ternary Search）**而不是暴力掃描：
+The method is to sweep the DAC DC offset codes to find the point of minimum leakage. LO leakage as a function of offset code is a unimodal function, so **ternary search** is used instead of brute-force sweeping:
 
-每次把搜尋區間 $[l, r]$ 分三等分，取 $m_1 = l + \frac{r-l}{3}$、$m_2 = r - \frac{r-l}{3}$，比較 $f(m_1)$ 和 $f(m_2)$，每次丟掉 1/3 的搜尋空間。這個演算法不只適用於 LO 洩漏，任何「在數個參數組合中找最佳點」的單峰問題都可以用。
+Split the search interval $[l, r]$ into thirds each time, take $m_1 = l + \frac{r-l}{3}$ and $m_2 = r - \frac{r-l}{3}$, compare $f(m_1)$ and $f(m_2)$, and discard 1/3 of the search space each iteration. This algorithm applies beyond LO leakage — any unimodal "find the optimum across a parameter combination" problem can use the same approach.
 
-### 第二層：IQ Imbalance 校正
+### Layer 2: IQ Imbalance Calibration
 
-LO 洩漏解決後，星座圖還是扭的——這是 IQ 增益差 $g$ 和相位誤差 $\phi$ 的症狀。
+Once LO leakage is resolved, the constellation diagram is still distorted — a symptom of IQ gain mismatch $g$ and phase error $\phi$.
 
-RF 輸出端的失真可以用矩陣描述：
+The distortion at the RF output can be described with a matrix:
 
 $$\begin{bmatrix}I'\\Q'\end{bmatrix} = \begin{bmatrix}(1+g)\cos\phi & 0\\ (1+g)\sin\phi & 1\end{bmatrix}\begin{bmatrix}I\\Q\end{bmatrix}$$
 
-在 FPGA 裡乘以逆矩陣補償。增益誤差小的時候，補償簡化為一個係數 $\beta = -\tan\phi$。
+The FPGA multiplies by the inverse matrix to compensate. When gain error is small, the correction simplifies to a single coefficient $\beta = -\tan\phi$.
 
-校正完成後，系統最終量測 EVM：16-APSK **6.898%**，QPSK **6.404%**，符合規格。
+After calibration, the measured system EVM: 16-APSK **6.898%**, QPSK **6.404%** — both within spec.
 
 ---
 
-## 決定四：PA 線性化用 Neural Network DPD
+## Decision 4: PA Linearization via Neural Network DPD
 
-144 個天線元件，每個都有 PA（功率放大器）。PA 工作在飽和區附近效率最高，但這正是非線性行為最嚴重的地方。
+There are 144 antenna elements, and each has a PA (power amplifier). PAs operate most efficiently near saturation, but that is also exactly where nonlinear behavior is most severe.
 
-高 PAPR 的調變信號（16-APSK、OFDM）輸入 PA 後，會產生：
-- **增益壓縮**：峰值被截斷，星座點往內縮
-- **頻外散射（Spectral Regrowth）**：能量洩漏到相鄰頻帶
+High-PAPR modulated signals (16-APSK, OFDM) fed into a PA produce:
+- **Gain compression**: peaks get clipped, constellation points compress inward
+- **Spectral regrowth**: energy leaks into adjacent bands
 
-解法是 **DPD（Digital Predistortion，數位預失真）**：在 PA 前端插入預失真器，讓 DPD + PA 的串聯整體呈線性。
+The solution is **DPD (Digital Predistortion)**: insert a predistorter before the PA so that the DPD + PA cascade is linear overall.
 
-三種 PA 建模方法的比較：
+Comparison of three PA modeling methods:
 
-| 方法 | 記憶效應 | 性能 | 訓練速度 |
+| Method | Memory Effects | Performance | Training Speed |
 |---|---|---|---|
-| 無記憶多項式 | 無 | 普通 | 最快（閉合解） |
-| 記憶多項式 | 有 | 好 | 快 |
-| **神經網路（NN）** | **有** | **最好** | **慢（~15 分鐘）** |
+| Memoryless polynomial | None | Moderate | Fastest (closed-form solution) |
+| Memory polynomial | Yes | Good | Fast |
+| **Neural network (NN)** | **Yes** | **Best** | **Slow (~15 minutes)** |
 
-NN DPD 用一個隱藏層 30 個神經元，Levenberg-Marquardt 反向傳播訓練，搭配 **Indirect Learning**（先訓練 post-distorter，再用係數當 pre-distorter）。
+The NN DPD uses one hidden layer with 30 neurons, trained with Levenberg-Marquardt backpropagation, combined with **Indirect Learning** (first train a post-distorter, then use those coefficients as the pre-distorter).
 
-實測結果：
-- NMSE 比原始 PA 改善 **−26 dB**
-- ACPR（頻外散射）改善 **−4 dB**
-
----
-
-## 決定五：可靠度測試要在設計初期就排進去
-
-LEO 衛星任務的設計文件最後那頁，永遠有一句話：「需通過輻射硬化測試後方可入軌」。
-
-XT-144 用的是 COTS 元件（Commercial Off-The-Shelf），不是輻射加固的太空級元件。這是為了成本，但代價是必須自己建立測試體系。
-
-### TID（總電離劑量）測試
-
-在 INER（核能研究所）鈷-60 實驗室進行非操作 TID 測試。測試對象：Mixer 和 PLL。
-
-結果：兩顆 IC 在劑量累積後性能降解均在可接受範圍，不會成為系統單點故障。量化 TID 時需做 Faraday Cup 束流校正，並用 SCPI 自動化電源 + BenchVue 控制量測，避免人工操作誤差。
-
-### SEE（單粒子效應）測試
-
-SEE 分兩類：
-- **軟錯誤**（可復原）：SEU（記憶體位元翻轉）、SET（暫態脈衝）、SEFI（功能中斷）
-- **硬錯誤**（不可復原）：SEL（閂鎖）、SEB（燒毀）、SEGR（柵極崩潰）
-
-COTS 元件的 TID 耐受上限大約是 25 krad，超過就開始明顯降解。LEO 任務的年劑量約 1–5 krad（取決於高度和屏蔽），5–10 年任務期的 RDM（輻射設計裕度）至少要達到 1.5。
-
-### 熱測試
-
-恆溫測試（CTT）、熱循環測試（TCT）、熱衝擊測試（TST）三層。
-
-XT-144 的 Frontend 模組在 **TST（熱衝擊）** 下性能急劇下降——溫度變化率過大是根因。TCT 結果則符合 NSPO 任務需求。教訓：衛星的溫度環境在白天/黑暗面交替時變化劇烈，熱衝擊設計不能只做 TCT 就算。
+Measured results:
+- NMSE improvement over raw PA: **−26 dB**
+- ACPR (out-of-band spectral regrowth) improvement: **−4 dB**
 
 ---
 
-## 決定六：BIST 從一開始就要規劃
+## Decision 5: Reliability Testing Must Be Scheduled from the Start
 
-144 個元件，每個都有相位需要校正。如果沒有 Build-in Self-Test（BIST），每次校正都要外部儀器逐一掃，根本不可行。
+The final page of any LEO mission design document always has one sentence: "Must pass radiation hardening tests before being cleared for orbit."
 
-BIST 的原理：利用 TX/RX 共用架構，在校正模式下建立 TX→RX 的回授路徑。
+XT-144 uses COTS (Commercial Off-The-Shelf) components rather than radiation-hardened space-grade parts. This was a cost decision, but the trade-off is having to build the test methodology yourself.
 
-兩條回授路徑（Path A: TX(N)→RX(N)，Path B: TX(N)→RX(N-1)），各自取出相位常數 $k_1, k_2, k_3, k_4$，計算相鄰元件的相對相位差：
+### TID (Total Ionizing Dose) Testing
+
+Non-operational TID testing was performed at the INER (Institute of Nuclear Energy Research) cobalt-60 laboratory. Test subjects: Mixer and PLL.
+
+Results: both ICs showed performance degradation after accumulated dose within acceptable limits, confirming neither would become a single-point failure in the system. Quantifying TID requires Faraday Cup beam current calibration, with SCPI-automated power supply + BenchVue controlling measurements, to avoid manual operation errors.
+
+### SEE (Single Event Effects) Testing
+
+SEE falls into two categories:
+- **Soft errors** (recoverable): SEU (bit flips), SET (transient pulses), SEFI (functional interruptions)
+- **Hard errors** (unrecoverable): SEL (latch-up), SEB (burnout), SEGR (gate rupture)
+
+COTS components typically begin degrading noticeably above ~25 krad TID. A LEO mission accumulates roughly 1–5 krad per year (depending on altitude and shielding); a 5–10 year mission RDM (Radiation Design Margin) must be at least 1.5×.
+
+### Thermal Testing
+
+Three levels: Constant Temperature Test (CTT), Thermal Cycling Test (TCT), and Thermal Shock Test (TST).
+
+XT-144's front-end module showed sharp performance degradation under **TST (thermal shock)** — the rate of temperature change, not absolute temperature, is the root cause. TCT results met NSPO mission requirements. The lesson: the orbital thermal environment cycles rapidly between sunlit and eclipse faces; designing for thermal shock cannot stop at TCT alone.
+
+---
+
+## Decision 6: BIST Must Be Planned from Day One
+
+144 elements, each with a phase to calibrate. Without Build-in Self-Test (BIST), every calibration requires an external instrument to sweep through them one by one — that is completely impractical.
+
+BIST principle: leverage the shared TX/RX architecture to establish a TX→RX feedback path in calibration mode.
+
+Two feedback paths (Path A: TX(N)→RX(N), Path B: TX(N)→RX(N-1)) each yield phase constants $k_1, k_2, k_3, k_4$; the relative phase difference between adjacent elements is:
 
 $$\phi_{21} = 2 \times \tan^{-1}\!\left(\frac{k_4 - k_2}{k_3 + k_1}\right)$$
 
-這個方法可以逐步擴展到 N 個元件，全陣列相位自動校正不需要外部量測設備。
+This method scales incrementally to N elements, enabling automatic full-array phase calibration without any external measurement equipment.
 
-注意：BIST 回授路徑的功率比 TX 輸出高很多，設計上要在回授路徑加衰減器（attenuator）保護 LNA，同時確認 SPST 開關在正常工作模式下隔離回授路徑，避免 TX 信號損壞接收端。
+Note: the feedback path power is much higher than the TX output. By design, insert an attenuator in the feedback path to protect the LNA, and confirm that the SPST switch properly isolates the feedback path during normal operation to prevent TX signals from damaging the receive chain.
 
 ---
 
-## 幾個帶走點
+## Key Takeaways
 
-這套系統從架構到量測，最大的教訓不是技術細節，而是**每個決定都要考慮後面幾步**。
+Looking back from architecture to measurement, the biggest lesson from this system is not any single technical detail — it is that **every decision must account for the next several steps**.
 
-選 Zero-IF 省了 DAC 速率，但換來 LO 洩漏和 IQ 不對稱的校正工作。選混合架構省了功耗，但每個 PA 都需要 DPD。選 COTS 元件省了成本，但輻射測試的工作量一點都不少——甚至更多，因為要自己建立測試方法論。
+Choosing Zero-IF saved DAC sample rate but created LO leakage and IQ imbalance calibration work. Choosing hybrid architecture saved power but meant every PA needs DPD. Choosing COTS components saved cost, but the radiation testing workload is anything but small — in fact it is larger, because you have to build the test methodology from scratch.
 
-相位陣列系統設計的挑戰不是任何一個技術太難，而是所有層次都要同時顧到，而且彼此之間的取捨並不獨立。
+The challenge of phased array system design is not that any single technology is too difficult. It is that every layer must be managed simultaneously, and the trade-offs between layers are not independent.
 
-如果你在設計類似的系統，歡迎在留言討論——尤其是 LEO 的輻射測試和 BIST 架構，每個系統的邊界條件差很多，細節往往才是關鍵。
+If you are designing a similar system, feel free to discuss in the comments — especially for LEO radiation testing and BIST architecture, where the boundary conditions vary considerably between systems and the details are often what matters most.

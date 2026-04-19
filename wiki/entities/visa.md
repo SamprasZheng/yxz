@@ -5,66 +5,66 @@ tags: [visa, payments, card-network, agentic-commerce, tap, intelligent-commerce
 
 # Visa
 
-## 基本資料
+## Basic Information
 
-- **類型**：全球支付網路（NYSE: V）
-- **創立**：1958 年（Bank of America 前身 BankAmericard）
-- **總部**：美國加州 San Francisco
-- **核心業務**：全球卡支付清算網路；數位支付；跨境結算
+- **Type**: Global payment network (NYSE: V)
+- **Founded**: 1958 (predecessor: BankAmericard, Bank of America)
+- **Headquarters**: San Francisco, California, USA
+- **Core business**: Global card payment clearing network; digital payments; cross-border settlement
 
-## Agentic Payments 策略：Visa Intelligent Commerce
+## Agentic Payments Strategy: Visa Intelligent Commerce
 
 ### Visa Intelligent Commerce (VIC)
 
-**VIC** 是 Visa 在 2025 年啟動的 agentic commerce 全面計劃，目標是讓 AI agent 能安全地代表用戶完成購物交易。
+**VIC** is Visa's comprehensive agentic commerce initiative launched in 2025, with the goal of enabling AI agents to securely complete shopping transactions on behalf of users.
 
-**2026 年初現況**：
-- 100+ 生態合作夥伴
-- 30+ 合作方在 VIC 沙盒中積極開發
-- 20+ agent / agent enabler 直接與 VIC 整合
-- 已完成**數百筆**受控真實 agent 發起交易
-- 預測：2026 假日購物季前，**數百萬消費者**將使用 AI agent 完成購物
+**Status as of early 2026**:
+- 100+ ecosystem partners
+- 30+ partners actively developing in the VIC sandbox
+- 20+ agents / agent enablers directly integrated with VIC
+- **Hundreds** of controlled real agent-initiated transactions completed
+- Forecast: before the 2026 holiday shopping season, **millions of consumers** will use AI agents to complete purchases
 
 ### Trusted Agent Protocol (TAP)
 
-**TAP** 是 VIC 的核心安全框架，於 **2025-10-14** 正式發布，與 **Cloudflare** 共同開發。
+**TAP** is the core security framework of VIC, officially released on **2025-10-14**, co-developed with **Cloudflare**.
 
-**功能**：讓 AI agent 在與 merchant 進行交易每一步時，都能安全傳遞意圖、用戶身份識別及支付資訊。
+**Function**: Enables AI agents to securely convey intent, user identity, and payment information at each step of a transaction with a merchant.
 
-**技術規格**：
+**Technical specifications**:
 
-| 元素 | 說明 |
+| Element | Description |
 |---|---|
-| **Agent Intent** | AI agent 是受信任 agent、意圖取得或購買特定商品的聲明 |
-| **Consumer Recognition** | 消費者是否有現有帳號或曾與 merchant 互動 |
-| **Payment Information** | 支援 merchant 偏好結帳方式的支付資料 |
-| **Message Signature** | 依 **RFC 9421** 標準的 HTTP 訊息簽名 |
-| **重放攻擊防護** | 請求包含 timestamp（created/expires）+ nonce；server 可拒絕過期或重複簽名 |
+| **Agent Intent** | Declaration that the AI agent is a trusted agent intending to acquire or purchase specific goods |
+| **Consumer Recognition** | Whether the consumer has an existing account or has previously interacted with the merchant |
+| **Payment Information** | Payment data supporting the merchant's preferred checkout method |
+| **Message Signature** | HTTP message signature per **RFC 9421** standard |
+| **Replay Attack Protection** | Requests include timestamp (created/expires) + nonce; server can reject expired or duplicate signatures |
 
-TAP 規格已公開於 **Visa Developer Center** 及 GitHub。
+TAP specifications are published at the **Visa Developer Center** and on GitHub.
 
-### x402 整合
+### x402 Integration
 
-Visa 通過 TAP 為 x402 添加了卡支付支援，使 x402 生態可接受 Visa 卡網路作為結算選項（透過 Visa 的受信任 agent 卡支付機制）。
+Visa added card payment support to x402 via TAP, enabling the x402 ecosystem to accept the Visa card network as a settlement option (through Visa's trusted agent card payment mechanism).
 
-### Stripe 合作
+### Stripe Partnership
 
-Visa 支援 Stripe + Tempo 的 Machine Payments Protocol (MPP)，透過卡網路為受信任的 agent 自主支付提供基礎設施支撐。
+Visa supports Stripe + Tempo's Machine Payments Protocol (MPP), providing card network infrastructure backing for trusted autonomous agent payments.
 
-## 與 Mastercard 對比
+## Comparison with Mastercard
 
-| 面向 | Visa (TAP / VIC) | Mastercard (Agent Pay) |
+| Dimension | Visa (TAP / VIC) | Mastercard (Agent Pay) |
 |---|---|---|
-| 發布時間 | 2025-10（TAP）| 2025-04（Agent Pay）|
-| 信任機制 | RFC 9421 HTTP 簽名 | SD-JWT Verifiable Intent |
-| Token 管理 | VIC 框架內 | Agentic Token（per-agent 發行）|
-| 開放標準 | RFC 9421 | FIDO / EMVCo / W3C / IETF |
-| 合作開發方 | Cloudflare | Google |
+| Launch date | 2025-10 (TAP) | 2025-04 (Agent Pay) |
+| Trust mechanism | RFC 9421 HTTP signing | SD-JWT Verifiable Intent |
+| Token management | Within VIC framework | Agentic Token (per-agent issuance) |
+| Open standards | RFC 9421 | FIDO / EMVCo / W3C / IETF |
+| Co-development partner | Cloudflare | Google |
 
-## 相關頁面
+## Related Pages
 
-- [[concepts/agentic-payment-protocols]] — 五大協議全景比較（含 Visa 定位）
-- [[concepts/agentic-payments]] — AI agent 自主支付框架
-- [[entities/mastercard]] — 競爭對手的 Agent Pay 策略
-- [[entities/stripe]] — MPP 合作方（Visa 支援 MPP）
-- [[concepts/x402-protocol]] — x402 生態中 Visa 提供卡支付層
+- [[concepts/agentic-payment-protocols]] — Full comparison of five major protocols (including Visa's position)
+- [[concepts/agentic-payments]] — AI agent autonomous payment framework
+- [[entities/mastercard]] — Competitor's Agent Pay strategy
+- [[entities/stripe]] — MPP partner (Visa supports MPP)
+- [[concepts/x402-protocol]] — Visa provides the card payment layer in the x402 ecosystem

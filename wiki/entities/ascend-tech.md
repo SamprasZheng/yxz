@@ -3,30 +3,30 @@ type: entity
 tags: [taiwan, rf-hardware, satellite, leo, filter]
 ---
 
-# 昇達科技（Ascend Tech，股票代號 3491）
+# Ascend Tech (昇達科技, Stock: 3491)
 
-## 基本資料
+## Basic Information
 
-- 台灣上市公司（3491）
-- 主要產品：濾波器（Filter）、波導管（Waveguide）、衛星通訊元件
+- Taiwan-listed company (3491)
+- Main products: filters, waveguides, satellite communication components
 
-## LEO 衛星定位
+## LEO Satellite Positioning
 
-已成功打入 **Starlink** 與 **Amazon Kuiper** 供應鏈，是台灣 LEO 上游元件廠中毛利率最高的標的之一。
+Has successfully entered the **Starlink** and **Amazon Kuiper** supply chains; one of the Taiwan LEO upstream component manufacturers with the highest gross margin.
 
-| 財務指標 | 數值 |
+| Financial Metric | Value |
 |---------|------|
-| 毛利率 | **>50%**（顯著高於 PCB 廠） |
-| 客戶 | Starlink、Amazon Kuiper（已確認） |
+| Gross margin | **>50%** (significantly higher than PCB manufacturers) |
+| Customers | Starlink, Amazon Kuiper (confirmed) |
 
-## 競爭優勢
+## Competitive Advantages
 
-衛星濾波器與波導管屬於高精密機械加工 + RF 設計整合的領域，進入門檻高，且衛星級別的認證週期長，使供應商黏性極強。
+Satellite filters and waveguides require high-precision machining integrated with RF design — high barriers to entry, combined with long satellite-grade certification cycles, create extremely strong supplier stickiness.
 
-## 台灣 LEO 供應鏈位置
+## Taiwan LEO Supply Chain Position
 
-見 [[concepts/leo-value-chain]] 上游 RF 環節。
+See [[concepts/leo-value-chain]] upstream RF segment.
 
-## 相關來源
+## Related Sources
 
 - [[sources/leo-space-datacenter-analysis-2025]]

@@ -3,63 +3,63 @@ type: concept
 tags: [rf-hardware, space, radiation, semiconductor, testing, mil-std]
 ---
 
-# TID — 總電離劑量效應（Total Ionizing Dose）
+# TID — Total Ionizing Dose
 
-太空輻射對半導體造成的**累積型損傷**，是衛星元件可靠性的基礎認證項目之一。與 [[concepts/see-single-event-effects]]（瞬態型）並列為太空輻射兩大主要威脅。
+**Cumulative damage** caused by space radiation to semiconductors; one of the fundamental qualification items for satellite component reliability. Alongside [[concepts/see-single-event-effects]] (transient type), TID represents one of the two major space radiation threats.
 
-## 損傷機制
+## Damage Mechanism
 
-高能光子或帶電粒子穿過元件的 **SiO₂ 氧化層**，產生電子-電洞對。電子移動速度快可逸出，但**電洞移動慢**，容易被氧化層中的缺陷位點捕獲，形成固定正電荷。
+High-energy photons or charged particles passing through the **SiO₂ oxide layer** of a device generate electron-hole pairs. Electrons move quickly and can escape, but **holes move slowly** and are easily trapped by defect sites in the oxide layer, forming fixed positive charges.
 
-長期累積效應：
-- **MOSFET**：閾值電壓（Vth）漂移（N-MOS 負向、P-MOS 正向）
-- **類比/線性電路**：增益下降、偏置電流漂移
-- **雙極元件**：放大倍數（hFE）退化；有 ELDR 特殊效應（見下）
-- **介面態生成**：氧化層-矽介面產生缺陷 → 遷移率下降、1/f 雜訊增大
+Long-term cumulative effects:
+- **MOSFET**: threshold voltage (Vth) shift (negative in N-MOS, positive in P-MOS)
+- **Analog/linear circuits**: gain reduction, bias current drift
+- **Bipolar devices**: current gain (hFE) degradation; special ELDR effect (see below)
+- **Interface state generation**: defects at the oxide-silicon interface → reduced carrier mobility, increased 1/f noise
 
-## 劑量單位
+## Dose Units
 
-- **rad(Si)**：矽材料中的吸收劑量，1 rad = 0.01 J/kg
-- **krad(Si)**：常用工程單位；典型 LEO 任務壽命劑量：20–100 krad(Si)（視高度、傾角、屏蔽厚度）
+- **rad(Si)**: absorbed dose in silicon material, 1 rad = 0.01 J/kg
+- **krad(Si)**: common engineering unit; typical LEO mission lifetime dose: 20–100 krad(Si) (depending on altitude, inclination, and shielding thickness)
 
-## 標準測試方法：Co-60 γ 源（MIL-STD-883 TM1019）
+## Standard Test Method: Co-60 γ Source (MIL-STD-883 TM1019)
 
-| 參數 | 規格 |
+| Parameter | Specification |
 |---|---|
-| 輻射源 | Co-60；γ ray 能量 1.172 / 1.332 MeV |
-| 半衰期 | 5.3 年（需定期活度校正） |
-| 優勢 | γ 射線穿透力強，均勻照射整個元件；樣品夾具材料幾乎不影響輻射場 |
-| 劑量率（HDR） | 最大 ~150 rad(Si)/s |
-| 量測不確定度 | ≤3% |
-| 適用標準 | MIL-STD-883 TM1019、MIL-STD-750 TM1019 |
+| Radiation source | Co-60; γ-ray energies 1.172 / 1.332 MeV |
+| Half-life | 5.3 years (requires periodic activity calibration) |
+| Advantages | γ-rays have strong penetration, uniformly irradiating the entire device; fixture material has minimal effect on the radiation field |
+| Dose rate (HDR) | Max ~150 rad(Si)/s |
+| Measurement uncertainty | ≤3% |
+| Applicable standards | MIL-STD-883 TM1019, MIL-STD-750 TM1019 |
 
-## ELDR 效應（Enhanced Low Dose Rate Sensitivity）
+## ELDR Effect (Enhanced Low Dose Rate Sensitivity)
 
-雙極（Bipolar）線性電路的特殊陷阱：
+A special trap for bipolar linear circuits:
 
-> 在**低劑量率（ELDR）**條件下，雙極元件的 TID 劣化程度可能**比高劑量率更嚴重**。
+> Under **low dose rate (ELDR)** conditions, TID degradation of bipolar devices can be **more severe than at high dose rates**.
 
-原因：低劑量率下有更多時間讓氧化層電洞擴散至 Si/SiO₂ 介面並被捕獲，造成更多介面態。
+Cause: at low dose rates, more time is available for oxide holes to diffuse to the Si/SiO₂ interface and be trapped, creating more interface states.
 
-**測試含義**：不能只做加速的高劑量率（HDR）測試，必須進行任務等效劑量率（通常 0.01–10 mrad(Si)/s）的 ELDR 測試。對太空任務的線性 IC、運算放大器、比較器至關重要。
+**Testing implication**: Testing only at accelerated high dose rates (HDR) is insufficient; mission-equivalent dose rate (typically 0.01–10 mrad(Si)/s) ELDR testing must be performed. This is critical for linear ICs, op-amps, and comparators in space missions.
 
-## 輻射設計裕度（RDM）
+## Radiation Design Margin (RDM)
 
-見 [[concepts/rha-radiation-hardening]]
+See [[concepts/rha-radiation-hardening]]
 
-## 與 SEE 的差異
+## Differences from SEE
 
 | | TID | SEE |
 |---|---|---|
-| 損傷類型 | 累積 | 瞬間 |
-| 觸發粒子 | 任何游離輻射（劑量積分） | 單一高能粒子 |
-| 可恢復性 | 不可逆（累積） | 部分可恢復（SEU/SEFI）；部分不可逆（SEL/SEGR） |
-| 主要測試源 | Co-60 γ | 重離子加速器、質子加速器 |
+| Damage type | Cumulative | Instantaneous |
+| Triggering particles | Any ionizing radiation (dose integral) | Single high-energy particle |
+| Recoverability | Irreversible (cumulative) | Partially recoverable (SEU/SEFI); partially irreversible (SEL/SEGR) |
+| Primary test source | Co-60 γ | Heavy-ion accelerator, proton accelerator |
 
-## 相關
+## Related
 
 - [[concepts/see-single-event-effects]]
 - [[concepts/rha-radiation-hardening]]
 - [[sources/space-radiation-tid-see-2025]]
-- [[concepts/leo-value-chain]] — TID 認證是進入星座供應鏈的門檻
-- [[concepts/solar-cycle-25-leo-radiation]] — SC25 峰值（2024–2026）使 LEO 任務 TID 劑量超出歷史模型基準，應提高 RDM 安全裕度
+- [[concepts/leo-value-chain]] — TID qualification is the threshold for entering constellation supply chains
+- [[concepts/solar-cycle-25-leo-radiation]] — SC25 peak (2024–2026) drives LEO mission TID doses beyond historical model baselines; RDM safety margins should be increased

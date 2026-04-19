@@ -3,95 +3,95 @@ type: concept
 tags: [rf-hardware, space, radiation, semiconductor, testing, sram, fpga, mosfet]
 ---
 
-# SEE — 單粒子效應（Single Event Effects）
+# SEE — Single Event Effects
 
-單一高能粒子穿過半導體敏感體積，沿途產生的游離電荷被節點收集，若超過**臨界電荷（Qcrit）**，觸發邏輯翻轉或破壞性失效。與 [[concepts/tid-total-ionizing-dose]]（累積型）並列為太空輻射兩大主要威脅。
+A single high-energy particle passing through the sensitive volume of a semiconductor deposits ionized charge along its track; if the collected charge exceeds the **critical charge (Qcrit)**, it triggers a logic upset or destructive failure. Alongside [[concepts/tid-total-ionizing-dose]] (cumulative type), SEE represents one of the two major space radiation threats.
 
-## 觸發機制
-
-```
-高能粒子（重離子 / 質子核反應產物）
-    → 穿越敏感體積（active volume）
-    → 游離電荷沿粒子徑跡沉積
-    → 電場收集電荷
-    → 若收集電荷 ≥ Qcrit → 觸發 SEE
-```
-
-**Qcrit（臨界電荷）**：電路節點翻轉所需最小電荷，隨製程節點縮小而降低 → 先進製程對 SEE 更敏感。
-
-## 分類
-
-### 軟錯誤（Soft Errors）— 可恢復
-
-**SEU（Single Event Upset，單粒子翻轉）**
-- 記憶體中的位元被翻轉（0→1 或 1→0）
-- SRAM 快取最脆弱：尺寸小、Qcrit 低、高密度佈局
-- 可透過 ECC（Error Correcting Code）糾正或資料重讀恢復
-- **現實案例（2025-10-30）**：JetBlue 空巴客機飛行中突然下墜，Airbus 調查確認為太陽輻射/宇宙射線造成位元翻轉，飛控系統誤動作。說明 SEU 不只是太空問題，高空航空也面臨此威脅。
-
-**SET（Single Event Transient，單粒子瞬態）**
-- 粒子在類比電路或時序電路中產生短暫電壓脈衝
-- 若脈衝被後級電路捕獲可造成錯誤輸出
-- 深次微米 CMOS 高速邏輯的威脅日益增大（電路速度越快，越容易捕獲短暫脈衝）
-
-**SEFI（Single Event Functional Interrupt，單粒子功能中斷）**
-- 粒子擊中 FPGA 配置記憶體或控制器狀態暫存器 → 整個功能狀態異常
-- 需電源重置（power cycling）才能恢復，無法靠 ECC 修正
-- 對 FPGA 密集型衛星系統影響重大
-
-### 硬錯誤（Hard Errors）— 破壞性，不可恢復
-
-**SEL（Single Event Latchup，單粒子閂鎖）**
-- CMOS 元件中的**寄生 PNPN（SCR）結構**被粒子觸發，形成低阻抗短路路徑
-- 電流急增（可達數十 mA → A 量級），若不立即切斷電源會燒毀元件
-- **測試原則：SEL 測試應先於 SEU 測試**——若發現閂鎖，元件根本不適用，可節省大量後續測試成本
-- 緩解：電流限制電路、FPGA scrubbing、電源切換機制
-
-**SEB（Single Event Burnout，單粒子燒毀）**
-- 功率 MOSFET 在粒子打擊後進入二次崩潰（avalanche breakdown）
-- 不可逆損毀；對功率管理 IC 和驅動電路威脅尤大
-
-**SEGR（Single Event Gate Rupture，單粒子柵極破裂）**
-- 閘極氧化層被粒子觸發的局部電場擊穿
-- 永久失效；高電壓應用場景風險更高
-
-## 測試方法
-
-### 重離子加速器（首選）
-- 直接游離，LET 高，能完整揭示 SEU / SEL / SEFI 脆弱性
-- **LBNL BASE（Berkeley Accelerator Space Effects）**：1979 年全球首次 SEE 重離子測試場地；提供質子到鉍全系列；LET > 99 MeV·cm²/mg
-- 其他主要設施：TRIUMF（加拿大）、GANIL（法國）、GSI（德國）
-
-### 質子加速器（補充）
-- 質子 LET 太低，無法直接造成 SEU/SEL
-- 透過**核反應（核彈性散射）**與元件內高原子序材料（Au、W、Cu）產生高 LET 次生離子，間接觸發 SEE
-- 適合驗證軌道質子環境（范艾倫內帶）下的可靠性
-
-### 核心量測參數：截面（Cross Section）
+## Triggering Mechanism
 
 ```
-截面（cm²） = 翻轉事件數 / 粒子通量（粒子/cm²）
+High-energy particle (heavy ion / proton nuclear reaction product)
+    → Traverses sensitive volume (active volume)
+    → Ionized charge deposited along particle track
+    → Electric field collects charge
+    → If collected charge ≥ Qcrit → triggers SEE
 ```
 
-**SEU 速率計算流程**：
-1. 量測截面 σ 對 LET 的曲線（Weibull fit）
-2. 確定元件敏感體積（Sensitive Volume）
-3. 與任務軌道 LET 頻譜積分 → 得到在軌 SEU 率（events/device/day）
+**Qcrit (Critical Charge)**: Minimum charge required to flip a circuit node; decreases as process node shrinks → advanced processes are more sensitive to SEE.
 
-## 與 TID 差異
+## Classification
+
+### Soft Errors (Soft Errors) — Recoverable
+
+**SEU (Single Event Upset)**
+- A bit in memory is flipped (0→1 or 1→0)
+- SRAM cache is most vulnerable: small size, low Qcrit, high-density layout
+- Recoverable via ECC (Error Correcting Code) correction or data re-read
+- **Real-world case (2025-10-30)**: A JetBlue Airbus aircraft suddenly pitched during flight; Airbus investigation confirmed a bit flip caused by solar radiation/cosmic rays, leading to flight control system malfunction. This demonstrates SEU is not just a space issue — high-altitude aviation also faces this threat.
+
+**SET (Single Event Transient)**
+- A particle generates a brief voltage pulse in analog or sequential circuits
+- If the pulse is captured by downstream circuits, it can cause erroneous output
+- Growing threat in deep-submicron CMOS high-speed logic (faster circuits are more likely to capture brief transient pulses)
+
+**SEFI (Single Event Functional Interrupt)**
+- A particle strikes FPGA configuration memory or controller state registers → entire functional state becomes abnormal
+- Requires power cycling to recover; cannot be corrected by ECC
+- Significant impact on FPGA-intensive satellite systems
+
+### Hard Errors (Hard Errors) — Destructive, Unrecoverable
+
+**SEL (Single Event Latchup)**
+- The **parasitic PNPN (SCR) structure** in CMOS devices is triggered by a particle, forming a low-impedance short-circuit path
+- Current surges dramatically (can reach tens of mA → ampere level); if power is not immediately cut, the device is destroyed
+- **Testing principle: SEL testing should precede SEU testing** — if latchup is discovered, the device is fundamentally unsuitable, saving significant subsequent testing costs
+- Mitigation: current limiting circuits, FPGA scrubbing, power switching mechanisms
+
+**SEB (Single Event Burnout)**
+- Power MOSFETs enter secondary breakdown (avalanche breakdown) after particle strike
+- Irreversible damage; particularly threatening to power management ICs and driver circuits
+
+**SEGR (Single Event Gate Rupture)**
+- Gate oxide is broken down by a localized electric field triggered by a particle
+- Permanent failure; higher risk in high-voltage applications
+
+## Testing Methods
+
+### Heavy-Ion Accelerator (Preferred)
+- Direct ionization, high LET, capable of fully revealing SEU / SEL / SEFI vulnerabilities
+- **LBNL BASE (Berkeley Accelerator Space Effects)**: World's first SEE heavy-ion test facility in 1979; provides full range from proton to bismuth; LET > 99 MeV·cm²/mg
+- Other major facilities: TRIUMF (Canada), GANIL (France), GSI (Germany)
+
+### Proton Accelerator (Supplementary)
+- Proton LET is too low to directly cause SEU/SEL
+- Through **nuclear reactions (nuclear elastic scattering)** with high atomic number materials (Au, W, Cu) in the device, generates high-LET secondary ions that indirectly trigger SEE
+- Suitable for verifying reliability under orbital proton environment (Van Allen inner belt)
+
+### Core Measurement Parameter: Cross Section
+
+```
+Cross section (cm²) = number of upset events / particle fluence (particles/cm²)
+```
+
+**SEU rate calculation workflow**:
+1. Measure cross section σ vs. LET curve (Weibull fit)
+2. Determine device sensitive volume
+3. Integrate with mission orbital LET spectrum → obtain on-orbit SEU rate (events/device/day)
+
+## Differences from TID
 
 | | SEE | TID |
 |---|---|---|
-| 損傷特性 | 瞬間、單粒子觸發 | 累積、劑量積分 |
-| 關鍵參數 | LET、截面、Qcrit | 總劑量（krad）、劑量率 |
-| 測試工具 | 重離子/質子加速器 | Co-60 γ 源 |
-| 主要受害元件 | SRAM、FPGA、功率 MOSFET | MOS 所有元件、雙極線性 IC |
+| Damage characteristics | Instantaneous, single-particle triggered | Cumulative, dose integral |
+| Key parameters | LET, cross section, Qcrit | Total dose (krad), dose rate |
+| Test tools | Heavy-ion/proton accelerator | Co-60 γ source |
+| Primary affected devices | SRAM, FPGA, power MOSFET | All MOS devices, bipolar linear ICs |
 
-## 相關
+## Related
 
 - [[concepts/tid-total-ionizing-dose]]
 - [[concepts/rha-radiation-hardening]]
 - [[sources/space-radiation-tid-see-2025]]
-- [[concepts/orbital-data-center]] — COTS GPU 的 SEU/SEL 風險是 ODC 最大工程挑戰
-- [[concepts/cots-gpu-radiation-risk]] — H100/Orin 具體測試數據與在軌緩解策略
-- [[concepts/solar-cycle-25-leo-radiation]] — SC25 峰值（2024–2026）使 SEU/SEL 事件率增高
+- [[concepts/orbital-data-center]] — SEU/SEL risk of COTS GPUs is the biggest engineering challenge for ODC
+- [[concepts/cots-gpu-radiation-risk]] — H100/Orin specific test data and on-orbit mitigation strategies
+- [[concepts/solar-cycle-25-leo-radiation]] — SC25 peak (2024–2026) increases SEU/SEL event rates

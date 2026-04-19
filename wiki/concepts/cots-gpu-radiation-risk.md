@@ -3,93 +3,93 @@ type: concept
 tags: [space, radiation, cots, gpu, leo, see, tid, ai, orbital-data-center]
 ---
 
-# COTS GPU 在軌輻射風險（COTS GPU Radiation Risk in LEO）
+# COTS GPU Radiation Risk in LEO
 
-現代 AI GPU（NVIDIA H100、Jetson AGX Orin 等）以 COTS 形式部署至 LEO，面臨兩類主要輻射威脅：TID 累積損傷和 SEE 單粒子效應。本頁匯整 2025 年已知測試數據和工程緩解策略。
+Modern AI GPUs (NVIDIA H100, Jetson AGX Orin, etc.) deployed to LEO as COTS components face two primary radiation threats: cumulative TID damage and SEE single event effects. This page consolidates 2025 known test data and engineering mitigation strategies.
 
-## 風險概況：為何 GPU 特別脆弱
+## Risk Overview: Why GPUs Are Particularly Vulnerable
 
-| 特性 | 輻射影響 |
+| Characteristic | Radiation Impact |
 |---|---|
-| **先進製程節點（4–7nm）** | Qcrit 極低，SEU 截面增大；TID 閾值漂移更敏感 |
-| **高密度 SRAM 快取** | L1/L2 快取是 SEU 最脆弱節點 |
-| **HBM 記憶體（HBM2e/HBM3）** | DRAM 本身無內建 ECC，需依賴控制器 ECC |
-| **無 SEL 保護（COTS）** | 不含 SEL guard ring；功率狀態下閂鎖即損毀 |
-| **高功耗（300–700W）** | 帶電粒子激活導致 SEB 風險更高 |
+| **Advanced process node (4–7nm)** | Very low Qcrit, increased SEU cross section; more sensitive to TID threshold shift |
+| **High-density SRAM cache** | L1/L2 cache is the most vulnerable SEU node |
+| **HBM memory (HBM2e/HBM3)** | DRAM itself has no built-in ECC; relies on controller ECC |
+| **No SEL protection (COTS)** | Does not include SEL guard rings; latchup under power causes destruction |
+| **High power consumption (300–700W)** | Higher SEB risk from charged particle activation |
 
-## NVIDIA H100（HBM3）輻射特性
+## NVIDIA H100 (HBM3) Radiation Characteristics
 
-**ECC 保護（軟體層面）**：
-- 架構：SEC-DED（單位元錯誤糾正、雙位元錯誤偵測）
-- 覆蓋範圍：HBM3 記憶體、L2 快取、L1 快取與暫存器檔案、內部資料路徑
-- 功能：可即時偵測並糾正單位元翻轉（SEU）
+**ECC protection (software level)**:
+- Architecture: SEC-DED (Single Error Correction, Double Error Detection)
+- Coverage: HBM3 memory, L2 cache, L1 cache and register files, internal data paths
+- Function: can detect and correct single-bit upsets (SEU) in real time
 
-**致命弱點（無保護）**：
-- **TID（總電離劑量）**：無硬化，4nm 製程氧化層薄，但氧化層越薄反而 TID 耐受性相對較佳（此點與直覺相反）
-- **SEL（單粒子閂鎖）**：無保護，COTS CMOS 含寄生 PNPN 結構
-- **SEGR（閘極破裂）**：無保護
+**Critical weaknesses (unprotected)**:
+- **TID (Total Ionizing Dose)**: no hardening; 4nm process has thin oxide layers, but thinner oxide layers actually have relatively better TID tolerance (counterintuitive)
+- **SEL (Single Event Latchup)**: no protection; COTS CMOS contains parasitic PNPN structures
+- **SEGR (Gate Rupture)**: no protection
 
-> **2025 年分析結論**（New Space Economy）：H100 的 ECC 是針對地面低階輻射設計，不足以對抗太空輻射強度下的硬性 SEE（SEL/SEGR）事件。在無外部 SEL 偵測切斷機制下，H100 不適合直接暴露於 LEO 輻射環境。
+> **2025 analysis conclusion** (New Space Economy): H100's ECC is designed for ground-level low-intensity radiation and is insufficient to withstand hard SEE (SEL/SEGR) events under space radiation intensity. Without an external SEL detection cutoff mechanism, H100 is not suitable for direct exposure to the LEO radiation environment.
 
-## Aitech S-A2300：NVIDIA Orin COTS AI 超算（2025 年測試數據）
+## Aitech S-A2300: NVIDIA Orin COTS AI Supercomputer (2025 Test Data)
 
-**系統架構**：
-- SoC：NVIDIA Jetson AGX Orin Industrial（12 核 ARM + 2048 CUDA + 64 Tensor Core）
-- 記憶體：64 GB LPDDR5 ECC RAM
-- AI 效能：248 TOPS
+**System architecture**:
+- SoC: NVIDIA Jetson AGX Orin Industrial (12-core ARM + 2048 CUDA + 64 Tensor Core)
+- Memory: 64 GB LPDDR5 ECC RAM
+- AI performance: 248 TOPS
 
-**TID 測試結果**（MIL-STD-883 TM1019，2025 年 5 月 6 日）：
+**TID test results** (MIL-STD-883 TM1019, May 6, 2025):
 
-| 測試條件 | 結果 |
+| Test Condition | Result |
 |---|---|
-| 輻射源 | Co-60 γ 射線，2815 rad/min（HDR） |
-| 累積劑量 | 0 → 10 krad(Si)（每 5 krad 遞增） |
-| 裸機（無屏蔽）結果 | 全功能通過（NVMe、eMMC、乙太網、UART/GPIO、FPGA、CPU/GPU 壓力測試） |
-| 帶鋁屏蔽（200–300 mil，5–7.5 mm）| 屏蔽使 TID 減半 → 等效壽命劑量 20 krad(Si)，符合典型 LEO 任務 |
-| 設備溫度 | ~33°C（22V DC 供電） |
+| Radiation source | Co-60 γ-ray, 2815 rad/min (HDR) |
+| Cumulative dose | 0 → 10 krad(Si) (increments of 5 krad) |
+| Bare board (no shielding) result | Full functionality pass (NVMe, eMMC, Ethernet, UART/GPIO, FPGA, CPU/GPU stress test) |
+| With aluminum shielding (200–300 mil, 5–7.5 mm) | Shielding halves TID → equivalent mission lifetime dose of 20 krad(Si), meeting typical LEO mission requirements |
+| Device temperature | ~33°C (powered at 22V DC) |
 
-**缺口**：S-A2300 測試報告**不含 SEE（SEU/SEL）測試數據**，TID-only 認證不足以支持高可靠性任務。質子 SEE 測試尚未公開發表。
+**Gap**: S-A2300 test report **does not include SEE (SEU/SEL) test data**; TID-only qualification is insufficient to support high-reliability missions. Proton SEE testing has not been publicly disclosed.
 
-## Starcloud 系列：H100 實際在軌（2025）
+## Starcloud Series: H100 On-Orbit (2025)
 
-**Starcloud V1（2025 年 11 月）**：全球首次 H100 GPU 送入 LEO 軌道測試。
+**Starcloud V1 (November 2025)**: World's first H100 GPU sent to LEO for orbital testing.
 
-**緩解策略（推測，未公開確認）**：
-- 外部 SEL 偵測電路（監控電流，觸發閂鎖即切電）
-- 氫富材料屏蔽（降低二次粒子通量）
-- 浸沒式冷卻液（有機氫化合物對宇宙射線次生粒子有額外衰減）
-- 軟體層 ECC + 應用層錯誤重試機制
-- 任務期較短（實驗性部署，非 5 年商業任務）
+**Mitigation strategies (inferred, not publicly confirmed)**:
+- External SEL detection circuit (monitors current; cuts power upon latchup detection)
+- Hydrogen-rich material shielding (reduces secondary particle flux)
+- Immersion cooling fluid (organic hydrogen compounds provide additional attenuation of cosmic ray secondary particles)
+- Software-layer ECC + application-layer error retry mechanism
+- Shorter mission duration (experimental deployment, not a 5-year commercial mission)
 
-> **資料缺口**：SpaceX / Starcloud 未公開在軌 SEU 率、實際 TID 劑量或 SEL 事件數量。此為 LEO AI 計算最重要的未知數。
+> **Data gap**: SpaceX / Starcloud has not publicly disclosed on-orbit SEU rate, actual TID dose, or number of SEL events. This is the most important unknown in LEO AI computing.
 
-## 軟錯誤率（SER）：地面 vs. 高空 vs. LEO
+## Soft Error Rate (SER): Ground vs. High Altitude vs. LEO
 
-| 環境 | 宇宙射線中子通量（相對值） | SER 倍增因子（相對地面）|
+| Environment | Cosmic ray neutron flux (relative) | SER multiplication factor (relative to ground) |
 |---|---|---|
-| 地面（海平面） | 1× | 1× |
-| 山頂（~1.6 km，Boulder CO） | ~3× | ~3× |
-| 航空（10 km 高空） | 100–300× | 100–300× |
-| LEO（550 km，中傾角） | GCR 仍存在；Van Allen 帶部分屏蔽 | 數百至數千倍（視傾角） |
+| Ground (sea level) | 1× | 1× |
+| Mountain (~1.6 km, Boulder CO) | ~3× | ~3× |
+| Aviation (10 km altitude) | 100–300× | 100–300× |
+| LEO (550 km, mid-inclination) | GCR still present; Van Allen belts provide partial shielding | Hundreds to thousands of times (depending on inclination) |
 
-> **關鍵補充**：在 LEO，大氣不再提供宇宙射線屏蔽，但地球磁場（磁截止剛度）仍提供保護，保護效果與傾角成反比——赤道傾角（Starlink 約 53°）比極軌（90°）暴露量低。
+> **Key note**: In LEO, the atmosphere no longer provides cosmic ray shielding, but Earth's magnetic field (magnetic rigidity cutoff) still offers protection inversely proportional to inclination angle — equatorial inclination (Starlink ~53°) has lower exposure than polar orbit (90°).
 
-## 商業緩解路徑比較
+## Commercial Mitigation Path Comparison
 
-| 方法 | 成本 | 保護 TID | 保護 SEU | 保護 SEL | 適用場景 |
+| Method | Cost | TID Protection | SEU Protection | SEL Protection | Applicable Scenario |
 |---|---|---|---|---|---|
-| 純 COTS（無任何緩解） | 最低 | ❌ | ❌ | ❌ | 短期實驗性任務 |
-| 鋁屏蔽（200–300 mil） | 低 | ✅（部分） | ❌ | ❌ | LEO <3 年，非關鍵應用 |
-| ECC + 軟體重試 | 低（軟體） | ❌ | ✅（軟） | ❌ | 低可靠性 AI 推論 |
-| SEL 偵測切電電路 | 中 | ❌ | ❌ | ✅ | 防止硬毀，必備 |
-| 完整系統級（屏蔽+ECC+SEL保護+scrubbing） | 中高 | ✅ | ✅ | ✅ | 3–5 年 LEO 商業任務 |
-| Rad-hard GPU（如 Aitech SP-A series） | 高 | ✅ | ✅ | ✅ | 政府/軍用/深空 |
+| Pure COTS (no mitigation) | Lowest | ❌ | ❌ | ❌ | Short-term experimental missions |
+| Aluminum shielding (200–300 mil) | Low | ✅ (partial) | ❌ | ❌ | LEO <3 years, non-critical applications |
+| ECC + software retry | Low (software) | ❌ | ✅ (soft) | ❌ | Low-reliability AI inference |
+| SEL detection power-cut circuit | Medium | ❌ | ❌ | ✅ | Prevents hard failure; essential |
+| Complete system-level (shielding+ECC+SEL protection+scrubbing) | Medium-high | ✅ | ✅ | ✅ | 3–5 year LEO commercial missions |
+| Rad-hard GPU (e.g., Aitech SP-A series) | High | ✅ | ✅ | ✅ | Government/military/deep space |
 
-## 相關
+## Related
 
-- [[concepts/see-single-event-effects]] — SEU/SEL 基礎機制
-- [[concepts/tid-total-ionizing-dose]] — TID 損傷機制
-- [[concepts/rha-radiation-hardening]] — RDM 要求與 COTS 上篩選
-- [[concepts/orbital-data-center]] — ODC 工程挑戰整體框架
-- [[concepts/solar-cycle-25-leo-radiation]] — SC25 峰值對 GPU 在軌風險的加乘
+- [[concepts/see-single-event-effects]] — SEU/SEL fundamental mechanisms
+- [[concepts/tid-total-ionizing-dose]] — TID damage mechanism
+- [[concepts/rha-radiation-hardening]] — RDM requirements and COTS upscreening
+- [[concepts/orbital-data-center]] — overall ODC engineering challenge framework
+- [[concepts/solar-cycle-25-leo-radiation]] — SC25 peak multiplier effect on GPU on-orbit risk
 - [[sources/space-radiation-tid-see-2025]]

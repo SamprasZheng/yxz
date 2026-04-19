@@ -1,16 +1,16 @@
 ---
 type: source
-title: "波卡解碼EP7: RegionX - 區塊鏈算力交易"
-author: "波卡鯊 Polkasharks"
+title: "Polkadot Decoded EP7: RegionX — Blockchain Computing Power Trading"
+author: "Polkasharks"
 date: "2024-10-07"
 ingested: "2026-04-19"
 tags: [polkadot, regionx, coretime, marketplace]
 url: "https://vocus.cc/article/6702913bfd897800017e29f5"
 ---
 
-# 波卡解碼EP7: RegionX - 區塊鏈算力交易
+# Polkadot Decoded EP7: RegionX — Blockchain Computing Power Trading
 
-**Author:** [[entities/polkasharks]] | **Date:** 2024-10-07 | **Series:** 波卡解碼
+**Author:** [[entities/polkasharks]] | **Date:** 2024-10-07 | **Series:** Polkadot Decoded
 
 ## Summary
 

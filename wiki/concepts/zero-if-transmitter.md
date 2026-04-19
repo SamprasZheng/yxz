@@ -3,61 +3,61 @@ type: concept
 tags: [rf, transmitter, architecture, zero-if, phased-array, xband, leo]
 ---
 
-# Zero-IF 傳送架構（直接轉換）
+# Zero-IF Transmitter Architecture (Direct Conversion)
 
-## 定義
+## Definition
 
-Zero-IF（直接轉換）架構直接將基頻 I/Q 信號上轉換至 RF 頻率，不經中間 IF 級。本振（LO）頻率等於目標 RF 頻率，因此基頻信號位於 DC（零頻）。
+The Zero-IF (direct conversion) architecture directly up-converts the baseband I/Q signal to the RF frequency without an intermediate IF stage. The local oscillator (LO) frequency equals the target RF frequency, so the baseband signal sits at DC (zero frequency).
 
-## 四種傳送架構比較
+## Comparison of Four Transmitter Architectures
 
-| 架構 | DAC 取樣率 | 濾波器需求 | 主要問題 |
+| Architecture | DAC Sample Rate | Filter Requirements | Primary Issues |
 |---|---|---|---|
-| Real IF | 中 | 雙帶通濾波 | 鏡像頻率難分離（IF 低時） |
-| Complex IF | 中 | 一道帶通濾波 | I/Q 不對稱 → −30 dB 鏡像 |
-| **Zero-IF** | **最低** | **僅低通（DAC 後）** | **LO 洩漏 + IQ 不對稱** |
-| Direct RF | 最高 | 低通 | 需超高速 DAC |
+| Real IF | Medium | Dual bandpass filtering | Image frequency difficult to separate (when IF is low) |
+| Complex IF | Medium | Single bandpass filter | I/Q asymmetry → −30 dB image |
+| **Zero-IF** | **Lowest** | **Low-pass only (after DAC)** | **LO leakage + IQ imbalance** |
+| Direct RF | Highest | Low-pass | Requires ultra-high-speed DAC |
 
-Zero-IF 的吸引力在於 DAC 取樣率最低，對 GHz 級 RF 系統而言這直接降低功耗與成本。
+The appeal of Zero-IF lies in its lowest DAC sample rate requirement, which directly reduces power consumption and cost for GHz-range RF systems.
 
-## 核心挑戰
+## Core Challenges
 
-### 1. LO 洩漏（LO Feedthrough / LO Leakage）
-- 成因：LO 信號耦合至輸出端（直流偏移 + 電路洩漏）
-- 影響：在 RF 中心頻率產生載波干擾，嚴重時 IQ Offset 達 −10 dB，淹沒調變信號
-- 校正：DAC 直流偏置碼掃描 → 見 [[concepts/evm-calibration]]
+### 1. LO Leakage (LO Feedthrough / LO Leakage)
+- Cause: LO signal coupling to the output (DC offset + circuit leakage)
+- Impact: Carrier interference at the RF center frequency; severe cases result in IQ Offset reaching −10 dB, overwhelming the modulated signal
+- Correction: DAC DC bias code scan → see [[concepts/evm-calibration]]
 
-### 2. IQ 不對稱（IQ Imbalance）
-- 成因：I/Q 雙路 DAC 增益差 $g$ + 調變器相位誤差 $\phi$（IF 路或 LO 路不完全 90°）
-- 影響：星座點旋轉/壓縮，EVM 上升
-- 校正：Pre-distortion 矩陣補償 → 見 [[concepts/evm-calibration]]
+### 2. IQ Imbalance
+- Cause: Gain difference $g$ + modulator phase error $\phi$ between I/Q dual-path DACs (IF or LO path not perfectly 90°)
+- Impact: Constellation point rotation/compression, increased EVM
+- Correction: Pre-distortion matrix compensation → see [[concepts/evm-calibration]]
 
-### 3. 低頻衰減問題
-- 成因：DAC 後的 DC block 電容 + 變壓器在低頻阻抗升高，導致低符號率信號能量損失
-- 影響：低符號率（如 12.5 Msps）EVM 明顯高於高符號率
-- 修正策略：
-  - 增大 DC block 電容（0.1 μF → 1 μF）
-  - 換用低頻響應更好的 transformer（1:1，低至 0.15 MHz）
-  - 基頻頻移（類 Complex IF）：將信號移離 DC，避開低頻響應差區
+### 3. Low-Frequency Attenuation Issue
+- Cause: DC-blocking capacitor + transformer after DAC exhibits increasing impedance at low frequencies, causing energy loss in low-symbol-rate signals
+- Impact: EVM at low symbol rates (e.g., 12.5 Msps) significantly higher than at high symbol rates
+- Correction strategies:
+  - Increase DC block capacitor (0.1 μF → 1 μF)
+  - Replace with transformer having better low-frequency response (1:1, down to 0.15 MHz)
+  - Baseband frequency shift (similar to Complex IF): shift signal away from DC to avoid poor low-frequency response region
 
-## DAC 量化雜訊與 SEM
+## DAC Quantization Noise and SEM
 
-Zero-IF 系統中 FPGA 直接輸出數位基頻，DAC bit 數決定量化雜訊底，影響頻譜發射遮罩（SEM）合規性：
+In a Zero-IF system where FPGA directly outputs digital baseband, DAC bit count determines the quantization noise floor and affects compliance with the Spectrum Emission Mask (SEM):
 
 $$\text{SQNR} = 1.76 + 6.02N + 20\log(\text{FSR}) + 10\log(F_{os}/F_s) \quad \text{(dB)}$$
 
-- $N$：DAC bits；$\text{FSR}$：操作滿量程比；$F_{os}/F_s$：過取樣率
-- 對 6-bit DAC 在 12.5 Msps QPSK（過取樣 64×）：SQNR ≈ 56 dB（計算/量測吻合）
-- Delta-sigma 雜訊整形可改善帶內 SQNR，但 6/7-bit 仍不足；需升至 10-bit 才穩定通過 SEM
+- $N$: DAC bits; $\text{FSR}$: operating full-scale ratio; $F_{os}/F_s$: oversampling ratio
+- For a 6-bit DAC at 12.5 Msps QPSK (64× oversampling): SQNR ≈ 56 dB (calculation/measurement agreement)
+- Delta-sigma noise shaping can improve in-band SQNR, but 6/7-bit is still insufficient; 10-bit is required for stable SEM compliance
 
-## 典型應用
+## Typical Applications
 
-- LEO 衛星 X-band 下行傳輸器（[[sources/hsieh-xband-leo-transmitter-2020]]）
-- 高資料率星間鏈路（需 800 Mbps+ 吞吐量）
+- LEO satellite X-band downlink transmitter ([[sources/hsieh-xband-leo-transmitter-2020]])
+- High-data-rate inter-satellite links (requiring 800 Mbps+ throughput)
 
-## 相關連結
+## Related Links
 
-- [[concepts/evm-calibration]] — LO 洩漏 + IQ 不對稱實務校正
-- [[concepts/aesa]] — Zero-IF 傳輸器通常嵌入 AESA 系統
-- [[concepts/dpd-digital-predistortion]] — PA 非線性補償（Zero-IF 系統的另一關鍵校正）
-- [[sources/hsieh-xband-leo-transmitter-2020]] — 實際 Zero-IF X-band 系統測量資料
+- [[concepts/evm-calibration]] — practical LO leakage + IQ imbalance correction
+- [[concepts/aesa]] — Zero-IF transmitters are typically embedded in AESA systems
+- [[concepts/dpd-digital-predistortion]] — PA nonlinearity compensation (another key correction in Zero-IF systems)
+- [[sources/hsieh-xband-leo-transmitter-2020]] — actual Zero-IF X-band system measurement data

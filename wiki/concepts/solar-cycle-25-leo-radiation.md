@@ -3,77 +3,77 @@ type: concept
 tags: [space, radiation, leo, solar-cycle, van-allen, environment]
 ---
 
-# 太陽週期 25 號與 LEO 輻射環境（Solar Cycle 25 × LEO）
+# Solar Cycle 25 and LEO Radiation Environment (Solar Cycle 25 × LEO)
 
-太陽活動週期直接影響 LEO 衛星的輻射暴露量。第 25 太陽週期（Solar Cycle 25，SC25）的強度遠超預測，為在軌航天器帶來更嚴峻的輻射環境，並在 2024–2026 年達到峰值。
+Solar activity cycles directly affect LEO satellite radiation exposure. Solar Cycle 25 (SC25) has proven far stronger than predicted, creating a more severe radiation environment for on-orbit spacecraft, with peak conditions occurring in 2024–2026.
 
-## SC25 強度概況
+## SC25 Intensity Overview
 
-| 參數 | 預測（NOAA 初始） | 實際結果 |
+| Parameter | Prediction (NOAA initial) | Actual Result |
 |---|---|---|
-| 週期最大黑子數 | 95–130 | 實際超過上限 |
-| 峰值時間 | ~2025 年初 | 2024 年底–2026 年初 |
-| 強度評估 | 「弱週期」 | 近 20 年最強 |
+| Maximum sunspot number | 95–130 | Exceeded upper bound in practice |
+| Peak timing | ~early 2025 | Late 2024 – early 2026 |
+| Intensity assessment | "Weak cycle" | Strongest in nearly 20 years |
 
-**結論**：SC25 比預測更強，使 2024–2026 年成為 LEO 衛星輻射環境最惡劣的視窗期之一。
+**Conclusion**: SC25 is stronger than predicted, making 2024–2026 one of the worst radiation environment windows for LEO satellites.
 
-## 2024 年 5 月超強磁暴事件（G5 級）
+## May 2024 Extreme Geomagnetic Storm Event (G5 Level)
 
-**日期**：2024 年 5 月 10 日（近 20 年最強磁暴）
+**Date**: May 10, 2024 (strongest geomagnetic storm in nearly 20 years)
 
-**NASA CIRBE 衛星的新發現**（2025 年 2 月發表，JGR: Space Physics）：
+**New findings from NASA CIRBE satellite** (published February 2025, JGR: Space Physics):
 
-超強磁暴在永久范艾倫輻射帶**之間**創生了兩條新的暫態輻射帶：
+The extreme geomagnetic storm created two new transient radiation belts **between** the permanent Van Allen radiation belts:
 
-| 新輻射帶 | 組成 | L-shell 位置 | 能量範圍 | 持續時間 |
+| New Radiation Belt | Composition | L-shell Location | Energy Range | Duration |
 |---|---|---|---|---|
-| 新電子帶 | 高能電子 | L ≈ 2.5–3.5 | 1.3–5 MeV | >3 個月 |
-| 新質子帶 | 高能質子 | L ≈ 2.0 | 6.8–20 MeV | 至少至 2025 年 2 月（仍在） |
+| New electron belt | High-energy electrons | L ≈ 2.5–3.5 | 1.3–5 MeV | >3 months |
+| New proton belt | High-energy protons | L ≈ 2.0 | 6.8–20 MeV | At least until February 2025 (still present) |
 
-> **注意**：過去暫態輻射帶通常在 4 週內消散；此次質子帶的穩定性異常，是 20 年來首次觀測到此類強度。質子帶的質子通量在 6.8–15 MeV 能段超越背景值**逾一個數量級**。
+> **Note**: In the past, transient radiation belts typically dissipated within 4 weeks; the stability of this proton belt is anomalous and represents the first observation of such intensity in 20 years. The proton flux in the 6.8–15 MeV energy range exceeded background levels by **more than an order of magnitude**.
 
-**太空硬體影響**：
-- 穿越輻射帶的 GEO 轉移軌道衛星 TID 累積劑量顯著增加
-- 太陽電池因質子輻射損傷加速退化（質子是太陽電池主要損傷源）
-- 高傾角 LEO 衛星（極軌、SSO）通過南大西洋異常區（SAA）頻率不變，但背景質子通量增大
+**Space hardware impacts**:
+- GEO transfer orbit satellites traversing the radiation belts experience significantly increased TID accumulation
+- Solar cells degrade faster due to proton radiation damage (protons are the primary damage source for solar cells)
+- High-inclination LEO satellites (polar, SSO) pass through the South Atlantic Anomaly (SAA) at unchanged frequency, but background proton flux is elevated
 
-## SC25 對 LEO 劑量率的直接觀測
+## Direct Observations of SC25 Impact on LEO Dose Rate
 
-**CALET 儀器（ISS）觀測** 記錄了 SC25 期間多次太陽能量粒子事件（SEP）：
+**CALET instrument (ISS) observations** recorded multiple Solar Energetic Particle (SEP) events during SC25:
 
-| 事件 | 日期 | 峰值吸收劑量率 |
+| Event | Date | Peak Absorbed Dose Rate |
 |---|---|---|
-| 太陽能量粒子事件 | 2023-07-18 | 記錄中 |
-| 太陽能量粒子事件 | 2024-02-10 | 記錄中 |
-| G5 超強磁暴 | 2024-05-11 | 記錄中 |
-| 太陽能量粒子事件 | **2024-07-08** | **~2200 μGy/h**（峰值） |
+| Solar energetic particle event | 2023-07-18 | Recorded |
+| Solar energetic particle event | 2024-02-10 | Recorded |
+| G5 extreme geomagnetic storm | 2024-05-11 | Recorded |
+| Solar energetic particle event | **2024-07-08** | **~2200 μGy/h** (peak) |
 
-> 2200 μGy/h 轉換：約 220 mrad(Si)/h，即約 **5.3 krad(Si)/day**——若持續一天，相當於典型 LEO 任務全壽命劑量的 5–25%。
+> 2200 μGy/h conversion: approximately 220 mrad(Si)/h, or about **5.3 krad(Si)/day** — if sustained for one day, this is equivalent to 5–25% of the total lifetime dose of a typical LEO mission.
 
-## SC25 對 LEO 衛星設計的影響
+## SC25 Implications for LEO Satellite Design
 
-**1. RDM（輻射設計裕度）應保守估計**
+**1. RDM (Radiation Design Margin) should be conservatively estimated**
 
-SC25 峰值期間（2024–2026）發射的衛星面臨比歷史模型預測更高的 TID 劑量；設計 RDM 應從 1.5 提高至 ≥2.0。
+Satellites launched during the SC25 peak period (2024–2026) face higher TID doses than historical models predict; design RDM should be increased from 1.5 to ≥2.0.
 
-**2. SEP 事件概率增高**
+**2. SEP event probability is elevated**
 
-強太陽活動週期使 SPE（太陽粒子事件）發生率顯著上升，對 SEL（單粒子閂鎖）觸發概率有乘數效應——尤其對非輻射硬化的 COTS 元件。
+Strong solar activity cycles significantly increase the rate of SPE (Solar Particle Event) occurrences, with a multiplicative effect on SEL (Single Event Latchup) trigger probability — especially for non-radiation-hardened COTS components.
 
-**3. 大氣拖曳加速（間接效應）**
+**3. Atmospheric drag acceleration (indirect effect)**
 
-強太陽活動加熱高層大氣，使 VLEO/低 LEO（<400 km）衛星的大氣阻力增大，縮短軌道壽命。2022 年 2 月 Starlink 49 顆衛星中 40 顆因此脫軌（即使是 G1 輕度磁暴即造成大氣密度上升 50%）。
+Strong solar activity heats the upper atmosphere, increasing atmospheric drag on VLEO/low LEO (<400 km) satellites and shortening orbital lifetime. In February 2022, 40 of 49 Starlink satellites deorbited for this reason (even a mild G1 geomagnetic storm caused a 50% increase in atmospheric density).
 
-## 與現有概念的關聯
+## Connections to Existing Concepts
 
-- [[concepts/tid-total-ionizing-dose]] — SC25 峰值使任務壽命 TID 劑量超出歷史基準，需重算 RDM
-- [[concepts/see-single-event-effects]] — SPE 事件增加 SEL/SEU 速率，特別對功率 MOSFET 的 SEB 威脅
-- [[concepts/rha-radiation-hardening]] — 保守任務規劃應在 SC25 峰值期間採用更高 RDM
-- [[concepts/orbital-data-center]] — COTS GPU 在 SC25 峰值 LEO 部署面臨更高 SEU/SEL 風險
+- [[concepts/tid-total-ionizing-dose]] — SC25 peak drives mission lifetime TID doses beyond historical baselines; RDM must be recalculated
+- [[concepts/see-single-event-effects]] — SPE events increase SEL/SEU rates, especially SEB threat to power MOSFETs
+- [[concepts/rha-radiation-hardening]] — conservative mission planning should use higher RDM during SC25 peak
+- [[concepts/orbital-data-center]] — COTS GPUs deployed to LEO during SC25 peak face elevated SEU/SEL risk
 - [[sources/space-radiation-tid-see-2025]]
 
-## 資料來源
+## Data Sources
 
-- NASA CIRBE / CIRBE-REPTile-2 觀測（2025-02，JGR: Space Physics，Li et al.）
-- CALET ISS 儀器觀測（2026，GRL，Ficklin et al.）
-- ScienceDirect：高緯度 LEO 輻射環境監測 2023-07 至 2024-07
+- NASA CIRBE / CIRBE-REPTile-2 observations (2025-02, JGR: Space Physics, Li et al.)
+- CALET ISS instrument observations (2026, GRL, Ficklin et al.)
+- ScienceDirect: High-latitude LEO radiation environment monitoring 2023-07 to 2024-07

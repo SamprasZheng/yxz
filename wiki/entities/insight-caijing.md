@@ -3,7 +3,7 @@ type: entity
 tags: [polkadot, media, chinese, crypto-commentary]
 ---
 
-# insight財經 (Insight Finance)
+# Insight Finance (insight財經)
 
 Chinese-language crypto media and community platform. Appears to operate across mainland Chinese and overseas Chinese audiences (uses simplified Chinese 财经, but some Traditional Chinese usage also found). Founded February 2021, server hosted in Japan.
 

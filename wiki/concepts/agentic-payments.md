@@ -3,98 +3,98 @@ type: concept
 tags: [ai-agents, payments, automation, machine-to-machine, stablecoin, agentic-commerce]
 ---
 
-# Agentic Payments（代理人自動支付）
+# Agentic Payments
 
-## 定義
+## Definition
 
-**Agentic payments** 指 AI agents 在無需人工授權的前提下，自主發起、完成金融交易的能力。隨著 LLM-based agents 逐漸能夠執行多步驟任務，支付能力成為 agent「真正自主行動」的關鍵缺口之一。
+**Agentic payments** refer to the capability of AI agents to autonomously initiate and complete financial transactions without requiring human authorization. As LLM-based agents become increasingly capable of executing multi-step tasks, payment capability has emerged as one of the key gaps for agents to achieve "truly autonomous action."
 
-## 為何重要
+## Why It Matters
 
-傳統 AI agent 在遇到付費資源時必須停下來詢問人類，打斷自動化流程。Agentic payments 解決了：
+Traditional AI agents must stop and ask a human whenever they encounter a paid resource, interrupting automated workflows. Agentic payments address:
 
-1. **付費 API 存取**：agent 自動支付每次 API 呼叫
-2. **計算資源購買**：agent 自主購買 GPU 時間、儲存空間
-3. **跨 agent 交易**：多個 AI agents 組成的工作流中，上游 agent 自動付款給下游 agent
-4. **內容與資料購買**：無需人工授權即可存取付費資料
+1. **Paid API access**: Agent automatically pays for each API call
+2. **Compute resource purchases**: Agent autonomously purchases GPU time, storage
+3. **Cross-agent transactions**: In multi-AI-agent workflows, upstream agents automatically pay downstream agents
+4. **Content and data purchases**: Access paid data without human authorization
 
-## 技術實現方式
+## Technical Implementation
 
-### 協議層（2026 年全景）
+### Protocol Layer (2026 Landscape)
 
-2025–2026 年間，五個主要協議湧現，各自覆蓋不同場景：
+Between 2025–2026, five major protocols emerged, each covering different scenarios:
 
-| 協議 | 發起方 | 定位 |
+| Protocol | Originator | Positioning |
 |---|---|---|
-| [[concepts/x402-protocol]] | Coinbase | HTTP-native stablecoin M2M 支付（V2: 2025-12）|
-| ACP | OpenAI + Stripe | 法幣 Merchant Checkout 流程 |
-| AP2 | Google | 授權信任框架（Mandate），payment-agnostic |
-| MPP | Stripe + Tempo | Session 式連續微支付（2026-03）|
-| L402 | Lightning Labs | Bitcoin Lightning HTTP 微支付（2020 起）|
+| [[concepts/x402-protocol]] | Coinbase | HTTP-native stablecoin M2M payments (V2: 2025-12) |
+| ACP | OpenAI + Stripe | Fiat merchant checkout process |
+| AP2 | Google | Authorization trust framework (Mandate), payment-agnostic |
+| MPP | Stripe + Tempo | Session-based continuous micropayments (2026-03) |
+| L402 | Lightning Labs | Bitcoin Lightning HTTP micropayments (since 2020) |
 
-詳細比較見 [[concepts/agentic-payment-protocols]]。
+For detailed comparison, see [[concepts/agentic-payment-protocols]].
 
-### 帳戶/錢包層
-- Agent 持有自己的 on-chain wallet（通常是 EVM 地址）
-- 使用 MPC wallet 或 smart contract wallet 管理私鑰
-- 以 USDC 等 stablecoin 作為記帳單位，避免價格波動
+### Account/Wallet Layer
+- Agent holds its own on-chain wallet (typically an EVM address)
+- Uses MPC wallet or smart contract wallet for private key management
+- Uses stablecoins such as USDC as the unit of account, avoiding price volatility
 
-### 限制/授權層
-- Spending limits：設定 agent 每日/每筆最大支出
-- Allowlist：只允許對白名單地址付款
-- Human-in-the-loop 閾值：超過金額需要人工確認
+### Limit/Authorization Layer
+- Spending limits: set maximum daily/per-transaction expenditure for the agent
+- Allowlist: only allow payments to whitelisted addresses
+- Human-in-the-loop threshold: amounts exceeding the limit require human confirmation
 
-## 應用場景
+## Use Cases
 
-| 情境 | 描述 |
+| Scenario | Description |
 |---|---|
-| Research agent | 自動購買付費學術論文、市場報告 |
-| Trading agent | 購買即時報價資料 feed，執行鏈上 swap |
-| Compliance agent | 按需購買 KYC/AML 查詢 |
-| Coding agent | 付費呼叫 premium LLM API（GPT-5、Claude Opus 等）|
-| Content agent | 購買圖片版權、音樂授權 |
-| Multi-agent pipeline | Agent A 完成任務後自動向 Agent B 付費取得結果 |
+| Research agent | Automatically purchases paid academic papers, market reports |
+| Trading agent | Purchases real-time quote data feeds, executes on-chain swaps |
+| Compliance agent | Purchases KYC/AML queries on demand |
+| Coding agent | Pays for premium LLM API calls (GPT-5, Claude Opus, etc.) |
+| Content agent | Purchases image licenses, music rights |
+| Multi-agent pipeline | Agent A automatically pays Agent B to obtain results after task completion |
 
-## 主要生態參與者（2025–2026）
+## Major Ecosystem Participants (2025–2026)
 
-### Crypto-native 陣營
-- **Coinbase**（x402）：HTTP-native stablecoin 支付，V2 2025-12 發布，1 億筆累積
-- **Lightning Labs**（L402）：Bitcoin Lightning，2020 起生產運行，2026-02 釋出 AI agent 工具集
+### Crypto-native Camp
+- **Coinbase** (x402): HTTP-native stablecoin payments, V2 released 2025-12, 100M cumulative transactions
+- **Lightning Labs** (L402): Bitcoin Lightning, in production since 2020, released AI agent toolkit 2026-02
 
-### 傳統支付大廠
-| 公司 | 方案 | 發布時間 | 核心創新 |
+### Traditional Payment Giants
+| Company | Solution | Release Date | Core Innovation |
 |---|---|---|---|
-| [[entities/stripe]] | MPP + ACP + Agentic Commerce Suite | 2025-09 / 2026-03 | 同時押注 fiat + crypto |
-| PayPal | Agent Ready + Store Sync | 2025-10 | 百萬商家零技術接入 |
-| [[entities/visa]] | Intelligent Commerce + TAP | 2025-10 | RFC 9421 簽名 HTTP 訊息 |
-| [[entities/mastercard]] | Agent Pay（Agentic Token + Verifiable Intent）| 2025-04 | Per-agent token + SD-JWT 授權記錄 |
+| [[entities/stripe]] | MPP + ACP + Agentic Commerce Suite | 2025-09 / 2026-03 | Bets on both fiat + crypto |
+| PayPal | Agent Ready + Store Sync | 2025-10 | Zero-integration onboarding for millions of merchants |
+| [[entities/visa]] | Intelligent Commerce + TAP | 2025-10 | RFC 9421 signed HTTP messages |
+| [[entities/mastercard]] | Agent Pay (Agentic Token + Verifiable Intent) | 2025-04 | Per-agent token + SD-JWT authorization records |
 
-### 科技平台
-- **Google**（AP2）：60+ 夥伴，Mandate 授權框架，2025-09-17
-- **OpenAI**（ChatGPT Instant Checkout via ACP）：與 Stripe 共同規格，2026-02 上線
+### Tech Platforms
+- **Google** (AP2): 60+ partners, Mandate authorization framework, 2025-09-17
+- **OpenAI** (ChatGPT Instant Checkout via ACP): co-specified with Stripe, live 2026-02
 
-## Agentic Commerce 規模預測
+## Agentic Commerce Scale Projections
 
-- McKinsey（2025）：agentic commerce 到 2030 年媒介 $3–5 兆美元；僅美國 B2C 零售最多 $1 兆
-- 2026 年全球 agentic commerce 交易額：$80 億美元
-- 2031 年預估：$3.5 兆美元
-- Visa 預測：2026 假日購物季前，數百萬消費者將使用 AI agent 完成購物
+- McKinsey (2025): agentic commerce to mediate $3–5 trillion by 2030; up to $1 trillion in US B2C retail alone
+- 2026 global agentic commerce transaction volume: $8 billion
+- 2031 estimate: $3.5 trillion
+- Visa prediction: before the 2026 holiday shopping season, millions of consumers will use AI agents to complete purchases
 
-## 關鍵挑戰
+## Key Challenges
 
-1. **錢包安全**：agent 持有私鑰或授權的安全模型
-2. **費用失控風險**：agent 被攻擊或邏輯錯誤導致大量失控支出
-3. **監管合規**：stablecoin 支付的各國法規差異
-4. **需求驗證**：目前（2026 Q1）x402 真實交易量僅 $28,000/日，商業模式尚待驗證
-5. **協議碎片化**：x402 / ACP / AP2 / MPP / L402 同時存在，開發者選擇複雜
+1. **Wallet security**: security model for agents holding private keys or authorizations
+2. **Cost runaway risk**: agent attack or logic error causing large uncontrolled expenditures
+3. **Regulatory compliance**: varying stablecoin payment regulations across countries
+4. **Demand validation**: current (2026 Q1) x402 real transaction volume only $28,000/day; business model still to be validated
+5. **Protocol fragmentation**: x402 / ACP / AP2 / MPP / L402 coexisting; complex developer choices
 
-## 相關頁面
+## Related Pages
 
-- [[concepts/x402-protocol]] — 最主要的 crypto-native 技術標準
-- [[concepts/agentic-payment-protocols]] — 五大協議全景比較
-- [[sources/x402-protocol-coinbase-2025]] — 詳細資料來源
-- [[entities/coinbase]] — x402 發起者
-- [[entities/stripe]] — MPP + ACP 共同發起者
+- [[concepts/x402-protocol]] — primary crypto-native technical standard
+- [[concepts/agentic-payment-protocols]] — full comparison of five major protocols
+- [[sources/x402-protocol-coinbase-2025]] — detailed source material
+- [[entities/coinbase]] — x402 originator
+- [[entities/stripe]] — MPP + ACP co-originator
 - [[entities/visa]] — Intelligent Commerce / TAP
 - [[entities/mastercard]] — Agent Pay / Verifiable Intent
-- [[concepts/xcm]] — Polkadot 跨鏈 M2M 訊息（相關領域）
+- [[concepts/xcm]] — Polkadot cross-chain M2M messaging (related domain)

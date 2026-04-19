@@ -3,140 +3,140 @@ type: concept
 tags: [leo, satellite, taiwan, rf-hardware, investment, supply-chain, isl, odc, defense]
 ---
 
-# LEO 產業價值鏈（Low Earth Orbit Value Chain）
+# LEO Industry Value Chain (Low Earth Orbit Value Chain)
 
-## 概覽
+## Overview
 
-LEO 衛星產業以產品生命週期可分為上游、中游（A/B/C）、下游兩段，各環節技術門檻與商業模式差異顯著。2025 全球 LEO 投資額達 450 億美元；太空資料中心為 2026 最新新興題材。
-
----
-
-## 上游：原材料與核心元件
-
-決定衛星效能上限，台灣廠商最具競爭力的環節。
-
-### RF 元件（GaAs PA / 濾波器）
-- **穩懋（[[entities/win-semiconductors]]，3105）**：全球 LEO 規格 PA（功率放大器）代工龍頭
-- **昇達科（[[entities/ascend-tech]]，3491）**：濾波器、波導管，已打入 Starlink 與 Amazon Kuiper 供應鏈；毛利率 >50%
-
-### 太空級太陽能（高效率砷化鎵電池）
-隨單顆衛星電力需求從 2 kW 暴增至 10 kW 以上（Starlink V3、AI 算力上天），高效率 GaAs 太陽能電池成剛需。
-
-### 抗輻射算力晶片（NVIDIA H100 / 特規 GPU）
-[[concepts/orbital-data-center]] 最大工程挑戰：需在商用現貨（COTS）與太空硬化（Space-hardened）之間取得平衡。目前無台廠主導。NVIDIA H100 已在 Starcloud-1 驗證商用 GPU 可用性。詳見 [[concepts/rha-radiation-hardening]] 和 [[concepts/see-single-event-effects]]（SEU/SEL 風險）。
-
-### 高頻 PCB / 基板（HDI / 低損耗微波板）
-高頻段（Ka/V）衛星天線與射頻模組需要低損耗微波基板（Rogers、PTFE 系列）及 HDI 多層板，不同於一般消費電子 PCB。[[entities/huatong-pcb]] 在低軌衛星專用基板已具規模優勢。
+The LEO satellite industry can be divided by product lifecycle into upstream, mid-stream (A/B/C), and downstream segments, with significantly different technical barriers and business models across segments. Global LEO investment reached $45 billion in 2025; space data centers are the newest emerging theme in 2026.
 
 ---
 
-## 中游 A：衛星本體製造與系統整合
+## Upstream: Raw Materials and Core Components
 
-### PCB 與結構板
-**[[entities/huatong-pcb]]（華通）**：低軌衛星專用 PCB 全球市佔率近八成（截至 2025 底）。2025 Q4 LEO 衛星板營收 >155 億元新台幣（歷史新高）。台灣 PCB 廠整體形成結構性優勢。
+This segment determines the performance ceiling of satellites and is where Taiwan manufacturers are most competitive.
 
-### 星座營運商衛星（Starlink V3 / Amazon Leo）
-- Starlink V3 增加雷射星間鏈路（ISL）比例，對 RF 元件與散熱要求更高
-- Amazon Leo（原 Project Kuiper）已發射 >150 顆，目標 3236 顆星座
+### RF Components (GaAs PA / Filters)
+- **Win Semiconductors ([[entities/win-semiconductors]], 3105)**: Global leader in LEO-spec PA (power amplifier) contract manufacturing
+- **Ascend Tech ([[entities/ascend-tech]], 3491)**: Filters, waveguides; has entered Starlink and Amazon Kuiper supply chains; gross margin >50%
 
-### 星上算力模組（GPU cluster / 散熱系統）
-在軌算力模組是 [[concepts/orbital-data-center]] 的核心硬體單元。主要挑戰：
-- 輻射環境下 GPU 的穩定性與壽命
-- 散熱設計（無對流環境，僅能依賴輻射冷卻與導熱）
-- 功耗管理（10 kW+ 電力來自太陽能陣列）
+### Space-Grade Solar Cells (High-Efficiency GaAs Cells)
+As per-satellite power requirements surge from 2 kW to over 10 kW (Starlink V3, AI compute on orbit), high-efficiency GaAs solar cells become an essential need.
 
-### 雷射星間鏈路（ISL）—光學通訊 / 精密指向
-ISL 是 LEO 星座延遲性能的關鍵差異點：
-- 光速傳輸（vs 地面光纖需繞地球路由）
-- 需要高精度指向/追蹤/捕獲（PAT）系統
-- Starlink、Amazon Leo、[[entities/ada-space]] 均採用 ISL 架構
-- 相關供應商：Mynaric、SA Photonics 等光學通訊廠
+### Radiation-Resistant Compute Chips (NVIDIA H100 / Custom GPUs)
+The biggest engineering challenge for [[concepts/orbital-data-center]]: balancing commercial off-the-shelf (COTS) against space-hardened components. No Taiwan manufacturers currently dominate this. NVIDIA H100 has validated commercial GPU viability on Starcloud-1. See [[concepts/rha-radiation-hardening]] and [[concepts/see-single-event-effects]] (SEU/SEL risks) for details.
+
+### High-Frequency PCB / Substrates (HDI / Low-Loss Microwave Boards)
+High-band (Ka/V) satellite antennas and RF modules require low-loss microwave substrates (Rogers, PTFE series) and HDI multilayer boards, distinct from standard consumer electronics PCBs. [[entities/huatong-pcb]] already has scale advantages in LEO satellite-specific substrates.
 
 ---
 
-## 中游 B：發射服務與在軌部署
+## Mid-stream A: Satellite Bus Manufacturing and Systems Integration
 
-### 重型火箭發射（Falcon 9 / Starship）
-- 2024 全球 LEO 投資 ~250 億美元；2025 超過 450 億美元
-- 發射成本持續下降（SpaceX）是整個生命週期商業可行性的關鍵槓桿
+### PCB and Structural Boards
+**[[entities/huatong-pcb]] (Huatong)**: Close to 80% global market share in LEO satellite-specific PCBs (as of end of 2025). LEO satellite board revenue in Q4 2025 exceeded NT$15.5 billion (historical high). Taiwan's PCB manufacturers collectively form a structural advantage.
 
-### 軌道槽位 / 頻譜（ITU Ku/Ka/V 頻段稀缺）
-根據 ITU 2025 底至 2026 初備忘錄：500–1200 km 高商業價值軌道傾角及 Ku/Ka/V 頻段已面臨枯竭。LEO 資源爭奪從技術競賽升級為**戰略資源搶佔**。先申報者先得的 ITU 規則使早期佈局的 SpaceX、OneWeb 佔據顯著優勢。
+### Constellation Operator Satellites (Starlink V3 / Amazon Leo)
+- Starlink V3 increases the proportion of laser inter-satellite links (ISL), placing higher demands on RF components and thermal management
+- Amazon Leo (formerly Project Kuiper) has launched >150 satellites, targeting a 3236-satellite constellation
 
-### 生命週期管理（去軌 / 碎片規避）
-隨星座規模擴大，碎片管理成為監管與工程雙重挑戰：
-- ITU/FCC 要求商業衛星壽命結束後 5 年內完成去軌
-- 主動碎片清除（ADR）技術仍處早期商業化
-- 衛星壽命（3–10 年）決定星座的整體替換週期與持續投資需求
+### On-Board Compute Modules (GPU Cluster / Thermal Management Systems)
+On-orbit compute modules are the core hardware units of [[concepts/orbital-data-center]]. Key challenges:
+- GPU stability and longevity in radiation environments
+- Thermal design (no convection environment; relies entirely on radiative cooling and thermal conduction)
+- Power management (10 kW+ power from solar arrays)
 
----
-
-## 中游 C：太空資料中心（最熱新題材）
-
-→ 詳見 [[concepts/orbital-data-center]]
-
-### 軌道算力節點（Starcloud H100 / Axiom ODC）
-核心邏輯：地球資料中心能耗暴增（2024→2026：415→650 TWh）× 太空免費太陽能 × 輻射冷卻 → 長期成本顛覆。台灣廠商目前幾乎缺席此環節。
-
-### 能源系統（24hr 太陽能陣列 / 輻射冷卻）
-7×24 小時太陽能（無雲遮蔽）+ 向宇宙背景的被動輻射冷卻是 ODC 差異化能源優勢。
-
-### 分散式星際網路（中國三體計算 / 2800 顆目標）
-[[entities/ada-space]] 的 2800 顆衛星星座代表 ODC 的戰略規模化路線。
-
-### AI 推論 / 訓練（Google Suncatcher / TPU / 光通訊）
-[[entities/google-suncatcher]] 是科技巨頭進場 ODC 的關鍵訊號：Google 計畫將 TPU 部署於軌道，透過光學通訊與地面模型訓練基礎設施整合，實現低成本大規模 AI 算力擴充。
+### Laser Inter-Satellite Links (ISL) — Optical Communications / Precision Pointing
+ISL is the key differentiator for LEO constellation latency performance:
+- Speed-of-light transmission (vs. ground fiber requiring routing around Earth)
+- Requires high-precision pointing/acquisition/tracking (PAT) systems
+- Starlink, Amazon Leo, and [[entities/ada-space]] all use ISL architecture
+- Related suppliers: Mynaric, SA Photonics, and other optical communications manufacturers
 
 ---
 
-## 下游 A：地面基礎設施與接收終端
+## Mid-stream B: Launch Services and On-Orbit Deployment
 
-### 用戶終端設備（天線 / LNB / 路由器）
-消費端接收設備，台灣天線與 LNB 廠商在此有一定參與。
+### Heavy-Lift Rocket Launch (Falcon 9 / Starship)
+- Global LEO investment ~$25 billion in 2024; exceeded $45 billion in 2025
+- Continuously declining launch costs (SpaceX) are the key leverage point for lifecycle commercial viability
 
-### 地面站網路（信關站 / 核心網路）
-信關站（Gateway Station）是星座與地面互聯網核心路由的橋樑，需全球分布部署（通常 30–75 個站點/星座），帶動衛星地面設備採購需求。
+### Orbital Slots / Spectrum (ITU Ku/Ka/V Band Scarcity)
+Per ITU memos from late 2025 to early 2026: commercially valuable 500–1200 km orbital inclinations and Ku/Ka/V frequency bands are approaching exhaustion. Competition for LEO resources has escalated from a technical race to **strategic resource preemption**. ITU first-filed first-served rules give early movers SpaceX and OneWeb significant advantages.
 
-### 地空 DC 混合架構（地空混合雲 / Downlink）
-近期新興模式：ODC 節點 + 地面資料中心協同運算，形成「地空混合雲」。ODC 執行推論/邊緣任務，地面 DC 執行訓練/儲存密集任務，透過高速 Downlink 傳輸中間結果。這是 ODC 商業化最可能的第一落點。
+### Lifecycle Management (Deorbiting / Debris Avoidance)
+As constellation scale grows, debris management becomes a dual regulatory and engineering challenge:
+- ITU/FCC requires commercial satellites to complete deorbit within 5 years of end-of-life
+- Active Debris Removal (ADR) technology is still in early commercialization
+- Satellite lifetime (3–10 years) determines the constellation replacement cycle and ongoing investment requirements
 
 ---
 
-## 下游 B：終端服務與應用
+## Mid-stream C: Space Data Centers (Hottest New Theme)
 
-### 全球寬頻連網（D2D / 偏遠地區）
-直連手機（D2D / NTN）服務主要陣營：
+→ See [[concepts/orbital-data-center]] for details
 
-| 陣營 | 合作方 |
+### On-Orbit Compute Nodes (Starcloud H100 / Axiom ODC)
+Core logic: Explosive growth in Earth data center energy consumption (2024→2026: 415→650 TWh) × free space solar energy × radiative cooling → long-term cost disruption. Taiwan manufacturers are currently almost absent from this segment.
+
+### Energy Systems (24hr Solar Arrays / Radiative Cooling)
+24/7 solar power (no cloud cover) + passive radiative cooling toward the cosmic background is the differentiated energy advantage of ODC.
+
+### Distributed Orbital Networks (China's Three-Body Computing / 2800-Satellite Target)
+[[entities/ada-space]]'s 2800-satellite constellation represents the strategic scaling route for ODC.
+
+### AI Inference / Training (Google Suncatcher / TPU / Optical Communications)
+[[entities/google-suncatcher]] is a key signal of tech giants entering ODC: Google plans to deploy TPUs to orbit, integrating with ground-based model training infrastructure via optical communications to achieve low-cost large-scale AI compute expansion.
+
+---
+
+## Downstream A: Ground Infrastructure and Receiving Terminals
+
+### User Terminal Equipment (Antenna / LNB / Router)
+Consumer-side receiving equipment; Taiwan antenna and LNB manufacturers have some participation here.
+
+### Ground Station Networks (Gateway Stations / Core Networks)
+Gateway stations are the bridge between constellations and the core routing of ground internet, requiring global distributed deployment (typically 30–75 stations per constellation), driving demand for satellite ground equipment procurement.
+
+### Hybrid Space-Ground DC Architecture (Hybrid Cloud / Downlink)
+Recently emerging model: ODC nodes + ground data centers operating cooperatively, forming a "hybrid space-ground cloud." ODC performs inference/edge tasks, ground DC performs training/storage-intensive tasks, with intermediate results transmitted via high-speed downlink. This is the most likely first commercial landing point for ODC.
+
+---
+
+## Downstream B: Terminal Services and Applications
+
+### Global Broadband Connectivity (D2D / Remote Areas)
+Direct-to-device (D2D / NTN) service major camps:
+
+| Camp | Partners |
 |------|-------|
-| T-Mobile × SpaceX | D2D 先鋒 |
-| AT&T/Verizon × AST SpaceMobile | 另一大陣營 |
+| T-Mobile × SpaceX | D2D pioneer |
+| AT&T/Verizon × AST SpaceMobile | Alternative major camp |
 
-### 地球觀測 AI（野火偵測 / 農業）
-在軌 AI 處理解決「數據量大 × 頻寬有限 × 決策時效要求高」的矛盾。野火偵測、農業監測、船隻識別是最成熟的商業場景。
+### Earth Observation AI (Wildfire Detection / Agriculture)
+On-orbit AI processing resolves the contradiction of "large data volumes × limited bandwidth × time-critical decisions." Wildfire detection, agricultural monitoring, and vessel identification are the most mature commercial scenarios.
 
-### 國防 / 主權雲端（安全儲存 / 邊緣 AI）
-軌道節點天然具備：地理獨立性（不受地面衝突影響）、難以實體摧毀、全球覆蓋。各國主權雲端與軍事 ISR 是 ODC 最早期的付費場景之一。
+### Defense / Sovereign Cloud (Secure Storage / Edge AI)
+Orbital nodes inherently offer: geographic independence (unaffected by ground conflicts), difficult to physically destroy, global coverage. Each nation's sovereign cloud and military ISR are among the earliest paying use cases for ODC.
 
-### 航空 / 海事（機上 Wi-Fi / 船隊）
-Starlink Aviation（機上 Wi-Fi）與 Maritime 服務已是成熟市場，為星座提供穩定的 ARPU 基礎。
+### Aviation / Maritime (In-Flight Wi-Fi / Fleet)
+Starlink Aviation (in-flight Wi-Fi) and Maritime services are already mature markets, providing a stable ARPU base for the constellation.
 
 ---
 
-## 台灣競爭力地圖
+## Taiwan Competitiveness Map
 
-| 環節 | 台灣存在感 | 備註 |
+| Segment | Taiwan Presence | Notes |
 |------|-----------|------|
-| 上游 RF PA | ★★★★★ | 穩懋全球龍頭 |
-| 上游濾波器 | ★★★★★ | 昇達科 >50% 毛利 |
-| 上游高頻 PCB | ★★★★★ | 華通八成市佔 |
-| 中游 A ISL 光學通訊 | ★★☆☆☆ | 精密光學非台廠強項 |
-| 下游地面端 | ★★★★ | 天線、LNB、電源 |
-| **中游 C ODC 硬體整合** | **★☆☆☆☆** | **結構性缺口 → 潛在機會** |
-| **輻射測試基礎設施（TID/SEE）** | **★☆☆☆☆** | **隱性門檻：無本地能力；廠商需赴海外認證** |
+| Upstream RF PA | ★★★★★ | Win Semiconductors global leader |
+| Upstream filters | ★★★★★ | Ascend Tech >50% gross margin |
+| Upstream high-frequency PCB | ★★★★★ | Huatong 80% market share |
+| Mid-stream A ISL optical communications | ★★☆☆☆ | Precision optics not a Taiwan strength |
+| Downstream ground terminals | ★★★★ | Antenna, LNB, power |
+| **Mid-stream C ODC hardware integration** | **★☆☆☆☆** | **Structural gap → potential opportunity** |
+| **Radiation testing infrastructure (TID/SEE)** | **★☆☆☆☆** | **Implicit threshold: no local capability; manufacturers must qualify overseas** |
 
-> ⚠️ **隱性門檻**：上游所有元件（RF PA、濾波器、PCB 基板）進入正式星座供應鏈，必須通過完整 TID / SEE 認證。台灣目前無本地重離子加速器或 Co-60 大型設施，是尚未被公開討論的結構性弱點。詳見 [[concepts/rha-radiation-hardening]]。
+> ⚠️ **Implicit threshold**: All upstream components (RF PA, filters, PCB substrates) entering formal constellation supply chains must pass complete TID / SEE qualification. Taiwan currently has no local heavy-ion accelerator or large Co-60 facility, representing a structural weakness that has not yet been publicly discussed. See [[concepts/rha-radiation-hardening]] for details.
 
-## 相關來源
+## Related Sources
 
 - [[sources/leo-space-datacenter-analysis-2025]]

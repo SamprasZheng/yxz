@@ -5,30 +5,30 @@ tags: [coinbase, exchange, stablecoin, usdc, base, cdp, x402]
 
 # Coinbase
 
-## 基本資料
+## Basic Information
 
-- **類型**：美國上市加密貨幣交易所（NASDAQ: COIN）
-- **創立**：2012 年，Brian Armstrong & Fred Ehrsam
-- **總部**：美國加州
-- **核心業務**：加密貨幣交易、託管、開發者工具（CDP）、Base L2
+- **Type**: US-listed cryptocurrency exchange (NASDAQ: COIN)
+- **Founded**: 2012, Brian Armstrong & Fred Ehrsam
+- **Headquarters**: California, USA
+- **Core business**: Cryptocurrency trading, custody, developer tools (CDP), Base L2
 
-## 與 Wiki 相關的專案
+## Wiki-Relevant Projects
 
 ### x402 Protocol
-2025 年 5 月，Coinbase Developer Platform（CDP）發布 [[concepts/x402-protocol]]，復活 HTTP 402 狀態碼為 AI agents 自動支付標準。  
-2025 年 12 月，與 Cloudflare 共同創立 **x402 Foundation**，維護開放規格。
+In May 2025, Coinbase Developer Platform (CDP) released [[concepts/x402-protocol]], reviving the HTTP 402 status code as an automated payment standard for AI agents.
+In December 2025, co-founded the **x402 Foundation** with Cloudflare to maintain the open specification.
 
 ### Base
-Coinbase 發行的 Ethereum L2，為 x402 主要結算鏈之一。USDC 在 Base 上的 x402 交易手續費約 $0.0001/筆。
+Ethereum L2 launched by Coinbase; one of the primary settlement chains for x402. USDC transaction fees for x402 on Base are approximately $0.0001 per transaction.
 
 ### USDC
-雖然 USDC 由 Circle 發行，Coinbase 是主要分發與推廣方，x402 的主要計價幣種即為 USDC。
+Although USDC is issued by Circle, Coinbase is the primary distributor and promoter; USDC is the main denomination currency for x402.
 
 ### Coinbase Developer Platform (CDP)
-提供 x402 的 hosted facilitator 服務（每月前 1,000 筆免費），簡化開發者整合。
+Provides a hosted facilitator service for x402 (first 1,000 transactions per month free), simplifying developer integration.
 
-## 相關頁面
+## Related Pages
 
-- [[concepts/x402-protocol]] — Coinbase 主導發展的支付協議
-- [[concepts/agentic-payments]] — AI 自動支付的廣義框架
-- [[sources/x402-protocol-coinbase-2025]] — x402 詳細資料來源
+- [[concepts/x402-protocol]] — Payment protocol developed and led by Coinbase
+- [[concepts/agentic-payments]] — Broader framework for autonomous AI payments
+- [[sources/x402-protocol-coinbase-2025]] — Detailed source on x402

@@ -3,9 +3,9 @@ type: entity
 tags: [person, creator, taiwanese, web3-educator]
 ---
 
-# 波卡鯊 Polkasharks
+# Polkasharks
 
-Taiwanese Web3/Polkadot educator and content creator. Publishes on vocus.cc under the publication "西行點滴" (Traces of a Westward Journey). Primary focus: the Polkadot ecosystem, DeFi, and Web3 infrastructure.
+Taiwanese Web3/Polkadot educator and content creator. Publishes on vocus.cc under the publication "Traces of a Westward Journey" (西行點滴). Primary focus: the Polkadot ecosystem, DeFi, and Web3 infrastructure.
 
 ## Profiles
 
@@ -18,7 +18,7 @@ Taiwanese Web3/Polkadot educator and content creator. Publishes on vocus.cc unde
 
 ## Content
 
-### 波卡解碼 (Polkadot Decoded) series
+### Polkadot Decoded (波卡解碼) series
 Educational deep-dives on Polkadot ecosystem projects and technology:
 
 | EP | Topic | Date |
@@ -33,10 +33,10 @@ Educational deep-dives on Polkadot ecosystem projects and technology:
 | EP9 | Algem liquidity | 2024-12-30 |
 | EP10 | Polkadot 2024 Annual Report | 2024-12-30 |
 
-### 波卡鯊速報 (PolkaSharks News Brief)
+### PolkaSharks News Brief (波卡鯊速報)
 Regular news roundups on Polkadot ecosystem activity (e.g., 20240903, 20240909).
 
-### 美股很in (US Stocks In)
+### US Stocks In (美股很in)
 Secondary content stream covering US equities and macro investing.
 
 ### Standalone articles

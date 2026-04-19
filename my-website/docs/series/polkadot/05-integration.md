@@ -1,26 +1,26 @@
 ---
 sidebar_position: 5
-title: 4️⃣ 整合 — 2026 Roadmap 的 Polkadot 位置
+title: 4️⃣ Integration — Polkadot's Place in the 2026 Roadmap
 ---
 
-# 4️⃣ 整合 — 2026 Roadmap 的 Polkadot 位置
+# 4️⃣ Integration — Polkadot's Place in the 2026 Roadmap
 
-**→ 閱讀主文：[2026 Tech Roadmap](/blog/space-ai-rf-crypto-roadmap-2026)**
+**→ Read the main article: [2026 Tech Roadmap](/blog/space-ai-rf-crypto-roadmap-2026)**
 
-## 這一篇要帶走的
+## Key Takeaways
 
-把 Polkadot 放到更大的技術與市場地圖中：
+Place Polkadot on a broader technology and market map:
 
-1. **Polkadot × AI**：Coretime 的「彈性算力租用」模型和 AI workload 的 bursty 特性天然契合。
-2. **Polkadot × Crypto Infrastructure**：與 Ethereum、Solana、Cosmos 的定位比較。
-3. **Polkadot × 跨領域**：Snowbridge / Hyperbridge 讓 Polkadot 生態可以吸收其他鏈的流動性與應用。
+1. **Polkadot × AI**: The "elastic compute rental" model of Coretime naturally fits the bursty workload characteristics of AI.
+2. **Polkadot × Crypto Infrastructure**: Positioning comparison against Ethereum, Solana, and Cosmos.
+3. **Polkadot × Cross-domain**: Snowbridge / Hyperbridge allows the Polkadot ecosystem to absorb liquidity and applications from other chains.
 
-## 學習路徑到這裡結束
+## End of the Learning Path
 
-你已經走完：**基礎（EP1）→ 治理（Plurality）→ 下一代架構（JAM）→ 整合視野（Roadmap）**。
+You have completed the full path: **Fundamentals (EP1) → Governance (Plurality) → Next-Generation Architecture (JAM) → Integrated View (Roadmap)**.
 
-## 下一步
+## Next Steps
 
-1. **實作動手**：到 [Polkadot Developer Docs](https://docs.polkadot.com/) 開始寫 pallet 或連上 XCM。
-2. **社群觀察**：追 [alice und bob](https://x.com/alice_und_bob)（Polkadot Head Ambassador）和 OpenGov.Watch。
-3. **深度內容**：用我建的領域 GPT [Jamia](https://chatgpt.com/g/g-67825a109c408191aaaef28a62051059-jamia) 問更深的問題（背後資料從我維護的 Obsidian wiki 來）。
+1. **Hands-on practice**: Head to [Polkadot Developer Docs](https://docs.polkadot.com/) to start writing pallets or connecting via XCM.
+2. **Community observation**: Follow [alice und bob](https://x.com/alice_und_bob) (Polkadot Head Ambassador) and OpenGov.Watch.
+3. **Deep content**: Use my domain GPT [Jamia](https://chatgpt.com/g/g-67825a109c408191aaaef28a62051059-jamia) to ask deeper questions (backed by data from my maintained Obsidian wiki).

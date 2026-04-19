@@ -1,16 +1,16 @@
 ---
 type: source
-title: "波卡解碼EP4: Mythical Games - Web3 最大遊戲開發商將進入波卡"
-author: "波卡鯊 Polkasharks"
+title: "Polkadot Decoded EP4: Mythical Games — The Largest Web3 Game Developer is Coming to Polkadot"
+author: "Polkasharks"
 date: "2024-09-09"
 ingested: "2026-04-19"
 tags: [polkadot, gaming, mythical-games, myth, web3-gaming]
 url: "https://vocus.cc/article/66ddaefdfd8978000167ab66"
 ---
 
-# 波卡解碼EP4: Mythical Games - Web3 最大遊戲開發商將進入波卡
+# Polkadot Decoded EP4: Mythical Games — The Largest Web3 Game Developer is Coming to Polkadot
 
-**Author:** [[entities/polkasharks]] | **Date:** 2024-09-09 | **Series:** 波卡解碼
+**Author:** [[entities/polkasharks]] | **Date:** 2024-09-09 | **Series:** Polkadot Decoded
 
 ## Summary
 

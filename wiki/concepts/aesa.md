@@ -3,68 +3,64 @@ type: concept
 tags: [rf, phased-array, radar, aesa, beamforming]
 ---
 
-# AESA — 主動電子掃描陣列（Active Electronically Scanned Array）
+# AESA — Active Electronically Scanned Array
 
-## 定義
+## Definition
 
-AESA 是一種每個輻射單元均有獨立 T/R（收發）模組的相位陣列雷達/通訊系統。
-有別於 PESA（被動電子掃描陣列，共用單一中央收發器）及機械掃描雷達。
+AESA is a phased array radar/communications system in which each radiating element has its own independent T/R (transmit/receive) module.
+Distinguished from PESA (Passive Electronically Scanned Array, which shares a single central transceiver) and mechanically scanned radar.
 
-## 技術演進
+## Technology Evolution
 
-| 世代 | 技術 | 年代 | 掃描方式 |
+| Generation | Technology | Era | Scanning Method |
 |---|---|---|---|
-| 第一代 | 固定高增益天線 | 19世紀末 | 無 |
-| 第二代 | 機械掃描雷達 | 二戰 | 機械轉動，360° |
-| 第三代 | PESA | 1960s | 電子掃描，單一中央收發 |
-| 第四代 | AESA | 1980s+ | 電子掃描，每元件獨立 T/R 模組 |
-| 現代 | 全數位 AESA | 2010s+ | 數位波束成形，FPGA 控制 |
+| 1st | Fixed high-gain antenna | Late 19th century | None |
+| 2nd | Mechanically scanned radar | WWII | Mechanical rotation, 360° |
+| 3rd | PESA | 1960s | Electronic scanning, single central transceiver |
+| 4th | AESA | 1980s+ | Electronic scanning, independent T/R module per element |
+| Modern | All-digital AESA | 2010s+ | Digital beamforming, FPGA-controlled |
 
-## 核心優勢（對比 PESA / 機械式）
+## Core Advantages (vs. PESA / Mechanical)
 
-- **多目標追蹤**：獨立相控可同時追蹤多個目標
-- **無機械磨損**：消除機械壽命限制（SWAP 突破）
-- **軟體定義**：同一硬體可重配置為雷達/通訊/電子戰
-- **波束靈活性**：任意方向、任意波束形狀，切換速度微秒級
+- **Multi-target tracking**: Independent phase control enables simultaneous tracking of multiple targets
+- **No mechanical wear**: Eliminates mechanical lifetime limitations (SWAP breakthrough)
+- **Software-defined**: Same hardware reconfigurable as radar/communications/electronic warfare
+- **Beam agility**: Arbitrary direction and beam shape, with microsecond-level switching speed
 
-## SWAP 問題（Size, Weight and Power）
+## SWAP Considerations (Size, Weight and Power)
 
-AESA 的歷史瓶頸。每元件獨立 T/R 模組導致體積、重量、功耗均高於 PESA。
-現代高整合度半導體（SiGe BiCMOS、GaN MMIC、先進 CMOS）大幅縮減 SWAP，
-使 AESA 可應用於可攜式（如 T-type Radar）及太空（如 XT-144）場景。
+The historical bottleneck of AESA. Independent T/R modules per element result in higher volume, weight, and power consumption compared to PESA.
+Modern high-integration semiconductors (SiGe BiCMOS, GaN MMIC, advanced CMOS) have dramatically reduced SWAP,
+enabling AESA deployment in portable and space applications.
 
-## 架構分類
+## Architecture Classification
 
-### 全數位 AESA
-每個元件有獨立 ADC/DAC，完全數位波束成形。
-優點：最大靈活性；缺點：功耗 + 成本高。
+### All-Digital AESA
+Each element has its own ADC/DAC, with fully digital beamforming.
+Advantages: maximum flexibility; Disadvantages: high power consumption and cost.
 
-### 混合相位陣列（Hybrid Phased Array）
-數位相移 + 類比相移器組合。見 [[concepts/hybrid-phased-array]]。
-優點：功耗低、複雜度低；Tron Future Tech XT-144 採此架構。
+### Hybrid Phased Array
+Combination of digital phase shifting and analog phase shifters. See [[concepts/hybrid-phased-array]].
+Advantages: lower power consumption, lower complexity; suitable for power-constrained scenarios such as LEO satellites.
 
-## 實際系統案例
+## Phase Control Mathematics
 
-| 系統 | 公司 | 頻段 | 應用 |
-|---|---|---|---|
-| S-132A | Tron Future Tech | S-band 2.9–3.1 GHz | 無人機/鳥擊偵測 |
-| XT-144 | Tron Future Tech | X-band ~8.2 GHz | LEO 衛星下行 |
-
-## 相位控制數學
-
-相鄰天線單元相位差：
+Phase difference between adjacent antenna elements:
 
 $$\Delta\Theta = \frac{2\pi d \sin\theta}{\lambda}$$
 
-其中 $d$ 為元件間距，$\lambda$ 為波長，$\theta$ 為波束指向角。
+where $d$ is the element spacing, $\lambda$ is the wavelength, and $\theta$ is the beam steering angle.
 
-## 相關連結
+## Application Scenarios
 
-- [[concepts/hybrid-phased-array]] — 混合架構詳解
-- [[concepts/dpd-digital-predistortion]] — PA 線性化（AESA 發射機必要技術）
-- [[concepts/tid-total-ionizing-dose]] — 太空 AESA 輻射可靠度
-- [[concepts/see-single-event-effects]] — 太空 AESA 單粒子效應
-- [[entities/tron-future-tech]] — 台灣 AESA 新創
-- [[sources/thesis-aesa-modules-zheng-2021]] — NCTU 碩士論文：S-band + X-band 模組
-- [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU 碩士論文：XT-144 用 X-band Zero-IF 傳輸器（EVM 校正、SEM、BIST）
-- [[sources/hybrid-xband-phased-array-icase-2020]] — iCASE 2020 conference paper
+- Military radar: shipborne, airborne early warning (E-2D), missile defense (PAC-3)
+- Satellite communications: LEO downlink X-band transmission
+- 5G mmWave: Massive MIMO beamforming
+- Wind farm monitoring: small target (bird/drone) detection and tracking
+
+## Related Links
+
+- [[concepts/hybrid-phased-array]] — hybrid architecture details
+- [[concepts/dpd-digital-predistortion]] — PA linearization (essential technology for AESA transmitters)
+- [[concepts/tid-total-ionizing-dose]] — radiation reliability for space AESA
+- [[concepts/see-single-event-effects]] — single event effects for space AESA

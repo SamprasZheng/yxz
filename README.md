@@ -31,9 +31,9 @@ Born in Yilan, Taiwan. NCTU Electronics Engineering graduate.
 | `Crypto` | Blockchain infrastructure, tokenomics, on-chain analysis |
 
 **Selected posts:**
-- [2026 LEO × 台灣 — 中游 C 缺席的結構性缺口](https://SamprasZheng.github.io/yxz/blog/leo-odc-taiwan-gap)
+- [2026 LEO × Taiwan — The Structural Gap of the Missing Mid-Tier C](https://SamprasZheng.github.io/yxz/blog/leo-odc-taiwan-gap)
 - [2026 Tech Roadmap: AI in Space, Crypto, RF SATCOM](https://SamprasZheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026)
-- [領域特化 AI Agent — 我為什麼自己做 myGPTs](https://SamprasZheng.github.io/yxz/blog/ai-agent)
+- [Domain-Specialized AI Agent — Why I Built My Own myGPTs](https://SamprasZheng.github.io/yxz/blog/ai-agent)
 - [JAM Protocol Deep-Dive](https://SamprasZheng.github.io/yxz/blog/jam-intro)
 - [Polkadot: Long Way In](https://SamprasZheng.github.io/yxz/blog/longway-on-polkadot)
 

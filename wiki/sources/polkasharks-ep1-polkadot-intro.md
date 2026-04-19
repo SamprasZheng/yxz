@@ -1,20 +1,20 @@
 ---
 type: source
-title: "波卡解碼EP1: Polkadot - 下一代的區塊鏈"
-author: "波卡鯊 Polkasharks"
+title: "Polkadot Decoded EP1: Polkadot — The Next-Generation Blockchain"
+author: "Polkasharks"
 date: "2024-08-26"
 ingested: "2026-04-19"
 tags: [polkadot, intro, jam, etf]
 url: "https://vocus.cc/article/66cb30a4fd8978000170402a"
 ---
 
-# 波卡解碼EP1: Polkadot - 下一代的區塊鏈
+# Polkadot Decoded EP1: Polkadot — The Next-Generation Blockchain
 
-**Author:** [[entities/polkasharks]] | **Date:** 2024-08-26 | **Series:** 波卡解碼
+**Author:** [[entities/polkasharks]] | **Date:** 2024-08-26 | **Series:** Polkadot Decoded
 
 ## Summary
 
-Introductory article in the PolkaSharks "波卡解碼" (Polkadot Decoded) series. Explains Polkadot's architecture, compares it to Ethereum, and previews three upcoming developments: a Polkadot ETF, Polkadot Pay, and JAM.
+Introductory article in the PolkaSharks "Polkadot Decoded" (波卡解碼) series. Explains Polkadot's architecture, compares it to Ethereum, and previews three upcoming developments: a Polkadot ETF, Polkadot Pay, and JAM.
 
 ## Key claims
 
