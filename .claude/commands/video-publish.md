@@ -16,14 +16,16 @@
 確認文章標題後再繼續。
 
 ### Step 1 — 生成口語化腳本
-在 `my-website/` 目錄下執行：
-```bash
-ANTHROPIC_API_KEY=<from env or .env.local> node scripts/blog-to-script.cjs <blog-file>
-```
-執行完成後，讀取 `scripts/video-drafts/<slug>.json` 顯示腳本預覽（前 500 字）。
-腳本為**英文**，語氣與 blog 文章一致。
+直接執行 `/video-script <blog-file>` skill（使用 Claude Code，不需要 API key）。
+
+skill 會：
+1. 讀取 blog MDX 文章
+2. 生成英文口語化旁白腳本
+3. 儲存至 `scripts/video-drafts/<slug>.json`
+4. 顯示前 300 字預覽
+
 詢問用戶：「腳本是否滿意？是否需要修改？(y/n)」
-- 如果需要修改：讓用戶說明修改方向，直接編輯 JSON 中的 `script` 欄位，再確認一次
+- 如果需要修改：直接編輯 JSON 中的 `script` 欄位，再確認一次
 - 滿意則繼續
 
 ### Step 2 — 生成語音 + 字幕
@@ -68,6 +70,6 @@ GIT_USER=SamprasZheng yarn deploy
 
 ## 注意事項
 - 所有指令在 `my-website/` 目錄下執行
-- `ANTHROPIC_API_KEY` 從環境變數或 `.env.local` 讀取
+- Step 1 使用 Claude Code（Max plan），不需要 ANTHROPIC_API_KEY
 - YouTube OAuth token 存於 `scripts/.youtube-tokens.json`，首次需瀏覽器授權
 - 輸出檔案存於 `scripts/video-drafts/`（已加入 .gitignore）
