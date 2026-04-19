@@ -1,0 +1,22 @@
+# Obsidian editor config
+.obsidian/
+
+# Obsidian canvas files
+*.canvas
+
+# YouTube OAuth tokens (secret — never commit)
+my-website/scripts/.youtube-tokens.json
+
+# Generated media files (binary, large — re-runnable)
+my-website/scripts/handdrawn-poc/*.mp4
+my-website/scripts/video-drafts/*.mp3
+my-website/scripts/video-drafts/*.mp4
+my-website/scripts/video-drafts/*.srt
+
+# Docusaurus build output
+my-website/build/
+my-website/.docusaurus/
+
+# Node modules
+node_modules/
+my-website/node_modules/

@@ -1,0 +1,824 @@
+{
+  "title": "Phased Array: From WWII Radar to LEO Satellites",
+  "slug": "PA",
+  "ttsVoice": "en-US-GuyNeural",
+  "width": 1920,
+  "height": 1080,
+  "background": "#fbf8f1",
+  "ink": "#1a1a1a",
+  "accent": "#e6007a",
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "title-history",
+      "start": 0,
+      "duration": 12,
+      "narration": "Phased arrays have evolved from World War Two radar to today's satellite links — let's trace that journey.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 160,
+          "text": "Phased Array",
+          "size": 96,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1.2
+        },
+        {
+          "type": "underline",
+          "x1": 580,
+          "y1": 215,
+          "x2": 1340,
+          "y2": 215,
+          "appearAt": 1.8,
+          "duration": 0.7
+        },
+        {
+          "type": "rect",
+          "x": 120,
+          "y": 400,
+          "w": 400,
+          "h": 220,
+          "appearAt": 2.5,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 320,
+          "y": 490,
+          "text": "Mechanical",
+          "size": 44,
+          "anchor": "middle",
+          "appearAt": 3.1,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 320,
+          "y": 555,
+          "text": "1940s",
+          "size": 32,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 3.7,
+          "duration": 0.7
+        },
+        {
+          "type": "arrow",
+          "x1": 520,
+          "y1": 510,
+          "x2": 680,
+          "y2": 510,
+          "appearAt": 4.5,
+          "duration": 0.8
+        },
+        {
+          "type": "rect",
+          "x": 680,
+          "y": 400,
+          "w": 400,
+          "h": 220,
+          "appearAt": 5.4,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 880,
+          "y": 490,
+          "text": "PESA",
+          "size": 44,
+          "anchor": "middle",
+          "appearAt": 6,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 880,
+          "y": 555,
+          "text": "1960s",
+          "size": 32,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 6.6,
+          "duration": 0.7
+        },
+        {
+          "type": "arrow",
+          "x1": 1080,
+          "y1": 510,
+          "x2": 1240,
+          "y2": 510,
+          "appearAt": 7.3,
+          "duration": 0.8
+        },
+        {
+          "type": "rect",
+          "x": 1240,
+          "y": 400,
+          "w": 400,
+          "h": 220,
+          "appearAt": 8.1,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 490,
+          "text": "AESA",
+          "size": 44,
+          "anchor": "middle",
+          "appearAt": 8.7,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 555,
+          "text": "1980s+",
+          "size": 32,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 9.3,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 730,
+          "text": "Electronic beam steering replaces mechanical rotation",
+          "size": 38,
+          "anchor": "middle",
+          "appearAt": 10.5,
+          "duration": 1.1
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "start": 12,
+      "duration": 14,
+      "narration": "Each element shifts its phase so waves add up in one direction and cancel everywhere else — pure electronics, no motors.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 130,
+          "text": "How It Works",
+          "size": 80,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1
+        },
+        {
+          "type": "circle",
+          "cx": 200,
+          "cy": 600,
+          "r": 45,
+          "appearAt": 1.5,
+          "duration": 0.8
+        },
+        {
+          "type": "circle",
+          "cx": 380,
+          "cy": 600,
+          "r": 45,
+          "appearAt": 1.9,
+          "duration": 0.8
+        },
+        {
+          "type": "circle",
+          "cx": 560,
+          "cy": 600,
+          "r": 45,
+          "appearAt": 2.3,
+          "duration": 0.8
+        },
+        {
+          "type": "circle",
+          "cx": 740,
+          "cy": 600,
+          "r": 45,
+          "appearAt": 2.7,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 470,
+          "y": 710,
+          "text": "Antenna elements",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 3.5,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 200,
+          "y": 440,
+          "text": "φ₁",
+          "size": 40,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 4.1,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 380,
+          "y": 440,
+          "text": "φ₂",
+          "size": 40,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 4.4,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 560,
+          "y": 440,
+          "text": "φ₃",
+          "size": 40,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 4.7,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 740,
+          "y": 440,
+          "text": "φ₄",
+          "size": 40,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 5,
+          "duration": 0.7
+        },
+        {
+          "type": "arrow",
+          "x1": 880,
+          "y1": 570,
+          "x2": 1160,
+          "y2": 330,
+          "appearAt": 6,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 1190,
+          "y": 310,
+          "text": "Beam direction θ",
+          "size": 38,
+          "anchor": "start",
+          "color": "#e6007a",
+          "appearAt": 7.2,
+          "duration": 0.9
+        },
+        {
+          "type": "rect",
+          "x": 1050,
+          "y": 490,
+          "w": 760,
+          "h": 160,
+          "appearAt": 8.2,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 1430,
+          "y": 560,
+          "text": "ΔΘ = 2πd · sinθ / λ",
+          "size": 52,
+          "anchor": "middle",
+          "appearAt": 9.6,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 1430,
+          "y": 710,
+          "text": "d = element spacing  |  λ = wavelength",
+          "size": 30,
+          "anchor": "middle",
+          "appearAt": 10.9,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 870,
+          "text": "Constructive interference → beam      Destructive interference → nulls",
+          "size": 32,
+          "anchor": "middle",
+          "appearAt": 12.2,
+          "duration": 1.1
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "start": 26,
+      "duration": 12,
+      "narration": "Phased arrays now steer beams in military radar, five-G millimeter-wave base stations, and autonomous vehicle sensors.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 130,
+          "text": "Applications",
+          "size": 80,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1
+        },
+        {
+          "type": "rect",
+          "x": 90,
+          "y": 290,
+          "w": 520,
+          "h": 560,
+          "appearAt": 1.5,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 350,
+          "y": 380,
+          "text": "Military",
+          "size": 52,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 2.3,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 350,
+          "y": 460,
+          "text": "· Patriot radar",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 2.9,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 350,
+          "y": 520,
+          "text": "· E-2D Hawkeye",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 3.3,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 350,
+          "y": 580,
+          "text": "· Multi-target tracking",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 3.7,
+          "duration": 0.7
+        },
+        {
+          "type": "rect",
+          "x": 700,
+          "y": 290,
+          "w": 520,
+          "h": 560,
+          "appearAt": 4.6,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 380,
+          "text": "5G mmWave",
+          "size": 52,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 5.4,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 460,
+          "text": "· Beamforming",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 6,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 520,
+          "text": "· Massive MIMO",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 6.4,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 580,
+          "text": "· LEO satellite links",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 6.8,
+          "duration": 0.7
+        },
+        {
+          "type": "rect",
+          "x": 1310,
+          "y": 290,
+          "w": 520,
+          "h": 560,
+          "appearAt": 7.7,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 1570,
+          "y": 380,
+          "text": "Sensing",
+          "size": 52,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 8.5,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 1570,
+          "y": 460,
+          "text": "· mmWave radar",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 9.1,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 1570,
+          "y": 520,
+          "text": "· Self-driving 360°",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 9.5,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 1570,
+          "y": 580,
+          "text": "· Medical ultrasound",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 9.9,
+          "duration": 0.7
+        }
+      ]
+    },
+    {
+      "id": "xt144-system",
+      "start": 38,
+      "duration": 16,
+      "narration": "The XT-144 is a real hybrid X-band transmitter built for Taiwan's NSPO — one-forty-four antennas, sixty-four dBm EIRP, scanning sixty-five degrees.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 115,
+          "text": "XT-144: X-band LEO Transmitter",
+          "size": 72,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 185,
+          "text": "NSPO collaboration · iCASE 2020",
+          "size": 36,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 1.8,
+          "duration": 0.9
+        },
+        {
+          "type": "rect",
+          "x": 90,
+          "y": 270,
+          "w": 700,
+          "h": 670,
+          "appearAt": 3,
+          "duration": 1.3
+        },
+        {
+          "type": "text",
+          "x": 440,
+          "y": 350,
+          "text": "12 × 12 TX Array",
+          "size": 44,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 3.8,
+          "duration": 0.9
+        },
+        {
+          "type": "circle",
+          "cx": 220,
+          "cy": 480,
+          "r": 22,
+          "appearAt": 4.5,
+          "duration": 0.5
+        },
+        {
+          "type": "circle",
+          "cx": 300,
+          "cy": 480,
+          "r": 22,
+          "appearAt": 4.7,
+          "duration": 0.5
+        },
+        {
+          "type": "circle",
+          "cx": 380,
+          "cy": 480,
+          "r": 22,
+          "appearAt": 4.9,
+          "duration": 0.5
+        },
+        {
+          "type": "circle",
+          "cx": 460,
+          "cy": 480,
+          "r": 22,
+          "appearAt": 5.1,
+          "duration": 0.5
+        },
+        {
+          "type": "circle",
+          "cx": 540,
+          "cy": 480,
+          "r": 22,
+          "appearAt": 5.3,
+          "duration": 0.5
+        },
+        {
+          "type": "circle",
+          "cx": 620,
+          "cy": 480,
+          "r": 22,
+          "appearAt": 5.5,
+          "duration": 0.5
+        },
+        {
+          "type": "circle",
+          "cx": 220,
+          "cy": 565,
+          "r": 22,
+          "appearAt": 5.7,
+          "duration": 0.5
+        },
+        {
+          "type": "circle",
+          "cx": 300,
+          "cy": 565,
+          "r": 22,
+          "appearAt": 5.9,
+          "duration": 0.5
+        },
+        {
+          "type": "circle",
+          "cx": 380,
+          "cy": 565,
+          "r": 22,
+          "appearAt": 6.1,
+          "duration": 0.5
+        },
+        {
+          "type": "circle",
+          "cx": 460,
+          "cy": 565,
+          "r": 22,
+          "appearAt": 6.3,
+          "duration": 0.5
+        },
+        {
+          "type": "circle",
+          "cx": 540,
+          "cy": 565,
+          "r": 22,
+          "appearAt": 6.5,
+          "duration": 0.5
+        },
+        {
+          "type": "circle",
+          "cx": 620,
+          "cy": 565,
+          "r": 22,
+          "appearAt": 6.7,
+          "duration": 0.5
+        },
+        {
+          "type": "text",
+          "x": 440,
+          "y": 680,
+          "text": "144 TX + 8 RX elements",
+          "size": 32,
+          "anchor": "middle",
+          "appearAt": 7.3,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 440,
+          "y": 770,
+          "text": "Hybrid: digital + analog phase shift",
+          "size": 32,
+          "anchor": "middle",
+          "appearAt": 8.2,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 440,
+          "y": 860,
+          "text": "41.7 × 43.2 × 27.7 cm",
+          "size": 30,
+          "anchor": "middle",
+          "appearAt": 9.2,
+          "duration": 0.8
+        },
+        {
+          "type": "rect",
+          "x": 890,
+          "y": 270,
+          "w": 940,
+          "h": 670,
+          "appearAt": 9.8,
+          "duration": 1.3
+        },
+        {
+          "type": "text",
+          "x": 1360,
+          "y": 350,
+          "text": "Key Specs",
+          "size": 44,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 10.6,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 920,
+          "y": 440,
+          "text": "EIRP: 64.30 dBm (boresight)",
+          "size": 36,
+          "anchor": "start",
+          "appearAt": 11.3,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 920,
+          "y": 520,
+          "text": "Scan: ±65° (>130° coverage)",
+          "size": 36,
+          "anchor": "start",
+          "appearAt": 11.8,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 920,
+          "y": 600,
+          "text": "Data: 800 Mbps 16-APSK, EVM 6.9%",
+          "size": 36,
+          "anchor": "start",
+          "appearAt": 12.3,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 920,
+          "y": 680,
+          "text": "Power: <90 W TX average",
+          "size": 36,
+          "anchor": "start",
+          "appearAt": 12.9,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 920,
+          "y": 790,
+          "text": "Qualified: TID · SEE · thermal shock",
+          "size": 36,
+          "anchor": "start",
+          "color": "#e6007a",
+          "appearAt": 13.8,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "id": "conclusion",
+      "start": 54,
+      "duration": 10,
+      "narration": "From wartime radar to LEO satellites, phased arrays follow one arc: semiconductors solved SWAP, hybrid wins where power is scarce.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 185,
+          "text": "The Arc of Phased Arrays",
+          "size": 80,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1.2
+        },
+        {
+          "type": "underline",
+          "x1": 350,
+          "y1": 240,
+          "x2": 1570,
+          "y2": 240,
+          "appearAt": 1.8,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 390,
+          "text": "Semiconductors solved SWAP",
+          "size": 48,
+          "anchor": "middle",
+          "appearAt": 2.8,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 450,
+          "text": "Size · Weight · Power",
+          "size": 36,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 3.5,
+          "duration": 0.8
+        },
+        {
+          "type": "arrow",
+          "x1": 960,
+          "y1": 490,
+          "x2": 960,
+          "y2": 575,
+          "appearAt": 4.5,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 625,
+          "text": "Hybrid architecture wins in power-constrained space",
+          "size": 42,
+          "anchor": "middle",
+          "appearAt": 5.4,
+          "duration": 1
+        },
+        {
+          "type": "arrow",
+          "x1": 960,
+          "y1": 665,
+          "x2": 960,
+          "y2": 745,
+          "appearAt": 6.6,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 800,
+          "text": "Next: COTS radiation certification + ODC integration",
+          "size": 40,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 7.5,
+          "duration": 1.1
+        }
+      ]
+    }
+  ],
+  "blogFilePath": "D:\\DOT\\yxz\\my-website\\blog\\2021-01-12-phasedarray.md",
+  "script": "Phased arrays have evolved from World War Two radar to today's satellite links — let's trace that journey. Each element shifts its phase so waves add up in one direction and cancel everywhere else — pure electronics, no motors. Phased arrays now steer beams in military radar, five-G millimeter-wave base stations, and autonomous vehicle sensors. The XT-144 is a real hybrid X-band transmitter built for Taiwan's NSPO — one-forty-four antennas, sixty-four dBm EIRP, scanning sixty-five degrees. From wartime radar to LEO satellites, phased arrays follow one arc: semiconductors solved SWAP, hybrid wins where power is scarce."
+}

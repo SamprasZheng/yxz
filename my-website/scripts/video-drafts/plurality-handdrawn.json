@@ -1,0 +1,551 @@
+{
+  "title": "Plurality: Where Blockchain and Democracy Converge",
+  "slug": "plurality",
+  "ttsVoice": "en-US-GuyNeural",
+  "width": 1920,
+  "height": 1080,
+  "background": "#fbf8f1",
+  "ink": "#1a1a1a",
+  "accent": "#e6007a",
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "intro",
+      "start": 0,
+      "duration": 12,
+      "narration": "Plurality — or 多元宇宙 — is a framework for pluralistic governance, co-authored by Audrey Tang and linked to Project Liberty's decentralized social protocol.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 340,
+          "text": "Plurality",
+          "size": 96,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 450,
+          "text": "多元宇宙",
+          "size": 64,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 1.8,
+          "duration": 1
+        },
+        {
+          "type": "underline",
+          "x1": 560,
+          "y1": 490,
+          "x2": 1360,
+          "y2": 490,
+          "appearAt": 3.1,
+          "duration": 0.8
+        },
+        {
+          "type": "circle",
+          "cx": 260,
+          "cy": 750,
+          "r": 100,
+          "appearAt": 4.2,
+          "duration": 1.1
+        },
+        {
+          "type": "text",
+          "x": 260,
+          "y": 745,
+          "text": "Audrey Tang",
+          "size": 32,
+          "anchor": "middle",
+          "appearAt": 5.6,
+          "duration": 0.8
+        },
+        {
+          "type": "arrow",
+          "x1": 390,
+          "y1": 730,
+          "x2": 700,
+          "y2": 640,
+          "appearAt": 6.7,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 650,
+          "text": "Project Liberty  ×  DSNP",
+          "size": 44,
+          "anchor": "middle",
+          "appearAt": 7.9,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 730,
+          "text": "Decentralized Social Networking Protocol",
+          "size": 32,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 9.2,
+          "duration": 0.9
+        }
+      ]
+    },
+    {
+      "id": "polkadot-architecture",
+      "start": 12,
+      "duration": 16,
+      "narration": "Web3, coined by Dr. Gavin Wood, uses blockchain for decentralization. Polkadot connects parachains through a central Relay Chain for shared security.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 300,
+          "y": 180,
+          "text": "Web3",
+          "size": 96,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 300,
+          "y": 270,
+          "text": "Dr. Gavin Wood",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 1.8,
+          "duration": 0.8
+        },
+        {
+          "type": "circle",
+          "cx": 960,
+          "cy": 560,
+          "r": 130,
+          "appearAt": 3,
+          "duration": 1.3
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 555,
+          "text": "Relay Chain",
+          "size": 40,
+          "anchor": "middle",
+          "appearAt": 4.6,
+          "duration": 0.8
+        },
+        {
+          "type": "circle",
+          "cx": 400,
+          "cy": 300,
+          "r": 70,
+          "appearAt": 5.7,
+          "duration": 1
+        },
+        {
+          "type": "circle",
+          "cx": 1520,
+          "cy": 300,
+          "r": 70,
+          "appearAt": 7,
+          "duration": 1
+        },
+        {
+          "type": "circle",
+          "cx": 1520,
+          "cy": 820,
+          "r": 70,
+          "appearAt": 8.3,
+          "duration": 1
+        },
+        {
+          "type": "arrow",
+          "x1": 845,
+          "y1": 468,
+          "x2": 462,
+          "y2": 352,
+          "appearAt": 9.6,
+          "duration": 0.9
+        },
+        {
+          "type": "arrow",
+          "x1": 1075,
+          "y1": 468,
+          "x2": 1458,
+          "y2": 352,
+          "appearAt": 10.8,
+          "duration": 0.9
+        },
+        {
+          "type": "arrow",
+          "x1": 1075,
+          "y1": 652,
+          "x2": 1458,
+          "y2": 768,
+          "appearAt": 12,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 950,
+          "text": "Parachains",
+          "size": 36,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 13.2,
+          "duration": 0.7
+        }
+      ]
+    },
+    {
+      "id": "polkadot-pillars",
+      "start": 28,
+      "duration": 16,
+      "narration": "Polkadot stands on three pillars: decentralized security via shared consensus, cross-chain interoperability, and flexible on-chain governance upgrades.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 130,
+          "text": "Polkadot's Three Pillars",
+          "size": 64,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1
+        },
+        {
+          "type": "rect",
+          "x": 100,
+          "y": 260,
+          "w": 500,
+          "h": 300,
+          "appearAt": 1.6,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 350,
+          "y": 385,
+          "text": "去中心化",
+          "size": 48,
+          "anchor": "middle",
+          "appearAt": 3.1,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 350,
+          "y": 450,
+          "text": "Decentralized",
+          "size": 32,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 4.3,
+          "duration": 0.7
+        },
+        {
+          "type": "rect",
+          "x": 710,
+          "y": 260,
+          "w": 500,
+          "h": 300,
+          "appearAt": 5.3,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 385,
+          "text": "互操作性",
+          "size": 48,
+          "anchor": "middle",
+          "appearAt": 6.8,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 450,
+          "text": "Interoperable",
+          "size": 32,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 8,
+          "duration": 0.7
+        },
+        {
+          "type": "rect",
+          "x": 1320,
+          "y": 260,
+          "w": 500,
+          "h": 300,
+          "appearAt": 9,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 1570,
+          "y": 385,
+          "text": "靈活升級",
+          "size": 48,
+          "anchor": "middle",
+          "appearAt": 10.5,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 1570,
+          "y": 450,
+          "text": "Upgradeable",
+          "size": 32,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 11.7,
+          "duration": 0.7
+        }
+      ]
+    },
+    {
+      "id": "comparison",
+      "start": 44,
+      "duration": 18,
+      "narration": "Polkadot is tech-driven — token holders vote on-chain. OpenGov is institution-driven — citizens participate in transparent public policy. Two paths, one goal.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 130,
+          "text": "Two Paths to Decentralization",
+          "size": 60,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1
+        },
+        {
+          "type": "underline",
+          "x1": 960,
+          "y1": 200,
+          "x2": 960,
+          "y2": 930,
+          "appearAt": 1.6,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 480,
+          "y": 240,
+          "text": "Polkadot",
+          "size": 64,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 2.7,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 240,
+          "text": "OpenGov",
+          "size": 64,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 2.7,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 480,
+          "y": 360,
+          "text": "Tech-driven",
+          "size": 40,
+          "anchor": "middle",
+          "appearAt": 4,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 360,
+          "text": "Institutional reform",
+          "size": 40,
+          "anchor": "middle",
+          "appearAt": 4,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 480,
+          "y": 470,
+          "text": "Token holders vote",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 5.1,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 470,
+          "text": "Citizen participation",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 5.1,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 480,
+          "y": 570,
+          "text": "Digital assets & fintech",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 6.1,
+          "duration": 0.7
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 570,
+          "text": "Public policy & open data",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 6.1,
+          "duration": 0.7
+        },
+        {
+          "type": "arrow",
+          "x1": 480,
+          "y1": 650,
+          "x2": 480,
+          "y2": 760,
+          "appearAt": 7.4,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 480,
+          "y": 820,
+          "text": "Blockchain consensus",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 8.5,
+          "duration": 0.8
+        },
+        {
+          "type": "arrow",
+          "x1": 1440,
+          "y1": 650,
+          "x2": 1440,
+          "y2": 760,
+          "appearAt": 9.6,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 820,
+          "text": "Transparency & accountability",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 10.7,
+          "duration": 0.8
+        }
+      ]
+    },
+    {
+      "id": "conclusion",
+      "start": 62,
+      "duration": 13,
+      "narration": "Plurality provides the unifying framework — where technology and democracy advance together toward a transparent, inclusive, decentralized future.",
+      "elements": [
+        {
+          "type": "circle",
+          "cx": 960,
+          "cy": 480,
+          "r": 190,
+          "appearAt": 0.3,
+          "duration": 1.3
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 455,
+          "text": "Plurality",
+          "size": 72,
+          "anchor": "middle",
+          "appearAt": 1.9,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 530,
+          "text": "多元共治",
+          "size": 44,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 3.2,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 300,
+          "y": 280,
+          "text": "Polkadot",
+          "size": 44,
+          "anchor": "middle",
+          "appearAt": 4.3,
+          "duration": 0.8
+        },
+        {
+          "type": "arrow",
+          "x1": 420,
+          "y1": 320,
+          "x2": 778,
+          "y2": 412,
+          "appearAt": 5.4,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 1620,
+          "y": 280,
+          "text": "OpenGov",
+          "size": 44,
+          "anchor": "middle",
+          "appearAt": 6.6,
+          "duration": 0.8
+        },
+        {
+          "type": "arrow",
+          "x1": 1500,
+          "y1": 320,
+          "x2": 1142,
+          "y2": 412,
+          "appearAt": 7.7,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 860,
+          "text": "Transparent  ·  Inclusive  ·  Decentralized",
+          "size": 40,
+          "anchor": "middle",
+          "appearAt": 9,
+          "duration": 1.1
+        }
+      ]
+    }
+  ],
+  "blogFilePath": "D:\\DOT\\yxz\\my-website\\blog\\2025-03-12-plurality.md",
+  "script": "Plurality — or 多元宇宙 — is a framework for pluralistic governance, co-authored by Audrey Tang and linked to Project Liberty's decentralized social protocol. Web3, coined by Dr. Gavin Wood, uses blockchain for decentralization. Polkadot connects parachains through a central Relay Chain for shared security. Polkadot stands on three pillars: decentralized security via shared consensus, cross-chain interoperability, and flexible on-chain governance upgrades. Polkadot is tech-driven — token holders vote on-chain. OpenGov is institution-driven — citizens participate in transparent public policy. Two paths, one goal. Plurality provides the unifying framework — where technology and democracy advance together toward a transparent, inclusive, decentralized future.",
+  "mp3Path": "D:\\DOT\\yxz\\my-website\\scripts\\video-drafts\\plurality-handdrawn.mp3",
+  "srtPath": "D:\\DOT\\yxz\\my-website\\scripts\\video-drafts\\plurality-handdrawn.srt"
+}

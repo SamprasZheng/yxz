@@ -1,0 +1,13 @@
+{
+  "title": "RF / SoC Debug Playbook",
+  "slug": "debug",
+  "ogImagePath": "D:\\DOT\\yxz\\my-website\\static\\img\\og\\debug.png",
+  "script": "Hardware engineers dread not the bug they cannot find, but the one they cannot locate. This post walks through the systematic debug taxonomy I use on Wi-Fi and RF SoC production lines so every new case gets triaged fast.\n\nLet us start with the hardware layer. In any new product introduction, the most common failures are cross-layer interactions. The PCB design passes review, but SMT process variation breaks an entire batch. ATE passes every unit, yet the system hits a firmware corner case in the field.\n\nIf this resonated with you, subscribe and drop your worst hardware bug story in the comments below.",
+  "mp3Path": "D:\\DOT\\yxz\\my-website\\scripts\\video-drafts\\debug.mp3",
+  "srtPath": "D:\\DOT\\yxz\\my-website\\scripts\\video-drafts\\debug.srt",
+  "mp4Path": "D:\\DOT\\yxz\\my-website\\scripts\\video-drafts\\debug.mp4",
+  "youtubeId": "356hMg9Vdr8",
+  "youtubeUrl": "https://www.youtube.com/watch?v=356hMg9Vdr8",
+  "blogFilePath": "D:\\DOT\\yxz\\my-website\\blog\\2025-06-02-debug-playbook.md",
+  "ttsVoice": "en-US-GuyNeural"
+}

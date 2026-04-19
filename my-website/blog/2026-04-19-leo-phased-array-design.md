@@ -23,7 +23,7 @@ XT-144 is an X-band LEO satellite downlink transmitter system developed for the 
 - **EIRP**: 64.30 dBm (broadside, single tone)
 - **Scan angle**: ±65°, over 130°
 - **Modulation**: 16-APSK 800 Mbps / QPSK 400 Mbps
-- **Power consumption**: <90 W (TX average)
+- **Power consumption**: &lt;90 W (TX average)
 - **Dimensions**: 41.7 × 43.2 × 27.7 cm
 
 The design challenge of this system is that every specification constrains the others. Higher EIRP requires higher power; lower power requires architectural trade-offs; better EVM requires careful calibration; and getting it into space requires passing radiation hardening tests.
