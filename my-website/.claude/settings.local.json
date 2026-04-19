@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(D:\\\\ai_streamer\\\\venv\\\\Scripts\\\\python.exe scripts/tts.py Plurality)",
+      "Bash(node:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(GIT_USER=SamprasZheng yarn deploy 2>&1)",
+      "Bash(GIT_USER=SamprasZheng yarn deploy)"
+    ]
+  }
+}

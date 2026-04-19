@@ -1,108 +1,107 @@
 ---
 slug: lop
-title: 波卡(Polkadot) - 下一代的區塊鏈
+title: "Polkadot — The Next-Generation Blockchain"
 authors: [polkasharks]
 tags: [polkadot]
-description: Polkadot 2.0 的核心概念速覽 — 從 XCM 跨鏈、異構分片、敏捷核心時間到 OpenGov 鏈上治理的一次總整理。
+description: "A fast-track overview of Polkadot 2.0 — XCM cross-chain messaging, heterogeneous sharding, Agile Coretime, and OpenGov on-chain governance."
 image: /img/og/lop.png
 ---
 
-### 波卡（Polkadot）簡介
+### What is Polkadot?
 
-**波卡（Polkadot）** 是一個旨在實現 **多鏈未來** 的區塊鏈平台。它並非將所有 Web3 用例都集中在單一區塊鏈上，而是設想不同的鏈（通用或特定於應用程式）可以協同工作，使 Web3 能夠擴展以服務於日常應用。
+**Polkadot** is a blockchain platform designed for a **multi-chain future**. Rather than forcing all Web3 use cases onto a single chain, it envisions different chains — general-purpose or application-specific — working together so that Web3 can scale to serve everyday applications.
 
-*   **願景：** 成為 Web3 的 AWS。
-*   **目標：** 以去中心化的方式建立任何區塊鏈可能需要的基礎設施。
+- **Vision:** Be the AWS of Web3.
+- **Goal:** Build the infrastructure that any blockchain could need, in a decentralized way.
 
-#### 主要特點
+#### Key Features
 
-*   **互操作性：** 通過 **跨鏈消息傳遞（XCM）** 實現資產轉移，在源鏈上銷毀資產，並在目標鏈上鑄造資產.
-*   **可擴展性：** 通過 **異構分片** 並行執行不同的狀態轉換函數。
-*   **靈活性：** Polkadot 不是靜態軟體，而是為 **可擴展性、靈活性和未來** 而構建。
-*   **治理：** **鏈上民主系統**，DOT 持有者可以投票和建立提案進行討論。
-*   **橋接：**
-    *   **Snowbridge：** Polkadot 和以太坊之間的去信任橋，使用 BEEFY 協議讓以太坊方知道 Polkadot 的最終確定性。
-    *   **Hyperbridge：** 世界首個可驗證的多鏈橋。
-    *   **Polkadot-Kusama 橋：** 安全且無縫的資產轉移和通信。
+- **Interoperability:** Asset transfers via **Cross-Chain Messaging (XCM)** — burn on the source chain, mint on the destination chain.
+- **Scalability:** Parallel execution of different state-transition functions through **heterogeneous sharding**.
+- **Flexibility:** Polkadot is not static software — it is built for **extensibility, flexibility, and the future**.
+- **Governance:** An **on-chain democratic system** where DOT holders vote and create proposals.
+- **Bridges:**
+  - **Snowbridge:** A trustless bridge between Polkadot and Ethereum, using the BEEFY protocol to let Ethereum verify Polkadot's finality.
+  - **Hyperbridge:** The world's first verifiable multi-chain bridge.
+  - **Polkadot–Kusama Bridge:** Secure, seamless asset transfer and communication between the two networks.
 
-#### Polkadot 2.0 的三大特點
+#### Three Pillars of Polkadot 2.0
 
-*   **敏捷核心時間（Agile Coretime）：**
-    *   不再需要兩年的 DOT 鎖定平行鏈拍賣。
-    *   Blockspace 以彈性的方式出售，收入被燒毀。
-*   **非同步支持（Asynchronous Backing）**
-*   **彈性擴展（Elastic Scaling）：** 更靈活、更快速且可擴展的網路。
-    *   更好的使用者介面/使用者體驗。
-    *   降低開發者的門檻。
-    *   社群主導的鏈上治理。
-    *   真正的去中心化。
+- **Agile Coretime:**
+  - No more two-year DOT lock-ups for parachain slot auctions.
+  - Blockspace sold elastically; revenue is burned.
+- **Asynchronous Backing**
+- **Elastic Scaling:** A more flexible, faster, and scalable network.
+  - Better UI/UX.
+  - Lower barrier to entry for developers.
+  - Community-driven on-chain governance.
+  - True decentralization.
 
-#### Polkadot 的共識機制
+#### Consensus Mechanism
 
-*   **BABE（區塊鏈擴展盲分配）：** 區塊生產者使用 VRF 來決定是否有資格在特定時隙中生產區塊。
-*   **GRANDPA：** 提供區塊最終性，確保 Polkadot 網路在快速擴展的同時保持安全性和穩定性。
+- **BABE (Blind Assignment for Blockchain Extension):** Block producers use a VRF to determine eligibility to produce a block in a given slot.
+- **GRANDPA:** Provides block finality, ensuring Polkadot stays secure and stable as it scales.
 
-GRANDPA 的優勢：
+GRANDPA advantages:
 
-*   **快速最終性：** 網路穩定時，幾秒內即可完成。
-*   **容錯性：** 容忍部分驗證者離線或作惡，只要超過 2/3 的權重驗證者保持誠實即可。
-*   **批量最終性：** 一次性最終化多個區塊，效率更高。
+- **Fast finality:** Completes in seconds when the network is stable.
+- **Fault tolerance:** Tolerates some validators going offline or acting maliciously, as long as more than 2/3 of stake weight remains honest.
+- **Batch finality:** Finalizes multiple blocks in one step — more efficient.
 
-#### Polkadot 的經濟模型
+#### Economic Model
 
-*   **DOT 代幣：**
-    *   用於支付 Coretime 的費用。
-    *   用於參與 OpenGov 投票。
-    *   每年鑄造 1.2 億枚 DOT。
-    *   通貨膨脹率將從 10% 逐步降低至 2030 年的 6%。
+- **DOT token:**
+  - Used to pay for Coretime.
+  - Used to participate in OpenGov voting.
+  - 120 million DOT minted per year.
+  - Inflation rate gradually decreasing from 10% toward 6% by 2030.
 
-#### Polkadot 的技術堆疊
+#### Technical Stack
 
-*   **Substrate：** 用於構建區塊鏈的 Rust 框架。
-*   **Polkadot SDK：** 包含 Cumulus、Polkadot 和 Substrate 倉庫。
-*   **SCALE Codec：** 用於 Polkadot 和 Substrate 的高效序列化和反序列化格式。
-*   **Wasm：** WebAssembly，用於構建 Polkadot 運行時。
-*   **FRAME：** 用於簡化 Substrate 運行時構建的框架。
+- **Substrate:** A Rust framework for building blockchains.
+- **Polkadot SDK:** Includes the Cumulus, Polkadot, and Substrate repositories.
+- **SCALE Codec:** An efficient serialization/deserialization format for Polkadot and Substrate.
+- **Wasm:** WebAssembly, used to build the Polkadot runtime.
+- **FRAME:** A framework for simplifying Substrate runtime development.
 
-#### JAM（Join-Accumulate Machine）
+#### JAM (Join-Accumulate Machine)
 
-*   **目標：** 解決區塊鏈的可擴展性和互操作性問題。
-*   **核心：** 促進鏈協作和數據共享，並優化區塊鏈網路在去中心化計算環境中的計算和通信效率。
-*   **特點：**
-    *   **鏈協作：** 支持多條鏈的無縫數據共享，避免每條鏈都單獨計算相同的邏輯。
-    *   **資源高效利用：** 每條鏈專注於自身特定的功能和應用，避免計算和存儲資源的浪費。
-    *   **簡化跨鏈通信：** 通過設計跨鏈消息和驗證機制，提供了一種標準化的方法，使鏈與鏈之間的交互變得更高效和安全。
-*   **Polkadot 的下一次重大升級將採用 SASSAFRAS/SAFROLE**，它通過使用環形 VRF 解決多個/無區塊生產者的問題，並確保每個時隙都有一個區塊生產者。
-*   **預計 2025 年 7 月推出首個版本**。
-*   **將計算分離為核心內和鏈上層**。
-*   **將允許智能合約功能和無許可服務**。
-*   **Jam 引入了一個去中心的混合系統，提供圍繞安全性和可擴展的 in-core/on-chain 二元性構建的智能合約功能**。
-*   **Jam 的本質是無需許可的，允許任何人在其上部署代碼作為服務，並根據該代碼使用的資源支付相應的費用，並通過購買和分配 coretime 來引導該代碼的執行**。
+- **Goal:** Solve blockchain scalability and interoperability.
+- **Core idea:** Facilitate chain collaboration and data sharing; optimize computation and communication efficiency in decentralized environments.
+- **Key properties:**
+  - **Chain collaboration:** Seamless data sharing across chains, eliminating redundant computation of the same logic.
+  - **Efficient resource utilization:** Each chain focuses on its specific function, avoiding wasted compute and storage.
+  - **Simplified cross-chain communication:** A standardized method for chain-to-chain interaction that is both efficient and secure.
+- **Polkadot's next major upgrade adopts SASSAFRAS/SAFROLE**, which uses a Ring-VRF to guarantee exactly one block producer per slot, solving the multi-producer/no-producer problem.
+- **First release targeted for July 2025.**
+- **Separates computation into in-core and on-chain layers.**
+- **Enables smart-contract functionality and permissionless services.**
+- **JAM is permissionless by nature** — anyone can deploy code as a service, paying proportionally to resource usage, and bootstrapping execution via coretime purchases.
 
-#### 開放政府（OpenGov）
+#### OpenGov
 
-*   **Polkadot 的鏈上民主系統，將權力賦予 DOT 持有者**。
-*   **使其成為世界上最大去中心化、最大的 DAO**。
-*   **任何 DOT 持有者都可以投票、建立提案並進行討論**。
+- **Polkadot's on-chain democratic system, placing power in the hands of DOT holders.**
+- **Makes Polkadot the world's largest decentralized DAO.**
+- **Any DOT holder can vote, create proposals, and participate in discussion.**
 
-#### 現有 Polkadot 生態項目
+#### Ecosystem Projects
 
-*   FIFA 推出 Mythical Games 傑出的足球手機遊戲，預計 2025 年夏季推出。
-*   Pudge Penguins 推出 Mythical Games 傑出的 AAA 級策略塔防遊戲，預計 2025 年夏季推出。
-*   獨特的DePIN，檢查 RWA 和 DeFi，超過 64 個DePIN 專案和 4-5 億美元融資。
-*   **@AcademyPolkadot** 推出由 Polkadot 專家領導的 PBA-X 線上區塊鏈課程，從 2025 年 1 月開始。
-*   **@OpenZeppelin** 是一個開放原始碼程式庫 + 工具的供應商，使團隊能夠有效且安全地管理區塊鏈專案 – 發布了 Polkadot 運行時範本。
+- FIFA-licensed football mobile game by Mythical Games — expected summer 2025.
+- Pudgy Penguins-branded AAA tower-defense game by Mythical Games — expected summer 2025.
+- Unique DePIN focus: RWA and DeFi integrations, 64+ DePIN projects and $400–500M raised.
+- **@AcademyPolkadot** PBA-X online blockchain course led by Polkadot experts, starting January 2025.
+- **@OpenZeppelin** open-source library and tooling provider — published Polkadot runtime templates.
 
-#### 2025 年 Polkadot 2.0 的路線圖
+#### 2025 Polkadot 2.0 Roadmap
 
-*   **智能合約即將推出（數十種程式語言）**。
-*   **基於 RISC-V 緩慢過渡到 PVM（Polkadot 虛擬機）**。
-*   **統一地址格式（更好的 UI/UX 用於使用者和開發者）**。
-*   **XCM v5（甚至更好的互操作性）**。
-*   **快速取消抵押（從 28 天到平均 2-4 天）**。
-*   **DOT 作為通用 Gas 代幣（在 Rollup 上啟用 DOT 作為費用）**。
-*   **500 毫秒區塊時間（在 2025 年，由於彈性擴展，一個專案甚至可以使用 12 個核心）**。
+- **Smart contracts shipping (dozens of programming languages).**
+- **Gradual RISC-V migration to PVM (Polkadot Virtual Machine).**
+- **Unified address format (better UI/UX for users and developers).**
+- **XCM v5 (improved interoperability).**
+- **Fast unstaking (from 28 days down to an average 2–4 days).**
+- **DOT as universal gas token (enabling DOT as fees on rollups).**
+- **500 ms block time (in 2025, a single project can use up to 12 cores via elastic scaling).**
 
-#### 總結
+#### Summary
 
-Polkadot 致力於通過其獨特的多鏈架構、互操作性、可擴展性和靈活性，革新 Web3 的構建方式。 未來的 JAM 升級和 Polkadot 2.0 將進一步增強其功能，使其成為區塊鏈技術領域中一個有前途的平台。
+Polkadot is committed to revolutionizing how Web3 is built through its unique multi-chain architecture, interoperability, scalability, and flexibility. The upcoming JAM upgrade and Polkadot 2.0 will further enhance its capabilities, making it one of the most promising platforms in the blockchain space.

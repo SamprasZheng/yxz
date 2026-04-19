@@ -1,129 +1,143 @@
 ---
 slug: debug
-title: "RF / SoC 系統除錯分析 — 從硬體到韌體到 ATE 的 Bug 分類學"
+title: "RF / SoC Debug Playbook — A Bug Taxonomy from Hardware to ATE"
 authors: ["sampras"]
 tags: [rf, wifi, phasedarray]
-description: 一份給無線通訊 / SoC 產品工程師的系統除錯 checklist — 從 PCB 層到 OTP 烙碼、ATE 測試腳本、再到環境相容性，每一層常見 bug 類型與根因切入點。
+description: "A systematic debug checklist for wireless/SoC product engineers — from PCB layer to OTP programming, ATE test scripts, and environmental compatibility, covering common bug types and root-cause entry points at every layer."
 image: /img/og/debug.png
 ---
 
-量產導入（NPI）階段的 bug，八成不是「哪一行寫錯」那種純軟體問題，而是**跨層交互**：硬體設計過關但 SMT 變異讓某個批次掛掉、ATE 測試通過但系統端因為 profile 不同踩到韌體 corner case、實驗室好好的到了客戶環境因為共存（coexistence）干擾才浮現。
+Bugs in NPI (New Product Introduction) are rarely a pure "typo on line N" software issue — eight out of ten are **cross-layer interactions**: hardware design passes but SMT variation breaks a batch; ATE passes but the system hits a firmware corner case due to a different profile; works fine in the lab but coexistence interference surfaces only in the customer's environment.
 
-這篇把我自己在 Wi-Fi / RF SoC 產品線上用來「先找分類、再找根因」的 checklist 完整寫出來，未來新 case 進來可以照著刷一輪。
+This post writes out the checklist I use on Wi-Fi / RF SoC product lines to "classify first, then find root cause" — so any new case can be screened systematically.
+
+
+
+:::info 📺 影片版 TLDR
+<iframe
+  width="100%"
+  style={{aspectRatio: '16/9'}}
+  src="https://www.youtube.com/embed/356hMg9Vdr8"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
+/>
+:::
 
 <!-- truncate -->
 
-## 第一層：硬體（HW）
+## Layer 1: Hardware (HW)
 
-### 設計階段
-| 項目 | 常見 bug |
-|------|---------|
-| Symbol / Package / Pin | footprint 繪錯、pin swap、power/ground 拉錯層 |
-| Schematic | 電源序列、clock 樹、RF matching 缺元件或誤用 |
-| 模擬 | S-parameter 沒驗、antenna tuning 只靠 simulator 結果 |
+### Design Phase
+| Item | Common bugs |
+|------|------------|
+| Symbol / Package / Pin | Wrong footprint, pin swap, power/ground routed to wrong layer |
+| Schematic | Power sequence, clock tree, RF matching — missing components or misuse |
+| Simulation | S-parameters not verified, antenna tuning based on simulator results only |
 
-🎯 **切入點**：任何新量產前，用 golden board 逐 pin 對照 BOM + layout 再跑一次 DRC。
+🎯 **Entry point:** Before any new production run, use a golden board to cross-check every pin against BOM + layout, then run DRC one more time.
 
-### PCB 階段
-- CAM 輸出比對原圖（Gerber / ODB++ diff）
-- X-section 驗層壓結構（介電層厚度直接影響 50 Ω 阻抗）
-- DRC：trace width、spacing、via-in-pad、differential pair skew
-- 模組區（RF / DDR / clock）單獨審圖
+### PCB Phase
+- CAM output vs. original (Gerber / ODB++ diff)
+- Cross-section to verify stackup (dielectric thickness directly affects 50 Ω impedance)
+- DRC: trace width, spacing, via-in-pad, differential pair skew
+- Review RF / DDR / clock regions separately
 
-🎯 **切入點**：量產板先抓 10 片做 TDR 與 VNA sweep，比對設計值。Impedance 偏移超過 ±10% 先停線。
+🎯 **Entry point:** Pull 10 boards from the first production run, run TDR and VNA sweep, compare against design targets. Impedance deviation > ±10%: stop the line.
 
-### PCBA 階段
-- SMT：爐溫 profile、回流焊缺陷、冷焊、tombstone
-- BOM 管理：alternative part 換料時 datasheet 差異（尤其 capacitor ESR、inductor Q）
-- Variant：同一 SoC 多變體（WiFi-only vs WiFi+BT）的料件差異
+### PCBA Phase
+- SMT: oven temperature profile, reflow defects, cold solder joints, tombstoning
+- BOM management: datasheet differences when switching to alternate parts (especially capacitor ESR, inductor Q)
+- Variants: component differences across SoC variants (Wi-Fi-only vs. Wi-Fi+BT)
 
-🎯 **切入點**：BOM diff + X-ray 抽檢。alt. part 換料後必須跑完整 RF 認證（不是只跑 sanity）。
+🎯 **Entry point:** BOM diff + X-ray spot check. Alternate part changes require a full RF certification run — not just sanity.
 
-### 系統整合
-- 模組間干擾：WiFi 2.4G × BT × LTE B40 共存是經典
-- Interconnect：FFC/FPC 長度、屏蔽接地迴路
-- ESD / EMC：整機才看得見
+### System Integration
+- Module-to-module interference: Wi-Fi 2.4 GHz × BT × LTE Band 40 coexistence is a classic
+- Interconnect: FFC/FPC length, shield ground loops
+- ESD / EMC: only visible at the full-system level
 
-🎯 **切入點**：用 spectrum analyzer 抓帶外雜散（spurious），對應到時間軸看是哪個子系統啟動時出現。
+🎯 **Entry point:** Use a spectrum analyzer to capture out-of-band spurious emissions — correlate to the timeline to identify which subsystem is active at the time.
 
-## 第二層：韌體（FW）
+## Layer 2: Firmware (FW)
 
-### OTP / SoC 配置
-- OTP 版本 × MCN#（Mask Change Number）× variant 對照
-- 寫入 register 的前後順序（啟動序列錯了，下一層就全錯）
-- Calibration 資料：RX gain table、TX power table、antenna switch mapping
+### OTP / SoC Configuration
+- OTP version × MCN# (Mask Change Number) × variant cross-reference
+- Register write order (wrong startup sequence corrupts every downstream layer)
+- Calibration data: RX gain table, TX power table, antenna switch mapping
 
-🎯 **切入點**：所有 FW issue 先確認 OTP version 與 MCN# 匹配。**最便宜的 root cause 就是烙錯料**。
+🎯 **Entry point:** For every FW issue, first confirm OTP version matches MCN#. **The cheapest root cause is always wrong parts.**
 
 ### Platform Meta
-- ADB command 腳本（Android）或 host interface 指令序列
-- Code builder（compile flag、branch、tag）
-- Regression screen 與 sanity check 的差異：regression 是**全量**，sanity 是**最低可接受**；別混用
-- Review stage：從 RTL → FW → FW+SW → 系統的階段界線
+- ADB command scripts (Android) or host interface command sequence
+- Code builder: compile flags, branch, tag
+- Regression vs. sanity: regression is **full coverage**, sanity is **minimum viable pass** — never conflate them
+- Review stages: RTL → FW → FW+SW → system — know the boundaries
 
-🎯 **切入點**：把「哪個版本、哪個 branch、什麼 config、什麼 flag」四個參數記在 bug ticket 上。缺任何一個都先別 debug。
+🎯 **Entry point:** Record four parameters on every bug ticket — version, branch, config, flags. If any one is missing, don't debug yet.
 
-## 第三層：軟體 / 測試（SW / ATE）
+## Layer 3: Software / Test (SW / ATE)
 
-### 測試 config
-- Dialog：測試流程對話（DUT ↔ tester 互動）
-- Profile：頻道、頻寬、調變（MCS）、天線組合
-- Sequence：Pre-cal → calibration → verification → stress
-- Coverage：corner case 是否有覆蓋（低溫、高溫、低 Vbat）
+### Test Config
+- Dialog: test flow dialogue (DUT ↔ tester interaction)
+- Profile: channel, bandwidth, modulation (MCS), antenna combo
+- Sequence: pre-cal → calibration → verification → stress
+- Coverage: are corner cases covered? (low temp, high temp, low Vbat)
 
-### 前置條件
-- Library dependency（ATE 廠商提供的 DLL / .so 版本）
-- Config file path（local vs network）
-- Tester firmware 與 DUT firmware 的版本相容表
+### Prerequisites
+- Library dependencies (DLL / .so versions from ATE vendor)
+- Config file paths (local vs. network)
+- Tester firmware × DUT firmware compatibility matrix
 
-### ATE 本體
-- Script（Python / TCL / C#）
-- Extension / plug-in 與 tester SDK 版本匹配
-- Package 管理（尤其團隊內多條線共用 tester 時）
+### ATE Platform
+- Script (Python / TCL / C#)
+- Extension / plug-in compatibility with tester SDK version
+- Package management (especially when multiple product lines share a tester)
 
-### 資料 review
-- Parser：raw log → structured data
-- Visualize：boxplot、yield map、wafer map
-- KPI：yield、Cpk、outlier 分布
+### Data Review
+- Parser: raw log → structured data
+- Visualize: boxplot, yield map, wafer map
+- KPI: yield, Cpk, outlier distribution
 
-🎯 **切入點**：所有 ATE 問題先問「log 看得懂嗎」。看得懂就是資料問題（script bug、config 錯），看不懂就是工具問題（parser 壞、tester 版本不匹配）。
+🎯 **Entry point:** For every ATE issue, first ask "can I read the log?" If yes → data problem (script bug, wrong config). If no → tooling problem (broken parser, tester version mismatch).
 
-## 第四層：環境（Environment）
+## Layer 4: Environment
 
-這層是最坑的，因為它**看起來不是 bug，是玄學**。
+This layer is the trickiest because **it looks like voodoo, not a bug.**
 
-| 類別 | 動作 |
-|------|------|
-| Comparison | 同樣 DUT 在兩個環境跑，diff 出差異（溫度、濕度、電源純淨度、鄰近設備） |
-| Reproduce | 先在實驗室能 100% 重現，才算有 bug。重現不了就先記錄環境變數 |
-| ATE / extension / package | 工具鏈版本再查一輪（是的，就是那個再查一輪） |
-| Compatibility | 相容性：同一韌體在不同 host、不同 AP/Router、不同國家法規 region code |
+| Category | Action |
+|---------|--------|
+| Comparison | Run the same DUT in two environments and diff the result (temperature, humidity, power supply cleanliness, adjacent equipment) |
+| Reproduce | You don't have a bug until you can reproduce it 100% in the lab. Can't reproduce? Document all environment variables first. |
+| ATE / extension / package | Check the toolchain versions again. Yes, again. |
+| Compatibility | Same firmware, different host / AP-router / country region code |
 
-🎯 **切入點**：現場 escalation 先問三件事 — (1) 幾支 DUT 有問題、(2) 隔壁測試站有沒有、(3) 上次通過是哪個 build。答不出來就回原廠重測。
+🎯 **Entry point:** For on-site escalations, ask three things first — (1) how many DUTs are affected, (2) does the adjacent test station show it, (3) what was the last passing build. If any answer is unknown, send it back for in-factory retest.
 
-## 除錯的心智模型
+## The Debug Mental Model
 
-實務上我會跑這個 flow：
+In practice, I run this flow:
 
 ```
- 1. 現象分類（HW / FW / SW / ENV 哪一層？）
+ 1. Classify the symptom (HW / FW / SW / ENV — which layer?)
          ↓
- 2. 版本凍結（locked config：OTP / branch / ATE / platform）
+ 2. Lock the version (frozen config: OTP / branch / ATE / platform)
          ↓
- 3. 比對 golden（同版本 golden board 能過嗎？）
+ 3. Compare against golden (does the same config pass on a golden board?)
          ↓
- 4. 二分法（哪個 commit / 哪個料件 / 哪個 test item 開始掛？）
+ 4. Bisect (which commit / which part / which test item started failing?)
          ↓
- 5. Reproduce on demand（能按鈕重現才算真 bug）
+ 5. Reproduce on demand (it's not a real bug until you can trigger it with a button)
          ↓
  6. Root cause + Mitigation + Prevention
 ```
 
-第 5 步卡住時，通常是**跨層問題**：單層都沒事、合起來才爆。那就回到第 1 步，重新分類，這次把「上游 batch」、「下游 platform」一起放進分類樹。
+When step 5 is stuck, it's usually a **cross-layer problem**: each layer passes individually but fails combined. Go back to step 1, reclassify — this time put "upstream batch" and "downstream platform" both into the classification tree.
 
-## 下一步
+## What's Next
 
-這份清單還會延伸成兩個方向的文章：
+This checklist will branch into two follow-up posts:
 
-- **相位陣列專屬的 debug checklist**（pattern measurement、calibration drift、beam steering error）— 接在 [聊聊相位陣列](/blog/PA) 後面
-- **Radiation-aware debug for space silicon** — 接 [Radiation Test Playbook](/blog/radtest)，加上 TID drift / SEU 復原的 field debug 流程
+- **Phased-array-specific debug checklist** (pattern measurement, calibration drift, beam steering error) — following on from [Phased Arrays](/blog/PA)
+- **Radiation-aware debug for space silicon** — following on from [Radiation Test Playbook](/blog/radtest), adding TID drift / SEU recovery field debug flows

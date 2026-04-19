@@ -89,3 +89,25 @@ The `wiki/` directory is an Obsidian-compatible knowledge base. Read `wiki/AGENT
 - Source pages also include: `title`, `author`, `date`, `ingested`
 - Contradictions are flagged inline with `> ⚠️ **Contradicted** by ...` — never silently overwritten
 - Good query answers should be filed as `synthesis/<name>.md` to persist across sessions
+
+## Wiki Ingestion
+
+- When ingesting research dumps, always create structured pages with proper indexes and update the ingestion log
+- Create README.md files for non-markdown files to aid wiki ingestion
+- After ingestion, update CLAUDE.md and any relevant index/log files
+
+## Deployment
+
+- For Docusaurus sites, run `yarn deploy` directly when user asks to deploy (not `yarn build` as a sanity check first)
+- Check `src/pages/README.md` for broken links before deploying as this has caused build failures
+- On Windows, be careful with bash path escaping
+
+## Agent & Command Scope
+
+- Create new agents and custom commands at PROJECT scope (`.claude/`) by default, not global (`~/.claude/`)
+- Confirm scope with user only if ambiguous
+
+## Video Publishing
+
+- The `/video-publish` workflow runs: TTS → video synthesis → YouTube upload (public) → blog embed → site deploy
+- Verify no broken links before deploy; check if post is already published before re-running

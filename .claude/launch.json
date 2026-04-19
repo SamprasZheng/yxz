@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Docusaurus Dev Server",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": ["--cwd", "my-website", "start"],
+      "port": 3000
+    },
+    {
+      "name": "Docusaurus Serve (static build)",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": ["--cwd", "my-website", "serve"],
+      "port": 3000
+    }
+  ]
+}
