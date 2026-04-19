@@ -16,6 +16,7 @@ type: index
 - [[sources/polkasharks-jam-article]] — JAM deep-dive: RISC-V, 3.4M TPS, async model, 3 entry functions (2025-02-24)
 - [[sources/gavin-wood-second-era-2025]] — Berlin Web3 Summit July 2025: DOT hard cap 2.1B, Proof of Personhood, pUSD, validator halving, Polkadot Hub
 - [[sources/polkadot-roundup-2025]] — Gavin Wood annual roundup: Hub migration (1.6B DOT/8hr), 100K TPS, 2026 roadmap (NOMT, BASTI, CoreChain)
+- [[sources/cross-platform-distribution-research]] — Medium Import only（API停用）+ X Free tier 500 posts/月；cross-post.cjs 實作：MDX→Medium md + Claude tweet thread + X auto-post
 - [[sources/newtype-huangyihe-reference]] — newtype 社群完整解析：付費社群模型（380+成員/150天）、AI學習工作流（Gemini→NotebookLM→Cursor）、多Agent架構（Chief/Deputy/Specialist）、Super Analyst Claude Skill
 - [[sources/chichieh-huang-site-reference]] — chichieh-huang.com 站點參考：Chirpy Jekyll、兩層分類法、雙語發文、Medium sync；改進 yxz 的設計/內容策略參考
 - [[sources/technological-republic-karp-2025]] — *The Technological Republic* (2025): Karp/Zamiska manifesto calling for tech-gov alliance, AI-era patriotism, "new Manhattan Project"; NYT #1 bestseller

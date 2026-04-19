@@ -21,6 +21,7 @@
     "daily:local": "yarn generate:living-topics && yarn verify",
     "weekly:local": "yarn generate:weekly-outlook && yarn verify",
     "weekly:publish": "yarn generate:weekly-outlook && yarn verify && yarn deploy:auto",
+    "cross-post": "node scripts/cross-post.cjs",
     "video:script": "node scripts/blog-to-script.cjs",
     "video:audio": "D:\\ai_streamer\\venv\\Scripts\\python.exe scripts/tts.py",
     "video:render": "node scripts/audio-to-video.cjs",
@@ -45,12 +46,14 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "^19.0.0",
     "rehype-katex": "^7.0.1",
-    "remark-math": "^6.0.0"
+    "remark-math": "^6.0.0",
+    "twitter-api-v2": "^1.29.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "3.7.0",
+    "puppeteer-core": "^24.41.0",
     "sharp": "^0.34.5",
     "typescript": "~5.6.2"
   },

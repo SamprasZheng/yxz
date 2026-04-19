@@ -1,18 +1,8 @@
----
-slug: new-space-radiation-reality
-title: "Space Radiation Testing in the New Space Era: When the Rules Change"
-authors: ["sampras"]
-tags: [space, rf]
-description: "Matthew Gill of Space Radiation Services makes a contrarian case: sometimes skipping radiation testing is the right call. Here's what New Space companies actually face — and what the data says about on-orbit failures."
-image: /img/og/radtest.png
-video_ready: true
----
+# Space Radiation Testing in the New Space Era: When the Rules Change
 
 The traditional space industry has a simple answer to radiation qualification: test everything, apply 2× design margin, use MIL-spec parts. That answer costs time and money that New Space companies often don't have. [Matthew Gill](https://www.spaceradiationservices.com/about) — PhD nuclear engineer, former Director at Apollo Fusion, consultant on radiation for over 200 systems sold to Maxar, Airbus, OneWeb, and York Space — makes a more nuanced argument. Sometimes skipping formal radiation testing is the right engineering decision.
 
 Here's what I took from his work.
-
-<!-- truncate -->
 
 ## The Environment Varies More Than You Think
 
@@ -99,3 +89,6 @@ Gill's position is that the traditional testing industry is "rigid and slow" —
 - Radiation GPT (Gill's AI assistant for radiation questions): on the same site
 - NSREC proceedings (public SEE data): [nsrec.com](https://nsrec.com)
 - My earlier [Radiation Test Playbook](/blog/radtest) with orbit calculators
+
+---
+*Originally published at [https://SamprasZheng.github.io/yxz](https://SamprasZheng.github.io/yxz/blog/new-space-radiation-reality)*

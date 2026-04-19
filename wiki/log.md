@@ -5,6 +5,9 @@
 <!-- grep "^## \[" log.md | tail -10   ← last 10 entries -->
 <!-- grep "^## \[.*\] ingest" log.md   ← all ingests -->
 
+## [2026-04-19] ingest | 跨平台傳播研究：Medium + X
+Research + 實作。Medium API 已停用→Import Story 為最佳路徑；X Free tier 500 posts/月免費足夠。建立 `scripts/cross-post.cjs`（Medium md 生成 + Claude tweet thread ZH/EN + X API 發文）、安裝 `twitter-api-v2`、加入 `yarn cross-post` 指令。測試：Medium markdown ✅。Created [[sources/cross-platform-distribution-research]]。
+
 ## [2026-04-19] ingest | newtype 社群 — huangyihe (newtype.pro)
 Fetched homepage、about、核心文章 ×4（newtype定義、AI學習工作流、AI內容創作系統、Claude Skill、比GenAI更大的機會）、Medium社群介紹。Created [[sources/newtype-huangyihe-reference]]、[[entities/huangyihe]]。Filed [[synthesis/site-reference-newtype]]：6大改進方向（讀者身份定位 / agent=新內容 / wiki→blog管道 / 多平台同步 / skill公開化 / 付費社群長期）+ 整合兩份參考的優先行動清單（9項）。關鍵洞察：「Agent即新內容」範式 + wiki→blog上下游管道 是 yxz 最高槓桿改進點。
 
