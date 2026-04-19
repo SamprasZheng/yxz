@@ -22,8 +22,9 @@
     "weekly:local": "yarn generate:weekly-outlook && yarn verify",
     "weekly:publish": "yarn generate:weekly-outlook && yarn verify && yarn deploy:auto",
     "video:script": "node scripts/blog-to-script.cjs",
-    "video:audio": "python scripts/tts.py",
-    "video:render": "node scripts/audio-to-video.cjs"
+    "video:audio": "D:\\ai_streamer\\venv\\Scripts\\python.exe scripts/tts.py",
+    "video:render": "node scripts/audio-to-video.cjs",
+    "video:upload": "node scripts/youtube-upload.cjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",

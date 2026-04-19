@@ -18,3 +18,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Video pipeline outputs
+scripts/video-drafts/
+scripts/.youtube-tokens.json

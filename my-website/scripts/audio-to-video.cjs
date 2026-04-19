@@ -8,13 +8,36 @@
  */
 const fs = require("fs");
 const path = require("path");
+const os = require("os");
 const { spawnSync } = require("child_process");
 
 const DRAFTS_DIR = path.join(__dirname, "video-drafts");
 
-function checkFfmpeg() {
-  const r = spawnSync("ffmpeg", ["-version"], { encoding: "utf-8" });
-  if (r.error) throw new Error("ffmpeg not found in PATH. Install from https://ffmpeg.org/download.html");
+function findFfmpeg() {
+  // Try system PATH first
+  const inPath = spawnSync("ffmpeg", ["-version"], { encoding: "utf-8" });
+  if (!inPath.error) return "ffmpeg";
+
+  // Common Windows locations (conda, choco, manual install)
+  const home = os.homedir();
+  const candidates = [
+    path.join(home, "anaconda3", "envs", "env_name", "Library", "bin", "ffmpeg.exe"),
+    path.join(home, "anaconda3", "Library", "bin", "ffmpeg.exe"),
+    path.join(home, "miniconda3", "Library", "bin", "ffmpeg.exe"),
+    "C:\\ffmpeg\\bin\\ffmpeg.exe",
+    "C:\\ProgramData\\chocolatey\\bin\\ffmpeg.exe",
+  ];
+  for (const p of candidates) {
+    if (fs.existsSync(p)) {
+      console.log(`   ffmpeg found: ${p}`);
+      return p;
+    }
+  }
+  throw new Error(
+    "ffmpeg not found.\n" +
+    "Quick fix: add to PATH → C:\\Users\\User\\anaconda3\\envs\\env_name\\Library\\bin\n" +
+    "Or download from https://ffmpeg.org/download.html"
+  );
 }
 
 // Sanitize text for FFmpeg drawtext — remove chars that break the filter syntax
@@ -26,8 +49,29 @@ function sanitizeDrawtext(str) {
     .slice(0, 70);
 }
 
-function run(args, cwd) {
-  const result = spawnSync("ffmpeg", args, { stdio: "inherit", cwd });
+// Pick best H.264 encoder available in this ffmpeg build
+function detectVideoEncoder(ffmpegBin) {
+  const encoders = ["libx264", "h264_mf", "h264_qsv", "h264_amf", "h264_nvenc", "libvpx-vp9"];
+  const out = spawnSync(ffmpegBin, ["-encoders"], { encoding: "utf-8" }).stdout || "";
+  for (const enc of encoders) {
+    if (out.includes(enc)) {
+      console.log(`   Video encoder: ${enc}`);
+      return enc;
+    }
+  }
+  throw new Error("No suitable video encoder found in ffmpeg build.");
+}
+
+// Build encoder args depending on codec
+function encoderArgs(enc) {
+  if (enc === "libx264") return ["-c:v", "libx264", "-preset", "fast", "-crf", "22"];
+  if (enc === "libvpx-vp9") return ["-c:v", "libvpx-vp9", "-crf", "33", "-b:v", "0"];
+  // Hardware encoders (nvenc, qsv, amf, mf) — use bitrate-based quality
+  return ["-c:v", enc, "-b:v", "4M"];
+}
+
+function run(ffmpegBin, args, cwd) {
+  const result = spawnSync(ffmpegBin, args, { stdio: "inherit", cwd });
   if (result.error) throw result.error;
   if (result.status !== 0) throw new Error(`ffmpeg exited with code ${result.status}`);
 }
@@ -39,7 +83,9 @@ async function main() {
     process.exit(1);
   }
 
-  checkFfmpeg();
+  const ffmpegBin = findFfmpeg();
+  const vEnc = detectVideoEncoder(ffmpegBin);
+  const vArgs = encoderArgs(vEnc);
 
   const jsonPath = path.join(DRAFTS_DIR, `${slug}.json`);
   if (!fs.existsSync(jsonPath)) {
@@ -75,13 +121,13 @@ async function main() {
   console.log(`   SRT:   ${srtBasename}`);
   console.log(`   Output: ${outAbs}\n`);
 
-  const subtitleFilter = `subtitles=${srtBasename}:force_style='Fontsize=30,PrimaryColour=&H00ffffff,OutlineColour=&H00000000,BackColour=&HA0000000,Bold=1,Alignment=2,MarginV=40'`;
+  const subtitleFilter = `subtitles=${srtBasename}:force_style='Fontsize=16,PrimaryColour=&H00ffffff,OutlineColour=&H00000000,BackColour=&H80000000,Bold=1,Alignment=2,MarginV=60'`;
 
   if (hasOg) {
     // Layout: blurred OG fills 1920×1080 → centered OG image on top → title bar → subtitles
     const filterComplex = [
       // Blurred background from OG image
-      `[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,boxblur=25:5[bg]`,
+      `[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,gblur=sigma=20[bg]`,
       // OG image scaled to fit within 1400×788
       `[0:v]scale=1400:788:force_original_aspect_ratio=decrease[fg]`,
       // Overlay fg centered on bg
@@ -94,15 +140,14 @@ async function main() {
       `[canvas]${subtitleFilter}[out]`,
     ].join(";");
 
-    run(
-      [
+    run(ffmpegBin, [
         "-y",
         "-loop", "1", "-i", ogAbs,
         "-i", mp3Abs,
         "-filter_complex", filterComplex,
         "-map", "[out]",
         "-map", "1:a",
-        "-c:v", "libx264", "-preset", "fast", "-crf", "22", "-pix_fmt", "yuv420p",
+        ...vArgs, "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "128k",
         "-r", "30",
         "-shortest",
@@ -118,15 +163,14 @@ async function main() {
       `[titled]${subtitleFilter}[out]`,
     ].join(";");
 
-    run(
-      [
+    run(ffmpegBin, [
         "-y",
         "-f", "lavfi", "-i", "color=black:s=1920x1080:r=30",
         "-i", mp3Abs,
         "-filter_complex", filterComplex,
         "-map", "[out]",
         "-map", "1:a",
-        "-c:v", "libx264", "-preset", "fast", "-crf", "22", "-pix_fmt", "yuv420p",
+        ...vArgs, "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "128k",
         "-shortest",
         outAbs,
