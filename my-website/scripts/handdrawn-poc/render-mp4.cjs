@@ -1,7 +1,9 @@
 /* eslint-disable no-console */
 /**
  * render-mp4.cjs — Render the deterministic POC HTML to mp4 via puppeteer + ffmpeg.
- * Usage: node scripts/handdrawn-poc/render-mp4.cjs [--fps 30] [--out out.mp4] [--seconds N]
+ * Usage: node scripts/handdrawn-poc/render-mp4.cjs [--scene path/to/scene.json] [--fps 30] [--out out.mp4] [--seconds N]
+ *   --scene  Path to scene.json. Defaults to scripts/handdrawn-poc/scene.json.
+ *            The file is copied to poc/scene.json before rendering.
  */
 const path = require("path");
 const fs = require("fs");
@@ -19,7 +21,16 @@ function getFlag(name, def) {
 }
 const FPS = parseInt(getFlag("fps", "30"), 10);
 const OUT = path.resolve(getFlag("out", path.join(POC_DIR, "poc.mp4")));
-const SECONDS = getFlag("seconds", null); // override total duration for quick tests
+const SECONDS = getFlag("seconds", null);
+const SCENE_ARG = getFlag("scene", null);
+// If --scene provided, copy it to poc dir so the HTML can load it
+if (SCENE_ARG) {
+  const src = path.resolve(SCENE_ARG);
+  const dest = path.join(POC_DIR, "scene.json");
+  if (!fs.existsSync(src)) throw new Error(`scene file not found: ${src}`);
+  if (src !== dest) fs.copyFileSync(src, dest);
+  console.log(`[render] using scene: ${src}`);
+}
 const os = require("os");
 const { spawnSync } = require("child_process");
 const CHROME = process.env.CHROME_PATH || "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";

@@ -20,7 +20,10 @@
     "deploy:auto": "node scripts/deploy-github.cjs",
     "daily:local": "yarn generate:living-topics && yarn verify",
     "weekly:local": "yarn generate:weekly-outlook && yarn verify",
-    "weekly:publish": "yarn generate:weekly-outlook && yarn verify && yarn deploy:auto"
+    "weekly:publish": "yarn generate:weekly-outlook && yarn verify && yarn deploy:auto",
+    "handdrawn:scene": "node scripts/handdrawn-poc/blog-to-handdrawn-scene.cjs",
+    "handdrawn:render": "node scripts/handdrawn-poc/render-mp4.cjs",
+    "handdrawn:video": "node scripts/handdrawn-poc/handdrawn-pipeline.cjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
