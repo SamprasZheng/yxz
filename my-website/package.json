@@ -24,7 +24,8 @@
     "video:script": "node scripts/blog-to-script.cjs",
     "video:audio": "D:\\ai_streamer\\venv\\Scripts\\python.exe scripts/tts.py",
     "video:render": "node scripts/audio-to-video.cjs",
-    "video:upload": "node scripts/youtube-upload.cjs"
+    "video:upload": "node scripts/youtube-upload.cjs",
+    "video:publish": "node scripts/video-pipeline.cjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",

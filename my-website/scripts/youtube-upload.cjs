@@ -10,6 +10,7 @@ const fs = require("fs");
 const path = require("path");
 const http = require("http");
 const { execSync } = require("child_process");
+const { buildDescription } = require("./yt-description.cjs");
 
 // Load .env.local from project root (my-website/)
 const envLocal = path.join(__dirname, "..", ".env.local");
@@ -230,15 +231,14 @@ async function main() {
 
   const accessToken = await getAccessToken(clientId, clientSecret);
 
-  // Build description from first ~400 chars of narration script
-  const descSnippet = (script || "").slice(0, 400).replace(/\n\n+/g, "\n");
-  const description = `${descSnippet}\n\n---\n本影片由 AI 語音生成，原文發布於 https://SamprasZheng.github.io/yxz/`;
+  const description = buildDescription(script, slug);
+  console.log(`   Description: ${description.length} chars`);
 
   const metadata = {
     snippet: {
       title,
       description,
-      tags: ["技術", "RF", "工程", "Polkadot"],
+      tags: [],   // tags embedded in description hashtags
       categoryId: "28", // Science & Technology
     },
     status: {
