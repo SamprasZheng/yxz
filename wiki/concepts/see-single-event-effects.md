@@ -93,3 +93,5 @@ tags: [rf-hardware, space, radiation, semiconductor, testing, sram, fpga, mosfet
 - [[concepts/rha-radiation-hardening]]
 - [[sources/space-radiation-tid-see-2025]]
 - [[concepts/orbital-data-center]] — COTS GPU 的 SEU/SEL 風險是 ODC 最大工程挑戰
+- [[concepts/cots-gpu-radiation-risk]] — H100/Orin 具體測試數據與在軌緩解策略
+- [[concepts/solar-cycle-25-leo-radiation]] — SC25 峰值（2024–2026）使 SEU/SEL 事件率增高

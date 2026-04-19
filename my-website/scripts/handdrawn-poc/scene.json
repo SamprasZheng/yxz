@@ -1,0 +1,75 @@
+{
+  "title": "Plurality × Polkadot (POC)",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "background": "#fbf8f1",
+  "ink": "#1a1a1a",
+  "accent": "#e6007a",
+  "scenes": [
+    {
+      "id": "title",
+      "start": 0,
+      "duration": 5,
+      "narration": "What if governance could hold many answers at once?",
+      "elements": [
+        { "type": "text", "x": 960, "y": 380, "text": "Plurality × Polkadot", "size": 96, "anchor": "middle", "appearAt": 0.3, "duration": 1.6 },
+        { "type": "text", "x": 960, "y": 480, "text": "many answers, one network", "size": 44, "anchor": "middle", "color": "#666", "appearAt": 1.8, "duration": 1.0 },
+        { "type": "underline", "x1": 580, "y1": 410, "x2": 1340, "y2": 410, "appearAt": 1.4, "duration": 0.8 }
+      ]
+    },
+    {
+      "id": "two-circles",
+      "start": 5,
+      "duration": 10,
+      "narration": "On one side, Plurality — a political philosophy. On the other, Polkadot — a technical architecture.",
+      "elements": [
+        { "type": "circle", "cx": 520, "cy": 540, "r": 180, "appearAt": 0.2, "duration": 1.4 },
+        { "type": "text", "x": 520, "y": 540, "text": "Plurality", "size": 56, "anchor": "middle", "appearAt": 1.6, "duration": 1.0 },
+        { "type": "text", "x": 520, "y": 610, "text": "(philosophy)", "size": 32, "anchor": "middle", "color": "#666", "appearAt": 2.6, "duration": 0.8 },
+
+        { "type": "circle", "cx": 1400, "cy": 540, "r": 180, "color": "#e6007a", "appearAt": 3.4, "duration": 1.4 },
+        { "type": "text", "x": 1400, "y": 540, "text": "Polkadot", "size": 56, "anchor": "middle", "color": "#e6007a", "appearAt": 4.8, "duration": 1.0 },
+        { "type": "text", "x": 1400, "y": 610, "text": "(architecture)", "size": 32, "anchor": "middle", "color": "#666", "appearAt": 5.8, "duration": 0.8 },
+
+        { "type": "arrow", "x1": 720, "y1": 540, "x2": 1200, "y2": 540, "appearAt": 7.0, "duration": 1.5 },
+        { "type": "text", "x": 960, "y": 510, "text": "converge", "size": 40, "anchor": "middle", "appearAt": 8.5, "duration": 1.0 }
+      ]
+    },
+    {
+      "id": "three-pillars",
+      "start": 15,
+      "duration": 12,
+      "narration": "Three shared pillars: decentralization, transparency, participation.",
+      "elements": [
+        { "type": "text", "x": 960, "y": 200, "text": "Three Shared Pillars", "size": 64, "anchor": "middle", "appearAt": 0.2, "duration": 1.2 },
+        { "type": "underline", "x1": 700, "y1": 230, "x2": 1220, "y2": 230, "appearAt": 1.2, "duration": 0.8 },
+
+        { "type": "rect", "x": 240, "y": 380, "w": 360, "h": 280, "appearAt": 2.2, "duration": 1.4 },
+        { "type": "text", "x": 420, "y": 460, "text": "1. Decentralize", "size": 36, "anchor": "middle", "appearAt": 3.4, "duration": 1.0 },
+        { "type": "text", "x": 420, "y": 540, "text": "no single", "size": 30, "anchor": "middle", "color": "#666", "appearAt": 4.2, "duration": 0.8 },
+        { "type": "text", "x": 420, "y": 580, "text": "point of control", "size": 30, "anchor": "middle", "color": "#666", "appearAt": 4.6, "duration": 0.8 },
+
+        { "type": "rect", "x": 780, "y": 380, "w": 360, "h": 280, "color": "#e6007a", "appearAt": 5.6, "duration": 1.4 },
+        { "type": "text", "x": 960, "y": 460, "text": "2. Transparent", "size": 36, "anchor": "middle", "appearAt": 6.8, "duration": 1.0 },
+        { "type": "text", "x": 960, "y": 540, "text": "on-chain &", "size": 30, "anchor": "middle", "color": "#666", "appearAt": 7.6, "duration": 0.8 },
+        { "type": "text", "x": 960, "y": 580, "text": "open data", "size": 30, "anchor": "middle", "color": "#666", "appearAt": 8.0, "duration": 0.8 },
+
+        { "type": "rect", "x": 1320, "y": 380, "w": 360, "h": 280, "appearAt": 9.0, "duration": 1.4 },
+        { "type": "text", "x": 1500, "y": 460, "text": "3. Participate", "size": 36, "anchor": "middle", "appearAt": 10.0, "duration": 1.0 },
+        { "type": "text", "x": 1500, "y": 540, "text": "everyone has", "size": 30, "anchor": "middle", "color": "#666", "appearAt": 10.6, "duration": 0.8 },
+        { "type": "text", "x": 1500, "y": 580, "text": "a voice", "size": 30, "anchor": "middle", "color": "#666", "appearAt": 11.0, "duration": 0.8 }
+      ]
+    },
+    {
+      "id": "outro",
+      "start": 27,
+      "duration": 3,
+      "narration": "Tech and democracy, evolving together.",
+      "elements": [
+        { "type": "text", "x": 960, "y": 540, "text": "tech ⟷ democracy", "size": 80, "anchor": "middle", "appearAt": 0.2, "duration": 1.2 },
+        { "type": "underline", "x1": 540, "y1": 575, "x2": 1380, "y2": 575, "color": "#e6007a", "appearAt": 1.5, "duration": 1.0 }
+      ]
+    }
+  ]
+}

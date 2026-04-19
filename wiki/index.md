@@ -33,12 +33,19 @@ type: index
 - [[entities/alexander-karp]] — Palantir CEO, social theory PhD, author of *The Technological Republic*; advocates defense-tech patriotism
 - [[entities/palantir]] — US defense/intelligence data analytics company (Gotham, Foundry, AIP); co-founded by Karp and Peter Thiel
 - [[entities/coinbase]] — 美國加密交易所（NASDAQ: COIN）；x402 協議發起者；Base L2 發行方；CDP 開發者平台
+- [[entities/stripe]] — 金融科技支付基礎設施；MPP + ACP 共同發起者；Agentic Commerce Suite；同時支援 x402
+- [[entities/mastercard]] — 全球卡支付網路；Agent Pay（Agentic Token + Verifiable Intent）；與 Google AP2 共同開發信任框架（2025-04）
+- [[entities/visa]] — 全球卡支付網路；Visa Intelligent Commerce + Trusted Agent Protocol (TAP)；RFC 9421 HTTP 簽名；100+ 合作夥伴（2025-10）
 - [[entities/starcloud]] — 美國太空算力新創；Starcloud-1 搭載 NVIDIA H100，首個在太空訓練 LLM（2025-11）
 - [[entities/ada-space]] — 中國國家背景軌道超算星座；目標 2800 顆衛星 × 744 TOPS/顆；2025-05 首批 12 顆發射
 - [[entities/win-semiconductors]] — 穩懋半導體（3105）；全球 LEO 規格 PA 代工龍頭
 - [[entities/ascend-tech]] — 昇達科技（3491）；濾波器/波導管；已入 Starlink & Kuiper 鏈；毛利 >50%
 - [[entities/huatong-pcb]] — 華通電腦；低軌衛星專用 PCB 全球市佔 ~80%；2025 Q4 LEO 板營收 >155 億新台幣
 - [[entities/google-suncatcher]] — Google 軌道 TPU 算力計畫；光學通訊整合；科技巨頭進場 ODC 的關鍵訊號
+- [[entities/polkaworld]] — Largest Polkadot community in Asia since 2019; Chinese/English media; founders Xiaojie Pang & Guanghua Guo; 12 consecutive Treasury approvals; co-hosted Gavin Wood's China JAM Tour (874 attendees)
+- [[entities/shawn-tabrizi]] — Polkadot Technical Fellowship Architect; PBA lead instructor; coined "Polkadot Cloud" framing; "JAM is the beginning of the Polkadot cloud"; shawntabrizi.com
+- [[entities/bill-laboon]] — Web3 Foundation VP of Ecosystem (promoted Nov 2025); former Director of Education; launched Polkadot Agents Program; ex-CS lecturer at U of Pittsburgh
+- [[entities/dotleap-gbaci]] — DotLeap newsletter by gbaci/Gilbert Bassey; leading English weekly Polkadot ecosystem digest; newsletter.dotleap.com
 
 ## Concepts
 
@@ -51,13 +58,17 @@ type: index
 - [[concepts/proof-of-personhood]] — Replaces staking with human-weighted validation; DIM1/2/3 rollout; announced Berlin 2025
 - [[concepts/technological-republic]] — Thesis that US power is rooted in state-directed engineering ambition; Silicon Valley has abandoned this heritage for consumer trivialities
 - [[concepts/soft-belief]] — Shared national/cultural purpose and willingness to confront ideas; cultural prerequisite for civilization-scale achievement
-- [[concepts/x402-protocol]] — HTTP 402 Payment Required 復活為 M2M 自動支付標準；< 2 秒結算；$0.0001/筆；支援 Base/Polygon/Solana/Stellar/Algorand
-- [[concepts/agentic-payments]] — AI agents 無人工介入自主發起支付；涵蓋 API 按次計費、跨 agent 交易、資料按需購買；McKinsey 預估 2030 年 $3–5 兆規模
+- [[concepts/x402-protocol]] — HTTP 402 Payment Required 復活為 M2M 自動支付標準；V2（2025-12）新增 Session / 任意 ERC-20 / CAIP 標準；1 億筆累積；每日真實量 $28K（2026-03）
+- [[concepts/agentic-payments]] — AI agents 無人工介入自主發起支付；涵蓋 API 按次計費、跨 agent 交易、資料按需購買；McKinsey 預估 2030 年 $3–5 兆規模；五大協議生態（x402/ACP/AP2/MPP/L402）
+- [[concepts/agentic-payment-protocols]] — x402 vs ACP（OpenAI+Stripe）vs AP2（Google）vs MPP（Stripe+Tempo）vs L402（Lightning）全景比較；協議層次分析；Visa/Mastercard/PayPal 傳統大廠策略
 - [[concepts/orbital-data-center]] — 軌道資料中心（ODC）：太空邊緣算力；7×24 太陽能 + 輻射冷卻；關鍵玩家 Starcloud/Axiom/ADA Space
 - [[concepts/leo-value-chain]] — LEO 產業上中下游完整拆解：RF/PCB/ISL/算力模組→發射/頻譜/去軌→ODC→地面基礎設施→終端；台灣缺席中游 C ODC；輻射測試基礎設施為隱性門檻
 - [[concepts/tid-total-ionizing-dose]] — 累積型輻射損傷：SiO₂ 電洞捕獲→閾值漂移；Co-60 測試（MIL-STD-883 TM1019）；雙極元件 ELDR 效應；RDM ≥ 1.5
 - [[concepts/see-single-event-effects]] — 單粒子效應完整分類：SEU/SET/SEFI（軟錯誤）+ SEL/SEB/SEGR（硬錯誤）；重離子截面量測；SEL 優先測試原則；2025 JetBlue 案例
-- [[concepts/rha-radiation-hardening]] — 輻射硬化保證流程：RDM 計算、COTS 上篩選、90Sr/90Y 新測試源；台灣無本地設施為結構性弱點
+- [[concepts/rha-radiation-hardening]] — 輻射硬化保證流程：RDM 計算、COTS 上篩選、90Sr/90Y 新測試源；台灣 TID+質子 SEE 已建立，重離子 SEE 仍缺；主要商業測試實驗室（TRAD/Zero-G/JPL）
+- [[concepts/solar-cycle-25-leo-radiation]] — SC25 強於預測；2024-05 G5 超強磁暴創生兩條新暫態輻射帶（6.8–20 MeV 質子帶仍在）；峰值劑量率 2200 μGy/h；LEO RDM 應保守調高
+- [[concepts/cots-gpu-radiation-risk]] — H100 ECC 覆蓋 HBM3+快取但無 TID/SEL 保護；Aitech S-A2300 Orin 2025-05 TID 測試（10 krad 裸機通過，帶鋁屏蔽等效 20 krad）；Starcloud V1 在軌緩解策略
+- [[concepts/taiwan-radiation-test-ecosystem]] — 台灣 2020 年建立輻射測試聯盟；2022 NSPO×台大癌症中心 MoU（超導回旋加速器，2023 起運作）；INER 負責 TID；重離子仍須赴 LBNL/TRIUMF
 
 ## Synthesis
 

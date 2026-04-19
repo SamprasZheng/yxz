@@ -20,9 +20,19 @@ tags: [ai-agents, payments, automation, machine-to-machine, stablecoin, agentic-
 
 ## 技術實現方式
 
-### 協議層
-- [[concepts/x402-protocol]] — HTTP-native，最成熟的開放標準（Coinbase, 2025）
-- Google Agentic Payments Protocol — Google 的實作，已整合 x402
+### 協議層（2026 年全景）
+
+2025–2026 年間，五個主要協議湧現，各自覆蓋不同場景：
+
+| 協議 | 發起方 | 定位 |
+|---|---|---|
+| [[concepts/x402-protocol]] | Coinbase | HTTP-native stablecoin M2M 支付（V2: 2025-12）|
+| ACP | OpenAI + Stripe | 法幣 Merchant Checkout 流程 |
+| AP2 | Google | 授權信任框架（Mandate），payment-agnostic |
+| MPP | Stripe + Tempo | Session 式連續微支付（2026-03）|
+| L402 | Lightning Labs | Bitcoin Lightning HTTP 微支付（2020 起）|
+
+詳細比較見 [[concepts/agentic-payment-protocols]]。
 
 ### 帳戶/錢包層
 - Agent 持有自己的 on-chain wallet（通常是 EVM 地址）
@@ -45,22 +55,46 @@ tags: [ai-agents, payments, automation, machine-to-machine, stablecoin, agentic-
 | Content agent | 購買圖片版權、音樂授權 |
 | Multi-agent pipeline | Agent A 完成任務後自動向 Agent B 付費取得結果 |
 
+## 主要生態參與者（2025–2026）
+
+### Crypto-native 陣營
+- **Coinbase**（x402）：HTTP-native stablecoin 支付，V2 2025-12 發布，1 億筆累積
+- **Lightning Labs**（L402）：Bitcoin Lightning，2020 起生產運行，2026-02 釋出 AI agent 工具集
+
+### 傳統支付大廠
+| 公司 | 方案 | 發布時間 | 核心創新 |
+|---|---|---|---|
+| [[entities/stripe]] | MPP + ACP + Agentic Commerce Suite | 2025-09 / 2026-03 | 同時押注 fiat + crypto |
+| PayPal | Agent Ready + Store Sync | 2025-10 | 百萬商家零技術接入 |
+| [[entities/visa]] | Intelligent Commerce + TAP | 2025-10 | RFC 9421 簽名 HTTP 訊息 |
+| [[entities/mastercard]] | Agent Pay（Agentic Token + Verifiable Intent）| 2025-04 | Per-agent token + SD-JWT 授權記錄 |
+
+### 科技平台
+- **Google**（AP2）：60+ 夥伴，Mandate 授權框架，2025-09-17
+- **OpenAI**（ChatGPT Instant Checkout via ACP）：與 Stripe 共同規格，2026-02 上線
+
 ## Agentic Commerce 規模預測
 
-- McKinsey（2025）：agentic commerce 到 2030 年媒介 $3–5 兆美元
+- McKinsey（2025）：agentic commerce 到 2030 年媒介 $3–5 兆美元；僅美國 B2C 零售最多 $1 兆
 - 2026 年全球 agentic commerce 交易額：$80 億美元
 - 2031 年預估：$3.5 兆美元
+- Visa 預測：2026 假日購物季前，數百萬消費者將使用 AI agent 完成購物
 
 ## 關鍵挑戰
 
 1. **錢包安全**：agent 持有私鑰或授權的安全模型
 2. **費用失控風險**：agent 被攻擊或邏輯錯誤導致大量失控支出
 3. **監管合規**：stablecoin 支付的各國法規差異
-4. **需求驗證**：目前（2026 Q1）真實交易量仍低，商業模式尚待驗證
+4. **需求驗證**：目前（2026 Q1）x402 真實交易量僅 $28,000/日，商業模式尚待驗證
+5. **協議碎片化**：x402 / ACP / AP2 / MPP / L402 同時存在，開發者選擇複雜
 
 ## 相關頁面
 
-- [[concepts/x402-protocol]] — 最主要的技術標準
+- [[concepts/x402-protocol]] — 最主要的 crypto-native 技術標準
+- [[concepts/agentic-payment-protocols]] — 五大協議全景比較
 - [[sources/x402-protocol-coinbase-2025]] — 詳細資料來源
 - [[entities/coinbase]] — x402 發起者
+- [[entities/stripe]] — MPP + ACP 共同發起者
+- [[entities/visa]] — Intelligent Commerce / TAP
+- [[entities/mastercard]] — Agent Pay / Verifiable Intent
 - [[concepts/xcm]] — Polkadot 跨鏈 M2M 訊息（相關領域）

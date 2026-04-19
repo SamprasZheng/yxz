@@ -62,3 +62,4 @@ tags: [rf-hardware, space, radiation, semiconductor, testing, mil-std]
 - [[concepts/rha-radiation-hardening]]
 - [[sources/space-radiation-tid-see-2025]]
 - [[concepts/leo-value-chain]] — TID 認證是進入星座供應鏈的門檻
+- [[concepts/solar-cycle-25-leo-radiation]] — SC25 峰值（2024–2026）使 LEO 任務 TID 劑量超出歷史模型基準，應提高 RDM 安全裕度
