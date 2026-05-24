@@ -178,6 +178,17 @@ Four explicit specification pages back this synthesis. The synthesis page is the
 
 If the synthesis page contradicts a companion page, the **companion page wins** — those are the contracts the agent reads from. Update the companion page first, then propagate the wording back here.
 
+## 8.6 Reliability-architecture concept pages (added 2026-05-24 third refinement)
+
+Four concept pages back the reliability claim in §1's second pitch line. The Mission Desk plan describes *what the agent does*; these pages describe *why the output should be trusted*:
+
+- [[concepts/small-model-ensemble]] — three-specialist arbiter pattern (classifier + scorer + recommender + arbiter); MoA / PoLL / Petri / FrugalGPT analogues; correlated-failure risk and mitigations.
+- [[concepts/tiered-inference]] — cost-aware T1/T2/T3 cascade with four explicit escalation triggers; FrugalGPT / RouteLLM / Together MoA / Anthropic prompt caching / o-series tiered thinking analogues; Nemotron Nano/Super/Ultra token-cost reference table.
+- [[concepts/calibrated-confidence-llm]] — calibration techniques (temperature / Platt / verbalised / P(IK) / conformal / selective prediction); three-class `answer/abstain/escalate` output; coverage-risk curve operating-point policy per decision-verb class.
+- [[concepts/agentic-provenance]] — four-layer trust model (data / model / decision / system); W3C PROV / C2PA / NIST AI 600-1 / EU AI Act Article 50 / CycloneDX ML-BOM analogues; reproducibility invariant tying every published row back to its raw evidence blob.
+
+These four pages roll up into [[synthesis/spacesharks-trust-stack]], which is the canonical defensibility argument for the third refinement.
+
 ## 9. Risks & mitigations
 
 | Risk | Mitigation |
@@ -198,6 +209,8 @@ This page is the canonical record of that pivot.
 
 A second review pass on 2026-05-24 (post-initial-commit) flagged five tightening points: "real-time" needed explicit freshness/latency tiers (added as §2.5); the data contract was implied but not written (now [[concepts/spacesharks-mission-desk-event-schema]]); the decision loop lacked an evaluation layer (now [[concepts/spacesharks-mission-desk-evaluation-rubric]]); the publish verb was too autonomous (now [[concepts/spacesharks-mission-desk-governance]] downgrades to suggested-by-default); and the source list was too broad (now §8 locks first-version to four sources, others are schema-conformant stubs). The reviewer's framing — "the moat is the dataset and operating loop, not the agent itself" — is now the headline of §1.
 
+A **third refinement** on 2026-05-24 (later same day) reframed the defensibility argument away from "we used the largest Nemotron" toward "we built a calibrated, instrumented, multi-model system." The owner's reasoning: largest-model claims are commoditised at hackathon scale, but trust architecture (ensemble disagreement, tiered escalation, calibrated abstention, cross-layer provenance) requires the kind of accumulated runway Spacesharks already has. The new pitch line — *"a low-cost, multi-model satellite ops copilot that uses ensemble reasoning, provenance, and safe execution to produce trustworthy recommendations"* — and the four-layer trust stack are formalised in [[synthesis/spacesharks-trust-stack]]; the four concept pages backing it are listed in §8.6. The five-word scope (`NemoClaw`, `OpenClaw`, `small-model ensemble`, `provenance`, `24/7 ops loop`) is the discipline rule: features that do not serve one of these are out of scope for the hackathon window.
+
 ## See also
 
 - [[sources/nvidia-agent-challenge-2026]] — event source of truth (deadline, rules, stack, prize)
@@ -212,3 +225,8 @@ A second review pass on 2026-05-24 (post-initial-commit) flagged five tightening
 - [[concepts/spacesharks-mission-desk-event-schema]] — lifecycle-event row contract
 - [[concepts/spacesharks-mission-desk-evaluation-rubric]] — scoreboard metrics and honest-scoring guardrails
 - [[concepts/spacesharks-mission-desk-governance]] — tiered publish policy, review_status lifecycle, debate format
+- [[synthesis/spacesharks-trust-stack]] — four-layer reliability architecture; canonical defensibility argument for the third refinement
+- [[concepts/small-model-ensemble]] — three-specialist arbiter pattern (Layer 2)
+- [[concepts/tiered-inference]] — cost-aware T1/T2/T3 cascade with explicit escalation triggers (Layer 2 cost spine)
+- [[concepts/calibrated-confidence-llm]] — `answer / abstain / escalate` three-class output and calibration techniques (Layer 3)
+- [[concepts/agentic-provenance]] — four trust layers and reproducibility invariant (cross-layer)
