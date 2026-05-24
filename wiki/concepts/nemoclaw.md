@@ -87,6 +87,8 @@ curl -fsSL https://www.nvidia.com/nemoclaw.sh | \
 
 After install: `nemoclaw onboard` (or `nemohermes onboard`) walks through sandbox name, inference provider, model selection, and network policy preset.
 
+> Hermes-profile note: Hermes config is written to `/sandbox/.hermes` (inside the sandbox), not to the host. Hermes does **not** expose the OpenClaw browser dashboard on port `18789` — only the OpenAI-compatible API on `8642`. Full operator runbook at [[sources/nemoclaw-hermes-install-runbook-2026]].
+
 ## Hardware requirements
 
 | Resource | Minimum | Recommended |

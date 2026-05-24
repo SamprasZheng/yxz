@@ -27,6 +27,7 @@ type: index
 - [[sources/sampras-rf-soc-debug-playbook-2025]] — RF / SoC NPI debug taxonomy: HW / FW / SW / ENV four-layer classification (2025-06-02)
 - [[sources/sampras-2026-roadmap]] — Sampras's 2026 cross-domain roadmap: AI × Space × Crypto × RF × Radiation (2026-03-22)
 - [[sources/nvidia-agent-challenge-2026]] — NVIDIA Agent Challenge 2026 (GTC Taipei): long-running agent hackathon, Nemotron + Hermes + NemoClaw stack, ≤4-person team, owner-reported deadline 2026-05-28 12:00 PM; CONFIRMED GTC Taipei context + Meet-a-Claw + stack reality, UNCONFIRMED specific deadline/prize/rules pending official PDF
+- [[sources/nemoclaw-hermes-install-runbook-2026]] — Operator runbook for NemoClaw Hermes profile: install, connect, port 8642 health, snapshot/destroy lifecycle, openshell port forward (2026-05-24)
 
 ## Entities
 
