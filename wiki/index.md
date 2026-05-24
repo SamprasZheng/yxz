@@ -33,6 +33,10 @@ type: index
 - [[sources/nemoclaw-build-a-claw-portal-2026]] — NVIDIA "Build-a-Claw" onboarding portal: Brev / DGX Spark / Jetson install paths (2026)
 - [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
 
+- [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
+- [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
+- [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+
 ## Entities
 
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
@@ -69,6 +73,9 @@ type: index
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
 - [[entities/peter-steinberger]] — Austrian engineer (@steipete); PSPDFKit co-founder/CEO (€100M Insight exit 2021); creator of OpenClaw; OpenAI personal-agents lead (Feb 2026–)
+
+- [[entities/nspo]] — Taiwan space-program entity; LEO application collaborator for the X-band transmitter / XT-144 thesis context
+- [[entities/tron-future-tech]] — Taiwan RF/space hardware vendor node for the XT-144 phased-array system
 
 ## Concepts
 
@@ -109,7 +116,12 @@ type: index
 - [[concepts/openclaw]] — Open-source MIT autonomous agent ("the AI that actually does things"); WhatsApp/Telegram/Slack chat-driven; CDP browser + shell tools; Steinberger-founded; default profile inside NemoClaw sandbox
 - [[concepts/nemoclaw-policy-presets]] — Composable hot-reloadable YAML policy presets (official / community / custom); five canonical recipes; the graded artifact for hackathon "secure by design" credit
 
+- [[concepts/openshell-runtime]] — Sandbox runtime layer under NemoClaw/OpenClaw; policy enforcement and credential egress mediation
+- [[concepts/dgx-spark]] — NVIDIA small-form-factor reasoning workstation context for GTC Taipei / Nemotron / Hermes / NemoClaw deployments
+- [[concepts/openvino]] — Intel edge-inference optimization toolkit; Raymond Lo career anchor and comparison point to NVIDIA local-agent stack
+
 ## Synthesis
 
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window and three breakthrough paths (PCB integration / defense catalysis / upstream extension)
 - [[synthesis/sampras-2026-engineering-thesis]] — AI × Space × Crypto × RF × Radiation integrated stack thesis; 2026 convergence triggers and falsifiability table
+- [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Canonical plan for NVIDIA Agent Challenge 2026 entry: satellite-lifecycle decision co-pilot (five phases × decision verbs × labeled dataset moat) on Nemotron + Hermes + NemoClaw; 2-day build + 2-day refine schedule; investment angle deliberately de-emphasised in favour of operator decisions
