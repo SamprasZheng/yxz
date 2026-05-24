@@ -143,6 +143,7 @@ The runtime is only half the story — the community/ecosystem layer is where da
 - [[concepts/openclaw]] — the **default agent profile** that runs inside the sandbox; community-owned (MIT), created by [[entities/peter-steinberger]], not an NVIDIA project.
 - [[concepts/hermes-agent-framework]] — the second supported agent profile (experimental). Hermes provides the agent loop; NemoClaw provides the cage.
 - [[concepts/nemotron]] — NVIDIA's open model family; a natural choice for the inference target NemoClaw routes to.
+- [[concepts/mcp-aerospace-applications]] — NemoClaw's L7 egress policy governs which MCP servers the sandboxed agent is allowed to call; this is the "whitelist" layer the owner references when integrating aerospace MCP tool servers (STK, SPICE, Space-Track, etc.).
 - **NIM** — NVIDIA Inference Microservices; the gateway can point at NIM endpoints for self-hosted inference.
 - **NeMo Agent Toolkit** — broader umbrella; OpenShell is described in NVIDIA docs as "part of NVIDIA Agent Toolkit."
 - **NeMo Guardrails** (Colang) — different product, different layer; can stack on top of NemoClaw for dialog-level rails.

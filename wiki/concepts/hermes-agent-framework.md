@@ -67,6 +67,7 @@ This is the framework recommended for the **NVIDIA Agent Challenge 2026** (see [
 - [[concepts/dgx-spark]] -> local/on-prem deployment surface mentioned in the NVIDIA integration path
 - [[concepts/nemotron]] -> NVIDIA model family used in the challenge stack
 - [[concepts/nemoclaw]] -> sandbox/runtime integration path
+- [[concepts/mcp-aerospace-applications]] — MCP-standardized tool connectivity layer; Hermes exposes an OpenAI-compatible (MCP-shaped) endpoint on port 8642 that aerospace tool servers can register against
 
 - [[entities/nous-research]] — the org
 - [[entities/hermes-llm-series]] — the LLM lineage (different artifact, same org)

@@ -72,6 +72,17 @@ Strong solar activity heats the upper atmosphere, increasing atmospheric drag on
 - [[concepts/orbital-data-center]] — COTS GPUs deployed to LEO during SC25 peak face elevated SEU/SEL risk
 - [[sources/space-radiation-tid-see-2025]]
 
+## Operational Feed Cross-Links
+
+The physics documented above is monitored in real time via NOAA SWPC feeds. See:
+
+- [[concepts/swpc-space-weather-feeds]] — JSON feed URLs and polling cadences for the indices below; includes the agent decision-logic pattern and the May 2024 documented CDM degradation
+- [[concepts/space-weather-operational-indices]] — full definitions and operational thresholds for Kp, ap, Ap, Dst, F10.7, S-scale (proton), R-scale (X-ray); maps each index to a satellite operational decision
+- [[entities/noaa-swpc]] — the agency publishing these feeds; ISES flagship center; relationship to USAF 557th Weather Wing
+- [[sources/noaa-swpc-product-catalog]] — verified JSON URL table including `planetary_k_index_1m.json`, `integral-protons-1-day.json`, `f107_cm_flux.json`, `enlil_time_series.json` and all GOES/DSCOVR feeds
+
+Key connection: the transient radiation belts created by the May 2024 G5 storm are the same event documented in [[concepts/swpc-space-weather-feeds]] as the operational worst-case (Dst −461 nT; 3–5× drag; 12 Starlink satellites lost; CDM conjunction assessment degraded). The physics of the new proton belt (6.8–20 MeV, still present February 2025) is the damage-side story; the feeds page captures the real-time monitoring and response side.
+
 ## Data Sources
 
 - NASA CIRBE / CIRBE-REPTile-2 observations (2025-02, JGR: Space Physics, Li et al.)
