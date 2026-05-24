@@ -8,7 +8,7 @@ Personal blog, portfolio, wiki, and AI-agent workspace for Sampras Zheng. The pu
 
 - RF and hardware engineering
 - SATCOM, phased arrays, calibration, EVM, and radiation effects
-- LEO space infrastructure and orbital data centers
+- LEO space infrastructure, orbital data centers, and satellite lifecycle regulation (FAA Part 450 / NOTAM, FCC IBFS / spectrum, SSA / conjunction)
 - Polkadot, JAM, XCM, and crypto infrastructure
 - AI agents, MCP workflows, personal knowledge systems, and automation
 - Macro and supply-chain analysis

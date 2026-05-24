@@ -32,6 +32,27 @@ type: index
 - [[sources/openclaw-introducing-steinberger-2026]] — First-party OpenClaw rebrand announcement; naming history Clawd → Moltbot → OpenClaw (2026-01-29)
 - [[sources/nemoclaw-build-a-claw-portal-2026]] — NVIDIA "Build-a-Claw" onboarding portal: Brev / DGX Spark / Jetson install paths (2026)
 - [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
+- [[sources/noaa-swpc-product-catalog]] — NOAA SWPC product and data catalog: full JSON URL table with cadences for all operational space weather feeds (ingested 2026-05-24)
+
+- [[sources/msbai-orbitguard-dod-contract-2025]] — MSBAI OrbitGuard $1.2M DoD SBIR (Sept 2025): JEPA + MARL neuro-symbolic SDA copilot; 94–98% lab accuracy across ~15,000 objects; AMOS 2025 poster; CEO Grosvenor verbatim quote (ingested 2026-05-24)
+- [[sources/scnoc-agentic-sun-2025]] — SCNOC-Agentic paper (Electronics 2025, 14(16), 3320): first LLM multi-agent framework for satellite communications NetOps; four components (intent refinement / multi-agent workflow / long-term memory / graph-RAG); qwen2.5-70B improved network task planning accuracy 15.6%→32.2% (ingested 2026-05-24)
+- [[sources/developing-ai-agents-satellite-ops-2025]] — "Developing AI Agents for Satellite Operations"; Journal of Space Operations & Communicator Vol. 21 No. 3, 2025; ReAct + MCP + RAG + Satellite Digital Twin architecture proposal for ground-enterprise LLM integration (ingested 2026-05-24)
+- [[sources/llm-expert-agent-mission-ops-2025]] — "LLM Based Expert AI Agent for Mission Operation Management"; IAPGOS Vol. 15 No. 1, 2025; Mummaneni/Gudipati/Panda; RAG-only conceptual proposal; NOT IEEE (venue correction) (ingested 2026-05-24)
+
+- [[sources/faa-ast-launch-licensing-2025]] — FAA AST licensing overview: 1,000th licensed operation Aug 2025, Part 450 license types, 180-day review, § 450.101 EC ≤ 10⁻⁴, § 450.161 NOTAM obligation (2025)
+- [[sources/faa-notam-search-2024]] — FAA NOTAM Search public API, DINS multi-ICAO query, SWIM FNS JMS subscription, ICAO codes for US launch sites (2024)
+- [[sources/faa-part-450-2020]] — 14 CFR Part 450 final rule: consolidates Parts 415/417/431/435, effective March 2021, § 450.101 EC criteria, § 450.161 NOTAM obligation, 25-year deorbit rule (2020)
+- [[sources/notam-starship-ift8-2025]] — Starship IFT-8 NOTAM scrub case study: Feb 28 NOTMAR, March 3 scrub at T-40s, March 4 weather scrub, March 6 launch; IFT-9 A1559/25 chain (2025)
+- [[sources/ccsds-508-cdm-2013]] — CCSDS 508.0-B-1 Conjunction Data Message standard: required fields (TCA, miss distance, Pc, covariance), KVN/XML encoding (2013)
+- [[sources/space-track-cdm-api-2023]] — Space-Track.org REST API: cdm_public vs cdm classes, authentication, rate limits (30/min, 300/hr), example CDM query recipe (2023)
+- [[sources/nasa-cara-handbook-2023]] — NASA CARA Best Practices Handbook: Pc thresholds (Red ≥ 1e-4, Yellow ≥ 7e-5), three-step process, HBR methodology, covariance realism (2023)
+- [[sources/tracss-oasis-announcement-2024]] — OSC/NOAA TraCSS: DoD→DoC civil STM transition; OASIS/SKYLINE/HORIZON components; initial capabilities Sep 2024; production target 2026 (ingested 2026-05-24)
+- [[sources/leolabs-conjunction-alerts-2025]] — LeoLabs commercial CDM service: < 5 min delivery, 400% more frequent updates, covariance realism, 22K+ objects tracked (2025)
+- [[sources/fcc-ibfs-portal-2023]] — FCC IBFS portal: licensing.fcc.gov/myibfs/, filing types SAT-LOA/MOD/STA, public search, Open Data export; 24/7 no-auth read access (2023)
+- [[sources/fcc-space-bureau-2023]] — FCC Space Bureau creation April 2023, carved from International Bureau; administers Part 25 SAT-* filings, ITU API/CR/N pipeline (2023)
+- [[sources/fcc-part-25-2024]] — 47 CFR Part 25 satellite communications rules: 15-yr standard license, EPFD compliance, Part 5 experimental pathway, 2024–2025 modernisation proposals (2024)
+- [[sources/itu-radio-regulations-article-22-2023]] — ITU Radio Regulations Article 22 EPFD limits + Resolution 76 (Rev.WRC-23) aggregate limits; free EPFD validation software at itu.int/epfdsupport/ (2023)
+- [[sources/fcc-starlink-gen2-kuiper-rulings-2022-2024]] — FCC constellation rulings 2020–2024: Starlink Gen2 7,500 sats (FCC 22-91), V-band (DA-24-1193), Kuiper 3,232 sats, AST SpaceMobile 248 sats SCS (2022–2024)
 
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
@@ -73,6 +94,19 @@ type: index
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
 - [[entities/peter-steinberger]] — Austrian engineer (@steipete); PSPDFKit co-founder/CEO (€100M Insight exit 2021); creator of OpenClaw; OpenAI personal-agents lead (Feb 2026–)
+- [[entities/noaa-swpc]] — NOAA Space Weather Prediction Center: civilian space weather authority; Boulder CO; ISES flagship RWC; 24/7 alerts/watches/warnings; civil counterpart to USAF 557th Weather Wing
+
+- [[entities/lockheed-martin-space]] — Lockheed Martin Space AI/SDA product line: iSpace (C2 + sensor fusion), Space Fence (S-band radar), T-TAURI (onboard telemetry AI), ARISE; 80+ space AI/ML programs; no confirmed JEPA usage publicly
+- [[entities/msbai]] — MSBAI (Microsurgeonbot Inc.); LA-based defense AI startup; CEO Allan Grosvenor; OrbitGuard JEPA + MARL copilot; Air Force Techstars '20; $1.2M DoD SBIR 2025
+
+- [[entities/18-sds]] — 18th Space Defense Squadron (USSF, Vandenberg SFB); maintains space surveillance catalog; generates CDMs via Space-Track.org; transitioning to TraCSS
+- [[entities/space-track-19sds]] — Space-Track.org / 18 SDS / 19 SDS operational structure: 18 SDS = catalog + data sharing; 19 SDS = conjunction assessment at Dahlgren VA; CDM email + API delivery; TraCSS transition
+- [[entities/leolabs]] — Commercial phased-array SSA company; CDMs in < 5 min, 400% more frequent than 18 SDS; covariance realism advantage; MVP upgrade path
+- [[entities/slingshot-aerospace]] — Commercial SSA + Beacon CDM platform; $13.3M NOAA TraCSS UI contract; fleet coordination and maneuver sharing; Agatha IRL anomaly AI (DARPA PRECOG, June 2024); ~$110–120M total funding
+- [[entities/cognitive-space]] — Houston AI satellite ops startup; CNTIENT.Optimize (87% ops time savings, 4× planning vs traditional); SDA/AFRL/NOAA customer; ~$5M combined SDA contracts 2025; $11.2M total funding; CEO Guy de Carufel
+- [[entities/kayhan-space]] — Boulder collision avoidance startup; Pathfinder/Satcat Suite (autonomous maneuver planning + M2M coordination); customers Capella/Lynk/Globalstar; $10.7M funding; CEO Siamak Hesar (founded 2019)
+- [[entities/privateer-space]] — Honolulu SSA startup; Wayfinder visualization + TerraScope geospatial AI (Orbital Insight acquisition May 2024); $56.5M Series A; CEO Alex Fielding; Steve Wozniak co-founder
+- [[entities/aiko-space]] — Turin Italy on-board autonomy startup; GENE anomaly detection (4/5 anomalies in 3 min, Tyvak International deployment); ESA ARTES funding; Thales Alenia Space partner; €7M total funding; founded 2017
 
 - [[entities/nspo]] — Taiwan space-program entity; LEO application collaborator for the X-band transmitter / XT-144 thesis context
 - [[entities/tron-future-tech]] — Taiwan RF/space hardware vendor node for the XT-144 phased-array system
@@ -96,7 +130,9 @@ type: index
 - [[concepts/tid-total-ionizing-dose]] — Cumulative radiation damage: SiO₂ hole trapping → threshold drift; Co-60 testing (MIL-STD-883 TM1019); bipolar ELDR effect; RDM ≥ 1.5
 - [[concepts/see-single-event-effects]] — Single-event effects complete classification: SEU/SET/SEFI (soft errors) + SEL/SEB/SEGR (hard errors); heavy ion cross-section measurement; SEL-first test principle; 2025 JetBlue case
 - [[concepts/rha-radiation-hardening]] — Radiation hardening assurance process: RDM calculation, COTS screening, ⁹⁰Sr/⁹⁰Y new test sources; Taiwan has TID+proton SEE established, heavy-ion SEE still missing; major commercial test labs (TRAD/Zero-G/JPL)
-- [[concepts/solar-cycle-25-leo-radiation]] — SC25 stronger than predicted; May 2024 G5 superstorm created two new transient radiation belts (6.8–20 MeV proton belt still present); peak dose rate 2200 μGy/h; LEO RDM should be conservatively increased
+- [[concepts/solar-cycle-25-leo-radiation]] — SC25 stronger than predicted; May 2024 G5 superstorm created two new transient radiation belts (6.8–20 MeV proton belt still present); peak dose rate 2200 μGy/h; LEO RDM should be conservatively increased; now cross-linked to SWPC feed pages
+- [[concepts/swpc-space-weather-feeds]] — SWPC operational feed guide: full JSON URL + cadence table; agent polling pattern; G/S/R scale decision triggers; May 2024 CDM degradation documented
+- [[concepts/space-weather-operational-indices]] — Kp/ap/Ap/Dst/Bz/F10.7/S-scale/R-scale definitions; operational thresholds per index; satellite decision mapping (drag, CDM staleness, SEU watch, comms blackout)
 - [[concepts/cots-gpu-radiation-risk]] — H100 ECC covers HBM3+caches but no TID/SEL protection; Aitech S-A2300 Orin TID test May 2025 (10 krad bare, 20 krad with Al shielding equivalent); Starcloud V1 on-orbit mitigation strategy
 - [[concepts/taiwan-radiation-test-ecosystem]] — Taiwan established radiation test alliance in 2020; 2022 NSPO × NTU Cancer Center MoU (superconducting cyclotron, operational from 2023); INER handles TID; heavy ions still require travel to LBNL/TRIUMF
 - [[concepts/aesa]] — AESA technology evolution (fixed → mechanical → PESA → AESA → all-digital); SWAP breakthrough; beam-forming mathematics; all-digital vs. hybrid architecture comparison
@@ -116,12 +152,47 @@ type: index
 - [[concepts/openclaw]] — Open-source MIT autonomous agent ("the AI that actually does things"); WhatsApp/Telegram/Slack chat-driven; CDP browser + shell tools; Steinberger-founded; default profile inside NemoClaw sandbox
 - [[concepts/nemoclaw-policy-presets]] — Composable hot-reloadable YAML policy presets (official / community / custom); five canonical recipes; the graded artifact for hackathon "secure by design" credit
 
+- [[concepts/jepa-sda-multi-agent-rl]] — JEPA + Multi-Agent RL for SDA: LeCun JEPA primer; MSBAI OrbitGuard architecture (JEPA world models + MARL + neuro-symbolic); DARPA Hallmark sensor tasking; why this is incumbent-moat territory (data/sensor/clearance/lead-time); falsifiability table for owner's "0.98 P-R / Lockheed+MSBAI" claim
+- [[concepts/llm-satellite-operations-landscape]] — Competitive map: academic papers (2025 Journal of Space Ops + IAPGOS), commercial vendors (Cognitive Space/Slingshot/Kayhan/Privateer/AIKO), hyperscalers (AWS/Azure/GCP gaps), structural gap table (internal-TM-only / no lifecycle fusion / no LLM layer), Spacesharks unfair-advantage vs incumbent table
+- [[concepts/satellite-digital-twin]] — SDT definition (L1 telemetry mirror / L2 physics twin / L3 operational twin); on-board vs ground split; who is building (Slingshot $25.2M USSF contract, AIKO GENE L1 in production, ESA/NASA adjacencies); where MCP + LLM fit; relevance to Spacesharks event schema
+
+- [[concepts/cdm-conjunction-data-message]] — CDM navigation hub: full field-by-field reference (header/relative-metadata/per-object blocks); KVN/XML/JSON serialisation; manoeuvre decision lifecycle; May 2024 G5 CDM reliability breakdown; Spacesharks/Firefly integration
+- [[concepts/conjunction-screening-providers]] — Provider comparison table: 18 SDS/TraCSS (authoritative/free), LeoLabs (radar/<5 min), COMSPOC/SDA (member-share), Slingshot Beacon (aggregation/TraCSS UI), Privateer Wayfinder (free Crow's Nest), Kayhan Pathfinder (SaaS/CASS), Vyoma (European optical); data source, latency, cost, API, authority rating
+- [[concepts/pc-probability-of-collision]] — Probability of Collision: 2-D Gaussian integral over collision disk; Foster/Chan/Alfano/Akella-Alfriend methods; Red ≥ 1e-4 / Yellow ≥ 7e-5 / Green < 1e-5 NASA CARA thresholds
+- [[concepts/tca-time-of-closest-approach]] — Time of Closest Approach: CDM anchor epoch; 7-day look-ahead; decision urgency by time-to-TCA
+- [[concepts/covariance-ellipsoid]] — 6×6 position/velocity covariance in RTN frame; combined covariance feeds Pc integral; covariance realism is the #1 operational quality factor
+- [[concepts/hard-body-radius]] — Collision sphere radius per object; combined HBR defines the Pc integration disk; typical values 0.1–8 m by satellite class
+- [[concepts/screening-volume]] — Geometric box filter (2 km R × 25 km IT × 25 km CT, LEO) applied before Pc to generate CDM candidates; 7-day propagation window
+- [[concepts/notam]] — NOTAM structure: number format, Q-line fields, ICAO A/B/C/D/E fields, NOTAMN/R/C types, Q-codes QRDCA/QRDXX/QRTCA, AHA vs TFR distinction, public + SWIM retrieval
+- [[concepts/launch-window-slip]] — Slip taxonomy: instantaneous vs window, hold/scrub/slip/wave-off definitions, 5 slip-driver categories, NOTAM FSM, slip-probability scoring formula, IFT-8/IFT-9 verified timelines
+- [[concepts/schedule-s]] — FCC Form 312 technical annex: orbital parameters, frequency bands, EIRP density, antenna beam characteristics, EPFD compliance commitment; proposed replacement Schedule O/F
+- [[concepts/epfd-equivalent-power-flux-density]] — ITU Article 22 NGSO-to-GSO aggregate interference metric; EPFD↓/↑ limit tables; free ITU EPFD validation software; Resolution 76 aggregate limits
+- [[concepts/processing-round]] — FCC mechanism for concurrent review of competing NGSO constellation applications; 2020 Ku/Ka round (SpaceX Gen2, Kuiper, OneWeb); milestone conditions
+- [[concepts/ngso-gso-coordination]] — ITU NGSO/GSO coordination pipeline: API → CR/C → CR/D → Notification → SNS Master Register; EPFD compliance replaces bilateral GSO coordination
+
 - [[concepts/openshell-runtime]] — Sandbox runtime layer under NemoClaw/OpenClaw; policy enforcement and credential egress mediation
 - [[concepts/dgx-spark]] — NVIDIA small-form-factor reasoning workstation context for GTC Taipei / Nemotron / Hermes / NemoClaw deployments
 - [[concepts/openvino]] — Intel edge-inference optimization toolkit; Raymond Lo career anchor and comparison point to NVIDIA local-agent stack
+
+- [[concepts/satellite-netops-agents]] — LLM agents for satellite Network Operations (NetOps) vs platform operations (SatOps): SCNOC-Agentic as lead paper; 6G NTN adjacent work; landscape table by maturity; Spacesharks lifecycle-fusion framing
+- [[concepts/mcp-aerospace-applications]] — Model Context Protocol in aerospace: MCP refresher; what MCP brings to SPICE/STK/astrodynamics tool access; four verified open-source MCP-aerospace repos (IO Aerospace, STK-MCP, aerospace-mcp, NASA-MCP); honest assessment of owner's "architecturally leading" claim; no enterprise production deployments found
+
+- [[concepts/spacesharks-mission-desk-event-schema]] — Lifecycle-event row contract (11 core + per-phase extras + `parser_version` + `schema_version`); provenance-first with SHA-256 evidence blobs; `review_status` state machine; JSONL + SQLite mirror storage layout
+- [[concepts/spacesharks-mission-desk-evaluation-rubric]] — Two-track scoring (prediction + recommendation); hit rate + calibration_per_tier + Brier; FP/FN bias table per Phase 4 decision; ten-metric public scoreboard with source coverage / freshness / audit completeness alongside hit rate
+- [[concepts/spacesharks-mission-desk-governance]] — Tiered publish policy (high → 30-min cancel auto-publish; medium → draft-only; low → internal-log-only); `review_status` lifecycle; structured debate-output YAML; denied-action audit; nightly calibration auto-downgrade gate
+
+- [[concepts/notam-space-operations]] — Space-operations NOTAM subcategories: launch AHA (surface-to-unlimited, three NOTAM types per event), re-entry/stage-sep NOTAMs, Debris Response Area (DRA) activated by SDI anomaly detection, spectrum/GPS Q-codes (QNMAS/QNMAU); NMS cloud deployment April 18 2026; ICAO format transition planned 2027-2028; KICZ = FAA security NOTAMs (not space ops); Phase 1 + Phase 5 decision table for Spacesharks agent
+- [[concepts/launch-hazard-area]] — LHA/AHA geometric derivation: Monte Carlo dispersions → bounding box + 5 NM radial for launch-site; stage-impact 3σ ellipse + 10 NM buffer; blast overpressure R = 45 × NEW^(1/3); Ec ≤ 1×10⁻⁶ safety criterion; AHA size as operational intelligence signal; SDI real-time monitoring (SpaceX currently); dynamic AHA roadmap via CSINAS Time-Based Launch Procedures
+
+- [[concepts/small-model-ensemble]] — Small-model ensemble + multi-model arbiter pattern for low-latency satellite ops decisions; specialist routing vs monolithic Nemotron-Super; Spacesharks routing architecture
+- [[concepts/calibrated-confidence-llm]] — Calibrated LLM confidence and abstention policy: softmax ≠ factual accuracy; verbal-probability calibration; abstention-vs-publish decision gate; ops copilot overconfidence/underconfidence harms
 
 ## Synthesis
 
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window and three breakthrough paths (PCB integration / defense catalysis / upstream extension)
 - [[synthesis/sampras-2026-engineering-thesis]] — AI × Space × Crypto × RF × Radiation integrated stack thesis; 2026 convergence triggers and falsifiability table
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Canonical plan for NVIDIA Agent Challenge 2026 entry: satellite-lifecycle decision co-pilot (five phases × decision verbs × labeled dataset moat) on Nemotron + Hermes + NemoClaw; 2-day build + 2-day refine schedule; investment angle deliberately de-emphasised in favour of operator decisions
+- [[synthesis/cdm-pc-decisioning]] — End-to-end CDM → Pc → maneuver decision workflow; NASA CARA thresholds; MVP Space-Track cdm_public recipe with Python code; commercial upgrade path (LeoLabs/Slingshot); Firefly/NemoClaw integration
+- [[synthesis/faa-notam-launch-lifecycle]] — FAA NOTAM lifecycle end-to-end: AST licensing chain, NOTAM FSM, AHA vs TFR, USCG NOTMAR, FCC parallel track, LCOLA/CDM handoff, public-only MVP cookbook with slip-probability Python
+- [[synthesis/fcc-ibfs-filings-coordination]] — FCC IBFS satellite filings and interference coordination: Schedule S, EPFD, NGSO/GSO pipeline, API→CR→Notification, Starlink/Kuiper/AST rulings, public-data MVP + upgrade path
+

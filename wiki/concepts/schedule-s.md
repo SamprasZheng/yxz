@@ -1,0 +1,90 @@
+---
+type: concept
+tags: [fcc, ibfs, regulatory, spectrum, satellite, part-25, schedule-s, orbital-parameters, mission-desk]
+---
+
+# Schedule S
+
+Schedule S is the technical annex to FCC Form 312, the application form for satellite space station (and certain earth station) licenses under Part 25 of the FCC's rules (47 CFR Part 25; see [[sources/fcc-part-25-2024]]). It defines the structured data format that an operator must submit to obtain a satellite license in the United States, and its fields directly populate the ITU coordination package the FCC submits on the operator's behalf.
+
+As of 2025, the FCC proposed in its *Space Modernization for the 21st Century* NPRM (FCC 24-97, Dec 2024) to eventually replace Schedule S with two new schedules — Schedule O (orbital information) and Schedule F (frequency information) — to modernise the data model. Until those replacement rules are finalised, Schedule S remains the operative technical disclosure form.
+
+## Sections and Key Fields
+
+### 1. Orbit Type Selection
+The filer selects either **geostationary orbit (GSO)** or **non-geostationary orbit (NGSO)**. This selection gates which downstream fields apply and which ITU coordination pathway is triggered.
+
+### 2. Space Station or Satellite Network Name
+A unique human-readable network name (e.g., `STARLINK-GEN2`) used throughout the ITU Space Network System (SNS) database to identify the network in coordination correspondence.
+
+### 3. Orbital Parameters (NGSO)
+For each orbital plane:
+- Semi-major axis or mean altitude (km)
+- Inclination (degrees)
+- Mean anomaly at epoch date (degrees)
+- Eccentricity
+- RAAN (right ascension of ascending node)
+- Number of satellites per plane; number of planes
+
+For GSO: nominal orbital position (degrees East longitude).
+
+### 4. Spacecraft Physical / Electrical Characteristics
+- Mass at beginning of life (kg) and fuel mass in orbit
+- Deployed solar array area (m²)
+- Spacecraft dimensions (for debris casualty area)
+
+### 5. Frequency Bands — Transmit and Receive
+For each frequency band:
+- Uplink / downlink band designation (Ku / Ka / V / Q / other)
+- Channel bandwidth and modulation
+- For bands below 15 GHz: maximum EIRP density in **dBW/4 kHz**
+- For bands at and above 15 GHz: maximum EIRP density in **dBW/MHz**
+- Maximum total EIRP per beam
+
+### 6. Antenna Beam Characteristics
+For each transmit and receive beam:
+- Beam name and coverage area (geographic footprint)
+- Antenna pattern reference (diagram and numerical data file)
+- Maximum power flux density (PFD) at Earth's surface
+- Off-axis gain envelope for interference analysis
+
+### 7. EIRP and EPFD Declarations
+- Maximum EIRP (dBW) per beam per band
+- For NGSO systems: a commitment that the system will comply with ITU Article 22 [[concepts/epfd-equivalent-power-flux-density|EPFD]] limits, supported by time-domain simulation outputs
+
+### 8. Call Sign
+Assigned by the FCC upon grant, not on filing. The call sign anchors the license record in IBFS and in the ITU SNS database notification record.
+
+### 9. Fee Assignment
+Application filing fees are set by 47 CFR Part 1 Appendix B. The fee for a Part 25 space station license application (SAT-LOA filing type) as of 2024 is in the range of several thousand dollars; exact fee tiers depend on band, orbit type, and constellation size. ITU cost-recovery fees are separate and billed by the ITU directly to the FCC, which passes them to the operator.
+
+## Technical Attachments
+The Schedule S main form is always supplemented by exhibits, commonly called the "Technical Annex," providing:
+- Detailed antenna pattern data files (gain vs. off-axis angle)
+- EPFD compliance calculations (software output files for ITU validation)
+- Orbital debris mitigation plan
+- Power spectral density plots for SEM compliance
+
+## ITU Data Handoff
+The Schedule S data is the primary source from which the FCC's Space Bureau constructs the ITU filing package (API → CR → Notification). The satellite network name, orbital parameters, frequency bands, and EIRP/EPFD values map directly into the ITU SNS database fields. See [[synthesis/fcc-ibfs-filings-coordination]] for the full handoff workflow.
+
+## Proposed Replacement: Schedule O and Schedule F
+Under FCC 24-97 (NPRM, Dec 2024), the FCC proposed:
+- **Schedule O**: All orbital information (replaces orbital parameter sections of Schedule S)
+- **Schedule F**: All frequency and technical information (replaces frequency/EIRP sections of Schedule S)
+
+This split is intended to make machine-readable ingestion easier and to allow earth station applicants to cross-reference space station orbital data without duplicating it.
+
+## Relevance to Mission-Desk / NemoClaw
+- The Schedule S orbital parameters section is the **primary structured source** for constellation geometry queries (altitude, inclination, RAAN, sat count per plane).
+- Frequency band and EIRP declarations in Schedule S are the **ground truth** for link-budget and interference-attribution tasks in the [[synthesis/spacesharks-mission-desk-hackathon-plan|Mission Desk]].
+- Public IBFS search at `licensing.fcc.gov/myibfs/` exposes Schedule S exhibits as downloadable PDF attachments for granted licenses — no authentication required.
+- Cross-reference [[concepts/aesa]] and [[concepts/hybrid-phased-array]] for antenna pattern interpretation; EIRP / PFD figures in Schedule S bear directly on receive-antenna design at a ground terminal.
+
+## See Also
+- [[synthesis/fcc-ibfs-filings-coordination]]
+- [[concepts/epfd-equivalent-power-flux-density]]
+- [[concepts/ngso-gso-coordination]]
+- [[concepts/processing-round]]
+- [[sources/fcc-ibfs-portal-2023]]
+- [[sources/fcc-part-25-2024]]
