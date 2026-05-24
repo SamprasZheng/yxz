@@ -20,6 +20,13 @@ type: index
 - [[sources/x402-protocol-coinbase-2025]] — x402 protocol full analysis: HTTP 402 revived as automated USDC payment standard for AI agents; Coinbase launched May 2025; Cloudflare/Google/Solana ecosystem support; $0.0001/transaction, <2 second settlement; agentic commerce projected to mediate $3–5 trillion by 2030 (ingested 2026-04-19)
 - [[sources/leo-space-datacenter-analysis-2025]] — LEO space data center industry analysis: 2025–2026 five hot topics + upstream/midstream/downstream breakdown; Taiwan vendor competitiveness map (Win Semiconductors/Ascend Tech/Huatong) (ingested 2026-04-19)
 - [[sources/space-radiation-tid-see-2025]] — Space radiation in-depth analysis: TID (Co-60/ELDR), SEE complete classification (SEU/SET/SEFI/SEL/SEB/SEGR), RHA radiation hardening assurance; radiation certification as the hidden threshold for Taiwan's LEO supply chain (ingested 2026-04-19)
+- [[sources/radtest-playbook-sampras-2021]] — Sampras's TID/SEE qualification playbook with inline trade-study calculators (2021-01-13)
+- [[sources/polkasharks-longway-polkadot-2024]] — Polkasharks "Long Way on Polkadot" overview: BABE/GRANDPA, SASSAFRAS, bridges, 2025 roadmap (2024-04-07)
+- [[sources/plurality-audrey-tang-sampras-2025]] — Plurality × Polkadot OpenGov × Project Liberty DSNP essay (2025-03-12)
+- [[sources/sampras-mygpts-ai-agent-2025]] — Sampras's myGPT manifesto: Jamia + Spacesharks + Obsidian KB workflow (2025-05-15)
+- [[sources/sampras-rf-soc-debug-playbook-2025]] — RF / SoC NPI debug taxonomy: HW / FW / SW / ENV four-layer classification (2025-06-02)
+- [[sources/sampras-2026-roadmap]] — Sampras's 2026 cross-domain roadmap: AI × Space × Crypto × RF × Radiation (2026-03-22)
+- [[sources/nvidia-agent-challenge-2026]] — NVIDIA Agent Challenge 2026 (GTC Taipei): long-running agent hackathon, Nemotron + Hermes + NemoClaw stack, ≤4-person team, owner-reported deadline 2026-05-28 12:00 PM; CONFIRMED GTC Taipei context + Meet-a-Claw + stack reality, UNCONFIRMED specific deadline/prize/rules pending official PDF
 
 ## Entities
 
@@ -46,6 +53,15 @@ type: index
 - [[entities/shawn-tabrizi]] — Polkadot Technical Fellowship Architect; PBA lead instructor; coined "Polkadot Cloud" framing; "JAM is the beginning of the Polkadot cloud"; shawntabrizi.com
 - [[entities/bill-laboon]] — Web3 Foundation VP of Ecosystem (promoted Nov 2025); former Director of Education; launched Polkadot Agents Program; ex-CS lecturer at U of Pittsburgh
 - [[entities/dotleap-gbaci]] — DotLeap newsletter by gbaci/Gilbert Bassey; leading English weekly Polkadot ecosystem digest; newsletter.dotleap.com
+- [[entities/sampras]] — Sampras Zheng; RF/hardware engineer, Polkadot ambassador, wiki owner, builder of Jamia & Spacesharks myGPTs
+- [[entities/audrey-tang]] — Former Taiwan Digital Minister; co-author of *Plurality*; civic-tech pioneer
+- [[entities/project-liberty]] — Sponsor of DSNP and cross-platform user-owned social networking push
+- [[entities/frequency]] — Polkadot-adjacent blockchain optimized for DSNP social-graph throughput
+- [[entities/jamia-gpt]] — Sampras's Custom GPT for Polkadot / JAM / Coretime / XCM / OpenGov
+- [[entities/spacesharks-gpt]] — Sampras's Custom GPT for LEO constellations, ODC, ISL, Taiwan space supply chain
+- [[entities/nvidia]] — NVIDIA Corp; GPU + Nemotron LLM vendor; GTC Taipei 2026 Agent Challenge host; cross-cuts AI, space (Starcloud H100), radiation (Orin TID)
+- [[entities/nous-research]] — Open-source AI lab founded 2023; CEO Jeffrey Quesnelle + Teknium/Karan4D/Shivani Mitra; $65M Series A April 2025 led by Paradigm at $1B valuation; builds Hermes LLMs, Hermes Agent, Psyche decentralized training
+- [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
 
 ## Concepts
 
@@ -74,7 +90,17 @@ type: index
 - [[concepts/dpd-digital-predistortion]] — PA linearization: memoryless/memory polynomial/NN-LM; NN DPD NMSE −26 dB, ACPR −4 dB; Indirect Learning; CUDA acceleration
 - [[concepts/zero-if-transmitter]] — Direct conversion architecture: lowest DAC sampling rate; LO leakage + IQ imbalance are core challenges; DAC quantization noise vs. SEM; delta-sigma noise shaping
 - [[concepts/evm-calibration]] — EVM measurement + calibration techniques: VSA six-window diagnosis; LO leakage ternary search; IQ pre-distortion matrix; low/high symbol rate EVM root cause analysis
+- [[concepts/orbit-dose-budgeting]] — Closed-form TID/SEE trade-study calculators; Poisson SEE framing; day-one mission sizing
+- [[concepts/dsnp]] — Decentralized Social Networking Protocol; user-owned portable social graph; hosted on Frequency
+- [[concepts/plurality]] — Audrey Tang's governance philosophy: multi-perspective, inclusive, adaptive; civic-tech ↔ on-chain OpenGov parallel
+- [[concepts/domain-specific-llm-agents]] — Narrow LLM agents = base model + curated KB + persona; knowledge-first, not scale-first
+- [[concepts/obsidian-llm-knowledge-base]] — Obsidian vault (sources/entities/concepts/synthesis) as canonical LLM knowledge corpus
+- [[concepts/rf-soc-debug-taxonomy]] — Four-layer NPI bug classification (HW / FW / SW / ENV); OTP/MCN# as cheapest cross-layer check
+- [[concepts/nemotron]] — NVIDIA's open reasoning LLM family (Nano 2 / Super 49B / Ultra 253B / Nemotron 3 Nano/Super/Ultra); NIM access via build.nvidia.com; mandatory core for GTC Taipei 2026 Agent Challenge
+- [[concepts/nemoclaw]] — NVIDIA's open-source (Apache 2.0) sandbox + guardrails stack for always-on agents; OpenShell runtime + L7 credential proxy + Landlock/seccomp/netns; OpenAI-compatible :8642; NOT a rebrand of NeMo Guardrails; NVIDIA Agent Challenge 2026 bonus track
+- [[concepts/hermes-agent-framework]] — Nous Research's self-improving agent framework (MIT, ~165k stars, v0.14.0 May 2026); learning loop + autonomous skill creation + pluggable memory backends + 7 deployment backends (local/Docker/SSH/Singularity/Modal/Daytona/Vercel Sandbox); requires 64k-token context; NVIDIA NemoClaw integration on port 8642; reference framework for NVIDIA Agent Challenge 2026
 
 ## Synthesis
 
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window and three breakthrough paths (PCB integration / defense catalysis / upstream extension)
+- [[synthesis/sampras-2026-engineering-thesis]] — AI × Space × Crypto × RF × Radiation integrated stack thesis; 2026 convergence triggers and falsifiability table
