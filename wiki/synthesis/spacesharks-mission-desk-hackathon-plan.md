@@ -129,6 +129,7 @@ Deliberate split: half the budget is implementation, half is polish + narrative 
 - Record handdrawn video walking through "24h in the desk's life."
 - Author submission README + architecture diagram; expose public links.
 - Scoreboard goes live with the **full metric set from [[concepts/spacesharks-mission-desk-evaluation-rubric|the evaluation rubric]]**: not just `prediction_hit_rate`, but also `calibration_per_tier`, `brier_score`, `recommendation_acceptance_rate`, `source_coverage`, `freshness_p50`/`p95`, `audit_completeness`, `denied_action_count`, `agent_authored_skill_count`. Reviewer's note: hit rate alone is gameable; the supporting metrics are what make the board credible.
+- Run [[synthesis/spacesharks-mission-desk-verification-plan|the verification matrix]] (`scripts/verify-deployment-matrix.sh`) to confirm Open Cloud / Nemo Cloud / Sandbox / Docker all pass the seven layers — *especially L7, the Nemotron-attestation gate*. Submission README's "Verified surfaces" line is generated from the matrix output, not hand-written.
 - Final wiki sync.
 - Submit before 2026-05-28 03:00 Taipei (PT-noon worst case per [[sources/nvidia-agent-challenge-2026]]).
 
@@ -140,6 +141,7 @@ Deliberate split: half the budget is implementation, half is polish + narrative 
 4. **Agent-authored Hermes skills folder** — `~/.hermes/skills/score_launch_slip_probability` etc., dated *after* the build started.
 5. **Dataset preview** — `lifecycle-events.jsonl` first 100 rows, each with phase tag + source URL + timestamp. This is the future-commercial face.
 6. **Suggested-publish queue with the 30-min cancel window visible** — judges can see the draft-to-auto-published transition gate in action, per [[concepts/spacesharks-mission-desk-governance|the governance policy]].
+7. **Deployment-matrix verifier output** — `scripts/verify-deployment-matrix.sh` final markdown table showing Open Cloud / Nemo Cloud / Sandbox / Docker × seven verification layers all green, with the L7 Nemotron-attestation gate explicitly visible. See [[synthesis/spacesharks-mission-desk-verification-plan]].
 
 ## 7. Knowledge-base reach-in points (wiki pages the agent retrieves from)
 
@@ -226,6 +228,7 @@ A **third refinement** on 2026-05-24 (later same day) reframed the defensibility
 - [[concepts/spacesharks-mission-desk-evaluation-rubric]] — scoreboard metrics and honest-scoring guardrails
 - [[concepts/spacesharks-mission-desk-governance]] — tiered publish policy, review_status lifecycle, debate format
 - [[synthesis/spacesharks-trust-stack]] — four-layer reliability architecture; canonical defensibility argument for the third refinement
+- [[synthesis/spacesharks-mission-desk-verification-plan]] — seven-layer test pyramid + per-surface acceptance (Open Cloud / Nemo Cloud / Sandbox / Docker); Nemotron-attestation gate at L1/L3/L7
 - [[concepts/small-model-ensemble]] — three-specialist arbiter pattern (Layer 2)
 - [[concepts/tiered-inference]] — cost-aware T1/T2/T3 cascade with explicit escalation triggers (Layer 2 cost spine)
 - [[concepts/calibrated-confidence-llm]] — `answer / abstain / escalate` three-class output and calibration techniques (Layer 3)
