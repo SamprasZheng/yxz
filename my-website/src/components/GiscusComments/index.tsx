@@ -16,7 +16,7 @@ const GISCUS_REPO_ID = 'REPLACE_ME_REPO_ID';
 const GISCUS_CATEGORY = 'General';
 const GISCUS_CATEGORY_ID = 'REPLACE_ME_CATEGORY_ID';
 
-export default function GiscusComments(): JSX.Element | null {
+export default function GiscusComments(): React.JSX.Element | null {
   const {colorMode} = useColorMode();
 
   if (GISCUS_REPO_ID.startsWith('REPLACE_ME')) {
