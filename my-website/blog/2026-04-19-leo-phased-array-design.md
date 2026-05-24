@@ -6,6 +6,7 @@ date: 2026-04-19
 authors: [sampras]
 tags: [rf, phased-array, leo, hardware]
 image: /img/og/leo-phased-array.png
+draft: true
 ---
 
 Designing a phased array transmitter for space is not just a matter of getting the RF circuitry right.
