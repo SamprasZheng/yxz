@@ -1,6 +1,6 @@
 ---
 type: entity
-tags: [protocol, blockchain, layer0, web3]
+tags: [protocol, blockchain, layer0, web3, polkadot, governance, interoperability, coretime, jam, tokenomics]
 ---
 
 # Polkadot
@@ -53,11 +53,28 @@ Layer-0 blockchain protocol enabling interoperability between heterogeneous bloc
 - **DeFi:** [[concepts/hydration-omnipool]]
 - **Gaming:** [[entities/mythical-games]]
 - **Coretime market:** [[concepts/regionx]]
-- **DePIN:** peaq
+- **DePIN:** peaq, covered in [[sources/polkasharks-ep5-peaq-depin]]
 - **Japan Web3:** Astar
+
+## Information and education network
+
+The wiki's Polkadot graph has three knowledge channels:
+
+- **Chinese/Taiwanese education:** [[entities/polkasharks]], [[entities/polkaworld]], [[entities/insight-caijing]]
+- **English ecosystem briefings:** [[entities/dotleap-gbaci]], [[entities/bill-laboon]]
+- **Technical protocol education:** [[entities/shawn-tabrizi]], [[entities/gavin-wood]], [[entities/alice-und-bob]]
+
+[[entities/ycc-duo-nine]] is retained as a weak-signal retail sentiment node rather than a deep ecosystem source.
+
+## Source clusters
+
+- Polkasharks series: [[sources/polkasharks-ep1-polkadot-intro]], [[sources/polkasharks-ep3-hydration]], [[sources/polkasharks-ep4-mythical-games]], [[sources/polkasharks-ep5-peaq-depin]], [[sources/polkasharks-ep6-agile-coretime]], [[sources/polkasharks-ep7-regionx]], [[sources/polkasharks-ep10-2024-annual]], [[sources/polkasharks-jam-article]], [[sources/polkasharks-longway-polkadot-2024]]
+- Roadmap / governance sources: [[sources/gavin-wood-second-era-2025]], [[sources/polkadot-roundup-2025]], [[sources/plurality-audrey-tang-sampras-2025]]
 
 ## Related concepts
 
 - [[concepts/jam]]
 - [[concepts/agile-coretime]]
 - [[concepts/xcm]]
+- [[concepts/dot-hard-cap]]
+- [[concepts/proof-of-personhood]]

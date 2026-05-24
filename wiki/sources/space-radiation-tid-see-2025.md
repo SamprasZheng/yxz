@@ -1,105 +1,105 @@
 ---
 type: source
-title: "太空輻射環境深度解析：TID、SEE 與 RHA 輻射硬化保證"
+title: "In-Depth Analysis of Space Radiation Environments: TID, SEE, and RHA Radiation Hardening Assurance"
 author: user-provided synthesis
 date: 2026-04-19
 ingested: 2026-04-19
 tags: [rf-hardware, space, radiation, tid, see, rha, cots, taiwan, leo]
 ---
 
-# 太空輻射環境深度解析：TID、SEE 與 RHA
+# In-Depth Analysis of Space Radiation Environments: TID, SEE, and RHA
 
-用戶提供的系統性技術分析，涵蓋太空輻射三大來源、TID 累積損傷機制、SEE 瞬態效應分類、測試設施與方法，及商業 COTS 元件的 RHA 挑戰。關鍵結論：輻射測試認證是台灣 LEO 供應鏈進入正式星座供應鏈的隱性門檻。
+User-provided systematic technical analysis covering the three major sources of space radiation, TID cumulative damage mechanisms, SEE transient effect classifications, test facilities and methods, and RHA challenges for commercial COTS components. Key conclusion: radiation testing and certification is the hidden threshold for Taiwan's LEO supply chain to enter formal constellation supply chains.
 
 ---
 
-## 一、輻射環境三大源頭
+## I. Three Major Radiation Sources
 
-| 源頭 | 特性 | 主要威脅 |
+| Source | Characteristics | Primary Threats |
 |---|---|---|
-| **GCR（銀河宇宙射線）** | 超新星加速高能重粒子；能量極高，幾乎無法屏蔽 | SEE（重粒子直接游離） |
-| **范艾倫輻射帶捕獲粒子** | 內帶質子是 LEO 最重要 SEU 源；SAA（南大西洋異常區）為凹陷高暴露區 | TID 累積 + SEE |
-| **太陽粒子事件（SPE）** | 爆發性、劑量率高；深空任務最大威脅 | TID 峰值 + SEL 風險 |
+| **GCR (Galactic Cosmic Rays)** | Supernova-accelerated high-energy heavy particles; extremely high energy, nearly impossible to shield | SEE (heavy particle direct ionization) |
+| **Van Allen Belt Trapped Particles** | Inner belt protons are the most important SEU source for LEO; SAA (South Atlantic Anomaly) is a recessed high-exposure zone | TID accumulation + SEE |
+| **Solar Particle Events (SPE)** | Explosive, high dose rate; greatest threat for deep-space missions | TID peak + SEL risk |
 
 ---
 
-## 二、TID（總電離劑量）
+## II. TID (Total Ionizing Dose)
 
-見 [[concepts/tid-total-ionizing-dose]]
+See [[concepts/tid-total-ionizing-dose]]
 
-核心機制：高能光子/粒子穿過 SiO₂ 氧化層，產生電子-電洞對，電洞被缺陷捕獲 → 閾值電壓漂移、漏電流增大、類比元件增益下降。
+Core mechanism: high-energy photons/particles pass through the SiO₂ oxide layer, generating electron-hole pairs; holes are trapped at defects → threshold voltage drift, increased leakage current, reduced analog component gain.
 
-**Co-60 γ 源**是標準測試選擇（1.172 / 1.332 MeV γ ray；半衰期 5.3 年；HDR 最大 150 rad(Si)/s；量測不確定度 <3%；MIL-STD-883 TM1019 合規）。
+**Co-60 γ source** is the standard test choice (1.172 / 1.332 MeV γ ray; half-life 5.3 years; HDR maximum 150 rad(Si)/s; measurement uncertainty <3%; MIL-STD-883 TM1019 compliant).
 
-**ELDR（低劑量率增強）效應**：雙極元件在低劑量率下劣化可能比高劑量率更嚴重 → 不能只做加速 HDR 測試，必須進行任務等效的 ELDR 測試。
+**ELDR (Enhanced Low Dose Rate) effect**: bipolar devices may degrade more severely at low dose rates than at high dose rates → cannot rely solely on accelerated HDR testing; must conduct mission-equivalent ELDR testing.
 
 ---
 
-## 三、SEE（單粒子效應）分類
+## III. SEE (Single-Event Effects) Classification
 
-見 [[concepts/see-single-event-effects]]
+See [[concepts/see-single-event-effects]]
 
-### 軟錯誤（可恢復）
+### Soft Errors (Recoverable)
 
-| 類型 | 全名 | 機制 | 特點 |
+| Type | Full Name | Mechanism | Notes |
 |---|---|---|---|
-| **SEU** | Single Event Upset | 粒子翻轉記憶體位元 | SRAM 快取最脆弱（尺寸小、Qcrit 低） |
-| **SET** | Single Event Transient | 粒子在類比/時序電路產生電壓脈衝 | 深次微米 CMOS 高速邏輯威脅增大 |
-| **SEFI** | Single Event Functional Interrupt | 擊中 FPGA 配置記憶體 → 功能異常 | 需電源重置才能恢復 |
+| **SEU** | Single Event Upset | Particle flips a memory bit | SRAM caches most vulnerable (small size, low Qcrit) |
+| **SET** | Single Event Transient | Particle generates voltage pulse in analog/timing circuits | Threat increases in deep sub-micron CMOS high-speed logic |
+| **SEFI** | Single Event Functional Interrupt | Strikes FPGA configuration memory → functional abnormality | Requires power reset to recover |
 
-**現實案例（2025-10-30）**：JetBlue 客機飛行中突然下墜，Airbus 調查確認為強烈太陽輻射/宇宙射線造成位元翻轉，導致飛控系統誤動作。
+**Real-world case (2025-10-30)**: A JetBlue aircraft suddenly plunged during flight; Airbus investigation confirmed intense solar radiation/cosmic rays caused a bit flip leading to flight control system malfunction.
 
-### 硬錯誤（破壞性，不可恢復）
+### Hard Errors (Destructive, Unrecoverable)
 
-| 類型 | 全名 | 機制 |
+| Type | Full Name | Mechanism |
 |---|---|---|
-| **SEL** | Single Event Latchup | CMOS 寄生 PNPN 結構觸發低阻抗短路 → 電流急增 → 燒毀（須立即切電）|
-| **SEB** | Single Event Burnout | 功率 MOSFET 二次崩潰 → 不可逆損毀 |
-| **SEGR** | Single Event Gate Rupture | 閘極氧化層擊穿 → 永久失效 |
+| **SEL** | Single Event Latchup | CMOS parasitic PNPN structure triggers low-impedance short circuit → current surge → burnout (requires immediate power cut) |
+| **SEB** | Single Event Burnout | Power MOSFET secondary breakdown → irreversible damage |
+| **SEGR** | Single Event Gate Rupture | Gate oxide breakdown → permanent failure |
 
-**測試順序原則**：SEL 測試應先於 SEU 測試——若元件閂鎖即不適用，無需浪費後續測試資源。
-
----
-
-## 四、SEE 測試設施與方法
-
-**重離子優先**：游離能力遠強於質子，直接揭示元件 SEE 脆弱性。
-
-**LBNL BASE（Berkeley Accelerator Space Effects）**：1979 年全球首次 SEE 重離子測試場地；提供質子到鉍全系列；LET 可超過 99 MeV·cm²/mg。
-
-**核心量測參數：截面（Cross Section）**
-- 定義：翻轉事件數 ÷ 粒子通量；單位 cm²
-- SEU 速率計算流程：量測截面對 LET 曲線 → 確定敏感體積 → 與軌道 LET 頻譜積分
-
-**質子的間接效應**：質子本身 LET 太低無法直接造成 SEU，透過與高 Z 材料核反應產生高 LET 次生離子間接觸發 SEE。
+**Test sequence principle**: SEL testing should precede SEU testing — if a device latches up, it is not applicable and subsequent test resources need not be wasted.
 
 ---
 
-## 五、RHA 輻射硬化保證 × COTS 挑戰
+## IV. SEE Test Facilities and Methods
 
-見 [[concepts/rha-radiation-hardening]]
+**Heavy ions preferred**: far greater ionization capability than protons; directly reveals device SEE vulnerabilities.
 
-**輻射設計裕度（RDM）**：
-- 公式：RDM = 元件失效劑量 / 任務預期累積劑量
-- 一般任務要求：RDM ≥ 1.5（即 50% 安全緩衝）
-- 深空任務要求：RDM ≥ 2.0
+**LBNL BASE (Berkeley Accelerator Space Effects)**: world's first SEE heavy ion test site in 1979; provides full range from proton to bismuth; LET can exceed 99 MeV·cm²/mg.
 
-**台灣 LEO 供應鏈的隱性門檻**：
-無論硬體設計多優，未經完整 TID / SEE 驗證，無法進入正式星座供應鏈（SpaceX、Amazon Kuiper 等）。全球具備完整測試能力的機構極少，屬高度壟斷的關鍵節點。
+**Core measurement parameter: Cross Section**
+- Definition: number of upset events ÷ particle fluence; units cm²
+- SEU rate calculation: measure cross-section vs. LET curve → determine sensitive volume → integrate with orbital LET spectrum
 
-**新興替代測試源**：90Sr/90Y 電子源正被評估（優點：可方向性照射；設備簡化；在 <28nm 節點 FPGA 測試有特殊優勢）。
+**Indirect effects of protons**: proton LET is too low to directly cause SEU; triggers SEE indirectly through nuclear reactions with high-Z materials producing high-LET secondary ions.
 
 ---
 
-## 概念頁面
+## V. RHA Radiation Hardening Assurance × COTS Challenges
+
+See [[concepts/rha-radiation-hardening]]
+
+**Radiation Design Margin (RDM)**:
+- Formula: RDM = device failure dose / mission expected accumulated dose
+- General mission requirement: RDM ≥ 1.5 (50% safety margin)
+- Deep-space mission requirement: RDM ≥ 2.0
+
+**Hidden threshold for Taiwan's LEO supply chain**:
+No matter how good the hardware design, without complete TID / SEE validation, entry into formal constellation supply chains (SpaceX, Amazon Kuiper, etc.) is impossible. Very few institutions globally have complete testing capability — a highly monopolized critical node.
+
+**Emerging alternative test sources**: ⁹⁰Sr/⁹⁰Y electron sources are being evaluated (advantages: directional irradiation; simplified equipment; special advantages for FPGA testing at <28 nm nodes).
+
+---
+
+## Concept Pages
 
 - [[concepts/tid-total-ionizing-dose]]
 - [[concepts/see-single-event-effects]]
 - [[concepts/rha-radiation-hardening]]
 
-## 相關實體
+## Related Entities
 
-- [[entities/win-semiconductors]] — GaAs PA，需通過 TID 驗證
-- [[entities/ascend-tech]] — 濾波器/波導管，LEO 規格需輻射測試
-- [[concepts/leo-value-chain]] — 輻射測試認證為進入中游 A 的隱性門檻
-- [[concepts/orbital-data-center]] — COTS GPU 輻射防護是最大工程挑戰
+- [[entities/win-semiconductors]] — GaAs PA, requires TID validation
+- [[entities/ascend-tech]] — filters/waveguides, LEO spec requires radiation testing
+- [[concepts/leo-value-chain]] — radiation testing certification is the hidden threshold for entering midstream A
+- [[concepts/orbital-data-center]] — COTS GPU radiation protection is the biggest engineering challenge

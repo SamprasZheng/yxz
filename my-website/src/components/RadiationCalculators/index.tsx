@@ -255,7 +255,7 @@ function SeeCalculator() {
   );
 }
 
-export default function RadiationCalculators(): JSX.Element {
+export default function RadiationCalculators(): React.JSX.Element {
   return (
     <>
       <TidCalculator />

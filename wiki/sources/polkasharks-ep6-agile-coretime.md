@@ -1,16 +1,16 @@
 ---
 type: source
-title: "波卡解碼EP6: 波卡2.0基石 - Agile Coretime"
-author: "波卡鯊 Polkasharks"
+title: "Polkadot Decoded EP6: The Foundation of Polkadot 2.0 — Agile Coretime"
+author: "Polkasharks"
 date: "2024-09-23"
 ingested: "2026-04-19"
 tags: [polkadot, agile-coretime, infrastructure, parachain, polkadot2]
 url: "https://vocus.cc/article/66f0317efd897800014d220b"
 ---
 
-# 波卡解碼EP6: 波卡2.0基石 - Agile Coretime
+# Polkadot Decoded EP6: The Foundation of Polkadot 2.0 — Agile Coretime
 
-**Author:** [[entities/polkasharks]] | **Date:** 2024-09-23 | **Series:** 波卡解碼
+**Author:** [[entities/polkasharks]] | **Date:** 2024-09-23 | **Series:** Polkadot Decoded
 
 ## Summary
 

@@ -1,0 +1,31 @@
+name: Weekly Portfolio Check
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * 2"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: my-website
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: yarn
+          cache-dependency-path: my-website/yarn.lock
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Validate portfolio metadata
+        run: yarn portfolio:check
+

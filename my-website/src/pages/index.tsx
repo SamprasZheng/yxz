@@ -52,21 +52,20 @@ export default function Home(): ReactNode {
                 </p>
 
                 <p>
-                  I graduated from National Chiao Tung University studying Electronics Engineering
+                  I earned my B.S. and M.S. in Electronics Engineering from National Chiao Tung University, where my graduate research focused on phased-array design, PLL modeling, and satellite systems design.
                 </p>
 
                 <p>
-                  I joined {" "}<a href="https://www.tronfuture.com/">TronFutureTech </a>
-                  System Development Department working on SATCOM phased array development
-                </p>
-
-
-                <p>
-                  I then joined Qualcomm to work on RF calibration algorithm development, Wi-Fi 7 pre-silicon emulation, and post-silicon verification.
+                  During and after grad school I joined {" "}<a href="https://www.tronfuture.com/">TronFutureTech</a>,
+                  starting as a research engineer on S-Band anti-drone and X-Band communication payload development, then advancing to senior engineer on Ka/Ku-Band SATCOM user terminals and phased-array frontend design — with hands-on space-grade reliability verification including radiation testing, thermal cycling, vibration, and EMC compliance.
                 </p>
 
                 <p>
-                  Currently I am a System-Level Product Validation Engineer at NVIDIA, focused on engineering studies for next-generation processors and graphics silicon programs including N1X-class CPU study and GB20X-class GPU chip validation.
+                  I then joined Qualcomm to work on RF calibration algorithm development (DPD, TPC, CPR), Wi-Fi 6/7 pre-silicon emulation, and post-silicon verification.
+                </p>
+
+                <p>
+                  Currently I am a Senior System-Level Product Engineer at NVIDIA in the Silicon Co-Design Group, leading engineering studies and chip characterization reviews for N1X-class CPU and GB20X-class GPU programs.
                 </p>
 
                 <p>

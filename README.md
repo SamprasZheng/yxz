@@ -1,151 +1,165 @@
-# yxz — Sampras Zheng's Personal Blog & Portfolio
+# yxz - Sampras Zheng's Personal Blog & Portfolio
 
-Live site: **[SamprasZheng.github.io/yxz](https://SamprasZheng.github.io/yxz/)**
+Live site: [SamprasZheng.github.io/yxz](https://SamprasZheng.github.io/yxz/)
 
-Personal blog and portfolio for Sampras Zheng — RF/hardware engineer turned cross-domain builder. Covers phased-array SATCOM, Polkadot/blockchain, LEO space infrastructure, AI agents, and macro. Built with Docusaurus 3, deployed via GitHub Actions to GitHub Pages.
+Personal blog, portfolio, wiki, and AI-agent workspace for Sampras Zheng. The public site is built with Docusaurus 3 and deployed to GitHub Pages. The broader repository also contains an Obsidian-compatible LLM wiki, local AI workflow skills, Claude agents, Firefly mission-planning agents, and automation scripts.
 
----
+## Focus Areas
 
-## About
+- RF and hardware engineering
+- SATCOM, phased arrays, calibration, EVM, and radiation effects
+- LEO space infrastructure, orbital data centers, and satellite lifecycle regulation (FAA Part 450 / NOTAM, FCC IBFS / spectrum, SSA / conjunction)
+- Competitive intelligence on satellite-ops AI agents (Cognitive Space / Slingshot / Kayhan / AIKO / MSBAI) and lifecycle external-signal data feeds (NOAA SWPC / Space-Track CDM / FAA NOTAM)
+- Polkadot, JAM, XCM, and crypto infrastructure
+- AI agents, MCP workflows, personal knowledge systems, and automation
+- Macro and supply-chain analysis
 
-Born in Yilan, Taiwan. NCTU Electronics Engineering graduate.
+## Repository Structure
 
-**Career path:**
-- **TronFutureTech** — SATCOM phased array system development
-- **Qualcomm** — RF calibration algorithm development, Wi-Fi 7 pre-silicon emulation, post-silicon verification
-- **NVIDIA** — System-Level Product Validation, N1X-class CPU study, GB20X-class GPU chip validation
-
-**Cross-domain thesis:** AI deployment from Earth to orbit × crypto-native infrastructure in space × radiation-validated hardware paths for commercial compute in space environments.
-
----
-
-## Blog Topics
-
-| Tag | Focus |
-|-----|-------|
-| `RF` | Phased-array, SATCOM, beamforming, RF calibration, Wi-Fi |
-| `Polkadot` | DOT ecosystem, JAM protocol, governance, DeFi, parachains |
-| `Space` | LEO satellite, orbital data centers, ISL, Taiwan supply chain |
-| `AI` | AI agents, MCP workflows, domain-specific LLMs |
-| `Macro` | Tech-sector macro, supply chain investment, weekly outlook |
-| `Crypto` | Blockchain infrastructure, tokenomics, on-chain analysis |
-
-**Selected posts:**
-- [2026 LEO × 台灣 — 中游 C 缺席的結構性缺口](https://SamprasZheng.github.io/yxz/blog/leo-odc-taiwan-gap)
-- [2026 Tech Roadmap: AI in Space, Crypto, RF SATCOM](https://SamprasZheng.github.io/yxz/blog/space-ai-rf-crypto-roadmap-2026)
-- [領域特化 AI Agent — 我為什麼自己做 myGPTs](https://SamprasZheng.github.io/yxz/blog/ai-agent)
-- [JAM Protocol Deep-Dive](https://SamprasZheng.github.io/yxz/blog/jam-intro)
-- [Polkadot: Long Way In](https://SamprasZheng.github.io/yxz/blog/longway-on-polkadot)
-
----
-
-## Wiki
-
-`wiki/` is an Obsidian-compatible knowledge base (LLM-maintained). It indexes research across Polkadot ecosystem, LEO/space infrastructure, AI/payments, and geopolitics.
-
-```
-wiki/
-├── sources/      ← one .md per ingested source
-├── entities/     ← people, orgs, products
-├── concepts/     ← ideas, frameworks, protocols
-├── synthesis/    ← cross-source analyses
-├── index.md      ← full catalog
-└── log.md        ← append-only session history
-```
-
-Current coverage: Polkadot (JAM, Agile Coretime, XCM, DOT hard cap, OpenGov), LEO supply chain (orbital data centers, ISL, Taiwan RF/PCB suppliers), AI payments (x402, agentic commerce), and geopolitics (The Technological Republic).
-
----
-
-## Repo Structure
-
-```
+```text
 yxz/
-├── my-website/              # Docusaurus 3 app
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── index.tsx                    # Home / landing page
-│   │   │   └── portfolio/
-│   │   │       ├── index.js                 # Portfolio page
-│   │   │       └── github-repo-info.json    # Repo metadata (manually maintained)
-│   │   ├── components/
-│   │   │   └── PortfolioCard/
-│   │   └── css/custom.css
-│   ├── blog/                # Blog posts (MDX/Markdown)
-│   │   ├── authors.yml
-│   │   └── tags.yml
-│   ├── scripts/             # Node automation scripts (CJS)
-│   │   ├── update-living-topics.cjs     # Fetch news → update 5 living-tracker posts
-│   │   ├── generate-weekly-outlook.cjs  # Generate weekly macro outlook post
-│   │   ├── generate-og-images.cjs       # OG image generation
-│   │   └── deploy-github.cjs            # Deploy helper
-│   ├── static/              # Static assets (images, OG cards)
-│   └── docusaurus.config.ts # Site config
-├── wiki/                    # LLM knowledge wiki (Obsidian vault)
-└── .github/workflows/       # CI: auto-deploys on push to main
+  my-website/              Docusaurus 3 site
+    blog/                  Published blog posts
+    docs/                  Docs pages
+    draft/                 Draft posts
+    scripts/               Content, validation, and publish scripts
+    src/pages/portfolio/   Portfolio page and repo metadata
+    static/img/og/         Open Graph images
+  wiki/                    Obsidian-compatible LLM knowledge base
+    sources/               One page per source
+    entities/              People, orgs, products, projects
+    concepts/              Ideas, protocols, frameworks
+    synthesis/             Cross-source analyses
+  agents/                  Firefly orbital data center mission planner
+  .codex/skills/           Repo-local Codex skills
+  .claude/agents/          Claude Code agents
+  .claude/commands/        Claude Code slash-command workflows
+  .githooks/               Local Git hooks
+  .github/workflows/       CI, deploy, and scheduled automation
 ```
-
----
 
 ## Commands
 
-All commands run from `my-website/`:
+Run site commands from `my-website/`.
 
 ```bash
 # Development
-yarn start          # Dev server with hot reload
-yarn build          # Generate static site → ./build
-yarn serve          # Serve the static build locally
-yarn clear          # Clear Docusaurus cache
+yarn start
+yarn build
+yarn serve
+yarn clear
 
 # Quality
-yarn typecheck      # TypeScript type checking
-yarn verify         # typecheck + build (run before deploying)
-
-# Deploy
-USE_SSH=true yarn deploy          # Deploy via SSH
-GIT_USER=SamprasZheng yarn deploy # Deploy via HTTPS
+yarn typecheck
+yarn verify
+yarn verify:quality
+yarn lint:wiki
+yarn validate:og
+yarn portfolio:check
+yarn verify:live
 
 # Content automation
-yarn generate:living-topics   # Fetch Google News + DDG → update 5 living-tracker posts
-yarn generate:weekly-outlook  # Generate a new weekly macro outlook post
-yarn daily:local               # living-topics + verify
-yarn weekly:local              # weekly-outlook + verify
-yarn weekly:publish            # weekly-outlook + verify + deploy
+yarn draft:from-wiki ../wiki/synthesis/<page>.md
+yarn generate:living-topics
+yarn generate:weekly-outlook
+yarn generate:og
+yarn daily:local
+yarn weekly:local
+yarn weekly:publish
+
+# Deploy
+USE_SSH=true yarn deploy
+GIT_USER=SamprasZheng yarn deploy
 ```
 
-**Living-tracker posts** are auto-generated into `blog/live-<key>.md` (keys: `live-polkadot`, `live-space`, `live-rf`, `live-ai`, `live-investing`). Do not hand-edit — overwritten on each run.
+## AI Operating System
 
----
+This repo is set up as a repeatable AI workflow, not only a website.
+
+Repo-local Codex skills:
+
+- `codex-repo-operator`
+- `llm-wiki-ingest`
+- `blog-publisher`
+- `og-image-validator`
+- `firefly-mission-planner`
+- `portfolio-curator`
+
+Claude agents:
+
+- `research-ingest-agent`
+- `blog-editor-agent`
+- `technical-reviewer-agent`
+- `seo-social-agent`
+- `firefly-reviewer-agent`
+- `git-commit-push`
+
+Install local Git hooks:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-git-hooks.ps1
+```
+
+Install repo-local Codex skills into the user Codex directory:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-codex-skills.ps1
+```
+
+## Wiki
+
+`wiki/` is an Obsidian-compatible LLM-maintained knowledge base. Read `wiki/AGENTS.md` before wiki work.
+
+Core rules:
+
+- Internal links use `[[path/to/page]]`.
+- Every page has `type` and `tags`.
+- Source pages also include `title`, `author`, `date`, and `ingested`.
+- Update `wiki/index.md` and append `wiki/log.md` after ingest work.
+- Run `cd my-website && yarn lint:wiki`.
+
+## Blog And Portfolio Notes
+
+- Blog tags are defined in `my-website/blog/tags.yml`.
+- Blog authors are defined in `my-website/blog/authors.yml`.
+- `blog/live-*.md` files are generated; do not hand-edit them.
+- The portfolio page reads `my-website/src/pages/portfolio/github-repo-info.json`.
+- Open Graph images should live in `my-website/static/img/og/` and pass `yarn validate:og`.
+
+## CI And Automation
+
+GitHub Actions:
+
+- `Deploy Docusaurus`
+- `Daily Living Topics`
+- `Weekly Outlook Content`
+- `AI Quality Gate`
+- `Weekly Wiki Lint`
+- `Weekly Portfolio Check`
+- `Post Publish Verify`
+
+Local scheduled scripts:
+
+- `scripts/auto-commit.ps1`
+- `scripts/register-auto-commit-task.ps1`
+
+Codex app automations:
+
+- `yxz weekly wiki lint`
+- `yxz blog draft promoter`
+- `yxz portfolio curator`
+- `yxz kol digest triage`
+- `yxz live site verifier`
 
 ## Tech Stack
 
 | Layer | Choice |
-|-------|--------|
-| Framework | [Docusaurus 3.7.0](https://docusaurus.io/) |
-| Language | TypeScript / MDX |
-| Math | remark-math + rehype-katex |
-| Hosting | GitHub Pages (`gh-pages` branch) |
-| CI/CD | GitHub Actions (auto-deploy on push to `main`) |
-| Runtime | Node ≥ 18 |
+| --- | --- |
+| Site | Docusaurus 3.7.0 |
+| UI | React, TypeScript, MDX |
+| Math | remark-math, rehype-katex |
+| Hosting | GitHub Pages |
+| CI | GitHub Actions, Node 20 |
 | Package manager | Yarn |
-
----
-
-## Key Architecture Notes
-
-- **Portfolio page** reads from `src/pages/portfolio/github-repo-info.json` — add/remove repos by editing this file, not the component.
-- **Blog tags**: valid tags defined in `blog/tags.yml`. The `polkadot` key maps to permalink `/dot` (navbar uses `/blog/tags/dot`).
-- **Math rendering**: use `$...$` (inline) and `$$...$$` (block) in MDX.
-- **TypeScript**: `tsconfig.json` is `noEmit: true` — editor type-checking only; Docusaurus handles the build.
-- **CI**: uses Node 16 in the workflow; run locally with Node ≥ 18.
-
----
-
-## Authors
-
-- **Sampras Zheng** — RF/hardware engineer, Polkadot builder, space infrastructure analyst  
-  GitHub: [@SamprasZheng](https://github.com/SamprasZheng) · LinkedIn: [samprascheng](https://linkedin.com/in/samprascheng)
-
-- **PolkaSharks** — Taiwanese Polkadot educator  
-  X: [@Polkasharks](https://x.com/Polkasharks) · YouTube: [PolkaSharks](https://youtube.com/@PolkaSharks) · [bento.me/polkasharks](https://bento.me/polkasharks)
+| Wiki | Markdown, Obsidian wikilinks |
+| Agents | Python, Firefly MVP under `agents/` |

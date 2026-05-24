@@ -1,16 +1,16 @@
 ---
 type: source
-title: "波卡解碼EP3: Hydration去中心自造市 DAMM"
-author: "波卡鯊 Polkasharks"
+title: "Polkadot Decoded EP3: Hydration Decentralized Automated Market Maker (DAMM)"
+author: "Polkasharks"
 date: "2024-09-02"
 ingested: "2026-04-19"
 tags: [polkadot, defi, hydration, amm, liquidity]
 url: "https://vocus.cc/article/66d5c907fd897800014976d8"
 ---
 
-# 波卡解碼EP3: Hydration去中心自造市 DAMM
+# Polkadot Decoded EP3: Hydration Decentralized Automated Market Maker (DAMM)
 
-**Author:** [[entities/polkasharks]] | **Date:** 2024-09-02 | **Series:** 波卡解碼
+**Author:** [[entities/polkasharks]] | **Date:** 2024-09-02 | **Series:** Polkadot Decoded
 
 ## Summary
 

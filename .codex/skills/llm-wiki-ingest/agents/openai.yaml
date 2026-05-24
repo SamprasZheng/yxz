@@ -1,0 +1,4 @@
+interface:
+  display_name: "LLM Wiki Ingest"
+  short_description: "Ingest sources into the Obsidian wiki."
+  default_prompt: "Research or ingest source material into wiki/ using the yxz frontmatter, wikilink, index, and log conventions."

@@ -5,34 +5,34 @@ tags: [leo, space, data-center, ai, google, tpu, optical-comms]
 
 # Google Suncatcher
 
-## 基本資料
+## Basic Information
 
-Google（Alphabet）的軌道資料中心 / 太空算力計畫，以 TPU（Tensor Processing Unit）為核心算力單元，透過光學通訊與地面 AI 訓練基礎設施整合。
+Google (Alphabet)'s orbital data center / space computing initiative, with TPU (Tensor Processing Unit) as the core computing unit, integrated with ground-based AI training infrastructure via optical communications.
 
-> ⚠️ 注意：Suncatcher 目前為計畫/早期開發階段，公開技術細節有限，現有資訊主要來自 LEO 產業分析報告。
+> ⚠️ Note: Suncatcher is currently in the planning/early development stage with limited publicly disclosed technical details. Existing information comes primarily from LEO industry analysis reports.
 
-## 核心特徵
+## Core Characteristics
 
-| 要素 | 說明 |
+| Element | Description |
 |------|------|
-| 算力核心 | Google 自研 TPU（vs 競爭者多用 NVIDIA GPU） |
-| 通訊方式 | 光學通訊（高頻寬星間/對地鏈路） |
-| 運算模式 | 軌道邊緣推論 + 與地面模型訓練基礎設施整合 |
-| 戰略意圖 | 利用廉價太陽能算力大規模擴充 AI 算力 |
+| Computing core | Google in-house TPU (vs. competitors mostly using NVIDIA GPU) |
+| Communications | Optical communications (high-bandwidth inter-satellite/ground links) |
+| Computing mode | Orbital edge inference + integration with ground-based model training infrastructure |
+| Strategic intent | Leverage cheap solar power to massively scale AI computing capacity |
 
-## 戰略意義
+## Strategic Significance
 
-Google Suncatcher 是科技巨頭進場 [[concepts/orbital-data-center]] 的重要訊號。此前 ODC 市場以 Starcloud、Axiom 等新創主導；Google 以自研 TPU 進場代表：
+Google Suncatcher is an important signal that major tech companies are entering the [[concepts/orbital-data-center]] market. Previously the ODC market was dominated by startups like Starcloud and Axiom; Google entering with proprietary TPUs indicates:
 
-1. ODC 算力硬體競爭已從「NVIDIA H100 唯一選項」走向多元化
-2. 光學通訊作為 ODC 關鍵傳輸層的地位獲得科技巨頭驗證
-3. 與 Google Cloud 地面服務的整合潛力（地空混合雲）
+1. ODC computing hardware competition has moved beyond "NVIDIA H100 as the only option" toward diversification
+2. Optical communications as a critical transmission layer for ODC has been validated by a major tech company
+3. Potential for integration with Google Cloud ground services (air-ground hybrid cloud)
 
-## 相關概念
+## Related Concepts
 
-- [[concepts/orbital-data-center]] — ODC 整體框架
-- [[concepts/leo-value-chain]] — 中游 C 位置
+- [[concepts/orbital-data-center]] — Overall ODC framework
+- [[concepts/leo-value-chain]] — Midstream C position
 
-## 相關來源
+## Related Sources
 
 - [[sources/leo-space-datacenter-analysis-2025]]

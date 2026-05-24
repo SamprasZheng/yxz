@@ -1,0 +1,492 @@
+{
+  "title": "Polkadot: The Next-Generation Blockchain",
+  "slug": "longway-on-polkadot",
+  "ttsVoice": "en-US-GuyNeural",
+  "width": 1920,
+  "height": 1080,
+  "background": "#fbf8f1",
+  "ink": "#1a1a1a",
+  "accent": "#e6007a",
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "intro",
+      "start": 0,
+      "duration": 12,
+      "narration": "Polkadot connects multiple blockchains into one unified network — the AWS of Web3 — enabling scalable decentralized applications across the world.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 160,
+          "text": "Polkadot",
+          "size": 96,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 275,
+          "text": "Web3 Multi-Chain Platform",
+          "size": 52,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 1.8,
+          "duration": 0.9
+        },
+        {
+          "type": "circle",
+          "cx": 960,
+          "cy": 640,
+          "r": 110,
+          "appearAt": 3,
+          "duration": 1.3
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 648,
+          "text": "Relay Chain",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 4.6,
+          "duration": 0.7
+        },
+        {
+          "type": "circle",
+          "cx": 430,
+          "cy": 545,
+          "r": 60,
+          "appearAt": 5.6,
+          "duration": 1
+        },
+        {
+          "type": "circle",
+          "cx": 685,
+          "cy": 840,
+          "r": 60,
+          "appearAt": 6.9,
+          "duration": 1
+        },
+        {
+          "type": "circle",
+          "cx": 1235,
+          "cy": 840,
+          "r": 60,
+          "appearAt": 8.2,
+          "duration": 1
+        },
+        {
+          "type": "circle",
+          "cx": 1490,
+          "cy": 545,
+          "r": 60,
+          "appearAt": 9.5,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "start": 12,
+      "duration": 16,
+      "narration": "Three pillars power Polkadot: XCM for cross-chain transfers, heterogeneous sharding for parallel execution, and OpenGov for on-chain DOT holder voting.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 120,
+          "text": "Key Features",
+          "size": 80,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1
+        },
+        {
+          "type": "rect",
+          "x": 100,
+          "y": 240,
+          "w": 500,
+          "h": 680,
+          "appearAt": 1.6,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 350,
+          "y": 390,
+          "text": "XCM",
+          "size": 72,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 3.1,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 350,
+          "y": 480,
+          "text": "Cross-Chain Messaging",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 4.4,
+          "duration": 0.8
+        },
+        {
+          "type": "rect",
+          "x": 710,
+          "y": 240,
+          "w": 500,
+          "h": 680,
+          "appearAt": 5.5,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 390,
+          "text": "Sharding",
+          "size": 72,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 7,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 480,
+          "text": "Parallel Execution",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 8.3,
+          "duration": 0.8
+        },
+        {
+          "type": "rect",
+          "x": 1320,
+          "y": 240,
+          "w": 500,
+          "h": 680,
+          "appearAt": 9.4,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 1570,
+          "y": 390,
+          "text": "OpenGov",
+          "size": 64,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 10.9,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 1570,
+          "y": 480,
+          "text": "DOT Holder Voting",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 12.2,
+          "duration": 0.8
+        }
+      ]
+    },
+    {
+      "id": "coretime",
+      "start": 28,
+      "duration": 12,
+      "narration": "Polkadot 2.0 replaces locked parachain auctions with flexible blockspace — Agile Coretime lets any project buy compute on demand.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 130,
+          "text": "Polkadot 2.0",
+          "size": 80,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 960,
+          "y": 235,
+          "text": "Agile Coretime",
+          "size": 52,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 1.6,
+          "duration": 0.9
+        },
+        {
+          "type": "rect",
+          "x": 100,
+          "y": 340,
+          "w": 760,
+          "h": 560,
+          "appearAt": 2.8,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 480,
+          "y": 440,
+          "text": "Old: Parachain Auctions",
+          "size": 40,
+          "anchor": "middle",
+          "appearAt": 4.3,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 480,
+          "y": 530,
+          "text": "2-year DOT lockup",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 5.5,
+          "duration": 0.8
+        },
+        {
+          "type": "arrow",
+          "x1": 880,
+          "y1": 630,
+          "x2": 1040,
+          "y2": 630,
+          "appearAt": 6.6,
+          "duration": 0.8
+        },
+        {
+          "type": "rect",
+          "x": 1060,
+          "y": 340,
+          "w": 760,
+          "h": 560,
+          "appearAt": 7.7,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 440,
+          "text": "New: Flexible Blockspace",
+          "size": 40,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 9.2,
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 530,
+          "text": "Buy coretime on demand",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 10.4,
+          "duration": 0.8
+        }
+      ]
+    },
+    {
+      "id": "consensus",
+      "start": 40,
+      "duration": 13,
+      "narration": "Polkadot uses two consensus mechanisms: BABE produces blocks using VRF slot assignment, while GRANDPA delivers fast Byzantine-fault-tolerant finality in seconds.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 130,
+          "text": "Consensus",
+          "size": 80,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1
+        },
+        {
+          "type": "rect",
+          "x": 100,
+          "y": 240,
+          "w": 780,
+          "h": 680,
+          "appearAt": 1.6,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 490,
+          "y": 390,
+          "text": "BABE",
+          "size": 72,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 3.1,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 490,
+          "y": 480,
+          "text": "Block Production",
+          "size": 38,
+          "anchor": "middle",
+          "appearAt": 4.4,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 490,
+          "y": 550,
+          "text": "VRF Slot Assignment",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 5.5,
+          "duration": 0.8
+        },
+        {
+          "type": "rect",
+          "x": 1040,
+          "y": 240,
+          "w": 780,
+          "h": 680,
+          "appearAt": 6.6,
+          "duration": 1.2
+        },
+        {
+          "type": "text",
+          "x": 1430,
+          "y": 390,
+          "text": "GRANDPA",
+          "size": 64,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 8.1,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 1430,
+          "y": 480,
+          "text": "Block Finality",
+          "size": 38,
+          "anchor": "middle",
+          "appearAt": 9.4,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 1430,
+          "y": 550,
+          "text": "2/3 Validator Honesty",
+          "size": 34,
+          "anchor": "middle",
+          "appearAt": 10.5,
+          "duration": 0.8
+        }
+      ]
+    },
+    {
+      "id": "jam-opengov",
+      "start": 53,
+      "duration": 15,
+      "narration": "JAM, the Join-Accumulate Machine, is Polkadot's next upgrade enabling permissionless smart contracts, paired with OpenGov — the world's largest on-chain DAO.",
+      "elements": [
+        {
+          "type": "text",
+          "x": 960,
+          "y": 120,
+          "text": "The Future of Polkadot",
+          "size": 72,
+          "anchor": "middle",
+          "appearAt": 0.3,
+          "duration": 1
+        },
+        {
+          "type": "circle",
+          "cx": 480,
+          "cy": 580,
+          "r": 185,
+          "appearAt": 1.6,
+          "duration": 1.3
+        },
+        {
+          "type": "text",
+          "x": 480,
+          "y": 555,
+          "text": "JAM",
+          "size": 72,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 3.2,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 480,
+          "y": 650,
+          "text": "Smart Contracts",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 4.5,
+          "duration": 0.8
+        },
+        {
+          "type": "arrow",
+          "x1": 685,
+          "y1": 580,
+          "x2": 1255,
+          "y2": 580,
+          "appearAt": 5.6,
+          "duration": 0.8
+        },
+        {
+          "type": "circle",
+          "cx": 1440,
+          "cy": 580,
+          "r": 185,
+          "appearAt": 6.7,
+          "duration": 1.3
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 555,
+          "text": "OpenGov",
+          "size": 64,
+          "anchor": "middle",
+          "color": "#e6007a",
+          "appearAt": 8.3,
+          "duration": 1
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 650,
+          "text": "On-Chain Democracy",
+          "size": 36,
+          "anchor": "middle",
+          "appearAt": 9.6,
+          "duration": 0.8
+        },
+        {
+          "type": "text",
+          "x": 1440,
+          "y": 710,
+          "text": "World's Largest DAO",
+          "size": 32,
+          "anchor": "middle",
+          "appearAt": 10.7,
+          "duration": 0.8
+        }
+      ]
+    }
+  ],
+  "blogFilePath": "D:\\DOT\\yxz\\my-website\\blog\\2024-04-07-longway-on-polkadot.md",
+  "script": "Polkadot connects multiple blockchains into one unified network — the AWS of Web3 — enabling scalable decentralized applications across the world. Three pillars power Polkadot: XCM for cross-chain transfers, heterogeneous sharding for parallel execution, and OpenGov for on-chain DOT holder voting. Polkadot 2.0 replaces locked parachain auctions with flexible blockspace — Agile Coretime lets any project buy compute on demand. Polkadot uses two consensus mechanisms: BABE produces blocks using VRF slot assignment, while GRANDPA delivers fast Byzantine-fault-tolerant finality in seconds. JAM, the Join-Accumulate Machine, is Polkadot's next upgrade enabling permissionless smart contracts, paired with OpenGov — the world's largest on-chain DAO."
+}

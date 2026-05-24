@@ -1,9 +1,9 @@
 ---
 type: entity
-tags: [polkadot, media, chinese, crypto-commentary]
+tags: [polkadot, media, chinese, crypto-commentary, kol, retail-sentiment, education]
 ---
 
-# insight財經 (Insight Finance)
+# Insight Finance (insight財經)
 
 Chinese-language crypto media and community platform. Appears to operate across mainland Chinese and overseas Chinese audiences (uses simplified Chinese 财经, but some Traditional Chinese usage also found). Founded February 2021, server hosted in Japan.
 
@@ -41,3 +41,8 @@ The handle `@dwj_eric` on X posts in simplified Chinese covering crypto market a
 ## Related
 
 - [[entities/polkadot]]
+- [[entities/polkasharks]]
+- [[entities/polkaworld]]
+- [[entities/dotleap-gbaci]]
+- [[entities/ycc-duo-nine]]
+- [[concepts/dot-hard-cap]]

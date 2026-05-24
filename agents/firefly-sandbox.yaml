@@ -1,0 +1,114 @@
+# Firefly Mission Architect — NemoClaw / OpenShell sandbox policy
+#
+# This is the policy file you pass to NemoClaw to run the Firefly orbital
+# data-center mission planner as a sandboxed long-running agent.
+#
+# Apply via the helper script (see scripts/nemoclaw-firefly-up.sh) or directly:
+#   openshell sandbox create --name firefly --policy ./firefly-sandbox.yaml
+#   nemoclaw inference set --provider ollama-local --model nemotron-3-nano:4b \
+#       --sandbox firefly --no-verify
+#   nemoclaw agent run --sandbox firefly --cmd "firefly plan --from Taiwan --to SSO-600km"
+
+name: firefly
+description: |
+  Firefly = NVIDIA Agent Challenge 2026 entry — a long-running, Nemotron-driven,
+  Obsidian-grounded orbital data-center mission architect. Runs the dual-mode
+  router (Nano-4B planner with `detailed thinking on` + Nano-4B executor with
+  `detailed thinking off`) and persists every mission as a wikilink-cited
+  synthesis page back into the host wiki/.
+
+# --- Filesystem policy (Landlock-enforced) ----------------------------------
+filesystem:
+  read_write:
+    - /sandbox                    # agent scratch (synthesis output, .cache/)
+    - /sandbox/outputs            # mission JSON + Markdown briefs
+    - /sandbox/wiki/synthesis     # bind-mounted wiki/synthesis/ (writeable)
+    - /sandbox/wiki/index.md      # bind-mounted: append-only by wiki_writer
+    - /sandbox/wiki/log.md        # bind-mounted: append-only by wiki_writer
+    - /tmp                        # transient
+  read_only:
+    - /sandbox/agents             # bind-mounted agents/ source tree
+    - /sandbox/wiki/concepts      # bind-mounted wiki/concepts/ for RAG
+    - /sandbox/wiki/entities      # bind-mounted wiki/entities/ for RAG
+    - /sandbox/wiki/sources       # bind-mounted wiki/sources/ for RAG
+    - /usr                        # interpreter + system libs
+    - /etc/ssl/certs              # CA bundle for httpx HTTPS
+  deny:
+    - /home                       # never mount the user home
+    - /root
+    - /.ssh
+    - /.aws
+    - /.gnupg
+
+# --- Network policy (declarative egress allow-list, L7 proxy) ---------------
+network:
+  default: deny
+  allow:
+    # LLM inference — local Ollama via OpenShell gateway DNS
+    - host: inference.local
+      ports: [443, 8443, 8642]
+      reason: "Nemotron-3 Nano via NemoClaw inference router (NVIDIA NIM / local Ollama)"
+
+    # Cloud NIM fallback (only used when NEMOTRON_BACKEND=nim)
+    - host: integrate.api.nvidia.com
+      ports: [443]
+      reason: "Cloud Nemotron — optional fallback for Super-49B"
+
+    # Space-Track conjunction data messages (RiskAgent)
+    - host: www.space-track.org
+      ports: [443]
+      reason: "RiskAgent cdm_30d_summary tool"
+
+    # Launch Library 2 — orbital launch windows (LaunchPlannerAgent)
+    - host: ll.thespacedevs.com
+      ports: [443]
+      reason: "LaunchPlannerAgent upcoming_launches tool"
+
+    # NOAA Space Weather Prediction Center (orbit_designer future tool)
+    - host: services.swpc.noaa.gov
+      ports: [443]
+      reason: "Kp index + solar wind"
+
+    # CelesTrak TLE fallback (no auth)
+    - host: celestrak.org
+      ports: [443]
+      reason: "TLE fallback when Space-Track is rate-limited"
+
+# --- Process / syscall policy (seccomp) -------------------------------------
+process:
+  no_new_privs: true
+  drop_capabilities: [ALL]
+  seccomp_profile: default-allow-list
+  block_syscalls:
+    - kexec_load
+    - reboot
+    - bpf
+    - perf_event_open
+    - ptrace
+
+# --- Inference policy (out-of-process credential vault) ---------------------
+inference:
+  default_provider: ollama-local           # see scripts/nemoclaw-force-ollama.sh
+  default_model: nemotron-3-nano:4b
+  rerouting:
+    # The agent talks to inference.local; the gateway swaps in the real
+    # provider URL + Authorization header, then forwards. The agent process
+    # never sees NVIDIA_API_KEY or any other credential.
+    upstreams:
+      ollama-local:
+        base_url: http://127.0.0.1:11434/v1
+        requires_credential: false
+      nim-cloud:
+        base_url: https://integrate.api.nvidia.com/v1
+        requires_credential: NVIDIA_API_KEY
+
+# --- Long-running daemon ----------------------------------------------------
+daemon:
+  enabled: true
+  schedule:
+    # Re-evaluate the most recent mission every 6 hours. Pulls fresh CDM +
+    # launch window data, appends to wiki/log.md, alerts on Kp >= 6 storm.
+    refresh_interval: "6h"
+    on_event:
+      - alert_when: "space_weather.kp_index >= 6"
+        action: "append-wiki-log + write outputs/alerts/storm-{date}.json"

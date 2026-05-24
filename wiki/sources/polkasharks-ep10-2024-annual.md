@@ -1,16 +1,16 @@
 ---
 type: source
-title: "波卡解碼EP10: 波卡2024年報"
-author: "波卡鯊 Polkasharks"
+title: "Polkadot Decoded EP10: Polkadot 2024 Annual Report"
+author: "Polkasharks"
 date: "2024-12-30"
 ingested: "2026-04-19"
 tags: [polkadot, annual-report, 2024, stats, roadmap]
 url: "https://vocus.cc/article/67722929fd897800017017dd"
 ---
 
-# 波卡解碼EP10: 波卡2024年報
+# Polkadot Decoded EP10: Polkadot 2024 Annual Report
 
-**Author:** [[entities/polkasharks]] | **Date:** 2024-12-30 | **Series:** 波卡解碼
+**Author:** [[entities/polkasharks]] | **Date:** 2024-12-30 | **Series:** Polkadot Decoded
 
 ## Summary
 

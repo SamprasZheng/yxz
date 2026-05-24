@@ -1,0 +1,85 @@
+# Unified Firefly — NeMo Agent Toolkit workflow definition
+# This YAML is the architecture-of-record: it declares the five agent slots,
+# their tools, and the orchestrator fan-out shape. The runtime entry point is
+# src/firefly/orchestrator.py (Python), which honors this declaration; v2
+# migrations will replace each stub agent with a real implementation without
+# changing this shape.
+
+workflow:
+  name: unified-firefly
+  description: |
+    Orbital Data Center Mission Architect. Turns a one-line mission intent into
+    a concrete deployment plan: orbit + launch window + radiation dose + debris
+    risk + a Markdown synthesis page filed into the project wiki.
+  entrypoint: firefly.orchestrator:run
+
+orchestrator:
+  type: fan_out_collate
+  llm: claude-opus-4-7   # MVP; v2 benchmarks Nemotron via NIM
+  knowledge_base:
+    loader: firefly.kb_loader:load_wiki
+    sources:
+      - ../wiki/concepts/orbit-dose-budgeting.md
+      - ../wiki/concepts/rha-radiation-hardening.md
+      - ../wiki/concepts/cots-gpu-radiation-risk.md
+      - ../wiki/concepts/orbital-data-center.md
+      - ../wiki/concepts/leo-value-chain.md
+      - ../wiki/concepts/see-single-event-effects.md
+      - ../wiki/concepts/tid-total-ionizing-dose.md
+
+agents:
+  # ─── 1 of 5: the killer agent (REAL) ─────────────────────────────────────
+  orbit_designer:
+    impl: firefly.agents.orbit_designer:run
+    role: |
+      Given launch site and target orbit class, design the orbit and estimate
+      its 1-year TID, eclipse fraction, and debris conjunction history.
+    llm: claude-opus-4-7
+    tools:
+      - firefly.tools.space_track:get_tles
+      - firefly.tools.space_track:get_cdms
+      - firefly.tools.noaa_swpc:current_space_weather
+      - firefly.tools.launch_library:upcoming_launches
+      - firefly.tools.celestrak:get_tles      # rate-limit fallback
+      - firefly.tools.satmad_propagate:design_orbit
+      - firefly.tools.dose_estimator:annual_tid
+    prompt: src/firefly/prompts/orbit_designer.system.md
+    status: real
+
+  # ─── 2-5: STUBS (return mocked JSON with mvp_stub: true flag) ────────────
+  launch_planner:
+    impl: firefly.agents.launch_planner:run
+    role: Optimise launch window across providers (Falcon 9, Electron, ...).
+    status: stub
+    v2_owner: v2.1
+
+  power_thermal:
+    impl: firefly.agents.power_thermal:run
+    role: Size solar arrays + radiators for the target compute load.
+    status: stub
+    v2_owner: v2.2
+
+  risk:
+    impl: firefly.agents.risk:run
+    role: Quantify debris collision + SEU/SEL risk; mitigation plan.
+    status: stub
+    v2_owner: v2.3
+
+  # ─── narrator: thin in MVP (Jinja2 template), v2.4 → Claude-generated PDF
+  narrator:
+    impl: firefly.agents.narrator:run
+    role: Render collated agent outputs as a one-page Markdown mission brief.
+    status: thin
+    v2_owner: v2.4
+    template: src/firefly/prompts/narrator.brief.md
+
+# Wiki write-back closes the knowledge loop: each run produces a new
+# synthesis page so the next run is smarter for it.
+post_run:
+  wiki_writer:
+    impl: firefly.wiki_writer:write_synthesis
+    targets:
+      synthesis_dir: ../wiki/synthesis
+      index_file: ../wiki/index.md
+      log_file: ../wiki/log.md
+      schema_reference: ../wiki/AGENTS.md

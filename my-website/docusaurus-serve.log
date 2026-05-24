@@ -1,0 +1,9 @@
+yarn run v1.22.22
+warning ..\..\package.json: No license field
+$ yarn docusaurus serve --host 127.0.0.1 --port 3001
+warning ..\..\package.json: No license field
+$ node ./node_modules/@docusaurus/core/bin/docusaurus.mjs serve --host 127.0.0.1 --port 3001
+
+ ------------------------------------------------------------------------------                                                                                                         Update available 3.7.0 → 3.10.1                                                                                                                 To upgrade Docusaurus packages with the latest version, run the                                       following command:                                    `yarn upgrade @docusaurus/core@latest @docusaurus/preset-classic@latest           @docusaurus/module-type-aliases@latest @docusaurus/tsconfig@latest                                   @docusaurus/types@latest`                                                                                                             ------------------------------------------------------------------------------ 
+
+[SUCCESS] Serving "build" directory at: http://127.0.0.1:3001/yxz/

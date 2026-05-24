@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Publisher"
+  short_description: "Publish Docusaurus blog posts safely."
+  default_prompt: "Prepare, verify, and publish Docusaurus blog posts for the yxz site using the repo's tags, OG image, and deployment rules."

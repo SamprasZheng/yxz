@@ -1,183 +1,183 @@
 ---
 slug: leo-space-landscape-2026
-title: "太空算力元年：2026 LEO 產業五大熱點與投資地圖"
+title: "Year One of Space Compute: Five Hot Spots and an Investment Map for 2026 LEO"
 authors: ["sampras"]
 tags: [space, rf, ai, macro]
-description: 黃仁勳說「太空運算，終極前沿，已經到來」。2026 年 LEO 產業正在五條線同時引爆——軌道資料中心、頻譜稀缺、中國三體星座、Amazon Kuiper 商轉、Starlink V3 升級。這篇拆解完整上中下游，找出台灣廠商在這場算力轉移中的座標。
+description: Jensen Huang said "Space computing, the ultimate frontier, has arrived." In 2026, the LEO industry is igniting on five fronts simultaneously — orbital data centers, spectrum scarcity, China's Three-Body constellation, Amazon Kuiper going commercial, and Starlink V3 upgrades. This post breaks down the full upstream-midstream-downstream picture and finds Taiwan's position in this compute-migration moment.
 ---
 
-2026 年 3 月，黃仁勳在 GTC 舞台上說了一句話：
+In March 2026, Jensen Huang said something on the GTC stage:
 
-> **「太空運算，終極前沿，已經到來。」**
+> **"Space computing, the ultimate frontier, has arrived."**
 
-這不是比喻。2025 年 11 月，美國新創 Starcloud 把一顆 NVIDIA H100 送上軌道（Starcloud-1），完成人類第一次在太空中訓練大型語言模型。兩個月後，2026 年 1 月 11 日，Axiom Space 發射兩個軌道資料中心節點（ODC Node 1 & 2），接上 Kepler Communications 的光學中繼網路，開始對外提供雲端算力服務。
+This was not a metaphor. In November 2025, US startup Starcloud launched an NVIDIA H100 into orbit (Starcloud-1) and completed the first large language model training session in space. Two months later, on January 11, 2026, Axiom Space launched two orbital data center nodes (ODC Node 1 & 2), connected them to Kepler Communications' optical relay network, and began offering cloud compute services to external customers.
 
-地球軌道，正式成為資料中心的新區位。
+Earth orbit has officially become a new location class for data centers.
 
 <!-- truncate -->
 
-## 2026 年的五個引爆點
+## Five Ignition Points in 2026
 
-### 1. 軌道資料中心（ODC）進入實戰期
+### 1. Orbital Data Centers (ODC) Enter Operational Phase
 
-這件事之所以現在發生，而不是十年後，是三條線同時撞在一起：
+The reason this is happening now, not ten years from now, is that three trends converged simultaneously:
 
-**地面能耗已到天花板**。2024 年全球資料中心耗電 415 TWh；2026 年預計突破 650 TWh。台灣的電力網就是一個縮影——AI 算力爆炸，電從哪來是每個 IDC 業者的頭號問題。
+**Ground power consumption has hit its ceiling.** Global data center power usage was 415 TWh in 2024; 2026 is projected to exceed 650 TWh. Taiwan's power grid is a microcosm — AI compute is exploding, and where the power comes from is every IDC operator's top question.
 
-**太空有免費能源**。軌道上沒有雲、沒有雨、沒有白天黑夜的切換——7×24 小時太陽能，發電效率遠高於地面板。散熱呢？更簡單：直接對宇宙背景輻射，不需要任何壓縮機或冷卻水塔。Jeff Bezos 的判斷是：在未來數十年內，ODC 的建設成本將**低於**地面資料中心。
+**Space has free energy.** In orbit there are no clouds, no rain, no day-night cycles — 7×24 hours of solar power, at far higher generation efficiency than ground-based panels. Thermal management? Simpler still: directly radiate to the cosmic background, no compressors or cooling towers required. Jeff Bezos's judgment is that within decades, ODC construction costs will be **lower** than ground-based data centers.
 
-**商用 GPU 上天被驗證可行**。這是最關鍵的一步。Starcloud-1 用的不是什麼特規太空硬化晶片，而是你在地面伺服器機架裡就能看到的 NVIDIA H100。商用現貨（COTS）能在軌道輻射環境下穩定運作，意味著地面整個 GPU 生態系的技術積累可以直接複用。
+**Commercial GPUs in orbit validated as feasible.** This is the most critical step. Starcloud-1 didn't use any specially hardened space chip — it used the same NVIDIA H100 you'd find in a ground server rack. COTS hardware operating stably under orbital radiation conditions means the entire ground-side GPU ecosystem can be directly reused.
 
-三條線疊起來的結論是：**ODC 不再是 science fiction，2026–2030 是第一波 capex 戰場。**
-
----
-
-### 2. 頻譜與軌道槽位進入稀缺危機
-
-LEO 的「地皮」不是無限的。根據 ITU 2025 底至 2026 初的頻譜分配備忘錄，500–1200 公里高商業價值軌道傾角，以及 Ku/Ka/V 頻段，已面臨枯竭。
-
-這意味著幾件事：
-
-- SpaceX（Starlink）、OneWeb、Amazon Kuiper 已經先申報先卡位，後來者在傳統通訊衛星題材上機會已非常有限。
-- ITU 規則是「先申報先得」——這場資源搶佔戰，早已在 2020–2023 年決定大局。
-- 晚到的玩家，只剩 ODC 這種「新型態衛星」才有差異化空間——因為 ODC 的商業模式不依賴頻譜稀缺性，而依賴算力供給稀缺性。
+The combined conclusion: **ODC is no longer science fiction. 2026–2030 is the first capex wave.**
 
 ---
 
-### 3. 中國三體計算星座 — ADA Space
+### 2. Spectrum and Orbital Slots Entering Scarcity Crisis
 
-2025 年 5 月，中國 ADA Space 發射首批 12 顆衛星。每顆搭載：
-- **100 Gbps 光學鏈路**（星間通訊）
-- **744 TOPS 在軌加速器**（AI 推論）
+LEO's "real estate" is not unlimited. Per ITU spectrum allocation memos from late 2025 to early 2026, the 500–1,200 km commercially valuable orbital inclinations and the Ku/Ka/V bands are approaching exhaustion.
 
-目標：2800 顆衛星組成的分散式軌道超算網路。
+This means:
 
-這不是一家創業公司在搞，是**國家級戰略規模化**。AI、感測、通訊三位一體——軌道算力成為新的戰略資源，和頻譜、稀土一樣。
-
-對比之下，美國這邊是 Starcloud（商業創新）+ Axiom Space（ODC 節點）+ Google Suncatcher（TPU 上天，接光學通訊），走的是市場驅動路線。兩邊正在打一場「誰的在軌算力更快達到規模化」的競賽。
+- SpaceX (Starlink), OneWeb, and Amazon Kuiper have already filed first and locked in their positions; latecomers have very limited opportunity in traditional comms satellite themes.
+- ITU rules are "first to file, first to claim" — this resource-grab was effectively settled in 2020–2023.
+- Latecomers only have differentiated space left via "novel satellite types" like ODC — because ODC's business model depends on compute supply scarcity, not spectrum scarcity.
 
 ---
 
-### 4. Amazon Kuiper 商轉倒數
+### 3. China's Three-Body Computing Constellation — ADA Space
 
-Amazon 原 Project Kuiper 已發射超過 150 顆衛星，目標 3236 顆星座。相比 Starlink，Kuiper 是「後發者」，但 Amazon 的資本實力與 AWS 地面雲整合優勢不可忽視。
+In May 2025, China's ADA Space launched its first batch of 12 satellites. Each carries:
+- **100 Gbps optical links** (inter-satellite communications)
+- **744 TOPS on-orbit accelerator** (AI inference)
 
-台灣的動向值得關注：遠傳電信計畫透過與 Amazon Kuiper 合作，把服務引進台灣市場。這是第一個非 Starlink LEO 服務進入台灣生態的明確訊號。
+Target: a 2,800-satellite distributed orbital supercomputing network.
 
----
+This is not a startup venture — it is **national-level strategic scale-up**. AI, sensing, and communications unified — orbital compute has become a new strategic resource, on par with spectrum and rare earth minerals.
 
-### 5. Starlink V3 升級 × 電力需求暴增
-
-Starlink 二代衛星升至 V3 規格：
-- **雷射星間鏈路（ISL）比例大幅增加**——不再完全依賴地面站中轉，衛星直接「光速繞地球」
-- 單顆衛星電力需求從 2 kW 暴增至 **10 kW 以上**
-
-這兩件事對供應鏈的影響是：RF 元件與散熱需求的技術門檻持續拉高，低規格供應商被淘汰，高規格廠商的技術壁壘進一步加深。
+By comparison, the US side has Starcloud (commercial innovation) + Axiom Space (ODC nodes) + Google Suncatcher (TPUs in orbit, connected via optical comms) — taking a market-driven approach. Both sides are racing to see whose on-orbit compute reaches scale first.
 
 ---
 
-## 完整上中下游拆解
+### 4. Amazon Kuiper Commercial Launch Countdown
 
-理解 LEO 產業，最重要的是理解它不是一條線，而是五段結構非常不同的產業。
+Amazon's Project Kuiper has launched more than 150 satellites toward its 3,236-satellite constellation goal. Compared to Starlink, Kuiper is a "late mover," but Amazon's capital firepower and AWS ground cloud integration advantage should not be underestimated.
 
-### 上游：核心元件（台灣的主場）
+Taiwan's activity is worth watching: Far EasTone Telecommunications plans to bring Kuiper services into the Taiwan market through a partnership with Amazon. This is the first clear signal of a non-Starlink LEO service entering the Taiwan ecosystem.
 
-| 類別 | 代表廠商 | 台灣地位 |
+---
+
+### 5. Starlink V3 Upgrade × Surging Power Requirements
+
+Starlink's second-generation satellites are being upgraded to V3 specs:
+- **Significantly higher proportion of laser inter-satellite links (ISL)** — no longer fully dependent on ground station relay; satellites communicate at light speed directly
+- Per-satellite power demand surging from 2 kW to **10 kW or more**
+
+The supply chain implications: technical thresholds for RF components and thermal management keep rising, low-spec suppliers get weeded out, and the moat for high-spec vendors deepens further.
+
+---
+
+## Full Upstream-Midstream-Downstream Breakdown
+
+Understanding the LEO industry requires understanding that it is not a single pipeline but five structurally distinct segments.
+
+### Upstream: Core Components (Taiwan's Home Turf)
+
+| Category | Representative Companies | Taiwan Position |
 |------|---------|---------|
-| RF 功率放大器（GaAs PA） | 穩懋半導體（3105） | ★★★★★ 全球龍頭 |
-| 濾波器 / 波導管 | 昇達科技（3491） | ★★★★★ 毛利 >50%，Starlink & Kuiper 供應鏈 |
-| 低軌衛星專用 PCB | 華通電腦 | ★★★★★ 全球 ~80% 市佔 |
-| 高效率太陽能電池 | （多方競爭，無台廠主導） | — |
-| 抗輻射算力晶片 | （無台廠主導） | — |
+| RF power amplifiers (GaAs PA) | WIN Semiconductors (3105) | ★★★★★ Global leader |
+| Filters / waveguides | Auden Technology (3491) | ★★★★★ >50% gross margin, in Starlink & Kuiper supply chain |
+| LEO-specific PCB | Tripod Technology | ★★★★★ ~80% global share |
+| High-efficiency solar cells | (Multi-player competition, no Taiwanese leader) | — |
+| Radiation-tolerant compute chips | (No Taiwanese leader) | — |
 
-台灣在上游的地位是真正的世界級。穩懋的 GaAs PA 是 LEO 高頻通訊的必需品；昇達科打進了全球兩大 LEO 星座供應鏈；華通的低軌衛星 PCB 市佔率堪稱壟斷（2025 Q4 LEO 板營收突破 155 億元新台幣）。
+Taiwan's upstream position is genuinely world-class. WIN Semiconductors' GaAs PA is essential for LEO high-frequency communications; Auden Technology has broken into both major global LEO constellation supply chains; Tripod's LEO-specific PCB market share approaches monopoly level (Q4 2025 LEO board revenue exceeded NT$15.5 billion).
 
-### 中游 A：衛星本體與系統整合
+### Mid-stream A: Satellite Platform and System Integration
 
-衛星本體由星座營運商主導（SpaceX 大量自製），台廠的切入點是板卡與結構件。
+Satellite bus production is dominated by constellation operators (SpaceX largely self-manufactures), with Taiwanese vendors' entry points being board-level and structural components.
 
-重要子題：**雷射星間鏈路（ISL）**。Starlink V3 增加了 ISL 比例，讓衛星之間可以用光速直接傳訊，不需要每次都繞回地面。ISL 需要高精度的指向/追蹤/捕獲（PAT）系統，這是精密光學領域，目前由 Mynaric、SA Photonics 等歐美廠主導，台廠在此幾乎缺席。
+Important sub-topic: **laser inter-satellite links (ISL)**. Starlink V3 has increased its ISL fraction, allowing satellites to communicate directly at light speed without routing through ground stations each time. ISL requires high-precision Pointing, Acquisition, and Tracking (PAT) systems — a precision optics domain currently dominated by European and American companies like Mynaric and SA Photonics, with near-zero Taiwanese participation.
 
-### 中游 B：發射服務與在軌生命週期
+### Mid-stream B: Launch Services and In-Orbit Lifecycle
 
-2025 年全球 LEO 相關投資超過 450 億美元（比 2024 年的 250 億美元成長八成）。這筆錢大量流向發射。SpaceX Falcon 9 與 Starship 的成本持續壓低是整個生命週期商業可行性的關鍵槓桿——沒有便宜的發射，ODC 的 Bezos 算術根本不成立。
+Global LEO-related investment exceeded $45 billion in 2025 (up roughly 80% from $25 billion in 2024). Much of this flows toward launches. SpaceX Falcon 9 and Starship's continued cost reduction is the key leverage for the entire lifecycle commercial viability — without cheap launch, Bezos's ODC math simply doesn't work.
 
-### 中游 C：太空資料中心（最熱新題材，台灣最大缺口）
+### Mid-stream C: Space Data Centers (Hottest New Theme, Taiwan's Biggest Gap)
 
-這是 2026 年整個 LEO 產業最值得關注的新環節，也是台灣最明顯缺席的地方。
+This is the most important new segment across the entire LEO industry in 2026, and also the area of Taiwan's most glaring absence.
 
-中游 C 需要整合：
-1. **算力硬體**（COTS GPU vs space-hardened 的工程取捨）
-2. **散熱系統**（無對流環境，只能靠輻射冷卻 + 導熱板）
-3. **電源管理**（10 kW+ 太陽能陣列 → 算力模組）
-4. **光學通訊**（與地面及星間節點的高速 Downlink）
-5. **系統整合能力**（要和發射方、地面站、光通訊一起打包）
+Mid-stream C requires integrating:
+1. **Compute hardware** (COTS GPU vs. space-hardened engineering trade-offs)
+2. **Thermal management** (convection-free environment; only radiative cooling + heatspreaders)
+3. **Power management** (10 kW+ solar arrays → compute modules)
+4. **Optical communications** (high-speed downlink to ground and inter-node)
+5. **System integration capability** (bundling launcher, ground station, and optical comms together)
 
-台廠前三項「會做但沒做到 space grade」，第四、五項幾乎沒有積累。
+Taiwanese companies are at "can build it, but not to space grade" for the first three; the fourth and fifth have almost no accumulated expertise.
 
-### 下游 A：地面基礎設施
+### Downstream A: Ground Infrastructure
 
-地面站（信關站）、用戶終端（天線、LNB、路由器）、地空混合架構。
+Ground stations (gateway stations), user terminals (antennas, LNBs, routers), hybrid ground-space architecture.
 
-地空 DC 混合雲是 ODC 商業化最現實的第一落點：ODC 節點做推論/邊緣計算，地面 DC 做訓練/儲存，用高速 Downlink 連起來。企業不需要完全遷離地面，漸進採用。
+Ground-space hybrid cloud is the most realistic first landing point for ODC commercialization: ODC nodes handle inference / edge compute, ground DCs handle training / storage, connected via high-speed downlink. Enterprises don't need to fully migrate from ground; they can adopt incrementally.
 
-台灣在地面終端這段（天線、LNB、電源）有不錯的參與度（★★★★）。
+Taiwan has decent participation in the ground terminal segment (antennas, LNBs, power supplies) (★★★★).
 
-### 下游 B：終端服務
+### Downstream B: End Services
 
-| 場景 | 說明 |
+| Scenario | Notes |
 |------|------|
-| 直連手機（D2D/NTN） | T-Mobile × SpaceX；AT&T/Verizon × AST SpaceMobile |
-| 地球觀測 AI | 在軌即時處理衛星影像；野火偵測、農業監測、船隻識別 |
-| 國防 / 主權雲端 | 地理獨立、難以摧毀、全球覆蓋；最早期的付費場景 |
-| 航空 / 海事 | Starlink Aviation 機上 Wi-Fi；已是成熟市場 |
+| Direct-to-device (D2D/NTN) | T-Mobile × SpaceX; AT&T/Verizon × AST SpaceMobile |
+| Earth observation AI | On-orbit real-time satellite imagery processing; wildfire detection, agricultural monitoring, vessel identification |
+| Defense / sovereign cloud | Geography-independent, physically indestructible, global coverage; earliest paying use case |
+| Aviation / maritime | Starlink Aviation in-flight Wi-Fi; already a mature market |
 
 ---
 
-## 台灣的機會與風險
+## Taiwan's Opportunities and Risks
 
-台灣的 LEO 供應鏈地位可以用一句話總結：**上游王者，中游 C 缺席。**
+Taiwan's LEO supply chain position can be summarized in one sentence: **upstream king, mid-stream C absent.**
 
-| 環節 | 存在感 |
+| Segment | Presence |
 |------|-------|
-| 上游 RF / PCB | ★★★★★ |
-| 中游 A（板卡整合） | ★★★ |
-| 中游 A（ISL 光學） | ★★ |
-| **中游 C（ODC 硬體整合）** | **★** |
-| 下游地面端 | ★★★★ |
+| Upstream RF / PCB | ★★★★★ |
+| Mid-stream A (board integration) | ★★★ |
+| Mid-stream A (ISL optics) | ★★ |
+| **Mid-stream C (ODC hardware integration)** | **★** |
+| Downstream ground segment | ★★★★ |
 
-上游的高毛利是真實的，但它建立在「賣元件」的商業模式上。如果未來 ODC 成熟，算力服務的附加價值主要落在中游 C 和下游服務層，上游元件廠商可能逐漸被壓縮成純 OEM/ODM 模式——就像台灣 PC 代工業的歷史重演。
+The upstream high margins are real, but they rest on a "selling components" business model. If ODC matures and the value-add in compute services concentrates in mid-stream C and downstream service layers, upstream component vendors could gradually be compressed into pure OEM/ODM mode — a replay of Taiwan's PC contract manufacturing history.
 
-**2026–2028 是中游 C 商業化的第一波窗口。**
+**2026–2028 is the first commercial wave window for mid-stream C.**
 
-三條可能路徑：
+Three possible paths:
 
-- **路徑 A**：穩懋、昇達科這類上游廠商往中游 C 延伸。技術最接近，但文化轉型最難（從「賣元件」到「賣子系統」）。
-- **路徑 B**：華通、欣興這類 PCB 廠把板卡整合層拉高，往 ODC 運算板組件延伸。**最可能出黑馬**，因為 PCB 廠本來就做慣系統級整合。
-- **路徑 C**：國防 / 主權雲採購催生。台灣若把 ODC 納入國防採購，會強制長出一家中游 C 廠商——這是最確定的催化劑，時程取決於政策意志。
+- **Path A**: Upstream vendors like WIN Semiconductors and Auden Technology extend into mid-stream C. Technically closest, but culturally the hardest transformation (from "selling components" to "selling subsystems").
+- **Path B**: PCB makers like Tripod and Unimicron raise their board-level integration stack, extending into ODC compute board assemblies. **Most likely to produce a dark horse**, because PCB makers are already accustomed to system-level integration.
+- **Path C**: Defense / sovereign cloud procurement as catalyst. If Taiwan includes ODC in defense procurement, it will force a mid-stream C vendor to emerge — the most certain catalyst, with a timeline depending on policy will.
 
 ---
 
-## 時程表
+## Timeline
 
-| 時間 | 事件 |
+| Date | Event |
 |------|------|
-| 2025-05 | ADA Space 發射首批 12 顆衛星（744 TOPS/顆） |
-| 2025-11 | Starcloud-1 發射，H100 in orbit，太空 LLM 訓練首次成功 |
-| 2025 底 – 2026 初 | ITU 頻譜分配備忘錄：500–1200 km + Ku/Ka/V 進入枯竭 |
-| 2026-01-11 | Axiom Space ODC Node 1 & 2 發射，Kepler 光學中繼接通 |
-| 2026 GTC | 黃仁勳：「太空運算，終極前沿，已經到來」 |
-| 2026–2028 | 中游 C 第一波商業化窗口 |
-| 2030 預估 | McKinsey：agentic commerce（含太空算力）媒介 $3–5 兆美元 |
+| 2025-05 | ADA Space launches first batch of 12 satellites (744 TOPS/unit) |
+| 2025-11 | Starcloud-1 launch, H100 in orbit, first successful space LLM training |
+| Late 2025 – Early 2026 | ITU spectrum allocation memos: 500–1200 km + Ku/Ka/V bands reaching exhaustion |
+| 2026-01-11 | Axiom Space ODC Node 1 & 2 launch; Kepler optical relay connected |
+| 2026 GTC | Jensen Huang: "Space computing, the ultimate frontier, has arrived" |
+| 2026–2028 | First commercial wave for mid-stream C |
+| 2030 estimate | McKinsey: agentic commerce (including space compute) intermediates $3–5 trillion |
 
 ---
 
-## 結論
+## Conclusion
 
-LEO 產業在 2026 年同時引爆了五條線：ODC 驗證可行、頻譜稀缺戰略化、中國三體星座規模化、Amazon Kuiper 商轉、Starlink V3 升級。這不是「下一個五年的事」，是現在正在發生的 capex 部署。
+The LEO industry in 2026 ignited on five fronts simultaneously: ODC validated as feasible, spectrum scarcity becoming strategic, China's Three-Body constellation scaling up, Amazon Kuiper going commercial, and Starlink V3 upgrading. This is not "a story for the next five years" — it is capex deployment happening right now.
 
-台灣的上游 RF 與 PCB 廠商是這輪行情中最確定的受益者。但真正的長線問題是：台灣能不能在 2026–2028 的視窗期，長出一家中游 C 的玩家——在太空算力的附加價值徹底往服務層轉移之前，先站進去。
+Taiwan's upstream RF and PCB vendors are among the most certain beneficiaries of this cycle. But the real long-game question is: can Taiwan produce a mid-stream C player within the 2026–2028 window — before the value-add of space compute fully migrates to the service layer?
 
 ---
 
-*深度分析：[台灣 LEO 結構性缺口與三條突圍路徑](/blog/leo-odc-taiwan-gap)*
+*Deep analysis: [Taiwan LEO Structural Gap and Three Breakout Paths](/blog/leo-odc-taiwan-gap)*

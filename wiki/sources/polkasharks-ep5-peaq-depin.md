@@ -1,16 +1,16 @@
 ---
 type: source
-title: "波卡解碼EP5: 去中心化基礎建設 DePIN - peaq"
-author: "波卡鯊 Polkasharks"
+title: "Polkadot Decoded EP5: Decentralized Physical Infrastructure — DePIN and peaq"
+author: "Polkasharks"
 date: "2024-09-09"
 ingested: "2026-04-19"
-tags: [polkadot, depin, peaq, iot, rwa, layer1]
+tags: [polkadot, depin, peaq, iot, rwa, layer1, substrate, coretime, infrastructure]
 url: "https://vocus.cc/article/66dda92ffd89780001671916"
 ---
 
-# 波卡解碼EP5: 去中心化基礎建設 DePIN - peaq
+# Polkadot Decoded EP5: Decentralized Physical Infrastructure — DePIN and peaq
 
-**Author:** [[entities/polkasharks]] | **Date:** 2024-09-09 | **Series:** 波卡解碼
+**Author:** [[entities/polkasharks]] | **Date:** 2024-09-09 | **Series:** Polkadot Decoded
 
 ## Summary
 
@@ -32,5 +32,8 @@ DeFi/DEX: Hydration, StellaSwap | DApps/Gaming: Mythical Games, Astar, Heal3, Ag
 
 ## Cross-references
 
+- Author / series: [[entities/polkasharks]], [[sources/polkasharks-ep1-polkadot-intro]], [[sources/polkasharks-ep6-agile-coretime]], [[sources/polkasharks-ep7-regionx]]
+- Infrastructure expansion: [[concepts/regionx]], [[concepts/xcm]]
+- Broader roadmap: [[concepts/jam]], [[sources/polkasharks-ep10-2024-annual]], [[sources/polkasharks-longway-polkadot-2024]]
 - Infrastructure: [[entities/polkadot]], [[concepts/agile-coretime]]
 - Mentioned alongside: [[concepts/hydration-omnipool]], [[entities/mythical-games]]

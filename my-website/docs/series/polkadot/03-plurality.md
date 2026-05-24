@@ -1,24 +1,24 @@
 ---
 sidebar_position: 3
-title: 2️⃣ 治理 — Plurality × OpenGov
+title: 2️⃣ Governance — Plurality × OpenGov
 ---
 
-# 2️⃣ 治理 — Plurality × OpenGov
+# 2️⃣ Governance — Plurality × OpenGov
 
-**→ 閱讀主文：[多元宇宙](/blog/Plurality)**
+**→ Read the main article: [Plurality](/blog/Plurality)**
 
-## 這一篇要帶走的
+## Key Takeaways
 
-1. **Plurality（多元宇宙）**是唐鳳協作的政治哲學書，主張用多元視角取代單一決策。
-2. Polkadot 的 **OpenGov** 鏈上治理在機制上與 Plurality 的精神共鳴：透明、開放、多元提案入口。
-3. Project Liberty 的 DSNP 協定是另一個在社交網路層面實踐 Plurality 的例子。
+1. **Plurality** is a political philosophy book co-authored by Audrey Tang, arguing for replacing single-point decision-making with pluralistic perspectives.
+2. Polkadot's **OpenGov** on-chain governance resonates mechanically with the spirit of Plurality: transparent, open, and supporting multiple proposal entry points.
+3. Project Liberty's DSNP protocol is another example of putting Plurality into practice at the social network layer.
 
-## 為什麼放在這裡
+## Why It Belongs Here
 
-Polkadot 不只是技術協定，也是**治理實驗**。理解 OpenGov 會幫助你理解後續所有大幅升級（DOT hard cap referendum、JAM 路線圖、Hub migration）是怎麼**被社群投票通過的**，而不是 founder 一聲令下。
+Polkadot is not just a technical protocol — it is also a **governance experiment**. Understanding OpenGov will help you understand how all subsequent major upgrades (DOT hard cap referendum, JAM roadmap, Hub migration) were **passed by community vote** rather than decreed by the founders.
 
-## 讀完之後再看
+## What to Read Next
 
-下一步到 Polkadot 的**下一代核心架構**：
+Move on to Polkadot's **next-generation core architecture**:
 
-- [JAM — 可擴展無需信任虛擬機](/blog/JAMintro)
+- [JAM — A Scalable Trustless Virtual Machine](/blog/JAMintro)

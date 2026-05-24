@@ -1,0 +1,4 @@
+interface:
+  display_name: "Firefly Mission Planner"
+  short_description: "Run and review Firefly mission plans."
+  default_prompt: "Use the agents/ Firefly workflow to plan orbital data center missions and write reviewed synthesis output to wiki/."

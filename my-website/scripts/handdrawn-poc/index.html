@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Hand-drawn whiteboard POC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/roughjs@4.6.6/bundled/rough.js"></script>
+<style>
+  html, body { margin: 0; padding: 0; background: #222; font-family: system-ui, sans-serif; color: #ddd; }
+  body.render-mode { background: transparent; }
+  body.render-mode .controls, body.render-mode .stage-wrap.controls { display: none; }
+  .stage-wrap { display: flex; align-items: center; justify-content: center; padding: 16px; gap: 16px; flex-wrap: wrap; }
+  body.render-mode .stage-wrap { padding: 0; }
+  .stage {
+    width: 960px; height: 540px; /* 1920x1080 scaled for preview */
+    background: #fbf8f1;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: relative;
+  }
+  body.render-mode .stage {
+    width: 1920px; height: 1080px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .stage svg { width: 100%; height: 100%; display: block; }
+  .controls { display: flex; gap: 8px; align-items: center; }
+  button { background: #e6007a; color: white; border: 0; padding: 8px 16px; border-radius: 6px; cursor: pointer; font: inherit; }
+  button:hover { filter: brightness(1.1); }
+  .narration {
+    position: absolute; left: 0; right: 0; bottom: 12px; text-align: center;
+    font-family: 'Patrick Hand', sans-serif; font-size: 22px; color: #333;
+    background: rgba(255,255,255,0.6); padding: 6px 12px; pointer-events: none;
+  }
+  body.render-mode .narration { font-size: 36px; bottom: 24px; }
+  .info { font-size: 13px; opacity: 0.7; }
+</style>
+</head>
+<body>
+<div class="stage-wrap">
+  <div class="stage" id="stage">
+    <svg id="svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet"></svg>
+    <div class="narration" id="narration"></div>
+  </div>
+</div>
+<div class="stage-wrap controls">
+  <button id="play">▶ Play</button>
+  <button id="reset">↺ Reset</button>
+  <input type="range" id="scrub" min="0" max="100" step="0.1" value="0" style="width:300px" />
+  <span class="info" id="clock">0.00s</span>
+  <span class="info" id="meta"></span>
+</div>
+
+<script>
+const SCENE_URL = './scene.json';
+const params = new URLSearchParams(location.search);
+const RENDER_MODE = params.get('render') === '1';
+if (RENDER_MODE) document.body.classList.add('render-mode');
+
+const svg = document.getElementById('svg');
+const narrationEl = document.getElementById('narration');
+const clock = document.getElementById('clock');
+const meta = document.getElementById('meta');
+const scrub = document.getElementById('scrub');
+
+let scene = null;
+let totalDuration = 0;
+// Pre-built element registry: each entry = { sceneId, el, fireAt, duration, type, node, paths: [{node, len}], textWidth, clipRect }
+const registry = [];
+
+async function loadScene() {
+  const res = await fetch(SCENE_URL);
+  scene = await res.json();
+  totalDuration = scene.scenes.reduce((s, sc) => s + sc.duration, 0);
+  scrub.max = totalDuration;
+  meta.textContent = `${scene.scenes.length} scenes · total ${totalDuration}s`;
+  buildAll();
+  renderAt(0);
+  // Signal puppeteer that we're ready
+  window.__POC_READY__ = true;
+}
+
+function buildAll() {
+  // background
+  svg.innerHTML = '';
+  const ns = 'http://www.w3.org/2000/svg';
+  const bg = document.createElementNS(ns, 'rect');
+  bg.setAttribute('width', scene.width);
+  bg.setAttribute('height', scene.height);
+  bg.setAttribute('fill', scene.background);
+  svg.appendChild(bg);
+
+  const defs = document.createElementNS(ns, 'defs');
+  svg.appendChild(defs);
+
+  // Use seeded rough.js for deterministic output
+  const rc = rough.svg(svg, { options: { seed: 42 } });
+
+  for (const sc of scene.scenes) {
+    for (const el of sc.elements) {
+      const color = el.color || scene.ink;
+      const fireAt = sc.start + (el.appearAt || 0);
+      const duration = el.duration || 1;
+      const entry = { sceneId: sc.id, el, fireAt, duration, type: el.type };
+
+      if (el.type === 'text') {
+        // SVG text + clipPath rect that grows to reveal
+        const t = document.createElementNS(ns, 'text');
+        t.setAttribute('x', el.x);
+        t.setAttribute('y', el.y);
+        t.setAttribute('font-family', "'Caveat', cursive");
+        t.setAttribute('font-weight', '700');
+        t.setAttribute('font-size', el.size);
+        t.setAttribute('fill', color);
+        t.setAttribute('text-anchor', el.anchor || 'start');
+        t.setAttribute('dominant-baseline', 'middle');
+        t.textContent = el.text;
+        svg.appendChild(t);
+        // Compute bbox after font loaded; will recompute on render too
+        entry.textNode = t;
+        // clipPath setup (created lazily after we can measure)
+        const clipId = 'cp-' + (registry.length);
+        const cp = document.createElementNS(ns, 'clipPath');
+        cp.setAttribute('id', clipId);
+        const rect = document.createElementNS(ns, 'rect');
+        rect.setAttribute('x', 0);
+        rect.setAttribute('y', 0);
+        rect.setAttribute('width', 0);
+        rect.setAttribute('height', 0);
+        cp.appendChild(rect);
+        defs.appendChild(cp);
+        t.setAttribute('clip-path', `url(#${clipId})`);
+        entry.clipRect = rect;
+      } else {
+        // Shape via rough.js
+        const opts = { stroke: color, strokeWidth: 3, roughness: 1.6, bowing: 1.5, seed: 42 + registry.length };
+        let node;
+        if (el.type === 'circle') node = rc.circle(el.cx, el.cy, el.r * 2, opts);
+        else if (el.type === 'rect') node = rc.rectangle(el.x, el.y, el.w, el.h, opts);
+        else if (el.type === 'underline' || el.type === 'line') node = rc.line(el.x1, el.y1, el.x2, el.y2, opts);
+        else if (el.type === 'arrow') {
+          node = document.createElementNS(ns, 'g');
+          node.appendChild(rc.line(el.x1, el.y1, el.x2, el.y2, opts));
+          const angle = Math.atan2(el.y2 - el.y1, el.x2 - el.x1);
+          const headLen = 28;
+          const a1x = el.x2 - headLen * Math.cos(angle - Math.PI / 7);
+          const a1y = el.y2 - headLen * Math.sin(angle - Math.PI / 7);
+          const a2x = el.x2 - headLen * Math.cos(angle + Math.PI / 7);
+          const a2y = el.y2 - headLen * Math.sin(angle + Math.PI / 7);
+          node.appendChild(rc.line(el.x2, el.y2, a1x, a1y, opts));
+          node.appendChild(rc.line(el.x2, el.y2, a2x, a2y, opts));
+        }
+        if (node) {
+          svg.appendChild(node);
+          entry.node = node;
+          entry.paths = Array.from(node.querySelectorAll('path')).map((p) => {
+            p.setAttribute('fill', 'none');
+            const len = p.getTotalLength();
+            p.style.strokeDasharray = String(len);
+            p.style.strokeDashoffset = String(len);
+            return { node: p, len };
+          });
+        }
+      }
+      // Store the top-level DOM node for opacity control
+      entry.domNode = entry.type === 'text' ? entry.textNode : entry.node;
+      entry.sceneEndAt = sc.start + sc.duration;
+      registry.push(entry);
+    }
+  }
+}
+
+const FADE_OUT = 0.4; // seconds for scene exit fade
+
+function renderAt(t) {
+  for (const entry of registry) {
+    const p = Math.max(0, Math.min(1, (t - entry.fireAt) / entry.duration));
+
+    // Scene exit opacity: fade out over FADE_OUT seconds after scene ends
+    let opacity = 1;
+    if (t > entry.sceneEndAt) {
+      const fadeP = (t - entry.sceneEndAt) / FADE_OUT;
+      opacity = Math.max(0, 1 - fadeP);
+    }
+    if (entry.domNode) entry.domNode.style.opacity = String(opacity);
+
+    if (entry.type === 'text') {
+      if (!entry.textNode) continue;
+      const bbox = entry.textNode.getBBox();
+      entry.clipRect.setAttribute('x', bbox.x - 2);
+      entry.clipRect.setAttribute('y', bbox.y - 4);
+      entry.clipRect.setAttribute('height', bbox.height + 8);
+      entry.clipRect.setAttribute('width', (bbox.width + 4) * p);
+    } else if (entry.paths) {
+      for (const { node, len } of entry.paths) {
+        node.style.strokeDashoffset = String(len * (1 - p));
+      }
+    }
+  }
+  // narration window
+  let narration = '';
+  for (const sc of scene.scenes) {
+    if (t >= sc.start && t < sc.start + sc.duration) {
+      narration = sc.narration || '';
+      break;
+    }
+  }
+  narrationEl.textContent = narration;
+  clock.textContent = t.toFixed(2) + 's';
+  scrub.value = t;
+}
+
+// Expose for puppeteer
+window.renderAt = renderAt;
+window.getTotalDuration = () => totalDuration;
+
+// Live playback
+let playStart = 0;
+let rafId = null;
+function tick(now) {
+  const t = (now - playStart) / 1000;
+  if (t > totalDuration + 0.5) { return; }
+  renderAt(t);
+  rafId = requestAnimationFrame(tick);
+}
+function play() {
+  cancelAnimationFrame(rafId);
+  playStart = performance.now();
+  rafId = requestAnimationFrame(tick);
+}
+function reset() {
+  cancelAnimationFrame(rafId);
+  renderAt(0);
+}
+document.getElementById('play').addEventListener('click', play);
+document.getElementById('reset').addEventListener('click', reset);
+scrub.addEventListener('input', () => {
+  cancelAnimationFrame(rafId);
+  renderAt(parseFloat(scrub.value));
+});
+
+// Wait for fonts then load
+document.fonts.ready.then(loadScene);
+</script>
+</body>
+</html>
