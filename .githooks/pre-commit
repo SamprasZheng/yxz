@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+cd "$repo_root"
+
+mapfile -d '' staged < <(git diff --cached --name-only -z)
+
+if [ "${#staged[@]}" -eq 0 ]; then
+  exit 0
+fi
+
+has_wiki=0
+has_og=0
+has_site=0
+has_portfolio=0
+
+for file in "${staged[@]}"; do
+  lower="$(printf '%s' "$file" | tr '[:upper:]' '[:lower:]')"
+
+  if [[ "$lower" =~ (^|/)(\.env|\.env\.|credentials|secret|secrets|token|apikey|api-key|api_key|id_rsa|id_ed25519|\.npmrc|\.netrc) ]]; then
+    echo "Blocked possible credential file: $file"
+    exit 1
+  fi
+
+  if [ -f "$file" ]; then
+    size="$(wc -c < "$file" | tr -d ' ')"
+    if [ "$size" -gt 10485760 ]; then
+      echo "Blocked file over 10 MB: $file"
+      exit 1
+    fi
+  fi
+
+  [[ "$file" == wiki/* ]] && has_wiki=1
+  [[ "$file" == my-website/static/img/og/* ]] && has_og=1
+  [[ "$file" == my-website/src/pages/portfolio/github-repo-info.json ]] && has_portfolio=1
+  [[ "$file" == my-website/blog/* || "$file" == my-website/docs/* || "$file" == my-website/src/* || "$file" == my-website/docusaurus.config.ts || "$file" == my-website/package.json ]] && has_site=1
+done
+
+if [ "$has_wiki" -eq 1 ]; then
+  (cd my-website && yarn lint:wiki)
+fi
+
+if [ "$has_og" -eq 1 ]; then
+  (cd my-website && yarn validate:og)
+fi
+
+if [ "$has_portfolio" -eq 1 ]; then
+  (cd my-website && yarn portfolio:check)
+fi
+
+if [ "$has_site" -eq 1 ]; then
+  (cd my-website && yarn typecheck)
+fi
+

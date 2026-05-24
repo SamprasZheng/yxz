@@ -38,3 +38,12 @@ Joined OpenAI to lead the personal-agents division. OpenClaw was simultaneously 
 - The Wantrepreneur Show, [*Peter Steinberger Built a $100M Dev Tool, Burned Out, Then Came Back*](https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/).
 - Techzine, [*Why OpenAI has recruited the founder of OpenClaw*](https://www.techzine.eu/news/applications/138796/why-openai-has-recruited-the-founder-of-openclaw/).
 - The Next Web, [*Peter Steinberger's 100 AI agents racked up $1.3 million in OpenAI tokens*](https://thenextweb.com/news/openclaw-peter-steinberger-1-3-million-openai-token-bill).
+
+## Related
+
+- [[concepts/openclaw]]
+- [[sources/openclaw-introducing-steinberger-2026]]
+- [[concepts/nemoclaw]]
+- [[concepts/openshell-runtime]]
+- [[sources/nvidia-agent-challenge-2026]]
+- [[concepts/domain-specific-llm-agents]]

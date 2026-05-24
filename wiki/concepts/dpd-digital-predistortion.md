@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [rf, signal-processing, pa, linearization, 5g]
+tags: [rf, signal-processing, pa, linearization, 5g, transmitter, evm, calibration, xband, leo, rf-hardware]
 ---
 
 # DPD — Digital Predistortion
@@ -68,6 +68,11 @@ With 1 hidden layer and a small number of neurons, NN achieves near-equivalent c
 - Way1: thread1/2 each handles consecutive rows; Way2: thread1/2 interleave rows
 
 ## Related Links
+
+- [[concepts/evm-calibration]] -> EVM/ACPR metrics used to validate PA correction
+- [[concepts/zero-if-transmitter]] -> upstream transmitter architecture that must coexist with PA nonlinearity
+- [[concepts/rf-soc-debug-taxonomy]] -> where DPD coefficients become OTP/MCN-controlled calibration data
+- [[sources/hsieh-xband-leo-transmitter-2020]] -> LEO X-band transmitter context
 
 - [[concepts/aesa]] — parent system where DPD is applied
 - [[concepts/hybrid-phased-array]] — signal path containing PA

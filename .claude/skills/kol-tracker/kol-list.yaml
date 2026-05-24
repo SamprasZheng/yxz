@@ -1,0 +1,28 @@
+# KOL Tracker watchlist
+# Edited via the kol-tracker skill, consumed by the kol-daily-digest remote routine.
+# Add entries under `kols:` and search terms under `keywords:`.
+
+keywords:
+  # Core focus areas — interpreted from the user's voice input (龍蝦/Poplarity assumed to be Polkadot context).
+  - AI agents
+  - Claude Code
+  - Anthropic
+  - OpenAI
+  - Polkadot
+  - OpenClaw
+  - NemoClaw
+  - Plurality
+  - Audrey Tang
+  - NVIDIA Nemotron
+  - PolkaSharks
+
+kols:
+  # Seed list intentionally empty — use the kol-tracker skill to add entries.
+  # Example shape:
+  # - name: Andrej Karpathy
+  #   handle: "@karpathy"
+  #   category: ai
+  #   channels:
+  #     twitter: https://twitter.com/karpathy
+  #     youtube: https://www.youtube.com/@AndrejKarpathy
+  #   why: foundational AI explainers, frequent agent + LLM commentary

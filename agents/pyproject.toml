@@ -1,0 +1,45 @@
+[project]
+name = "firefly"
+version = "0.1.0"
+description = "Unified Firefly — NeMo Agent Toolkit MVP for orbital data center mission planning"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Sampras Zheng", email = "sampras2117@gmail.com" }]
+license = { text = "MIT" }
+
+dependencies = [
+    # Core
+    "typer>=0.12",
+    "pydantic>=2.7",
+    "python-dotenv>=1.0",
+    "httpx>=0.27",
+    "pyyaml>=6.0",
+    "jinja2>=3.1",
+    # LLM
+    "anthropic>=0.39",
+    # Orbital mechanics (latest on PyPI is 0.1.2 as of 2026-05; pin loosely)
+    "satmad>=0.1.2",
+    # NeMo Agent Toolkit (optional — install with `pip install nvidia-nat`)
+    # "nvidia-nat>=1.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.5",
+]
+
+[project.scripts]
+firefly = "firefly.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/firefly"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -q"

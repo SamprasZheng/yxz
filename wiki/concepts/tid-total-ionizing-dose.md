@@ -60,6 +60,8 @@ See [[concepts/rha-radiation-hardening]]
 
 - [[concepts/see-single-event-effects]]
 - [[concepts/rha-radiation-hardening]]
+- [[concepts/orbit-dose-budgeting]] — closed-form TID dose-vs-shielding calculator for trade studies
 - [[sources/space-radiation-tid-see-2025]]
+- [[sources/radtest-playbook-sampras-2021]] — practical TID screening as step 2 of the engineer's playbook
 - [[concepts/leo-value-chain]] — TID qualification is the threshold for entering constellation supply chains
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 peak (2024–2026) drives LEO mission TID doses beyond historical model baselines; RDM safety margins should be increased

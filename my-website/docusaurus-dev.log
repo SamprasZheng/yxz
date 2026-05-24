@@ -1,0 +1,50 @@
+yarn run v1.22.22
+warning ..\..\package.json: No license field
+$ yarn docusaurus start --host 127.0.0.1
+warning ..\..\package.json: No license field
+$ node ./node_modules/@docusaurus/core/bin/docusaurus.mjs start --host 127.0.0.1
+
+ ------------------------------------------------------------------------------                                                                                                         Update available 3.7.0 → 3.10.1                                                                                                                 To upgrade Docusaurus packages with the latest version, run the                                       following command:                                    `yarn upgrade @docusaurus/core@latest @docusaurus/preset-classic@latest           @docusaurus/module-type-aliases@latest @docusaurus/tsconfig@latest                                   @docusaurus/types@latest`                                                                                                             ------------------------------------------------------------------------------ 
+
+[INFO] Starting the development server...
+[WARNING] Tags [phased-array, leo, hardware] used in 2026-04-19-leo-phased-array-design.md are not defined in tags.yml
+[WARNING] Tags [phased-array, leo, hardware] used in 2026-04-19-xband-leo-transmitter-calibration.md are not defined in tags.yml
+[WARNING] Docusaurus found blog posts without truncation markers:
+- "blog/polkadotresources.md"
+- "blog/AI Agent.md"
+- "blog/debug.md"
+- "blog/2025-03-12-plurality.md"
+- "blog/2025-02-24-JAM-intro.md"
+- "blog/2024-04-07-longway-on-polkadot.md"
+- "blog/2021-01-13-radtest.md"
+
+We recommend using truncation markers (`<!-- truncate -->` or `{/* truncate */}`) in blog posts to create shorter previews on blog paginated lists.
+Tip: turn this security off with the `onUntruncatedBlogPosts: 'ignore'` blog plugin option.
+[WARNING] Duplicate routes found!
+- Attempting to create page at /yxz/blog/debug, but a page already exists at this route.
+- Attempting to create page at /yxz/blog/radtest, but a page already exists at this route.
+This could lead to non-deterministic routing behavior.
+[SUCCESS] Docusaurus website is running at: http://127.0.0.1:3000/yxz/
+Browserslist: browsers data (caniuse-lite) is 15 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[90m[[90mwebpackbar[90m][39m [36mi[39m Compiling Client
+LaTeX-incompatible input and strict mode is set to 'warn': % comment has no terminating newline; LaTeX would fail because of commenting the end of math mode (e.g. $) [commentAtEnd]
+[90m[[90mwebpackbar[90m][39m [32m√[39m Client: Compiled successfully in 5.59s
+[1mclient[39m[22m (webpack 5.98.0) compiled [1m[32msuccessfully[39m[22m
+[90m[[90mwebpackbar[90m][39m [36mi[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [32m√[39m Client: Compiled successfully in 114.25ms
+[1mclient[39m[22m (webpack 5.98.0) compiled [1m[32msuccessfully[39m[22m
+[90m[[90mwebpackbar[90m][39m [36mi[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [32m√[39m Client: Compiled successfully in 345.19ms
+[1mclient[39m[22m (webpack 5.98.0) compiled [1m[32msuccessfully[39m[22m
+[90m[[90mwebpackbar[90m][39m [36mi[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [32m√[39m Client: Compiled successfully in 158.21ms
+[1mclient[39m[22m (webpack 5.98.0) compiled [1m[32msuccessfully[39m[22m
+[90m[[90mwebpackbar[90m][39m [36mi[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [32m√[39m Client: Compiled successfully in 276.09ms
+[1mclient[39m[22m (webpack 5.98.0) compiled [1m[32msuccessfully[39m[22m
+error Command failed with exit code 1073807364.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+error Command failed with exit code 1073807364.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

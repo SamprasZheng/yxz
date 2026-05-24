@@ -103,6 +103,10 @@ For [[entities/sampras]]'s GTC Taipei Agent Challenge 2026 entry — agentic loo
 
 ## Related
 
+- [[concepts/dgx-spark]] -> local reasoning workstation context for on-prem agent demos
+- [[concepts/hermes-agent-framework]] -> framework path used with Nemotron in the GTC Taipei stack
+- [[concepts/nemoclaw]] -> sandbox/runtime layer around long-running Nemotron agents
+
 - [[concepts/domain-specific-llm-agents]] — Nemotron is the "base model" half of the (model + KB + persona) triple
 - [[concepts/obsidian-llm-knowledge-base]] — the KB this Nemotron-based agent retrieves from
 - [[entities/nvidia]] — vendor + hackathon host

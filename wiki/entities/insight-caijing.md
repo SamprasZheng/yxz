@@ -1,6 +1,6 @@
 ---
 type: entity
-tags: [polkadot, media, chinese, crypto-commentary]
+tags: [polkadot, media, chinese, crypto-commentary, kol, retail-sentiment, education]
 ---
 
 # Insight Finance (insight財經)
@@ -41,3 +41,8 @@ The handle `@dwj_eric` on X posts in simplified Chinese covering crypto market a
 ## Related
 
 - [[entities/polkadot]]
+- [[entities/polkasharks]]
+- [[entities/polkaworld]]
+- [[entities/dotleap-gbaci]]
+- [[entities/ycc-duo-nine]]
+- [[concepts/dot-hard-cap]]

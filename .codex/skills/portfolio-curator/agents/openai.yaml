@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portfolio Curator"
+  short_description: "Curate portfolio repository metadata."
+  default_prompt: "Review and update the yxz portfolio repository metadata JSON without changing the portfolio component contract."

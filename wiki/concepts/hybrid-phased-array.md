@@ -47,6 +47,10 @@ X-band hybrid phased array transmitter (reference: publicly available iCASE 2020
 
 ## Related Links
 
+- [[sources/hybrid-xband-phased-array-icase-2020]] -> source stub for the public iCASE 2020 hybrid X-band reference
+- [[sources/hsieh-xband-leo-transmitter-2020]] -> Zero-IF transmitter subsystem source
+- [[sources/thesis-aesa-modules-zheng-2021]] -> XT-144 / AESA system source stub
+
 - [[concepts/aesa]] — parent architecture concept
 - [[concepts/dpd-digital-predistortion]] — PA nonlinearity compensation (required in hybrid architectures)
 - [[concepts/tid-total-ionizing-dose]] — radiation reliability

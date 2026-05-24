@@ -1,6 +1,6 @@
 ---
 type: entity
-tags: [taiwan, rf-hardware, semiconductor, leo, foundry]
+tags: [taiwan, rf-hardware, semiconductor, leo, foundry, pa, gaas, supply-chain]
 ---
 
 # Win Semiconductors (穩懋半導體, Stock: 3105)
@@ -23,3 +23,14 @@ See [[concepts/leo-value-chain]] upstream RF segment.
 ## Related Sources
 
 - [[sources/leo-space-datacenter-analysis-2025]]
+
+## Related
+
+- [[concepts/leo-value-chain]]
+- [[concepts/aesa]]
+- [[concepts/hybrid-phased-array]]
+- [[concepts/dpd-digital-predistortion]]
+- [[concepts/rha-radiation-hardening]]
+- [[entities/ascend-tech]]
+- [[entities/huatong-pcb]]
+- [[synthesis/leo-taiwan-odc-gap]]

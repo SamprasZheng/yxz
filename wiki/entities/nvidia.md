@@ -32,6 +32,26 @@ NVIDIA touches multiple domains in this knowledge base:
 
 NVIDIA's first major **Taiwan-hosted** GTC. Hackathon track requires Nemotron as the reasoning core. See [[sources/nvidia-agent-challenge-2026]] for deadline + rules. Entry vector for [[entities/sampras]]'s [[entities/jamia-gpt]] / [[entities/spacesharks-gpt]] port from GPT-4 to Nemotron-based agent stack. <!-- deduped → [[sources/nvidia-agent-challenge-2026]] -->
 
+## Local Agent Hardware
+
+- [[concepts/dgx-spark]] -> local reasoning workstation context for [[concepts/nemotron]], [[concepts/hermes-agent-framework]], and [[concepts/nemoclaw]] demos.
+- [[concepts/openvino]] -> non-NVIDIA edge-inference comparison point from [[entities/raymond-lo]]'s Intel career path.
+
+## People
+
+- [[entities/raymond-lo]] — Developer Advocate Manager, Robotics and Embedded Devices (Oct 2025–). Joined from Intel (OpenVINO Global Lead Evangelist); earlier CTO of Meta AR (the AR-glasses company), Google Cloud AI, Samsung NEXT. PhD U Toronto under Steve Mann. Edge AI / Jetson Orin / LeRobot focus.
+
+## Related
+
+- [[concepts/dgx-spark]]
+- [[concepts/nemotron]]
+- [[concepts/hermes-agent-framework]]
+- [[concepts/nemoclaw]]
+- [[concepts/openvino]]
+- [[concepts/cots-gpu-radiation-risk]]
+- [[entities/starcloud]]
+- [[sources/nvidia-agent-challenge-2026]]
+
 ## Sources
 
 - https://www.nvidia.com

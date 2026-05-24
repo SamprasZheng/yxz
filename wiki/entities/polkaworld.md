@@ -54,5 +54,11 @@ PolkaWorld translates key Polkadot content into Chinese and produces original an
 
 - [[entities/gavin-wood]]
 - [[entities/polkadot]]
+- [[entities/polkasharks]]
+- [[entities/dotleap-gbaci]]
+- [[entities/bill-laboon]]
+- [[entities/shawn-tabrizi]]
 - [[concepts/dot-hard-cap]]
 - [[concepts/jam]]
+- [[concepts/agile-coretime]]
+- [[concepts/proof-of-personhood]]

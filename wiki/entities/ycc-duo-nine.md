@@ -1,6 +1,6 @@
 ---
 type: entity
-tags: [polkadot, person, crypto-commentary, bitcoin, kol]
+tags: [polkadot, person, crypto-commentary, bitcoin, kol, retail-sentiment, technical-analysis]
 ---
 
 # YCC / Duo Nine (@DU09BTC)
@@ -27,3 +27,7 @@ Minimal. Treats DOT as one of many altcoins for TA purposes. Does not cover gove
 ## Related
 
 - [[entities/polkadot]]
+- [[entities/insight-caijing]]
+- [[entities/dotleap-gbaci]]
+- [[entities/polkasharks]]
+- [[concepts/dot-hard-cap]]

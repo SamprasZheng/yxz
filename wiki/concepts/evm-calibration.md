@@ -110,6 +110,9 @@ where $\alpha = \frac{1}{(1+g)\cos\phi} \approx 1$ (when gain error is small), $
 
 ## Related Links
 
+- [[concepts/hybrid-phased-array]] -> where calibration error propagates into array-level beam quality
+- [[concepts/rf-soc-debug-taxonomy]] -> OTP/MCN discipline for calibration tables in NPI debug
+
 - [[concepts/zero-if-transmitter]] — primary source architecture for EVM issues
 - [[concepts/aesa]] — system-level impact of EVM in phased array systems
 - [[concepts/dpd-digital-predistortion]] — another class of EVM degradation caused by PA nonlinearity

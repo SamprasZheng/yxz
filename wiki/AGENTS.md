@@ -1,27 +1,34 @@
-# LLM Wiki — Schema
+# LLM Wiki Schema
 
-This file governs how the wiki is structured and maintained. Read it at the start of each session.
+This file governs the Obsidian-compatible wiki under `wiki/`.
 
-## Directory layout
+## Directory Layout
 
-```
+```text
 wiki/
-├── sources/      ← one .md per source document ingested
-├── entities/     ← people, organizations, products, projects
-├── concepts/     ← ideas, techniques, methodologies, frameworks
-├── synthesis/    ← cross-source analyses, comparisons, essays
-├── index.md      ← catalog of all pages (LLM maintains)
-└── log.md        ← append-only session history (LLM maintains)
+  sources/      one page per ingested source
+  entities/     people, organizations, products, projects
+  concepts/     ideas, techniques, methodologies, frameworks
+  synthesis/    cross-source analyses, comparisons, essays
+  index.md      catalog of all pages, maintained by the LLM
+  log.md        append-only session history
 ```
 
-## Linking convention
+## Linking Convention
 
-Use Obsidian wikilink syntax: `[[path/to/page]]` or `[[page-name|display text]]`.
-Never use markdown hyperlinks for internal pages — wikilinks are required for graph view.
+Use Obsidian wikilink syntax for internal references:
 
-## Frontmatter convention
+```text
+[[path/to/page]]
+[[path/to/page|display text]]
+```
 
-Every page should have:
+Do not use markdown hyperlinks for internal wiki pages. External source URLs may use markdown links.
+
+## Frontmatter Convention
+
+Every page must have:
+
 ```yaml
 ---
 type: source | entity | concept | synthesis
@@ -29,39 +36,62 @@ tags: [tag1, tag2]
 ---
 ```
 
-Source pages also include: `title`, `author`, `date`, `ingested`.
+Source pages also require:
 
-## Session startup
-
-1. Read `log.md` (last 10 entries) to see what was done recently
-2. Read `index.md` to orient to the current page inventory
-3. Proceed with the user's request
-
-## Ingest workflow
-
-See the `llm-wiki-ingest` skill for the full step-by-step process.
-
-Short version:
-1. Read source → discuss key takeaways with user
-2. Write `sources/<slug>.md`
-3. Update or create entity and concept pages (expect 5–15 page touches per source)
-4. Update `index.md`
-5. Append to `log.md`
-
-## Lint workflow
-
-See the `llm-wiki-lint` skill for the full step-by-step process.
-
-Run periodically (every 5–10 ingests). Checks: contradictions, stale claims, orphan pages, concept gaps, missing cross-references, data gaps.
-
-## Contradiction handling
-
-Flag inline on the older page:
+```yaml
+title: "..."
+author: "..."
+date: "YYYY-MM-DD"
+ingested: "YYYY-MM-DD"
 ```
-> ⚠️ **Contradicted** by [[sources/<newer-slug>]]: <brief note on discrepancy>
+
+## Session Startup
+
+1. Read the last 10 entries of `log.md`.
+2. Read `index.md`.
+3. Search existing pages for overlap before creating new pages.
+
+## Ingest Workflow
+
+1. Read or research the source.
+2. Write `sources/<slug>.md`.
+3. Update or create related entity and concept pages when there is substantive information.
+4. Write synthesis pages for cross-source analysis or durable answers.
+5. Update `index.md`.
+6. Append to `log.md`.
+7. Run `cd my-website && yarn lint:wiki`.
+
+## Lint Workflow
+
+Run periodically and before wiki-heavy commits:
+
+```bash
+cd my-website
+yarn lint:wiki
 ```
-Do not silently overwrite — preserve both claims and flag the conflict for human review.
 
-## Query answers
+Checks include:
 
-Good answers to user questions can be filed as `synthesis/<name>.md`. They compound like ingested sources — don't let them disappear into chat history.
+- required frontmatter
+- source metadata fields
+- folder/type consistency
+- broken wikilinks
+- internal markdown links that should be wikilinks
+- pages not listed in `wiki/index.md` as warnings
+
+Use `yarn lint:wiki --strict-index` when missing index entries should fail the run.
+
+## Contradiction Handling
+
+Flag contradictions inline on the older page:
+
+```text
+> **Contradicted** by [[sources/<newer-slug>]]: <brief note on discrepancy>
+```
+
+Do not silently overwrite claims. Preserve both claims and flag the conflict for human review.
+
+## Query Answers
+
+Good answers to user questions should be filed as `synthesis/<name>.md`. They compound into the wiki instead of disappearing into chat history.
+

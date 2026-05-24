@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Envs
+.venv/
+.env
+*.env.local
+
+# uv
+.uv/
+
+# Firefly outputs (generated per run; not source)
+outputs/*
+!outputs/.gitkeep
+
+# Caches for external API responses
+.cache/

@@ -57,5 +57,10 @@ Tabrizi is the most prominent **technical educator** in the Polkadot ecosystem w
 
 - [[entities/gavin-wood]]
 - [[entities/polkadot]]
+- [[entities/bill-laboon]]
+- [[entities/dotleap-gbaci]]
+- [[entities/polkaworld]]
 - [[concepts/jam]]
 - [[concepts/agile-coretime]]
+- [[concepts/xcm]]
+- [[concepts/regionx]]

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Codex Repo Operator"
+  short_description: "Operate the yxz repo correctly."
+  default_prompt: "Use this repository's AGENTS, CLAUDE, wiki, Docusaurus, Firefly, hook, and automation conventions before making changes."
+

@@ -1,0 +1,4 @@
+interface:
+  display_name: "OG Image Validator"
+  short_description: "Validate Open Graph image assets."
+  default_prompt: "Generate or validate yxz Open Graph images and keep blog social cards at the expected size and dimensions."

@@ -4,7 +4,7 @@ title: "Introducing OpenClaw"
 author: "Peter Steinberger (@steipete)"
 date: "2026-01-29"
 ingested: "2026-05-24"
-tags: [openclaw, peter-steinberger, agent-framework, announcement, rename]
+tags: [openclaw, peter-steinberger, agent-framework, announcement, rename, ai-agents, open-source, personal-agents]
 ---
 
 # Introducing OpenClaw — Peter Steinberger (2026-01-29)
@@ -30,3 +30,12 @@ This is the canonical "year zero" reference for the OpenClaw name and project hi
 ## URL
 
 <https://openclaw.ai/blog/introducing-openclaw>
+
+## Cross-references
+
+- [[concepts/openclaw]]
+- [[entities/peter-steinberger]]
+- [[concepts/nemoclaw]]
+- [[concepts/openshell-runtime]]
+- [[concepts/hermes-agent-framework]]
+- [[sources/nvidia-agent-challenge-2026]]

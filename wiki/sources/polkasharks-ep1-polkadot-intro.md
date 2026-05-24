@@ -33,5 +33,5 @@ Author walked through a live cross-chain flow: Moonbeam rewards → StellaSwap s
 ## Cross-references
 
 - Introduces: [[concepts/jam]], [[concepts/xcm]], [[entities/polkadot]]
-- See also: [[sources/polkasharks-jam]] for deeper JAM coverage
+- See also: [[sources/polkasharks-jam-article]] for deeper JAM coverage
 - DeFi flow references: [[concepts/hydration-omnipool]]

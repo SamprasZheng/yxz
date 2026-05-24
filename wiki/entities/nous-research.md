@@ -40,6 +40,16 @@ The Paradigm lead at a unicorn valuation is notable — Paradigm is primarily a 
 
 MIT-licensed core artifacts; weights released openly on Hugging Face; explicit "you can switch providers at any time with no lock-in" framing in the Hermes Agent docs. This stance is load-bearing for their fundraising narrative — investors are betting on decentralized/open AI as a wedge against OpenAI/Anthropic.
 
+## Related
+
+- [[entities/hermes-llm-series]]
+- [[concepts/hermes-agent-framework]]
+- [[concepts/nemotron]]
+- [[concepts/nemoclaw]]
+- [[concepts/openclaw]]
+- [[sources/nvidia-agent-challenge-2026]]
+- [[entities/nvidia]]
+
 ## Wiki relevance
 
 [[entities/sampras]] is competing in the NVIDIA Agent Challenge 2026 (see [[sources/nvidia-agent-challenge-2026]]) using Hermes Agent as the recommended framework. <!-- deduped → [[sources/nvidia-agent-challenge-2026]] --> Nous Research is therefore the upstream org for the hackathon's reference stack.

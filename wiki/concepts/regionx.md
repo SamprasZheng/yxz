@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [polkadot, coretime, marketplace, infrastructure]
+tags: [polkadot, coretime, marketplace, infrastructure, polkadot2, parachain, compute-market]
 ---
 
 # RegionX
@@ -38,9 +38,15 @@ RegionX handles what happens *after* bulk purchase.
 
 ## Sources
 
+- [[sources/polkasharks-ep6-agile-coretime]] -> primary-market context
+- [[sources/polkasharks-ep10-2024-annual]] -> deployment-era context
+
 - [[sources/polkasharks-ep7-regionx]] — dedicated article
 
 ## Related
+
+- [[concepts/jam]]
+- [[concepts/xcm]]
 
 - [[concepts/agile-coretime]]
 - [[entities/polkadot]]

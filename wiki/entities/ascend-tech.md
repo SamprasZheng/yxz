@@ -1,6 +1,6 @@
 ---
 type: entity
-tags: [taiwan, rf-hardware, satellite, leo, filter]
+tags: [taiwan, rf-hardware, satellite, leo, filter, waveguide, supply-chain]
 ---
 
 # Ascend Tech (昇達科技, Stock: 3491)
@@ -30,3 +30,14 @@ See [[concepts/leo-value-chain]] upstream RF segment.
 ## Related Sources
 
 - [[sources/leo-space-datacenter-analysis-2025]]
+
+## Related
+
+- [[concepts/leo-value-chain]]
+- [[concepts/aesa]]
+- [[concepts/hybrid-phased-array]]
+- [[concepts/zero-if-transmitter]]
+- [[concepts/rha-radiation-hardening]]
+- [[entities/win-semiconductors]]
+- [[entities/huatong-pcb]]
+- [[synthesis/leo-taiwan-odc-gap]]

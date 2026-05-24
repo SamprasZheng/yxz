@@ -1,6 +1,6 @@
 ---
 type: entity
-tags: [taiwan, pcb, satellite, leo, manufacturing]
+tags: [taiwan, pcb, satellite, leo, manufacturing, rf-hardware, substrate, supply-chain]
 ---
 
 # Huatong PCB (華通電腦)
@@ -30,3 +30,15 @@ See [[concepts/leo-value-chain]] midstream A segment.
 ## Related Sources
 
 - [[sources/leo-space-datacenter-analysis-2025]]
+
+## Related
+
+- [[concepts/leo-value-chain]]
+- [[concepts/aesa]]
+- [[concepts/hybrid-phased-array]]
+- [[concepts/rha-radiation-hardening]]
+- [[concepts/tid-total-ionizing-dose]]
+- [[concepts/see-single-event-effects]]
+- [[entities/win-semiconductors]]
+- [[entities/ascend-tech]]
+- [[synthesis/leo-taiwan-odc-gap]]

@@ -72,6 +72,22 @@ Traditional Co-60 facilities are scarce and expensive; **90Sr/90Y β electron so
 - **Still lacking**: heavy-ion SEE (LET > 10 MeV·cm²/mg) — Taiwan manufacturers still need to travel to LBNL/TRIUMF for this
 - Companies already in the Starlink/Kuiper chain such as Win Semiconductors ([[entities/win-semiconductors]]) and Ascend Technology ([[entities/ascend-tech]]) must have completed some radiation qualification, but details are commercially confidential
 
+## Practical Qualification Workflow (Engineer's Playbook)
+
+From [[sources/radtest-playbook-sampras-2021]], a TI-style five-step ordering that an engineer follows before locking a radiation test plan:
+
+1. **Mission profile first** — orbit, lifetime, shielding stack-up, reliability target. Without this, no test plan can be sized.
+2. **TID screen** with system-level assumptions (orbit × duration × shielding). Use closed-form [[concepts/orbit-dose-budgeting]] for trade studies; graduate to SPENVIS/OMERE for signoff.
+3. **SEE characterization** — extract LET threshold + saturation cross-section from heavy-ion accelerator data ([[concepts/see-single-event-effects]]). **Always run SEL before SEU** — a latch-up finding kills the part regardless of SEU performance.
+4. **Design-level mitigation**:
+   - ECC + scrubbing for SRAM/HBM (covers SEU)
+   - Watchdog + recovery paths for FPGA configuration / state registers (covers SEFI)
+   - Current-limiting + power switching for SEL risk
+   - Redundancy / TMR for safety-critical functional blocks
+5. **Re-run mission-level estimates with mitigation assumptions**, then lock the test plan and the RDM target.
+
+The ordering matters: mitigation decisions feed back into RDM, which feeds back into which COTS lots are eligible for upscreening.
+
 ## Major Commercial Test Laboratories (Global)
 
 | Institution | Location | Capability | Notes |
@@ -102,8 +118,10 @@ Radiation qualification is the **implicit admission ticket** for all upstream co
 
 - [[concepts/tid-total-ionizing-dose]]
 - [[concepts/see-single-event-effects]]
+- [[concepts/orbit-dose-budgeting]] — closed-form trade-study calculators used in step 2/3 of the workflow
 - [[concepts/taiwan-radiation-test-ecosystem]] — detailed page on Taiwan's testing ecosystem
 - [[sources/space-radiation-tid-see-2025]]
+- [[sources/radtest-playbook-sampras-2021]] — engineer's playbook + inline orbit/SEE calculators
 - [[concepts/leo-value-chain]]
 - [[entities/win-semiconductors]]
 - [[entities/ascend-tech]]

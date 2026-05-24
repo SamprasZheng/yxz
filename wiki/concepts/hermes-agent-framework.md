@@ -64,6 +64,10 @@ This is the framework recommended for the **NVIDIA Agent Challenge 2026** (see [
 
 ## See also
 
+- [[concepts/dgx-spark]] -> local/on-prem deployment surface mentioned in the NVIDIA integration path
+- [[concepts/nemotron]] -> NVIDIA model family used in the challenge stack
+- [[concepts/nemoclaw]] -> sandbox/runtime integration path
+
 - [[entities/nous-research]] — the org
 - [[entities/hermes-llm-series]] — the LLM lineage (different artifact, same org)
 - [[concepts/domain-specific-llm-agents]] — narrow-agent design philosophy

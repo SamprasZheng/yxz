@@ -20,3 +20,14 @@ my-website/.docusaurus/
 # Node modules
 node_modules/
 my-website/node_modules/
+
+# Auto-commit log (local, per-machine)
+scripts/auto-commit.log
+
+# Credentials / secrets (defensive — auto-commit script also drops these)
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.p12

@@ -91,7 +91,9 @@ Cross section (cm²) = number of upset events / particle fluence (particles/cm²
 
 - [[concepts/tid-total-ionizing-dose]]
 - [[concepts/rha-radiation-hardening]]
+- [[concepts/orbit-dose-budgeting]] — Poisson SEE rate model from LET threshold + cross-section
 - [[sources/space-radiation-tid-see-2025]]
+- [[sources/radtest-playbook-sampras-2021]] — SEE characterization as step 3 of the engineer's playbook (SEL-before-SEU ordering)
 - [[concepts/orbital-data-center]] — SEU/SEL risk of COTS GPUs is the biggest engineering challenge for ODC
 - [[concepts/cots-gpu-radiation-risk]] — H100/Orin specific test data and on-orbit mitigation strategies
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 peak (2024–2026) increases SEU/SEL event rates

@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [polkadot, interoperability, cross-chain, messaging]
+tags: [polkadot, interoperability, cross-chain, messaging, parachain, infrastructure, xcm]
 ---
 
 # XCM (Cross-Consensus Messaging)
@@ -34,6 +34,11 @@ All steps within the Polkadot security model — no trusted bridge required.
 - [[sources/polkasharks-ep10-2024-annual]] — V5 roadmap
 
 ## Related
+
+- [[concepts/agile-coretime]] -> execution capacity layer for parachain workloads
+- [[concepts/regionx]] -> coretime market adjacent to XCM-enabled parachain activity
+- [[concepts/jam]] -> next execution architecture in the same Polkadot roadmap
+- [[entities/mythical-games]] -> ecosystem migration case requiring cross-chain asset/message flows
 
 - [[entities/polkadot]]
 - [[concepts/hydration-omnipool]] — common XCM destination

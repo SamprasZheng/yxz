@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [rf, phased-array, radar, aesa, beamforming]
+tags: [rf, phased-array, radar, aesa, beamforming, leo, satellite, rf-hardware, transmitter]
 ---
 
 # AESA — Active Electronically Scanned Array
@@ -59,6 +59,10 @@ where $d$ is the element spacing, $\lambda$ is the wavelength, and $\theta$ is t
 - Wind farm monitoring: small target (bird/drone) detection and tracking
 
 ## Related Links
+
+- [[concepts/zero-if-transmitter]] -> direct-conversion transmitter block inside X-band phased-array systems
+- [[concepts/evm-calibration]] -> measurement/calibration layer for transmitter quality
+- [[sources/hsieh-xband-leo-transmitter-2020]] -> X-band LEO transmitter source
 
 - [[concepts/hybrid-phased-array]] — hybrid architecture details
 - [[concepts/dpd-digital-predistortion]] — PA linearization (essential technology for AESA transmitters)

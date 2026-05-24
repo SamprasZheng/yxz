@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [polkadot, infrastructure, coretime, polkadot2, parachain]
+tags: [polkadot, infrastructure, coretime, polkadot2, parachain, compute-market, scalability, marketplace]
 ---
 
 # Agile Coretime
@@ -38,11 +38,16 @@ Deployed in 2024. Rollup block time cut from 12s → 6s after deployment.
 
 ## Sources
 
+- [[sources/polkasharks-ep5-peaq-depin]] -> DePIN/IoT workload context
+
 - [[sources/polkasharks-ep6-agile-coretime]] — dedicated article
 - [[sources/polkasharks-ep7-regionx]] — secondary market implementation
 - [[sources/polkasharks-ep10-2024-annual]] — deployment confirmed
 
 ## Related concepts
+
+- [[concepts/xcm]] -> message/asset layer used by parachain applications consuming coretime
+- [[concepts/hydration-omnipool]] -> DeFi workload that depends on interoperable execution
 
 - [[concepts/jam]] — JAM extends this model further
 - [[concepts/regionx]] — secondary market

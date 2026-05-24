@@ -30,6 +30,15 @@ Hermes-4 is described on HuggingFace as a "frontier, hybrid-mode reasoning model
 
 The model fine-tuning and datasets across the series are credited to **Teknium, Karan4D, Emozilla, Huemin Art and Redmond AI**.
 
+## Related
+
+- [[entities/nous-research]]
+- [[concepts/hermes-agent-framework]]
+- [[concepts/nemotron]]
+- [[concepts/nemoclaw]]
+- [[sources/nvidia-agent-challenge-2026]]
+- [[concepts/domain-specific-llm-agents]]
+
 ## Wiki relevance
 
 Disambiguation page — exists primarily to keep [[concepts/hermes-agent-framework]] clean. If a source mentions "Hermes 70B" or "Hermes-4," it almost certainly refers to a model on this page; if it says "Hermes agent," "Hermes framework," or "skills/learning loop," it refers to the framework.

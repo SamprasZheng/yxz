@@ -1,52 +1,145 @@
 # AGENTS.md
 
-This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
+This file guides Codex when working in this repository.
 
 ## Project Overview
 
-Personal portfolio and blog site for Sampras Zheng, built with **Docusaurus 3.7.0**. Deployed to GitHub Pages at `https://SamprasZheng.github.io/yxz/`. Focus areas: RF/hardware engineering and Polkadot/blockchain.
+Personal portfolio and blog site for Sampras Zheng, built with Docusaurus 3.7.0 and deployed to GitHub Pages at `https://SamprasZheng.github.io/yxz/`.
+
+Primary domains:
+
+- RF and hardware engineering
+- SATCOM, phased arrays, radiation, and LEO infrastructure
+- Polkadot, JAM, XCM, and crypto infrastructure
+- AI agents, local workflows, and personal knowledge automation
+
+## Repository Layout
+
+```text
+yxz/
+  my-website/              Docusaurus app
+    blog/                  Blog posts
+    docs/                  Documentation pages
+    draft/                 Unpublished drafts
+    scripts/               Node/Python content and quality scripts
+    src/pages/index.tsx    Home page
+    src/pages/portfolio/   Portfolio page and repo metadata
+    static/img/og/         Open Graph images
+  wiki/                    Obsidian-compatible LLM wiki
+    sources/               One page per ingested source
+    entities/              People, orgs, products, projects
+    concepts/              Ideas, techniques, protocols
+    synthesis/             Cross-source analysis
+    index.md               LLM-maintained catalog
+    log.md                 Append-only session history
+  agents/                  Firefly orbital data center agent stack
+  .codex/skills/           Repo-local Codex skills
+  .claude/agents/          Claude Code subagent definitions
+  .claude/commands/        Claude slash-command playbooks
+  .githooks/               Local Git hooks
+  .github/workflows/       CI, deploy, and scheduled checks
+```
 
 ## Commands
 
-All commands run from `my-website/`:
+All Docusaurus commands run from `my-website/`:
 
 ```bash
-yarn start        # Dev server with hot reload
-yarn build        # Generate static site into ./build
-yarn serve        # Serve the static build locally
-yarn clear        # Clear Docusaurus cache
-yarn typecheck    # TypeScript type checking
-yarn deploy       # Deploy to GitHub Pages (gh-pages branch)
+yarn start              # Dev server with hot reload
+yarn build              # Generate static site into ./build
+yarn serve              # Serve the static build locally
+yarn clear              # Clear Docusaurus cache
+yarn typecheck          # TypeScript type checking
+yarn verify             # typecheck + build
+yarn verify:quality     # wiki lint + OG check + portfolio check + typecheck + build
+yarn lint:wiki          # Validate wiki frontmatter and wikilinks
+yarn validate:og        # Validate Open Graph images
+yarn portfolio:check    # Validate portfolio JSON metadata
+yarn draft:from-wiki    # Create a draft post from a wiki synthesis page
+yarn verify:live        # Verify the live GitHub Pages site
+yarn deploy             # Deploy to GitHub Pages
 ```
 
 Deployment requires either `USE_SSH=true yarn deploy` or `GIT_USER=SamprasZheng yarn deploy`.
 
-## Architecture
+## AI Workflow
 
-```
-yxz/
-├── my-website/              # Main Docusaurus app
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── index.tsx                    # Home/landing page
-│   │   │   └── portfolio/
-│   │   │       ├── index.js                 # Portfolio page
-│   │   │       └── github-repo-info.json    # Repo metadata (manually maintained)
-│   │   ├── components/
-│   │   │   └── PortfolioCard/               # Card used in portfolio page
-│   │   └── css/custom.css                   # Global styles
-│   ├── blog/                # Blog posts (MDX/Markdown)
-│   │   ├── authors.yml      # Author profiles
-│   │   └── tags.yml         # Tag definitions (rf, dot, polkadot, ...)
-│   ├── docs/                # Documentation pages (auto-sidebar via sidebars.ts)
-│   ├── static/              # Static assets
-│   └── docusaurus.config.ts # Site config: navbar, plugins, math rendering
-└── .github/workflows/main.yml  # CI: auto-deploys on push to main
+Use repo-local Codex skills in `.codex/skills/` as the operating layer:
+
+- `codex-repo-operator`: load repo conventions and choose the right checks.
+- `llm-wiki-ingest`: ingest research into `wiki/`.
+- `blog-publisher`: turn wiki synthesis or notes into Docusaurus drafts/posts.
+- `og-image-validator`: generate and validate social cards.
+- `firefly-mission-planner`: run and review `agents/` mission workflows.
+- `portfolio-curator`: maintain portfolio repo metadata.
+
+Claude-specific agents live in `.claude/agents/`:
+
+- `research-ingest-agent`
+- `blog-editor-agent`
+- `technical-reviewer-agent`
+- `seo-social-agent`
+- `firefly-reviewer-agent`
+- `git-commit-push`
+
+Install local Git hooks with:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-git-hooks.ps1
 ```
 
-**Key architectural notes:**
-- The portfolio page reads from `src/pages/portfolio/github-repo-info.json` — update this file to add/remove portfolio repos rather than editing the page component.
-- Blog posts use front matter `authors` and `tags` fields; valid tags are defined in `blog/tags.yml`.
-- Math rendering is enabled via `remark-math` + `rehype-katex` — use `$...$` (inline) and `$$...$$` (block) in MDX files.
-- TypeScript config (`tsconfig.json`) is set to `noEmit: true` — it's only for editor type-checking, not compilation. Docusaurus handles the actual build.
-- CI/CD uses Node 16 but `package.json` requires Node >=18; run locally with Node >=18.
+Install repo-local Codex skills into the user Codex skill directory with:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-codex-skills.ps1
+```
+
+## Key Architecture Notes
+
+- The portfolio page reads from `my-website/src/pages/portfolio/github-repo-info.json`. Add/remove projects there instead of changing the page component contract.
+- Blog posts use frontmatter `authors` and `tags`; valid values are defined in `my-website/blog/authors.yml` and `my-website/blog/tags.yml`.
+- The `polkadot` tag maps to permalink `/dot`; navbar links should use `/blog/tags/dot`.
+- Math rendering is enabled through `remark-math` and `rehype-katex`; use `$...$` inline and `$$...$$` blocks.
+- TypeScript config uses `noEmit: true`; Docusaurus handles compilation.
+- CI uses Node 20. Run locally with Node 18 or newer.
+
+## Wiki Rules
+
+Read `wiki/AGENTS.md` before wiki work.
+
+Session startup:
+
+1. Read the last 10 entries of `wiki/log.md`.
+2. Read `wiki/index.md`.
+3. Search existing pages before creating new ones.
+
+Rules:
+
+- Internal wiki links must use Obsidian syntax: `[[path/to/page]]`.
+- Every wiki page needs frontmatter with `type` and `tags`.
+- Source pages also need `title`, `author`, `date`, and `ingested`.
+- Contradictions are flagged on the older page; do not silently overwrite.
+- Useful answers should be saved as `wiki/synthesis/<name>.md`.
+
+Validate with:
+
+```bash
+cd my-website
+yarn lint:wiki
+```
+
+## Generated Content
+
+- `blog/live-*.md` files are generated by `yarn generate:living-topics`; do not hand-edit them.
+- `static/img/og/*.png` should be `1200x630` and pass `yarn validate:og`.
+- Firefly mission outputs are generated under `agents/outputs/` and summarized into `wiki/synthesis/`.
+
+## Codex App Automations
+
+The workspace has recurring Codex app automations for:
+
+- `yxz weekly wiki lint`
+- `yxz blog draft promoter`
+- `yxz portfolio curator`
+- `yxz kol digest triage`
+- `yxz live site verifier`

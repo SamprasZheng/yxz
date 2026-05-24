@@ -1,91 +1,161 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file guides Claude Code when working in this repository. It mirrors `AGENTS.md` and adds Claude-specific commands, agents, and skills.
 
 ## Project Overview
 
-Personal portfolio and blog site for Sampras Zheng, built with **Docusaurus 3.7.0**. Deployed to GitHub Pages at `https://SamprasZheng.github.io/yxz/`. Focus areas: RF/hardware engineering and Polkadot/blockchain.
+Personal portfolio and blog site for Sampras Zheng, built with Docusaurus 3.7.0 and deployed to GitHub Pages at `https://SamprasZheng.github.io/yxz/`.
+
+The repository combines:
+
+- Docusaurus blog and portfolio site
+- Obsidian-compatible LLM wiki
+- Firefly orbital data center mission-planning agents
+- Claude and Codex skills, agents, hooks, and automations
 
 ## Commands
 
-All commands run from `my-website/`:
+All site commands run from `my-website/`:
 
 ```bash
-yarn start        # Dev server with hot reload
-yarn build        # Generate static site into ./build
-yarn serve        # Serve the static build locally
-yarn clear        # Clear Docusaurus cache
-yarn typecheck    # TypeScript type checking
-yarn verify       # typecheck + build (use before deploying)
-yarn deploy       # Deploy to GitHub Pages (gh-pages branch)
+yarn start
+yarn build
+yarn serve
+yarn clear
+yarn typecheck
+yarn verify
+yarn verify:quality
+yarn lint:wiki
+yarn validate:og
+yarn portfolio:check
+yarn draft:from-wiki
+yarn verify:live
+yarn deploy
 ```
 
-Deployment requires either `USE_SSH=true yarn deploy` or `GIT_USER=SamprasZheng yarn deploy`.
-
-### Automation scripts
+Content automation:
 
 ```bash
-yarn generate:living-topics   # Fetch Google News + DDG, update 5 living-tracker blog posts
-yarn generate:weekly-outlook  # Generate a new weekly macro outlook blog post
-yarn daily:local              # living-topics + verify
-yarn weekly:local             # weekly-outlook + verify
-yarn weekly:publish           # weekly-outlook + verify + deploy
+yarn generate:living-topics
+yarn generate:weekly-outlook
+yarn generate:og
+yarn daily:local
+yarn weekly:local
+yarn weekly:publish
 ```
 
-Living-tracker posts are auto-generated into `blog/live-<key>.md` (keys: `live-polkadot`, `live-space`, `live-rf`, `live-ai`, `live-investing`). Do not hand-edit these — they are overwritten on each run.
+Living-tracker posts are generated into `blog/live-<key>.md` and should not be hand-edited.
 
-## Architecture
+## Claude Agents
 
+Use `.claude/agents/` for repeatable role-specific work:
+
+- `research-ingest-agent`: research and persist source/entity/concept/synthesis wiki pages.
+- `blog-editor-agent`: convert wiki synthesis or notes into Docusaurus drafts.
+- `technical-reviewer-agent`: review technical claims and missing evidence.
+- `seo-social-agent`: create metadata, social copy, and OG image direction.
+- `firefly-reviewer-agent`: audit Firefly mission outputs and wiki synthesis.
+- `git-commit-push`: stage, commit, and push with git error handling.
+
+## Claude Commands
+
+Use `.claude/commands/` playbooks when relevant:
+
+- `auto-publish.md`: video publishing pipeline for posts marked `video_ready: true`.
+- `tdd.md`: autonomous test-driven development loop.
+- `validate-og.md`: social-card validation workflow.
+- `wiki-ingest-parallel.md`: parallel research ingestion.
+
+## Skills
+
+Claude local skills:
+
+- `.claude/skills/wiki-ingest-parallel`
+- `.claude/skills/kol-tracker`
+
+Repo-local Codex skills:
+
+- `.codex/skills/codex-repo-operator`
+- `.codex/skills/llm-wiki-ingest`
+- `.codex/skills/blog-publisher`
+- `.codex/skills/og-image-validator`
+- `.codex/skills/firefly-mission-planner`
+- `.codex/skills/portfolio-curator`
+
+## Wiki System
+
+The `wiki/` directory is an Obsidian-compatible knowledge base. Read `wiki/AGENTS.md` at the start of any wiki session.
+
+Startup:
+
+1. Read the last 10 entries of `wiki/log.md`.
+2. Read `wiki/index.md`.
+3. Search existing coverage before creating pages.
+
+Rules:
+
+- Internal links use `[[path/to/page]]`; do not use markdown links for internal wiki pages.
+- Every page needs frontmatter with `type` and `tags`.
+- Source pages also include `title`, `author`, `date`, and `ingested`.
+- Contradictions are flagged on the older page.
+- Good query answers should be filed as `wiki/synthesis/<name>.md`.
+
+Validation:
+
+```bash
+cd my-website
+yarn lint:wiki
 ```
-yxz/
-├── my-website/              # Main Docusaurus app
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── index.tsx                    # Home/landing page
-│   │   │   └── portfolio/
-│   │   │       ├── index.js                 # Portfolio page
-│   │   │       └── github-repo-info.json    # Repo metadata (manually maintained)
-│   │   ├── components/
-│   │   │   └── PortfolioCard/               # Card used in portfolio page
-│   │   └── css/custom.css                   # Global styles
-│   ├── blog/                # Blog posts (MDX/Markdown)
-│   │   ├── authors.yml      # Author profiles
-│   │   └── tags.yml         # Tag definitions
-│   ├── draft/               # Work-in-progress posts (not published)
-│   ├── scripts/             # Node CJS automation scripts
-│   ├── docs/                # Documentation pages (auto-sidebar via sidebars.ts)
-│   ├── static/              # Static assets
-│   └── docusaurus.config.ts # Site config: navbar, plugins, math rendering
-├── wiki/                    # LLM knowledge wiki (Obsidian vault)
-│   ├── sources/             # One .md per ingested source
-│   ├── entities/            # People, orgs, products
-│   ├── concepts/            # Ideas, frameworks, protocols
-│   ├── synthesis/           # Cross-source analyses
-│   ├── index.md             # Catalog of all wiki pages (LLM maintains)
-│   ├── log.md               # Append-only session history (LLM maintains)
-│   └── AGENTS.md            # Wiki schema and workflow rules
-└── .github/workflows/main.yml  # CI: auto-deploys on push to main
+
+## Firefly Agents
+
+Firefly lives under `agents/`.
+
+Quick start:
+
+```bash
+cd agents
+uv sync
+uv run firefly plan --from "Taiwan" --to "SSO-600km" --window 30d
 ```
 
-**Key architectural notes:**
-- The portfolio page reads from `src/pages/portfolio/github-repo-info.json` — update this file to add/remove portfolio repos rather than editing the page component.
-- Blog posts use front matter `authors` and `tags` fields; valid tags are defined in `blog/tags.yml`. Note: the `polkadot` tag key maps to permalink `/dot` (not `/polkadot`) — the navbar uses `/blog/tags/dot`.
-- Math rendering is enabled via `remark-math` + `rehype-katex` — use `$...$` (inline) and `$$...$$` (block) in MDX files.
-- TypeScript config (`tsconfig.json`) is set to `noEmit: true` — it's only for editor type-checking, not compilation. Docusaurus handles the actual build.
-- CI/CD uses Node 16 but `package.json` requires Node >=18; run locally with Node >=18.
+Expected outputs:
 
-## Wiki system
+- `agents/outputs/mission-<slug>.json`
+- `wiki/synthesis/odc-mission-<slug>.md`
+- `wiki/index.md` and `wiki/log.md` updates
 
-The `wiki/` directory is an Obsidian-compatible knowledge base. Read `wiki/AGENTS.md` at the start of any wiki session — it defines the full schema, linking conventions, and ingest/lint workflows.
+Run tests after agent code changes:
 
-**Session startup for wiki work:**
-1. Read `wiki/log.md` (last 10 entries) to see recent activity
-2. Read `wiki/index.md` to orient to the current page inventory
-3. Proceed with ingest, query, or lint
+```bash
+cd agents
+uv run pytest
+```
 
-**Key conventions:**
-- Internal links use Obsidian wikilink syntax: `[[path/to/page]]` — never markdown hyperlinks
-- Every page needs frontmatter: `type: source | entity | concept | synthesis` + `tags`
-- Source pages also include: `title`, `author`, `date`, `ingested`
-- Contradictions are flagged inline with `> ⚠️ **Contradicted** by ...` — never silently overwritten
-- Good query answers should be filed as `synthesis/<name>.md` to persist across sessions
+## Hooks And CI
+
+Local Git hook setup:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-git-hooks.ps1
+```
+
+The pre-commit hook blocks likely credential files, files over 10 MB, and runs targeted checks for wiki, OG images, portfolio metadata, and site TypeScript changes.
+
+GitHub Actions:
+
+- `Deploy Docusaurus`
+- `Daily Living Topics`
+- `Weekly Outlook Content`
+- `AI Quality Gate`
+- `Weekly Wiki Lint`
+- `Weekly Portfolio Check`
+- `Post Publish Verify`
+
+Codex app automations:
+
+- `yxz weekly wiki lint`
+- `yxz blog draft promoter`
+- `yxz portfolio curator`
+- `yxz kol digest triage`
+- `yxz live site verifier`

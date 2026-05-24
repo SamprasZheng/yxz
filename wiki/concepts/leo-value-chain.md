@@ -16,6 +16,9 @@ The LEO satellite industry can be divided by product lifecycle into upstream, mi
 This segment determines the performance ceiling of satellites and is where Taiwan manufacturers are most competitive.
 
 ### RF Components (GaAs PA / Filters)
+
+RF component economics connect directly to the transmitter stack: [[concepts/aesa]] / [[concepts/hybrid-phased-array]] set the array architecture, [[concepts/zero-if-transmitter]] defines the X-band upconversion trade, [[concepts/evm-calibration]] keeps LO leakage/IQ imbalance inside spec, and [[concepts/dpd-digital-predistortion]] protects PA linearity/ACPR.
+
 - **Win Semiconductors ([[entities/win-semiconductors]], 3105)**: Global leader in LEO-spec PA (power amplifier) contract manufacturing
 - **Ascend Tech ([[entities/ascend-tech]], 3491)**: Filters, waveguides; has entered Starlink and Amazon Kuiper supply chains; gross margin >50%
 
@@ -140,3 +143,5 @@ Starlink Aviation (in-flight Wi-Fi) and Maritime services are already mature mar
 ## Related Sources
 
 - [[sources/leo-space-datacenter-analysis-2025]]
+- [[sources/hsieh-xband-leo-transmitter-2020]]
+- [[sources/space-radiation-tid-see-2025]]

@@ -1,0 +1,36 @@
+name: Post Publish Verify
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Deploy Docusaurus"]
+    types:
+      - completed
+  schedule:
+    - cron: "0 3 * * 5"
+
+jobs:
+  verify-live:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: my-website
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: yarn
+          cache-dependency-path: my-website/yarn.lock
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Verify live site
+        run: yarn verify:live
+
