@@ -28,6 +28,10 @@ type: index
 - [[sources/sampras-2026-roadmap]] — Sampras's 2026 cross-domain roadmap: AI × Space × Crypto × RF × Radiation (2026-03-22)
 - [[sources/nvidia-agent-challenge-2026]] — NVIDIA Agent Challenge 2026 (GTC Taipei): long-running agent hackathon, Nemotron + Hermes + NemoClaw stack, ≤4-person team, owner-reported deadline 2026-05-28 12:00 PM; CONFIRMED GTC Taipei context + Meet-a-Claw + stack reality, UNCONFIRMED specific deadline/prize/rules pending official PDF
 - [[sources/nemoclaw-hermes-install-runbook-2026]] — Operator runbook for NemoClaw Hermes profile: install, connect, port 8642 health, snapshot/destroy lifecycle, openshell port forward (2026-05-24)
+- [[sources/raymond-lo-hackmd-profile-2026]] — Raymond Lo HackMD profile stub (note enumeration blocked by JS-rendered page); pointer to Medium + GitHub footprint (2026-05-24)
+- [[sources/openclaw-introducing-steinberger-2026]] — First-party OpenClaw rebrand announcement; naming history Clawd → Moltbot → OpenClaw (2026-01-29)
+- [[sources/nemoclaw-build-a-claw-portal-2026]] — NVIDIA "Build-a-Claw" onboarding portal: Brev / DGX Spark / Jetson install paths (2026)
+- [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
 
 ## Entities
 
@@ -63,6 +67,8 @@ type: index
 - [[entities/nvidia]] — NVIDIA Corp; GPU + Nemotron LLM vendor; GTC Taipei 2026 Agent Challenge host; cross-cuts AI, space (Starcloud H100), radiation (Orin TID)
 - [[entities/nous-research]] — Open-source AI lab founded 2023; CEO Jeffrey Quesnelle + Teknium/Karan4D/Shivani Mitra; $65M Series A April 2025 led by Paradigm at $1B valuation; builds Hermes LLMs, Hermes Agent, Psyche decentralized training
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
+- [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
+- [[entities/peter-steinberger]] — Austrian engineer (@steipete); PSPDFKit co-founder/CEO (€100M Insight exit 2021); creator of OpenClaw; OpenAI personal-agents lead (Feb 2026–)
 
 ## Concepts
 
@@ -100,6 +106,8 @@ type: index
 - [[concepts/nemotron]] — NVIDIA's open reasoning LLM family (Nano 2 / Super 49B / Ultra 253B / Nemotron 3 Nano/Super/Ultra); NIM access via build.nvidia.com; mandatory core for GTC Taipei 2026 Agent Challenge
 - [[concepts/nemoclaw]] — NVIDIA's open-source (Apache 2.0) sandbox + guardrails stack for always-on agents; OpenShell runtime + L7 credential proxy + Landlock/seccomp/netns; OpenAI-compatible :8642; NOT a rebrand of NeMo Guardrails; NVIDIA Agent Challenge 2026 bonus track
 - [[concepts/hermes-agent-framework]] — Nous Research's self-improving agent framework (MIT, ~165k stars, v0.14.0 May 2026); learning loop + autonomous skill creation + pluggable memory backends + 7 deployment backends (local/Docker/SSH/Singularity/Modal/Daytona/Vercel Sandbox); requires 64k-token context; NVIDIA NemoClaw integration on port 8642; reference framework for NVIDIA Agent Challenge 2026
+- [[concepts/openclaw]] — Open-source MIT autonomous agent ("the AI that actually does things"); WhatsApp/Telegram/Slack chat-driven; CDP browser + shell tools; Steinberger-founded; default profile inside NemoClaw sandbox
+- [[concepts/nemoclaw-policy-presets]] — Composable hot-reloadable YAML policy presets (official / community / custom); five canonical recipes; the graded artifact for hackathon "secure by design" credit
 
 ## Synthesis
 

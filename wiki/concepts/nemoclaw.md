@@ -7,7 +7,7 @@ tags: [nvidia, agent-runtime, sandbox, guardrails, security, hackathon, gtc-2026
 
 NemoClaw is an **open-source reference stack** (Apache 2.0) that NVIDIA announced at GTC 2026 for running autonomous "always-on" AI agents more safely. It packages NVIDIA's [[concepts/openshell-runtime|OpenShell sandbox runtime]] with guided onboarding, hardened blueprints, state management, channel messaging, and **out-of-process policy enforcement** so that a self-evolving coding agent cannot bypass its own guardrails by prompt injection.
 
-> Marketed primarily as the safe runtime for **OpenClaw** (NVIDIA's reference always-on coding-agent blueprint). NemoClaw also ships an experimental **Hermes** profile — see [[concepts/hermes-agent-framework]].
+> Marketed primarily as the safe runtime for **[[concepts/openclaw|OpenClaw]]** (the community-owned, [[entities/peter-steinberger|Peter Steinberger]]–founded always-on agent framework that ships as NemoClaw's default profile). NemoClaw also ships an experimental **Hermes** profile — see [[concepts/hermes-agent-framework]].
 
 ## What NemoClaw is (and is *not*)
 
@@ -127,10 +127,21 @@ The GTC Taipei hackathon (deadline + rules canonical at [[sources/nvidia-agent-c
 
 > ⚠️ As of the May 2026 ingest, the **Hermes profile is explicitly marked experimental and not recommended for production**. For the hackathon this is fine; for any post-hackathon deployment, prefer the OpenClaw profile.
 
+## Ecosystem & community
+
+The runtime is only half the story — the community/ecosystem layer is where day-to-day operators actually live:
+
+- **[[sources/nemoclaw-build-a-claw-portal-2026|Build-a-Claw portal]]** ([nvidia.com/en-us/ai/build-a-claw](https://www.nvidia.com/en-us/ai/build-a-claw/)) — NVIDIA's onboarding hub; routes you to the right install path (Brev cloud VM / DGX Spark / Jetson) instead of forcing a raw `curl | bash`.
+- **[[sources/awesome-nemoclaw-voltagent-2026|VoltAgent/awesome-nemoclaw]]** — community-curated index of policy presets, recipes, and templates; surfaces official-NVIDIA presets and community ones side-by-side.
+- **[[concepts/nemoclaw-policy-presets|Policy-preset pattern]]** — the conceptual model behind the preset library (deny-default base + composable per-service YAML bundles, hot-reloadable, trust-graded). Covers the five canonical recipes: approval-first web agent, sandbox monitoring, remote GPU assistant, Telegram bot bridge, runtime model-switching.
+- **NVIDIA Developer Forum** — official announcement + support thread at [forums.developer.nvidia.com/t/introducing-nvidia-nemoclaw/363701](https://forums.developer.nvidia.com/t/introducing-nvidia-nemoclaw/363701) (OP `rjensen`, 2026-03-16).
+- **OpenClaw "Claw Crew" Discord** — [discord.gg/openclaw](https://discord.gg/openclaw); shared community with the upstream [[concepts/openclaw]] agent framework (founder [[entities/peter-steinberger]]). English-primary, Chinese welcomed.
+
 ## Relationship to other NVIDIA agent stack pieces
 
 - [[concepts/openshell-runtime]] — the underlying sandbox runtime; NemoClaw is the opinionated distribution of it.
-- [[concepts/hermes-agent-framework]] — one of two supported agent profiles (the other is OpenClaw). Hermes provides the agent loop; NemoClaw provides the cage.
+- [[concepts/openclaw]] — the **default agent profile** that runs inside the sandbox; community-owned (MIT), created by [[entities/peter-steinberger]], not an NVIDIA project.
+- [[concepts/hermes-agent-framework]] — the second supported agent profile (experimental). Hermes provides the agent loop; NemoClaw provides the cage.
 - [[concepts/nemotron]] — NVIDIA's open model family; a natural choice for the inference target NemoClaw routes to.
 - **NIM** — NVIDIA Inference Microservices; the gateway can point at NIM endpoints for self-hosted inference.
 - **NeMo Agent Toolkit** — broader umbrella; OpenShell is described in NVIDIA docs as "part of NVIDIA Agent Toolkit."
