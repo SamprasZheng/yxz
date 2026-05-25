@@ -13,6 +13,32 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-05-25
+
+- Market/Sentiment stance: **bullish** (score 4)
+- Web signals collected: 10
+- Social-search signals collected: 10
+- Updated at: 2026-05-25T23:36:34.007Z
+
+Key web signals:
+- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
+- [The Neutral Sky: Why Space May Be the Only Fair Ground for AI in the Developing World - Futurist Speaker](https://news.google.com/rss/articles/CBMiywFBVV95cUxPcThMMzNyNktKaXJOQzY4OFY3NmxPcHA2V2hvTzh4S2RGRlRTOHRiNnFubWl6aGN1OVI0TW5RX2ExOWVSVHlmZl9RVDB5WWxZdF81QUZ1Q0ZCdDE1eUxtMmhyTG1QWE1RRk56VDFtdXdseUg1UkNxSHlNOGgwaHdQV1dEY1Q5Ql9KY1Q2aG1pM1A2d1JfbGFGT1oyc0FHS2s3aTVPSkNsM1R3TWZ5d1Y3a0J6ODV6RmRIY3JpOXZNQk9OV1hKS2VGYVJUNA?oc=5)
+- [AMD vs. Nvidia: Who Will Win the Orbital-AI Race? - MarketWise](https://news.google.com/rss/articles/CBMiigFBVV95cUxNX0MycWEzTnFaOE5yQjZlZGw3cnVTcFoyUmNlZjhDcHl4NEVtb0NYRlg1WS1CNHJBcGRXX1dqWDJrVDVFbDFuem55MGV6YnFUN1pjX0JuS0pBeGlCcEI0eXJXZ0tUckdxMzVnVzFKMXFpSTRJMDVRaG1lc2pYZTFyVExYbGJSMFJ2b1E?oc=5)
+- [Space Based Data Center Market Size, Share | Fotrecast [2034] - Fortune Business Insights](https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWhfWEV5d1NuYkRJNVV5bHNFM2hGVnM2aDMtVWQyZlZ5MGE3eVVmd3czQWppeS1sejluaVpWQXExV0RzMUhKV0lQS21pTVlWZmczS1pubTZodEpMa1d2SENtUnFYNFpHNFNWanFrQzFMWVZKOEpUY0ZwWVh3QktnSGNtbw?oc=5)
+- [Could Space Become the Next Frontier for AI Data Centers? - HPCwire](https://news.google.com/rss/articles/CBMioAFBVV95cUxNR2F4Q3VDMGxwT2h0TEw4eExQZFdic01FWkpLTDh2cW42RXhQM0tVR29KaEVwSXdFemU0b2c2ZTJBNkVadHZ1VW1QNXlpVVBaWjdBbjNSSVc5NUg0QmFHc0lYNXl1TldZQ2ZmV2hUcVJILXZxaW1STTFya0VDYlVuNHMwb0tLSmc0dm5feTRzdWZfNndCa1FVTzF2cU9IYmhV?oc=5)
+- [SPECIAL FEATURE | Space, the new data center frontier - W.Media](https://news.google.com/rss/articles/CBMidkFVX3lxTE1kZXlNV3REOEVxVWZsZ3F4MTFiY0dUZmY2cHo0RGtMeDNETlRtd2ZZbHRmMHBMQ0h6UWh0OEREOHlyeDNJN0VPM29ma1haN195ZWJ4WWhla2k5b21HMmlJYURGQ2VYUUV1WWcwd3hyZi1WMWZEamc?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [BREAKING: Report says China is going head-to-head with Elon Musk&#x27;s ...](https://x.com/muskonomy/status/2046989492301836505)
+- [Instagram](https://www.instagram.com/p/DUROItTCPgT/)
+- [NASA Explore The Universe | *The Race to Build the Off ... - Facebook](https://www.facebook.com/groups/828178678983076/posts/1435494298251508/)
+- [BREAKING: SpaceX wants to turn Space into the World&#x27;s Biggest AI Data ...](https://x.com/cb_doge/status/2017466825538474065)
+- [Instagram](https://www.instagram.com/p/DRAVZCwj_dm/)
+- [Is AI outgrowing Earth and will... - TechTalk With Solomon | Facebook](https://www.facebook.com/TechTalkWithSolomon/posts/is-ai-outgrowing-earth-and-will-the-next-data-center-be-in-space-as-global-deman/1402775541219088/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-05-24
 
 - Market/Sentiment stance: **neutral** (score 3)

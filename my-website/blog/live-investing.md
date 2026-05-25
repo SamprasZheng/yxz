@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-05-25
+
+- Market/Sentiment stance: **bullish** (score 5)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-05-25T23:36:34.007Z
+
+Key web signals:
+- [BTC, ETH Steady; Wall Street Gauges Advance After Strong Economic Data: Markets Wrap - Blockworks](https://news.google.com/rss/articles/CBMirgFBVV95cUxPMnhMUGYweENQcW5ITmVJXzZaREwxTEg0eFlBQm81aVYyenBESDl6RzJQb2l2am5VMnRkZ1pQWm5EcVQ4UU9ENEF4c3NneFVRY0J4LVItWGFCeVB4RnhjVHVJMTFtRHM2TkFWWFpvV0EzY3JaY3haenF4bXpOMWJGa2VtOWpJU3ZCallXMWVuYmdiYzVGN0V4SEw0SUVhSU1DaUZreWZtSXpVWDUyU0E?oc=5)
+- [Market Update (November 2025) - Crypto.com](https://news.google.com/rss/articles/CBMiY0FVX3lxTE4yR1hOZWZvakFQSmMtc3ZoUjdjX1lFMGdrdE5maW96VjZzdzdHWXRFUTFOaFZqYl9pZEtxMTdwdmw3V1BVOW5raWFMZWVZRUZGbUZibTlxUFFpZG9QelRJSEFGYw?oc=5)
+- [Critical Alert: Macro Indicators Will Determine Bitcoin’s Short-Term Direction This Week - CryptoRank](https://news.google.com/rss/articles/CBMiiwFBVV95cUxORWNLa0ZYVWwyQy13bUFrRW90eF95TG5CNXRJcFpVZ0libExHUTdxQzRBV2k2aDdNel9oOVdxOWxZZzJhTHAzbWtvX3pHTmhjSUpZTDJUWDZDcXRYY3Y4X1VINHRmS1ZqNXB6aEEzYzJuem5xS2JwM0RCN05BZkhaRGJNQzl0X09KTzRF?oc=5)
+- [🥛 There’s no AI bubble and the bull rally isn’t over 🤖 - Milk Road](https://news.google.com/rss/articles/CBMihAFBVV95cUxObnJLalFPblFCLU1FVXB1Wlk5MDRKS0NiMGxib3YzWkpXNkhHX0NkbXd6cEN1SEFLTW5ZYktiS1VvMXpCMzY5N1NnMlRDSzZNaFM3WFk3XzdBZ3Rna200UldjRl9CYUxTWEM4aDFid3NJR2pYZ1pVb0h1YjE0cE1FblRCZjE?oc=5)
+- [Bitcoin Price Year-End 2025: From Christmas Flash Crashes to Macro Reality — What Will the Final Price Be? - CCN.com](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPS1FZZ09wR2FxYTFnSG9OWk92OGRTRjlqcUhtV0NoUHJRUzFoNXZid3Z1ZzFIWUZJUUlfeGNBeTZjOTJoQ0FhcThzRnlQdE1jaUZ1WjhrYmZkck5hRnlMQTFxUk5MdTZVTUc1SnAyNGF0R0hab2FGaGNQNC1ZWlJRbmVqTW53M1MwZlZ3?oc=5)
+- [Tom Lee's latest interview: The bull market is far from over, and ETH will rise to $12,000 next year - Exchange Bitget](https://news.google.com/rss/articles/CBMiXkFVX3lxTE1vaXNBRGdpWjNNT2p0OXJFRk8xZ25CRGVZVlhialNqalJwZWhRcU1QNHlfcU51cHl0UUhSNHVzY2RnRHZ1MHpwOHg2MFAzTDkxd1kySGlUb3V6aGFlaWfSAWNBVV95cUxQZHAzLW41aDJMRV9kdGpNc2JXZ3duNXVsR3FFQUlUSXY0QzZWeXJvbngzOUJyX0RMYmt3YUUzWjhxbl9ZTGstUUJNQVl1SHBYU016M25NNEthLWhnUGxNNUlsOFE?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-05-24
 
 - Market/Sentiment stance: **bullish** (score 4)
