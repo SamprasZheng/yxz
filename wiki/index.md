@@ -33,6 +33,7 @@ type: index
 - [[sources/nemoclaw-build-a-claw-portal-2026]] — NVIDIA "Build-a-Claw" onboarding portal: Brev / DGX Spark / Jetson install paths (2026)
 - [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
 - [[sources/noaa-swpc-product-catalog]] — NOAA SWPC product and data catalog: full JSON URL table with cadences for all operational space weather feeds (ingested 2026-05-24)
+- [[sources/kol-digest-2026-05-26]] — KOL + keyword daily digest 2026-05-26: automated sweep of 11 keywords (AI agents / Claude Code / Anthropic / OpenAI / Polkadot / OpenClaw / NemoClaw / Plurality / Audrey Tang / NVIDIA Nemotron / PolkaSharks); 49 items; KOL list empty (ingested 2026-05-26)
 
 - [[sources/msbai-orbitguard-dod-contract-2025]] — MSBAI OrbitGuard $1.2M DoD SBIR (Sept 2025): JEPA + MARL neuro-symbolic SDA copilot; 94–98% lab accuracy across ~15,000 objects; AMOS 2025 poster; CEO Grosvenor verbatim quote (ingested 2026-05-24)
 - [[sources/scnoc-agentic-sun-2025]] — SCNOC-Agentic paper (Electronics 2025, 14(16), 3320): first LLM multi-agent framework for satellite communications NetOps; four components (intent refinement / multi-agent workflow / long-term memory / graph-RAG); qwen2.5-70B improved network task planning accuracy 15.6%→32.2% (ingested 2026-05-24)
@@ -108,6 +109,8 @@ type: index
 - [[entities/privateer-space]] — Honolulu SSA startup; Wayfinder visualization + TerraScope geospatial AI (Orbital Insight acquisition May 2024); $56.5M Series A; CEO Alex Fielding; Steve Wozniak co-founder
 - [[entities/aiko-space]] — Turin Italy on-board autonomy startup; GENE anomaly detection (4/5 anomalies in 3 min, Tyvak International deployment); ESA ARTES funding; Thales Alenia Space partner; €7M total funding; founded 2017
 
+- [[entities/anthropic]] — Anthropic; US AI safety company; maker of Claude model family + Claude Code; Q2 2026 revenue $10.9B (first profitable quarter); Claude Managed Agents + MCP tunnels (May 2026)
+- [[entities/openai]] — OpenAI; maker of ChatGPT + GPT series; GPT-5.5 launched May 2026; IPO confidential S-1 filing imminent (Goldman Sachs + Morgan Stanley); September 2026 debut targeted
 - [[entities/nspo]] — Taiwan space-program entity; LEO application collaborator for the X-band transmitter / XT-144 thesis context
 - [[entities/tron-future-tech]] — Taiwan RF/space hardware vendor node for the XT-144 phased-array system
 
