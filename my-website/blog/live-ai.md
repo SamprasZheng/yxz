@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-05-27
+
+- Market/Sentiment stance: **neutral** (score -1)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-05-27T23:42:26.368Z
+
+Key web signals:
+- [Reference Architecture: Connecting Claude to Enterprise Data via an MCP Server - Blockchain Council](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQcTRDTVhwdE15NWEyNU9xa2dlbW1TdUkzZ0Q5aGg3Y1hyMUFXMGJWVFV2bnQwblMtMzNVMDc3Y2s0aERRUURSTFRMay0yTFV1XzNTMVpMM0hVSWdDWmpLTFZ6Z3RMNm1tS1BmTWpKUHJKMGh0Z0tYdmY2ZnJHNjNRdkpTV2dKd2k4N2FHR0wyWEIyaHVBOVkxNmhEWG9TT2o1RnUzbmNpei1RU0N1VjRaanhvbzI4MHd2NEpBeF9XbTZvdw?oc=5)
+- [Solving the Identity Crisis for AI Agents - Uber](https://news.google.com/rss/articles/CBMidEFVX3lxTE12WFJ4ODFhZ29kS1ZyQWhTZHdMRTJxQTFXUzJvZUtyeXhZeUZVUTdVdmJzMS10TUxPZTRZTUxXWDFCeER4MFhWOHptQjhjSDJYY1E2RmZkbi1JcWVQZ3lPSW95WDBqUVM5eWtRWlhKYU5sTWl5?oc=5)
+- [Top MCP Server for Claude: Best Picks for 2026 - Blockchain Council](https://news.google.com/rss/articles/CBMie0FVX3lxTE5lNnVlc2FYNzdMYjhxZFhwZ1BnSi1aWDU5UkJMUjk0ZE4zTjYxTVJhYjcyWVpqU0FmRC1pUFExa2tScFM4ZnVsWjItb2ZGVHJSYnJtSFlEeEd6M25BUGl3ZjZDc2hwUEdvUndDNWMxUk5LcmtSclZrNXBFTQ?oc=5)
+- [Pinterest Deploys Production-Scale Model Context Protocol Ecosystem for AI Agent Workflows - infoq.com](https://news.google.com/rss/articles/CBMia0FVX3lxTE85amdNZ1R2cEpJYm1PNmhSQ0RoWDd0dWpQaU43elZRMXo4dGJaeUNrQ1ZPem1nVm9BUDhSSEhHQXNVUHNGcm9QOWtBQmU4cWREM0dqZk9sRm1wZ1Z4QW42Z2MtYzRvQml2ZHNz?oc=5)
+- [Solvd joins global AI standards body ahead of MCP Dev Summit Europe in Amsterdam - 150sec](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNWo1aXctdGREbnM4RXU1b21USWRySXNERlhMZ3d0b0FJR21ORExob2dsVWw0RHFhYWNqY1lLTmx3NThHenZZVE5VNzNZcEFYSjVsVjY4YS1FZGFxc0xySWdvY3FGcjFqa1o3RlZwZEY1b05waEtiM3VRbGNDdVMwSkZ6WGR5TEhsYUx4OHJDUi1sWTk5Z3pTVDRTaFJwZ1hFZDBoaWd0ZnpZZw?oc=5)
+- [Code execution with MCP: building more efficient AI agents - Anthropic](https://news.google.com/rss/articles/CBMibkFVX3lxTE0wZlpvbE81SXhDeFppSjUzb1RKQ0FxckN5VDFZNm9TQlE1RXdNclc2TW5XOV9qcE5kUkswSjdQdWt1eldrTnBEZFBjMkVraFByOHFsVkJENlRBS3Q2NU5Mel9oUW4xZmFETjZ4X25n?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((MCP OR model context protocol OR applied AI engineering) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(MCP%20OR%20model%20context%20protocol%20OR%20applied%20AI%20engineering)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-05-26
 
 - Market/Sentiment stance: **neutral** (score -1)

@@ -13,6 +13,32 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-05-27
+
+- Market/Sentiment stance: **neutral** (score 3)
+- Web signals collected: 10
+- Social-search signals collected: 10
+- Updated at: 2026-05-27T23:42:26.368Z
+
+Key web signals:
+- [US Space Race is Around Space-Solarized Data Infrastructure - Irish Tech News](https://news.google.com/rss/articles/CBMieEFVX3lxTE5BNlNyaVIzWXM5cTRfMU11UEdIMGVTNU1WbFE0a0lrLTAyR2k2TzRWM3NOQ1d3cWJJTGxaZDFZSE9LVkNmRUg4LUpzRjlUUkRGWTZpSVhhMnVDVG1SbFp5VDBLUWg5NGlITHg4TDlZQmVHX1Y4UXdKONIBeEFVX3lxTE5BNlNyaVIzWXM5cTRfMU11UEdIMGVTNU1WbFE0a0lrLTAyR2k2TzRWM3NOQ1d3cWJJTGxaZDFZSE9LVkNmRUg4LUpzRjlUUkRGWTZpSVhhMnVDVG1SbFp5VDBLUWg5NGlITHg4TDlZQmVHX1Y4UXdKOA?oc=5)
+- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
+- [The Neutral Sky: Why Space May Be the Only Fair Ground for AI in the Developing World - Futurist Speaker](https://news.google.com/rss/articles/CBMiywFBVV95cUxPcThMMzNyNktKaXJOQzY4OFY3NmxPcHA2V2hvTzh4S2RGRlRTOHRiNnFubWl6aGN1OVI0TW5RX2ExOWVSVHlmZl9RVDB5WWxZdF81QUZ1Q0ZCdDE1eUxtMmhyTG1QWE1RRk56VDFtdXdseUg1UkNxSHlNOGgwaHdQV1dEY1Q5Ql9KY1Q2aG1pM1A2d1JfbGFGT1oyc0FHS2s3aTVPSkNsM1R3TWZ5d1Y3a0J6ODV6RmRIY3JpOXZNQk9OV1hKS2VGYVJUNA?oc=5)
+- [Why India’s AI Start-ups Are Exploring Space-Based Data Centres and How They Work - outlookbusiness.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxOXzFUUTBCWXVKLWk4TmJFNVZUc1ZjSGd0djNfYjNlaUY0MTRRTXNhdW9QYXlOVmZzSEdKWklyZXBXaHg3OXQ5MEVFRVVqOGhHcVQ3Um9uT1U2S3BFMDJlYmZMQ2ZKdjdFS21QUFJlUE9VajFLeU91ZTZBWGFNSFBtNEhlbWsxRTRLaFBFWTJfN240WXp1a29DQXlkRdIBqAFBVV95cUxOemZ5WjZkV1NwZWtiMkltUmJlcFRRUUpXRWtPSlI3cDk4MWpwNy1nRlJJREJoOVFNaFVpdUZLNEVqcHBPSXBzcnRXYmN5a1lBeDZUSldPY1VKbjNCR3dXemdjZkwtd3dPZmVhbE1xY2c4bHZ3UlpVSF9RRXRhbnkzZUxlWjNSRGJYblFvWTMxMFhxU0lkRVZfX3hUUWp6a1J4QUU4ZmJlaHY?oc=5)
+- [Space Based Data Center Market Size, Share | Fotrecast [2034] - Fortune Business Insights](https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWhfWEV5d1NuYkRJNVV5bHNFM2hGVnM2aDMtVWQyZlZ5MGE3eVVmd3czQWppeS1sejluaVpWQXExV0RzMUhKV0lQS21pTVlWZmczS1pubTZodEpMa1d2SENtUnFYNFpHNFNWanFrQzFMWVZKOEpUY0ZwWVh3QktnSGNtbw?oc=5)
+- [Could Space Become the Next Frontier for AI Data Centers? - HPCwire](https://news.google.com/rss/articles/CBMioAFBVV95cUxNR2F4Q3VDMGxwT2h0TEw4eExQZFdic01FWkpLTDh2cW42RXhQM0tVR29KaEVwSXdFemU0b2c2ZTJBNkVadHZ1VW1QNXlpVVBaWjdBbjNSSVc5NUg0QmFHc0lYNXl1TldZQ2ZmV2hUcVJILXZxaW1STTFya0VDYlVuNHMwb0tLSmc0dm5feTRzdWZfNndCa1FVTzF2cU9IYmhV?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [We released our 80 page institutional orbital data center report a few ...](https://x.com/aaronburnett/status/2050692973122175257)
+- [Instagram](https://www.instagram.com/p/DRAVZCwj_dm/)
+- [NASA Explore The Universe | *The Race to Build the Off ... - Facebook](https://www.facebook.com/groups/828178678983076/posts/1435494298251508/)
+- [BREAKING: Report says China is going head-to-head with Elon Musk&#x27;s ...](https://x.com/muskonomy/status/2046989492301836505)
+- [Instagram](https://www.instagram.com/p/DQ4l084jASo/)
+- [Space FrontPage - Elon Musk&#x27;s new race, data centers and ... - Facebook](https://www.facebook.com/SpaceXFP/posts/elon-musks-new-race-data-centers-and-ai-in-space-is-gonna-give-big-tech-companie/898239219390802/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-05-26
 
 - Market/Sentiment stance: **bullish** (score 4)
