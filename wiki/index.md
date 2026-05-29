@@ -200,3 +200,7 @@ type: index
 - [[synthesis/faa-notam-launch-lifecycle]] — FAA NOTAM lifecycle end-to-end: AST licensing chain, NOTAM FSM, AHA vs TFR, USCG NOTMAR, FCC parallel track, LCOLA/CDM handoff, public-only MVP cookbook with slip-probability Python
 - [[synthesis/fcc-ibfs-filings-coordination]] — FCC IBFS satellite filings and interference coordination: Schedule S, EPFD, NGSO/GSO pipeline, API→CR→Notification, Starlink/Kuiper/AST rulings, public-data MVP + upgrade path
 
+## Trader / Research
+
+- [[synthesis/daily-trader-2026-05-29]] — Day 0 stub: trader pipeline + yfinance both blocked (sandbox network policy 403); establishes 15-ticker watchlist seed (NVDA/AAPL/TSLA/MSFT/AMD/GOOGL/META/AMZN/NFLX/AVGO/ARM/SMCI/PLTR/COIN/MSTR), FOM formula (0.4×confidence + 0.3×sizing_σ + 0.2×hit_rate + 0.1×news_momentum), and Tier-1/Tier-2 rerank scaffolding for subsequent live runs
+
