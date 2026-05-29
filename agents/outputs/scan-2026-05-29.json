@@ -1,0 +1,56 @@
+{
+  "run_date": "2026-05-29",
+  "run_type": "stub",
+  "status": "blocked",
+  "blockers": [
+    {
+      "component": "trader_pipeline",
+      "severity": "critical",
+      "detail": "agents/src/trader/ does not exist. The trader CLI (trader scan, trader research) has not been implemented. This is Day 0 — the pipeline scaffold needs to be built before live scans can run."
+    },
+    {
+      "component": "yfinance_data_feed",
+      "severity": "critical",
+      "detail": "yfinance 1.4.1 installed but all ticker requests returned HTTP 403 'Host not in allowlist'. The Claude Code on-web sandbox network policy blocks outbound requests to Yahoo Finance endpoints. Price data could not be fetched."
+    }
+  ],
+  "fallback": "LLM_BACKEND=disabled TRADER_OFFLINE=1 stub (no pipeline to invoke)",
+  "watchlist_seed": [
+    "NVDA", "AAPL", "TSLA", "MSFT", "AMD",
+    "GOOGL", "META", "AMZN", "NFLX", "AVGO",
+    "ARM", "SMCI", "PLTR", "COIN", "MSTR"
+  ],
+  "tickers": {
+    "NVDA": {"status": "no_data", "reason": "yfinance 403"},
+    "AAPL": {"status": "no_data", "reason": "yfinance 403"},
+    "TSLA": {"status": "no_data", "reason": "yfinance 403"},
+    "MSFT": {"status": "no_data", "reason": "yfinance 403"},
+    "AMD":  {"status": "no_data", "reason": "yfinance 403"},
+    "GOOGL":{"status": "no_data", "reason": "yfinance 403"},
+    "META": {"status": "no_data", "reason": "yfinance 403"},
+    "AMZN": {"status": "no_data", "reason": "yfinance 403"},
+    "NFLX": {"status": "no_data", "reason": "yfinance 403"},
+    "AVGO": {"status": "no_data", "reason": "yfinance 403"},
+    "ARM":  {"status": "no_data", "reason": "yfinance 403"},
+    "SMCI": {"status": "no_data", "reason": "yfinance 403"},
+    "PLTR": {"status": "no_data", "reason": "yfinance 403"},
+    "COIN": {"status": "no_data", "reason": "yfinance 403"},
+    "MSTR": {"status": "no_data", "reason": "yfinance 403"}
+  },
+  "fom_formula": {
+    "definition": "FOM = 0.4 * confidence + 0.3 * normalized_sizing_sigma + 0.2 * recent_hit_rate + 0.1 * news_momentum",
+    "components": {
+      "confidence": "thesis confidence score from LLM scan, normalized [0,1]",
+      "normalized_sizing_sigma": "position-sizing signal magnitude normalized to [0,1] across the watchlist",
+      "recent_hit_rate": "rolling 5-day directional hit rate for this ticker, normalized [0,1]",
+      "news_momentum": "news_scout sentiment score normalized [0,1]; 0.5 when no data"
+    },
+    "weights": {"confidence": 0.4, "sizing_sigma": 0.3, "hit_rate": 0.2, "news_momentum": 0.1}
+  },
+  "next_actions": [
+    "Implement agents/src/trader/ pipeline (orchestrator, schemas, CLI) so trader scan can run",
+    "Run in an environment with unrestricted outbound HTTP (local dev or GitHub Actions) to get real yfinance data",
+    "On first live run: populate confidence, sizing_sigma from LLM scan; populate news_momentum from news_scout",
+    "After 5 trading days: compute hit_rate; FOM becomes fully populated"
+  ]
+}
