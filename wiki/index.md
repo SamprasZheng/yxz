@@ -6,6 +6,7 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-05-29]] — Daily KOL + keyword digest 2026-05-29: 0 KOLs tracked (list empty), 11 keywords swept; top items — Anthropic $965B raise + Opus 4.8, OpenClaw 2026.5.27-alpha + 4 CVEs patched, Nemotron 3 Nano Omni multimodal, Polkadot Referendum 1890
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
@@ -60,6 +61,7 @@ type: index
 
 ## Entities
 
+- [[entities/anthropic]] — AI safety company; Claude LLM family + Claude Code CLI; $965B valuation (May 2026); $47B annualised revenue run rate; founded 2021 by Dario Amodei + Daniela Amodei
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
 - [[entities/polkadot]] — Layer-0 relay chain + parachain protocol; DOT token; JAM roadmap; DOT hard cap March 2026
 - [[entities/mythical-games]] — Web3 gaming studio; migrated ETH→Polkadot 2024; MYTH token; NFL Rivals, Nitro Nation
