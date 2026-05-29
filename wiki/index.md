@@ -58,6 +58,20 @@ type: index
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
 
+- [[sources/qlib-microsoft-quant-platform]] — Microsoft Qlib AI-quant platform: Alpha158/Alpha360 feature sets, `qrun` workflow, RD-Agent factor automation; the execution/backtest layer (ingested 2026-05-29)
+- [[sources/qlib-microsoft-2020]] — arXiv:2009.11189 — Qlib paper (MSRA 2020): modular pipeline, expression DSL, Alpha158/Alpha360 benchmarks, IC/RankIC metrics (ingested 2026-05-29)
+- [[sources/fingpt-ai4finance-2024]] — FinGPT (AI4Finance, arXiv:2306.06031): LoRA-fine-tuned financial sentiment LLM; single-model predecessor to FinRobot (ingested 2026-05-29)
+- [[sources/finrobot-ai4finance-2024]] — FinRobot (AI4Finance, Apache-2.0, arXiv:2405.14767): multi-agent financial-analysis platform; four-layer architecture; brain-layer skeleton (ingested 2026-05-29)
+- [[sources/alpaca-markets-docs-2025]] — Alpaca Markets API docs + alpaca-py SDK: free IEX vs paid SIP tiers, rate limits, v1 trader-agent integration (ingested 2026-05-29)
+- [[sources/polygon-io-docs-2025]] — Polygon.io (now Massive) API docs: rebrand Oct 2025, endpoint families, tier structure, premium upgrade path (ingested 2026-05-29)
+- [[sources/sec-edgar-api-2025]] — SEC EDGAR REST API + EFTS full-text search: CIK lookup, XBRL endpoints, 10 req/s limit, User-Agent policy (ingested 2026-05-29)
+- [[sources/finma-pixiu-benchmark-2023]] — PIXIU/FinMA (The-FinAI, arXiv:2306.05443): financial LLM + 136K FIT instruction set + FLARE benchmark; "strong text, weak numerical reasoning" (ingested 2026-05-29)
+- [[sources/xuanyuan-financial-llm]] — XuanYuan 轩辕 (Duxiaoman 度小满): bilingual Chinese-English financial LLM; XuanYuan-70B (Llama2/8k) → XuanYuan3-70B (Llama3/16k) (ingested 2026-05-29)
+- [[sources/trademaster-ntu-2023]] — TradeMaster (NTU AMI group): RL-first quant-trading platform; FinRL methods + market simulator + PRUDEX-Compass; NOT an LLM (ingested 2026-05-29)
+- [[sources/tslib-thuml-time-series-library]] — TSlib (Tsinghua THUML): deep time-series model zoo (TimesNet/PatchTST/iTransformer/Autoformer/Informer); forecasts → Qlib features (ingested 2026-05-29)
+- [[sources/deeplob-limit-order-book-2019]] — DeepLOB (Zhang/Zohren/Roberts, IEEE TSP 2019, arXiv:1808.03668): CNN+LSTM on limit order book; benchmarked on FI-2010 (not LOBSTER) (ingested 2026-05-29)
+- [[sources/agent-frameworks-2025-snapshot]] — CrewAI / LangGraph / AutoGen snapshot (May 2026): orchestration trade-offs; AutoGen now in maintenance mode → Microsoft Agent Framework (ingested 2026-05-29)
+
 ## Entities
 
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
@@ -110,6 +124,13 @@ type: index
 
 - [[entities/nspo]] — Taiwan space-program entity; LEO application collaborator for the X-band transmitter / XT-144 thesis context
 - [[entities/tron-future-tech]] — Taiwan RF/space hardware vendor node for the XT-144 phased-array system
+
+- [[entities/finrobot]] — AI4Finance multi-agent financial platform (Apache-2.0, arXiv:2405.14767); four-layer architecture; brain-layer skeleton for the `trader` agent
+- [[entities/fingpt]] — AI4Finance LoRA-fine-tuned financial sentiment LLM (MIT, arXiv:2306.06031); single-model predecessor to FinRobot; ~$300 re-train cost
+- [[entities/qlib]] — Microsoft Research Asia AI-quant platform (MIT); Alpha158/Alpha360 feature sets; model zoo; YAML-driven `qrun` workflow
+- [[entities/alpaca-markets]] — Developer-first brokerage (FINRA/SIPC); commission-free Trading API + Market Data API; v1 trader agent uses data-only
+- [[entities/polygon-io]] — Financial market data platform (rebranded Massive Oct 2025); full SIP tape, tick-level history, options Greeks; premium upgrade path
+- [[entities/sec-edgar]] — SEC mandatory filing system (free, no auth); 10-K/10-Q/8-K fundamentals via REST + EFTS full-text search; 10 req/s limit
 
 ## Concepts
 
@@ -189,6 +210,14 @@ type: index
 - [[concepts/calibrated-confidence-llm]] — Calibration techniques (temperature scaling, Platt, verbalised, P(IK), conformal prediction, selective prediction); three-class `answer / abstain / escalate` output; coverage-risk operating point per decision-verb class; Layer 3 of the Spacesharks trust stack
 - [[concepts/agentic-provenance]] — Four-layer trust model (data / model / decision / system); W3C PROV-DM / C2PA / NIST AI 600-1 / EU AI Act Article 50 / CycloneDX ML-BOM analogues; reproducibility invariant tying every published row back to its raw evidence blob; the labelled-lifecycle-dataset moat is provenance-defensible only
 
+- [[concepts/time-series-forecasting-quant]] — Deep time-series model family for quant (TimesNet / PatchTST / iTransformer / Autoformer / Informer); forward volatility/price-band forecasts feed dynamic position sizing and become Qlib features; bar-level counterpart to DeepLOB
+- [[concepts/deep-lob]] — Limit-order-book deep learning (DeepLOB CNN+LSTM family); spatial book structure + temporal dynamics → next-k-tick direction; FI-2010 vs LOBSTER data clarified; the no-LLM microstructure end of the stack
+- [[concepts/yfinance]] — Unofficial Yahoo Finance Python scraper; free OHLCV + news for prototyping; unstable API, not for production trading
+- [[concepts/combinatorial-purged-cross-validation]] — López de Prado CPCV: purge + embargo + C(N,k) path distribution; replaces walk-forward; measures Sharpe distribution + PBO to detect overfitting
+- [[concepts/volatility-targeting]] — Position sizing by σ_target/σ_i; Moreira & Muir (2017) Sharpe improvement; LLM emits σ-unit position hint; deterministic Python converts to notional
+- [[concepts/event-driven-quant-architecture]] — Pub/sub quant pipeline (Redis/Kafka + TimescaleDB + Milvus); backtest == live engine invariant; LLM emits SentimentEvent asynchronously
+- [[concepts/llm-as-feature-engineer]] — Demote LLM to one alpha column in Qlib feature matrix; structured JSON (sentiment + confidence + rationale); IC/RankIC validates alpha before production
+
 ## Synthesis
 
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window and three breakthrough paths (PCB integration / defense catalysis / upstream extension)
@@ -199,4 +228,6 @@ type: index
 - [[synthesis/cdm-pc-decisioning]] — End-to-end CDM → Pc → maneuver decision workflow; NASA CARA thresholds; MVP Space-Track cdm_public recipe with Python code; commercial upgrade path (LeoLabs/Slingshot); Firefly/NemoClaw integration
 - [[synthesis/faa-notam-launch-lifecycle]] — FAA NOTAM lifecycle end-to-end: AST licensing chain, NOTAM FSM, AHA vs TFR, USCG NOTMAR, FCC parallel track, LCOLA/CDM handoff, public-only MVP cookbook with slip-probability Python
 - [[synthesis/fcc-ibfs-filings-coordination]] — FCC IBFS satellite filings and interference coordination: Schedule S, EPFD, NGSO/GSO pipeline, API→CR→Notification, Starlink/Kuiper/AST rulings, public-data MVP + upgrade path
+- [[synthesis/ai-quant-trading-architecture-improvements]] — AI 量化交易「三層分離式架構」改善方向 / TODO / 待考慮事項 / 模型改善路線圖 (event-driven + TimescaleDB/Milvus + LLM 結構化情緒因子 + 波動率目標 + CPCV 反 overfitting + 硬熔斷)
+- [[synthesis/ai-quant-trading-oss-stack-selection]] — AI 量化交易開源選型指南：FinRobot/FinGPT 之外的開源金融 AI 生態 (XuanYuan/FinMA/Qlib/TSlib/DeepLOB/CrewAI/LangGraph) 對位三層架構 + 三種交易風格推薦組合決策表；姊妹頁回答「每層用什麼」(architecture-improvements 回答「怎麼穩」)
 

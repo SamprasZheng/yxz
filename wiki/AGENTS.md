@@ -127,6 +127,8 @@ Current synthesis pages (keep this list in sync when adding a new one):
 - `[[synthesis/fcc-ibfs-filings-coordination]]` — FCC IBFS + Schedule S + ITU EPFD pipeline; Starlink/Kuiper/AST rulings; public-data MVP. Canonical for the interference-attribution verb.
 - `[[synthesis/leo-taiwan-odc-gap]]` — Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window. Canonical for Taiwan supply-chain investment framing.
 - `[[synthesis/sampras-2026-engineering-thesis]]` — AI × Space × Crypto × RF × Radiation integrated thesis; 2026 convergence triggers and falsifiability table. Canonical for cross-domain personal-roadmap framing.
+- `[[synthesis/ai-quant-trading-architecture-improvements]]` — AI quant trading three-layer architecture engineering memo (event-driven + CPCV + LLM-as-feature-engineer + volatility targeting + circuit breakers). Canonical for "how to harden the 3-layer quant architecture to production grade."
+- `[[synthesis/ai-quant-trading-oss-stack-selection]]` — AI quant trading OSS selection guide: which open-source project per layer + per trading style recommendation table. Canonical for "which OSS project per layer + per trading style."
 
 When a query lands in any of these domains, the workflow is:
 
