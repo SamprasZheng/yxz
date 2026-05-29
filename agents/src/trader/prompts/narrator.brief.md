@@ -8,10 +8,10 @@
 {% if thesis.abstain %}
 **Abstain.** {{ thesis.rationale }}
 {% else %}
-- **Direction:** {{ thesis.direction }}
+- **Direction:** {{ thesis.direction.value }}
 - **Confidence:** {{ "%.2f"|format(thesis.confidence) }}
 - **Suggested size:** {{ "%.2f"|format(thesis.sizing_sigma) }} sigma units (NOT dollars — execution layer parked for v2)
-- **Horizon:** {{ thesis.horizon }}
+- **Horizon:** {{ thesis.horizon.value }}
 
 {{ thesis.rationale }}
 {% endif %}
@@ -35,7 +35,7 @@
 - Last close: ${{ "%.2f"|format(price.last_close) }}
 - 20-day annualized vol: {{ "%.1f"|format(price.vol_20d * 100) }}%
 - 60-day annualized vol: {{ "%.1f"|format(price.vol_60d * 100) }}%
-- Trend: {{ price.trend }} | Regime: **{{ price.regime }}**
+- Trend: {{ price.trend }} | Regime: **{{ price.regime.value }}**
 {% else %}
 *Price data unavailable — agent ran on stub OHLCV.*
 {% endif %}
@@ -46,7 +46,7 @@
 | Headline | Sentiment | Confidence | Horizon |
 |----------|-----------|------------|---------|
 {% for s in sentiment_rows %}
-| {{ s.rationale }} | {{ "%+.2f"|format(s.sentiment) }} | {{ "%.2f"|format(s.confidence) }} | {{ s.horizon }} |
+| {{ s.rationale }} | {{ "%+.2f"|format(s.sentiment) }} | {{ "%.2f"|format(s.confidence) }} | {{ s.horizon.value }} |
 {% endfor %}
 {% else %}
 *No headlines scored — news scout returned empty.*
