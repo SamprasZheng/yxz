@@ -55,6 +55,7 @@ Use `.claude/agents/` for repeatable role-specific work:
 - `technical-reviewer-agent`: review technical claims and missing evidence.
 - `seo-social-agent`: create metadata, social copy, and OG image direction.
 - `firefly-reviewer-agent`: audit Firefly mission outputs and wiki synthesis.
+- `serenity-analyst-agent`: "Serenity"-style supply-chain bottleneck equity research on AI/semi hardware themes (CPO, HBM, passives, PCB). Reads `shark/serenity.md` + `shark/watchlist.yaml`. Research only — not financial advice.
 - `git-commit-push`: stage, commit, and push with git error handling.
 
 ## Claude Commands

@@ -33,6 +33,7 @@ yxz/
     index.md               LLM-maintained catalog
     log.md                 Append-only session history
   agents/                  Firefly orbital data center agent stack
+  shark/                   Serenity supply-chain investing framework + watchlist
   .codex/skills/           Repo-local Codex skills
   .claude/agents/          Claude Code subagent definitions
   .claude/commands/        Claude slash-command playbooks
@@ -80,6 +81,7 @@ Claude-specific agents live in `.claude/agents/`:
 - `technical-reviewer-agent`
 - `seo-social-agent`
 - `firefly-reviewer-agent`
+- `serenity-analyst-agent`
 - `git-commit-push`
 
 Install local Git hooks with:

@@ -1,0 +1,127 @@
+# Serenity supply-chain watchlist — seeded from @aleabitoreddit posts + the
+# Goldman Sachs CPO ecosystem map (compiled by GS Global Investment Research).
+#
+# RESEARCH ONLY — NOT FINANCIAL ADVICE.
+#
+# Caveats (read before trusting any code):
+#   - Serenity himself notes "some tickers are wrong" — treat codes as leads to
+#     verify, not facts. Unverified codes are marked `verify: true`.
+#   - Prices / market caps / qualification status decay fast. Re-check before use.
+#   - `ecosystem` = which customer roadmap the name sells into.
+#   - `tier`: T1 high-conviction bottleneck pure play / T2 quality exposure /
+#     T3 basket-only. These are analytical framing, not recommendations.
+#   - `bottleneck: true` = critical-path, hard-to-second-source, pricing power.
+
+meta:
+  source_posts: "Serenity (@aleabitoreddit), Apr 2026"
+  source_table: "Goldman Sachs — Nvidia vs Broadcom CPO ecosystem map"
+  seeded: 2026-05-30
+  disclaimer: "Research/educational only. Not financial advice. Verify all tickers."
+
+themes:
+
+  # =====================================================================
+  cpo:
+    title: Co-Packaged Optics (Nvidia Quantum-X / Spectrum-X vs Broadcom Bailly / Davisson)
+    timeline:
+      nvidia: "Mar-2025 announced CPO switch; early-2026 commercial availability"
+      broadcom: "Oct-2025 Davisson (102.4T) delivered to customers; 2026 production"
+    layers:
+
+      compute_gpu:
+        - { company: Nvidia, ticker: NVDA, ecosystem: [nvidia], role: "GPU (Blackwell, Rubin)" }
+        - { company: AMD, ticker: AMD, ecosystem: [open], role: "GPU (open ecosystem)" }
+        - { company: Intel, ticker: INTC, ecosystem: [open], role: "GPU (open ecosystem)" }
+
+      switch_asic:
+        - { company: Nvidia, ticker: NVDA, ecosystem: [nvidia], role: "Switch ASIC" }
+        - { company: Broadcom, ticker: AVGO, ecosystem: [broadcom], role: "Switch ASIC (Tomahawk 5 / 6)" }
+
+      switch_system:
+        - { company: Nvidia, ticker: NVDA, ecosystem: [nvidia], role: "Spectrum-X / Quantum-X systems" }
+        - { company: Delta Electronics, ticker: 2308.TW, ecosystem: [open], role: "Open switch system" }
+        - { company: Micas Networks, ticker: private, ecosystem: [open], role: "Open switch system" }
+
+      cpo_chip:
+        - { company: TSMC, ticker: 2330.TW, ecosystem: [nvidia, broadcom], role: "CPO chip fabrication", bottleneck: true }
+        - { company: SPIL (ASE), ticker: 3711.TW, ecosystem: [nvidia], role: "CPO chip test" }
+        # Broadcom CPO chip test: TBA
+
+      optical_engine:
+        - { company: TFC Optical, ticker: 300394.SZ, ecosystem: [nvidia, broadcom], role: "Optical engine" }
+        - { company: Browave, ticker: 3163.TWO, ecosystem: [nvidia], role: "Optical engine + shuffle box" }
+        - { company: TSMC, ticker: 2330.TW, ecosystem: [nvidia, broadcom], role: "Optical engine" }
+        - { company: Innolight, ticker: 300308.SZ, ecosystem: [nvidia, broadcom], role: "Optical engine" }
+        - { company: Eoptolink, ticker: 300502.SZ, ecosystem: [broadcom], role: "Optical engine" }
+        - { company: PCL Technology, ticker: 4977.TW, ecosystem: [nvidia, broadcom], role: "Optical engine" }
+
+      fau:  # fiber array unit
+        - { company: FOCI, ticker: 3363.TWO, ecosystem: [nvidia], role: "Fiber array unit (FAU)" }
+        - { company: TFC Optical, ticker: 300394.SZ, ecosystem: [nvidia], role: "FAU" }
+        - { company: Innolight, ticker: 300308.SZ, ecosystem: [nvidia], role: "FAU" }
+        - { company: Advanced Fiber Resources, ticker: 300620.SZ, ecosystem: [nvidia], role: "FAU" }
+
+      connectors:
+        - { company: Nextronics, ticker: 8417.TWO, ecosystem: [nvidia], role: "CPO connector + cage thermal module", tier: T2 }
+        - { company: COXOC, ticker: 6205.TW, ecosystem: [broadcom], role: "CPO connector + cage thermal module", tier: T2 }
+        - { company: Senko, ticker: private, ecosystem: [nvidia], role: "Optical connectors + ELS module" }
+
+      laser_cw:  # the bottleneck layer
+        - { company: Sumitomo, ticker: 8053.T, ecosystem: [nvidia], role: "Laser source / CW laser + ELS", bottleneck: true }
+        - { company: Furukawa, ticker: 5801.T, ecosystem: [nvidia], role: "Laser source / CW laser", bottleneck: true }
+        - { company: VPEC, ticker: 2455.TW, ecosystem: [broadcom], role: "CW laser", bottleneck: true }
+        - { company: Landmark, ticker: 3081.TWO, ecosystem: [broadcom], role: "CW laser", bottleneck: true }
+        - { company: YJ Semitech, ticker: 688498.SS, ecosystem: [broadcom], role: "CW laser", bottleneck: true }
+        - { company: Lumentum, ticker: LITE, ecosystem: [broadcom], role: "CW laser", bottleneck: true }
+        - { company: Coherent, ticker: COHR, ecosystem: [broadcom], role: "CW laser", bottleneck: true }
+
+      fiber:
+        - { company: Corning, ticker: GLW, ecosystem: [nvidia], role: "Fiber" }
+
+      system_assembly:
+        - { company: Hon Hai (Foxconn), ticker: 2317.TW, ecosystem: [nvidia], role: "System-level assembly" }
+        - { company: Fabrinet, ticker: FN, ecosystem: [nvidia], role: "System-level assembly" }
+
+      equipment:
+        - { company: Robotechnik, ticker: 300757.SZ, ecosystem: [nvidia], role: "CPO coupling + test equipment" }
+        - { company: ASMPT, ticker: 0522.HK, ecosystem: [nvidia], role: "CPO coupling equipment" }
+        - { company: All Ring, ticker: 6187.TWO, ecosystem: [nvidia], role: "CPO coupling + test equipment" }
+
+  # =====================================================================
+  hbm:
+    title: HBM4 / HBM4e advanced packaging & metrology (Samsung / SK Hynix supply chain)
+    note: "Korea-heavy. Smaller TAM than CPO. Codes are KOSPI/KOSDAQ 6-digit; verify."
+    names:
+      - company: Auros Technology
+        ticker: "322310"
+        exchange: KOSDAQ
+        role: "Thin-film thickness metrology — HBM4e hybrid bonding (all makers) + HBM4 (Samsung)"
+        comp: "$SIVE + CPO crossed with $AEHR, but for memory (smaller TAM)"
+        status: "In qualification w/ chipmaker; aims for formal orders within the year (per Apr-2026 post)"
+        bottleneck: true
+        tier: T1
+      - { company: Samsung Electro-Mechanics, ticker: "009150", exchange: KOSPI, role: "Large-cap blue-chip exposure", tier: T3, verify: true }
+      - { company: DI (디아이), ticker: "003160", exchange: KOSPI, role: "Burn-in tester", verify: true }
+      - { company: STI, ticker: "039440", exchange: KOSDAQ, role: "Fluxless vacuum equipment", verify: true }
+      - { company: YEST, ticker: "122640", exchange: KOSDAQ, role: "Underfill cure", verify: true }
+      - { company: KC Tech, ticker: "281820", exchange: KOSPI, role: "Hybrid bonding", verify: true }
+      - { company: Taesung, ticker: "323280", exchange: KOSDAQ, role: "Wet process", verify: true }
+      - { company: Chemtronics, ticker: "089010", exchange: KOSDAQ, role: "Wet etch", verify: true }
+      - { company: Philoptics, ticker: "161580", exchange: KOSDAQ, role: "Glass core", bottleneck: true, verify: true }
+
+  # =====================================================================
+  passives_pcb:
+    title: MLCC + inductors + PCB micro-drilling bottleneck
+    mlcc_passives:
+      - { company: Murata, ticker: 6981.T, role: "MLCC (#1)" }
+      - { company: Taiyo Yuden, ticker: 6976.T, role: "MLCC (#3 globally)" }
+      - { company: TDK, ticker: 6762.T, role: "MLCC / inductors" }
+      - { company: Kyocera, ticker: 6971.T, role: "MLCC / components" }
+      - { company: Yageo, ticker: 2327.TW, role: "MLCC / passives" }
+      - { company: Walsin (華新科), ticker: 2492.TW, role: "MLCC / passives" }
+      - { company: Vishay, ticker: VSH, role: "Passives (US)" }
+      - { company: Sakai Chemical, ticker: 4078.T, role: "Barium titanate — MLCC raw-material chemical", bottleneck: true }
+    pcb_drilling:
+      - { company: Topoint Technology, ticker: 8021.TWO, role: "PCB micro-drill bits", bottleneck: true }
+      - { company: Union Tool, ticker: 6278.T, role: "PCB micro-drill bits", bottleneck: true }
+      - { company: Kyocera, ticker: 6971.T, role: "PCB drilling (recurs)" }
