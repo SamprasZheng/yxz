@@ -125,7 +125,7 @@ type: index
 - [[entities/frequency]] — Polkadot-adjacent blockchain optimized for DSNP social-graph throughput
 - [[entities/jamia-gpt]] — Sampras's Custom GPT for Polkadot / JAM / Coretime / XCM / OpenGov
 - [[entities/spacesharks-gpt]] — Sampras's Custom GPT for LEO constellations, ODC, ISL, Taiwan space supply chain
-- [[entities/nvidia]] — NVIDIA Corp; GPU + Nemotron LLM vendor; GTC Taipei 2026 Agent Challenge host; cross-cuts AI, space (Starcloud H100), radiation (Orin TID)
+- [[entities/nvidia]] — NVIDIA Corp; GPU + Nemotron LLM vendor; GTC Taipei 2026 Agent Challenge host; cross-cuts AI, space (Starcloud H100), radiation (Orin TID), client PC (N1X), NVDA equity/valuation
 - [[entities/nous-research]] — Open-source AI lab founded 2023; CEO Jeffrey Quesnelle + Teknium/Karan4D/Shivani Mitra; $65M Series A April 2025 led by Paradigm at $1B valuation; builds Hermes LLMs, Hermes Agent, Psyche decentralized training
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
@@ -153,6 +153,11 @@ type: index
 - [[entities/alpaca-markets]] — Developer-first brokerage (FINRA/SIPC); commission-free Trading API + Market Data API; v1 trader agent uses data-only
 - [[entities/polygon-io]] — Financial market data platform (rebranded Massive Oct 2025); full SIP tape, tick-level history, options Greeks; premium upgrade path
 - [[entities/sec-edgar]] — SEC mandatory filing system (free, no auth); 10-K/10-Q/8-K fundamentals via REST + EFTS full-text search; 10 req/s limit
+
+- [[entities/nvidia-n1x]] — NVIDIA + MediaTek Arm PC SoC; Blackwell GPU; Windows-on-Arm; unveiled Computex 2026
+- [[entities/mediatek]] — Taiwanese fabless SoC designer (TWSE 2454); Dimensity, Wi-Fi 7, N1X CPU die, Google TPU ASIC
+- [[entities/qorvo]] — US RF FEM/PAMiD/BAW supplier (QRVO); pending $22B Skyworks merger; MediaTek Wi-Fi 7 design win
+- [[entities/skyworks]] — US RF FEM supplier (SWKS); Apple-concentrated; $2.6B Broad Markets; MediaTek 6G FR3 co-demo
 
 ## Concepts
 
@@ -183,6 +188,7 @@ type: index
 - [[concepts/dpd-digital-predistortion]] — PA linearization: memoryless/memory polynomial/NN-LM; NN DPD NMSE −26 dB, ACPR −4 dB; Indirect Learning; CUDA acceleration
 - [[concepts/zero-if-transmitter]] — Direct conversion architecture: lowest DAC sampling rate; LO leakage + IQ imbalance are core challenges; DAC quantization noise vs. SEM; delta-sigma noise shaping
 - [[concepts/evm-calibration]] — EVM measurement + calibration techniques: VSA six-window diagnosis; LO leakage ternary search; IQ pre-distortion matrix; low/high symbol rate EVM root cause analysis
+- [[concepts/rf-front-end-module]] — Cellular/Wi-Fi FEM: PA/LNA/switch/filter integration; PAMiD; BAW vs SAW; GaAs HBT; Wi-Fi 7 iFEM; 4G→5G content growth
 - [[concepts/orbit-dose-budgeting]] — Closed-form TID/SEE trade-study calculators; Poisson SEE framing; day-one mission sizing
 - [[concepts/dsnp]] — Decentralized Social Networking Protocol; user-owned portable social graph; hosted on Frequency
 - [[concepts/plurality]] — Audrey Tang's governance philosophy: multi-perspective, inclusive, adaptive; civic-tech ↔ on-chain OpenGov parallel
@@ -221,6 +227,7 @@ type: index
 - [[concepts/openshell-runtime]] — Sandbox runtime layer under NemoClaw/OpenClaw; policy enforcement and credential egress mediation
 - [[concepts/dgx-spark]] — NVIDIA small-form-factor reasoning workstation context for GTC Taipei / Nemotron / Hermes / NemoClaw deployments
 - [[concepts/openvino]] — Intel edge-inference optimization toolkit; Raymond Lo career anchor and comparison point to NVIDIA local-agent stack
+- [[concepts/windows-on-arm]] — Microsoft's Arm-CPU Windows platform; Prism emulation; Copilot+ PC; Qualcomm Snapdragon X vs NVIDIA N1X; CUDA-on-Arm
 
 - [[concepts/satellite-netops-agents]] — LLM agents for satellite Network Operations (NetOps) vs platform operations (SatOps): SCNOC-Agentic as lead paper; 6G NTN adjacent work; landscape table by maturity; Spacesharks lifecycle-fusion framing
 - [[concepts/mcp-aerospace-applications]] — Model Context Protocol in aerospace: MCP refresher; what MCP brings to SPICE/STK/astrodynamics tool access; four verified open-source MCP-aerospace repos (IO Aerospace, STK-MCP, aerospace-mcp, NASA-MCP); honest assessment of owner's "architecturally leading" claim; no enterprise production deployments found
@@ -257,6 +264,7 @@ type: index
 - [[concepts/robotaxi-fsd-regulation-tracker]] — CA DMV permit ladder + CPUC + NHTSA SGO; three-gate re-rating (no driver + paid + geofence)
 - [[concepts/cyber-insurance-attack-frequency-indicator]] — Cyber rate index + claims freq + IC3 losses; soft-market-trap interpretation
 - [[concepts/zero-dte-options-share-indicator]] — Market-structure/regime signal (not fundamental); dealer-gamma vol amplification; position-sizing input
+- [[concepts/leveraged-etf-decay]] — Daily-reset volatility decay/beta slippage math; L×R − ½L(L−1)σ² drag; single-stock leveraged ETF risk; trading-not-holding
 
 ## Synthesis
 
