@@ -67,6 +67,16 @@ With 1 hidden layer and a small number of neurons, NN achieves near-equivalent c
 - NN feedforward propagation parallelized with 2 threads
 - Way1: thread1/2 each handles consecutive rows; Way2: thread1/2 interleave rows
 
+## Forward Trajectory & Compute Lineage (scenario)
+
+DPD is one of the clearest places where the RF and AI-compute stacks converge. The arc:
+
+- **1990s–2010s:** fixed memoryless / memory-polynomial DPD on dedicated DSP/FPGA fabric.
+- **2020s:** neural-network DPD moves from research to product as PAPR rises (massive-MIMO, wideband SATCOM). Commercial example: RFHIC demonstrated GaN-on-SiC PAs with MaxLinear DPD at IMS 2024, pairing the [[concepts/hybrid-phased-array|GaN front end]] with adaptive linearization.
+- **Forward (projection):** per-element *online* NN-DPD that re-trains in orbit as the PA ages and temperature swings — the calibration table ([[concepts/rf-soc-debug-taxonomy|OTP/MCN-managed]]) becomes a live model rather than a one-time factory artifact. The CUDA acceleration above is the seed of this: the same GPU compute that runs [[concepts/orbital-data-center|orbital data centers]] and [[concepts/nemotron|on-board reasoning models]] can host adaptive DPD, making linearization a software-update problem. **Label:** projection, not a fielded capability.
+
+This is the bridge from the RF front-end cluster to the [[entities/nvidia|NVIDIA]]/ODC compute stack — see also [[concepts/cots-gpu-radiation-risk]] for what running that compute in orbit costs.
+
 ## Related Links
 
 - [[concepts/evm-calibration]] -> EVM/ACPR metrics used to validate PA correction
@@ -76,3 +86,10 @@ With 1 hidden layer and a small number of neurons, NN achieves near-equivalent c
 
 - [[concepts/aesa]] — parent system where DPD is applied
 - [[concepts/hybrid-phased-array]] — signal path containing PA
+- [[concepts/cots-gpu-radiation-risk]] — radiation cost of running adaptive-DPD compute in orbit
+- [[concepts/nemotron]] / [[entities/nvidia]] — shared GPU compute lineage for on-board NN-DPD
+- [[synthesis/phased-array-rf-frontend-supply-chain]] — where DPD-paired GaN PAs sit in the supply chain
+
+## Source (accessed 2026-05-31)
+
+- RFHIC GaN-on-SiC + MaxLinear DPD demonstration, IMS 2024: [RFHIC product demo](https://rfhic.com/product-demo/rfhics-gan-on-sic-solutions-featuring-maxlinears-dpd-at-ims-2024/)
