@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "scan_date": "2026-05-31",
+    "run_mode": "HEURISTIC_STUB",
+    "llm_backend": "disabled",
+    "trader_offline": true,
+    "pipeline_status": "NOT_FOUND",
+    "blockers": [
+      "agents/src/trader/ does not exist — trader pipeline not yet implemented in this repo",
+      "yfinance HTTP 403 from remote execution environment (host not in allowlist)",
+      "LLM_BACKEND=anthropic unavailable without trader pipeline"
+    ],
+    "data_sources": [
+      "WebSearch (CNBC, TheStreet, Yahoo Finance, GuruFocus snippets)",
+      "Search-engine-extracted price quotes for 2026-05-29 close"
+    ],
+    "price_date": "2026-05-29",
+    "market_context": {
+      "sp500_close": 7580.06,
+      "sp500_1d_pct": 0.22,
+      "nasdaq_close": 26972.62,
+      "nasdaq_1d_pct": 0.20,
+      "djia_close": 51032.46,
+      "djia_1d_pct": 0.72,
+      "consecutive_weekly_gains": 9,
+      "note": "All-time highs on May 29; AI-fueled rally; Computex week ahead"
+    }
+  },
+  "tickers": [
+    {
+      "ticker": "NVDA",
+      "close_price": 211.14,
+      "close_date": "2026-05-29",
+      "prev_close": 214.27,
+      "realized_1d_pct": -1.45,
+      "direction": "long",
+      "confidence": 0.78,
+      "sizing_sigma": 1.6,
+      "news_momentum": 0.90,
+      "thesis": "Computex week catalyst (NVDA keynote expected); $6.5B photonics bet signals long-term data-center moat; first NVDA-powered Windows PC launching with MSFT. Short-term pullback (-1.45%) on profit-taking is buyable dip.",
+      "risks": ["Computex hype already priced", "Export controls re-acceleration", "Short-term profit-taking post ATH run"]
+    },
+    {
+      "ticker": "MSFT",
+      "close_price": 450.24,
+      "close_date": "2026-05-29",
+      "prev_close": 426.99,
+      "realized_1d_pct": 5.45,
+      "direction": "long",
+      "confidence": 0.72,
+      "sizing_sigma": 1.4,
+      "news_momentum": 0.85,
+      "thesis": "Strong single-day beat (+5.45%) driven by NVDA-powered Windows PC partnership announcement and Copilot momentum. Computex-adjacent beneficiary. Near-term follow-through likely but size down after the gap.",
+      "risks": ["Overextended after 5.45% gap", "Position sizing risk post-gap", "Macro rate sensitivity"]
+    },
+    {
+      "ticker": "AMZN",
+      "close_price": 270.64,
+      "close_date": "2026-05-29",
+      "prev_close": 274.02,
+      "realized_1d_pct": -1.23,
+      "direction": "long",
+      "confidence": 0.60,
+      "sizing_sigma": 1.0,
+      "news_momentum": 0.65,
+      "thesis": "AWS AI infrastructure spending continues; Q1 2026 earnings beat. Mild -1.23% pullback within broader AI bull market. Long-term secular AI tailwind intact.",
+      "risks": ["Retail segment margin pressure", "Capex escalation risk", "Near-term tariff noise"]
+    },
+    {
+      "ticker": "AMD",
+      "close_price": 516.10,
+      "close_date": "2026-05-29",
+      "prev_close": 518.07,
+      "realized_1d_pct": -0.38,
+      "direction": "long",
+      "confidence": 0.55,
+      "sizing_sigma": 0.8,
+      "news_momentum": 0.60,
+      "thesis": "MI300X gaining data center traction as NVDA alternative; Computex-adjacent AI PC exposure. Slight underperformance vs market not concerning at -0.38%.",
+      "risks": ["NVDA competition intensifying", "PC market softer than expected", "Market share gains slower than projected"]
+    },
+    {
+      "ticker": "META",
+      "close_price": 632.51,
+      "close_date": "2026-05-29",
+      "prev_close": 635.29,
+      "realized_1d_pct": -0.44,
+      "direction": "neutral",
+      "confidence": 0.50,
+      "sizing_sigma": 0.9,
+      "news_momentum": 0.55,
+      "thesis": "Declining after six-day rally; near-term mean-reversion risk. AI monetization story intact but valuation stretched post-run. Neutral stance; watch for reset entry.",
+      "risks": ["Six-day rally exhaustion", "Regulatory headwinds EU", "FTC antitrust risk"]
+    },
+    {
+      "ticker": "AAPL",
+      "close_price": 311.35,
+      "close_date": "2026-05-29",
+      "prev_close": 312.51,
+      "realized_1d_pct": -0.37,
+      "direction": "neutral",
+      "confidence": 0.45,
+      "sizing_sigma": 0.6,
+      "news_momentum": 0.50,
+      "thesis": "WWDC approaching (typically early June) as next catalyst. Modest -0.37% pullback from ATH. No near-term earnings or product catalyst clear; defensive hold.",
+      "risks": ["AI integration pace slower than peers", "China revenue headwind persists", "iPhone demand plateau"]
+    },
+    {
+      "ticker": "TSLA",
+      "close_price": 435.79,
+      "close_date": "2026-05-29",
+      "prev_close": 442.10,
+      "realized_1d_pct": -1.43,
+      "direction": "neutral",
+      "confidence": 0.42,
+      "sizing_sigma": 0.7,
+      "news_momentum": 0.40,
+      "thesis": "Delivery growth slowing; FSD progress narrative vs execution gap. -1.43% mild underperformance. High beta, political risk via Musk-government ties. Abstain from new positions.",
+      "risks": ["Delivery miss risk Q2 2026", "Robotaxi timeline slippage", "Brand damage from Musk political exposure"]
+    },
+    {
+      "ticker": "GOOGL",
+      "close_price": 380.34,
+      "close_date": "2026-05-29",
+      "prev_close": 390.07,
+      "realized_1d_pct": -2.51,
+      "direction": "abstain",
+      "confidence": 0.35,
+      "sizing_sigma": 0.5,
+      "news_momentum": 0.35,
+      "thesis": "Significant underperformance (-2.51%) vs market on up day — possible sector rotation from GOOGL to MSFT/NVDA. AI competition narrative (OpenAI, Anthropic, Perplexity) weighing. Abstain until structure clarifies.",
+      "risks": ["Search market share erosion from AI chatbots", "DOJ antitrust ruling uncertainty", "GOOGL-specific rotation out of AI laggard"]
+    }
+  ],
+  "fom_table": [
+    {"ticker": "NVDA", "confidence": 0.78, "norm_sigma": 1.00, "recent_hit_rate": 0.50, "news_momentum": 0.90, "fom": 0.802, "tier": "tier-1"},
+    {"ticker": "MSFT", "confidence": 0.72, "norm_sigma": 0.875, "recent_hit_rate": 0.50, "news_momentum": 0.85, "fom": 0.736, "tier": "tier-1"},
+    {"ticker": "AMZN", "confidence": 0.60, "norm_sigma": 0.625, "recent_hit_rate": 0.50, "news_momentum": 0.65, "fom": 0.593, "tier": "tier-1"},
+    {"ticker": "AMD",  "confidence": 0.55, "norm_sigma": 0.500, "recent_hit_rate": 0.50, "news_momentum": 0.60, "fom": 0.530, "tier": "tier-1"},
+    {"ticker": "META", "confidence": 0.50, "norm_sigma": 0.5625,"recent_hit_rate": 0.50, "news_momentum": 0.55, "fom": 0.524, "tier": "tier-1"},
+    {"ticker": "AAPL", "confidence": 0.45, "norm_sigma": 0.375, "recent_hit_rate": 0.50, "news_momentum": 0.50, "fom": 0.443, "tier": "tier-2"},
+    {"ticker": "TSLA", "confidence": 0.42, "norm_sigma": 0.4375,"recent_hit_rate": 0.50, "news_momentum": 0.40, "fom": 0.439, "tier": "tier-2"},
+    {"ticker": "GOOGL","confidence": 0.35, "norm_sigma": 0.3125,"recent_hit_rate": 0.50, "news_momentum": 0.35, "fom": 0.369, "tier": "tier-2"}
+  ],
+  "fom_formula": "FOM = 0.4 * confidence + 0.3 * norm_sizing_sigma + 0.2 * recent_hit_rate + 0.1 * news_momentum",
+  "fom_notes": "norm_sizing_sigma is sizing_sigma / max(sizing_sigma) across watchlist. recent_hit_rate seeded at 0.50 (uniform prior, day-1 no history). All inputs normalized to [0,1]."
+}
