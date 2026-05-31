@@ -199,4 +199,5 @@ type: index
 - [[synthesis/cdm-pc-decisioning]] — End-to-end CDM → Pc → maneuver decision workflow; NASA CARA thresholds; MVP Space-Track cdm_public recipe with Python code; commercial upgrade path (LeoLabs/Slingshot); Firefly/NemoClaw integration
 - [[synthesis/faa-notam-launch-lifecycle]] — FAA NOTAM lifecycle end-to-end: AST licensing chain, NOTAM FSM, AHA vs TFR, USCG NOTMAR, FCC parallel track, LCOLA/CDM handoff, public-only MVP cookbook with slip-probability Python
 - [[synthesis/fcc-ibfs-filings-coordination]] — FCC IBFS satellite filings and interference coordination: Schedule S, EPFD, NGSO/GSO pipeline, API→CR→Notification, Starlink/Kuiper/AST rulings, public-data MVP + upgrade path
+- [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region (US/Japan/Korea/China/Europe/Taiwan) supply-chain map of the phased-array RF front-end stack (beamformer IC → GaN PA → module → integration → space-grade); SATCOM beamformer-IC market ≈$2.87B (2025)→$7.94B (2034); Taiwan upstream-strong/midstream-absent; component companion to leo-taiwan-odc-gap (2026-05-31)
 

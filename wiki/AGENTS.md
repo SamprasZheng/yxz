@@ -127,6 +127,7 @@ Current synthesis pages (keep this list in sync when adding a new one):
 - `[[synthesis/fcc-ibfs-filings-coordination]]` — FCC IBFS + Schedule S + ITU EPFD pipeline; Starlink/Kuiper/AST rulings; public-data MVP. Canonical for the interference-attribution verb.
 - `[[synthesis/leo-taiwan-odc-gap]]` — Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window. Canonical for Taiwan supply-chain investment framing.
 - `[[synthesis/sampras-2026-engineering-thesis]]` — AI × Space × Crypto × RF × Radiation integrated thesis; 2026 convergence triggers and falsifiability table. Canonical for cross-domain personal-roadmap framing.
+- `[[synthesis/phased-array-rf-frontend-supply-chain]]` — Six-region (US/Japan/Korea/China/Europe/Taiwan) supply-chain map of the phased-array RF front-end stack (beamformer IC → GaN PA → module → array integration → space-grade transmitter). Canonical for "who leads the AESA/SATCOM RF front-end and where Taiwan sits"; component-level companion to the LEO Taiwan ODC gap.
 
 When a query lands in any of these domains, the workflow is:
 
