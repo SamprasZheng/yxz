@@ -58,6 +58,13 @@ type: index
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
 
+- [[sources/owasp-llm-top10-2025]] — OWASP Top 10 for LLM Applications 2025: LLM01 Prompt Injection (direct vs indirect) + LLM06 Excessive Agency ("mandatory human approval for consequential actions"); canonical agent-security risk taxonomy (ingested 2026-06-01)
+- [[sources/openai-instruction-hierarchy-2024]] — "The Instruction Hierarchy" (Wallace et al., OpenAI, arXiv:2404.13208): train LLMs to prioritize privileged instructions (system > user > tool/content); model-side complement to file-level immutability (ingested 2026-06-01)
+- [[sources/langgraph-hitl-interrupt-2025]] — LangGraph human-in-the-loop API: interrupt() / Command(resume=...) with persistent checkpointing; production approval-gate pattern (replaces dev-only NodeInterrupt/breakpoints) (ingested 2026-06-01)
+- [[sources/willison-lethal-trifecta-2025]] — Simon Willison "The lethal trifecta" (2025-06-16): private-data access + untrusted content + external comms = exfiltration chain; structural (not probabilistic) mitigation; canonical agent-exfil threat model (ingested 2026-06-01)
+- [[sources/gvisor-security-model]] — gVisor Security Model (Google/gVisor Project): Sentry/Gofer architecture, <20 host syscalls, threat model and residual surface (ingested 2026-06-01)
+- [[sources/firecracker-microvm-paper]] — Firecracker: Lightweight Virtualization for Serverless Applications (AWS, NSDI '20): KVM microVM, 125 ms boot, <5 MiB overhead, minimal device model, AWS Lambda + Vercel Sandbox substrate (ingested 2026-06-01)
+
 ## Entities
 
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
@@ -189,6 +196,12 @@ type: index
 - [[concepts/calibrated-confidence-llm]] — Calibration techniques (temperature scaling, Platt, verbalised, P(IK), conformal prediction, selective prediction); three-class `answer / abstain / escalate` output; coverage-risk operating point per decision-verb class; Layer 3 of the Spacesharks trust stack
 - [[concepts/agentic-provenance]] — Four-layer trust model (data / model / decision / system); W3C PROV-DM / C2PA / NIST AI 600-1 / EU AI Act Article 50 / CycloneDX ML-BOM analogues; reproducibility invariant tying every published row back to its raw evidence blob; the labelled-lifecycle-dataset moat is provenance-defensible only
 
+- [[concepts/agent-execution-guardrails]] — Execution/command guardrails: HITL approval gates on destructive commands (rm -rf / git push --force / script exec), tool-call allowlists vs path blacklists, read-only immutable "brain" files, instruction-hierarchy / prompt-injection defense; the "assume the dumbest mistake" axiom
+- [[concepts/agent-egress-control]] — Outbound-traffic allowlisting for agents: deny-default egress, SSRF resolve-then-verify (DNS rebinding defense), L7 forward proxy as the only sanctioned path out; severs leg 3 of the lethal trifecta
+- [[concepts/agent-data-sanitization]] — PII/secret masking before LLM calls: reversible tokenization vs irreversible redaction; Microsoft Presidio; local entity-map → cleaned prompt → restore-on-response pattern for finance-vault agents
+- [[concepts/agent-resource-circuit-breakers]] — Hard token/cost caps + max-iteration/recursion limits (LangChain max_iterations=15, LangGraph recursion_limit=25); circuit-breaker pattern (Nygard/Fowler/Hystrix) vs runaway loops; the $47K autonomous-loop postmortem; OpenAI dropped hard spend cutoffs → app-layer breaker mandatory
+- [[concepts/agent-sandboxing-isolation]] — Vendor-neutral isolation taxonomy: bare process → namespaces → gVisor → Firecracker/Kata microVM → full VM; Linux primitives map; agent-native sandbox products (E2B/Daytona/Modal/Vercel/Anthropic); container escape as residual threat; sandboxing as the root guardrail layer
+
 ## Synthesis
 
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window and three breakthrough paths (PCB integration / defense catalysis / upstream extension)
@@ -200,4 +213,5 @@ type: index
 - [[synthesis/faa-notam-launch-lifecycle]] — FAA NOTAM lifecycle end-to-end: AST licensing chain, NOTAM FSM, AHA vs TFR, USCG NOTMAR, FCC parallel track, LCOLA/CDM handoff, public-only MVP cookbook with slip-probability Python
 - [[synthesis/fcc-ibfs-filings-coordination]] — FCC IBFS satellite filings and interference coordination: Schedule S, EPFD, NGSO/GSO pipeline, API→CR→Notification, Starlink/Kuiper/AST rulings, public-data MVP + upgrade path
 - [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region (US/Japan/Korea/China/Europe/Taiwan) supply-chain map of the phased-array RF front-end stack (beamformer IC → GaN PA → module → integration → space-grade); SATCOM beamformer-IC market ≈$2.87B (2025)→$7.94B (2034); Taiwan upstream-strong/midstream-absent; component companion to leo-taiwan-odc-gap (2026-05-31)
+- [[synthesis/ai-agent-guardrails-architecture]] — Defense-in-depth architecture for caging autonomous local agents: the four guardrail dimensions (execution/command · network/exfiltration · resource/spending · infrastructure isolation) layered on a sandbox substrate with [[concepts/agentic-provenance]] as cross-cutting audit; NemoClaw as concrete instantiation + the circuit-breaker gap; minimum-viable guardrail checklist for a solo operator's finance/crypto agent. Canonical for "how to cage a local autonomous agent"
 
