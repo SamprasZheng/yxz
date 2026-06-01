@@ -128,6 +128,7 @@ Current synthesis pages (keep this list in sync when adding a new one):
 - `[[synthesis/leo-taiwan-odc-gap]]` — Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window. Canonical for Taiwan supply-chain investment framing.
 - `[[synthesis/sampras-2026-engineering-thesis]]` — AI × Space × Crypto × RF × Radiation integrated thesis; 2026 convergence triggers and falsifiability table. Canonical for cross-domain personal-roadmap framing.
 - `[[synthesis/phased-array-rf-frontend-supply-chain]]` — Six-region (US/Japan/Korea/China/Europe/Taiwan) supply-chain map of the phased-array RF front-end stack (beamformer IC → GaN PA → module → array integration → space-grade transmitter). Canonical for "who leads the AESA/SATCOM RF front-end and where Taiwan sits"; component-level companion to the LEO Taiwan ODC gap.
+- `[[synthesis/polkadot-2026-jam-tokenomics-six-region]]` — Unifying frame for Polkadot's 2026 thesis (JAM architecture + DOT hard-cap tokenomics + coretime burn + Proof-of-Personhood), the six-region adoption map, and the shared long-horizon "fee-funded security" question. Canonical for "how do Polkadot's 2026 protocol/monetary/identity moves fit together and where does each region sit."
 
 When a query lands in any of these domains, the workflow is:
 

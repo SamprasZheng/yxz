@@ -46,7 +46,10 @@ Layer-0 blockchain protocol enabling interoperability between heterogeneous bloc
 | NOMT (~10× TPS boost) | 🔜 2026 |
 | 500ms BASTI blocks | 🔜 2026 |
 | CoreChain Phase 1 | 🔜 2026 |
-| [[concepts/jam]] mainnet | 🔜 Post-2026 |
+| [[concepts/jam]] **open testnet** | ✅ **January 2026** (~43 teams / 15 languages / 10 M DOT prize) |
+| [[concepts/jam]] mainnet | 🔜 2026 target, via OpenGov referendum |
+| [[concepts/dot-hard-cap]] (2.1 B), first issuance cut | 🔜 **2026-03-14** (Ref. 1710, "Wish for Change", 81%) |
+| [[concepts/proof-of-personhood]] (Project Individuality) | 🔜 DIM1 from Q4 2025; Ref. 1783 $3 M funding |
 
 ## Key ecosystem projects
 
@@ -55,6 +58,21 @@ Layer-0 blockchain protocol enabling interoperability between heterogeneous bloc
 - **Coretime market:** [[concepts/regionx]]
 - **DePIN:** peaq, covered in [[sources/polkasharks-ep5-peaq-depin]]
 - **Japan Web3:** Astar
+
+## Six-region adoption & regulatory map (2026 — 台美日韓中國歐洲)
+
+Polkadot is a globally-distributed protocol; its development, capital, regulation, and community sit in different places. Snapshot as of mid-2026:
+
+| Region | Role in the Polkadot stack | 2026 regulatory / market state | Lead nodes |
+|---|---|---|---|
+| **Europe** | **Core development & governance home.** Web3 Foundation (Zug, Switzerland); Parity Technologies (Berlin/London). JAM Gray Paper, runtime, and OpenGov tooling originate here. | Swiss FINMA token clarity; EU MiCA fully in force; eIDAS 2.0 EUDI wallets due Dec 2026 (relevant to [[concepts/proof-of-personhood]]) | Web3 Foundation, Parity, [[entities/gavin-wood]] |
+| **US** | **Capital-markets gateway, regulatory-constrained.** No US-based core dev; main story is institutional access. | **DOT spot-ETF filings pending** — 21Shares (S-1, Jan 2026) + Grayscale via Nasdaq (19b-4); SEC decisions repeatedly extended through 2025–2026; Bloomberg analysts rate odds "pretty good." Net: access improving, dev presence thin. | 21Shares, Grayscale/Nasdaq |
+| **Japan** | **Strongest Asian app-chain ecosystem.** [[entities/polkadot]] → **Astar Network** (Sota Watanabe / Startale Labs) is the enterprise/gaming gateway, dual-deployed Polkadot + Ethereum. | Sony Innovation Fund led **$13 M into Startale (Jan 2026)**; Astar fixed-supply 10 B ASTR from March 2026; FSA **"Digital Year-One"** crypto reform | Astar, Startale, Sony Soneium (adjacent) |
+| **Korea** | **Retail-liquidity & exchange demand.** Strong retail trading; DOT listed on major won-pairs. | Bank-linked real-name exchange rules; tightening institutional framework 2025–2026 | Upbit/Bithumb listings |
+| **China** | **Developer & education base under a trading ban.** Crypto trading banned (2021) but Mandarin dev/education community remains substantial. | Trading prohibited; mainland real-name-ID regime hostile to permissionless PoP; activity routes via HK | [[entities/polkaworld]] (co-hosted Gavin's China JAM tour, 874 attendees) |
+| **Taiwan** | **Education & civic-tech affinity hub.** Owner's home base; dense ambassador/education layer; cultural fit with consent-based identity via [[concepts/plurality]]. | FSC VASP registration regime maturing 2025–2026; planned national eID | [[entities/polkasharks]], [[entities/sampras]], [[entities/audrey-tang]] |
+
+**Pattern:** development and governance gravity in **Europe**; capital-access gravity in the **US** (ETF-led); the deepest *applied* ecosystem in **Japan** (Astar + Sony-adjacent); retail liquidity in **Korea**; a large but trading-banned dev/education base in **China**; and an education/civic-tech affinity layer in **Taiwan**. The 2026 tokenomics wave (DOT 2.1 B cap + Astar 10 B cap, same quarter — see [[concepts/dot-hard-cap]]) is explicitly an *institutional-readiness* move aimed at the US-ETF and Japan-FSA audiences.
 
 ## Information and education network
 
