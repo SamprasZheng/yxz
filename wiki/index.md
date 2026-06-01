@@ -202,3 +202,7 @@ type: index
 - [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region (US/Japan/Korea/China/Europe/Taiwan) supply-chain map of the phased-array RF front-end stack (beamformer IC → GaN PA → module → integration → space-grade); SATCOM beamformer-IC market ≈$2.87B (2025)→$7.94B (2034); Taiwan upstream-strong/midstream-absent; component companion to leo-taiwan-odc-gap (2026-05-31)
 - [[synthesis/polkadot-2026-jam-tokenomics-six-region]] — unifying frame for Polkadot's 2026 thesis: scarce token ([[concepts/dot-hard-cap]] 2.1B, Ref. 1710) + abundant durable blockspace ([[concepts/jam]] RISC-V open testnet Jan 2026 + [[concepts/agile-coretime]] burn) + verified-human demand ([[concepts/proof-of-personhood]] Project Individuality); six-region adoption map + shared 100-year fee-funded-security question; falsifier table (2026-06-01)
 
+## Trader / Daily Research
+
+- [[synthesis/daily-trader-2026-06-01]] — Bootstrap stub run (2026-06-01): no prior recommendations to backtest; 15-ticker seed watchlist (NVDA/AAPL/TSLA/MSFT/AMD/GOOGL/META/AMZN/AVGO/TSM/ARM/SMCI/PLTR/INTC/MSTR); all verdicts abstain due to network policy blocking yfinance (HTTP 403) + trader CLI not yet built; FOM formula v1 established (0.4×confidence + 0.3×norm_σ + 0.2×hit_rate + 0.1×news_momentum); infrastructure TODOs documented
+

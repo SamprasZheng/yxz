@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-06-01] trader | daily-trader bootstrap stub — network-blocked, FOM v1 formula established, trader CLI scaffold TODOs documented; 15-ticker seed watchlist; all verdicts abstain (yfinance HTTP 403 + no trader CLI); scan artifact: agents/outputs/scan-2026-06-01.json
+
 ## [2026-06-01] deepen | Polkadot core protocol & tokenomics cluster (JAM / hard-cap / coretime / PoP)
 **Rotation:** the only prior `deepen` pass was 2026-05-31 (RF/phased-array), so I rotated to a different domain. **Cluster chosen:** Polkadot/Web3 core protocol + tokenomics — the stalest remaining domain (last substantive touch 2026-04-19; every other domain was worked 2026-05-24, and RF was just deepened 2026-05-31, so it was explicitly skipped to honour the rotation rule). **Pages deepened (5):** [[concepts/jam]], [[concepts/dot-hard-cap]], [[concepts/agile-coretime]], [[concepts/proof-of-personhood]], [[entities/polkadot]]. **New synthesis (1):** [[synthesis/polkadot-2026-jam-tokenomics-six-region]] — unifying frame "scarce token + abundant durable blockspace + verified-human demand," six-region map, falsifier table, shared 100-year fee-funded-security question.
 
