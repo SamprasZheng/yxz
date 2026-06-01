@@ -131,6 +131,7 @@ Current synthesis pages (keep this list in sync when adding a new one):
 - `[[synthesis/ai-quant-trading-architecture-improvements]]` — AI quant trading three-layer architecture engineering memo (event-driven + CPCV + LLM-as-feature-engineer + volatility targeting + circuit breakers). Canonical for "how to harden the 3-layer quant architecture to production grade."
 - `[[synthesis/ai-quant-trading-oss-stack-selection]]` — AI quant trading OSS selection guide: which open-source project per layer + per trading style recommendation table. Canonical for "which OSS project per layer + per trading style."
 - `[[synthesis/us-equity-secondary-variable-dashboard]]` — 12-variable US-equity leading-indicator monitoring dashboard for the trader agent; decomposes macro narratives into verifiable earnings + market-structure signals. Canonical for "which secondary variables to watch per sector and how to read them."
+- `[[synthesis/polkadot-2026-jam-tokenomics-six-region]]` — Unifying frame for Polkadot's 2026 thesis (JAM architecture + DOT hard-cap tokenomics + coretime burn + Proof-of-Personhood), the six-region adoption map, and the shared long-horizon "fee-funded security" question. Canonical for "how do Polkadot's 2026 protocol/monetary/identity moves fit together and where does each region sit."
 
 When a query lands in any of these domains, the workflow is:
 
