@@ -54,6 +54,7 @@ type: index
 - [[sources/itu-radio-regulations-article-22-2023]] — ITU Radio Regulations Article 22 EPFD limits + Resolution 76 (Rev.WRC-23) aggregate limits; free EPFD validation software at itu.int/epfdsupport/ (2023)
 - [[sources/fcc-starlink-gen2-kuiper-rulings-2022-2024]] — FCC constellation rulings 2020–2024: Starlink Gen2 7,500 sats (FCC 22-91), V-band (DA-24-1193), Kuiper 3,232 sats, AST SpaceMobile 248 sats SCS (2022–2024)
 
+- [[sources/kol-digest-2026-06-02]] — KOL + keyword digest 2026-06-02: Anthropic IPO filing; Nemotron 3 Ultra + NemoClaw GTC Taipei launch; OpenClaw 2026.6.1-beta.1; Claude Code June 15 billing split; 11 keywords / 49 items / 0 KOLs
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
@@ -108,6 +109,8 @@ type: index
 - [[entities/privateer-space]] — Honolulu SSA startup; Wayfinder visualization + TerraScope geospatial AI (Orbital Insight acquisition May 2024); $56.5M Series A; CEO Alex Fielding; Steve Wozniak co-founder
 - [[entities/aiko-space]] — Turin Italy on-board autonomy startup; GENE anomaly detection (4/5 anomalies in 3 min, Tyvak International deployment); ESA ARTES funding; Thales Alenia Space partner; €7M total funding; founded 2017
 
+- [[entities/anthropic]] — AI safety company; Claude family (Opus 4.8 / Sonnet 4.6 / Haiku 4.5); Claude Code CLI; confidential IPO S-1 filed June 1, 2026 (~$965B valuation, $47B ARR)
+- [[entities/openai]] — AI research company; GPT-5.5 family (June 2026 default); ChatGPT; OpenAI Deployment Company; Frontier Governance Framework; Peter Steinberger leading personal-agents division
 - [[entities/nspo]] — Taiwan space-program entity; LEO application collaborator for the X-band transmitter / XT-144 thesis context
 - [[entities/tron-future-tech]] — Taiwan RF/space hardware vendor node for the XT-144 phased-array system
 
