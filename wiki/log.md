@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-06-02] daily-trader | first run — OFFLINE STUB; yfinance blocked (HTTP 403) + trader CLI not yet built; seed watchlist NVDA/META/MSFT/AMZN/GOOGL/AMD/AAPL/TSLA; FOM formula documented; [[synthesis/daily-trader-2026-06-02]] created; network allowlist fix required before live data flows
+
 ## [2026-06-02] deepen | Agentic-payments cluster (x402 / agentic-payments / protocols / Coinbase / Stripe / Visa / Mastercard)
 **Rotation:** prior `deepen` passes were 2026-05-31 (RF/phased-array) and 2026-06-01 (Polkadot core protocol). The agentic-payments cluster was the stalest remaining domain — ingested **2026-04-19 and never deepened** — and was conspicuously missing the corpus's signature six-region comparison and long-horizon view. **Pages deepened (9):** [[concepts/agentic-payments]], [[concepts/x402-protocol]], [[concepts/agentic-payment-protocols]], [[sources/x402-protocol-coinbase-2025]], [[entities/coinbase]], [[entities/stripe]], [[entities/visa]], [[entities/mastercard]]. **New synthesis (1):** [[synthesis/agentic-payments-six-region]] — six-region map + 100-year micropayment thesis + falsifier table; sibling of the phased-array and Polkadot six-region syntheses.
 
