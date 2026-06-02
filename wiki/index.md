@@ -203,3 +203,7 @@ type: index
 - [[synthesis/polkadot-2026-jam-tokenomics-six-region]] — unifying frame for Polkadot's 2026 thesis: scarce token ([[concepts/dot-hard-cap]] 2.1B, Ref. 1710) + abundant durable blockspace ([[concepts/jam]] RISC-V open testnet Jan 2026 + [[concepts/agile-coretime]] burn) + verified-human demand ([[concepts/proof-of-personhood]] Project Individuality); six-region adoption map + shared 100-year fee-funded-security question; falsifier table (2026-06-01)
 - [[synthesis/agentic-payments-six-region]] — six-region (台美日韓中國歐洲) agentic-payments map: US leads on open protocols (x402/ACP/AP2/MPP), China leads on real volume (Alipay AI Pay 120M txns/week), Japan/Korea/Europe/Taiwan bank-led sovereign stablecoins; GENIUS Act vs MiCA vs FSA/FSC; x402 Foundation → Linux Foundation; the 30-year micropayment-failure lineage (Szabo 1999 mental-transaction-cost) + machine-payer inversion + 100-year scenario + falsifier table (2026-06-02)
 
+## Trader / Research
+
+- [[synthesis/daily-trader-2026-06-02]] — Daily trader evaluation 2026-06-02: OFFLINE STUB (first run); yfinance blocked + trader CLI not built; seed watchlist NVDA/META/MSFT/AMZN/GOOGL/AMD/AAPL/TSLA; FOM formula established (0.4×confidence + 0.3×sizing_σ + 0.2×hit_rate + 0.1×news_momentum); tier-1 NVDA/META/MSFT/AMZN/GOOGL by model-prior momentum
+
