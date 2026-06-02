@@ -63,7 +63,9 @@ x402 V2 is a major version upgrade with core changes:
 
 ## Governance
 
-In December 2025, Coinbase and Cloudflare co-founded the **x402 Foundation** to maintain the open specification and prevent the protocol from being monopolized by a single company.
+In December 2025, Coinbase and Cloudflare announced the **x402 Foundation** to maintain the open specification and prevent the protocol from being monopolized by a single company.
+
+> **Updated (2026)**: the Foundation was placed under **Linux Foundation** governance to keep the standard vendor-neutral. It was initially developed by **Coinbase, Cloudflare, and Stripe**, and its founding-intent membership already spans most regions of [[synthesis/agentic-payments-six-region]]: Adyen, AWS, American Express, Ampersend.ai, Base, Circle, Fiserv, Google, **KakaoPay**, Mastercard, Microsoft, Polygon Labs, PPRO, Shopify, Sierra, Solana Foundation, Stripe, thirdweb, and Visa ([Linux Foundation press, 2025](https://www.linuxfoundation.org/press/linux-foundation-is-launching-the-x402-foundation-and-welcoming-the-contribution-of-the-x402-protocol); [Decrypt](https://decrypt.co/363173/coinbase-linux-foundation-launch-x402-foundation)). China and Taiwan are the conspicuous absentees from the membership list.
 
 ## Supported Ecosystem
 
@@ -83,18 +85,24 @@ In December 2025, Coinbase and Cloudflare co-founded the **x402 Foundation** to 
 | Settlement speed | T+1~T+3 | Instant (but intermediated) | < 2 second on-chain finality |
 | Fee | 3% | 2.9%+$0.30 | ~$0.0001 |
 
-## Adoption Status (2026 Q1)
+## Adoption Status (2026 Q2)
 
 | Metric | Value | Notes |
 |---|---|---|
-| Cumulative payment count | 100M+ | 6 months (2025-06 to 2025-12) |
+| Cumulative transaction count | 165M+ | by late April 2026 ([AInvest](https://www.ainvest.com/news/x402-payment-volume-reaches-600-million-open-facilitators-fuel-2026-growth-trend-2512/)) |
+| Active agents | ~69,000 | late April 2026 |
+| Cumulative on-chain volume | ~$50M | late April 2026 |
 | Solana transactions | 35M+ / $10M+ | Mid-2025 to early 2026 |
-| Daily real transaction volume | ~$28,000 | CoinDesk 2026-03; includes significant testing/wash activity |
-| Cumulative buyers | 94,060 | eco.com data |
-| Sellers | 22,000 | eco.com data |
+| Daily real transaction volume | ~$28,000 | CoinDesk 2026-03; ~131K txns/day, avg payment ~$0.20; ~half wash/testing |
+| Single-day peak (Feb 2026) | 3.8M txns / ~$2M | burst activity, not sustained |
+| Cumulative buyers / sellers | 94,060 / 22,000 | eco.com data |
 | Developer community | 600+ | Telegram group |
 
-**Note**: A CoinDesk (2026-03) investigation found that approximately half of observed x402 transactions were "gamified" activity (wash trading/testing), not genuine commercial demand. Real agentic commerce demand has yet to materialize.
+**Named production deployments (April 2026):** Coinbase Agent.market, Stripe Machine Payments, CoinGecko paid endpoints, Circle Wallets reference workflow, Cloudflare Agents SDK.
+
+> **Contradiction flagged**: a November 2025 industry headline claimed **"$600M cumulative payment volume"** ([AInvest](https://www.ainvest.com/news/x402-payment-volume-reaches-600-million-open-facilitators-fuel-2026-growth-trend-2512/)), which conflicts with the **~$50M cumulative on-chain volume** reported for late April 2026. The figures are not reconcilable from public data — the $600M number likely aggregates facilitator-quoted or notional flows rather than settled on-chain value. Treat the $50M on-chain figure as the conservative settled number; the discrepancy is tracked in [[synthesis/agentic-payments-six-region]].
+
+**Note**: A CoinDesk (2026-03) investigation found that approximately half of observed x402 transactions were "gamified" activity (wash trading/testing), not genuine commercial demand. Real agentic-commerce demand has yet to materialize — consistent with the 25-year micropayment-failure lineage analysed in [[synthesis/agentic-payments-six-region]].
 
 ## Limitations and Risks
 
@@ -106,10 +114,12 @@ In December 2025, Coinbase and Cloudflare co-founded the **x402 Foundation** to 
 
 ## Related Pages
 
+- [[synthesis/agentic-payments-six-region]] — six-region map, Linux-Foundation governance, $600M↔$50M contradiction, 100-year micropayment thesis
 - [[concepts/agentic-payments]] — broader AI automated payment framework
 - [[concepts/agentic-payment-protocols]] — full comparison of x402 vs ACP vs AP2 vs MPP vs L402
 - [[sources/x402-protocol-coinbase-2025]] — detailed source material
 - [[entities/coinbase]] — protocol originator
-- [[entities/stripe]] — supports both x402 + MPP + ACP
+- [[entities/stripe]] — co-developer; supports x402 + MPP + ACP
 - [[entities/visa]] — adds card payment layer to x402 via TAP
+- [[entities/mastercard]] — x402 Foundation member; Agent Pay / Verifiable Intent
 - [[concepts/xcm]] — Polkadot cross-chain messaging (related M2M automation domain)

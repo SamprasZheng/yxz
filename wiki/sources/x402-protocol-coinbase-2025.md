@@ -15,7 +15,9 @@ Coinbase launched **x402** in May 2025, reviving the long-dormant HTTP `402 Paym
 
 ## Background
 
-The HTTP 1.1 specification (RFC 2616, 1999) defined `402 Payment Required` but reserved it for "future use," leaving it unimplemented for 25 years. Coinbase redefined it as a trigger point for stablecoin micropayments, and in December 2025 co-founded the **x402 Foundation** with Cloudflare to promote open standardization.
+The HTTP 1.1 specification (RFC 2616, 1999) defined `402 Payment Required` but reserved it for "future use," leaving it unimplemented for 25 years. Coinbase redefined it as a trigger point for stablecoin micropayments, and in December 2025 announced the **x402 Foundation** with Cloudflare to promote open standardization.
+
+> **Updated (2026)**: the x402 Foundation was subsequently placed under **Linux Foundation** governance (initially developed by Coinbase, Cloudflare, *and* Stripe), with founding-intent members including Adyen, AWS, American Express, Circle, Fiserv, Google, KakaoPay, Mastercard, Microsoft, Polygon Labs, Shopify, Solana Foundation, Stripe, and Visa. See [[concepts/x402-protocol]] and [[synthesis/agentic-payments-six-region]].
 
 ## Technical Flow
 
@@ -76,6 +78,8 @@ AI agents trade 24/7 automatically; both buyers and sellers are software program
 
 > ⚠️ **Note**: Protocol infrastructure is mature, but commercial demand validation is still in early stages.
 
+> **Updated (2026 Q2)**: by late April 2026, ~165M cumulative transactions, ~69,000 active agents, ~$50M cumulative on-chain volume; five named production deployments (Coinbase Agent.market, Stripe Machine Payments, CoinGecko, Circle Wallets, Cloudflare Agents SDK). A separate Nov 2025 "$600M payment volume" headline conflicts with the ~$50M on-chain figure — contradiction tracked on [[concepts/x402-protocol]] and [[synthesis/agentic-payments-six-region]].
+
 ## Market Size Projections
 
 - McKinsey: agentic commerce will mediate $3–5 trillion in global commerce by 2030
@@ -86,6 +90,8 @@ AI agents trade 24/7 automatically; both buyers and sellers are software program
 
 - [[concepts/x402-protocol]] — Technical details and protocol specifications
 - [[concepts/agentic-payments]] — Broad framework for autonomous AI agent payments
+- [[concepts/agentic-payment-protocols]] — five-protocol comparison + regional architecture families
+- [[synthesis/agentic-payments-six-region]] — six-region map + Linux-Foundation governance + 100-year thesis
 - [[entities/coinbase]] — Protocol initiating organization
 - [[concepts/xcm]] — Polkadot cross-chain messaging protocol (also in the M2M payment space)
 

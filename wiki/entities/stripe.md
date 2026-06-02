@@ -51,10 +51,12 @@ Stripe also announced support for the x402 protocol, making its payment infrastr
 
 ## Positioning in the Agentic Payments Ecosystem
 
-Stripe is the only player participating in all three major protocols (ACP / MPP / x402) simultaneously, strategically attempting to control the payment infrastructure for agentic commerce regardless of which front-end protocol wins.
+Stripe is the only player participating in all three major protocols (ACP / MPP / x402) simultaneously, strategically attempting to control the payment infrastructure for agentic commerce regardless of which front-end protocol wins. Stripe is also a **co-developer of the x402 Foundation** alongside Coinbase and Cloudflare, now under Linux Foundation governance — reinforcing the protocol-agnostic settlement-backend strategy.
 
 ## Related Pages
 
 - [[concepts/agentic-payment-protocols]] — Full comparison of the five major protocols
 - [[concepts/agentic-payments]] — Framework for autonomous AI agent payments
 - [[concepts/x402-protocol]] — Coinbase's HTTP-native payment standard
+- [[synthesis/agentic-payments-six-region]] — six-region map + Linux-Foundation governance + 100-year thesis
+- [[entities/coinbase]] · [[entities/visa]] · [[entities/mastercard]] — fellow x402 Foundation members

@@ -171,6 +171,34 @@ See [[entities/mastercard]] for details.
 
 ---
 
+## Beyond the Five Western Protocols — Regional Architecture Families
+
+The five protocols above are all US-originated and assume an **open, permissionless HTTP web** as the substrate. That assumption does not hold globally. Two other architecture families carry large or fast-growing real volume and are invisible if you only read the x402/ACP/AP2/MPP/L402 layer. Full regional map in [[synthesis/agentic-payments-six-region]].
+
+### Closed super-app AI checkout — China (largest real volume)
+
+- **Alipay AI Pay** (Ant Group) was the **first AI-native payment product globally to reach 100M users** (2026-02-23) and processed **120M transactions in one week** (Feb 5–11 2026) — orders of magnitude above x402's ~131K/day ([Business Wire](https://www.businesswire.com/news/home/20260213770962/en/)).
+- **Agentic Commerce Trust Protocol** (Jan 2026) with Alibaba's Qwen App + Taobao Instant Commerce; **AI Wallet + Token Pay** infrastructure (May 2026); extended to OpenClaw-type "lobster" agents (Apr 2026).
+- Architecturally the opposite of x402: a closed 1B-user graph, no open HTTP spec, no x402-Foundation membership. Wins on installed customers, not on openness.
+
+### Bank-led sovereign stablecoins — Japan / Korea / Europe / Taiwan
+
+- **Japan**: **JPYC** — first FSA-approved yen stablecoin (Oct 2025), explicitly building M2M AI-agent use cases on Ethereum/Polygon; LDP national AI+blockchain finance strategy (May 2026).
+- **Korea**: won-stablecoin race — KakaoBank wallet (May 2026), Naver/Dunamu Giwachain, 8-bank consortium; **KakaoPay is an x402 Foundation member** (hedging into the open layer).
+- **Europe**: EURC under MiCA (ClearBank approval Apr 2026); digital euro; "digital dollarization" anxiety. First live EU AI-agent payment = Mastercard + Santander + PayOS (Mar 2026).
+- **Taiwan**: NT$ stablecoin H2 2026 earliest; cautious; no agentic-commerce rail presence.
+
+### Regulatory layer per region (decides which rail is even legal)
+
+| Region | Stablecoin/agent regime | Status |
+|---|---|---|
+| US | **GENIUS Act** (enacted 2025-07-18; 1:1 reserves; not a security/commodity) | live, OCC/FDIC rulemaking 2025–26 |
+| EU | **MiCA** + PSD2/PSD3 + EU AI Act | MiCA full enforcement 2026-07-01 |
+| Japan | FSA stablecoin framework | JPYC live Oct 2025 |
+| Korea | Digital Asset Basic Act | FSC bill expected end-2026 |
+| China | PBoC/Ant supervision; e-CNY separate | operating inside existing regime |
+| Taiwan | VASP Act → FSC stablecoin rules | H2 2026 earliest |
+
 ## Protocol Layer Analysis
 
 ```
@@ -189,11 +217,12 @@ See [[entities/mastercard]] for details.
 | Fiat payment | Via facilitator | ✅ | ✅ | ✅ | ❌ |
 | Crypto-native | ✅ | ❌ | Extension | ✅ | BTC only |
 | Subscription/Session | ✅ since V2 | ✅ | N/A | ✅ Core | ❌ |
-| Open governance | x402 Foundation | Apache 2.0 | Open | Stripe+Tempo | Lightning Labs |
+| Open governance | x402 Foundation (now under **Linux Foundation**) | Apache 2.0 | Open | Stripe+Tempo | Lightning Labs |
 | Maturity (2026) | Medium | Early | Early | Just launched | Most mature |
 
 ## Related Pages
 
+- [[synthesis/agentic-payments-six-region]] — six-region map (台美日韓中國歐洲), regional architecture families, 100-year micropayment thesis
 - [[concepts/x402-protocol]] — x402 detailed specifications and V2 upgrade
 - [[concepts/agentic-payments]] — AI agent autonomous payment framework
 - [[entities/coinbase]] — x402 originator
