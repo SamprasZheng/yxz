@@ -18,6 +18,25 @@ Traditional AI agents must stop and ask a human whenever they encounter a paid r
 3. **Cross-agent transactions**: In multi-AI-agent workflows, upstream agents automatically pay downstream agents
 4. **Content and data purchases**: Access paid data without human authorization
 
+## Historical Lineage — the 30-Year Micropayment Dream and the Machine-Payer Inversion
+
+Automated micropayments are not new in 2025; agentic payments are the **fourth** serious attempt in ~30 years, and the prior three failed for one reason an AI payer structurally removes.
+
+| Era | Attempt | Outcome |
+|---|---|---|
+| 1960s–80s | Ted Nelson's **Xanadu** (transclusion + per-fragment royalty) | never shipped at scale |
+| 1989–1998 | **DigiCash / ecash** (David Chaum) | privacy-correct, no merchant network; bankrupt 1998 |
+| ~1995–2001 | **Millicent** (DEC), **NetBill**, **PayWord**, **Mondex**; W3C Micropayments WG | hit the Szabo wall |
+| 2020– | **L402** (Lightning) → **x402** (2025) → **MPP** (2026) | first attempt where the payer is a *machine* |
+
+**The binding constraint — Szabo 1999.** Nick Szabo's *Micropayments and Mental Transaction Costs* (1999) showed micropayments fail not because the fee is too high but because the **mental cost of deciding "is this click worth $0.001?"** exceeds the payment itself — so users retreat to flat monthly subscriptions ([Szabo 1999](https://www.researchgate.net/publication/2401801_Micropayments_and_Mental_Transaction_Costs)). This result was strong enough to end 25 years of attempts.
+
+**Why agentic payments may break the wall:** an AI agent executing a bounded policy ("spend ≤ $5/day on data ≤ $0.01/call within this allowlist") has **zero mental transaction cost per decision**. The micropayment dream is being rebuilt now precisely because the one constraint that killed it for three decades does not apply to a machine payer. This is also why the rails exist *before* demand does — see the long-horizon analysis and falsifier table in [[synthesis/agentic-payments-six-region]].
+
+## Six-Region Landscape (台美日韓中國歐洲)
+
+The protocol layer below is overwhelmingly US-originated, but by mid-2026 the **largest real agentic-payment volume on Earth is China's Alipay AI Pay** (120M transactions in one week, Feb 2026), not any of the five Western protocols. Three distinct architecture families have emerged — open HTTP protocols (US), closed super-app AI checkout (China), and bank-led sovereign stablecoins (Japan/Korea/Europe/Taiwan). The full regional map, regulatory comparison (GENIUS Act / MiCA / FSA / FSC), and Taiwan's "absent from the rails" position are in **[[synthesis/agentic-payments-six-region]]**.
+
 ## Technical Implementation
 
 ### Protocol Layer (2026 Landscape)
@@ -90,6 +109,7 @@ For detailed comparison, see [[concepts/agentic-payment-protocols]].
 
 ## Related Pages
 
+- [[synthesis/agentic-payments-six-region]] — six-region map, regulatory comparison, 100-year micropayment thesis, falsifier table
 - [[concepts/x402-protocol]] — primary crypto-native technical standard
 - [[concepts/agentic-payment-protocols]] — full comparison of five major protocols
 - [[sources/x402-protocol-coinbase-2025]] — detailed source material

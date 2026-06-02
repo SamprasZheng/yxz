@@ -61,10 +61,13 @@ Visa supports Stripe + Tempo's Machine Payments Protocol (MPP), providing card n
 | Open standards | RFC 9421 | FIDO / EMVCo / W3C / IETF |
 | Co-development partner | Cloudflare | Google |
 
+Visa is also a member of the **x402 Foundation** (under Linux Foundation governance), giving its card network a settlement role across the open agentic-payment standard.
+
 ## Related Pages
 
 - [[concepts/agentic-payment-protocols]] — Full comparison of five major protocols (including Visa's position)
 - [[concepts/agentic-payments]] — AI agent autonomous payment framework
+- [[synthesis/agentic-payments-six-region]] — six-region map + Linux-Foundation governance
 - [[entities/mastercard]] — Competitor's Agent Pay strategy
 - [[entities/stripe]] — MPP partner (Visa supports MPP)
 - [[concepts/x402-protocol]] — Visa provides the card payment layer in the x402 ecosystem

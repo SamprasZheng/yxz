@@ -63,9 +63,13 @@ Q4 2025: CEO Michael Miebach confirmed the first agentic transaction completed o
 
 Mastercard's agentic strategy is to build a **trust and authorization layer** on top of the existing card network, rather than replacing the payment settlement layer. Agentic Token provides fine-grained authorization controls, and Verifiable Intent provides an auditable intent record — together they make traditional card payments viable in the AI agent era, with better compliance than crypto-native solutions.
 
+Mastercard is also a member of the **x402 Foundation** (under Linux Foundation governance), positioning its trust/authorization layer to interoperate with the open crypto-settlement standard rather than competing head-on.
+
 ## Related Pages
 
 - [[concepts/agentic-payment-protocols]] — Full comparison of five major protocols (including Mastercard's position)
 - [[concepts/agentic-payments]] — AI agent autonomous payment framework
+- [[synthesis/agentic-payments-six-region]] — six-region map + Linux-Foundation governance
 - [[entities/visa]] — Competitor's Intelligent Commerce / TAP strategy
 - [[entities/stripe]] — Payment infrastructure partner
+- [[concepts/x402-protocol]] — open crypto-settlement standard Mastercard now co-governs
