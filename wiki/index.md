@@ -57,6 +57,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-06-03]] — Daily KOL + keyword digest 2026-06-03: Anthropic IPO + Opus 4.8 + Dynamic Workflows; NVIDIA Agent Toolkit + NemoClaw + Nemotron 3 Ultra at GTC Taipei; OpenClaw v2026.6.1-beta.2 + Microsoft Scout; Polkadot runtime v2.1.0 hard cap live (automated, 0 KOLs, 11 keywords, ~36 items)
 
 ## Entities
 
@@ -110,6 +111,8 @@ type: index
 
 - [[entities/nspo]] — Taiwan space-program entity; LEO application collaborator for the X-band transmitter / XT-144 thesis context
 - [[entities/tron-future-tech]] — Taiwan RF/space hardware vendor node for the XT-144 phased-array system
+- [[entities/anthropic]] — Anthropic; Claude model family (Haiku/Sonnet/Opus) + Claude Code; IPO filing June 2026; Opus 4.8 + Dynamic Workflows launched June 2; valuation >$1T
+- [[entities/openai]] — OpenAI; GPT / ChatGPT / Codex / o-series; AWS Bedrock GA + GPT-5.5 June 2026; OpenAI Deployment Company launched
 
 ## Concepts
 
