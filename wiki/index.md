@@ -204,3 +204,7 @@ type: index
 - [[synthesis/orbital-data-center-six-region]] — six-region (台美日韓中國歐洲) orbital-data-center map: US leads on capability (Starcloud H100 + LLM training flown Nov–Dec 2025, Google Suncatcher TPU), China on deployed scale (ADA Space + Zhejiang Lab 12 sats May 2025 → 2,800 / 1,000 POPS), Europe on net-zero/sovereignty economics (Thales ASCEND, ROI by 2050), Japan on optical relay/edge fabric (NTT × SKY Perfect JSAT Space Compass), Korea on bus/SAR/AI-analytics supply (Hanwha/KARI), Taiwan upstream-strong / midstream-C absent; IEA 415→945 TWh demand anchor; σT⁴ heat-rejection as the 100-year ceiling + falsifier table (2026-06-03)
 - [[synthesis/agentic-payments-six-region]] — six-region (台美日韓中國歐洲) agentic-payments map: US leads on open protocols (x402/ACP/AP2/MPP), China leads on real volume (Alipay AI Pay 120M txns/week), Japan/Korea/Europe/Taiwan bank-led sovereign stablecoins; GENIUS Act vs MiCA vs FSA/FSC; x402 Foundation → Linux Foundation; the 30-year micropayment-failure lineage (Szabo 1999 mental-transaction-cost) + machine-payer inversion + 100-year scenario + falsifier table (2026-06-02)
 
+### Trader / Market Research
+
+- [[synthesis/daily-trader-2026-06-03]] — **STUB RUN (blockers: no trader pipeline, network 403, no prior watchlist)**; seed watchlist 15 tickers (NVDA/AMD/AVGO/MSFT/META tier-1; GOOGL/AMZN/AAPL/TSLA/ARM/SMCI/TSM tier-2); FOM formula documented (0.4×confidence + 0.3×norm_σ + 0.2×hit_rate + 0.1×news_momentum); scan JSON at agents/outputs/scan-2026-06-03.json (2026-06-03)
+
