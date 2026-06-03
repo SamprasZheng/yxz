@@ -1,5 +1,9 @@
 # Wiki Log
 
+## [2026-06-03] kol-digest | Daily keyword sweep 2026-06-03 — 0 KOLs, 11 keywords, ~36 items
+
+KOL list empty; 11 keywords swept (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks). Top signals: Anthropic IPO filing + Opus 4.8 + Dynamic Workflows (June 1–2); NVIDIA Agent Toolkit + NemoClaw + Nemotron 3 Ultra at GTC Taipei (June 2); OpenClaw v2026.6.1-beta.2 + Microsoft Scout (Build 2026); Polkadot runtime v2.1.0 hard cap activated (June 2). PolkaSharks: no fresh posts found. Plurality/Audrey Tang: no breaking June news. New pages: [[sources/kol-digest-2026-06-03]], [[entities/anthropic]] (stub), [[entities/openai]] (stub). Index + log updated. Rate-limit hits: 0.
+
 ## [2026-06-02] deepen | Agentic-payments cluster (x402 / agentic-payments / protocols / Coinbase / Stripe / Visa / Mastercard)
 **Rotation:** prior `deepen` passes were 2026-05-31 (RF/phased-array) and 2026-06-01 (Polkadot core protocol). The agentic-payments cluster was the stalest remaining domain — ingested **2026-04-19 and never deepened** — and was conspicuously missing the corpus's signature six-region comparison and long-horizon view. **Pages deepened (9):** [[concepts/agentic-payments]], [[concepts/x402-protocol]], [[concepts/agentic-payment-protocols]], [[sources/x402-protocol-coinbase-2025]], [[entities/coinbase]], [[entities/stripe]], [[entities/visa]], [[entities/mastercard]]. **New synthesis (1):** [[synthesis/agentic-payments-six-region]] — six-region map + 100-year micropayment thesis + falsifier table; sibling of the phased-array and Polkadot six-region syntheses.
 
