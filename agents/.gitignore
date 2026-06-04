@@ -17,6 +17,8 @@ __pycache__/
 # Firefly outputs (generated per run; not source)
 outputs/*
 !outputs/.gitkeep
+# Trader daily scan outputs are committed as audit trail
+!outputs/scan-*.json
 
 # Caches for external API responses
 .cache/

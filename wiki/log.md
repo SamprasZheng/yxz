@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-06-04] daily-trader | Day 1 seed scan — 15-ticker watchlist (PLTR/GOOGL/SMCI/MSFT/NVDA/TSM tier-1+2); AVGO −13.36% guidance-miss theme; FOM formula seeded; stub/offline mode (yfinance blocked, trader CLI not yet built). New page: [[synthesis/daily-trader-2026-06-04]].
+
 ## [2026-06-04] deepen | Radiation / rad-hard test-infrastructure cluster (SEE / TID / RHA / Taiwan-test-ecosystem / COTS-GPU)
 **Rotation:** prior `deepen` passes were 2026-05-31 (RF/phased-array), 2026-06-01 (Polkadot), 2026-06-02 (agentic-payments), 2026-06-03 (LEO/ODC). The **radiation / space-weather** cluster was the stalest remaining flagship domain — ingested 2026-04-19 + 2026-05-24, never deepened — and was the last anchor domain missing the corpus's signature six-region comparison + long-horizon view. **Pages deepened (5):** [[concepts/rha-radiation-hardening]], [[concepts/see-single-event-effects]], [[concepts/tid-total-ionizing-dose]], [[concepts/taiwan-radiation-test-ecosystem]], [[concepts/cots-gpu-radiation-risk]]. **New synthesis (1):** [[synthesis/radiation-test-rad-hard-six-region]] — six-region test-infrastructure + rad-hard-sovereignty map + 100-year "qualification toll booth" view + falsifier table; sibling of the phased-array / ODC / Polkadot / agentic-payments six-region syntheses and the qualification-layer companion to [[synthesis/leo-taiwan-odc-gap]].
 
