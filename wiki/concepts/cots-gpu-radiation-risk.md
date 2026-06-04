@@ -85,6 +85,10 @@ Modern AI GPUs (NVIDIA H100, Jetson AGX Orin, etc.) deployed to LEO as COTS comp
 | Complete system-level (shielding+ECC+SEL protection+scrubbing) | Medium-high | ✅ | ✅ | ✅ | 3–5 year LEO commercial missions |
 | Rad-hard GPU (e.g., Aitech SP-A series) | High | ✅ | ✅ | ✅ | Government/military/deep space |
 
+## Why COTS-Everything *Tightens* the Test Bottleneck (layer-up)
+
+The NewSpace economics that put H100s and Orins in orbit ([[entities/starcloud]], [[concepts/orbital-data-center]]) shift the work from *"buy a qualified rad-hard part"* to *"upscreen a commercial lot"* ([[concepts/rha-radiation-hardening]]). Counter-intuitively this makes the **heavy-ion accelerator the binding constraint, not the fab**: every unqualified COTS lot now needs its own SEU/SEL cross-section curve, so beam-hour demand rises per program even as unit cost falls. This is why *who owns heavy-ion test capacity* is a strategic question, not a procurement detail — and why Taiwan's missing heavy-ion lane bites its AI-in-orbit ambitions specifically. Six-region map of who owns that capacity: [[synthesis/radiation-test-rad-hard-six-region]].
+
 ## Related
 
 - [[concepts/see-single-event-effects]] — SEU/SEL fundamental mechanisms
@@ -92,4 +96,6 @@ Modern AI GPUs (NVIDIA H100, Jetson AGX Orin, etc.) deployed to LEO as COTS comp
 - [[concepts/rha-radiation-hardening]] — RDM requirements and COTS upscreening
 - [[concepts/orbital-data-center]] — overall ODC engineering challenge framework
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 peak multiplier effect on GPU on-orbit risk
+- [[synthesis/radiation-test-rad-hard-six-region]] — six-region heavy-ion test capacity + rad-hard supply; why COTS-upscreen raises beam demand
+- [[entities/starcloud]] — H100-in-orbit operator whose COTS-everything model drives the bottleneck above
 - [[sources/space-radiation-tid-see-2025]]

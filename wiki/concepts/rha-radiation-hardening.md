@@ -103,6 +103,21 @@ The ordering matters: mitigation decisions feed back into RDM, which feeds back 
 
 **Zero-G's COTS database** is one of the most important tools for commercial New Space: over 6000 radiation test records primarily for COTS and automotive-grade components, enabling pre-screening of components before formal testing and significantly reducing costs.
 
+## Six-Region Test-Capacity + Rad-Hard Supply (台美日韓中國歐洲)
+
+Heavy-ion SEE is the scarcest, most capital-intensive mode and therefore the true sovereignty bottleneck. A six-region read (full table + citations on [[synthesis/radiation-test-rad-hard-six-region]]):
+
+| Region | Heavy-ion SEE | Rad-hard IC line |
+|---|---|---|
+| **US** | Leads — TAMU REF (~80k beam-hrs, He→Au 40 MeV/u), LBNL BASE, BNL NSRL | Leads — BAE RAD750/RAD5545, Microchip |
+| **Japan** | Strong — HIMAC (p→Xe 800 MeV/u), TIARA, RIKEN | Yes — Renesas |
+| **Europe** | Leads (ESA-coordinated ECIF) — GANIL, GSI, UCLouvain, RADEF/Jyväskylä (to 2027) | Yes — STMicro, Infineon, Teledyne e2v, 3D Plus |
+| **China** | Sovereign — HIRFL (IMP-CAS, 2 SEE terminals), CIAE | Domestic-only (US export controls forced indigenization) |
+| **Korea** | Emerging — RAON (commissioning); KOMAC is proton | Largely absent |
+| **Taiwan** | ❌ Absent — travel to LBNL/TAMU/TRIUMF | ❌ Absent |
+
+The US National Academies' own review calls the national heavy-ion test system *"working but increasingly fragile"* and notes 3D/in-package integration is pushing required ion energy *up* — the bottleneck tightens as NewSpace volume explodes ([Testing at the Speed of Light, NAP 24993, 2018](https://nap.nationalacademies.org/read/24993/chapter/5)).
+
 ## Connection to [[concepts/leo-value-chain]]
 
 Radiation qualification is the **implicit admission ticket** for all upstream components entering mid-stream Segment A (satellite manufacturing). The interpretation of Taiwan's competitiveness map should incorporate this dimension:
@@ -122,6 +137,7 @@ Radiation qualification is the **implicit admission ticket** for all upstream co
 - [[concepts/taiwan-radiation-test-ecosystem]] — detailed page on Taiwan's testing ecosystem
 - [[sources/space-radiation-tid-see-2025]]
 - [[sources/radtest-playbook-sampras-2021]] — engineer's playbook + inline orbit/SEE calculators
+- [[synthesis/radiation-test-rad-hard-six-region]] — six-region test-infrastructure + rad-hard sovereignty map; 100-year "toll booth never closes" view
 - [[concepts/leo-value-chain]]
 - [[entities/win-semiconductors]]
 - [[entities/ascend-tech]]

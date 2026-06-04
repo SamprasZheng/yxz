@@ -65,3 +65,4 @@ See [[concepts/rha-radiation-hardening]]
 - [[sources/radtest-playbook-sampras-2021]] — practical TID screening as step 2 of the engineer's playbook
 - [[concepts/leo-value-chain]] — TID qualification is the threshold for entering constellation supply chains
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 peak (2024–2026) drives LEO mission TID doses beyond historical model baselines; RDM safety margins should be increased
+- [[synthesis/radiation-test-rad-hard-six-region]] — Co-60 TID is the *least* geographically scarce test mode (Taiwan has it via INER; every region does); heavy-ion SEE is the bottleneck, not TID
