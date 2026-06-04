@@ -57,6 +57,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-06-04]] — Automated daily KOL + keyword digest 2026-06-04: Anthropic IPO, Nemotron 3 Ultra, Claude Code Opus 4.8, OpenClaw zero-days, Polkadot v2.1.0 runtime (11 keywords, 0 KOLs)
 
 ## Entities
 

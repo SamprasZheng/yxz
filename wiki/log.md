@@ -1,5 +1,8 @@
 # Wiki Log
 
+## [2026-06-04] kol-digest | daily sweep — 0 KOLs, 11 keywords, ~30 items
+Automated daily KOL + keyword digest. KOL list empty; keyword-only sweep run across: AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks. Top items: Anthropic IPO filing ($1T+ valuation, June 1); NVIDIA Nemotron 3 Ultra launch at Computex 2026 (500–550B MoE, NIM weights June 4); Claude Code Opus 4.8 dynamic multi-agent workflows + auto plugin loading; OpenClaw five zero-days patched June 3 + Microsoft Scout launch; Polkadot runtime v2.1.0 live (hard cap 2.1B DOT, −53.6% inflation). 1 source page created: [[sources/kol-digest-2026-06-04]].
+
 ## [2026-06-03] deepen | LEO / Orbital Data Center cluster (orbital-data-center / leo-value-chain / Starcloud / ADA Space / Google Suncatcher)
 **Rotation:** prior `deepen` passes were 2026-05-31 (RF/phased-array), 2026-06-01 (Polkadot core protocol), 2026-06-02 (agentic-payments). The **LEO/space/ODC** cluster was the stalest flagship domain — ingested **2026-04-19 and never deepened** — and was the only major theme still missing the corpus's signature six-region comparison + long-horizon view despite being the wiki's anchor domain. **Pages deepened (5):** [[concepts/orbital-data-center]], [[concepts/leo-value-chain]], [[entities/starcloud]], [[entities/ada-space]], [[entities/google-suncatcher]]. **New synthesis (1):** [[synthesis/orbital-data-center-six-region]] — six-region map + IEA demand anchor + σT⁴ 100-year heat-rejection thesis + falsifier table; sibling of the phased-array / Polkadot / agentic-payments six-region syntheses.
 
