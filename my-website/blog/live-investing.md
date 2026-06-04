@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-06-04
+
+- Market/Sentiment stance: **neutral** (score 1)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-06-04T00:12:16.456Z
+
+Key web signals:
+- [ETH Futures Contract (Jun 2026) Trade Ideas — DERIBIT:ETHUSD03M2026 - TradingView](https://news.google.com/rss/articles/CBMilAFBVV95cUxNaF9hZmthM2hSRUV3S3hxMHR4bnRlLWx3aW5IZGZJd1hwenpPcEdoLW9TZ0d5ZHdURzY4RVRleHVBMS14TWRDYy1pclQtUG14QkZKS2FQLUhnc0k4WEEtTHZOQmY3ck41UUh2VGRJc3FlUlVBMkFyVHFGQUhNX1NaVE1MRm1abmt5cU1rdzAtdEp3NFJ6?oc=5)
+- [Crypto Market Analysis: How Is the US Consumer Faring? - Zamin.uz](https://news.google.com/rss/articles/CBMilwFBVV95cUxQVmRFZWxkTkpMcHZZRUNUTGJkZF9FczRZTlVzbVZCMmJ0NHhhejl2clYxMVJXMmhadmtLR1RLVHFzcmhWTXA2Y1VJRGlXU1FiNUpWWjdmU1FfYzhQRG9TbFk5UjZuUHp6VTFYR2hfNlZnUVJ2ZlhYZHI3RTVKamtxd3hsLWh0X19ydnFXNHpjMFRLMVRiTWxB?oc=5)
+- [March 2026 FOMC: BTC, ETH Price Impact and Fed Outlook - Crypto.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cakh4bmFTamVhc0VLaHE2YVpja0M2RDFWTC1vU2V1ZG5nQVlpUlZleW41V1lYQ2lSNHZVRl9OYTQweEJaUjRMUzh3bmhZUUdzdGFUOUk2NUgzUEtPc3ZoS1ZkVGNNYmZ2b0plTzZjZVFNTWtadEZNaUlGTjE?oc=5)
+- [🥛 There’s no need to panic 🧘♂️ - Milk Road](https://news.google.com/rss/articles/CBMiYkFVX3lxTE94UldvWDE4YjFrODNjanloRnptMV9xNHpza3pRUUxzZ0ZUTlNUNW5RVWhYY0YyVkhwU05hMlBzYmhEY2VHOE91LS1ISU1Pd0tOT0tDVXBnaTdRbTZJTDJDTFB3?oc=5)
+- [BTC Price News: Bitcoin rises to key level while analyst sets $100,000 target - CoinDesk](https://news.google.com/rss/articles/CBMizAFBVV95cUxOdWdHSmswZnBhMHRkS2dCaWFOTjA1M0dnN180TDdvbU54bFlzYnAxb09pM2dURTBfNEpuNEplTW1kaGFZTkxkUU0wd1ZRVGVvZFc5NlhuT3BXdmlxTGRjd1FEVHdtR0l6eFBYT2Via1NabWN0dWtIck5PTm1Ld3ZNb2lCTU9DbkJfME5zZkJpSUF6Z1NXeDdRVHJaSVo3eXBZSzY0c19KVGY2ZHlRNGFFbUozOHZFaHpvVXpXd0NlNFhIX0FBT043dElJYXY?oc=5)
+- [Why are BTC, ETH and XRP prices down today and will Bitcoin, Ethereum and Ripple finally rise or continue - The Economic Times](https://news.google.com/rss/articles/CBMipgNBVV95cUxNZ3VRekxnUUhPVlZ5LVRBUlJBcmNKM2taMWFQYVJQZUlnbmVSckZhaHpOalhzeHNJVTJicFB5M3Fra3JxYndNUnI0SXNkR0RXTXl5TFA3ZGFaOG8xMXlOdS1CSG56YXROcDVzQXFQX1Uwa0FoRHJyRjJyaWhkYVRnY3h5MVE4TkJ4SEd6R0ZSVVo3RFVQSzdpTGt3N2ZCMnZheGhXX0pUZlFJcHlpREtDUXFET1k2WFVOQXhtNkJMMUVTWUtJdUdFRjU1OTg1VHZBLVdWbms3YW1aN3UydjhLYUpEN3dqTmg2dmg3WVFYQVpHYlZ3bm4wc1JYSnBvQ0hEbnd6T1kwcWlNcm1vcXF2R2l5d0N1S3BEdklnZl9XTWd6SkhEY0Jta0VjWXpSbU5lVlpLNzNfN2V5SFp6SUd5cXQ2RERDcFlOTHdIellUUjEwT2ZMSmo2a3h6dzFZY1hRSTlHUWxzZ2h5NE9BUWRkdVNGOEpfOXJYNWROWDU5SEhLMmhCNEVGT0lIU1hhWnhaY0JFYy1wQlhFSFFWVm9aeWFxLUMzd9IBqwNBVV95cUxOYmh5YlNiRHBCMGI0WXJvVzdLZDYzT3lObUt4eWN1QVg5ZWNFZnVPdmtUQ2FESHFiYlBQclpva3lRbllnUWtpR3hocDVMekJRdUJCS2pRYjFFWUpmT1dpbUJ2MFI1NmwtRnJiU0plLU1lU21EdkNnNl9jRk5DUUNHNURhZXlQeU5vTkFNaWZaZHdvZldhUEpqc3JHSm5BRmp2OERmaUhObGo3QjYxb2hUQ0tfT1NxQi05Y216SVhJc3dqWWptV0o4S1FXNGRob2FDRjVZdkdZN3gwQkgxRTYwX010RThpLWlINzdPOFRNSll4dzMyQUQwakNxQVl5Wld4Yk5ab29aZS1qT0huNFVqd0FrclZqVkJ0ODdfQ3B1dUJLX0dhVnVHdm9Sc3IxZVFPZWlEYndGMF9ieXhBNV9MTFFyWi1pTjVBUzU1VHdMXzFMSHE2RUpyb2tLN2xSWTVlZ2d1RWRaWnViZUo0Rm9wb2xSS1VlT24ydHJRWENIQWlxaUIzR0NlUF8tdmtXcjdvYkE4LUFwSUlaWjRJWlo3MS0wYTlKX1Jubzk0?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-06-03
 
 - Market/Sentiment stance: **neutral** (score 1)

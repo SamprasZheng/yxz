@@ -13,6 +13,31 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-06-04
+
+- Market/Sentiment stance: **neutral** (score 0)
+- Web signals collected: 5
+- Social-search signals collected: 10
+- Updated at: 2026-06-04T00:12:16.456Z
+
+Key web signals:
+- [Polkadot (DOT) Price Prediction 2026 and 2030: A Hard Supply Cap, a Billion Minted Tokens, and the Question Nobody Can Answer - Cryptonews.net](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Hbkszc1FxVkVvclcxWDF3ZWVBc3ZXUXlnXzRRemR3SEZaOWVhckFGcHloZE5udXF0bS13T2taNk1MWlhtU1k2aF9iUy0zZk9jOS02Yy1hamFUTVE?oc=5)
+- [Polkadot (DOT) Review 2026: JAM, Hard Cap & The Honest Verdict - Coin Bureau](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYcnpBakw3WFNGZEpKTzRsWjRjb3o0OXlGTlNMaEFYa0x3ZGRlRHRINXdBdm1QT0JESHVIUDNyaVpEQ1V4X0RqODlUcjZnbGF3NE1aSw?oc=5)
+- [Top Polkadot Projects in 2026: Best DOT DApps For DeFi, RWA & Privacy - Coin Bureau](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ycGk3TXVQZTBWaVZGaHdkb01jOUFTQkpiWUgxRnZwZk10OVoyemRqMEVOY0cyQkhYcm42YkNXZ016MXczcHZYeU5DSFZpZnVRZmpieXd6czYyenl3SFdldFB2bw?oc=5)
+- [Polkadot Review: The Internet of Blockchains Explained - MEXC](https://news.google.com/rss/articles/CBMiR0FVX3lxTE1VbG9hN1VyY3ZpclJUc2wzUkVCVURtR3FwU05pZTVZemx4cEpSb2xkX3l4b0lVbnFsdkVWZnN5TmliREFQVkN3?oc=5)
+- [Is Polkadot Dead? A 2026 Data-Driven Look at DOT's Ecosystem & Investment Value - MEXC](https://news.google.com/rss/articles/CBMisgFBVV95cUxNY3NOYjZ3V3EySk50LW84TE8xTUZxTUJQeWk4Wllua2tya3U5ZlVQWndkeW9Qa1c4VmNFeC12RkVyUVdCNzYwdjdNMzRHSkZtcjh1WFZIR2dFb0dWNHlGZEJpZ3JrYjRqX2VWQkNFWVhNRGprTmo4a3lfeGVkUVNGS3RlODV1TzNiOUVPVFQ2ZUJTQ0JjSXFGa1BqRXhZbEwzVVhBVWdOdG9FMUx6M0lwdWp3?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Polkadot (@Polkadot) / Posts / X - Twitter](https://x.com/Polkadot)
+- [Polkadot - Facebook](https://www.facebook.com/polkadotnetwork/)
+- [Instagram](https://www.instagram.com/)
+- [Polkadot and Bittensor built the same trap without realizing it ...](https://x.com/zacodil/status/2043664246693630343)
+- [Polkadot DOT - Facebook](https://www.facebook.com/groups/polkadot.dot/)
+- [Polkadot (@polkadotnetwork) • Instagram photos and videos](https://www.instagram.com/polkadotnetwork/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-06-03
 
 - Market/Sentiment stance: **neutral** (score 0)

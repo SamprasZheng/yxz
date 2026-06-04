@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-06-04
+
+- Market/Sentiment stance: **neutral** (score 0)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-06-04T00:12:16.456Z
+
+Key web signals:
+- [Zip’s new AI agents want to stop your finance team from uploading contracts into personal ChatGPT accounts - VentureBeat](https://news.google.com/rss/articles/CBMi1wFBVV95cUxOczZWQWhidjNOX0pHLU1QUXVVaGdVTDlSMHBaeHdFVnZrNURQYnpNS0w3MFEwUDJIdnU3NlJjY1o5U0kzNlEtOGRHeWJBTWFtdlBiZ3A5Ty1sMGtIU0ZJYWdpMmxKMzliQVh3THlFT1JYbGo3Wm52Sm1aZVg3WW5vTmtvNkVBSTc2X3VBU2dGemt5VWI0U09DV2J1YU9xeGRwRExHazU1djV5bk5paWtzdzQxRnNYVzFEREpHVl80QjJqLWZ3N1NfRkFwTDJJRDF2WjhYbVFTUQ?oc=5)
+- [Pinterest Deploys Production-Scale Model Context Protocol Ecosystem for AI Agent Workflows - infoq.com](https://news.google.com/rss/articles/CBMia0FVX3lxTE85amdNZ1R2cEpJYm1PNmhSQ0RoWDd0dWpQaU43elZRMXo4dGJaeUNrQ1ZPem1nVm9BUDhSSEhHQXNVUHNGcm9QOWtBQmU4cWREM0dqZk9sRm1wZ1Z4QW42Z2MtYzRvQml2ZHNz?oc=5)
+- [Solving the Identity Crisis for AI Agents - Uber](https://news.google.com/rss/articles/CBMidEFVX3lxTE12WFJ4ODFhZ29kS1ZyQWhTZHdMRTJxQTFXUzJvZUtyeXhZeUZVUTdVdmJzMS10TUxPZTRZTUxXWDFCeER4MFhWOHptQjhjSDJYY1E2RmZkbi1JcWVQZ3lPSW95WDBqUVM5eWtRWlhKYU5sTWl5?oc=5)
+- [Code execution with MCP: building more efficient AI agents - Anthropic](https://news.google.com/rss/articles/CBMibkFVX3lxTE0wZlpvbE81SXhDeFppSjUzb1RKQ0FxckN5VDFZNm9TQlE1RXdNclc2TW5XOV9qcE5kUkswSjdQdWt1eldrTnBEZFBjMkVraFByOHFsVkJENlRBS3Q2NU5Mel9oUW4xZmFETjZ4X25n?oc=5)
+- [Deploying an MCP Server on OCI Kubernetes Engine (OKE) - Oracle Blogs](https://news.google.com/rss/articles/CBMinAFBVV95cUxNSDVLaTdDTXdMUGdsd2U3N2dIa1dvaXVRNzlIVTFkN3hEZU0yTUI0aklqbFViU3U1LUlfMEJUT0N2Xzl0OXhQLUFKQ29VUGRrOVhHVGFSVFd6SXNiRlpiOXM4VTQwaVlzWWczUThsa3VRWXl1NzZPcFQ2Y1gzcnlobGVPN1FOSmJ6eU9OVEZ5OGJ1NHB6a0lkdlZNVWk?oc=5)
+- [AI's model context protocol – everything you wanted to know but were afraid to ask - Healthcare IT News](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcmdsQ24xVHdqSmsxSWVFR2RCQTRyUFd4cHRVaW11WmVQSkdxZ01SRWlCNXItY2psUkx4YTVhR1lEWGQ5R1M2SjIwN05uenFub3ZUYkQ1eUdaMGdpZU5TLUxvUThvQk9odEEydWdaYS1SVXBvSGZXYXBXWGozM245eHF1OFJMOWNHWjVKNGFmbzFQWkJ3UHFvNk9LbzhrT0R0YXVHYkRQazdhcTg?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((MCP OR model context protocol OR applied AI engineering) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(MCP%20OR%20model%20context%20protocol%20OR%20applied%20AI%20engineering)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-06-03
 
 - Market/Sentiment stance: **neutral** (score -1)
