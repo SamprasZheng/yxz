@@ -66,6 +66,13 @@ Pc alone is not sufficient for decision-making:
 - Operators combine: (1) Pc, (2) raw miss distance, (3) covariance quality flag (realism score), (4) object sizes, (5) maneuver cost.
 - The "dilution region" (high miss distance, poor covariance) requires special handling — CARA tags these events separately.
 
+## Long-Horizon: Pc in a Kessler-Densifying Environment
+
+Pc is computed per-event today, but the *background* Pc of any given orbit shell is a function of debris density — and that density is rising structurally. Per the ESA *Space Environment Report 2025*, at ~550 km the debris-threat population is now the same order of magnitude as active satellites, and even with zero new launches the population would keep growing for **200+ years** (Kessler cascade). Two consequences for the metric:
+
+1. **More events per satellite-year.** Higher density → more screening-volume entries → more CDMs → more Pc evaluations; the triage cadence in [[synthesis/cdm-pc-decisioning]] tightens over the mission lifetime.
+2. **Threshold pressure.** A fixed maneuver threshold (Red ≥ 1×10⁻⁴) that is rational at today's density implies *more frequent maneuvers* as density rises — eventually a fuel-budget and operations constraint, not just a safety one. This is why the **1–10 cm "deadly-but-untrackable" debris gap** (below the ~5–10 cm sensor floor) is the binding long-term limit on Pc reliability: the integral assumes you *know* the secondary exists. See the regional SSA capacity comparison and the 100-year view in [[synthesis/space-situational-awareness-six-region]].
+
 ## Relation to CDM Fields
 
 The CDM (CCSDS 508.0-B-1) includes `COLLISION_PROBABILITY` and `COLLISION_PROBABILITY_METHOD` as fields. The method string (e.g., `FOSTER-1992`, `CHAN-1997`) distinguishes which algorithm produced the reported Pc. In Space-Track `cdm_public`, the Pc field is `PC` (as decimal). In TraCSS CDM spec v2.1 (July 2025), the field name is `COLLISION_PROBABILITY` per CCSDS standard.
@@ -80,3 +87,4 @@ The CDM (CCSDS 508.0-B-1) includes `COLLISION_PROBABILITY` and `COLLISION_PROBAB
 - [[sources/ccsds-508-cdm-2013]] — standard definition of CDM fields
 - [[sources/nasa-cara-handbook-2023]] — NASA operational Pc procedures and thresholds
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — conjunction triage verb in the mission desk
+- [[synthesis/space-situational-awareness-six-region]] — regional catalog capacity that determines whether the secondary is even tracked + the Kessler long view

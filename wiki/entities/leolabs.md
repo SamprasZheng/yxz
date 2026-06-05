@@ -47,6 +47,10 @@ LeoLabs exposes a web-based REST API (`api.leolabs.space`) supporting JSON and X
 | Pricing | Commercial subscription | Free (registration required) |
 | Secondary object data | Full state + covariance for high-risk | Partial in `cdm_public`; full in `cdm` for registered operators |
 
+## Six-Region Positioning
+
+LeoLabs is the leading **US commercial** SSA radar network, but commercial/national SSA is a six-region landscape. Its rough European analog is **Vyoma** (Munich; optical + Flamingo space-based constellation, European-defense focus); China's equivalent capability sits inside the **state** CNSA/APSCO system rather than a private firm; Japan (JAXA), Korea (KASI OWL-Net), and Taiwan (consumer posture) round out the picture. LeoLabs' value proposition — higher cadence and better covariance realism than the government TLE-based catalog — is what *every* region's operators want and few national systems deliver. Full map + governance models + 100-year Kessler view: [[synthesis/space-situational-awareness-six-region]].
+
 ## Relevance to Firefly / NemoClaw Stack
 
 LeoLabs is the recommended upgrade path once the Mission Desk validates its CDM pipeline on free Space-Track data. Higher cadence and better covariance quality would reduce false positives and enable earlier maneuver planning. The API is compatible with JSON-based CDM parsing used in the Firefly agent.
@@ -58,3 +62,4 @@ LeoLabs is the recommended upgrade path once the Mission Desk validates its CDM 
 - [[entities/slingshot-aerospace]] — another commercial CDM provider
 - [[concepts/covariance-ellipsoid]] — why LeoLabs covariance quality matters
 - [[concepts/pc-probability-of-collision]] — higher-quality covariance → more reliable Pc
+- [[synthesis/space-situational-awareness-six-region]] — LeoLabs among the six regional SSA systems (Vyoma is the European analog)

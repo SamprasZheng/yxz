@@ -62,6 +62,21 @@ Vyoma (Munich, Germany; founded August 2020) provides SSA and conjunction assess
 
 Commercial providers with global radar networks (LeoLabs) achieve better LEO coverage density and more frequent observation opportunities per object. COMSPOC/SDA has historically focused on GEO due to its membership base. Slingshot's optical sensors have weather-dependent availability.
 
+## National SSA Infrastructure by Region (六地域)
+
+The provider table above is **commercial + US-government** centric — natural, because the [[entities/18-sds|18 SDS]] catalog is the only *legally authoritative* CDM source on Earth. But every spacefaring region now runs its own national SSA infrastructure, and the differences are governance-shaped, not just capability-shaped. Full treatment, dated facts, and the 100-year Kessler view: [[synthesis/space-situational-awareness-six-region]].
+
+| Region | Lead org(s) | Flagship national sensors | Governance model |
+|---|---|---|---|
+| **US** | USSF 18/19 SDS; DoC OSC [[sources/tracss-oasis-announcement-2024]] | SSN ~30 sensors; Space Fence (2020, ~5 cm LEO); GEODSS | Authoritative, civilianizing |
+| **Europe** | EU SST Partnership (15→19 members, Dec 2025) + ESA Space Safety | GESTRA (Germany, 2024-01, ≤3,000 km); GRAVES (France); TIRA (imaging) | Federated coordination |
+| **China** | CNSA Space Debris Center (NAOC); APSCO/APOSOS; PLA-SSF | APOSOS 15 cm optical nodes + Beijing data center; large closed military network | Sovereign + multilateral, data-closed |
+| **Japan** | JAXA + MoD | Kamisaibara radar (LEO) + Bisei optical (GEO); new Sanyo-Onoda radar (2025-03); SDA satellite FY2026 | Civil-military, fast build-out |
+| **Korea** | KASI / NSSAO | OWL-Net 5-station optical network (2018); 2D radar in development | Astronomy-institute led, radar gap |
+| **Taiwan** | TASA (civil); MND | PAVE PAWS (AN/FPS-115) missile-warning radar, incidental space tracking; no dedicated SSA radar | Consumer + compute niche |
+
+**Long-horizon note:** the providers above all chase the same moving target. Per the ESA *Space Environment Report 2025*, even if all launches stopped today the orbital population would keep growing for **200+ years** (Kessler cascade), and the **1–10 cm "deadly-but-untrackable" gap** below the ~5–10 cm sensor floor is the permanent SSA frontier — see [[synthesis/space-situational-awareness-six-region]] §4.
+
 ## CDM Fusion: Using Multiple Providers
 
 Sophisticated operators (large LEO constellations, GEO operators) subscribe to multiple providers and fuse their CDMs:
@@ -98,3 +113,4 @@ The [[sources/tracss-oasis-announcement-2024|Traffic Coordination System for Spa
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Phase 4 context
 - [[concepts/swpc-space-weather-feeds]] — space weather data that must be fused with CDM
 - [[concepts/notam-space-operations]] — operational context alongside CDMs
+- [[synthesis/space-situational-awareness-six-region]] — six-region national SSA infrastructure + governance models + 100-year Kessler view

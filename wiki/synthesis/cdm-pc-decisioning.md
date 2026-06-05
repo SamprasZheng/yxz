@@ -276,6 +276,7 @@ Every agent output that cites Pc should include:
 
 ## See Also
 
+- [[synthesis/space-situational-awareness-six-region]] — geopolitical companion: who runs the catalogs behind the CDM chain, by region, + the 100-year Kessler view
 - [[synthesis/faa-notam-launch-lifecycle]] — upstream launch-clearance and LCOLA pipeline that feeds the CDM chain
 - [[synthesis/fcc-ibfs-filings-coordination]] — spectrum-coordination substrate (parallel regulatory layer to conjunction risk)
 - [[concepts/pc-probability-of-collision]] — Pc computation detail and threshold table

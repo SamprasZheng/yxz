@@ -51,9 +51,15 @@ Under Space Policy Directive-3 (2018) and subsequent DoC/DoD agreements, the civ
 
 Post-transition, 18 SDS will continue generating CDMs for military/national security objects while OSC/TraCSS serves the civil/commercial operator community.
 
+## International Context
+
+The Space Surveillance Network is the most capable of six regional SSA systems and the only one whose catalog carries legal authority for collision-avoidance obligations. Its peers — Europe's federated [[synthesis/space-situational-awareness-six-region|EU SST Partnership]], China's sovereign CNSA + APSCO/APOSOS network, Japan's JAXA + military build-out, Korea's KASI OWL-Net, and Taiwan's consumer posture — are mapped, with governance models and the 100-year Kessler view, in [[synthesis/space-situational-awareness-six-region]].
+
 ## See Also
 
 - [[sources/space-track-cdm-api-2023]] — API documentation for accessing 18 SDS CDMs
+- [[synthesis/space-situational-awareness-six-region]] — the SSN among the six regional SSA programs
+- [[entities/space-track-19sds]] — 18 SDS + 19 SDS combined operational structure
 - [[sources/tracss-oasis-announcement-2024]] — DoD→DoC transition details
 - [[concepts/screening-volume]] — the geometric filter 18 SDS applies to generate CDMs
 - [[concepts/pc-probability-of-collision]] — Pc computed by 18 SDS and populated in CDMs
