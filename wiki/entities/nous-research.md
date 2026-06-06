@@ -40,8 +40,13 @@ The Paradigm lead at a unicorn valuation is notable — Paradigm is primarily a 
 
 MIT-licensed core artifacts; weights released openly on Hugging Face; explicit "you can switch providers at any time with no lock-in" framing in the Hermes Agent docs. This stance is load-bearing for their fundraising narrative — investors are betting on decentralized/open AI as a wedge against OpenAI/Anthropic.
 
+## Six-region positioning (台美日韓中國歐洲)
+
+Nous is a **US open-weight lab competing against the open-weight frontier that, by mid-2026, is China-led** (Kimi K2.6, DeepSeek V4, Qwen3.x, GLM-5 — see [[synthesis/open-weight-llm-agent-stack-six-region]]). It does not match that capability frontier and does not try to; its wedge is **alignment-to-the-user + a model-agnostic agent layer + decentralized training (Psyche)** — i.e. it competes on *posture and orchestration* rather than raw scale, the lab-scale version of the same "compete on the layer you can move" logic that drives [[concepts/domain-specific-llm-agents|domain-specific agents]] and the state-funded localized models of Korea/Japan/Taiwan. The regions are already entangled in Nous's own stack: **Hermes-4 14B is fine-tuned on Alibaba's Qwen-3 (Chinese) base**, while [[concepts/hermes-agent-framework|Hermes Agent]] is recommended for the **US** NVIDIA hackathon and its investor (Paradigm) is a crypto fund betting on decentralized/open AI as the wedge against closed US frontier labs. A US open-weight lab building on a Chinese open base for a US hackathon is the six-region map in miniature.
+
 ## Related
 
+- [[synthesis/open-weight-llm-agent-stack-six-region]] — six-region open-weight foundation-model + agent-stack map
 - [[entities/hermes-llm-series]]
 - [[concepts/hermes-agent-framework]]
 - [[concepts/nemotron]]

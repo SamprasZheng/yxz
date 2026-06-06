@@ -37,7 +37,7 @@ The **Nemotron-H** architecture replaces most self-attention layers with **Mamba
 | **Nemotron Nano 2 (9B v2)** | 2025-08-18 | 9B dense | **128K** | Hybrid Mamba-Transformer; distilled from 12B base trained on 20T tokens (FP8); on-par accuracy with Qwen3-8B, **6× faster** at 8K-in/16K-out; runs on a single A10G |
 | **Nemotron 3 Nano** (Omni) | 2025-12 | 31.6B MoE / 3.2B active | up to **1M** | Multimodal (vision + audio + text); cheapest tier; on free build.nvidia.com tier as of 2026 |
 | **Nemotron 3 Super** | 2026-03 | ~120B MoE / ~12B active | up to **1M** | Reasoning workhorse for multi-agent apps; paid via Bitdeer/CoreWeave/DigitalOcean partners |
-| **Nemotron 3 Ultra** | 2026-H1 (announced) | ~500B MoE / ~50B active | TBD | Deep-research / strategic planning; not yet released as of 2026-05 |
+| **Nemotron 3 Ultra** | **released ~2026-Q2** | ~500B MoE / ~50B active | TBD | Deep-research / strategic planning. **Update (2026-06):** now released — leads US open-weights at **Artificial Analysis Intelligence Index ~48** (ahead of Gemma 4 31B ~39, Nemotron 3 Super ~36, gpt-oss-120b ~33) but **behind the China-led open-weight frontier Kimi K2.6 ~54** ([Artificial Analysis](https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-released)) |
 
 ## Benchmark positioning
 
@@ -101,8 +101,13 @@ For [[entities/sampras]]'s GTC Taipei Agent Challenge 2026 entry — agentic loo
 - Nemotron 3 Ultra — not yet released
 - Llama-3.1-Nemotron-Ultra-253B — overkill, slower, will burn the 1,000 credit budget fast
 
+## Six-region open-weight positioning (台美日韓中國歐洲)
+
+Nemotron is the **US national-champion open-weight line**, but it does not sit at the open-weight frontier. As of mid-2026 the open-weight intelligence frontier is **China-led** (Kimi K2.6 ~54, DeepSeek V4, Qwen3.5/3.6, GLM-5, Xiaomi MiMo) while the *closed* frontier stays US-led (Claude/GPT/Gemini). Nemotron's role is therefore the **agentic-reasoning, NIM-deployable, license-clean** option a US/Taiwan team reaches for when it wants open weights + a vendor SLA — which is exactly why the [[sources/nvidia-agent-challenge-2026|GTC Taipei Agent Challenge]] mandates it. Taiwan's [[concepts/domain-specific-llm-agents|sovereign-model]] efforts (TAIDE 2.0) are now **migrating onto Nemotron** as their base, making NVIDIA the upstream of the Taiwanese model layer the same way TSMC is the upstream of everyone's compute. Full regional map: [[synthesis/open-weight-llm-agent-stack-six-region]].
+
 ## Related
 
+- [[synthesis/open-weight-llm-agent-stack-six-region]] -> six-region map of who builds open-weight base models and why it became a sovereignty question
 - [[concepts/dgx-spark]] -> local reasoning workstation context for on-prem agent demos
 - [[concepts/hermes-agent-framework]] -> framework path used with Nemotron in the GTC Taipei stack
 - [[concepts/nemoclaw]] -> sandbox/runtime layer around long-running Nemotron agents
