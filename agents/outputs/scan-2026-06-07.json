@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-07",
+  "status": "STUB — blockers prevented live scan",
+  "blockers": [
+    {
+      "id": "no-trader-pipeline",
+      "description": "agents/src/trader/ does not exist. The trader pipeline (orchestrator, schemas, CLI, yfinance_client) referenced in the task spec has not been implemented in this repo. Only agents/src/firefly/ is present.",
+      "severity": "critical",
+      "remediation": "Implement trader pipeline under agents/src/trader/ with cli.py, orchestrator.py, tools/yfinance_client.py, and the scan/research sub-commands."
+    },
+    {
+      "id": "network-policy-blocks-yfinance",
+      "description": "Environment network policy blocks all outbound HTTP. yfinance.Ticker().history() and .info all return HTTP 403 'Host not in allowlist'. No live or historical price data can be fetched.",
+      "severity": "critical",
+      "remediation": "Run the daily trader job in an environment with outbound network access to finance.yahoo.com, or pre-cache price data inside the repo. Alternatively, configure the network allowlist for finance.yahoo.com, query1.finance.yahoo.com."
+    },
+    {
+      "id": "no-prior-daily-trader-page",
+      "description": "No wiki/synthesis/daily-trader-*.md exists. This is the first run, so there are no prior recommendations to backtest.",
+      "severity": "info",
+      "remediation": "No action needed on first run. Future runs will backtest against this stub page (or the first real scan page once blockers are resolved)."
+    }
+  ],
+  "watchlist_seed": {
+    "source": "task-spec core set + AI/semiconductor additions from wiki corpus",
+    "tickers": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN", "SMCI", "PLTR", "AVGO", "ARM", "CRM", "INTC", "QCOM"],
+    "rationale": "Core 8 from spec; SMCI/PLTR/AVGO/ARM/CRM/INTC/QCOM added as AI-infrastructure and semiconductor names prominent in the wiki's ODC/rad-hard/phased-array/open-weight-LLM corpus. Total=15 (cap per spec)."
+  },
+  "scan_results": null,
+  "fom_table": null,
+  "backtest": null
+}
