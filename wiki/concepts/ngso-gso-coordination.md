@@ -34,6 +34,15 @@ After coordination is complete and the FCC has granted the Part 25 licence, the 
 ### Step 5: SNS Database Entry
 The ITU **Space Network System (SNS)** database is the authoritative international registry of satellite network filings. SNS data is accessible via ITU SpaceExplorer (`itu.int/pub/R-SOFT-SNS`) — a subscription product. A subset of SNS data (IFIC-published records) is publicly accessible; the full API/CR/N history requires an SNS subscription or ITU BR access.
 
+## First-Come-First-Served, Paper Satellites, and the Milestone Rules
+
+The ITU registration system is **first-come-first-served (FCFS)**, not auction-based: the **API priority date** (Step 2) — not hardware, not a domestic license — establishes the international claim to a frequency/orbit resource. Combined with the [[concepts/epfd-equivalent-power-flux-density|EPFD]] blanket finding (one compliant NGSO system is deemed non-interfering worldwide), FCFS strongly rewards *early filing*. This produces two well-documented pathologies:
+
+- **"Paper satellites"** — filings far in excess of, or far ahead of, any real deployment, used to reserve spectrum/slots. WRC-23 tightened the **bringing-into-use (BIU)** and **milestone** rules to curb this: BIU requires a satellite to occupy the notified resource for **90 continuous days**; deployment must reach **10 % / 50 % / 100 %** of the notified constellation within **2 / 5 / 7 years**; **orbital tolerances** (apogee/perigee/inclination) bound the notified values; and operators file a **4-year periodic deployment report** (annual if below the notified count).
+- **Equity tension** — FCFS structurally favors early, well-funded, spacefaring filers. Developing states have invoked the ITU's "special needs of developing countries" / equitable-access principle (Constitution Art. 44, live since the 1976 GSO-arc dispute) to seek guaranteed allocations. Megaconstellations now make up **>65 %** of active LEO satellites, sharpening the scarcity.
+
+**Extreme case — China.** Filing through MIIT (Ministry of Industry & Information Technology), China has taken FCFS to its limit: Guowang **GW-A59 (6,080) + GW-2 (6,912) = 12,992** satellites (ITU filing 2020-09), then in **December 2025 the CTC-1 and CTC-2 filings of 96,714 satellites each** (≈193,000 total notional satellites). These illustrate FCFS as a strategic land-grab instrument rather than a response to built hardware. *(Sources: [SpaceNews](https://spacenews.com/china-files-itu-paperwork-for-megaconstellations-totaling-nearly-200000-satellites/); [ITU Main WRC-23 Results](https://ctu.int/wp-content/uploads/2023/12/Main-WRC-23-Result-20.02.24.pdf), accessed 2026-06-07.)* See [[synthesis/space-regulatory-regimes-six-region]] for how the FCFS rule shapes the six-region (台美日韓中國歐洲) regulatory landscape and the ~100-year "orbital enclosure" question.
+
 ## NGSO/NGSO Coordination
 
 EPFD compliance under Article 22 does **not** address NGSO-to-NGSO interference (two LEO constellations interfering with each other). For co-frequency NGSO systems:
@@ -73,6 +82,7 @@ Operators must maintain an active IBFS account and point-of-contact record to re
 - [[concepts/processing-round]]
 - [[concepts/schedule-s]]
 - [[synthesis/fcc-ibfs-filings-coordination]]
+- [[synthesis/space-regulatory-regimes-six-region]]
 - [[sources/itu-radio-regulations-article-22-2023]]
 - [[sources/fcc-part-25-2024]]
 - [[concepts/orbital-data-center]]

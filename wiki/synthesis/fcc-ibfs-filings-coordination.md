@@ -205,3 +205,4 @@ For the [[concepts/aesa|AESA]] / [[concepts/hybrid-phased-array|hybrid phased-ar
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]]
 - [[synthesis/cdm-pc-decisioning]]
 - [[synthesis/faa-notam-launch-lifecycle]]
+- [[synthesis/space-regulatory-regimes-six-region]] — six-region (台美日韓中國歐洲) generalization of this US-centric spectrum-filing workflow
