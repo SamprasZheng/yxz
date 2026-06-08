@@ -9,6 +9,8 @@ The indices below are the standard machine-readable signals that LEO satellite o
 
 See [[concepts/swpc-space-weather-feeds]] for the JSON URLs that deliver these indices in real time. See [[entities/noaa-swpc]] for the agency that publishes them.
 
+> **Why these "NOAA" indices are physically international.** Even the indices an operator pulls from a US feed are computed from a *globally pooled* sensor network — a concrete instance of the "you cannot nationalize the Sun" argument in [[synthesis/space-weather-forecasting-six-region]]. **Kp** is a weighted average of 13 geomagnetic observatories spanning 44°–60° latitude on multiple continents (the canonical product is curated by GFZ Potsdam, Germany). **Dst** is computed by the World Data Center in **Kyoto, Japan** from four equatorial stations (Honolulu / San Juan / Hermanus / Kakioka). **F10.7** is observed at **DRAO Penticton, Canada**. No single nation can produce these indices from its own territory — which is exactly why operational forecasting is the most internationally-pooled of the space domains in this corpus.
+
 ## Kp — Planetary K-index
 
 **What it measures**: Disturbances in the horizontal component of Earth's magnetic field, as observed by a global network of 13 geomagnetic observatories between 44°–60° geomagnetic latitude. A dimensionless quasi-logarithmic integer from 0 (quiet) to 9 (extreme storm).
@@ -194,4 +196,5 @@ Daily baseline:   F10.7 consumed once per day
 - [[concepts/see-single-event-effects]] — SEU/SEL driven by S-scale proton flux
 - [[concepts/orbital-data-center]] — ODC assets exposed to G/S/R scale events
 - [[concepts/cdm-conjunction-data-message]] — CDM staleness during geomagnetic storms
+- [[synthesis/space-weather-forecasting-six-region]] — the pooled multi-region system that computes and shares these indices
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — operational index fusion in Truth Dataset

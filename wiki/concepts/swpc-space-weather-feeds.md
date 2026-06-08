@@ -9,6 +9,8 @@ NOAA SWPC publishes a no-credential, continuously updated REST data service at `
 
 See [[sources/noaa-swpc-product-catalog]] for the complete verified URL catalog. See [[entities/noaa-swpc]] for agency context. See [[concepts/space-weather-operational-indices]] for index definitions and thresholds.
 
+> **Layer-up note.** This page documents the **US (NOAA) node** of what is actually a pooled, multi-region system. Operators outside North America can mirror this pattern against their own regional center — NICT (Japan), KSWC (Korea), ESA SWESNET / UK Met Office MOSWOC (Europe), CMA/NSSC (China), or CWA-SWOO (Taiwan) — most of which expose comparable feeds and all of which share observation data through ISES. The reason a single SWPC feed is *good enough* for a global LEO operator is precisely that the underlying sensor ring and L1/L5 vantage are internationally shared. The six-region structure, the four ICAO global advisory centers, and the 100-year view are in [[synthesis/space-weather-forecasting-six-region]].
+
 ## Core Feed Table — Operator Relevance
 
 | Feed Name | JSON URL | Update Cadence | Measures | Operational Decision |
@@ -99,4 +101,5 @@ The May 2024 Gannon storm (Dst nadir: −461 nT; peak Kp: 9) demonstrated the ca
 - [[concepts/orbital-data-center]] — assets exposed to space weather risk
 - [[concepts/cdm-conjunction-data-message]] — CDM staleness during geomagnetic storms
 - [[concepts/notam]] — companion operational feed for launch windows and range clearance
+- [[synthesis/space-weather-forecasting-six-region]] — six-region map of the national centers behind this feed; the pooled system this US node belongs to
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Truth Dataset fusion plan: SWPC + CDM + telemetry + NOTAM
