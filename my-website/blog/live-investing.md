@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-06-10
+
+- Market/Sentiment stance: **neutral** (score 1)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-06-10T23:54:03.400Z
+
+Key web signals:
+- [Crypto Daily Market Report – June 10, 2026 - KuCoin](https://news.google.com/rss/articles/CBMiggFBVV95cUxQQ3BYQXlDc20yV0NtdjhDckVFY0lDVjRuWFd2NUxNWnFsMlYwbGVvQXczeFNzMmNZbWphQnJybjdCM1c2aEtIZ2JnQUFSOXZCdXZaVkxOTkJKV3hOa3lmbFN0Qll4QUg2QWp5d3RXam83UlZURkJmczZyWG5palJzcUlR?oc=5)
+- [March 2026 FOMC: BTC, ETH Price Impact and Fed Outlook - Crypto.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cakh4bmFTamVhc0VLaHE2YVpja0M2RDFWTC1vU2V1ZG5nQVlpUlZleW41V1lYQ2lSNHZVRl9OYTQweEJaUjRMUzh3bmhZUUdzdGFUOUk2NUgzUEtPc3ZoS1ZkVGNNYmZ2b0plTzZjZVFNTWtadEZNaUlGTjE?oc=5)
+- [Bitcoin, Nasdaq investors are celebrating, while U.S. consumers turn gloomy. - CoinDesk](https://news.google.com/rss/articles/CBMiugFBVV95cUxOSmUwb205UGFnOC1kMnBRS1EzYUU2Q29taXdVX3k5Mld5VjZvTnpHV3RzSU0zak9nWENuOElGdThTX3VCZjRsVGFmblNJWmpoR3U1TGZieDFkRTV4eFotc0hVczZoYl81WE9yN3ZZYnBybDkteFo4XzJqaTRtSnExRWE2Uzk1d1o5Q0tOSXlpM3RLVlZKNHdnS1NId3R3UUljdGhrdmhUQXFnMzZjbUhVRkRoRGRnSGxmSVE?oc=5)
+- [🥛 There’s no need to panic 🧘♂️ - Milk Road](https://news.google.com/rss/articles/CBMiYkFVX3lxTE94UldvWDE4YjFrODNjanloRnptMV9xNHpza3pRUUxzZ0ZUTlNUNW5RVWhYY0YyVkhwU05hMlBzYmhEY2VHOE91LS1ISU1Pd0tOT0tDVXBnaTdRbTZJTDJDTFB3?oc=5)
+- [May 2026 US CPI Predictions: Stocks, Crypto & Gold - Bitget](https://news.google.com/rss/articles/CBMilAFBVV95cUxNYmxOc2EzWTJpR2pxY1BZS3R1SklzY0NBMnQ0VmpJbHBkc0NDdWpKdEViVG5qRG9qdmFDN2R3ZzlpMlFQNno3RklwZzdWa3M5SGNzMzZHVUNBLVMyNExva1JvR3hGaDFRVmZxZjZ5YnBkMUpxQkV6VkowNVlQejR5MHM2LUFmUlJ1UERRbHo5a1pnOE9p?oc=5)
+- [Bitcoin Inflation Hedge Analysis: Why BTC Hit $81K Amid 3.8% CPI Surge - Intellectia AI](https://news.google.com/rss/articles/CBMibEFVX3lxTFBwd2l2amFURU5SREE5MUlKTTBRVm9nUXJUYV8tcU5Ca2RGQmhYZTZ3MmRQZHVveGl0TXFfeHhRM2xwT3drM0piaXpiMVo0MzJCZEQzVXV5U2lNcEMwdlZ4RVRDSnh6bFl3NGJDaw?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-06-09
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -237,27 +258,6 @@ Key web signals:
 - [Market Update (November 2025) - Crypto.com](https://news.google.com/rss/articles/CBMiY0FVX3lxTE4yR1hOZWZvakFQSmMtc3ZoUjdjX1lFMGdrdE5maW96VjZzdzdHWXRFUTFOaFZqYl9pZEtxMTdwdmw3V1BVOW5raWFMZWVZRUZGbUZibTlxUFFpZG9QelRJSEFGYw?oc=5)
 - [Critical Alert: Macro Indicators Will Determine Bitcoin’s Short-Term Direction This Week - CryptoRank](https://news.google.com/rss/articles/CBMiiwFBVV95cUxORWNLa0ZYVWwyQy13bUFrRW90eF95TG5CNXRJcFpVZ0libExHUTdxQzRBV2k2aDdNel9oOVdxOWxZZzJhTHAzbWtvX3pHTmhjSUpZTDJUWDZDcXRYY3Y4X1VINHRmS1ZqNXB6aEEzYzJuem5xS2JwM0RCN05BZkhaRGJNQzl0X09KTzRF?oc=5)
 - [BTC, ETH and XRP price prediction: Will Bitcoin move towards $66,000, Ethereum $1,950 and Ripple $1.50 in - The Economic Times](https://news.google.com/rss/articles/CBMigwNBVV95cUxPVWVWMl9HNjRWRFpLX2VYQUhJNWRvaE9naXFLeVFJcFlZZFBJT2Y4cEYyVmJseWZtb1pnekdyY3Q5VTl4LW96cVlRMmxXXzk1eENSam1GZmRQRDRQcTRyTGRUMG80a2JoUmlhSi1uU2pXSUtLSF9udVQyeFJNZkczT1lDODhUNHlaTDMtUVNLLXVqOUk5R0o5OERBTy1vTS02N3BFQm9HS1l2cjczQ3RjYUxpOFEyS21KTlNBSm10TUkwTUt3UnN5cFY2SnBQWUJEaFU5Y2FJcF93SkhzeUFnOHBSU3RKTHE3X3FtNjlGeFRiTVZkaFl0VGdtb2hLX2dsbEpiS0NVNjdhd2doOHNTcGZIMnBYOXZxRGNQQkt6bEpjNktnX2RxeDJyS19Pc2RUMW84MkswM2RSZ014VDV6Q2xxUXc0OUN1NVlyempiY2pFZUtpQ0JCMUJpNEVnZGFfT0FZdEk0WUtYOUZ1bS1BX3E0RzQ1bUt5amoxVzZYWlhsdDTSAYgDQVVfeXFMUFlpYWl6SzVnTWNLLUVyc2ItUDkyaVI2V1hJNkpBWHItNEV1UjRXa2R5dkhCNHkxam1CQ0x3c09sWDBHWGN0T1NmQjRQelhjbWpDZ3hZVG1WSVdRbm1hYk52bjF6ODdzYnJRN1Z3LU9EMko0RDVLZ1ZiM3FsSXNCcFlDSTAteGZDVzFhVnlXQzJDMzI3dzZQLWstU21ISk9RUmJTZFllSVpINGROMTlCb2wwNDFVNnZPLUpEQXN4Z3lKZUN2bWc4QkxMVWY0VnprNWxmb3pvSlE5S2ZhRTV1S21Eb3RweDNZcnItLU1uX2hXcDByUEJ1VTRBZlo3bkNsbWNBaEQ4ZnZ3aTJrWm9adnduQ29BQTR3Zk1SYnFGRjZjcFJEQ0hBb1d6emFNTXRFeFFKNmptRTNBVXFzbXhuMU00LTJ3MHZhMnMwbC1RS3RDeGhtWm1pWlExLWFXTmh0MHBFV1lIeE02YkstTGw2U2dDOExreW1PSF92cDRTYWxnb3FiNGFYYU8?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-05-29
-
-- Market/Sentiment stance: **bullish** (score 4)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-05-29T23:47:03.464Z
-
-Key web signals:
-- [BTC, ETH Steady; Wall Street Gauges Advance After Strong Economic Data: Markets Wrap - Blockworks](https://news.google.com/rss/articles/CBMirgFBVV95cUxPMnhMUGYweENQcW5ITmVJXzZaREwxTEg0eFlBQm81aVYyenBESDl6RzJQb2l2am5VMnRkZ1pQWm5EcVQ4UU9ENEF4c3NneFVRY0J4LVItWGFCeVB4RnhjVHVJMTFtRHM2TkFWWFpvV0EzY3JaY3haenF4bXpOMWJGa2VtOWpJU3ZCallXMWVuYmdiYzVGN0V4SEw0SUVhSU1DaUZreWZtSXpVWDUyU0E?oc=5)
-- [🥛 There’s no need to panic 🧘♂️ - Milk Road](https://news.google.com/rss/articles/CBMiYkFVX3lxTE94UldvWDE4YjFrODNjanloRnptMV9xNHpza3pRUUxzZ0ZUTlNUNW5RVWhYY0YyVkhwU05hMlBzYmhEY2VHOE91LS1ISU1Pd0tOT0tDVXBnaTdRbTZJTDJDTFB3?oc=5)
-- [Market Update (November 2025) - Crypto.com](https://news.google.com/rss/articles/CBMiY0FVX3lxTE4yR1hOZWZvakFQSmMtc3ZoUjdjX1lFMGdrdE5maW96VjZzdzdHWXRFUTFOaFZqYl9pZEtxMTdwdmw3V1BVOW5raWFMZWVZRUZGbUZibTlxUFFpZG9QelRJSEFGYw?oc=5)
-- [BTC Price News: Bitcoin rises to key level while analyst sets $100,000 target - CoinDesk](https://news.google.com/rss/articles/CBMizAFBVV95cUxOdWdHSmswZnBhMHRkS2dCaWFOTjA1M0dnN180TDdvbU54bFlzYnAxb09pM2dURTBfNEpuNEplTW1kaGFZTkxkUU0wd1ZRVGVvZFc5NlhuT3BXdmlxTGRjd1FEVHdtR0l6eFBYT2Via1NabWN0dWtIck5PTm1Ld3ZNb2lCTU9DbkJfME5zZkJpSUF6Z1NXeDdRVHJaSVo3eXBZSzY0c19KVGY2ZHlRNGFFbUozOHZFaHpvVXpXd0NlNFhIX0FBT043dElJYXY?oc=5)
-- [Critical Alert: Macro Indicators Will Determine Bitcoin’s Short-Term Direction This Week - CryptoRank](https://news.google.com/rss/articles/CBMiiwFBVV95cUxORWNLa0ZYVWwyQy13bUFrRW90eF95TG5CNXRJcFpVZ0libExHUTdxQzRBV2k2aDdNel9oOVdxOWxZZzJhTHAzbWtvX3pHTmhjSUpZTDJUWDZDcXRYY3Y4X1VINHRmS1ZqNXB6aEEzYzJuem5xS2JwM0RCN05BZkhaRGJNQzl0X09KTzRF?oc=5)
-- [April 2026 Trading Outlook: Fiscal Flows, Oil, Bank Credit, And Fed Interest Rates (SP500) - Seeking Alpha](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ0RtZGtRMDYxd3VVaUxpc28tV3o0UlVjRTZxSU9sc3dmMm5yRHA0cVphbHFXX3luZnc5cmZSWFExa0dOczRJVTlkdnBseTZvWHg2WDdyVmo5ZlVvVndiRnMxYzg5c2pPMUNDODhsSXJCZEFUeUFGemh6QUJVaUNTS1RoUWxmYlBwc0xQRE1MeDJuOWhDdUFMWUpGU3ZCWVVXTUNHRkIzQmpYR1BtenZDT3pKU0gxenRuaUdN?oc=5)
 
 Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
