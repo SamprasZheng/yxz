@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-06-11] daily-trader | Day-1 seed run — manual WebSearch fallback (trader pipeline missing + yfinance blocked); 10-ticker watchlist; top-3 FOM: NVDA 0.824, PLTR 0.730, AMZN 0.663; LONG on NVDA/PLTR/AMZN/AMD/MSFT driven by Oracle $70B capex catalyst; all 5 ABSTAIN (COIN/GOOGL/META/TSLA/AAPL); no backtest (Day 1). Scan artifact: agents/outputs/scan-2026-06-11.json.
+
 ## [2026-06-11] deepen | RF transmitter-calibration subcluster — zero-IF/EVM architecture + six-region IC/instrument tier
 **Rotation:** the RF/phased-array cluster was the **stalest** domain (last `deepen` 2026-05-31, 11 days; every other domain touched 06-01→06-10). The 05-31 pass deepened [[concepts/aesa]] / [[concepts/hybrid-phased-array]] / [[concepts/dpd-digital-predistortion]] and created [[synthesis/phased-array-rf-frontend-supply-chain]] but **explicitly left the transmitter-calibration sub-pages and the thin Taiwan RF entities untouched** — making those the highest-thin-section / lowest-cross-link targets in the cluster. **Pages deepened (4):** [[concepts/zero-if-transmitter]], [[concepts/evm-calibration]], [[entities/win-semiconductors]], [[entities/ascend-tech]]. No new synthesis (the new material extends the existing RF front-end domain — per the "new synthesis = new domain, not new take" rule it was wired *into* the 05-31 supply-chain synthesis rather than duplicating it).
 

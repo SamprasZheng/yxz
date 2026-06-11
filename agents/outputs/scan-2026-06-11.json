@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "date": "2026-06-11",
+    "pipeline": "manual-websearch-fallback",
+    "llm_backend": "disabled",
+    "trader_offline": true,
+    "blocker": "agents/src/trader/ pipeline does not exist; yfinance blocked HTTP 403 (finance.yahoo.com not in network allowlist). Price data collected via WebSearch synthesis.",
+    "window_days": 7,
+    "generated_by": "daily-trader-evaluation-agent"
+  },
+  "watchlist": [
+    "NVDA", "AAPL", "TSLA", "MSFT", "AMD",
+    "GOOGL", "META", "AMZN", "COIN", "PLTR"
+  ],
+  "price_snapshot": {
+    "NVDA":  { "close": 202.99,  "price_range": [199.54, 204.47], "source": "WebSearch" },
+    "AAPL":  { "close": 290.55,  "price_range": null,              "source": "WebSearch" },
+    "TSLA":  { "close": 396.68,  "price_range": [378.08, 397.09], "prev_close": 381.59, "source": "WebSearch" },
+    "MSFT":  { "close": 403.41,  "price_range": null,              "source": "WebSearch" },
+    "AMD":   { "close": 465.70,  "price_range": null,              "source": "WebSearch" },
+    "GOOGL": { "close": 348.19,  "price_range": [346.36, 357.88], "source": "WebSearch" },
+    "META":  { "close": 571.41,  "price_range": [557.01, 573.44], "52w_high": 796.25, "52w_low": 520.26, "source": "WebSearch" },
+    "AMZN":  { "close": 236.07,  "price_range": [235.44, 244.35], "52w_high": 278.56, "52w_low": 196.00, "source": "WebSearch" },
+    "COIN":  { "close": 152.72,  "price_range": [151.54, 161.71], "volume": 6410000, "avg_volume": 9650000, "source": "WebSearch" },
+    "PLTR":  { "close": 131.37,  "price_range": [127.18, 131.70], "source": "WebSearch" }
+  },
+  "scan_verdicts": [
+    {
+      "ticker": "NVDA",
+      "direction": "long",
+      "confidence": 0.85,
+      "sizing_sigma": 0.98,
+      "thesis": "Oracle $70B data-center capex announcement (Jun 11) direct GPU demand catalyst. Strong Buy consensus (62 analysts), avg target $298.42 (+49% upside). Jensen AI-infrastructure-as-utility narrative intact.",
+      "news_momentum": 0.90
+    },
+    {
+      "ticker": "PLTR",
+      "direction": "long",
+      "confidence": 0.80,
+      "sizing_sigma": 0.80,
+      "thesis": "Q1 2026 revenue +85% YoY. Buy consensus (21-31 analysts). Avg price target $173-193 (+40% upside from $131). Defense AI (AIP) revenue compounding. Raised FY2026 guidance to $7.66B.",
+      "news_momentum": 0.70
+    },
+    {
+      "ticker": "AMZN",
+      "direction": "long",
+      "confidence": 0.78,
+      "sizing_sigma": 0.62,
+      "thesis": "Strong Buy (66 analysts), avg target $312.71 (+31% upside). AWS AI cloud infrastructure in direct demand path from hyperscaler capex cycle. 52w low $196 provides floor reference.",
+      "news_momentum": 0.65
+    },
+    {
+      "ticker": "AMD",
+      "direction": "long",
+      "confidence": 0.75,
+      "sizing_sigma": 0.50,
+      "thesis": "Named alongside NVDA in TipRanks Jun-11 AI hardware rally on Oracle capex news. MI300X in production AI workloads. Beneficiary of same hyperscaler buildout.",
+      "news_momentum": 0.80
+    },
+    {
+      "ticker": "MSFT",
+      "direction": "long",
+      "confidence": 0.70,
+      "sizing_sigma": 0.36,
+      "thesis": "Azure AI integration + OpenAI partnership. Steady blue-chip with AI infrastructure moat. Less dramatic near-term catalyst vs pure-play AI names but lower volatility risk.",
+      "news_momentum": 0.60
+    },
+    {
+      "ticker": "COIN",
+      "direction": "abstain",
+      "confidence": 0.60,
+      "sizing_sigma": 0.50,
+      "thesis": "Crypto-market correlated. P/E 58x. Volume 6.4M vs avg 9.65M (below avg — weak conviction). x402 agentic-payments tailwind is a real thesis but not a near-term price driver. Wait for crypto catalyst or earnings.",
+      "news_momentum": 0.55
+    },
+    {
+      "ticker": "GOOGL",
+      "direction": "abstain",
+      "confidence": 0.62,
+      "sizing_sigma": 0.40,
+      "thesis": "AI search displacement risk from OpenAI/Perplexity remains overhang. No specific Jun-11 catalyst. Google Cloud is a capex cycle beneficiary but Alphabet has more moving parts.",
+      "news_momentum": 0.50
+    },
+    {
+      "ticker": "META",
+      "direction": "abstain",
+      "confidence": 0.55,
+      "sizing_sigma": 0.50,
+      "thesis": "Trading $571 vs 52w high $796 (-28%). Volume 11.9M vs avg 21.2M — significantly below average, low conviction. No near-term positive catalyst. AI/social tailwinds priced in at higher levels.",
+      "news_momentum": 0.40
+    },
+    {
+      "ticker": "TSLA",
+      "direction": "abstain",
+      "confidence": 0.50,
+      "sizing_sigma": 0.50,
+      "thesis": "Mixed signals: CFO share sales (bearish near-term) vs $119B Terafab chip manufacturing investment announcement (long-horizon bullish). June 10 close $381.59 → Jun 11 ~$396 (+4%) likely Terafab pop.",
+      "news_momentum": 0.55
+    },
+    {
+      "ticker": "AAPL",
+      "direction": "abstain",
+      "confidence": 0.60,
+      "sizing_sigma": 0.30,
+      "thesis": "No specific Jun-11 catalyst. WWDC season may bring AI feature announcements. Stable platform but limited near-term upside vs AI pure-plays. Low sizing_sigma reflects thin analyst upside at current price.",
+      "news_momentum": 0.45
+    }
+  ],
+  "fom_scores": [
+    { "ticker": "NVDA", "fom": 0.824, "tier": "tier-1" },
+    { "ticker": "PLTR", "fom": 0.730, "tier": "tier-1" },
+    { "ticker": "AMZN", "fom": 0.663, "tier": "tier-1" },
+    { "ticker": "AMD",  "fom": 0.630, "tier": "tier-1" },
+    { "ticker": "MSFT", "fom": 0.548, "tier": "tier-1" },
+    { "ticker": "COIN", "fom": 0.545, "tier": "tier-2" },
+    { "ticker": "GOOGL","fom": 0.518, "tier": "tier-2" },
+    { "ticker": "META", "fom": 0.510, "tier": "tier-2" },
+    { "ticker": "TSLA", "fom": 0.505, "tier": "tier-2" },
+    { "ticker": "AAPL", "fom": 0.475, "tier": "tier-2" }
+  ]
+}
