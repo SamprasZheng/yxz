@@ -113,6 +113,23 @@ This table maps Spacesharks' claimed unfair advantages against the gaps document
 
 The Spacesharks thesis is strongest at the intersection of **external signals + lifecycle reasoning + labeled dataset**. The risk is that an incumbent (Cognitive Space, Slingshot) or hyperscaler (AWS, Azure) ships an LLM layer on top of their existing data pipeline before the Spacesharks dataset achieves sufficient depth to be defensible.
 
+---
+
+## 6. Six-region view — this map is US-centric; the global picture
+
+The vendor table above is overwhelmingly **US** (MSBAI, Lockheed, Cognitive Space, Slingshot, Kayhan, Privateer) with AIKO as the lone European entry. That reflects where *public, English-language* ops-AI marketing concentrates, not the true global distribution. The 台美日韓中國歐洲 map — and the reframe that **the moat is data access, not model access** — is consolidated in the dedicated synthesis [[synthesis/llm-satellite-operations-six-region]]. Condensed:
+
+| Region | Lead ops-AI actors | Strategy archetype |
+|---|---|---|
+| **US** | MSBAI / Lockheed / Cognitive Space / Slingshot / Kayhan / Privateer | Defense-funded vertical SDA copilot (classified-data moat; thin LLM-reasoning layer) |
+| **China** | "Air Target Agent System" (2026-05, Huawei Ascend), [[sources/scnoc-agentic-sun-2025|SCNOC-Agentic]], Three-Body/Star-Compute | Sovereign full-stack autonomy (own silicon + open-weight model + agent; data-closed) |
+| **Europe** | [[entities/aiko-space|AIKO]], ESA PhiLab/Φ-sat, Vyoma | Agency-anchored on-board autonomy (safety-framed; no LLM layer) |
+| **Japan** | Synspective + JAXA FDIR, Astroscale | Sovereign-reconnaissance / RPO autonomy (SAR-centric) |
+| **Korea** | Hanwha Systems, TelePIX, KARI | AI-on-imagery + edge analytics (ops-copilot nascent) |
+| **Taiwan** | TASA; **Spacesharks Mission Desk** (owner) | Upstream-supply + individual-builder (no sovereign ops-AI vendor) |
+
+Key reframe: **the US leads on deployment despite a thin LLM-reasoning layer because it owns the labeled data**, while **China is building the most aggressive autonomous-action stack entirely outside US export controls**. Taiwan repeats its [[synthesis/leo-taiwan-odc-gap|upstream-strong/midstream-absent]] pattern — the owner's [[synthesis/spacesharks-mission-desk-hackathon-plan|Spacesharks]] is the de-facto Taiwan ops-AI entry, and its public-signal/non-operator design is precisely the structurally-accessible opening the data-access asymmetry leaves open.
+
 ## Cross-References
 
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — canonical Spacesharks plan
@@ -129,3 +146,4 @@ The Spacesharks thesis is strongest at the intersection of **external signals + 
 - [[entities/kayhan-space]] — maneuver planning competitor
 - [[entities/privateer-space]] — SSA + geospatial competitor
 - [[entities/aiko-space]] — on-board AI competitor (Europe)
+- [[synthesis/llm-satellite-operations-six-region]] — six-region (台美日韓中國歐洲) map of this same landscape; data-access-not-model-access moat thesis

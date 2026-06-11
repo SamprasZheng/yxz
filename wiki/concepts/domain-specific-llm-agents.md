@@ -42,8 +42,27 @@ For a **solo-maintained** corpus under ~10 MB, Custom GPTs dominate on no-backen
 
 Because the agent's strength is bounded by the corpus, a domain-specific agent project is **fundamentally a knowledge-management project**, not an ML project. This is why the upstream artifact ([[concepts/obsidian-llm-knowledge-base|the vault]]) and the downstream artifact (the GPT) are co-designed: the vault's schema is what the agent "thinks in."
 
+## The same logic, scaled up to nations (台美日韓中國歐洲)
+
+"Compete on the layer you can move" is not only a personal-scale tactic — it is the **dominant national strategy** for every country that cannot reach the capability frontier. As of mid-2026 the open-weight frontier is China-led and the closed frontier is US-led ([[synthesis/open-weight-llm-agent-stack-six-region]]), so **Korea, Japan, Taiwan, and Europe do at national scale exactly what this page describes at individual scale**: they take an open base (usually Llama or Qwen) and narrow it with a curated national corpus + language + persona rather than training a frontier base from scratch.
+
+| Scale | Base they cannot move | Layer they compete on |
+|---|---|---|
+| **Individual** (this page) | GPT-4 / Nemotron / Llama | curated Obsidian vault + persona ([[entities/jamia-gpt]] / [[entities/spacesharks-gpt]]) |
+| **National — Taiwan** | Llama 3.1/3.2 (→ Nemotron) | Traditional-Chinese corpus + Taiwan context (TAIDE 2.0, TAME, MediaTek Breeze2) |
+| **National — Japan** | Llama / from-scratch | Japanese corpus + on-prem deployment (tsuzumi, ELYZA, PLaMo, Swallow) |
+| **National — Korea** | mixed | Korean corpus + sovereign deployment (EXAONE, HyperCLOVA X, Solar) |
+
+Taiwan's national programs are, structurally, **the same thin-wrapper recipe as a Custom GPT — just funded as sovereign infrastructure** — which is why the corpus repeatedly diagnoses Taiwan as *upstream-strong / midstream-absent* at the model layer (see [[synthesis/leo-taiwan-odc-gap]]).
+
+## Long-horizon: the corpus is the durable moat (projection)
+
+If model capability commoditizes — which the open-weight commons is actively driving — then the *base model* becomes a replaceable substrate (a compiler) and the **only durable, defensible asset is the curated proprietary corpus + its provenance** ([[concepts/agentic-provenance]]). The 100-year read of this page's thesis: "knowledge first, system later" is not just a solo-builder heuristic, it is the structural reason language-bloc model programs persist indefinitely (the *linguistic-sovereignty invariant* of [[synthesis/open-weight-llm-agent-stack-six-region]]). Whoever owns the corpus — and the [[synthesis/orbital-data-center-six-region|compute to run it]] — holds the lever after the model itself stops being scarce.
+
 ## Related
 
+- [[synthesis/open-weight-llm-agent-stack-six-region]] — the national-scale six-region map of this exact logic
 - [[concepts/obsidian-llm-knowledge-base]] — the storage substrate
+- [[concepts/agentic-provenance]] — the corpus-as-durable-moat / provenance layer
 - [[entities/jamia-gpt]], [[entities/spacesharks-gpt]] — example instances
 - [[sources/sampras-mygpts-ai-agent-2025]] — origin post

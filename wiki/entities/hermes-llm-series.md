@@ -20,6 +20,8 @@ The **Hermes LLM series** is the open-weight fine-tuned model lineage from [[ent
 
 Hermes-4 is described on HuggingFace as a "frontier, hybrid-mode reasoning model." The 14B variant uses Qwen-3-14B as base, breaking the Llama-only convention of earlier generations.
 
+**Six-region note:** that base-model switch is geopolitically loaded. A **US** open-weight lab fine-tuning on Alibaba's **Chinese** Qwen-3 base reflects the central finding of [[synthesis/open-weight-llm-agent-stack-six-region]] — by 2026 the strongest open-weight *bases* increasingly come from China (Qwen, DeepSeek, GLM, Kimi), so even US labs build on them. The Hermes lineage is thus a **US-alignment-layer on a Chinese-and-American base mix**, distributed for a US (NVIDIA) hackathon — the open-weight commons in one artifact.
+
 ## Positioning
 
 - **Open weights, permissive licenses** — downloadable from HuggingFace, runnable locally with vLLM/Ollama/SGLang
@@ -32,6 +34,7 @@ The model fine-tuning and datasets across the series are credited to **Teknium, 
 
 ## Related
 
+- [[synthesis/open-weight-llm-agent-stack-six-region]] — six-region open-weight base-model map (why a US lab builds on a Chinese base)
 - [[entities/nous-research]]
 - [[concepts/hermes-agent-framework]]
 - [[concepts/nemotron]]

@@ -84,6 +84,21 @@ The FAA AST license governs **launch safety** (airspace, public casualty risk). 
 
 Both FAA and FCC approvals are typically required before a commercial orbital launch. The mission-desk agent should track both clocks independently. See [[sources/faa-notam-search-2024]] for agent retrieval recipe.
 
+## 6a. International context — FAA AST is one of six divergent launch regimes
+
+FAA AST is the **most mature commercial** launch regulator, but the launch-authorization axis is *nationally divergent* (unlike the globally-convergent spectrum axis that terminates at the ITU). The six-region (台美日韓中國歐洲) picture:
+
+| Region | Launch / re-entry authority | Legal basis | Note |
+|---|---|---|---|
+| **US** | FAA AST | 51 U.S.C. § 50901; 14 CFR Part 450 (EC ≤ 1×10⁻⁴) | Performance-based; "default-to-yes" reform direction (2025–26) |
+| **China** | State (CASC) under SASTIND/CNSA + military ranges | No FAA-style independent commercial license | Launch *is* the state; commercial activity layered on top |
+| **Japan** | Cabinet Office (PM) | Space Activities Act (Act No. 76 of 2016, eff. 2018); cabinet-approved amendment 2026-03-27 | 3 licenses; modernizing for reuse/OOS/return |
+| **Korea** | KASA (est. 2024-05-27) | Space Development Promotion Act | MSIT amendment (2024) allows repeated-launch license for same vehicle/site |
+| **Europe** | National — France CNES/Min. of Economy (FSOA 2008), UK CAA (Space Industry Act 2018), etc. | 13 fragmented national laws | EU Space Act (proposed 2025-06, applies 2030) to harmonize |
+| **Taiwan** | TASA (launch permits, vehicle/spacecraft registration) | Space Development Act (太空發展法, 2021) | No sovereign orbital launch yet; building national launch site |
+
+The Mission Desk launch-slip workflow ([[synthesis/faa-notam-launch-lifecycle]], [[concepts/launch-window-slip]]) is built on US airspace mechanics (NOTAM/AHA/NOTMAR); a non-US launch requires the analogous national clearance signal (UK CAA range licence, Japan MIC + Cabinet Office, etc.). Full comparison incl. the spectrum axis: [[synthesis/space-regulatory-regimes-six-region]].
+
 ## 7. Mission-desk notes
 
 - FAA AST publishes a **Commercial Space Data** page at `faa.gov/data_research/commercial_space_data` listing license status and historical launch counts. No machine-readable API; web scraping or manual check required.
@@ -98,3 +113,4 @@ Both FAA and FCC approvals are typically required before a commercial orbital la
 - [[sources/faa-notam-search-2024]] — how agents pull NOTAM data
 - [[sources/notam-starship-ift8-2025]] — example license + NOTAM lifecycle
 - [[synthesis/faa-notam-launch-lifecycle]] — agent integration guide
+- [[synthesis/space-regulatory-regimes-six-region]] — six-region launch + spectrum regulatory comparison

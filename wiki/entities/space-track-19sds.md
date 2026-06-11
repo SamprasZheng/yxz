@@ -100,9 +100,14 @@ Under Space Policy Directive-3 (2018), the civil STM mission is transitioning fr
 
 As of February 2026, 17 organisations are TraCSS pilot users. The full TraCSS.gov interface will replace the Space-Track.org interface for civil operators when production is declared. 18 SDS and 19 SDS will continue as the military SDA mission providers post-transition.
 
+## International Context
+
+18/19 SDS produce the only CDM stream with *legal* standing for US-licensed operators, and de-facto the global default — but they are one of six regional SSA systems. Europe runs a **federated** EU SST Partnership (15→19 members, Dec 2025; GESTRA/GRAVES/TIRA), China a **sovereign, data-closed** CNSA + APSCO/APOSOS network, Japan a fast-building civil-military system (JAXA + FY2026 SDA satellite), Korea an astronomy-institute-led optical network (KASI OWL-Net), and Taiwan is effectively a **consumer** of US SDA + commercial data. The contrast between Space-Track's *open* posture and China's *closed* catalog is itself a strategic choice. Full six-region map + governance models + the 100-year Kessler view: [[synthesis/space-situational-awareness-six-region]].
+
 ## See Also
 
 - [[entities/18-sds]] — 18 SDS detailed entity page
+- [[synthesis/space-situational-awareness-six-region]] — where the US system sits among the six regional SSA programs
 - [[sources/space-track-cdm-api-2023]] — Space-Track REST API documentation
 - [[sources/tracss-oasis-announcement-2024]] — TraCSS transition details
 - [[concepts/cdm-conjunction-data-message]] — CDM format reference

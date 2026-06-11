@@ -64,6 +64,14 @@ The following characterisation is derived from the research found at ingest time
 | Fusion (lifecycle-wide, SatOps + NetOps) | Not yet published | Spacesharks Mission Desk (owner's hackathon entry) claims this space |
 | MCP-standardized aerospace tool access | Early open-source (see [[concepts/mcp-aerospace-applications]]) | Individual developers / small orgs |
 
+## Six-region positioning
+
+The SatOps/NetOps split maps cleanly onto the geographic distribution of ops-AI work (full map: [[synthesis/llm-satellite-operations-six-region]]):
+
+- **NetOps-agent academic lead is China** — [[sources/scnoc-agentic-sun-2025|SCNOC-Agentic]] (Qwen2.5-70B, 15.6%→32.2% task-planning accuracy) is the lead paper, and the broader 6G-NTN agent literature is China/Korea/EU-lab heavy. This sits inside China's **sovereign full-stack autonomy** archetype (domestic compute + Chinese open-weight base + agent), which by 2026-05 extended to autonomous *action* with the "Air Target Agent System" (LLM "brain + tool army" on Huawei Ascend).
+- **SatOps-agent + on-board autonomy lead is split US/Europe** — US defense SDA copilots ([[entities/msbai|MSBAI]] etc.) and Europe's [[entities/aiko-space|AIKO]] on-board autonomy.
+- **Taiwan** has neither a NetOps nor a SatOps vendor; the owner's [[synthesis/spacesharks-mission-desk-hackathon-plan|Spacesharks]] aims at the *fusion* layer (lifecycle SatOps+NetOps over public signals) precisely because that layer is unclaimed — see §"fusion" row below.
+
 ## Relevance to Spacesharks Mission Desk
 
 The [[synthesis/spacesharks-mission-desk-hackathon-plan]] operates at the fusion layer: it ingests both network-layer signals (CDMs, spectrum filings, ITU data) and platform-layer signals (solar weather, TID accumulation, orbital drag) into the same decision loop. SCNOC-Agentic validates the NetOps automation vector; the SatOps papers validate the platform-anomaly vector. Neither prior paper fuses both in a lifecycle-events dataset. That gap is the structural differentiation the owner is building toward.
@@ -76,3 +84,4 @@ The [[synthesis/spacesharks-mission-desk-hackathon-plan]] operates at the fusion
 - [[concepts/hermes-agent-framework]] — agent runtime used in owner's stack
 - [[concepts/nemoclaw]] — sandbox runtime used in owner's stack
 - [[concepts/llm-satellite-operations-landscape]] — full competitive map: academic papers, commercial vendors, hyperscalers, structural gap table
+- [[synthesis/llm-satellite-operations-six-region]] — six-region (台美日韓中國歐洲) ops-AI map; NetOps-agent academic lead is China

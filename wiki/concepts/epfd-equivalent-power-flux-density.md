@@ -27,6 +27,8 @@ EPFD is computed as a **time-domain aggregate** across the entire constellation,
 
 **ITU Radio Regulations Article 22** (No. 22.2) states that NGSO systems shall not cause unacceptable interference to and shall not claim protection from GSO networks in the FSS and BSS. Article 22 provides the primary EPFD limit tables.
 
+> **Update (WRC-23 → WRC-27):** WRC-23 left the Article 22 EPFD limit *values* unchanged but **referred a study of those limits to WRC-27** (explicitly *without* committing to regulatory consequences at WRC-27 itself). The same conference tightened the surrounding [[concepts/ngso-gso-coordination|NGSO bringing-into-use / milestone]] framework: a deployment must reach **10 % / 50 % / 100 %** of the notified satellite count within **2 / 5 / 7 years**, with defined **orbital tolerances** (apogee/perigee/inclination) around notified values, a post-milestone mechanism, and **4-year periodic deployment reporting** (annual if the count falls below the notified number). EPFD compliance is therefore necessary but no longer sufficient — the milestone clock now also conditions the right to operate. *(Sources: [ITU Main WRC-23 Results](https://ctu.int/wp-content/uploads/2023/12/Main-WRC-23-Result-20.02.24.pdf); [Digital Regulation Platform](https://digitalregulation.org/regulation-of-ngso-satellite-constellations/), accessed 2026-06-07.)*
+
 **Resolution 76 (Rev.WRC-23)** supplements Article 22 with **aggregate EPFD limits** (Tables 1A–1D in Annex 1) that account for multiple NGSO systems simultaneously interfering with the same GSO receiver. Key resolution tables:
 - **Table 1B**: Aggregate downlink EPFD limits on GSO FSS earth stations from all NGSO FSS systems combined
 - The resolution also defines the "qualified favorable" finding process at ITU — an NGSO system must submit compliance calculations using **ITU EPFD validation software** to receive this finding
@@ -72,11 +74,16 @@ For large LEO constellations (Starlink Gen2: ~7,500 sats; Kuiper: ~3,236 sats), 
 - The public ITU EPFD Support site (`itu.int/epfdsupport/`) provides the validation software and reference antenna pattern files — accessible without ITU SNS subscription
 - The [[synthesis/fcc-ibfs-filings-coordination]] synthesis documents the MVP recipe for querying EPFD compliance status via public IBFS + ITU data
 
+## Cross-Administration Note
+
+Article 22 EPFD is a **single global standard** — every administration (FCC for the US, MIIT for China, MIC/Cabinet Office for Japan, MSIT for Korea, national European regulators, NCC for Taiwan) files its operators' NGSO systems against the *same* limits and the *same* validation software. The FCC does not set independent EPFD values; neither does any other administration. This makes EPFD the most genuinely supranational piece of space regulation and the reason the spectrum axis — unlike the nationally-divergent launch axis — converges globally. See [[synthesis/space-regulatory-regimes-six-region]] for the six-region (台美日韓中國歐洲) comparison of which administration files for whom and how ITU first-come-first-served priority interacts with the EPFD blanket finding.
+
 ## See Also
 - [[concepts/ngso-gso-coordination]]
 - [[concepts/processing-round]]
 - [[concepts/schedule-s]]
 - [[synthesis/fcc-ibfs-filings-coordination]]
+- [[synthesis/space-regulatory-regimes-six-region]]
 - [[sources/itu-radio-regulations-article-22-2023]]
 - [[concepts/leo-value-chain]]
 - [[concepts/hybrid-phased-array]]

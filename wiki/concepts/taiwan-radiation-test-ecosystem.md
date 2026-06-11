@@ -61,13 +61,17 @@ For complete RHA qualification requiring TID + proton SEE + heavy-ion SEE, Taiwa
 
 2. **Medium-term opportunity**: If Taiwan establishes a heavy-ion accelerator (requiring investment on the order of tens of billions NTD), complete domestic RHA qualification would be possible — no such investment plan is currently visible.
 
-3. **Competitive positioning**: Compared to South Korea (KAERI has heavy-ion capability) and Japan (HIMAC, RIKEN), Taiwan has caught up on proton SEE but remains behind on heavy-ion.
+3. **Competitive positioning (六地域, verified 2026-06-04)**: Japan is the clear regional leader — **HIMAC** (QST-NIRS Chiba, protons→Xe at 800 MeV/u, electronics SEE since ~1994), **TIARA** (QST-Takasaki), RIKEN RIBF — plus a Renesas rad-hard IC line. China is self-sufficient via **HIRFL** (IMP-CAS Lanzhou, two dedicated SEE terminals) + CIAE, with domestic rad-hard ICs forced by US export controls. Korea is *building* heavy-ion hardware (**RAON**, IBS, still commissioning) but its routine SEE *service* and rad-hard IC line remain nascent; **KOMAC** (KAERI, Gyeongju) is proton-focused. Taiwan has caught up on proton SEE + TID but remains behind on heavy-ion and has no rad-hard IC line.
+
+> ⚠️ **Correction (2026-06-04)**: an earlier version of this point stated "South Korea (KAERI has heavy-ion capability)." Verification could not confirm a routine heavy-ion *SEE qualification service* at KAERI — KAERI/KOMAC is a 100 MeV **proton** complex, and Korea's heavy-ion machine (RAON/IBS) is a basic-science rare-isotope facility still in commissioning, not a flight-part SEE service. Korea's practical heavy-ion-SEE posture is closer to "emerging," roughly one notch ahead of Taiwan on hardware. Full six-region table + sources: [[synthesis/radiation-test-rad-hard-six-region]].
 
 ## Related
 
 - [[concepts/rha-radiation-hardening]] — ⚠️ Taiwan infrastructure assessment updated: revised from blank to partially established
+- [[synthesis/radiation-test-rad-hard-six-region]] — global six-region test-infrastructure + rad-hard sovereignty map this page anchors the Taiwan row of
 - [[concepts/tid-total-ionizing-dose]]
 - [[concepts/see-single-event-effects]]
 - [[concepts/leo-value-chain]]
+- [[synthesis/leo-taiwan-odc-gap]] — system-level "strong upstream, absent midstream/gate" thesis this radiation gate is one instance of
 - [[entities/win-semiconductors]]
 - [[entities/ascend-tech]]

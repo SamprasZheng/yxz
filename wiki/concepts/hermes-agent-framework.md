@@ -62,8 +62,13 @@ NVIDIA explicitly marks the Hermes path as experimental and not production-recom
 
 This is the framework recommended for the **NVIDIA Agent Challenge 2026** (see [[sources/nvidia-agent-challenge-2026]] for deadline + rules) that [[entities/sampras]] is competing in. <!-- deduped → [[sources/nvidia-agent-challenge-2026]] --> Hermes Agent's design — long-running, persistent, skill-evolving — directly matches the hackathon theme "long agents that run, persist, and perform — not demos, not slide decks." See also [[concepts/domain-specific-llm-agents]] for the broader narrow-agent philosophy that Hermes operationalizes.
 
+## The agent layer is region-neutral; the model layer is contested
+
+Hermes Agent's defining design choice — **model-agnostic, 25+ providers, switch with `hermes model`, no lock-in** — means the *runtime* layer is geopolitically neutral while the *model* layer underneath it is the contested ground. The same Hermes loop can drive a US Nemotron, a Chinese Qwen/DeepSeek/GLM/Kimi/MiniMax/Xiaomi-MiMo, a French Mistral, or a local Korean/Japanese sovereign model — its provider list already spans all six regions (NVIDIA NIM, OpenAI, Anthropic, DeepSeek, Alibaba Qwen, z.ai/GLM, Kimi/Moonshot, MiniMax, Xiaomi MiMo). This is the practical payoff of the [[synthesis/open-weight-llm-agent-stack-six-region|six-region open-weight map]]: because the open-weight frontier moved to China in 2026 (Kimi K2.6 leads open-weights) while the mandated-for-the-hackathon core is US (Nemotron), a model-agnostic framework lets a builder honour the [[sources/nvidia-agent-challenge-2026|Nemotron requirement]] for the graded path *and* benchmark against the cheaper/stronger Chinese open frontier for everything ungated. Nous Research itself embodies the entanglement — see [[entities/hermes-llm-series]], whose Hermes-4 14B is built on a **Chinese (Qwen-3)** base.
+
 ## See also
 
+- [[synthesis/open-weight-llm-agent-stack-six-region]] -> six-region map of the model layer this region-neutral framework runs on
 - [[concepts/dgx-spark]] -> local/on-prem deployment surface mentioned in the NVIDIA integration path
 - [[concepts/nemotron]] -> NVIDIA model family used in the challenge stack
 - [[concepts/nemoclaw]] -> sandbox/runtime integration path

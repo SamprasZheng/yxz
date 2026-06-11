@@ -9,6 +9,10 @@ Schedule S is the technical annex to FCC Form 312, the application form for sate
 
 As of 2025, the FCC proposed in its *Space Modernization for the 21st Century* NPRM (FCC 24-97, Dec 2024) to eventually replace Schedule S with two new schedules — Schedule O (orbital information) and Schedule F (frequency information) — to modernise the data model. Until those replacement rules are finalised, Schedule S remains the operative technical disclosure form.
 
+> **Update (2026):** The modernization push escalated sharply. In October 2025 FCC Chair Brendan Carr launched "Space Month," and the follow-on NPRM proposes to **replace the entire Part 25 rule set with a new "Part 100 — Space and Earth Station Services,"** introduce a **"default-to-yes" licensing assembly line** (straightforward requests presumed in the public interest and expedited), and a **modular single-Form-312** model in which an entity files its main form once and associates all future license requests with it. Comments were due **2026-01-20**, reply comments **2026-02-18**; rules could take effect as early as 2026. The Schedule S → O/F split is now subsumed into this larger Part 25 → Part 100 transition. *(Sources: [FCC Space Modernization NPRM](https://www.fcc.gov/document/space-modernization-21st-century-nprm); [Via Satellite — Carr Space Month](https://www.satellitetoday.com/government-military/2025/10/07/fcc-chair-targets-satellite-licensing-and-spectrum-reform-in-space-month/), accessed 2026-06-07.)*
+
+**Schedule S is the US national instance of a universal pattern.** Every ITU member administration that files satellite networks maintains an equivalent national technical-disclosure form whose fields map into the *same* [[concepts/ngso-gso-coordination|API → CR → Notification]] package and ITU SNS database — China via MIIT, Japan via MIC, Korea via MSIT, Taiwan via NCC, and each European state via its national regulator. The form differs by administration; the ITU package it feeds does not. See [[synthesis/space-regulatory-regimes-six-region]] for the six-region (台美日韓中國歐洲) comparison of who files for whom.
+
 ## Sections and Key Fields
 
 ### 1. Orbit Type Selection
@@ -83,6 +87,7 @@ This split is intended to make machine-readable ingestion easier and to allow ea
 
 ## See Also
 - [[synthesis/fcc-ibfs-filings-coordination]]
+- [[synthesis/space-regulatory-regimes-six-region]]
 - [[concepts/epfd-equivalent-power-flux-density]]
 - [[concepts/ngso-gso-coordination]]
 - [[concepts/processing-round]]

@@ -79,7 +79,7 @@ As constellation scale grows, debris management becomes a dual regulatory and en
 → See [[concepts/orbital-data-center]] for details
 
 ### On-Orbit Compute Nodes (Starcloud H100 / Axiom ODC)
-Core logic: Explosive growth in Earth data center energy consumption (2024→2026: 415→650 TWh) × free space solar energy × radiative cooling → long-term cost disruption. Taiwan manufacturers are currently almost absent from this segment.
+Core logic: Explosive growth in Earth data-center electricity (IEA *Energy and AI*, 2025: **≈415 TWh in 2024 → ≈945 TWh by 2030**, US + China = ~80% of the growth) × free space solar energy × radiative cooling → long-term cost disruption. Taiwan manufacturers are currently almost absent from this segment. Global ODC race mapped by region in [[synthesis/orbital-data-center-six-region]]; Taiwan-specific gap in [[synthesis/leo-taiwan-odc-gap]].
 
 ### Energy Systems (24hr Solar Arrays / Radiative Cooling)
 24/7 solar power (no cloud cover) + passive radiative cooling toward the cosmic background is the differentiated energy advantage of ODC.

@@ -120,4 +120,5 @@ The model runs once daily (00Z ambient run) and additionally on-demand when CMEs
 - [[concepts/swpc-space-weather-feeds]] — operational feed summary and agent usage guide
 - [[concepts/space-weather-operational-indices]] — Kp/ap/Ap/F10.7/Dst index definitions and thresholds
 - [[concepts/solar-cycle-25-leo-radiation]] — physics/damage context for the storm events
+- [[synthesis/space-weather-forecasting-six-region]] — the pooled six-region system this US (NOAA) catalog is one node of
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — usage of SWPC as environment signal in Phase 4 fusion

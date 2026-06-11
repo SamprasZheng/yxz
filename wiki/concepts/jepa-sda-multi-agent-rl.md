@@ -145,6 +145,8 @@ A 72-hour hackathon agent cannot replicate: (a) years of labeled maneuver events
 | LeoLabs | CDM service | Commercial phased-array radar | Own sensor network | <5 min CDMs, 22K+ objects — see [[entities/leolabs]] |
 | DARPA Hallmark / Ball Aerospace | VIRSA, TRACER | ML indications/warnings + AI COA | DoD classified | Transitioned 2020; Ball/BAE inherits |
 
+This table is **US-centric** — the SDA-AI public landscape is. The one major non-US datapoint as of mid-2026 is China's **"Air Target Agent System"** (unveiled 2026-05-28; reported SCMP 2026-05-30, *Interesting Engineering*): an LLM stack on **Huawei Ascend** hardware (outside US export controls) framed as a "brain plus tool army" — an LLM coordinator that decomposes tasks, auto-selects algorithms, coordinates workflows, and **recovers from failure without human handoff** (it self-diagnosed a GPU-contention failure in a port-monitoring test and switched models). This is *autonomous targeting/surveillance*, the closest non-US analog to the MSBAI/Lockheed SDA-AI layer, and notable for moving past human-in-the-loop. Treat the capability claims as secondary-press, not independently verified. The full regional distribution of the ops-AI layer — and why the moat is **data access, not model access** — is mapped in [[synthesis/llm-satellite-operations-six-region]].
+
 ---
 
 ## 6. Related pages
@@ -161,3 +163,4 @@ A 72-hour hackathon agent cannot replicate: (a) years of labeled maneuver events
 - [[concepts/orbital-data-center]] — adjacent ODC domain
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Spacesharks hackathon strategy; explicitly avoids competing on orbital-physics ML
 - [[synthesis/cdm-pc-decisioning]] — CDM → Pc → maneuver decision workflow
+- [[synthesis/llm-satellite-operations-six-region]] — six-region ops-AI map; this SDA-AI layer is the US "defense-funded vertical SDA copilot" archetype

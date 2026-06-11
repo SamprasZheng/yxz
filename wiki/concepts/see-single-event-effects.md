@@ -61,6 +61,7 @@ High-energy particle (heavy ion / proton nuclear reaction product)
 - Direct ionization, high LET, capable of fully revealing SEU / SEL / SEFI vulnerabilities
 - **LBNL BASE (Berkeley Accelerator Space Effects)**: World's first SEE heavy-ion test facility in 1979; provides full range from proton to bismuth; LET > 99 MeV·cm²/mg
 - Other major facilities: TRIUMF (Canada), GANIL (France), GSI (Germany)
+- **Six-region capacity (台美日韓中國歐洲):** US leads on commercial throughput (TAMU REF ~80k beam-hrs, LBNL, BNL NSRL); Japan strong (HIMAC p→Xe 800 MeV/u, TIARA); Europe is ESA-*coordinated* (GANIL/GSI/UCLouvain/RADEF-Jyväskylä ECIF network); China sovereign (HIRFL Lanzhou + CIAE); Korea emerging (RAON commissioning); **Taiwan absent** — heavy-ion SEE still requires foreign beam time. Heavy-ion capacity is the strategic bottleneck because it is the scarcest, most expensive mode and tightens as 3D/in-package integration raises required ion energy. Full table + citations: [[synthesis/radiation-test-rad-hard-six-region]].
 
 ### Proton Accelerator (Supplementary)
 - Proton LET is too low to directly cause SEU/SEL
@@ -97,3 +98,4 @@ Cross section (cm²) = number of upset events / particle fluence (particles/cm²
 - [[concepts/orbital-data-center]] — SEU/SEL risk of COTS GPUs is the biggest engineering challenge for ODC
 - [[concepts/cots-gpu-radiation-risk]] — H100/Orin specific test data and on-orbit mitigation strategies
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 peak (2024–2026) increases SEU/SEL event rates
+- [[synthesis/radiation-test-rad-hard-six-region]] — who owns the heavy-ion accelerators that qualify SEE, by region; 100-year sovereignty view

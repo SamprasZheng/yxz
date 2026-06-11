@@ -114,9 +114,14 @@ When a launch slips:
 
 See [[concepts/pc-probability-of-collision]], [[concepts/tca-time-of-closest-approach]], and [[sources/ccsds-508-cdm-2013]] for CDM format details.
 
+## 6a. Jurisdiction note
+
+The slip/scrub/hold taxonomy and its NOTAM finite-state machine above are **US-airspace-specific** — built on FAA AHA NOTAMs, USCG NOTMAR, and ARTCC coordination. A launch from another jurisdiction generates the equivalent slip signal through its own national clearance chain (UK CAA range licence under the Space Industry Act 2018; Japan MIC + Cabinet Office; etc.). The mission-desk agent must pick the right national signal source per launch site. See [[synthesis/space-regulatory-regimes-six-region]] for the six-region (台美日韓中國歐洲) launch + spectrum regulatory comparison.
+
 ## 7. Related pages
 
 - [[concepts/notam]] — NOTAM structure, format, and retrieval
+- [[synthesis/space-regulatory-regimes-six-region]] — six-region launch + spectrum regulatory map
 - [[sources/faa-part-450-2020]] — regulatory basis for hazard area and NOTAM obligations
 - [[sources/faa-ast-launch-licensing-2025]] — licensing chain upstream of each launch
 - [[sources/notam-starship-ift8-2025]] — IFT-8 scrub/replace concrete example

@@ -76,9 +76,18 @@ AIKO is the closest competitor to [[synthesis/spacesharks-mission-desk-hackathon
 
 The GENE "4 of 5 anomalies in 3 minutes" result is a strong benchmark. The Spacesharks Mission Desk does not claim to replicate this depth of telemetry ML; instead it sits one abstraction layer up: given an anomaly has occurred (or is likely given external conditions), what should the operator do next?
 
+## Six-region positioning — Europe's flagship ops-AI vendor
+
+In the [[synthesis/llm-satellite-operations-six-region]] map, AIKO is **Europe's flagship** and the clearest instance of the **agency-anchored on-board autonomy** archetype: ESA ARTES-funded, CNES/Thales-partnered, safety-envelope-bounded, and the only commercial vendor with production on-board deep learning at scale. The contrast that defines the three regional bets:
+
+- **vs US (defense-funded vertical SDA copilot):** AIKO trades the US incumbents' classified-data + compute advantage for *on-board* autonomy and an institutional (ESA) anchor customer. It has **no LLM-reasoning layer** — it is deep-learning/RL, like the US SDA vendors.
+- **vs China (sovereign full-stack autonomy):** AIKO's safety-framed, operator-oversight-maintained design is the explicit opposite of the Chinese "Air Target Agent System" autonomous-action-without-human-handoff model.
+- **vs Taiwan ([[synthesis/spacesharks-mission-desk-hackathon-plan|Spacesharks]]):** AIKO has the on-board capability Spacesharks lacks; Spacesharks has the external-signal-fusion + lifecycle-reasoning layer AIKO lacks. They sit one abstraction layer apart (telemetry-ML vs operator-decision-support).
+
 ## See Also
 
 - [[concepts/llm-satellite-operations-landscape]] — full competitive map
+- [[synthesis/llm-satellite-operations-six-region]] — six-region (台美日韓中國歐洲) ops-AI map; AIKO is the Europe flagship
 - [[concepts/satellite-digital-twin]] — digital twin concept AIKO GENE partially instantiates
 - [[entities/cognitive-space]] — US scheduling counterpart
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Spacesharks canonical plan

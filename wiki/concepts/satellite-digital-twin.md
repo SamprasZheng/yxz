@@ -71,6 +71,15 @@ A key architectural question for any satellite digital twin is where the twin li
 
 AIKO is the only known commercial vendor to have deployed on-board AI at scale. Most other vendors (Cognitive Space, Kayhan, LeoLabs) are ground-only.
 
+### On-board vs ground split has a geographic signature
+
+Where the twin/autonomy lives correlates with regional strategy (full map: [[synthesis/llm-satellite-operations-six-region]]):
+
+- **On-board autonomy leads in Europe + Japan** — [[entities/aiko-space|AIKO]] (Italy) is the production exemplar (safety-envelope-bounded on-board deep learning); JAXA on-board FDIR and Astroscale RPO autonomy sit here. The **agency-anchored on-board autonomy** archetype.
+- **Ground-side reasoning leads in the US** — the defense SDA copilots ([[entities/msbai|MSBAI]], Cognitive Space, Slingshot) are ground-only, trading autonomy for unlimited compute + classified data access. The **defense-funded vertical SDA copilot** archetype.
+- **China** pursues *both* simultaneously — in-orbit edge AI (Three-Body / Star-Compute) plus ground LLM-agent autonomy (Air Target Agent System) on a domestic Ascend stack. The **sovereign full-stack autonomy** archetype.
+- **Taiwan**'s [[synthesis/spacesharks-mission-desk-hackathon-plan|Spacesharks]] is a *ground-desk-only L3 sparse twin* built from public signals (no telemetry access, no on-board compute) — the structurally-accessible option for a non-operator.
+
 ## Relevance to Spacesharks Mission Desk
 
 [[synthesis/spacesharks-mission-desk-hackathon-plan]] implicitly implements a **lifecycle-level (L3) digital twin** for each tracked satellite in its event schema: every row captures satellite identifier + mission phase + signal tier + agent action + confidence + source citation. This is a sparse operational history twin, not a physics twin. The Spacesharks thesis is that the **labeled event dataset** accumulated over time becomes the SDT equivalent for operators who lack internal telemetry access — an externally-sourced behavioral twin derived from public signals.
@@ -83,3 +92,4 @@ AIKO is the only known commercial vendor to have deployed on-board AI at scale. 
 - [[entities/aiko-space]] — production L1 SDT in GENE
 - [[entities/slingshot-aerospace]] — environment-level digital twin (Space Force contract)
 - [[concepts/spacesharks-mission-desk-event-schema]] — Spacesharks' L3 dataset schema
+- [[synthesis/llm-satellite-operations-six-region]] — six-region ops-AI map; on-board vs ground split by region
