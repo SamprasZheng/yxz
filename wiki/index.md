@@ -138,8 +138,8 @@ type: index
 - [[concepts/aesa]] — AESA technology evolution (fixed → mechanical → PESA → AESA → all-digital); SWAP breakthrough; beam-forming mathematics; all-digital vs. hybrid architecture comparison
 - [[concepts/hybrid-phased-array]] — Hybrid phased array architecture (digital + analog phase shifting); typical LEO satellite specs (EIRP/scan angle/modulation); redundancy design
 - [[concepts/dpd-digital-predistortion]] — PA linearization: memoryless/memory polynomial/NN-LM; NN DPD NMSE −26 dB, ACPR −4 dB; Indirect Learning; CUDA acceleration
-- [[concepts/zero-if-transmitter]] — Direct conversion architecture: lowest DAC sampling rate; LO leakage + IQ imbalance are core challenges; DAC quantization noise vs. SEM; delta-sigma noise shaping
-- [[concepts/evm-calibration]] — EVM measurement + calibration techniques: VSA six-window diagnosis; LO leakage ternary search; IQ pre-distortion matrix; low/high symbol rate EVM root cause analysis
+- [[concepts/zero-if-transmitter]] — Direct conversion architecture: lowest DAC sampling rate; LO leakage + IQ imbalance are core challenges; DAC quantization noise vs. SEM; delta-sigma noise shaping; now with the zero-IF↔direct-RF-sampling architecture inflection (1920s→~2100 lineage) + six-region transceiver/data-converter supplier map
+- [[concepts/evm-calibration]] — EVM measurement + calibration techniques: VSA six-window diagnosis; LO leakage ternary search; IQ pre-distortion matrix; low/high symbol rate EVM root cause analysis; now framed as the ship/no-ship acceptance gate with the 3GPP TS 38.104 EVM-ceiling table + six-region T&M-instrument supplier map
 - [[concepts/orbit-dose-budgeting]] — Closed-form TID/SEE trade-study calculators; Poisson SEE framing; day-one mission sizing
 - [[concepts/dsnp]] — Decentralized Social Networking Protocol; user-owned portable social graph; hosted on Frequency
 - [[concepts/plurality]] — Audrey Tang's governance philosophy: multi-perspective, inclusive, adaptive; civic-tech ↔ on-chain OpenGov parallel
