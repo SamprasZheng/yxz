@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-06-12
+
+- Market/Sentiment stance: **neutral** (score -1)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-06-12T23:58:14.913Z
+
+Key web signals:
+- [Crypto Daily Market Report – June 10, 2026 - KuCoin](https://news.google.com/rss/articles/CBMigAFBVV95cUxOYU4wOElUU0ktaG5EWVJDdU90Skhzd09DeFZwQ3B5TnBiNWVacXJMOXJhYW5fRmFValNoTmxIQkZpZUVWbWVhdmhpSTlSQ1FDUXF0eXVJaDZrSy11N2pSY0JxLS1FZXprWVV3ckVOdW1PaEtfaURBVUVVa19tbVdoaQ?oc=5)
+- [ETH Futures Contract (Jun 2026) Trade Ideas — DERIBIT:ETHUSD09M2026 - TradingView](https://news.google.com/rss/articles/CBMilAFBVV95cUxNWHdacW1HQjYzank4ZjBMU0dmN3lZdkN6V1lmRlVRclVpeGhlYm5PM3ppOFBwa2swZnNqak51aGd0dmUxaDkwYVhETENLenVIakYyQk11cmIzSVBEMHFzV1hOSjhwYzcyQUoxMXNNLTdUZ0dSSUZmNXBENlBscG9lUGM4UEJ6cTZCMjFZNGY1MGlZNUs0?oc=5)
+- [Bitcoin, Nasdaq investors are celebrating, while U.S. consumers turn gloomy. - CoinDesk](https://news.google.com/rss/articles/CBMiugFBVV95cUxOSmUwb205UGFnOC1kMnBRS1EzYUU2Q29taXdVX3k5Mld5VjZvTnpHV3RzSU0zak9nWENuOElGdThTX3VCZjRsVGFmblNJWmpoR3U1TGZieDFkRTV4eFotc0hVczZoYl81WE9yN3ZZYnBybDkteFo4XzJqaTRtSnExRWE2Uzk1d1o5Q0tOSXlpM3RLVlZKNHdnS1NId3R3UUljdGhrdmhUQXFnMzZjbUhVRkRoRGRnSGxmSVE?oc=5)
+- [May 2026 US CPI Predictions: Stocks, Crypto & Gold - Bitget](https://news.google.com/rss/articles/CBMiXkFVX3lxTFBCYll3ZDQwVk03UU5vWUZSRldjLXpacVk1WmJXOXJUejBaTVdZZEZQbG5Db04yRURsTkljY21JWTZXaU93NlZJRHlJd1VZQUhmb0JFejlYOGVJV2ZTanc?oc=5)
+- [LIVE PCE SHOCK | Rate Cuts At Risk? | XRP, Bitcoin, Stocks | (Inflation Data Release) (oTmO3CW7K9) - Fathom Journal](https://news.google.com/rss/articles/CBMidkFVX3lxTFBIZWNzdW5IZWlPV1FtekhLN3JoRFhRdGMxcEh0OGtjc0NZNlRsQ2lZMjY4eENMZEJVTjZYTWYwczg3UWJHclIwRlVmcVREY3dBQjlmZnBCU2d2SzRBUk9LeGVGS3ZoNkZhT3FRNTMwbHlOdHYwSUE?oc=5)
+- [Market Update (May 2026) - Crypto.com](https://news.google.com/rss/articles/CBMiZEFVX3lxTE13cEZvclZTanhkMVJjcW9TaTdHeEFkRkJjYlJqY3lSa1BNWjNOMmF4cWhTYmZVVjVSTlVuOUlyZjhKdUhjMDNBcTdXc0RXUk1uNnRJNGV0RGY5Y3VhcWttS2ZleUY?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-06-11
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -237,27 +258,6 @@ Key web signals:
 - [Tom Lee Predicts S&P 500 Could Jump 250 Points in November as Year-End Rally Builds - BeInCrypto](https://news.google.com/rss/articles/CBMiZkFVX3lxTE53RG9nSnZ6UUpmLWR5cVNIdnU4ZlZ5MDEwSlhicGNlQXYwd2dtWVBDV1dScUlhbVJFY3kyYjByN3ZCUFhWSU9tWEk5LUkyQTZrTGkwTHZtRzNfTlZ3TjVoMU16M0V4UQ?oc=5)
 - [Tom Lee's latest interview: The bull market is far from over, and ETH will rise to $12,000 next year - Bitget](https://news.google.com/rss/articles/CBMiXkFVX3lxTE1vaXNBRGdpWjNNT2p0OXJFRk8xZ25CRGVZVlhialNqalJwZWhRcU1QNHlfcU51cHl0UUhSNHVzY2RnRHZ1MHpwOHg2MFAzTDkxd1kySGlUb3V6aGFlaWfSAWNBVV95cUxQZHAzLW41aDJMRV9kdGpNc2JXZ3duNXVsR3FFQUlUSXY0QzZWeXJvbngzOUJyX0RMYmt3YUUzWjhxbl9ZTGstUUJNQVl1SHBYU016M25NNEthLWhnUGxNNUlsOFE?oc=5)
 - [March 2026 FOMC: BTC, ETH Price Impact and Fed Outlook - Crypto.com International - Crypto.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cakh4bmFTamVhc0VLaHE2YVpja0M2RDFWTC1vU2V1ZG5nQVlpUlZleW41V1lYQ2lSNHZVRl9OYTQweEJaUjRMUzh3bmhZUUdzdGFUOUk2NUgzUEtPc3ZoS1ZkVGNNYmZ2b0plTzZjZVFNTWtadEZNaUlGTjE?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-05-31
-
-- Market/Sentiment stance: **bullish** (score 4)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-05-31T23:36:02.324Z
-
-Key web signals:
-- [Bitcoin, Nasdaq investors are celebrating, while U.S. consumers turn gloomy. - CoinDesk](https://news.google.com/rss/articles/CBMiugFBVV95cUxOSmUwb205UGFnOC1kMnBRS1EzYUU2Q29taXdVX3k5Mld5VjZvTnpHV3RzSU0zak9nWENuOElGdThTX3VCZjRsVGFmblNJWmpoR3U1TGZieDFkRTV4eFotc0hVczZoYl81WE9yN3ZZYnBybDkteFo4XzJqaTRtSnExRWE2Uzk1d1o5Q0tOSXlpM3RLVlZKNHdnS1NId3R3UUljdGhrdmhUQXFnMzZjbUhVRkRoRGRnSGxmSVE?oc=5)
-- [🥛 There’s no need to panic 🧘♂️ - Milk Road](https://news.google.com/rss/articles/CBMiYkFVX3lxTE94UldvWDE4YjFrODNjanloRnptMV9xNHpza3pRUUxzZ0ZUTlNUNW5RVWhYY0YyVkhwU05hMlBzYmhEY2VHOE91LS1ISU1Pd0tOT0tDVXBnaTdRbTZJTDJDTFB3?oc=5)
-- [Market Update (November 2025) - Crypto.com](https://news.google.com/rss/articles/CBMiY0FVX3lxTE4yR1hOZWZvakFQSmMtc3ZoUjdjX1lFMGdrdE5maW96VjZzdzdHWXRFUTFOaFZqYl9pZEtxMTdwdmw3V1BVOW5raWFMZWVZRUZGbUZibTlxUFFpZG9QelRJSEFGYw?oc=5)
-- [Critical Alert: Macro Indicators Will Determine Bitcoin’s Short-Term Direction This Week - CryptoRank](https://news.google.com/rss/articles/CBMiiwFBVV95cUxORWNLa0ZYVWwyQy13bUFrRW90eF95TG5CNXRJcFpVZ0libExHUTdxQzRBV2k2aDdNel9oOVdxOWxZZzJhTHAzbWtvX3pHTmhjSUpZTDJUWDZDcXRYY3Y4X1VINHRmS1ZqNXB6aEEzYzJuem5xS2JwM0RCN05BZkhaRGJNQzl0X09KTzRF?oc=5)
-- [BTC, ETH and XRP price prediction: Will Bitcoin move towards $66,000, Ethereum $1,950 and Ripple $1.50 in - The Economic Times](https://news.google.com/rss/articles/CBMigwNBVV95cUxPVWVWMl9HNjRWRFpLX2VYQUhJNWRvaE9naXFLeVFJcFlZZFBJT2Y4cEYyVmJseWZtb1pnekdyY3Q5VTl4LW96cVlRMmxXXzk1eENSam1GZmRQRDRQcTRyTGRUMG80a2JoUmlhSi1uU2pXSUtLSF9udVQyeFJNZkczT1lDODhUNHlaTDMtUVNLLXVqOUk5R0o5OERBTy1vTS02N3BFQm9HS1l2cjczQ3RjYUxpOFEyS21KTlNBSm10TUkwTUt3UnN5cFY2SnBQWUJEaFU5Y2FJcF93SkhzeUFnOHBSU3RKTHE3X3FtNjlGeFRiTVZkaFl0VGdtb2hLX2dsbEpiS0NVNjdhd2doOHNTcGZIMnBYOXZxRGNQQkt6bEpjNktnX2RxeDJyS19Pc2RUMW84MkswM2RSZ014VDV6Q2xxUXc0OUN1NVlyempiY2pFZUtpQ0JCMUJpNEVnZGFfT0FZdEk0WUtYOUZ1bS1BX3E0RzQ1bUt5amoxVzZYWlhsdDTSAYgDQVVfeXFMUFlpYWl6SzVnTWNLLUVyc2ItUDkyaVI2V1hJNkpBWHItNEV1UjRXa2R5dkhCNHkxam1CQ0x3c09sWDBHWGN0T1NmQjRQelhjbWpDZ3hZVG1WSVdRbm1hYk52bjF6ODdzYnJRN1Z3LU9EMko0RDVLZ1ZiM3FsSXNCcFlDSTAteGZDVzFhVnlXQzJDMzI3dzZQLWstU21ISk9RUmJTZFllSVpINGROMTlCb2wwNDFVNnZPLUpEQXN4Z3lKZUN2bWc4QkxMVWY0VnprNWxmb3pvSlE5S2ZhRTV1S21Eb3RweDNZcnItLU1uX2hXcDByUEJ1VTRBZlo3bkNsbWNBaEQ4ZnZ3aTJrWm9adnduQ29BQTR3Zk1SYnFGRjZjcFJEQ0hBb1d6emFNTXRFeFFKNmptRTNBVXFzbXhuMU00LTJ3MHZhMnMwbC1RS3RDeGhtWm1pWlExLWFXTmh0MHBFV1lIeE02YkstTGw2U2dDOExreW1PSF92cDRTYWxnb3FiNGFYYU8?oc=5)
-- [Tom Lee Predicts S&P 500 Could Jump 250 Points in November as Year-End Rally Builds - BeInCrypto](https://news.google.com/rss/articles/CBMiZkFVX3lxTE53RG9nSnZ6UUpmLWR5cVNIdnU4ZlZ5MDEwSlhicGNlQXYwd2dtWVBDV1dScUlhbVJFY3kyYjByN3ZCUFhWSU9tWEk5LUkyQTZrTGkwTHZtRzNfTlZ3TjVoMU16M0V4UQ?oc=5)
 
 Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
