@@ -58,6 +58,8 @@ type: index
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
 
+- [[sources/kol-digest-2026-06-12]] — KOL + keyword digest 2026-06-12: Anthropic Fable 5 + IPO S-1 ($965 B); OpenAI IPO S-1 ($852 B); NVIDIA Nemotron 3 Ultra (AA-Idx 48); OpenClaw ClawJacked CVE-2026-25253; Polkadot DOT hard cap + Agile Coretime enacted June 10; 0 KOLs + 11 keywords swept (automated daily)
+
 ## Entities
 
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
@@ -110,6 +112,8 @@ type: index
 
 - [[entities/nspo]] — Taiwan space-program entity; LEO application collaborator for the X-band transmitter / XT-144 thesis context
 - [[entities/tron-future-tech]] — Taiwan RF/space hardware vendor node for the XT-144 phased-array system
+- [[entities/anthropic]] — Anthropic AI; Claude model family (Haiku/Sonnet/Opus/Fable/Mythos); $965 B valuation; confidential S-1 filed June 2026; Claude Code + Managed Agents platform
+- [[entities/openai]] — OpenAI; GPT/ChatGPT family; last private valuation $852 B; confidential S-1 filed June 2026; gpt-oss open-weight, Codex, ACP, Economic Research Exchange
 
 ## Concepts
 
