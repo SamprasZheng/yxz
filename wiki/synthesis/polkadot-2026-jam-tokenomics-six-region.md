@@ -56,9 +56,10 @@ Development, capital, regulation, and community sit in different places — see 
 
 ## See also
 
+- [[synthesis/polkadot-interoperability-defi-coretime-app-layer]] — **app-layer companion** (interop/DeFi/coretime market) — read for "what runs *on* Polkadot" vs. this page's "what Polkadot *is*"
 - [[synthesis/leo-taiwan-odc-gap]] — companion six-region structural-gap analysis (space domain), same analytical template
 - [[entities/gavin-wood]] — Yellow Paper → Polkadot → JAM lineage
-- [[concepts/xcm]], [[concepts/hydration-omnipool]], [[concepts/regionx]] — interop + DeFi + coretime-market app layer
+- [[concepts/xcm]], [[concepts/hydration-omnipool]], [[concepts/regionx]] — interop + DeFi + coretime-market app layer (now deepened — see the app-layer synthesis above)
 
 ## Provenance
 
