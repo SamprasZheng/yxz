@@ -58,6 +58,42 @@ type: index
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
 
+- [[sources/gvisor-security-model]] — gVisor Security Model (Google/gVisor Project): Sentry/Gofer architecture, <20 host syscalls, threat model and residual surface (ingested 2026-06-01)
+- [[sources/firecracker-microvm-paper]] — Firecracker: Lightweight Virtualization for Serverless Applications (AWS, NSDI '20): KVM microVM, 125 ms boot, <5 MiB overhead, minimal device model, AWS Lambda + Vercel Sandbox substrate (ingested 2026-06-01)
+- [[sources/owasp-llm-top10-2025]] — OWASP Top 10 for LLM Applications 2025: LLM01 Prompt Injection (direct vs indirect) + LLM06 Excessive Agency ("mandatory human approval for consequential actions"); canonical agent-security risk taxonomy (ingested 2026-06-01)
+- [[sources/openai-instruction-hierarchy-2024]] — "The Instruction Hierarchy" (Wallace et al., OpenAI, arXiv:2404.13208): train LLMs to prioritize privileged instructions (system > user > tool/content); model-side complement to file-level immutability (ingested 2026-06-01)
+- [[sources/langgraph-hitl-interrupt-2025]] — LangGraph human-in-the-loop API: interrupt() / Command(resume=...) with persistent checkpointing; production approval-gate pattern (replaces dev-only NodeInterrupt/breakpoints) (ingested 2026-06-01)
+- [[sources/willison-lethal-trifecta-2025]] — Simon Willison "The lethal trifecta" (2025-06-16): private-data access + untrusted content + external comms = exfiltration chain; structural (not probabilistic) mitigation; canonical agent-exfil threat model (ingested 2026-06-01)
+- [[sources/qlib-microsoft-quant-platform]] — Microsoft Qlib AI-quant platform: Alpha158/Alpha360 feature sets, `qrun` workflow, RD-Agent factor automation; the execution/backtest layer (ingested 2026-05-29)
+- [[sources/qlib-microsoft-2020]] — arXiv:2009.11189 — Qlib paper (MSRA 2020): modular pipeline, expression DSL, Alpha158/Alpha360 benchmarks, IC/RankIC metrics (ingested 2026-05-29)
+- [[sources/fingpt-ai4finance-2024]] — FinGPT (AI4Finance, arXiv:2306.06031): LoRA-fine-tuned financial sentiment LLM; single-model predecessor to FinRobot (ingested 2026-05-29)
+- [[sources/finrobot-ai4finance-2024]] — FinRobot (AI4Finance, Apache-2.0, arXiv:2405.14767): multi-agent financial-analysis platform; four-layer architecture; brain-layer skeleton (ingested 2026-05-29)
+- [[sources/alpaca-markets-docs-2025]] — Alpaca Markets API docs + alpaca-py SDK: free IEX vs paid SIP tiers, rate limits, v1 trader-agent integration (ingested 2026-05-29)
+- [[sources/polygon-io-docs-2025]] — Polygon.io (now Massive) API docs: rebrand Oct 2025, endpoint families, tier structure, premium upgrade path (ingested 2026-05-29)
+- [[sources/sec-edgar-api-2025]] — SEC EDGAR REST API + EFTS full-text search: CIK lookup, XBRL endpoints, 10 req/s limit, User-Agent policy (ingested 2026-05-29)
+- [[sources/finma-pixiu-benchmark-2023]] — PIXIU/FinMA (The-FinAI, arXiv:2306.05443): financial LLM + 136K FIT instruction set + FLARE benchmark; "strong text, weak numerical reasoning" (ingested 2026-05-29)
+- [[sources/xuanyuan-financial-llm]] — XuanYuan 轩辕 (Duxiaoman 度小满): bilingual Chinese-English financial LLM; XuanYuan-70B (Llama2/8k) → XuanYuan3-70B (Llama3/16k) (ingested 2026-05-29)
+- [[sources/trademaster-ntu-2023]] — TradeMaster (NTU AMI group): RL-first quant-trading platform; FinRL methods + market simulator + PRUDEX-Compass; NOT an LLM (ingested 2026-05-29)
+- [[sources/tslib-thuml-time-series-library]] — TSlib (Tsinghua THUML): deep time-series model zoo (TimesNet/PatchTST/iTransformer/Autoformer/Informer); forecasts → Qlib features (ingested 2026-05-29)
+- [[sources/deeplob-limit-order-book-2019]] — DeepLOB (Zhang/Zohren/Roberts, IEEE TSP 2019, arXiv:1808.03668): CNN+LSTM on limit order book; benchmarked on FI-2010 (not LOBSTER) (ingested 2026-05-29)
+- [[sources/agent-frameworks-2025-snapshot]] — CrewAI / LangGraph / AutoGen snapshot (May 2026): orchestration trade-offs; AutoGen now in maintenance mode → Microsoft Agent Framework (ingested 2026-05-29)
+
+- [[sources/ocp-uqd-spec-2024]] — OCP Universal Quick Disconnect spec (v1.0.2 stable / v2.0 draft); spill-free liquid-cooling coupling standard (ingested 2026-06-01)
+- [[sources/trendforce-hbm-tracking-2026]] — TrendForce HBM4/HBM3e rolling tracker; 2025–2026 qualification, capacity, pricing (ingested 2026-06-01)
+- [[sources/stanford-ai-index-2025]] — Stanford HAI AI Index 2025: 280x inference-cost decline ($20→$0.07/M tokens, Nov22–Oct24) (ingested 2026-06-01)
+- [[sources/trendforce-csp-capex-asic-2026]] — TrendForce Feb 2026: top-8 CSP capex >$710B (+61% YoY); ASIC AI-server share 27.8%; Google TPU ~78% (ingested 2026-06-01)
+- [[sources/baker-hughes-rig-count-2026]] — Baker Hughes NA (weekly Fri) + International (monthly) rig count; offshore/onshore split; no dayrates (ingested 2026-06-01)
+- [[sources/lme-copper-data-2026]] — LME official copper: cash price, stocks, cancelled warrants, cash-3M spread; COMEX/SHFE cross-reference (ingested 2026-06-01)
+- [[sources/manheim-used-vehicle-value-index-2026]] — Cox Automotive Manheim UVVI methodology + cadence; Q1 2026 = 215.3 (+6.2% YoY) (ingested 2026-06-01)
+- [[sources/nyfed-household-debt-credit-2026]] — NY Fed Quarterly Household Debt & Credit + Consumer Credit Panel; Q1 2026 auto delinquency transitions (ingested 2026-06-01)
+- [[sources/cfpb-bnpl-report]] — CFPB Buy-Now-Pay-Later Market Report (Dec 2025): $45.2B GMV, 53.6M users, 0.92% charge-off (ingested 2026-06-01)
+- [[sources/ca-dmv-autonomous-vehicle-program]] — California DMV AV program: 3-tier permit ladder; CPUC paid-service authority; Nov 2025 permit counts (ingested 2026-06-01)
+- [[sources/nhtsa-sgo-crash-reporting]] — NHTSA Standing General Order 2021-01 ADS/L2 crash reporting; monthly CSV; CFR rulemaking proposed Mar 2026 (ingested 2026-06-01)
+- [[sources/marsh-global-insurance-market-index-2025]] — Marsh GIMI cyber rate sub-index; 11+ consecutive quarterly US declines (soft market) (ingested 2026-06-01)
+- [[sources/coalition-cyber-claims-report-2026]] — Coalition 2026 Cyber Claims Report (2025 data): freq +3%, severity −19% ($116K), ransom +47% (ingested 2026-06-01)
+- [[sources/fbi-ic3-annual-report]] — FBI IC3 Internet Crime Reports 2024/2025: 2025 = >1M complaints / $20.877B losses (+26% YoY) (ingested 2026-06-01)
+- [[sources/cboe-spx-0dte-volume-2025]] — Cboe SPX 0DTE: FY2025 = 2.3M ADV / 59% of SPX volume; Aug 2025 record 62.4% (ingested 2026-06-01)
+
 ## Entities
 
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
@@ -89,7 +125,7 @@ type: index
 - [[entities/frequency]] — Polkadot-adjacent blockchain optimized for DSNP social-graph throughput
 - [[entities/jamia-gpt]] — Sampras's Custom GPT for Polkadot / JAM / Coretime / XCM / OpenGov
 - [[entities/spacesharks-gpt]] — Sampras's Custom GPT for LEO constellations, ODC, ISL, Taiwan space supply chain
-- [[entities/nvidia]] — NVIDIA Corp; GPU + Nemotron LLM vendor; GTC Taipei 2026 Agent Challenge host; cross-cuts AI, space (Starcloud H100), radiation (Orin TID)
+- [[entities/nvidia]] — NVIDIA Corp; GPU + Nemotron LLM vendor; GTC Taipei 2026 Agent Challenge host; cross-cuts AI, space (Starcloud H100), radiation (Orin TID), client PC (N1X), NVDA equity/valuation
 - [[entities/nous-research]] — Open-source AI lab founded 2023; CEO Jeffrey Quesnelle + Teknium/Karan4D/Shivani Mitra; $65M Series A April 2025 led by Paradigm at $1B valuation; builds Hermes LLMs, Hermes Agent, Psyche decentralized training
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
@@ -110,6 +146,18 @@ type: index
 
 - [[entities/nspo]] — Taiwan space-program entity; LEO application collaborator for the X-band transmitter / XT-144 thesis context
 - [[entities/tron-future-tech]] — Taiwan RF/space hardware vendor node for the XT-144 phased-array system
+
+- [[entities/finrobot]] — AI4Finance multi-agent financial platform (Apache-2.0, arXiv:2405.14767); four-layer architecture; brain-layer skeleton for the `trader` agent
+- [[entities/fingpt]] — AI4Finance LoRA-fine-tuned financial sentiment LLM (MIT, arXiv:2306.06031); single-model predecessor to FinRobot; ~$300 re-train cost
+- [[entities/qlib]] — Microsoft Research Asia AI-quant platform (MIT); Alpha158/Alpha360 feature sets; model zoo; YAML-driven `qrun` workflow
+- [[entities/alpaca-markets]] — Developer-first brokerage (FINRA/SIPC); commission-free Trading API + Market Data API; v1 trader agent uses data-only
+- [[entities/polygon-io]] — Financial market data platform (rebranded Massive Oct 2025); full SIP tape, tick-level history, options Greeks; premium upgrade path
+- [[entities/sec-edgar]] — SEC mandatory filing system (free, no auth); 10-K/10-Q/8-K fundamentals via REST + EFTS full-text search; 10 req/s limit
+
+- [[entities/nvidia-n1x]] — NVIDIA + MediaTek Arm PC SoC; Blackwell GPU; Windows-on-Arm; unveiled Computex 2026
+- [[entities/mediatek]] — Taiwanese fabless SoC designer (TWSE 2454); Dimensity, Wi-Fi 7, N1X CPU die, Google TPU ASIC
+- [[entities/qorvo]] — US RF FEM/PAMiD/BAW supplier (QRVO); pending $22B Skyworks merger; MediaTek Wi-Fi 7 design win
+- [[entities/skyworks]] — US RF FEM supplier (SWKS); Apple-concentrated; $2.6B Broad Markets; MediaTek 6G FR3 co-demo
 
 ## Concepts
 
@@ -138,6 +186,9 @@ type: index
 - [[concepts/aesa]] — AESA technology evolution (fixed → mechanical → PESA → AESA → all-digital); SWAP breakthrough; beam-forming mathematics; all-digital vs. hybrid architecture comparison
 - [[concepts/hybrid-phased-array]] — Hybrid phased array architecture (digital + analog phase shifting); typical LEO satellite specs (EIRP/scan angle/modulation); redundancy design
 - [[concepts/dpd-digital-predistortion]] — PA linearization: memoryless/memory polynomial/NN-LM; NN DPD NMSE −26 dB, ACPR −4 dB; Indirect Learning; CUDA acceleration
+- [[concepts/zero-if-transmitter]] — Direct conversion architecture: lowest DAC sampling rate; LO leakage + IQ imbalance are core challenges; DAC quantization noise vs. SEM; delta-sigma noise shaping
+- [[concepts/evm-calibration]] — EVM measurement + calibration techniques: VSA six-window diagnosis; LO leakage ternary search; IQ pre-distortion matrix; low/high symbol rate EVM root cause analysis
+- [[concepts/rf-front-end-module]] — Cellular/Wi-Fi FEM: PA/LNA/switch/filter integration; PAMiD; BAW vs SAW; GaAs HBT; Wi-Fi 7 iFEM; 4G→5G content growth
 - [[concepts/zero-if-transmitter]] — Direct conversion architecture: lowest DAC sampling rate; LO leakage + IQ imbalance are core challenges; DAC quantization noise vs. SEM; delta-sigma noise shaping; now with the zero-IF↔direct-RF-sampling architecture inflection (1920s→~2100 lineage) + six-region transceiver/data-converter supplier map
 - [[concepts/evm-calibration]] — EVM measurement + calibration techniques: VSA six-window diagnosis; LO leakage ternary search; IQ pre-distortion matrix; low/high symbol rate EVM root cause analysis; now framed as the ship/no-ship acceptance gate with the 3GPP TS 38.104 EVM-ceiling table + six-region T&M-instrument supplier map
 - [[concepts/orbit-dose-budgeting]] — Closed-form TID/SEE trade-study calculators; Poisson SEE framing; day-one mission sizing
@@ -170,9 +221,15 @@ type: index
 - [[concepts/processing-round]] — FCC mechanism for concurrent review of competing NGSO constellation applications; 2020 Ku/Ka round (SpaceX Gen2, Kuiper, OneWeb); milestone conditions
 - [[concepts/ngso-gso-coordination]] — ITU NGSO/GSO coordination pipeline: API → CR/C → CR/D → Notification → SNS Master Register; EPFD compliance replaces bilateral GSO coordination
 
+- [[concepts/agent-sandboxing-isolation]] — Vendor-neutral isolation taxonomy: bare process → namespaces → gVisor → Firecracker/Kata microVM → full VM; Linux primitives map; agent-native sandbox products (E2B/Daytona/Modal/Vercel/Anthropic); container escape as residual threat; sandboxing as the root guardrail layer
+- [[concepts/agent-execution-guardrails]] — Execution/command guardrails: HITL approval gates on destructive commands (rm -rf / git push --force / script exec), tool-call allowlists vs path blacklists, read-only immutable "brain" files, instruction-hierarchy / prompt-injection defense; the "assume the dumbest mistake" axiom
+- [[concepts/agent-egress-control]] — Outbound-traffic allowlisting for agents: deny-default egress, SSRF resolve-then-verify (DNS rebinding defense), L7 forward proxy as the only sanctioned path out; severs leg 3 of the lethal trifecta
+- [[concepts/agent-data-sanitization]] — PII/secret masking before LLM calls: reversible tokenization vs irreversible redaction; Microsoft Presidio; local entity-map → cleaned prompt → restore-on-response pattern for finance-vault agents
+- [[concepts/agent-resource-circuit-breakers]] — Hard token/cost caps + max-iteration/recursion limits (LangChain max_iterations=15, LangGraph recursion_limit=25); circuit-breaker pattern (Nygard/Fowler/Hystrix) vs runaway loops; the $47K autonomous-loop postmortem; OpenAI dropped hard spend cutoffs → app-layer breaker mandatory
 - [[concepts/openshell-runtime]] — Sandbox runtime layer under NemoClaw/OpenClaw; policy enforcement and credential egress mediation
 - [[concepts/dgx-spark]] — NVIDIA small-form-factor reasoning workstation context for GTC Taipei / Nemotron / Hermes / NemoClaw deployments
 - [[concepts/openvino]] — Intel edge-inference optimization toolkit; Raymond Lo career anchor and comparison point to NVIDIA local-agent stack
+- [[concepts/windows-on-arm]] — Microsoft's Arm-CPU Windows platform; Prism emulation; Copilot+ PC; Qualcomm Snapdragon X vs NVIDIA N1X; CUDA-on-Arm
 
 - [[concepts/satellite-netops-agents]] — LLM agents for satellite Network Operations (NetOps) vs platform operations (SatOps): SCNOC-Agentic as lead paper; 6G NTN adjacent work; landscape table by maturity; Spacesharks lifecycle-fusion framing
 - [[concepts/mcp-aerospace-applications]] — Model Context Protocol in aerospace: MCP refresher; what MCP brings to SPICE/STK/astrodynamics tool access; four verified open-source MCP-aerospace repos (IO Aerospace, STK-MCP, aerospace-mcp, NASA-MCP); honest assessment of owner's "architecturally leading" claim; no enterprise production deployments found
@@ -189,6 +246,28 @@ type: index
 - [[concepts/calibrated-confidence-llm]] — Calibration techniques (temperature scaling, Platt, verbalised, P(IK), conformal prediction, selective prediction); three-class `answer / abstain / escalate` output; coverage-risk operating point per decision-verb class; Layer 3 of the Spacesharks trust stack
 - [[concepts/agentic-provenance]] — Four-layer trust model (data / model / decision / system); W3C PROV-DM / C2PA / NIST AI 600-1 / EU AI Act Article 50 / CycloneDX ML-BOM analogues; reproducibility invariant tying every published row back to its raw evidence blob; the labelled-lifecycle-dataset moat is provenance-defensible only
 
+- [[concepts/time-series-forecasting-quant]] — Deep time-series model family for quant (TimesNet / PatchTST / iTransformer / Autoformer / Informer); forward volatility/price-band forecasts feed dynamic position sizing and become Qlib features; bar-level counterpart to DeepLOB
+- [[concepts/deep-lob]] — Limit-order-book deep learning (DeepLOB CNN+LSTM family); spatial book structure + temporal dynamics → next-k-tick direction; FI-2010 vs LOBSTER data clarified; the no-LLM microstructure end of the stack
+- [[concepts/yfinance]] — Unofficial Yahoo Finance Python scraper; free OHLCV + news for prototyping; unstable API, not for production trading
+- [[concepts/combinatorial-purged-cross-validation]] — López de Prado CPCV: purge + embargo + C(N,k) path distribution; replaces walk-forward; measures Sharpe distribution + PBO to detect overfitting
+- [[concepts/volatility-targeting]] — Position sizing by σ_target/σ_i; Moreira & Muir (2017) Sharpe improvement; LLM emits σ-unit position hint; deterministic Python converts to notional
+- [[concepts/event-driven-quant-architecture]] — Pub/sub quant pipeline (Redis/Kafka + TimescaleDB + Milvus); backtest == live engine invariant; LLM emits SentimentEvent asynchronously
+- [[concepts/llm-as-feature-engineer]] — Demote LLM to one alpha column in Qlib feature matrix; structured JSON (sentiment + confidence + rationale); IC/RankIC validates alpha before production
+
+- [[concepts/liquid-cooling-leadtime-indicator]] — CDU/cold-plate/UQD lead times as AI-server supply-chain leading indicator
+- [[concepts/hbm-yield-ramp-indicator]] — HBM3e/HBM4 yield + qualification + CoWoS as AI-accelerator supply leading indicator
+- [[concepts/asic-penetration-indicator]] — Custom-ASIC share of hyperscaler compute (TPU/Trainium/MTIA/AVGO/MRVL); GPU→GPU+custom-silicon re-rating
+- [[concepts/ai-inference-cost-economics]] — Inference $/M-token + SaaS NRR/GRR/RPO; cost↓ + NRR-stable = profit inflection vs commoditisation
+- [[concepts/offshore-drilling-dayrate-indicator]] — Deepwater drillship dayrate + utilization; fleet-status sources; rig-count-vs-dayrate distinction
+- [[concepts/lme-copper-inventory-indicator]] — LME copper inventory + cash-3M spread physical-tightness signal; COMEX/SHFE false-signal detection
+- [[concepts/manheim-used-vehicle-indicator]] — Manheim UVVI wholesale used-car benchmark; CPI lead + subprime-ABS collateral; dual inflation/credit read
+- [[concepts/bnpl-subprime-auto-credit-indicator]] — BNPL & subprime auto delinquency; earliest consumer-stress edge; leads prime-card by 1–3 quarters
+- [[concepts/glp1-consumer-spillover-indicator]] — GLP-1 prescription → category-mix → packaged-food/CPAP/fitness demand shift
+- [[concepts/robotaxi-fsd-regulation-tracker]] — CA DMV permit ladder + CPUC + NHTSA SGO; three-gate re-rating (no driver + paid + geofence)
+- [[concepts/cyber-insurance-attack-frequency-indicator]] — Cyber rate index + claims freq + IC3 losses; soft-market-trap interpretation
+- [[concepts/zero-dte-options-share-indicator]] — Market-structure/regime signal (not fundamental); dealer-gamma vol amplification; position-sizing input
+- [[concepts/leveraged-etf-decay]] — Daily-reset volatility decay/beta slippage math; L×R − ½L(L−1)σ² drag; single-stock leveraged ETF risk; trading-not-holding
+
 ## Synthesis
 
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window and three breakthrough paths (PCB integration / defense catalysis / upstream extension)
@@ -199,6 +278,10 @@ type: index
 - [[synthesis/cdm-pc-decisioning]] — End-to-end CDM → Pc → maneuver decision workflow; NASA CARA thresholds; MVP Space-Track cdm_public recipe with Python code; commercial upgrade path (LeoLabs/Slingshot); Firefly/NemoClaw integration
 - [[synthesis/faa-notam-launch-lifecycle]] — FAA NOTAM lifecycle end-to-end: AST licensing chain, NOTAM FSM, AHA vs TFR, USCG NOTMAR, FCC parallel track, LCOLA/CDM handoff, public-only MVP cookbook with slip-probability Python
 - [[synthesis/fcc-ibfs-filings-coordination]] — FCC IBFS satellite filings and interference coordination: Schedule S, EPFD, NGSO/GSO pipeline, API→CR→Notification, Starlink/Kuiper/AST rulings, public-data MVP + upgrade path
+- [[synthesis/ai-quant-trading-architecture-improvements]] — AI 量化交易「三層分離式架構」改善方向 / TODO / 待考慮事項 / 模型改善路線圖 (event-driven + TimescaleDB/Milvus + LLM 結構化情緒因子 + 波動率目標 + CPCV 反 overfitting + 硬熔斷)
+- [[synthesis/ai-quant-trading-oss-stack-selection]] — AI 量化交易開源選型指南：FinRobot/FinGPT 之外的開源金融 AI 生態 (XuanYuan/FinMA/Qlib/TSlib/DeepLOB/CrewAI/LangGraph) 對位三層架構 + 三種交易風格推薦組合決策表；姊妹頁回答「每層用什麼」(architecture-improvements 回答「怎麼穩」)
+- [[synthesis/ai-agent-guardrails-architecture]] — Defense-in-depth architecture for caging autonomous local agents: the four guardrail dimensions (execution/command · network/exfiltration · resource/spending · infrastructure isolation) layered on a sandbox substrate with [[concepts/agentic-provenance]] as cross-cutting audit; NemoClaw as concrete instantiation + the circuit-breaker gap; minimum-viable guardrail checklist for a solo operator's finance/crypto agent. Canonical for "how to cage a local autonomous agent"
+- [[synthesis/us-equity-secondary-variable-dashboard]] — 12-variable US-equity leading-indicator dashboard for the trader agent; decomposes macro narratives into verifiable earnings/market-structure signals; priority-5 + scan-cadence + 2026-06-01 snapshot
 - [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region (US/Japan/Korea/China/Europe/Taiwan) supply-chain map of the phased-array RF front-end stack (beamformer IC → GaN PA → module → integration → space-grade); SATCOM beamformer-IC market ≈$2.87B (2025)→$7.94B (2034); Taiwan upstream-strong/midstream-absent; component companion to leo-taiwan-odc-gap (2026-05-31)
 - [[synthesis/polkadot-2026-jam-tokenomics-six-region]] — unifying frame for Polkadot's 2026 thesis: scarce token ([[concepts/dot-hard-cap]] 2.1B, Ref. 1710) + abundant durable blockspace ([[concepts/jam]] RISC-V open testnet Jan 2026 + [[concepts/agile-coretime]] burn) + verified-human demand ([[concepts/proof-of-personhood]] Project Individuality); six-region adoption map + shared 100-year fee-funded-security question; falsifier table (2026-06-01)
 - [[synthesis/orbital-data-center-six-region]] — six-region (台美日韓中國歐洲) orbital-data-center map: US leads on capability (Starcloud H100 + LLM training flown Nov–Dec 2025, Google Suncatcher TPU), China on deployed scale (ADA Space + Zhejiang Lab 12 sats May 2025 → 2,800 / 1,000 POPS), Europe on net-zero/sovereignty economics (Thales ASCEND, ROI by 2050), Japan on optical relay/edge fabric (NTT × SKY Perfect JSAT Space Compass), Korea on bus/SAR/AI-analytics supply (Hanwha/KARI), Taiwan upstream-strong / midstream-C absent; IEA 415→945 TWh demand anchor; σT⁴ heat-rejection as the 100-year ceiling + falsifier table (2026-06-03)

@@ -13,6 +13,20 @@ Primary domains:
 - Polkadot, JAM, XCM, and crypto infrastructure
 - AI agents, local workflows, and personal knowledge automation
 
+## Privacy & Publishing Rules
+
+- NEVER push to a public repo without explicit confirmation. All crypto, KOL, portfolio, and finance data is PRIVATE by default unless explicitly stated otherwise.
+- `$hark/` and `D:/DOT/finance/` content is private and must never be committed to this public `yxz` repo.
+- Before any commit, push, or deploy: show exactly which files will be affected and whether the target is public, then wait for explicit OK.
+
+## Data Sources
+
+- ALWAYS consult existing local sources first before pulling fresh data from the web. Local sources are canonical:
+  - Stock/crypto picks, FOM, recommendations, backtests → read the `$hark` watchlist, recommendations, and rubric first.
+  - Portfolio holdings and audits → `$hark/outputs/portfolio-audit-*.json`.
+  - Research knowledge → `wiki/`.
+- Treat web data as a delta layer only — use it to update or fill gaps, never to replace canonical files.
+
 ## Repository Layout
 
 ```text
@@ -93,6 +107,19 @@ Install repo-local Codex skills into the user Codex skill directory with:
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-codex-skills.ps1
 ```
+
+## Git Workflow
+
+- Before committing, verify ONLY the intended files are staged. Use `git status` and explicit `git add <file>`.
+- Never use blanket `git add .` / `git add -A` when other files may already be staged — it sweeps in unintended changes.
+
+## Windows/Scripting Notes
+
+- Write PowerShell and other scripts as ASCII-only. Keep non-ASCII data (e.g. Chinese text) in a separate UTF-8 data file — PowerShell 5.1 misreads inline Unicode.
+
+## Web Scraping
+
+- Avoid bulk or aggressive scraping and bot-detection probing (e.g. YouTube, X.com) that can get the IP rate-limited or blocked.
 
 ## Key Architecture Notes
 

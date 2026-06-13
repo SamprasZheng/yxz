@@ -2,3 +2,11 @@
 *.sh text eol=lf
 *.ps1 text eol=crlf
 *.cjs text eol=lf
+
+# Append-only wiki navigation files: auto-resolve merge conflicts by keeping
+# both sides' additions. These collide on every merge because the daily
+# wiki-deepen automation and feature branches both prepend/append entries.
+# `union` concatenates both sides instead of producing conflict markers.
+wiki/log.md merge=union
+wiki/index.md merge=union
+wiki/AGENTS.md merge=union

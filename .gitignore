@@ -24,6 +24,10 @@ my-website/node_modules/
 # Auto-commit log (local, per-machine)
 scripts/auto-commit.log
 
+# Claude Code local session/task state (may reference private finance paths — never commit)
+.claude/scheduled_tasks.json
+.claude/settings.local.json
+
 # Credentials / secrets (defensive — auto-commit script also drops these)
 .env
 .env.*
