@@ -6,6 +6,7 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-06-14]] — KOL + keyword digest 2026-06-14: Claude Fable 5 launch, Nemotron 3 Ultra live, OpenClaw phishing vuln, Polkadot hard cap + Agile Coretime confirmed live, OpenAI S-1 draft filed (11 keywords, 0 KOLs)
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
@@ -60,6 +61,8 @@ type: index
 
 ## Entities
 
+- [[entities/anthropic]] — Anthropic PBC; creator of Claude model family (Fable 5 / Mythos 5 / Sonnet / Opus / Haiku); Claude Code, Managed Agents, Partner Network; safety-focused AI lab founded 2021
+- [[entities/openai]] — OpenAI; creator of GPT/ChatGPT/Codex/Sora; GPT-5.5 current flagship; confidential S-1 filed June 2026; acquiring Ona; open-weight GPT-OSS (Apache 2.0) released Aug 2025
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
 - [[entities/polkadot]] — Layer-0 relay chain + parachain protocol; DOT token; JAM roadmap; DOT hard cap March 2026
 - [[entities/mythical-games]] — Web3 gaming studio; migrated ETH→Polkadot 2024; MYTH token; NFL Rivals, Nitro Nation
