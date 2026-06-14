@@ -105,8 +105,13 @@ For [[entities/sampras]]'s GTC Taipei Agent Challenge 2026 entry — agentic loo
 
 Nemotron is the **US national-champion open-weight line**, but it does not sit at the open-weight frontier. As of mid-2026 the open-weight intelligence frontier is **China-led** (Kimi K2.6 ~54, DeepSeek V4, Qwen3.5/3.6, GLM-5, Xiaomi MiMo) while the *closed* frontier stays US-led (Claude/GPT/Gemini). Nemotron's role is therefore the **agentic-reasoning, NIM-deployable, license-clean** option a US/Taiwan team reaches for when it wants open weights + a vendor SLA — which is exactly why the [[sources/nvidia-agent-challenge-2026|GTC Taipei Agent Challenge]] mandates it. Taiwan's [[concepts/domain-specific-llm-agents|sovereign-model]] efforts (TAIDE 2.0) are now **migrating onto Nemotron** as their base, making NVIDIA the upstream of the Taiwanese model layer the same way TSMC is the upstream of everyone's compute. Full regional map: [[synthesis/open-weight-llm-agent-stack-six-region]].
 
+## Reference implementation in this repo
+
+The "one model, two modes" idea above is implemented concretely by this wiki's [[synthesis/firefly-nemoclaw-reference-implementation|Firefly agent]]: `agents/src/firefly/llm/router.py` serves the **same** `nemotron-3-nano:4b` as a planner (`detailed thinking on`, temp 0.15) and an executor (`detailed thinking off`, temp 0.3), forced by RTX 5070 VRAM ("can't hold two checkpoints hot") — the cleanest statement of why the Nemotron-family reasoning toggle is the differentiator. Cloud-NIM mode swaps in two SKUs (Super-49B planner + Nano-9B executor). See [[synthesis/firefly-nemoclaw-reference-implementation]] — including the flagged divergence that the workflow-of-record still orchestrates on Claude, not Nemotron.
+
 ## Related
 
+- [[synthesis/firefly-nemoclaw-reference-implementation]] -> how Nemotron is actually wired (and the Claude-vs-Nemotron orchestration gap)
 - [[synthesis/open-weight-llm-agent-stack-six-region]] -> six-region map of who builds open-weight base models and why it became a sovereignty question
 - [[concepts/dgx-spark]] -> local reasoning workstation context for on-prem agent demos
 - [[concepts/hermes-agent-framework]] -> framework path used with Nemotron in the GTC Taipei stack

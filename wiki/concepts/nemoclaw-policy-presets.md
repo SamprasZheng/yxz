@@ -74,6 +74,34 @@ inference:
 
 The deny-default base + three additive presets is the entire egress policy. Hot-reload, no restart.
 
+## Worked example — the Firefly sandbox policy (this repo)
+
+The abstract recipes above are instantiated concretely by this wiki's own [[synthesis/firefly-nemoclaw-reference-implementation|Firefly agent]] at `agents/firefly-sandbox.yaml` — a real, reviewable OpenShell/NemoClaw policy. It demonstrates the **deny-default base + per-service additive presets** pattern on a domain-specific (orbital-mission) agent rather than the generic Discord/Notion examples:
+
+```yaml
+network:
+  default: deny                          # deny-default base
+  allow:
+    - host: inference.local              # model provider (gateway-rerouted)
+      ports: [443, 8443, 8642]
+    - host: www.space-track.org          # ≈ one "official-style" preset per tool
+    - host: ll.thespacedevs.com          #   each entry carries a `reason:` field
+    - host: services.swpc.noaa.gov       #   (the audit-trail justification)
+    - host: celestrak.org                #   rate-limit fallback
+inference:
+  default_provider: ollama-local         # recipe #5: runtime model-switching —
+  rerouting:                             #   swap ollama-local ↔ nim-cloud at the
+    upstreams: { ollama-local: …, nim-cloud: { requires_credential: NVIDIA_API_KEY } }
+```
+
+Mapping to the five canonical recipes:
+
+- **Recipe #5 (runtime model-switching)** — the `inference.rerouting.upstreams` block (`ollama-local` ↔ `nim-cloud`) is exactly the "develop on local Nemotron, demo on hosted" gateway swap, with `NVIDIA_API_KEY` held in the host vault and never mounted into the sandbox.
+- **Recipe #3 (remote GPU assistant)** — the on-prem NIM path (see [[concepts/dgx-spark]]) is the same "credentials local, model remote" topology.
+- Each `network.allow` entry is a minimal, single-host, `reason:`-annotated preset — the *opposite* of over-granting `*.space-track.org` — i.e. the tight/audited posture this page argues for, applied to a real toolset.
+
+The Firefly policy also adds a `daemon` block (6-hour refresh, alert on `space_weather.kp_index >= 6`) — the **always-on** lifecycle the recipes assume but rarely show. Full reconciliation: [[synthesis/firefly-nemoclaw-reference-implementation]].
+
 ## Why this matters for the hackathon
 
 For [[sources/nvidia-agent-challenge-2026|GTC Taipei Agent Challenge 2026]], the `openclaw-sandbox.yaml` policy file is a **graded artifact** (see [[concepts/nemoclaw]] hackathon section). Submissions that:

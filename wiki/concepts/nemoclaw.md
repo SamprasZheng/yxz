@@ -137,6 +137,10 @@ The runtime is only half the story — the community/ecosystem layer is where da
 - **NVIDIA Developer Forum** — official announcement + support thread at [forums.developer.nvidia.com/t/introducing-nvidia-nemoclaw/363701](https://forums.developer.nvidia.com/t/introducing-nvidia-nemoclaw/363701) (OP `rjensen`, 2026-03-16).
 - **OpenClaw "Claw Crew" Discord** — [discord.gg/openclaw](https://discord.gg/openclaw); shared community with the upstream [[concepts/openclaw]] agent framework (founder [[entities/peter-steinberger]]). English-primary, Chinese welcomed.
 
+## Reference implementation in this repo
+
+The owner's own [[synthesis/firefly-nemoclaw-reference-implementation|Firefly mission-architect agent]] is a working NemoClaw consumer. `agents/firefly-sandbox.yaml` exercises all four policy domains documented above — Landlock `filesystem` allow/deny, deny-default `network` L7 allowlist, seccomp `process` (`block_syscalls: [kexec_load, reboot, bpf, perf_event_open, ptrace]`), and the out-of-process `inference` credential vault rerouting `inference.local` → `ollama-local`/`nim-cloud` — plus a `daemon` block for the always-on 6-hour refresh loop. It is the canonical "what a real NemoClaw policy looks like" example for this wiki; see [[synthesis/firefly-nemoclaw-reference-implementation]] for the full code↔concept reconciliation (including the divergence that the workflow-of-record still drives its agent slots on Claude while the Nemotron dual-mode router lives in a parallel module).
+
 ## Relationship to other NVIDIA agent stack pieces
 
 - [[concepts/openshell-runtime]] — the underlying sandbox runtime; NemoClaw is the opinionated distribution of it.
