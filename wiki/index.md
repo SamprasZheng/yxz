@@ -57,6 +57,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-06-15]] — KOL + keyword digest 2026-06-15: 11-keyword sweep (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks); no KOL entries configured; top signals: Anthropic/OpenAI dual IPO filings, Mythos 5 shutdown, Nemotron 3 Ultra GA, NemoClaw Toolkit GA, OpenClaw phishing vuln
 
 ## Entities
 
@@ -110,6 +111,8 @@ type: index
 
 - [[entities/nspo]] — Taiwan space-program entity; LEO application collaborator for the X-band transmitter / XT-144 thesis context
 - [[entities/tron-future-tech]] — Taiwan RF/space hardware vendor node for the XT-144 phased-array system
+- [[entities/anthropic]] — US AI safety company; maker of Claude family (Fable 5 / Mythos 5); confidential S-1 filed 2026-06-01; Mythos 5 suspended by US govt order 2026-06-12
+- [[entities/openai]] — US AI company; maker of GPT-5.5 / ChatGPT / Codex; confidential S-1 filed 2026-06-08; acquired Ona 2026-06-11
 
 ## Concepts
 
