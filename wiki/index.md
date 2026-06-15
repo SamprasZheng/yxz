@@ -108,8 +108,8 @@ type: index
 - [[entities/privateer-space]] — Honolulu SSA startup; Wayfinder visualization + TerraScope geospatial AI (Orbital Insight acquisition May 2024); $56.5M Series A; CEO Alex Fielding; Steve Wozniak co-founder
 - [[entities/aiko-space]] — Turin Italy on-board autonomy startup; GENE anomaly detection (4/5 anomalies in 3 min, Tyvak International deployment); ESA ARTES funding; Thales Alenia Space partner; €7M total funding; founded 2017
 
-- [[entities/nspo]] — Taiwan space-program entity; LEO application collaborator for the X-band transmitter / XT-144 thesis context
-- [[entities/tron-future-tech]] — Taiwan RF/space hardware vendor node for the XT-144 phased-array system
+- [[entities/nspo]] — Taiwan national civil space agency (NSPO → **TASA** renamed 2023-01-01, under NSTC); founded 1991; 3rd-phase program NT$25.1B 2019–2028 + ~NT$40B 2023 B5G-LEO boost; FORMOSAT-8A launched 2025-11-28, TRITON GNSS-R 2023; public-sector demand node for the XT-144 / LEO supply chain
+- [[entities/tron-future-tech]] — Taiwan dual-use AESA integrator founded 2018 by ex-NCTU prof Yu-Jiu Wang; T.Radar counter-drone radar + T.SpaceRouter 1024-element Ka-band LEO terminal; Series A ~NT$900M (2024), 26-system military contract (2025); the concrete "midstream array-integrator" counter to Taiwan's absent-midstream thesis
 
 ## Concepts
 

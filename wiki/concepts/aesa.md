@@ -88,7 +88,7 @@ Who leads vs lags across the AESA / phased-array stack. Component-level supply-c
 | **Korea** | Rising fast — KF-21 indigenous AESA (Hanwha/LIG Nex1), backed by RFHIC GaN | Mid — RFHIC GaN-on-SiC subsystems, MaxLinear DPD partnership (IMS 2024) | GaN-on-SiC subsystem leader (RFHIC; invested in SweGaN, Sweden) |
 | **China** | Leads by volume — CETC all-digital active phased arrays (YLC-16), 100+ systems shown at World Radar Expo 2025; GaN-based KJ-500 AEW | Growing — state-backed flat-panel + ODC ([[entities/ada-space]]) | Vertically integrated GaN/GaAs (CETC institutes) |
 | **Europe** | Leads in segments — Thales/Leonardo/Saab/Hensoldt AESA; ESA SATCOM | Mid — UMS/OMMIC (France) GaN foundries, terminal vendors | GaN foundry + design (UMS, OMMIC, Infineon) |
-| **Taiwan** | N/A as system integrator (no indigenous fighter AESA) | Component supplier, not array integrator | **Upstream foundry strength** — [[entities/win-semiconductors]] GaAs/GaN MMIC (+Viper RF, 1–150 GHz); [[entities/ascend-tech]] filters; this is the "strong upstream, absent midstream" pattern of [[synthesis/leo-taiwan-odc-gap]] |
+| **Taiwan** | No indigenous *fighter* AESA, but an emerging dual-use array integrator — [[entities/tron-future-tech]] builds in-house AESA counter-drone radar (T.Radar) deployed with Taiwan's military (T-Dome) | Emerging: [[entities/tron-future-tech]] T.SpaceRouter 1024-element Ka-band AESA LEO terminal; otherwise component supply | **Upstream foundry strength** — [[entities/win-semiconductors]] GaAs/GaN MMIC (+Viper RF, 1–150 GHz); [[entities/ascend-tech]] filters; the "strong upstream, absent midstream" pattern of [[synthesis/leo-taiwan-odc-gap]], now partially countered at the array-integrator node |
 
 ## Sources & Verification (accessed 2026-05-31)
 
