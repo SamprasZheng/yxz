@@ -189,6 +189,10 @@ type: index
 - [[concepts/calibrated-confidence-llm]] — Calibration techniques (temperature scaling, Platt, verbalised, P(IK), conformal prediction, selective prediction); three-class `answer / abstain / escalate` output; coverage-risk operating point per decision-verb class; Layer 3 of the Spacesharks trust stack
 - [[concepts/agentic-provenance]] — Four-layer trust model (data / model / decision / system); W3C PROV-DM / C2PA / NIST AI 600-1 / EU AI Act Article 50 / CycloneDX ML-BOM analogues; reproducibility invariant tying every published row back to its raw evidence blob; the labelled-lifecycle-dataset moat is provenance-defensible only
 
+## Trader / Daily Research
+
+- [[synthesis/daily-trader-2026-06-15]] — Bootstrap run: FOM formula established, network egress blocks all market-data hosts (Yahoo Finance / Alpha Vantage / Polygon), trader CLI pipeline absent; 15-ticker core watchlist seeded; see file for action items.
+
 ## Synthesis
 
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window and three breakthrough paths (PCB integration / defense catalysis / upstream extension)
