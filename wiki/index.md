@@ -57,6 +57,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-06-16]] — KOL + keyword digest 2026-06-16: 0 KOLs (list empty), 11 keywords; top signals — Anthropic/OpenAI dual S-1 filings, US gov Fable 5 suspension directive, NVIDIA Nemotron 3 Ultra launch (AAIX 48), OpenClaw phishing vulnerability (Varonis), Claude Code billing bifurcation June 15
 
 ## Entities
 
@@ -90,6 +91,8 @@ type: index
 - [[entities/jamia-gpt]] — Sampras's Custom GPT for Polkadot / JAM / Coretime / XCM / OpenGov
 - [[entities/spacesharks-gpt]] — Sampras's Custom GPT for LEO constellations, ODC, ISL, Taiwan space supply chain
 - [[entities/nvidia]] — NVIDIA Corp; GPU + Nemotron LLM vendor; GTC Taipei 2026 Agent Challenge host; cross-cuts AI, space (Starcloud H100), radiation (Orin TID)
+- [[entities/anthropic]] — US AI safety company and frontier model lab; Claude family (Haiku/Sonnet/Opus/Fable/Mythos); Claude Code; confidential S-1 filed June 1, 2026; Project Glasswing security initiative
+- [[entities/openai]] — US AI frontier lab; GPT-5 / ChatGPT / Codex / ACP; confidential S-1 filed June 8, 2026; targeting Sept 2026 IPO; Peter Steinberger (OpenClaw) joined as personal-agents lead Feb 2026
 - [[entities/nous-research]] — Open-source AI lab founded 2023; CEO Jeffrey Quesnelle + Teknium/Karan4D/Shivani Mitra; $65M Series A April 2025 led by Paradigm at $1B valuation; builds Hermes LLMs, Hermes Agent, Psyche decentralized training
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
