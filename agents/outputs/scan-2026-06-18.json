@@ -1,0 +1,21 @@
+{
+  "run_date": "2026-06-18",
+  "run_mode": "STUB_OFFLINE",
+  "blockers": [
+    {
+      "code": "TRADER_PIPELINE_MISSING",
+      "detail": "agents/src/trader/ directory does not exist. No trader CLI, orchestrator, schemas, or agents have been implemented yet. The firefly pipeline is present under agents/src/firefly/ but no trader sub-package exists."
+    },
+    {
+      "code": "NETWORK_EGRESS_BLOCKED",
+      "detail": "HTTP 403 from remote environment network policy: query1.finance.yahoo.com and query2.finance.yahoo.com are not in the egress allowlist. yfinance calls fail with 'Host not in allowlist'. Cannot fetch live price data or run backtest against realized returns."
+    }
+  ],
+  "watchlist": [
+    "NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"
+  ],
+  "scan_results": [],
+  "backtest_results": [],
+  "fom_table": [],
+  "notes": "This is a zero-data stub produced by the daily-trader evaluation agent on 2026-06-18. All scan_results, backtest_results, and fom_table are empty because both the trader pipeline and the market-data network path are unavailable. See blockers array for remediation steps."
+}

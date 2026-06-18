@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-06-18] daily-trader STUB | First trader-eval run blocked: trader pipeline not implemented + Yahoo Finance egress denied; 8-ticker core watchlist seeded; stub report + FOM formula documented in [[synthesis/daily-trader-2026-06-18]]
+
 ## [2026-06-18] deepen | Digital-democracy / user-owned-social cluster (Plurality / DSNP / Frequency / Project Liberty / Audrey Tang)
 **Rotation:** picked the **decentralized-social / digital-democracy** cluster — decisive on *both* selection criteria. (a) **Stalest:** a grep of every `## [date] deepen` entry shows this cluster has **never** been deepened in the rotation's history (all prior passes were Polkadot-core/RF/LEO/radiation/SSA/regulatory/AI-agent/agentic-payments); the Polkadot *core protocol* cluster (last 06-01, 17 days) was the nominal calendar-stalest but its four concept pages are already richly built (six-region + 100-year), so it fails criterion (b). (b) **Thinnest:** this cluster held the **five thinnest content pages in the entire wiki** — [[entities/frequency]] (19 lines), [[entities/audrey-tang]] (24), [[entities/project-liberty]] (26), [[concepts/dsnp]] (33), [[concepts/plurality]] (44) — all near-stub. It is a Web3-adjacent slice (DSNP runs on Frequency, a Polkadot parachain; Plurality is compared to Polkadot OpenGov) and so legitimately inside the Polkadot/Web3 domain while being a distinct sub-cluster from the core-protocol pages.
 
