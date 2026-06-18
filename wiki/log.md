@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-06-15] daily-trader | bootstrap run #1 — network egress blocked Yahoo Finance + all market-data hosts; no live data; FOM formula established; trader CLI pipeline absent; see [[synthesis/daily-trader-2026-06-15]] for action items and methodology.
+
 ## [2026-06-15] deepen | RF / phased-array front-end cluster — Taiwan AESA entity nodes (NSPO/TASA + Tron Future Tech)
 **Rotation:** the **RF / phased-array front-end** cluster was the **stalest** in the standing rotation — last full `deepen` **2026-05-31** (15 days; the 06-11 pass deepened the *transmitter-calibration* sub-cluster zero-IF/EVM, a distinct slice). The 05-31 pass richly built the *concept* pages ([[concepts/aesa]], [[concepts/hybrid-phased-array]], [[concepts/dpd-digital-predistortion]]) but left the cluster's **two thinnest pages untouched**: the entity stubs [[entities/nspo]] (17-line stub) and [[entities/tron-future-tech]] (27-line stub) — both real, public, citable Taiwan space organizations and the lowest-cross-link / highest-thin-section targets in the cluster. Decisive factor: deepening *real public entities* with primary-press citations is the lowest-hallucination, highest-graph-value move available. **Pages deepened (3):** [[entities/nspo]] (stub→full NSPO/TASA agency profile), [[entities/tron-future-tech]] (stub→full company profile), + a factual update to the Taiwan row of [[concepts/aesa]]. No new synthesis (the durable finding folds into existing pages, per "new synthesis = new domain only").
 
