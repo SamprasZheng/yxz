@@ -2,15 +2,17 @@
 type: source
 title: "The Technological Republic: Hard Power, Soft Belief, and the Future of the West"
 author: "Alexander C. Karp, Nicholas W. Zamiska"
-date: "2025"
+date: "2025-02-18"
 ingested: "2026-04-19"
 tags: [ai, defense, geopolitics, tech-policy, silicon-valley, west, palantir, manifesto]
-url: "https://www.amazon.com"
+url: "https://www.penguinrandomhouse.com/books/760945/the-technological-republic-by-alexander-c-karp-and-nicholas-w-zamiska/"
 ---
 
 # The Technological Republic: Hard Power, Soft Belief, and the Future of the West
 
-**Authors:** [[entities/alexander-karp]], Nicholas W. Zamiska | **Published:** 2025 | **Publisher:** Scribner (NYT #1 Bestseller)
+**Authors:** [[entities/alexander-karp]], Nicholas W. Zamiska | **Published:** 2025-02-18 | **Publisher:** Crown Currency (Penguin Random House), 320 pp., ISBN 978-0-593-79869-0 | NYT #1 Bestseller
+
+> **Correction (2026-06-19 fact-check):** an earlier version of this page listed the publisher as "Scribner." The book was published by **Crown Currency** (a Penguin Random House imprint), 18 February 2025 — verified against the Penguin Random House catalog, Cambridge *Business History Review*, and the printed ISBN 978-0-593-79869-0.
 
 ## Summary
 
@@ -72,4 +74,5 @@ This complacency is an existential vulnerability. Software and AI have replaced 
 
 - Entities: [[entities/alexander-karp]], [[entities/palantir]]
 - Concepts: [[concepts/technological-republic]], [[concepts/soft-belief]]
-- Related reading: Allan Bloom, *The Closing of the American Mind* (cited as intellectual precursor)
+- Synthesis: [[synthesis/techno-industrial-state-defense-tech-six-region]] — the book read as the US-archetype manifesto inside a six-region map of the defense-tech-state alliance (US public-private fusion vs China 军民融合 vs Europe sovereign-autonomy etc.)
+- Related reading: Allan Bloom, *The Closing of the American Mind* (1987, cited as intellectual precursor); Vannevar Bush, *Science, the Endless Frontier* (1945, the postwar charter for the state-funded research compact the book wants to revive)

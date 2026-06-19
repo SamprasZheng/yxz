@@ -61,3 +61,4 @@ Lockheed Martin Space presented "Orbital State Recommender Validation for Space 
 - [[entities/leolabs]] — commercial SSA provider; complement/competitor to iSpace data feeds
 - [[entities/slingshot-aerospace]] — commercial SDA platform; cross-reference for commercial landscape
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — why the Spacesharks team avoids competing on orbital-physics precision
+- [[synthesis/techno-industrial-state-defense-tech-six-region]] — Lockheed as the legacy-prime tier of the US defense-tech-state alliance; [[entities/palantir]] is the software-native challenger to the same procurement

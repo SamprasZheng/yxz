@@ -48,3 +48,4 @@ MSBAI presented the poster "Hierarchical Neuro-Symbolic AI for Autonomous Spacec
 - [[sources/msbai-orbitguard-dod-contract-2025]] — primary source
 - [[concepts/jepa-sda-multi-agent-rl]] — technical deep-dive on JEPA + MARL architecture
 - [[entities/lockheed-martin-space]] — defense prime context; note: no confirmed partnership with MSBAI
+- [[synthesis/techno-industrial-state-defense-tech-six-region]] — MSBAI as the SDA-vertical instance of the US "commercial public-private fusion" defense-tech model; [[entities/palantir]] MSS is the horizontal C2/intel layer above it
