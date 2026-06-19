@@ -57,6 +57,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-06-19]] — KOL + keyword digest 2026-06-19: 0 KOLs, 11 keywords (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks); top items: Nemotron 3 Ultra, Claude Fable 5, US Anthropic access crackdown, OpenAI S-1 IPO filing, Polkadot Web3 Summit Berlin
 
 ## Entities
 
@@ -111,6 +112,8 @@ type: index
 
 - [[entities/nspo]] — Taiwan national civil space agency (NSPO → **TASA** renamed 2023-01-01, under NSTC); founded 1991; 3rd-phase program NT$25.1B 2019–2028 + ~NT$40B 2023 B5G-LEO boost; FORMOSAT-8A launched 2025-11-28, TRITON GNSS-R 2023; public-sector demand node for the XT-144 / LEO supply chain
 - [[entities/tron-future-tech]] — Taiwan dual-use AESA integrator founded 2018 by ex-NCTU prof Yu-Jiu Wang; T.Radar counter-drone radar + T.SpaceRouter 1024-element Ka-band LEO terminal; Series A ~NT$900M (2024), 26-system military contract (2025); the concrete "midstream array-integrator" counter to Taiwan's absent-midstream thesis
+- [[entities/anthropic]] — US AI safety company (Dario/Daniela Amodei); Claude / Fable 5 / Mythos 5 models; June 2026 access crackdown + Seoul office + IPO S-1; Agent SDK billing split June 15
+- [[entities/openai]] — US AI company (Sam Altman); ChatGPT / GPT-5.5; scheduled tasks; S-1 IPO filing June 2026; Ona acquisition; OpenClaw sponsor via Peter Steinberger
 
 ## Concepts
 
