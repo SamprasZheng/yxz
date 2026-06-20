@@ -53,6 +53,22 @@ Operators are advised (CARA best practices) to use conservative (larger) HBR est
 
 CCSDS 508.0-B-1 defines `HARD_BODY_RADIUS` as an optional field (unit: km). In practice, Space-Track CDMs often do not populate this field for secondary (debris) objects. The Firefly agent should apply a default HBR from a size/mass estimate lookup table when the CDM field is absent.
 
+## Historical Lineage
+
+HBR formalises a simplification implicit in conjunction analysis since **Foster & Estes (1992)**: the [[concepts/pc-probability-of-collision|Pc]] integral needs a finite collision area, so each object is reduced to a circumscribing sphere. As tracking resolution improved — particularly **Space Fence** (Kwajalein, operational 2020, ~5 cm LEO RCS resolution) — RCS-derived default HBRs for small debris became less crude. NASA CARA codified the three setting methods (circumscribing / RMS-effective / cross-section-weighted) in NTRS 20190028904, and the field was carried as optional in CCSDS 508.0-B-1 (2013). The trajectory is from "assume a worst-case sphere" toward "use measured size when the sensor network can resolve it."
+
+## Long-Horizon View (labelled scenario, not fact)
+
+On a 100-year horizon HBR has a paradoxical fate: **it becomes simultaneously more standardised and less relevant.** More standardised because mega-constellations and active-debris-removal programs will publish authoritative per-bus dimensions, retiring the RCS-guess defaults for tracked objects. Less relevant because the population that actually drives the Kessler cascade is the **1–10 cm "deadly-but-untrackable" debris** (see [[synthesis/space-situational-awareness-six-region]]): for those fragments there is no catalog entry, no covariance, and therefore no Pc integral to put an HBR into — the lethal kinetic energy (a 1 cm aluminium fragment at ~10 km/s ≈ a small grenade) far exceeds what any HBR-based maneuver budget can dodge, because the conjunction is never seen. Scenario fork: either sub-10 cm tracking (space-based optical / advanced radar) brings these objects into the HBR/Pc regime, or HBR remains a precise answer to the wrong question for the objects that matter most. The invariant: **HBR is only meaningful for objects you can already track.**
+
+## Standards / Provider Convention (horizontal axis)
+
+Strict 台美日韓中國歐洲 geography is **N/A** — HBR is object geometry, not national policy (the regional axis is the *sensor resolution* behind default-HBR estimation, covered in [[synthesis/space-situational-awareness-six-region]]). The meaningful horizontal axis is **who supplies the HBR**: operators supply true bus dimensions for their own (primary) satellites; 18 SDS / Space-Track applies an RCS-based default for untracked-dimension secondaries (often leaving `HARD_BODY_RADIUS` unpopulated in `cdm_public`); commercial providers with better imaging/RCS (LeoLabs radar, space-based optical) tighten the secondary estimate. CARA best practice across all of them is identical: **when in doubt, bias HBR larger** (accept false-alarm cost over missed-event cost).
+
+## Implementation Reality (code↔concept, 2026-06-20)
+
+The "apply a default HBR from a size/mass lookup table" behaviour described above is **not implemented**. The built Firefly `RiskAgent` (`agents/src/firefly/agents/risk.py`) never computes a Pc integral and therefore never sets or defaults an HBR — it consumes a pre-computed probability from the 30-day shell aggregate `cdm_30d_summary` (`agents/src/firefly/tools/space_track.py`). HBR handling is part of the aspirational independent-Pc path, not the current build — flagged for the owner (no code edited).
+
 ## See Also
 
 - [[concepts/pc-probability-of-collision]] — uses HBR to define the integration domain
@@ -60,3 +76,4 @@ CCSDS 508.0-B-1 defines `HARD_BODY_RADIUS` as an optional field (unit: km). In p
 - [[concepts/screening-volume]] — a separate box filter applied before HBR/covariance-based Pc
 - [[sources/nasa-cara-handbook-2023]] — CARA methodology for setting HBR
 - [[synthesis/cdm-pc-decisioning]] — how to handle missing HBR in public CDMs
+- [[synthesis/space-situational-awareness-six-region]] — the 1–10 cm untrackable-debris gap that bounds HBR's relevance

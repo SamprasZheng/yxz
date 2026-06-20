@@ -233,12 +233,26 @@ Once the MVP validates on free Space-Track data, three upgrade tiers exist:
 
 ### `agents/src/firefly/agents/` integration points
 
-The CDM triage function slots into the on-orbit operations phase of the satellite lifecycle (Phase 4 in [[synthesis/spacesharks-mission-desk-hackathon-plan|the mission desk plan]]). Key integration:
+The CDM triage function slots into the on-orbit operations phase of the satellite lifecycle (Phase 4 in [[synthesis/spacesharks-mission-desk-hackathon-plan|the mission desk plan]]). Target integration:
 
-- **`launch_planner.py`**: CDM context feeds pre-launch screening for target orbits — if a planned orbit altitude/inclination has high historical CDM density, flag in the launch risk brief
-- **Firefly orchestrator** (`agents/src/firefly/orchestrator.py`): CDM ingestor is one of five ingestors in the Day 1 build (alongside TLE / SWPC / NOTAM / launch manifest); writes to `/sandbox/lifecycle-events/*.jsonl`
-- **NemoClaw sandbox policy** (`openclaw-sandbox.yaml`): Add `space-track.org` to the egress allowlist for the CDM ingestor tool call
-- **Nemotron prompt for operator brief**: Inject the tiered CDM triage list into the Nemotron context; prompt the model to draft a human-readable conjunction summary in the "Brief" verb format
+- **`risk.py`** (the `RiskAgent`): owns the CDM lookup; wired into `orchestrator.py` as the `debris_risk` output, alongside `orbit_designer` / `launch_planner` / `power_thermal` / `narrator`
+- **Firefly orchestrator** (`agents/src/firefly/orchestrator.py`): CDM context feeds the on-orbit risk note — if a target orbit altitude/inclination has high historical CDM density, flag it in the deployment risk brief
+- **NemoClaw sandbox policy** (`firefly-sandbox.yaml`): `space-track.org` on the egress allowlist for the CDM tool call
+- **Nemotron prompt for operator brief**: inject the CDM summary into the Nemotron context; prompt the model to draft a human-readable conjunction note in the "Brief" verb format
+
+### Implementation reality (code↔concept, 2026-06-20)
+
+A reconciliation against the actual repo (read-only; no code edited) shows the build is **deliberately coarser than this synthesis prescribes** — useful for the owner to know exactly what is and isn't wired:
+
+| This synthesis / concept pages prescribe | What `agents/` actually does today |
+|---|---|
+| CDM lookup in `launch_planner.py` (§8, prior text) | CDM lookup is in **`agents/src/firefly/agents/risk.py`** (`RiskAgent`), not `launch_planner.py` — corrected above |
+| Per-event tiered triage record (Red/Yellow/Green, `pc_tier`, `recommended_action`) per §5–6 | A **30-day shell aggregate**: `cdm_30d_summary` (`tools/space_track.py`) returns `cdm_count_30d` + `highest_pc` for an altitude±50 km / incl±5° band — no per-CDM tiering |
+| Read `PC` field from `cdm_public` (§6 MVP code) | Code reads **`PC_BIN1`** and takes its max as `highest_pc` — ⚠️ **owner to verify** whether `PC_BIN1` is the precise Pc or a coarse binned value in `cdm_public` (Space-Track field docs are auth-walled; could not confirm publicly) |
+| Covariance-realism scoring, `OD_QUALITY` rejection, default-HBR, maneuver-epoch output | **None implemented** — the RiskAgent consumes a pre-computed probability and writes a ≤4-bullet Markdown note; it never computes Pc, covariance, HBR, or CAM timing |
+| Offline behaviour | ✅ matches: missing `SPACETRACK_USER/PASS` → clearly flagged `status: "offline"` stub so the loop never crashes (consistent with the trust-stack abstention philosophy) |
+
+The shell-aggregate design is a reasonable MVP (it answers "is this orbit busy?" cheaply), but it is **not** the conjunction-triage verb this synthesis describes. The single highest-leverage upgrade is to replace `cdm_30d_summary`'s count-and-max with the per-CDM tiered parser from §6 (carrying `pc_tier`, `time_to_tca_h`, covariance flags into `lifecycle-events.jsonl`).
 
 ### NemoClaw egress allowlist entry (sandbox YAML)
 

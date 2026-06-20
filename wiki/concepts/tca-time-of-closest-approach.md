@@ -43,11 +43,30 @@ In low-altitude LEO (altitude < 400 km), drag differentials can cause two object
 
 A collision avoidance maneuver (CAM) is most efficient when executed at a point that maximises the change in miss distance per unit of delta-V. This is typically ¼ to ½ orbit before TCA, not at TCA itself. The Firefly conjunction triage agent should therefore output both TCA and recommended maneuver epoch (TCA − N orbits, or delta-V calculation) as separate fields in the decision record.
 
+## Historical Lineage
+
+TCA as an operational concept is downstream of the short-term-encounter [[concepts/pc-probability-of-collision|Pc]] formulation: **Foster & Estes (NASA JSC, 1992)** derived the 2-D encounter-plane integral to protect the International Space Station, fixing the encounter plane *at the instant of closest approach* — i.e. TCA became the canonical evaluation epoch for every subsequent method (Chan 1997/2008, Patera 2001/2005, Alfano 2005, Akella & Alfriend 2000). The operational watershed was the **2009-02-10 Iridium-33 / Cosmos-2251** collision — the first accidental hypervelocity collision of two intact satellites — which moved Pc-vs-time-to-TCA from a research curiosity to a daily operational discipline and drove the US toward systematic CDM issuance. CCSDS standardised TCA as the single mandatory epoch in [[sources/ccsds-508-cdm-2013|508.0-B-1]] (2013). The lineage is thus 1992 (method) → 2009 (operationalisation) → 2013 (standardisation) → ~2024+ (sub-daily commercial cadence; see below).
+
+## Long-Horizon View (labelled scenario, not fact)
+
+The TCA *math* is invariant — closest approach is a kinematic fact independent of catalog size. What collapses on a 100-year horizon is the **operating tempo around TCA**. As the tracked catalog grows (ESA SER 2025: >40,000 tracked, ~54,000 >10 cm, debris growing 200+ years even at zero launch — see [[synthesis/space-situational-awareness-six-region]]), the number of screened conjunctions per asset rises super-linearly, the per-event human decision budget shrinks, and the 7-day → 8-hour → sub-hour update cadence trends toward **continuous, autonomous on-board CAM** where "time-to-TCA" is measured in minutes, not days. Scenario fork: either (a) on-board autonomy + inter-operator maneuver coordination (Kayhan/Slingshot-style M2M) make dense-regime TCA management tractable, or (b) a [[concepts/screening-volume|screening]]-volume + covariance-realism shortfall makes most TCAs un-actionable and forces altitude abandonment. The binding constraint is not the TCA computation but the *quality and latency* of the inputs ([[concepts/covariance-ellipsoid|covariance realism]]).
+
+## Standards / Provider Convention (horizontal axis)
+
+Strict 台美日韓中國歐洲 geography is largely **N/A** here — TCA is universal physics, and the *national-catalog* dimension is carried by [[synthesis/space-situational-awareness-six-region]]. The meaningful horizontal axis is **update cadence by data source**: 18 SDS / Space-Track issues CDMs on a nominal **8-hour** cycle out to a 7-day horizon; [[entities/leolabs|LeoLabs]] delivers CDMs in **< 5 min** with ~400% higher update frequency, so its TCA estimate converges faster and its TCA-uncertainty band shrinks earlier; ESA/EU SST and commercial COMSPOC supplement with operator-reported TCA-epoch standard deviations (not a CCSDS-required field). Higher cadence = an earlier, more stable maneuver-decision point for the same time-to-TCA.
+
+## Implementation Reality (code↔concept, 2026-06-20)
+
+The built Firefly code does **not** yet implement TCA-aware triage as this page prescribes. `agents/src/firefly/agents/risk.py` (the `RiskAgent`, wired into `orchestrator.py` as `debris_risk`) calls a single tool — `cdm_30d_summary` (`agents/src/firefly/tools/space_track.py`) — which returns a **30-day shell-level aggregate** (`cdm_count_30d` + `highest_pc`) for an altitude±50 km / inclination±5° band, *not* per-event TCA parsing, time-to-TCA tiering, or a recommended-maneuver-epoch field. The maneuver-timing output described above remains aspirational; flagged for the owner (no code edited).
+
 ## See Also
 
 - [[concepts/pc-probability-of-collision]] — metric computed at TCA
 - [[concepts/covariance-ellipsoid]] — uncertainty structure at TCA
 - [[concepts/hard-body-radius]] — collision disk in encounter plane at TCA
 - [[concepts/screening-volume]] — the box that captures candidates before TCA prediction
+- [[concepts/conjunction-screening-providers]] — provider cadence comparison (drives TCA convergence)
+- [[entities/leolabs]] — < 5 min CDM cadence provider
 - [[synthesis/cdm-pc-decisioning]] — full CDM → TCA → Pc → maneuver workflow
+- [[synthesis/space-situational-awareness-six-region]] — national-catalog + 100-year Kessler context
 - [[sources/ccsds-508-cdm-2013]] — CCSDS mandatory field definition
