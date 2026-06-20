@@ -1,0 +1,27 @@
+{
+  "run_date": "2026-06-20",
+  "run_mode": "STUB_OFFLINE",
+  "consecutive_stub_count": 17,
+  "blockers": [
+    {
+      "code": "TRADER_PIPELINE_MISSING",
+      "detail": "agents/src/trader/ directory does not exist on main or on any of the 16 prior auto/daily-trader-* branches (2026-05-29 .. 2026-06-18). Only agents/src/firefly/ (mission-planning) is present. No trader CLI, orchestrator, schemas, or yfinance_client.py have ever been implemented.",
+      "first_reported": "2026-05-29",
+      "still_open": true
+    },
+    {
+      "code": "NETWORK_EGRESS_BLOCKED",
+      "detail": "HTTP 403 from remote environment network policy: query1.finance.yahoo.com and query2.finance.yahoo.com are not in the egress allowlist. Re-tested directly today via urllib against https://query1.finance.yahoo.com/v8/finance/chart/NVDA -> HTTP Error 403: Forbidden.",
+      "first_reported": "2026-05-29",
+      "still_open": true
+    }
+  ],
+  "open_pr_backlog": [10, 12, 14, 17, 20, 22, 25, 27, 30, 33, 35, 37, 39, 41, 44, 46],
+  "watchlist": [
+    "NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"
+  ],
+  "scan_results": [],
+  "backtest_results": [],
+  "fom_table": [],
+  "notes": "Zero-data stub produced by the daily-trader evaluation agent on 2026-06-20. This is the 17th consecutive stub run since 2026-05-29 with no remediation of either blocker. 16 prior auto/daily-trader-* PRs remain open and unmerged. See wiki/synthesis/daily-trader-2026-06-20.md for full escalation notes."
+}
