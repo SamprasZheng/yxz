@@ -177,9 +177,10 @@ The five protocols above are all US-originated and assume an **open, permissionl
 
 ### Closed super-app AI checkout — China (largest real volume)
 
-- **Alipay AI Pay** (Ant Group) was the **first AI-native payment product globally to reach 100M users** (2026-02-23) and processed **120M transactions in one week** (Feb 5–11 2026) — orders of magnitude above x402's ~131K/day ([Business Wire](https://www.businesswire.com/news/home/20260213770962/en/)).
-- **Agentic Commerce Trust Protocol** (Jan 2026) with Alibaba's Qwen App + Taobao Instant Commerce; **AI Wallet + Token Pay** infrastructure (May 2026); extended to OpenClaw-type "lobster" agents (Apr 2026).
-- Architecturally the opposite of x402: a closed 1B-user graph, no open HTTP spec, no x402-Foundation membership. Wins on installed customers, not on openness.
+- **[[entities/ant-group-alipay|Alipay AI Pay]]** (Ant Group) was the **first AI-native payment product globally to reach 100M users** (2026-02-23) and processed **120M transactions in one week** (Feb 5–11 2026) — orders of magnitude above x402's ~131K/day; **~300M cumulative transactions** by May 2026 ([Business Wire](https://www.businesswire.com/news/home/20260213770962/en/)).
+- **Agentic Commerce Trust Protocol** (Jan 2026) with Alibaba's Qwen App + Taobao Instant Commerce; **AI Wallet + Token Pay** infrastructure launched 2026-05-26 (Token Pay = B2B for AI model providers, "token" = API credits not blockchain; partners MiniMax/Stepfun).
+- **But the cross-border arm is going open**: Ant International **open-sourced** the **Agentic Mobile Protocol (AMP)** (2026-04-27) with a Know-Your-Agent (KYA) framework and A2A settlement down to **$0.000001** — closed where Ant owns the graph (domestic Alipay), open where it must interoperate (cross-border). See [[entities/ant-group-alipay]].
+- Architecturally the opposite of x402 *domestically*: a closed 1B-user graph, no open HTTP spec, no x402-Foundation membership. Wins on installed customers, not on openness.
 
 ### Bank-led sovereign stablecoins — Japan / Korea / Europe / Taiwan
 
@@ -229,4 +230,5 @@ The five protocols above are all US-originated and assume an **open, permissionl
 - [[entities/stripe]] — MPP + ACP co-originator
 - [[entities/visa]] — Intelligent Commerce + TAP
 - [[entities/mastercard]] — Agent Pay + Verifiable Intent
+- [[entities/ant-group-alipay]] — China's closed-super-app architecture family (largest real volume) + Ant International's open AMP
 - [[sources/x402-protocol-coinbase-2025]] — x402 detailed source material

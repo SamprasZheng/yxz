@@ -73,6 +73,7 @@ type: index
 - [[entities/stripe]] — Fintech payment infrastructure; MPP + ACP co-initiator; Agentic Commerce Suite; also supports x402
 - [[entities/mastercard]] — Global card payment network; Agent Pay (Agentic Token + Verifiable Intent); co-developed trust framework with Google AP2 (2025-04)
 - [[entities/visa]] — Global card payment network; Visa Intelligent Commerce + Trusted Agent Protocol (TAP); RFC 9421 HTTP signing; 100+ partners (2025-10)
+- [[entities/ant-group-alipay]] — China's Ant Group / Alipay; Alipay AI Pay = largest real-volume agentic-payment product (~300M cumulative txns by May 2026); AI Wallet + Token Pay; Ant International's open-sourced Agentic Mobile Protocol (AMP); the China node of the agentic-payments six-region map
 - [[entities/starcloud]] — US space computing startup; Starcloud-1 carries NVIDIA H100, first LLM training in space (2025-11)
 - [[entities/ada-space]] — Chinese state-backed orbital supercomputing constellation; target 2,800 satellites × 744 TOPS/satellite; first 12 launched May 2025
 - [[entities/win-semiconductors]] — Win Semiconductors (3105); global leader in LEO-spec PA foundry

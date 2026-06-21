@@ -35,7 +35,7 @@ Automated micropayments are not new in 2025; agentic payments are the **fourth**
 
 ## Six-Region Landscape (台美日韓中國歐洲)
 
-The protocol layer below is overwhelmingly US-originated, but by mid-2026 the **largest real agentic-payment volume on Earth is China's Alipay AI Pay** (120M transactions in one week, Feb 2026), not any of the five Western protocols. Three distinct architecture families have emerged — open HTTP protocols (US), closed super-app AI checkout (China), and bank-led sovereign stablecoins (Japan/Korea/Europe/Taiwan). The full regional map, regulatory comparison (GENIUS Act / MiCA / FSA / FSC), and Taiwan's "absent from the rails" position are in **[[synthesis/agentic-payments-six-region]]**.
+The protocol layer below is overwhelmingly US-originated, but by mid-2026 the **largest real agentic-payment volume on Earth is China's [[entities/ant-group-alipay|Alipay AI Pay]]** (120M transactions in one week Feb 2026; ~300M cumulative by May 2026), not any of the five Western protocols. Three distinct architecture families have emerged — open HTTP protocols (US), closed super-app AI checkout (China), and bank-led sovereign stablecoins (Japan/Korea/Europe/Taiwan). The full regional map, regulatory comparison (GENIUS Act / MiCA / FSA / FSC), and Taiwan's "absent from the rails" position are in **[[synthesis/agentic-payments-six-region]]**.
 
 ## Technical Implementation
 
@@ -117,4 +117,5 @@ For detailed comparison, see [[concepts/agentic-payment-protocols]].
 - [[entities/stripe]] — MPP + ACP co-originator
 - [[entities/visa]] — Intelligent Commerce / TAP
 - [[entities/mastercard]] — Agent Pay / Verifiable Intent
+- [[entities/ant-group-alipay]] — China's Alipay AI Pay; largest real agentic-payment volume globally
 - [[concepts/xcm]] — Polkadot cross-chain M2M messaging (related domain)
