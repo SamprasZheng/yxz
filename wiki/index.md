@@ -77,8 +77,8 @@ type: index
 - [[entities/starcloud]] — US space computing startup; Starcloud-1 carries NVIDIA H100, first LLM training in space (2025-11)
 - [[entities/ada-space]] — Chinese state-backed orbital supercomputing constellation; target 2,800 satellites × 744 TOPS/satellite; first 12 launched May 2025
 - [[entities/win-semiconductors]] — Win Semiconductors (3105); global leader in LEO-spec PA foundry
-- [[entities/ascend-tech]] — Ascend Tech (3491); filters/waveguides; in Starlink & Kuiper supply chain; gross margin >50%
-- [[entities/huatong-pcb]] — Huatong PCB; ~80% global market share for LEO-dedicated PCBs; 2025 Q4 LEO board revenue >NT$15.5 billion
+- [[entities/ascend-tech]] — Ascend Tech / **Universal Microwave Technology (UMT)** (3491); microwave filters/waveguides; Starlink & Kuiper supply chain; FY2025 rev NT$2.452B (record), 9M-2025 gross margin **47.3%** (corrected from prior >50%), EPS NT$4.6
+- [[entities/huatong-pcb]] — Huatong / **Compeq Manufacturing** (2313); founded 1973, Taiwan's first PCB maker, global HDI leader; LEO-dedicated PCB leader (analyst ~80% share); **FY2025** satellite-board rev ≈NT$15.1B (~20% of ≈NT$76B total; corrected from prior "Q4 >NT$15.5B"), 2026 target NT$20B
 - [[entities/google-suncatcher]] — Google orbital TPU computing initiative; optical communications integration; key signal of major tech companies entering ODC
 - [[entities/polkaworld]] — Largest Polkadot community in Asia since 2019; Chinese/English media; founders Xiaojie Pang & Guanghua Guo; 12 consecutive Treasury approvals; co-hosted Gavin Wood's China JAM Tour (874 attendees)
 - [[entities/shawn-tabrizi]] — Polkadot Technical Fellowship Architect; PBA lead instructor; coined "Polkadot Cloud" framing; "JAM is the beginning of the Polkadot cloud"; shawntabrizi.com
