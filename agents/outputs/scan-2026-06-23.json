@@ -1,0 +1,1148 @@
+{
+  "request": {
+    "tickers": [
+      "NVDA",
+      "AAPL",
+      "TSLA",
+      "MSFT",
+      "AMD",
+      "GOOGL",
+      "META",
+      "AMZN"
+    ],
+    "window_days": 7
+  },
+  "started": "2026-06-23T23:08:58.535976+00:00",
+  "finished": "2026-06-23T23:08:58.600866+00:00",
+  "per_ticker": {
+    "NVDA": {
+      "request": {
+        "ticker": "NVDA",
+        "window_days": 7,
+        "depth": "quick"
+      },
+      "started": "2026-06-23T23:08:58.536021+00:00",
+      "finished": "2026-06-23T23:08:58.546845+00:00",
+      "news_items": [
+        {
+          "title": "[NVDA] placeholder: quarterly results within expectations",
+          "url": "https://example.invalid/nvda/0",
+          "published": "2026-06-23T23:08:58.537169Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[NVDA] placeholder: sector outlook stable",
+          "url": "https://example.invalid/nvda/1",
+          "published": "2026-06-23T17:08:58.537169Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[NVDA] placeholder: minor product update announced",
+          "url": "https://example.invalid/nvda/2",
+          "published": "2026-06-23T11:08:58.537169Z",
+          "source": "stub",
+          "summary": "Synthetic headline (mild_positive) — TRADER_OFFLINE stub."
+        }
+      ],
+      "sentiment": [
+        {
+          "event_id": "stub-001",
+          "sentiment": 0.0,
+          "confidence": 0.3,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "stub backend — no real LLM call was made",
+          "source_urls": [],
+          "unresolved": false
+        },
+        {
+          "event_id": "nvda-5681e3fd2f",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/nvda/0"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "nvda-b46482e7d9",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/nvda/1"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "nvda-63a5b0239b",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/nvda/2"
+          ],
+          "unresolved": true
+        }
+      ],
+      "fundamentals": {
+        "ticker": "NVDA",
+        "latest_filing_date": null,
+        "filing_type": null,
+        "summary": "Placeholder 10-Q excerpt for NVDA. Generated because: TRADER_OFFLINE=1. Revenue and earnings figures are not available offline.",
+        "key_metrics": {},
+        "confidence": 0.1,
+        "unresolved": true
+      },
+      "price_signal": {
+        "ticker": "NVDA",
+        "last_close": 262.24,
+        "vol_20d": 0.2622674259631195,
+        "vol_60d": 0.32432083730424843,
+        "sma_20": 249.95099999999996,
+        "sma_60": 239.2808333333334,
+        "trend": "up",
+        "regime": "trend_up",
+        "as_of": "2026-06-23"
+      },
+      "thesis": {
+        "ticker": "NVDA",
+        "direction": "flat",
+        "confidence": 0.0,
+        "sizing_sigma": 0.0,
+        "horizon": "medium",
+        "risk_flags": [
+          "stub_backend_active",
+          "confidence_below_threshold",
+          "fundamentals_unresolved"
+        ],
+        "abstain": true,
+        "rationale": "Stub backend produced no analysis. Abstain by default.",
+        "contradictions": []
+      },
+      "llm_telemetry": {
+        "backend": "stub",
+        "by_role": {
+          "executor": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          },
+          "planner": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          }
+        },
+        "total_calls": 2
+      },
+      "brief_path": "outputs/research-nvda-2026-06-23.md",
+      "wiki_synthesis_path": null
+    },
+    "AAPL": {
+      "request": {
+        "ticker": "AAPL",
+        "window_days": 7,
+        "depth": "quick"
+      },
+      "started": "2026-06-23T23:08:58.547001+00:00",
+      "finished": "2026-06-23T23:08:58.554423+00:00",
+      "news_items": [
+        {
+          "title": "[AAPL] placeholder: quarterly results within expectations",
+          "url": "https://example.invalid/aapl/0",
+          "published": "2026-06-23T23:08:58.547461Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[AAPL] placeholder: sector outlook stable",
+          "url": "https://example.invalid/aapl/1",
+          "published": "2026-06-23T17:08:58.547461Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[AAPL] placeholder: minor product update announced",
+          "url": "https://example.invalid/aapl/2",
+          "published": "2026-06-23T11:08:58.547461Z",
+          "source": "stub",
+          "summary": "Synthetic headline (mild_positive) — TRADER_OFFLINE stub."
+        }
+      ],
+      "sentiment": [
+        {
+          "event_id": "stub-001",
+          "sentiment": 0.0,
+          "confidence": 0.3,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "stub backend — no real LLM call was made",
+          "source_urls": [],
+          "unresolved": false
+        },
+        {
+          "event_id": "aapl-62464ef77c",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/aapl/0"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "aapl-3890e4d125",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/aapl/1"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "aapl-7bdd5a61c6",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/aapl/2"
+          ],
+          "unresolved": true
+        }
+      ],
+      "fundamentals": {
+        "ticker": "AAPL",
+        "latest_filing_date": null,
+        "filing_type": null,
+        "summary": "Placeholder 10-Q excerpt for AAPL. Generated because: TRADER_OFFLINE=1. Revenue and earnings figures are not available offline.",
+        "key_metrics": {},
+        "confidence": 0.1,
+        "unresolved": true
+      },
+      "price_signal": {
+        "ticker": "AAPL",
+        "last_close": 77.46,
+        "vol_20d": 0.23440141649034718,
+        "vol_60d": 0.2234996912297265,
+        "sma_20": 82.07149999999999,
+        "sma_60": 88.60083333333336,
+        "trend": "down",
+        "regime": "trend_down",
+        "as_of": "2026-06-23"
+      },
+      "thesis": {
+        "ticker": "AAPL",
+        "direction": "flat",
+        "confidence": 0.0,
+        "sizing_sigma": 0.0,
+        "horizon": "medium",
+        "risk_flags": [
+          "stub_backend_active",
+          "confidence_below_threshold",
+          "fundamentals_unresolved"
+        ],
+        "abstain": true,
+        "rationale": "Stub backend produced no analysis. Abstain by default.",
+        "contradictions": []
+      },
+      "llm_telemetry": {
+        "backend": "stub",
+        "by_role": {
+          "executor": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          },
+          "planner": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          }
+        },
+        "total_calls": 2
+      },
+      "brief_path": "outputs/research-aapl-2026-06-23.md",
+      "wiki_synthesis_path": null
+    },
+    "TSLA": {
+      "request": {
+        "ticker": "TSLA",
+        "window_days": 7,
+        "depth": "quick"
+      },
+      "started": "2026-06-23T23:08:58.554598+00:00",
+      "finished": "2026-06-23T23:08:58.562336+00:00",
+      "news_items": [
+        {
+          "title": "[TSLA] placeholder: quarterly results within expectations",
+          "url": "https://example.invalid/tsla/0",
+          "published": "2026-06-23T23:08:58.554990Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[TSLA] placeholder: sector outlook stable",
+          "url": "https://example.invalid/tsla/1",
+          "published": "2026-06-23T17:08:58.554990Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[TSLA] placeholder: minor product update announced",
+          "url": "https://example.invalid/tsla/2",
+          "published": "2026-06-23T11:08:58.554990Z",
+          "source": "stub",
+          "summary": "Synthetic headline (mild_positive) — TRADER_OFFLINE stub."
+        }
+      ],
+      "sentiment": [
+        {
+          "event_id": "stub-001",
+          "sentiment": 0.0,
+          "confidence": 0.3,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "stub backend — no real LLM call was made",
+          "source_urls": [],
+          "unresolved": false
+        },
+        {
+          "event_id": "tsla-6a53a74316",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/tsla/0"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "tsla-8fc40e3c21",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/tsla/1"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "tsla-06d378b05f",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/tsla/2"
+          ],
+          "unresolved": true
+        }
+      ],
+      "fundamentals": {
+        "ticker": "TSLA",
+        "latest_filing_date": null,
+        "filing_type": null,
+        "summary": "Placeholder 10-Q excerpt for TSLA. Generated because: TRADER_OFFLINE=1. Revenue and earnings figures are not available offline.",
+        "key_metrics": {},
+        "confidence": 0.1,
+        "unresolved": true
+      },
+      "price_signal": {
+        "ticker": "TSLA",
+        "last_close": 230.12,
+        "vol_20d": 0.28572416241249365,
+        "vol_60d": 0.2883887026645365,
+        "sma_20": 228.189,
+        "sma_60": 246.35633333333337,
+        "trend": "flat",
+        "regime": "range",
+        "as_of": "2026-06-23"
+      },
+      "thesis": {
+        "ticker": "TSLA",
+        "direction": "flat",
+        "confidence": 0.0,
+        "sizing_sigma": 0.0,
+        "horizon": "medium",
+        "risk_flags": [
+          "stub_backend_active",
+          "confidence_below_threshold",
+          "fundamentals_unresolved"
+        ],
+        "abstain": true,
+        "rationale": "Stub backend produced no analysis. Abstain by default.",
+        "contradictions": []
+      },
+      "llm_telemetry": {
+        "backend": "stub",
+        "by_role": {
+          "executor": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          },
+          "planner": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          }
+        },
+        "total_calls": 2
+      },
+      "brief_path": "outputs/research-tsla-2026-06-23.md",
+      "wiki_synthesis_path": null
+    },
+    "MSFT": {
+      "request": {
+        "ticker": "MSFT",
+        "window_days": 7,
+        "depth": "quick"
+      },
+      "started": "2026-06-23T23:08:58.562463+00:00",
+      "finished": "2026-06-23T23:08:58.570092+00:00",
+      "news_items": [
+        {
+          "title": "[MSFT] placeholder: quarterly results within expectations",
+          "url": "https://example.invalid/msft/0",
+          "published": "2026-06-23T23:08:58.562931Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[MSFT] placeholder: sector outlook stable",
+          "url": "https://example.invalid/msft/1",
+          "published": "2026-06-23T17:08:58.562931Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[MSFT] placeholder: minor product update announced",
+          "url": "https://example.invalid/msft/2",
+          "published": "2026-06-23T11:08:58.562931Z",
+          "source": "stub",
+          "summary": "Synthetic headline (mild_positive) — TRADER_OFFLINE stub."
+        }
+      ],
+      "sentiment": [
+        {
+          "event_id": "stub-001",
+          "sentiment": 0.0,
+          "confidence": 0.3,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "stub backend — no real LLM call was made",
+          "source_urls": [],
+          "unresolved": false
+        },
+        {
+          "event_id": "msft-2dce9003aa",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/msft/0"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "msft-5c84d1f17c",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/msft/1"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "msft-373d8bcd2d",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/msft/2"
+          ],
+          "unresolved": true
+        }
+      ],
+      "fundamentals": {
+        "ticker": "MSFT",
+        "latest_filing_date": null,
+        "filing_type": null,
+        "summary": "Placeholder 10-Q excerpt for MSFT. Generated because: TRADER_OFFLINE=1. Revenue and earnings figures are not available offline.",
+        "key_metrics": {},
+        "confidence": 0.1,
+        "unresolved": true
+      },
+      "price_signal": {
+        "ticker": "MSFT",
+        "last_close": 264.08,
+        "vol_20d": 0.23656092928907424,
+        "vol_60d": 0.3169359628380837,
+        "sma_20": 265.626,
+        "sma_60": 262.49050000000005,
+        "trend": "flat",
+        "regime": "range",
+        "as_of": "2026-06-23"
+      },
+      "thesis": {
+        "ticker": "MSFT",
+        "direction": "flat",
+        "confidence": 0.0,
+        "sizing_sigma": 0.0,
+        "horizon": "medium",
+        "risk_flags": [
+          "stub_backend_active",
+          "confidence_below_threshold",
+          "fundamentals_unresolved"
+        ],
+        "abstain": true,
+        "rationale": "Stub backend produced no analysis. Abstain by default.",
+        "contradictions": []
+      },
+      "llm_telemetry": {
+        "backend": "stub",
+        "by_role": {
+          "executor": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          },
+          "planner": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          }
+        },
+        "total_calls": 2
+      },
+      "brief_path": "outputs/research-msft-2026-06-23.md",
+      "wiki_synthesis_path": null
+    },
+    "AMD": {
+      "request": {
+        "ticker": "AMD",
+        "window_days": 7,
+        "depth": "quick"
+      },
+      "started": "2026-06-23T23:08:58.570214+00:00",
+      "finished": "2026-06-23T23:08:58.577793+00:00",
+      "news_items": [
+        {
+          "title": "[AMD] placeholder: quarterly results within expectations",
+          "url": "https://example.invalid/amd/0",
+          "published": "2026-06-23T23:08:58.570626Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[AMD] placeholder: sector outlook stable",
+          "url": "https://example.invalid/amd/1",
+          "published": "2026-06-23T17:08:58.570626Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[AMD] placeholder: minor product update announced",
+          "url": "https://example.invalid/amd/2",
+          "published": "2026-06-23T11:08:58.570626Z",
+          "source": "stub",
+          "summary": "Synthetic headline (mild_positive) — TRADER_OFFLINE stub."
+        }
+      ],
+      "sentiment": [
+        {
+          "event_id": "stub-001",
+          "sentiment": 0.0,
+          "confidence": 0.3,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "stub backend — no real LLM call was made",
+          "source_urls": [],
+          "unresolved": false
+        },
+        {
+          "event_id": "amd-bbdfd2f8de",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/amd/0"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "amd-95c7a52ec1",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/amd/1"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "amd-5c74ac6c46",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/amd/2"
+          ],
+          "unresolved": true
+        }
+      ],
+      "fundamentals": {
+        "ticker": "AMD",
+        "latest_filing_date": null,
+        "filing_type": null,
+        "summary": "Placeholder 10-Q excerpt for AMD. Generated because: TRADER_OFFLINE=1. Revenue and earnings figures are not available offline.",
+        "key_metrics": {},
+        "confidence": 0.1,
+        "unresolved": true
+      },
+      "price_signal": {
+        "ticker": "AMD",
+        "last_close": 129.9,
+        "vol_20d": 0.35810397239652564,
+        "vol_60d": 0.32189155484432275,
+        "sma_20": 129.9195,
+        "sma_60": 123.29866666666666,
+        "trend": "flat",
+        "regime": "high_vol",
+        "as_of": "2026-06-23"
+      },
+      "thesis": {
+        "ticker": "AMD",
+        "direction": "flat",
+        "confidence": 0.0,
+        "sizing_sigma": 0.0,
+        "horizon": "medium",
+        "risk_flags": [
+          "stub_backend_active",
+          "confidence_below_threshold",
+          "high_vol_without_fundamentals",
+          "fundamentals_unresolved"
+        ],
+        "abstain": true,
+        "rationale": "Stub backend produced no analysis. Abstain by default.",
+        "contradictions": []
+      },
+      "llm_telemetry": {
+        "backend": "stub",
+        "by_role": {
+          "executor": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          },
+          "planner": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          }
+        },
+        "total_calls": 2
+      },
+      "brief_path": "outputs/research-amd-2026-06-23.md",
+      "wiki_synthesis_path": null
+    },
+    "GOOGL": {
+      "request": {
+        "ticker": "GOOGL",
+        "window_days": 7,
+        "depth": "quick"
+      },
+      "started": "2026-06-23T23:08:58.577919+00:00",
+      "finished": "2026-06-23T23:08:58.585306+00:00",
+      "news_items": [
+        {
+          "title": "[GOOGL] placeholder: quarterly results within expectations",
+          "url": "https://example.invalid/googl/0",
+          "published": "2026-06-23T23:08:58.578286Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[GOOGL] placeholder: sector outlook stable",
+          "url": "https://example.invalid/googl/1",
+          "published": "2026-06-23T17:08:58.578286Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[GOOGL] placeholder: minor product update announced",
+          "url": "https://example.invalid/googl/2",
+          "published": "2026-06-23T11:08:58.578286Z",
+          "source": "stub",
+          "summary": "Synthetic headline (mild_positive) — TRADER_OFFLINE stub."
+        }
+      ],
+      "sentiment": [
+        {
+          "event_id": "stub-001",
+          "sentiment": 0.0,
+          "confidence": 0.3,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "stub backend — no real LLM call was made",
+          "source_urls": [],
+          "unresolved": false
+        },
+        {
+          "event_id": "googl-ef98fb0254",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/googl/0"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "googl-dfaf0a586b",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/googl/1"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "googl-d0255813b9",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/googl/2"
+          ],
+          "unresolved": true
+        }
+      ],
+      "fundamentals": {
+        "ticker": "GOOGL",
+        "latest_filing_date": null,
+        "filing_type": null,
+        "summary": "Placeholder 10-Q excerpt for GOOGL. Generated because: TRADER_OFFLINE=1. Revenue and earnings figures are not available offline.",
+        "key_metrics": {},
+        "confidence": 0.1,
+        "unresolved": true
+      },
+      "price_signal": {
+        "ticker": "GOOGL",
+        "last_close": 222.99,
+        "vol_20d": 0.3090791278581666,
+        "vol_60d": 0.2766096199774621,
+        "sma_20": 230.70100000000002,
+        "sma_60": 221.05349999999999,
+        "trend": "flat",
+        "regime": "range",
+        "as_of": "2026-06-23"
+      },
+      "thesis": {
+        "ticker": "GOOGL",
+        "direction": "flat",
+        "confidence": 0.0,
+        "sizing_sigma": 0.0,
+        "horizon": "medium",
+        "risk_flags": [
+          "stub_backend_active",
+          "confidence_below_threshold",
+          "fundamentals_unresolved"
+        ],
+        "abstain": true,
+        "rationale": "Stub backend produced no analysis. Abstain by default.",
+        "contradictions": []
+      },
+      "llm_telemetry": {
+        "backend": "stub",
+        "by_role": {
+          "executor": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          },
+          "planner": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          }
+        },
+        "total_calls": 2
+      },
+      "brief_path": "outputs/research-googl-2026-06-23.md",
+      "wiki_synthesis_path": null
+    },
+    "META": {
+      "request": {
+        "ticker": "META",
+        "window_days": 7,
+        "depth": "quick"
+      },
+      "started": "2026-06-23T23:08:58.585424+00:00",
+      "finished": "2026-06-23T23:08:58.593146+00:00",
+      "news_items": [
+        {
+          "title": "[META] placeholder: quarterly results within expectations",
+          "url": "https://example.invalid/meta/0",
+          "published": "2026-06-23T23:08:58.585864Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[META] placeholder: sector outlook stable",
+          "url": "https://example.invalid/meta/1",
+          "published": "2026-06-23T17:08:58.585864Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[META] placeholder: minor product update announced",
+          "url": "https://example.invalid/meta/2",
+          "published": "2026-06-23T11:08:58.585864Z",
+          "source": "stub",
+          "summary": "Synthetic headline (mild_positive) — TRADER_OFFLINE stub."
+        }
+      ],
+      "sentiment": [
+        {
+          "event_id": "stub-001",
+          "sentiment": 0.0,
+          "confidence": 0.3,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "stub backend — no real LLM call was made",
+          "source_urls": [],
+          "unresolved": false
+        },
+        {
+          "event_id": "meta-2db884c45d",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/meta/0"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "meta-1b3eff0914",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/meta/1"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "meta-8f51fd2c24",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/meta/2"
+          ],
+          "unresolved": true
+        }
+      ],
+      "fundamentals": {
+        "ticker": "META",
+        "latest_filing_date": null,
+        "filing_type": null,
+        "summary": "Placeholder 10-Q excerpt for META. Generated because: TRADER_OFFLINE=1. Revenue and earnings figures are not available offline.",
+        "key_metrics": {},
+        "confidence": 0.1,
+        "unresolved": true
+      },
+      "price_signal": {
+        "ticker": "META",
+        "last_close": 115.75,
+        "vol_20d": 0.28109062274150354,
+        "vol_60d": 0.2496744983924991,
+        "sma_20": 112.38600000000001,
+        "sma_60": 117.35633333333338,
+        "trend": "flat",
+        "regime": "range",
+        "as_of": "2026-06-23"
+      },
+      "thesis": {
+        "ticker": "META",
+        "direction": "flat",
+        "confidence": 0.0,
+        "sizing_sigma": 0.0,
+        "horizon": "medium",
+        "risk_flags": [
+          "stub_backend_active",
+          "confidence_below_threshold",
+          "fundamentals_unresolved"
+        ],
+        "abstain": true,
+        "rationale": "Stub backend produced no analysis. Abstain by default.",
+        "contradictions": []
+      },
+      "llm_telemetry": {
+        "backend": "stub",
+        "by_role": {
+          "executor": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          },
+          "planner": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          }
+        },
+        "total_calls": 2
+      },
+      "brief_path": "outputs/research-meta-2026-06-23.md",
+      "wiki_synthesis_path": null
+    },
+    "AMZN": {
+      "request": {
+        "ticker": "AMZN",
+        "window_days": 7,
+        "depth": "quick"
+      },
+      "started": "2026-06-23T23:08:58.593270+00:00",
+      "finished": "2026-06-23T23:08:58.600759+00:00",
+      "news_items": [
+        {
+          "title": "[AMZN] placeholder: quarterly results within expectations",
+          "url": "https://example.invalid/amzn/0",
+          "published": "2026-06-23T23:08:58.593719Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[AMZN] placeholder: sector outlook stable",
+          "url": "https://example.invalid/amzn/1",
+          "published": "2026-06-23T17:08:58.593719Z",
+          "source": "stub",
+          "summary": "Synthetic headline (neutral) — TRADER_OFFLINE stub."
+        },
+        {
+          "title": "[AMZN] placeholder: minor product update announced",
+          "url": "https://example.invalid/amzn/2",
+          "published": "2026-06-23T11:08:58.593719Z",
+          "source": "stub",
+          "summary": "Synthetic headline (mild_positive) — TRADER_OFFLINE stub."
+        }
+      ],
+      "sentiment": [
+        {
+          "event_id": "stub-001",
+          "sentiment": 0.0,
+          "confidence": 0.3,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "stub backend — no real LLM call was made",
+          "source_urls": [],
+          "unresolved": false
+        },
+        {
+          "event_id": "amzn-91cb0ad0b1",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/amzn/0"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "amzn-908c60cd12",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/amzn/1"
+          ],
+          "unresolved": true
+        },
+        {
+          "event_id": "amzn-091d8b7c2f",
+          "sentiment": 0.0,
+          "confidence": 0.0,
+          "sectors": [],
+          "horizon": "short",
+          "rationale": "LLM could not score this headline; defaulted to unresolved.",
+          "source_urls": [
+            "https://example.invalid/amzn/2"
+          ],
+          "unresolved": true
+        }
+      ],
+      "fundamentals": {
+        "ticker": "AMZN",
+        "latest_filing_date": null,
+        "filing_type": null,
+        "summary": "Placeholder 10-Q excerpt for AMZN. Generated because: TRADER_OFFLINE=1. Revenue and earnings figures are not available offline.",
+        "key_metrics": {},
+        "confidence": 0.1,
+        "unresolved": true
+      },
+      "price_signal": {
+        "ticker": "AMZN",
+        "last_close": 100.63,
+        "vol_20d": 0.31197749465212754,
+        "vol_60d": 0.29611992480477917,
+        "sma_20": 103.9585,
+        "sma_60": 107.85166666666666,
+        "trend": "down",
+        "regime": "trend_down",
+        "as_of": "2026-06-23"
+      },
+      "thesis": {
+        "ticker": "AMZN",
+        "direction": "flat",
+        "confidence": 0.0,
+        "sizing_sigma": 0.0,
+        "horizon": "medium",
+        "risk_flags": [
+          "stub_backend_active",
+          "confidence_below_threshold",
+          "fundamentals_unresolved"
+        ],
+        "abstain": true,
+        "rationale": "Stub backend produced no analysis. Abstain by default.",
+        "contradictions": []
+      },
+      "llm_telemetry": {
+        "backend": "stub",
+        "by_role": {
+          "executor": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          },
+          "planner": {
+            "model": "stub",
+            "backend": "stub",
+            "calls": 1,
+            "latency_ms_total": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "errors": 0
+          }
+        },
+        "total_calls": 2
+      },
+      "brief_path": "outputs/research-amzn-2026-06-23.md",
+      "wiki_synthesis_path": null
+    }
+  }
+}
