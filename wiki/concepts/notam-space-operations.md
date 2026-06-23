@@ -117,6 +117,21 @@ Affected FIRs for common US launch trajectories:
 
 An agent monitoring a launch from an non-US site (e.g., Rocket Lab Electron from Mahia, New Zealand) should query the relevant national NOTAM database. Rocket Lab New Zealand operations appear under **NZZO** (Oceanic FIR) and nearby ARTCCs. NOTAM `B0423/26` (Electron launch, 2026) is a documented example.
 
+### Six-region launch-NOTAM origination (台美日韓中國歐洲)
+
+Who *originates* a launch NOTAM is a function of who launches — a different question from who *receives* one. The full map (governance models, ICAO Annex 15 global-standard framing, 100-year view) is [[synthesis/space-launch-airspace-integration-six-region]]; the operational summary:
+
+| Region | Issuing authority | Origin FIR(s) | Practice an agent must expect |
+|---|---|---|---|
+| **US** | FAA AIM | KZ** ARTCCs | 48–72 h advance; SDI dynamic-corridor shrink; CSINAS Time-Based Procedures |
+| **Europe** | EUROCONTROL **EAD** + national ANSPs (NATS/CAA, LFV, Avinor, Isavia) | EGPX/ESAA/ENOR/BIRD | **Temporary Danger Areas** for SaxaVord/Esrange/Andøya; pooled in EAD |
+| **China** | **CAAC** (state) | ZBPE/ZSHA/ZGZU | **Short-notice**; inland sites drop spent stages over land; debris NOTAMs reach CAAP (Philippines) + RCAA (Taipei); closures double as strategic signaling |
+| **Japan** | **JCAB** | RJJJ (Fukuoka) | Tanegashima/Uchinoura (JAXA) + Hokkaido (Interstellar); standard advance filing |
+| **Korea** | **KOCA / MOLIT** | RKRR (Incheon) | Naro launches; region dominated by **DPRK** missile/launch danger-area NOTAMs spilling into RKRR/RJJJ |
+| **Taiwan** | **CAA / MOTC** | RCAA (Taipei) | **No sovereign orbital launch** → almost never originates a launch NOTAM; reacts to PRC launch-debris NOTAMs bordering RCAA |
+
+The operationally important asymmetry for a Taiwan-seated mission desk: it is a **NOTAM recipient, not originator** — the airspace-layer instance of the recurring upstream-strong/midstream-absent pattern ([[synthesis/leo-taiwan-odc-gap]]). The cross-FIR coordination bottleneck (7–10 days) noted above is itself a slip driver the agent should model ([[concepts/launch-window-slip]]).
+
 ## 7. Spacesharks integration decision table
 
 | Phase | NOTAM subcategory | Agent action |
@@ -129,6 +144,7 @@ An agent monitoring a launch from an non-US site (e.g., Rocket Lab Electron from
 
 ## 8. Related pages
 
+- [[synthesis/space-launch-airspace-integration-six-region]] — six-region air-navigation deconfliction map; who originates vs. receives launch NOTAMs
 - [[concepts/notam]] — NOTAM base structure, number format, ICAO format fields, retrieval methods
 - [[concepts/launch-hazard-area]] — geometric derivation of AHA footprints, trajectory dispersion, dynamic LHA trends
 - [[concepts/launch-window-slip]] — NOTAM lifecycle during slips and scrubs

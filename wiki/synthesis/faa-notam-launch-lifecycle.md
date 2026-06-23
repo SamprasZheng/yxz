@@ -286,3 +286,4 @@ The [[concepts/nemoclaw]] OpenShell sandbox provides the network-isolation layer
 - [[concepts/tca-time-of-closest-approach]] — conjunction timing
 - [[sources/ccsds-508-cdm-2013]] — CDM format for LCOLA output
 - [[synthesis/space-regulatory-regimes-six-region]] — six-region (台美日韓中國歐洲) generalization: this page is the US instance of the launch-authorization axis
+- [[synthesis/space-launch-airspace-integration-six-region]] — six-region generalization of the **air-navigation/NOTAM** axis specifically: this page is the US instance of how launch hazards reach pilots

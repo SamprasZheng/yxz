@@ -120,8 +120,22 @@ Re-entry AHAs are sized by the same dispersion-ellipse + buffer method, applied 
 
 For Spacesharks Phase 5, the agent should watch for re-entry NOTAMs filed under the satellite's operator name or NORAD ID as indicators that the deorbit has been initiated or that decay is imminent.
 
-## 8. Related pages
+## 8. Six-region equivalents and the long-horizon view
 
+The **AHA is a US Part 450 term**, but the underlying object — *the airspace volume closed so debris-strike risk stays below threshold* — exists everywhere under ICAO Annex 15, just under different names and sizing rules:
+
+- **Europe:** published as **Temporary Danger Areas** by national ANSPs (e.g. SaxaVord/EGPX, Esrange/ESAA, Andøya/ENOR), pooled in [EUROCONTROL EAD](https://www.eurocontrol.int/service/european-ais-database); EASA/national flight-safety analysis rather than § 450.133.
+- **China (CAAC):** state-defined closure boxes — inland launch sites (Jiuquan/Xichang/Taiyuan) drop spent stages over *land*, so the "hazard area" can sit over populated terrain; notice is often short and the geometry is not published with US-style trajectory-dispersion transparency.
+- **Japan (JCAB, RJJJ) / Korea (KOCA, RKRR):** standard advance danger-area NOTAMs for Tanegashima/Uchinoura and Naro launches.
+- **Taiwan (CAA, RCAA):** rarely sizes its own AHA (no sovereign launch); its operational concern is PRC launch-debris hazard areas bordering the Taipei FIR.
+
+The Ec ≤ 10⁻⁶ aircraft criterion (§3) is a US figure; the *concept* of a casualty-expectation ceiling is near-universal, but the exact threshold is nationally set — the same nationally-executed / globally-grammared split mapped in [[synthesis/space-launch-airspace-integration-six-region]].
+
+**100-year trajectory (labeled scenario):** the static surface-to-unlimited AHA is a stopgap for an era when launches were rare. As cadence approaches airline-like frequency, the endpoint is the **dynamic, machine-readable, telemetry-shrunk hazard volume** (§5) — launch vehicles integrated as ordinary airspace users under ICAO higher-airspace-operations, with the AHA polygon contracting in real time around the actual debris cone. The invariant: air and orbit share the same vertical column below ~100 km, so hazard-area deconfliction is permanent — the only variable is how *finely* it is drawn.
+
+## 9. Related pages
+
+- [[synthesis/space-launch-airspace-integration-six-region]] — six-region air-navigation deconfliction map (台美日韓中國歐洲)
 - [[concepts/notam]] — NOTAM base structure and retrieval
 - [[concepts/notam-space-operations]] — all space-ops NOTAM subcategories
 - [[concepts/launch-window-slip]] — how AHA activation interacts with slips and scrubs

@@ -88,6 +88,7 @@ The durable scarce resource across all scenarios is **filed-and-brought-into-use
 
 - [[synthesis/faa-notam-launch-lifecycle]] — US launch-clearance workflow (the launch-axis deep dive this page generalizes)
 - [[synthesis/fcc-ibfs-filings-coordination]] — US spectrum-filing workflow (the spectrum-axis deep dive this page generalizes)
+- [[synthesis/space-launch-airspace-integration-six-region]] — the **third axis**: air-navigation/NOTAM deconfliction (ICAO Annex 15), nationally executed but globally harmonized — the airspace sibling of the launch-authorization and spectrum axes mapped here
 - [[synthesis/leo-taiwan-odc-gap]] — the upstream/midstream gap this page extends to the regulatory layer
 - [[synthesis/orbital-data-center-six-region]] · [[synthesis/space-situational-awareness-six-region]] · [[synthesis/radiation-test-rad-hard-six-region]] — sibling six-region maps with the same governance trichotomy
 - [[concepts/ngso-gso-coordination]] · [[concepts/epfd-equivalent-power-flux-density]] · [[concepts/schedule-s]] · [[concepts/processing-round]]

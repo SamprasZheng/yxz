@@ -105,8 +105,24 @@ Long-term Starbase TFRs (standing restrictions at low altitude) have been issued
 
 See [[sources/faa-notam-search-2024]] for access details.
 
-## 7. Related pages
+## 7. Six-region context — one global format, six national issuers
 
+The NOTAM is a **globally harmonized** instrument: every region above publishes launch hazards under the same [ICAO Annex 15 / PANS-AIM (Doc 10066)](https://www.icao.int/airnavigation/aeronautical-information-management) grammar (NOTAM series, Q-codes, FIR boundaries, AIRAC cycle). The US FAA NOTAM Search above is one national instance; the issuing authority differs by region but the parse logic does not.
+
+| Region | Issuer | Launch-NOTAM origin FIR(s) |
+|---|---|---|
+| US | FAA AIM (NMS, 2026) | KZ** ARTCCs |
+| Europe | EUROCONTROL **EAD** repository + national ANSPs | EGPX (SaxaVord), ESAA (Esrange), ENOR (Andøya) |
+| China | **CAAC** (state) | ZBPE/ZSHA/ZGZU — short-notice, land drop-zones |
+| Japan | **JCAB** | RJJJ (Fukuoka) |
+| Korea | **KOCA/MOLIT** | RKRR (Incheon) |
+| Taiwan | **CAA/MOTC** | RCAA (Taipei) — *receives* PRC launch NOTAMs; rarely originates |
+
+The full comparison — who originates vs. receives, the three governance models, and the digital-AIM/100-year trajectory — is in [[synthesis/space-launch-airspace-integration-six-region]]. The same standard moving from telex text → **digital AIM** (AIXM 5.1, machine-readable NOTAM) is the once-in-a-generation modernization tracked on [[concepts/notam-space-operations]] §5.
+
+## 8. Related pages
+
+- [[synthesis/space-launch-airspace-integration-six-region]] — six-region air-navigation deconfliction map (台美日韓中國歐洲)
 - [[concepts/launch-window-slip]] — slip/scrub mechanics and NOTAM lifecycle during a launch delay
 - [[sources/faa-part-450-2020]] — regulatory basis (14 CFR Part 450)
 - [[sources/faa-ast-launch-licensing-2025]] — AST license chain that authorises the launch the NOTAM covers
