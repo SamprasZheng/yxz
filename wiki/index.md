@@ -33,6 +33,7 @@ type: index
 - [[sources/nemoclaw-build-a-claw-portal-2026]] — NVIDIA "Build-a-Claw" onboarding portal: Brev / DGX Spark / Jetson install paths (2026)
 - [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
 - [[sources/noaa-swpc-product-catalog]] — NOAA SWPC product and data catalog: full JSON URL table with cadences for all operational space weather feeds (ingested 2026-05-24)
+- [[sources/kol-digest-2026-06-23]] — KOL + keyword digest: empty KOL watchlist note + 11-term keyword sweep (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks); new stubs [[entities/anthropic]], [[entities/openai]], [[concepts/claude-code]] (2026-06-23)
 
 - [[sources/msbai-orbitguard-dod-contract-2025]] — MSBAI OrbitGuard $1.2M DoD SBIR (Sept 2025): JEPA + MARL neuro-symbolic SDA copilot; 94–98% lab accuracy across ~15,000 objects; AMOS 2025 poster; CEO Grosvenor verbatim quote (ingested 2026-05-24)
 - [[sources/scnoc-agentic-sun-2025]] — SCNOC-Agentic paper (Electronics 2025, 14(16), 3320): first LLM multi-agent framework for satellite communications NetOps; four components (intent refinement / multi-agent workflow / long-term memory / graph-RAG); qwen2.5-70B improved network task planning accuracy 15.6%→32.2% (ingested 2026-05-24)
@@ -96,6 +97,8 @@ type: index
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
 - [[entities/peter-steinberger]] — Austrian engineer (@steipete); PSPDFKit co-founder/CEO (€100M Insight exit 2021); creator of OpenClaw; OpenAI personal-agents lead (Feb 2026–)
+- [[entities/anthropic]] — AI safety-focused lab; maker of Claude + Claude Code; stub created 2026-06-23 from the KOL digest
+- [[entities/openai]] — AI lab; maker of GPT + ChatGPT; stub created 2026-06-23 from the KOL digest
 - [[entities/noaa-swpc]] — NOAA Space Weather Prediction Center: civilian space weather authority; Boulder CO; ISES flagship RWC; 24/7 alerts/watches/warnings; civil counterpart to USAF 557th Weather Wing
 
 - [[entities/lockheed-martin-space]] — Lockheed Martin Space AI/SDA product line: iSpace (C2 + sensor fusion), Space Fence (S-band radar), T-TAURI (onboard telemetry AI), ARISE; 80+ space AI/ML programs; no confirmed JEPA usage publicly
@@ -153,6 +156,7 @@ type: index
 - [[concepts/hermes-agent-framework]] — Nous Research's self-improving agent framework (MIT, ~165k stars, v0.14.0 May 2026); learning loop + autonomous skill creation + pluggable memory backends + 7 deployment backends (local/Docker/SSH/Singularity/Modal/Daytona/Vercel Sandbox); requires 64k-token context; NVIDIA NemoClaw integration on port 8642; reference framework for NVIDIA Agent Challenge 2026
 - [[concepts/openclaw]] — Open-source MIT autonomous agent ("the AI that actually does things"); WhatsApp/Telegram/Slack chat-driven; CDP browser + shell tools; Steinberger-founded; default profile inside NemoClaw sandbox
 - [[concepts/nemoclaw-policy-presets]] — Composable hot-reloadable YAML policy presets (official / community / custom); five canonical recipes; the graded artifact for hackathon "secure by design" credit
+- [[concepts/claude-code]] — Anthropic's agentic coding CLI/IDE/desktop tool; stub created 2026-06-23 from the KOL digest
 
 - [[concepts/jepa-sda-multi-agent-rl]] — JEPA + Multi-Agent RL for SDA: LeCun JEPA primer; MSBAI OrbitGuard architecture (JEPA world models + MARL + neuro-symbolic); DARPA Hallmark sensor tasking; why this is incumbent-moat territory (data/sensor/clearance/lead-time); falsifiability table for owner's "0.98 P-R / Lockheed+MSBAI" claim
 - [[concepts/llm-satellite-operations-landscape]] — Competitive map: academic papers (2025 Journal of Space Ops + IAPGOS), commercial vendors (Cognitive Space/Slingshot/Kayhan/Privateer/AIKO), hyperscalers (AWS/Azure/GCP gaps), structural gap table (internal-TM-only / no lifecycle fusion / no LLM layer), Spacesharks unfair-advantage vs incumbent table
