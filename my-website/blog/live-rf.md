@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-06-24
+
+- Market/Sentiment stance: **neutral** (score 0)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-06-24T23:39:32.149Z
+
+Key web signals:
+- [Dimensionality reduced antenna array for beamforming/steering - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTFByS3pGS3VlR3IxZ0lvS3JIejZfY0dDNllnTzhPUExmbkQ2VmlGbGRFUWFJejUxVXlCVW5ZVm4zckUwUzJxUHFlYzY1aGI2TzJNRmU3dU96LU9mUHEzcVl3?oc=5)
+- [Keysight to Showcase Spectrum Innovations at IMS 2026 - Business Wire](https://news.google.com/rss/articles/CBMirwFBVV95cUxOSlVfQmZYSmczREU1VUdzTHExVnNDVlVkSXhlUHU3aVAtQTB3SlNzUFpVbVJ6Z1k0anh0d2RjcFVxQkZnQ1U5RjBjcGJjTXpfbkIzUllQV0F1X0ZRekpWdkc4M3BLWFFwbUtKR0dHT0U3WG9KdFo4bERSVGpaOTQ0ckx5bG53b1phVXYwSFdFQmctQjJVTTVtTEd4ZXA1V0oyaTdpWXFnMHdUMElKOWY4?oc=5)
+- [Mobile World Congress 2026 roundup - 5G Technology World](https://news.google.com/rss/articles/CBMieEFVX3lxTFBrX1dKYkZKbUpCd0Z4WGQ1VmhKZWtzOXpCRnJmLWtqVk5PR1NsY3ZRMEl4bUhiZm14cFZSWnE4SFd3VWd1QWNPWkRCM0tOT3BtZExiRXBnM0tpcm9ucDlrWmlRTmg5a2FpV1ZObEsxMExmY3VFbV82QQ?oc=5)
+- [Low-voltage U-shaped RF MEMS shunt switch integration for K-band phased array beam steering - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zZFM5bkJRdm5CaDV2ajNBT01wRjFZeE1zSnRKTHp1RVlRcnR0S2FnbXdIWVBBcVBYMFV5SkdReFVvY2hwbFUtbVRWdmNPdTYzeFpDSVoxLW0xOG5aUFJz?oc=5)
+- [Dynamic beam-stabilized, additive-printed flexible antenna arrays with on-chip rapid insight generation - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5M1FDVm9vU0UxZzRWYWxBdEp3ejlQR2M4aXNoWnY5aHNHYWdhZjJPV2VoX1ljV2QyTjJjbVh4aWgxRXFRZWdQUVZFZFJuY1gwN0pnZXpGendIWE5oN2M0?oc=5)
+- [Calibrating phased arrays in minutes, not days - Electronics360](https://news.google.com/rss/articles/CBMingFBVV95cUxOdlBkOWtkQno4eU94TTBYeEIxOGhPUFdLRmJ4Q3lZRnI0ek56Q1NqWDRYT3BVWnQwcGpESVNvQmtZdTRfNUdCMXBXY1FSaExmQmNiampGWFdabUtZQ2huLVNla2dEc3Q2WXRqXzZxUXZMN0kyZklrbFNkN1FvbkhnSHZoQ2RmcWVHXzZFUC1LVkdzNG1ZYU42VGlzRkx6UQ?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((phased array OR SATCOM OR beamforming OR satellite communication) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(phased%20array%20OR%20SATCOM%20OR%20beamforming%20OR%20satellite%20communication)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-06-23
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -229,27 +250,6 @@ Data quality notes:
 - Web signals collected: 10
 - Social-search signals collected: 0
 - Updated at: 2026-06-13T23:38:00.785Z
-
-Key web signals:
-- [Prototype Reflectarray Antenna Demonstrates Low‑SWaP Anti‑Jam Tactical SATCOM - Mobility Engineering Technology](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQRlh2R0lqVUdEc0pTNmRpMmFfOTJtSFBQTU1DV1I1b3VCa1Y3YUNaekIzUGE2YTg2eFRWVXd4dGRTYkRPdU82UG9DeHBERXJTakZETk1nUEd1ZXFwbk9OXzdIb2txU2ZndVd4X1dZMlA2T19DVHlmNFdaQzZDb0dZd29SOGFHZHd1a2hJbWhocjhfWkNTbHJqbTc0bUlSSDFTYTRPTlJfZlB2QWhMOEZwX2hVeVI0RXZhaVpkUDFBZjhibG1KNTRiZkFJMzlfV1JXUlowb2tOZnFJZVl3X1lkNTlmVQ?oc=5)
-- [Dimensionality reduced antenna array for beamforming/steering - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTFByS3pGS3VlR3IxZ0lvS3JIejZfY0dDNllnTzhPUExmbkQ2VmlGbGRFUWFJejUxVXlCVW5ZVm4zckUwUzJxUHFlYzY1aGI2TzJNRmU3dU96LU9mUHEzcVl3?oc=5)
-- [Keysight to Showcase Spectrum Innovations at IMS 2026 - Business Wire](https://news.google.com/rss/articles/CBMirwFBVV95cUxOSlVfQmZYSmczREU1VUdzTHExVnNDVlVkSXhlUHU3aVAtQTB3SlNzUFpVbVJ6Z1k0anh0d2RjcFVxQkZnQ1U5RjBjcGJjTXpfbkIzUllQV0F1X0ZRekpWdkc4M3BLWFFwbUtKR0dHT0U3WG9KdFo4bERSVGpaOTQ0ckx5bG53b1phVXYwSFdFQmctQjJVTTVtTEd4ZXA1V0oyaTdpWXFnMHdUMElKOWY4?oc=5)
-- [Mobile World Congress 2026 roundup - 5G Technology World](https://news.google.com/rss/articles/CBMieEFVX3lxTFBrX1dKYkZKbUpCd0Z4WGQ1VmhKZWtzOXpCRnJmLWtqVk5PR1NsY3ZRMEl4bUhiZm14cFZSWnE4SFd3VWd1QWNPWkRCM0tOT3BtZExiRXBnM0tpcm9ucDlrWmlRTmg5a2FpV1ZObEsxMExmY3VFbV82QQ?oc=5)
-- [Low-voltage U-shaped RF MEMS shunt switch integration for K-band phased array beam steering - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zZFM5bkJRdm5CaDV2ajNBT01wRjFZeE1zSnRKTHp1RVlRcnR0S2FnbXdIWVBBcVBYMFV5SkdReFVvY2hwbFUtbVRWdmNPdTYzeFpDSVoxLW0xOG5aUFJz?oc=5)
-- [Dynamic beam-stabilized, additive-printed flexible antenna arrays with on-chip rapid insight generation - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5M1FDVm9vU0UxZzRWYWxBdEp3ejlQR2M4aXNoWnY5aHNHYWdhZjJPV2VoX1ljV2QyTjJjbVh4aWgxRXFRZWdQUVZFZFJuY1gwN0pnZXpGendIWE5oN2M0?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((phased array OR SATCOM OR beamforming OR satellite communication) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(phased%20array%20OR%20SATCOM%20OR%20beamforming%20OR%20satellite%20communication)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-06-12
-
-- Market/Sentiment stance: **neutral** (score 0)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-06-12T23:58:14.913Z
 
 Key web signals:
 - [Prototype Reflectarray Antenna Demonstrates Low‑SWaP Anti‑Jam Tactical SATCOM - Mobility Engineering Technology](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQRlh2R0lqVUdEc0pTNmRpMmFfOTJtSFBQTU1DV1I1b3VCa1Y3YUNaekIzUGE2YTg2eFRWVXd4dGRTYkRPdU82UG9DeHBERXJTakZETk1nUEd1ZXFwbk9OXzdIb2txU2ZndVd4X1dZMlA2T19DVHlmNFdaQzZDb0dZd29SOGFHZHd1a2hJbWhocjhfWkNTbHJqbTc0bUlSSDFTYTRPTlJfZlB2QWhMOEZwX2hVeVI0RXZhaVpkUDFBZjhibG1KNTRiZkFJMzlfV1JXUlowb2tOZnFJZVl3X1lkNTlmVQ?oc=5)

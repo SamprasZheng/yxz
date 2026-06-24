@@ -13,6 +13,32 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-06-24
+
+- Market/Sentiment stance: **neutral** (score 1)
+- Web signals collected: 10
+- Social-search signals collected: 10
+- Updated at: 2026-06-24T23:39:32.149Z
+
+Key web signals:
+- [SpaceX confirms Starmind, targets one million satellites - Let's Data Science](https://news.google.com/rss/articles/CBMingFBVV95cUxQS2JNeGZpYkJ3bWJFMzlxQ0RDRFRsM2NRSElHOVB2bnJ5WFo1bDl2M2pFSHBTdWJ3MGdBN2ZxdHNtNGR1M2VTbzVoenZJWndzalRQNExnNlNUNnlERjRsYVQ1elFvOHM1cVlQRUxHcEczMVk3VXpnY212U3V1YVhSM2VpTW02dV84dGFqS2Z5bnVTMDZLaUp4TXc3aGpSdw?oc=5)
+- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
+- [Orbital raises $5 million to join orbital data center race - SpaceNews](https://news.google.com/rss/articles/CBMihwFBVV95cUxNRERScGM0eDBSUUZ6T1BWaC0xVDFEMF94R0hqcXhSVTltOVQzcHBPV2RUaVdDanFsNHBfUjhRTF9FTHptWThBbmRobGVNOFlpbXhXYnBIZlI3b21sMXliUzRFaUFuRHpPOXBLeFpRRUxvS1EtSGRiMThwc3poeXBpcE8tNUs2R1U?oc=5)
+- [SpaceX IPO: Building the Space Economy for the AI Era - semivision](https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ2M0S01OV3Y4UG9EOUFJdFRtOURaN1FBbGpNN2E0WnlPWmRmMXl3MnUtSmZrWTFLSUpseVQzR2hCWVFneVZhdlpVNVNaWUVFYmFqWDhqU1BPZURFaHMxZHZLOEtYWndDcE9sYm5pNXNDVmE3SDdIRGZKa0xQWkhHYy1kdnE?oc=5)
+- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
+- [Space Based Data Center Market Size, Share | Fotrecast [2034] - Fortune Business Insights](https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWhfWEV5d1NuYkRJNVV5bHNFM2hGVnM2aDMtVWQyZlZ5MGE3eVVmd3czQWppeS1sejluaVpWQXExV0RzMUhKV0lQS21pTVlWZmczS1pubTZodEpMa1d2SENtUnFYNFpHNFNWanFrQzFMWVZKOEpUY0ZwWVh3QktnSGNtbw?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [For the very first time Elon Musk explains the "space data center plan ...](https://x.com/rohanpaul_ai/status/2064165951936094364)
+- [Part 1/2 Why orbital AI data centers are the only realistic path ...](https://x.com/CLAngelillo/status/2066218257942519955)
+- [SpaceX has unveiled the design of... - Space and Technology - Facebook](https://www.facebook.com/SpaceTechnologyPage/posts/spacex-has-unveiled-the-design-of-its-first-orbital-data-center-satellite-ai1-th/1827979351789482/)
+- [Space FrontPage - Elon Musk&#x27;s new race, data centers and ... - Facebook](https://www.facebook.com/SpaceXFP/posts/elon-musks-new-race-data-centers-and-ai-in-space-is-gonna-give-big-tech-companie/898239219390802/)
+- [Instagram](https://www.instagram.com/p/DRAVZCwj_dm/)
+- [Instagram](https://www.instagram.com/p/DZdA0QkiE8N/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-06-23
 
 - Market/Sentiment stance: **neutral** (score 3)
@@ -294,32 +320,6 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Is AI outgrowing Earth and will... - TechTalk With Solomon | Facebook](https://www.facebook.com/TechTalkWithSolomon/posts/is-ai-outgrowing-earth-and-will-the-next-data-center-be-in-space-as-global-deman/1402775541219088/)
 - [In a newly released technical update, SpaceX&#x27;s leadership team, which ...](https://x.com/tslaming/status/2064156791940981167)
 - [Space FrontPage - Anthropic is considering using SpaceX&#x27;s ... - Facebook](https://www.facebook.com/SpaceXFP/posts/anthropic-is-considering-using-spacexs-orbital-data-center-satellites-%EF%B8%8F-anthropi/1017809040767152/)
-- [Instagram](https://www.instagram.com/p/DQ4l084jASo/)
-
-Data quality notes:
-- No major data-quality issue in this run.
-
-### 2026-06-12
-
-- Market/Sentiment stance: **neutral** (score 2)
-- Web signals collected: 10
-- Social-search signals collected: 10
-- Updated at: 2026-06-12T23:58:14.913Z
-
-Key web signals:
-- [Are Orbital Data Centers the Next Frontier of AI Infrastructure? - Via Satellite](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdndDNk5CWFRGaV8wcWFoQkFLVzU0WUdoa1NRaHpPMlRGVGZQVFc1aklYTlF1RWFIMDRLbXF0N2ZaelhQbGxfNHVCWm8yTEpYUDVSelB3VWFqZklwMDdSMWpnc1NMeXhGYmcxNUgta3VMWllITkZLSU1iMVgyOVpXN3k5Ulg0Qm1yeEsxbldVSVFScENxa2dYUXA0aTdueXBnal9rclRaY0VPMlBOaXNfbkZScXRNRTFo?oc=5)
-- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
-- [China’s space-computing push draws chipmakers, satellite firms, and rocket companies - digitimes](https://news.google.com/rss/articles/CBMijgFBVV95cUxPNjhaVUpROVQ3dnJMTndOdm83OVgxeE00d216cEVWRzctTi1XRS1DUld3eHdLc1g0ZmdNd2Q1S3k0b19LbVcxazJ1amhXM0dlYm9DWl9qM3lnaGVwSWhrQTF5WG1ydGhSYlVwckIwa0RmaVFhcTZvNm1hN3BwQlNGcGpMWUxma3d4a3BaWmtn?oc=5)
-- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
-- [Musk touts orbital AI data centers to bolster SpaceX IPO pitch - CHOSUNBIZ - Chosunbiz](https://news.google.com/rss/articles/CBMiekFVX3lxTE9KOTl5T0IwdDQ4Q0ZGcDIxQUNFZUZ1aVFnQk5JQldGYWFadWo3QUFlYTZFSFRHX3g2RG9iNGpON1g2X1ZDTFJQM2hBaDNpLVlicjIzMkU3YVJDMXd4bEdlUVVBdFVpZzRtbnVWRzdtU1lWLWdaXzloSXNn0gGOAUFVX3lxTE9FakgyTDdEREZkT29tM0tMLURJQjlDLXZuZWZJTk1xR05iWHlMVVNrbDF1MVM3dldROUcyeDVrc3lsMHIzUWtKTXhsaFp5VWJwdEk5Ry1NYjN5UEVQX0lUYklZV3FYX3o0SWREVGRQZ0xTeUF4NkFhWmE2NFg1eHVxM2tEYkZ4QkExajBuQkE?oc=5)
-- [Space Based Data Center Market Size, Share | Fotrecast [2034] - Fortune Business Insights](https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWhfWEV5d1NuYkRJNVV5bHNFM2hGVnM2aDMtVWQyZlZ5MGE3eVVmd3czQWppeS1sejluaVpWQXExV0RzMUhKV0lQS21pTVlWZmczS1pubTZodEpMa1d2SENtUnFYNFpHNFNWanFrQzFMWVZKOEpUY0ZwWVh3QktnSGNtbw?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [In a newly released technical update, SpaceX&#x27;s leadership team, which ...](https://x.com/tslaming/status/2064156791940981167)
-- [For the very first time Elon Musk explains the "space data center plan ...](https://x.com/rohanpaul_ai/status/2064165951936094364)
-- [Instagram](https://www.instagram.com/p/DRAVZCwj_dm/)
-- [Ahead of the IPO, SpaceX has unveiled the AI1 - Facebook](https://www.facebook.com/interestingengineering/videos/musk-shows-detailed-design-of-ai-data-center-satellite/1011966071311689/)
-- [Is AI outgrowing Earth and will... - TechTalk With Solomon | Facebook](https://www.facebook.com/TechTalkWithSolomon/posts/is-ai-outgrowing-earth-and-will-the-next-data-center-be-in-space-as-global-deman/1402775541219088/)
 - [Instagram](https://www.instagram.com/p/DQ4l084jASo/)
 
 Data quality notes:
