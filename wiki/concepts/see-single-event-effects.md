@@ -79,6 +79,34 @@ Cross section (cm²) = number of upset events / particle fluence (particles/cm²
 2. Determine device sensitive volume
 3. Integrate with mission orbital LET spectrum → obtain on-orbit SEU rate (events/device/day)
 
+## Technology Scaling — Why Smaller Nodes Make SEE Worse (拉高維度 / 加深探究)
+
+SEE scales in the **opposite direction** to [[concepts/tid-total-ionizing-dose|TID]]:
+
+- **Qcrit falls with the node.** Critical charge ∝ node capacitance × supply voltage; both shrink with scaling, so the charge a single ion must deposit to flip a node drops. Advanced processes upset more easily.
+- **Multi-bit / multi-cell upsets (MCU/MBU).** As cells pack tighter, one ion track straddles several cells → a single strike flips multiple adjacent bits, defeating simple single-bit ECC (drives interleaving + stronger codes).
+- **SET capture rises in fast logic.** Higher clock rates mean a brief Single-Event Transient is more likely to be latched as a real edge — combinational logic becomes an SEU source, not just memory.
+- **Angular & charge-sharing effects.** Sub-28 nm FinFET geometry makes cross-section depend on strike angle and charge sharing between fins — the simple σ-vs-LET Weibull picture (below) under-predicts.
+
+The cross-cutting consequence: **scaling helps the gate-oxide TID story but hurts the SEE story.** A NewSpace COTS part on a leading node may be remarkably TID-tolerant yet badly SEE-soft — exactly why **SEE characterization, not TID, is the gating risk for COTS-in-space** ([[concepts/cots-gpu-radiation-risk]]).
+
+## Historical Lineage & 100-Year View (拉長時間軸)
+
+| Era | Milestone | Why it mattered |
+|---|---|---|
+| **1962** | **Starfish Prime** artificial belt destroys six satellites (see [[concepts/tid-total-ionizing-dose]] lineage) | Established that space radiation kills electronics — the discipline's origin |
+| **1972** | A Hughes satellite loses comms for 96 s, then recovers | The first *transient* anomaly that demanded a single-particle explanation |
+| **1975** | **Binder, Smith & Holman**, *"Satellite anomalies from galactic cosmic rays,"* IEEE TNS NS-22(6):2675 — **first SEU report**; used an SEM to mimic iron-nucleus ionisation | Named and modelled the single-event upset; predicted it before it was common |
+| **late 1970s** | Terrestrial DRAM soft errors recognised (Intel; α-particles from package materials) | SEE escapes space — altitude/ground neutron SEU becomes a commercial reliability problem |
+| **1979** | **LBNL BASE** — world's first heavy-ion SEE test facility | Made ground qualification of SEE possible (the scarce capability mapped on [[synthesis/radiation-test-rad-hard-six-region]]) |
+| **2025-10-30** | **JetBlue Airbus** pitch event — Airbus attributes a flight-control bit-flip to cosmic radiation | SEU at aviation altitude reaches public safety headlines |
+
+**100-year structural view (labelled scenario, not fact):** the GCR + trapped-particle flux is fixed by astrophysics, so the *forcing* never closes. The *device* side gets steadily more fragile: every node shrink lowers Qcrit, so absent mitigation the raw upset rate trends **up** in perpetuity. The long-run equilibrium is therefore **architectural, not material** — SEE is not eliminated, it is *managed* by ECC/interleaving/scrubbing/TMR and (increasingly) by tolerating-and-recovering at the software layer. The 1–10 cm "deadly-but-untrackable" debris invariant of [[synthesis/space-situational-awareness-six-region]] has a microelectronics twin here: **you cannot shield your way out of high-LET heavy ions** (the shielding exponent is far weaker than for TID — see [[concepts/orbit-dose-budgeting]]), so resilience must be designed in, not bolted on.
+
+## Standards & Six-Region Note
+
+SEE *test-capacity* by region (who owns the accelerators) is mapped in the testing section above and on [[synthesis/radiation-test-rad-hard-six-region]]. The distinct **standards-authorship** axis: SEE qualification is governed by **JEDEC JESD57** + **ASTM F1192** (US-authored) and **ESA/ESCC 25100** (Europe-authored) — the same US/Europe standards duopoly as TID ([[concepts/tid-total-ionizing-dose]] six-region table), with China on sovereign **GJB** and Japan/Korea/Taiwan as adopters. Source: [JESD57 (NASA NTRS)](https://ntrs.nasa.gov/api/citations/20160014892/downloads/20160014892.pdf).
+
 ## Differences from TID
 
 | | SEE | TID |
@@ -87,6 +115,7 @@ Cross section (cm²) = number of upset events / particle fluence (particles/cm²
 | Key parameters | LET, cross section, Qcrit | Total dose (krad), dose rate |
 | Test tools | Heavy-ion/proton accelerator | Co-60 γ source |
 | Primary affected devices | SRAM, FPGA, power MOSFET | All MOS devices, bipolar linear ICs |
+| Effect of node scaling | **Worse** (Qcrit ↓, MCU, SET capture) | Gate-oxide **better**, but STI re-introduces it |
 
 ## Related
 
@@ -99,3 +128,5 @@ Cross section (cm²) = number of upset events / particle fluence (particles/cm²
 - [[concepts/cots-gpu-radiation-risk]] — H100/Orin specific test data and on-orbit mitigation strategies
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 peak (2024–2026) increases SEU/SEL event rates
 - [[synthesis/radiation-test-rad-hard-six-region]] — who owns the heavy-ion accelerators that qualify SEE, by region; 100-year sovereignty view
+- [[concepts/orbit-dose-budgeting]] — Poisson SEE-rate trade calculator; the weak shielding exponent that forces design-in resilience
+- [[synthesis/space-situational-awareness-six-region]] — the orbital-debris "designed-in resilience" analogue cited in the 100-year view

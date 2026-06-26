@@ -86,6 +86,32 @@ This is the answer driver — it tells you whether ECC alone is sufficient or wh
 | Proton-induced SEU at low LET | The `(20/LET_th)^1.2` form is heavy-ion-style; proton SEU via nuclear reaction has different scaling. |
 | Advanced-node Qcrit | <28 nm CMOS exhibits multi-bit upsets and angular dependence that pure σ vs. LET misses. |
 
+## Concept↔Code Conformance (向內消化)
+
+This page is a **faithful, verified description** of the runnable implementation at `my-website/src/components/RadiationCalculators/index.tsx` (read 2026-06-26). Every coefficient on this page matches the code exactly — a clean ✅ conformance (the positive counterpart to the Nemotron-router divergence flagged in [[synthesis/firefly-nemoclaw-reference-implementation]]):
+
+| Quantity | This page | Code (`index.tsx`) | Match |
+|---|---|---|---|
+| `TID_base` LEO / MEO / GEO / Lunar | 0.8 / 3.5 / 8.0 / 12.0 | 0.8 / 3.5 / 8.0 / 12.0 | ✅ |
+| `SEE_base` LEO / MEO / GEO / Lunar | 1.0e-6 / 8e-6 / 2e-5 / 5e-5 | 1.0e-6 / 8e-6 / 2e-5 / 5e-5 | ✅ |
+| `f_alt` (LEO) | `clamp(0.65+(alt−200)/1600, 0.6, 1.25)` | identical | ✅ |
+| `f_inc` (LEO) | `clamp(0.8+inc/220, 0.8, 1.25)` | identical | ✅ |
+| `f_shield` (TID) | `exp(−0.35·max(0, sh−2))` | identical | ✅ |
+| Inverted solver | `2 + ln(D/limit)/0.35` | `solveShieldForTidLimit` identical | ✅ |
+| SEE sensitivity / shield | `(20/LET_th)^1.2` · `exp(−0.08·sh)` | identical | ✅ |
+| `σ_ref` / `bits_ref` / `α` / `κ` | 1e-7 / 1e6 / 1.2 / 0.08 | identical | ✅ |
+
+**Two precision notes for the owner (not divergences):**
+1. The page calls "LEO 550 km / 53° / 2 mm Al ≈ 1 krad/yr" the anchor, but the code's *effective* baseline at that exact point is `0.8 × 0.869 × 1.041 ≈ 0.72 krad/yr` — i.e. the "≈1 krad/yr" is an order-of-magnitude rounding, not the computed value. Harmless for a trend-only tool; worth a one-word "~0.7–1" qualifier if ever tightened.
+2. The code **clamps every input** (years 0.1–20, alt 200–2000 km, inc 0–98°, shield 0–20 mm, LET 1–120, σ 1e-10–1e-3, bits 1–1e12). Trade studies outside those ranges silently saturate — a deliberate guard-rail, but callers should know the tool stops responding at the rails.
+
+No code was modified (read-only reconciliation; `my-website/src` is out of edit-scope for this routine).
+
+## Six-Region & Time-Horizon Note
+
+- **六地域 (台美日韓中國歐洲): honest N/A.** These are closed-form approximations of *universal physics* — orbit dose has no nationality, exactly as the conjunction-Pc math is region-agnostic. The meaningful horizontal axis is **which signoff tool/standard convention** a region's primes default to: US/NASA → **CREME96** (SEE) + **AE9/AP9**; ESA/Europe → **SPENVIS** (free, ESA-hosted) + **OMERE** (TRAD, France); both feed the same standards-authorship duopoly mapped on [[concepts/tid-total-ionizing-dose]]. Closed-form budgeting like this sits *upstream* of all of them.
+- **拉長時間軸:** the *structure* of closed-form trade models is durable (the questions — "how much more dose if I raise the orbit?" — never change), but the *coefficients* drift: Solar Cycle 25's stronger-than-forecast peak ([[concepts/solar-cycle-25-leo-radiation]]) means the LEO `TID_base` deserves a periodic upward derate, and advanced-node Qcrit collapse (see [[concepts/see-single-event-effects]] scaling section) steadily erodes the `(20/LET_th)^1.2` approximation's validity. The model is a 100-year *pattern*; its numbers are a per-decade *calibration*.
+
 ## Workflow Placement
 
 Closed-form orbit-dose budgeting is **step 2 and 3** of the Sampras playbook ([[sources/radtest-playbook-sampras-2021]]):
@@ -108,3 +134,6 @@ For signoff you graduate to full tools. For weekly trade-study iteration, closed
 - [[concepts/rha-radiation-hardening]] — RDM ties to the TID output
 - [[concepts/solar-cycle-25-leo-radiation]] — why 2024–2026 baselines deserve a derate
 - [[concepts/cots-gpu-radiation-risk]] — applied case (H100 ECC vs. SEL risk)
+- [[concepts/rha-radiation-hardening]] — RDM / upscreening economics the budget output feeds
+- [[synthesis/radiation-test-rad-hard-six-region]] — where the qualified parts that close the budget get tested, by region
+- [[synthesis/firefly-nemoclaw-reference-implementation]] — sibling code↔concept reconciliation (the divergence counterpart to this page's ✅ conformance)
