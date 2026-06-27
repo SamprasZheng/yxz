@@ -82,6 +82,7 @@ SSA is the rare space domain where the **long-horizon constraint is a settled ph
 - [[synthesis/orbital-data-center-six-region]] — sibling six-region map; the σT⁴ ceiling is the ODC analog of the Kessler invariant
 - [[synthesis/radiation-test-rad-hard-six-region]] — sibling six-region map; the "Europe coordinates / China sovereign / toll booth never closes" structure recurs here
 - [[synthesis/leo-taiwan-odc-gap]] — Taiwan upstream-strong/midstream-absent; SSA is the same gap
+- [[synthesis/commercial-space-traffic-management-six-region]] — the **commercial-market** companion to this **national-infrastructure** page: who *sells* space safety by region (Slingshot/Kayhan/Astroscale/Vyoma), market models, and the STM-commercialization 100-year question
 
 ## Sources
 

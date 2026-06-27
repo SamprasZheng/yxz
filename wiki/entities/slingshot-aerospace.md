@@ -27,9 +27,9 @@ Beacon's starting point is Space-Track CDMs, not Slingshot's own sensor data —
 
 ## TraCSS Contract
 
-Slingshot was awarded a **$13.3 million NOAA contract** (November 2024) to develop the user interface layer for TraCSS (Traffic Coordination System for Space). Collaborators on the contract include COMSPOC and T&T Consulting Services. Slingshot Beacon will serve as the framework for the TraCSS presentation layer at TraCSS.gov.
+Slingshot was awarded a **$13.3 million NOAA contract** (November 2024) to develop the user interface layer for TraCSS (Traffic Coordination System for Space). The award structure is **$5.3M to build the Presentation Layer (12 months) + ~$8M to operate/manage it over the first four years** — i.e. a build-plus-ops outsourcing, not a one-off. Collaborators include COMSPOC and T&T Consulting Services. Slingshot Beacon serves as the framework for the TraCSS presentation layer at TraCSS.gov. Per Slingshot, **Beacon is used by ~90% of LEO satellite operators** — the dominant fleet-coordination dashboard, which is exactly why DoC chose it as the civil front end.
 
-Commercial data pilot contracts (including Slingshot, LeoLabs, Kayhan Space, COMSPOC, SpaceNav) were extended by DoC in May 2024 to continue providing commercial SSA data to supplement TraCSS.
+Commercial data pilot contracts (including Slingshot, LeoLabs, Kayhan Space, COMSPOC, SpaceNav) were extended by DoC in May 2024 to continue providing commercial SSA data to supplement TraCSS; the OSC's **Commercial Conjunction Assessment Screening Services (CASS)** pilots (announced 2026) continue this outsourcing pattern. Slingshot was named to **Fast Company's World's Most Innovative Companies 2026**.
 
 ## Relevance to Firefly / NemoClaw Stack
 
@@ -60,9 +60,17 @@ Agatha is positioned as a defense intelligence tool for distinguishing threateni
 
 The $25.2M US Space Force contract to build a "digital twin space simulator" is cited alongside the $13M NOAA TraCSS contract as Slingshot's largest government engagements.
 
+## Commercial-Market Position (six-region)
+
+Slingshot is the canonical **US "government-anchored commercial market"** case: a genuine private product (Beacon, ~90% LEO share) whose demand floor is a government program (TraCSS). It sits in **Tier 2 (decide)** of the commercial space-safety stack — conjunction screening + fleet coordination — *not* Tier 1 tracking (its own SGSN optical net is secondary to ingested CDMs). Its non-US analogs are Europe's agency-pulled startups (Vyoma/Neuraspace/Okapi) and, in the **act** tier, Japan's Astroscale. Full market structure, the three market models, and the 100-year STM-commercialization question: [[synthesis/commercial-space-traffic-management-six-region]].
+
 ## See Also
 
 - [[sources/tracss-oasis-announcement-2024]] — TraCSS programme Slingshot supports
 - [[entities/18-sds]] — upstream CDM source Beacon ingests from
 - [[entities/leolabs]] — complementary commercial tracking provider
-- [[synthesis/cdm-pc-decisioning]] — where Slingshot Beacon fits in the operator workflow
+- [[entities/kayhan-space]] · [[entities/privateer-space]] · [[entities/cognitive-space]] — fellow US commercial space-safety vendors
+- [[concepts/conjunction-screening-providers]] — provider capability comparison table (Beacon row)
+- [[synthesis/commercial-space-traffic-management-six-region]] — six-region commercial STM market map
+- [[synthesis/space-situational-awareness-six-region]] — national SSA infrastructure (governmental layer)
+- [[synthesis/cdm-pc-decisioning]] — where Slingshot Beacon fits in the operator workflow (Tier 2)

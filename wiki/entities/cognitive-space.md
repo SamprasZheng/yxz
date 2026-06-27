@@ -38,7 +38,9 @@ Earth observation tasking product (details not publicly disclosed beyond product
 | SDA Other Transaction Authority | ~$1.8M (est.) | Mar 2025 | PWSA BMC3 mesh network management |
 | Combined SDA awards (2025) | ~$5M total | Mar 2025 | Two awards: sensor management + mesh networking |
 
-The March 2025 awards tasked Cognitive Space to (1) apply AI to enhance automated sensor management for missile-tracking satellites and (2) implement automated mesh network management for the Proliferated Warfighter Space Architecture (PWSA) Battle Management Command, Control and Communication (BMC3) ecosystem.
+The March 2025 awards tasked Cognitive Space to (1) apply AI to enhance automated sensor management for missile-tracking satellites and (2) implement automated mesh network management for the Proliferated Warfighter Space Architecture (PWSA) Battle Management Command, Control and Communication (BMC3) ecosystem. The company also won a **NOAA contract (2025) for next-generation ground-system demonstrations**, broadening its customer set beyond SDA/AFRL to include DARPA and the USSF.
+
+**Maturity signal (2025-2026):** Cognitive Space states **CNTIENT.Optimize has reached TRL 9** (commercially available, operating on-orbit spacecraft) — a meaningful step above the SBIR-demo stage and the clearest "fielded, not prototype" claim among the four US ops-automation/space-safety vendors in this cluster.
 
 ⚠️ **Headcount and revenue not publicly disclosed.**
 
@@ -56,9 +58,14 @@ Cognitive Space is the clearest direct commercial competitor to [[synthesis/spac
 
 The SDA customer base confirms the US government is buying AI satellite-ops automation. Cognitive Space's ~$5M government contract portfolio validates the market but also reveals the current scale: small SBIR-level engagements, not large program-of-record contracts.
 
+## Commercial-Market Position (six-region)
+
+Cognitive Space sits in the **Operate (AI tasking/ops automation)** adjacency rather than the three core space-safety tiers — collection scheduling + sensor management, not conjunction screening or debris removal. But it shares the cluster's defining trait: **US government-anchored demand** (SDA/AFRL/NOAA/DARPA SBIR-scale), and it overlaps the [[synthesis/llm-satellite-operations-six-region|applied AI-ops software layer]]. Among the four US vendors here it is the **ops-automation** node (vs Slingshot/Kayhan = decide, Privateer = exited). Market structure + six-region: [[synthesis/commercial-space-traffic-management-six-region]].
+
 ## See Also
 
 - [[concepts/llm-satellite-operations-landscape]] — full competitive map
-- [[entities/slingshot-aerospace]] — SSA/CDM competitor
-- [[entities/kayhan-space]] — collision avoidance competitor
+- [[entities/slingshot-aerospace]] · [[entities/kayhan-space]] · [[entities/privateer-space]] — fellow US commercial space-safety/ops vendors
+- [[synthesis/commercial-space-traffic-management-six-region]] — six-region commercial STM/space-safety market map
+- [[synthesis/llm-satellite-operations-six-region]] — applied AI-ops software layer (Cognitive Space sits here too)
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Spacesharks canonical plan

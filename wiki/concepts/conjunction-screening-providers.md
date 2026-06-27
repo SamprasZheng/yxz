@@ -114,3 +114,4 @@ The [[sources/tracss-oasis-announcement-2024|Traffic Coordination System for Spa
 - [[concepts/swpc-space-weather-feeds]] — space weather data that must be fused with CDM
 - [[concepts/notam-space-operations]] — operational context alongside CDMs
 - [[synthesis/space-situational-awareness-six-region]] — six-region national SSA infrastructure + governance models + 100-year Kessler view
+- [[synthesis/commercial-space-traffic-management-six-region]] — the same providers read as a six-region *commercial industry* (market models, funding, government-anchored demand, STM-commercialization 100-year question)

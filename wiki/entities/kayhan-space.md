@@ -36,13 +36,15 @@ SaaS platform for end-to-end conjunction risk assessment and collision avoidance
 - **Machine-to-machine coordination**: "Autonomously pre-coordinate maneuver responsibility and event mitigation status at the machine-to-machine level" — Pathfinder 3.0 capability
 - **Multi-source orbit determination**: AI/ML-enhanced domain awareness combining multiple tracking data sources
 
-### Satcat Suite (2025 unified platform)
+### Satcat Suite (Feb 2025 unified platform)
 
-Announced 2025, merges Pathfinder's conjunction capabilities with a unified space intelligence layer:
+Officially released **February 2025**, merges Pathfinder's conjunction capabilities with a unified space intelligence layer:
 
 - AI/ML-enhanced domain awareness and orbit determination
 - Sophisticated conjunction assessment and autonomous collision avoidance
 - Satcat (space object catalog intelligence) + Pathfinder + Dynamics (proprietary orbital propagator)
+- **Tiered productization**: free **Pathfinder Essentials** (fleet status + threat assessment) + subscription **Pathfinder Pro** (automated real-time CA) — the freemium funnel that, like Slingshot Beacon's dashboard, is how a T2 vendor builds operator lock-in
+- Satcat named a **2025 Fast Company Innovation by Design** honoree (UX category)
 
 ### Eagle
 
@@ -73,11 +75,18 @@ Pathfinder uses AI/ML-enhanced orbit determination that improves covariance real
 
 Kayhan Space represents the **automated maneuver planning** dimension closest to [[synthesis/spacesharks-mission-desk-hackathon-plan]]'s collision-avoidance phase. The key contrast: Kayhan automates the Pc computation → maneuver recommendation loop for individual events; Spacesharks would fuse this signal with lifecycle context (satellite age, fuel budget, mission phase) and external signals (SWPC space weather, NOTAM launch windows) to recommend whether to maneuver at all given the broader operational picture.
 
+## Commercial-Market Position (six-region)
+
+Kayhan is a **Tier 2 (decide)** pure-play — conjunction screening → optimized maneuver → M2M coordination — the closest US analog to a "collision-avoidance SaaS." Like [[entities/slingshot-aerospace|Slingshot]], it is anchored by the US **government-anchored commercial market** (TraCSS Consolidated Pathfinder data vendor; USSF STTR). Its European counterpart is **Okapi:Orbits** (AI STM + CA SaaS, Germany); the contrast with Japan's [[entities/aiko-space|AIKO]]/Astroscale is T2-decide vs T3-act. Full market structure + the 100-year STM-commercialization question: [[synthesis/commercial-space-traffic-management-six-region]].
+
 ## See Also
 
 - [[concepts/llm-satellite-operations-landscape]] — full competitive map
+- [[concepts/conjunction-screening-providers]] — provider capability table (Pathfinder row)
 - [[concepts/pc-probability-of-collision]] — the metric Kayhan optimizes
 - [[concepts/cdm-conjunction-data-message]] — input data format
 - [[entities/leolabs]] — complementary commercial tracking provider
-- [[entities/slingshot-aerospace]] — Beacon CDM coordination platform
+- [[entities/slingshot-aerospace]] · [[entities/privateer-space]] · [[entities/cognitive-space]] — fellow US commercial space-safety vendors
+- [[synthesis/commercial-space-traffic-management-six-region]] — six-region commercial STM market map
+- [[synthesis/cdm-pc-decisioning]] — Tier-2 upgrade in the Firefly workflow
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Spacesharks canonical plan

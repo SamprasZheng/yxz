@@ -5,7 +5,9 @@ tags: [ssa, satellite-operations, geospatial-ai, space-debris, competitive-intel
 
 # Privateer Space
 
-Privateer is a Honolulu, Hawaii-based space data and situational awareness startup co-founded by Steve Wozniak (Apple co-founder) and **Alex Fielding** (CEO). The company aims to make orbital space predictable and safe through data fusion and visualization. In May 2024 it acquired Palo Alto-based geospatial AI firm **Orbital Insight** and raised a $56.5 million Series A.
+Privateer is a Honolulu, Hawaii-based space data startup co-founded by Steve Wozniak (Apple co-founder), astrodynamicist **Moriba Jah**, and **Alex Fielding** (CEO). It launched aiming to make orbital space predictable and safe through data fusion and visualization (Wayfinder). In May 2024 it acquired Palo Alto-based geospatial AI firm **Orbital Insight** and raised a $56.5 million Series A.
+
+> **Updated (2025-09):** Privateer has **largely exited the SSA/space-debris market.** Public trackers (Wikipedia, Factories-in-Space) report the **Wayfinder debris solution marked cancelled** as of September 2025, with the company pivoting to **terrestrial data analytics + a ride-share data-tasking marketplace ("Pono")**. This makes Privateer the corpus's canonical **cautionary tale**: a well-funded ($56.5M, Wozniak co-founder), high-profile pure-commercial SSA bet that did **not** find a sustainable standalone-commercial business and retreated — the empirical falsifier behind the "US commercial STM's customer-of-last-resort is the government" thesis in [[synthesis/commercial-space-traffic-management-six-region]].
 
 ## Founding and Leadership
 
@@ -61,8 +63,16 @@ The owner's brief stated Privateer "bought Saber Astronautics' Predict in 2024."
 - Saber Astronautics is an independent Australian space operations company (WINDU AI platform for SSA)
 - No product called "Predict" was involved in any Privateer transaction
 
+## Commercial-Market Position (six-region)
+
+Privateer is the **negative data point** in the US commercial space-safety market: it occupied the Tier-1/Tier-2 boundary (free Crow's Nest CDM tool + Wayfinder visualization) but, unlike [[entities/slingshot-aerospace|Slingshot]] (TraCSS-anchored) and [[entities/kayhan-space|Kayhan]] (subscription + gov), never secured a government demand floor and exited. Its trajectory is the strongest evidence for the synthesis claim that this market is **government-anchored, not free-market** — and a contrast to Japan's [[entities/aiko-space|AIKO]]/Astroscale, which stayed agency-anchored and survived. Full market structure: [[synthesis/commercial-space-traffic-management-six-region]].
+
 ## See Also
 
 - [[concepts/llm-satellite-operations-landscape]] — full competitive map
-- [[entities/slingshot-aerospace]] — closer SSA competitor
+- [[concepts/conjunction-screening-providers]] — provider capability table (Wayfinder/Crow's Nest row)
+- [[entities/slingshot-aerospace]] · [[entities/kayhan-space]] · [[entities/cognitive-space]] — fellow US commercial space-safety vendors
+- [[entities/leolabs]] — commercial tracking provider (the Tier-1 layer Privateer leaned on)
+- [[synthesis/commercial-space-traffic-management-six-region]] — six-region commercial STM market map (Privateer = the falsifier)
+- [[synthesis/space-situational-awareness-six-region]] — national SSA infrastructure layer
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Spacesharks canonical plan
