@@ -54,6 +54,8 @@ type: index
 - [[sources/itu-radio-regulations-article-22-2023]] — ITU Radio Regulations Article 22 EPFD limits + Resolution 76 (Rev.WRC-23) aggregate limits; free EPFD validation software at itu.int/epfdsupport/ (2023)
 - [[sources/fcc-starlink-gen2-kuiper-rulings-2022-2024]] — FCC constellation rulings 2020–2024: Starlink Gen2 7,500 sats (FCC 22-91), V-band (DA-24-1193), Kuiper 3,232 sats, AST SpaceMobile 248 sats SCS (2022–2024)
 
+- [[sources/kol-digest-2026-06-27]] — Daily KOL + keyword digest: Anthropic/Alibaba distillation accusation, Claude Tag launch, GPT-5.6 gated rollout, Polkadot DOT all-time-low, NemoClaw/Nemotron 3 Ultra stack updates, OpenClaw 310k★ (KOL list empty; 11 keywords swept) (2026-06-27)
+
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
