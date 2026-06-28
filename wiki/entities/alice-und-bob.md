@@ -11,8 +11,8 @@ Polkadot ecosystem strategist and governance architect. Real name: **Tommi Enenk
 
 - **Polkadot Head Ambassador** — elected via Referendum 869 (92.3% approval)
 - **Co-founder, ChaosDAO** — major DAO holding ~14M DOT in on-chain voting power
-- **Co-founder, OpenGov.Watch** — governance monitoring and strategy org, funded by Web3 Foundation via Decentralized Futures program
-- **Instructor, Polkadot Blockchain Academy** — teaches OpenGov and Tokenomics modules
+- **Co-founder, OpenGov.Watch** — the cluster's canonical third-party [[concepts/opengov]] analytics/monitoring org, funded by Web3 Foundation via Decentralized Futures program
+- **Instructor, Polkadot Blockchain Academy** — teaches [[concepts/opengov|OpenGov]] and Tokenomics modules
 - **Moderator, Technical Fellowship OpenDev calls** (monthly)
 - Speaker at Polkadot Decoded, Sub0, Consensus Hong Kong 2025
 
@@ -21,7 +21,7 @@ Background: MSc in Knowledge Management & IT Security; prior CIO/CMO roles; acad
 ## Key positions & claims
 
 ### Governance-first thesis
-Core claim: governance failure — not technical limitations — is Polkadot's primary existential risk. OpenGov can become "the most impactful DAO in Web3" if governance infrastructure is properly built. Published manifesto: *"Web3 is a promise. OpenGov is the way."* (opengov.watch)
+Core claim: governance failure — not technical limitations — is Polkadot's primary existential risk. [[concepts/opengov|OpenGov]] can become "the most impactful DAO in Web3" if governance infrastructure is properly built. Published manifesto: *"Web3 is a promise. OpenGov is the way."* (opengov.watch). The conviction-voting + 15-track machinery he monitors is documented canonically in [[concepts/opengov]]; his ChaosDAO ~14M-DOT pool is one of the largest informed delegate blocs inside it.
 
 ### Polkadot Growth Strategy (March 2025)
 After nine months of planning, released a comprehensive Growth Strategy on the Polkadot Forum proposing six ecosystem programs. The official @Polkadot X account promoted the document. Key framing: decentralized agents must coordinate bottom-up rather than wait for top-down direction.
@@ -48,6 +48,11 @@ Published a high-engagement thread interpreting Wood's return as Parity CEO — 
 ## Related
 
 - [[entities/polkadot]]
+- [[concepts/opengov]]
 - [[concepts/dot-hard-cap]]
 - [[concepts/proof-of-personhood]]
 - [[entities/gavin-wood]]
+- [[entities/bill-laboon]]
+- [[entities/polkaworld]]
+- [[entities/shawn-tabrizi]]
+- [[concepts/plurality]]

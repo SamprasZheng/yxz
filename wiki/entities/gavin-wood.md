@@ -58,3 +58,6 @@ Explicitly shifting from *technology* to **Platform and Product** — building d
 - [[concepts/jam]]
 - [[concepts/dot-hard-cap]]
 - [[concepts/proof-of-personhood]]
+- [[concepts/opengov]]
+- [[entities/alice-und-bob]]
+- [[entities/bill-laboon]]

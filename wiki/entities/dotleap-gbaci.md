@@ -48,6 +48,7 @@ The original DotLeap was founded by Bruno Škvorc (Parity/RMRK ecosystem, now de
 - [[entities/polkasharks]]
 - [[entities/bill-laboon]]
 - [[entities/shawn-tabrizi]]
+- [[concepts/opengov]]
 - [[concepts/dot-hard-cap]]
 - [[concepts/jam]]
 - [[concepts/agile-coretime]]

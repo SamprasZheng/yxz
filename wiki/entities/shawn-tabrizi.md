@@ -17,7 +17,7 @@ Lead Polkadot developer, Polkadot Technical Fellowship member, and Polkadot Bloc
 
 ## Current roles
 
-- **Polkadot Technical Fellowship** — Architect-level contributor; guides protocol direction
+- **Polkadot Technical Fellowship** — Architect-level contributor; guides protocol direction. The Fellowship is the on-chain body that *replaced* the Governance-v1 Technical Committee under [[concepts/opengov]]; it can only **whitelist** (lower the bar on) Root-class actions via the Whitelisted Caller track, never veto a referendum.
 - **Polkadot Blockchain Academy (PBA)** — Lead instructor; teaches core Polkadot protocol and runtime development
 - **Independent Polkadot Fellow** — contributes to and creates open-source Polkadot infrastructure
 
@@ -60,7 +60,9 @@ Tabrizi is the most prominent **technical educator** in the Polkadot ecosystem w
 - [[entities/bill-laboon]]
 - [[entities/dotleap-gbaci]]
 - [[entities/polkaworld]]
+- [[entities/alice-und-bob]]
 - [[concepts/jam]]
 - [[concepts/agile-coretime]]
 - [[concepts/xcm]]
 - [[concepts/regionx]]
+- [[concepts/opengov]]

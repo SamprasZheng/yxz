@@ -12,7 +12,7 @@ Layer-0 blockchain protocol enabling interoperability between heterogeneous bloc
 - **Created by:** Gavin Wood (Ethereum co-founder, Yellow Paper author) — [[sources/polkasharks-ep1-polkadot-intro]]
 - **Architecture:** Central relay chain provides shared security and consensus; parachains are independent blockchains optimized for specific use cases
 - **Token:** DOT — used for governance, staking, and coretime purchase
-- **Governance:** OpenGov — DOT holders initiate and vote on referenda directly on-chain
+- **Governance:** [[concepts/opengov]] — DOT holders initiate and vote on referenda directly on-chain (15 origin tracks, conviction voting, on-chain Treasury; no council)
 - **Interop protocol:** [[concepts/xcm]] (Cross-Consensus Messaging)
 
 ## 2024 milestones (per [[sources/polkasharks-ep10-2024-annual]])
@@ -96,3 +96,4 @@ The wiki's Polkadot graph has three knowledge channels:
 - [[concepts/xcm]]
 - [[concepts/dot-hard-cap]]
 - [[concepts/proof-of-personhood]]
+- [[concepts/opengov]]

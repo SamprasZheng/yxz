@@ -21,11 +21,11 @@ Vice President of Ecosystem at Web3 Foundation (promoted November 2025). Previou
 
 ### Previous role (until November 2025): Director of Education & Governance Projects
 Responsible for:
-- OpenGov-related work and governance participation
+- [[concepts/opengov|OpenGov]]-related work and governance participation
 - Technical education content (Polkadot Wiki, Web3MOOC — a 20-week blockchain fundamentals course)
 - Coordinating support and staking teams
-- Decentralized Voices program coordination
-- Kusama Council membership
+- **Decentralized Voices (DV) program coordination** — the W3F delegation experiment (~42M DOT + 80,000 KSM delegated to rotating community cohorts); see [[concepts/opengov]] for mechanics
+- **Kusama Council membership** — a Governance v1 body that OpenGov *abolished*; Laboon thus bridges the pre- and post-OpenGov governance eras
 
 ### Current role: VP of Ecosystem (from November 2025)
 Announcement (X, 2025):
@@ -36,6 +36,10 @@ The promotion brought ecosystem development, funding mechanisms, community colla
 ## Polkadot Agents Program
 
 Launched alongside Laboon's VP appointment. A micro-grant fast-track system: certified "Polkadot Agents" can apply directly to W3F for small grants (~$500) processed quickly without full Treasury referendum overhead. Framed as "cement binding the ecosystem together."
+
+## DV wind-down and the W3F-steps-back trajectory (2025–2026)
+
+Laboon's portfolio sat over **Decentralized Voices** during its conclusion. After Cohort 5 (Sep 2025 – Jan 2026), Web3 Foundation announced in **December 2025** that it would **not run a further DV cohort** (*"Decentralized Voices — Closing This Chapter & Carrying the Lessons Forward"*). Read together with his VP-of-Ecosystem promotion and the Polkadot Agents Program, the through-line is W3F **retiring direct foundation-granted voting power** (DV) while shifting to **lightweight, repeatable ecosystem-funding rails** (Agents micro-grants) — a deliberate hand-off from foundation stewardship toward organic [[concepts/opengov|OpenGov]] delegate culture, occurring against a **structurally shrinking treasury** (income falling 18M → ~4.5M DOT/yr by 2030 under [[concepts/dot-hard-cap]]).
 
 ## Key positions
 
@@ -58,6 +62,7 @@ Laboon is the most institutionally prominent Polkadot educator and ecosystem coo
 - [[entities/dotleap-gbaci]]
 - [[entities/shawn-tabrizi]]
 - [[entities/polkasharks]]
+- [[concepts/opengov]]
 - [[concepts/dot-hard-cap]]
 - [[concepts/proof-of-personhood]]
 - [[concepts/agile-coretime]]

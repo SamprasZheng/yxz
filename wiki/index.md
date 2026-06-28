@@ -122,6 +122,7 @@ type: index
 - [[concepts/xcm]] — Cross-Consensus Messaging: Polkadot's trustless cross-chain asset/message protocol; V5 planned 2025
 - [[concepts/dot-hard-cap]] — 2.1B DOT supply ceiling; Referendum 1710 (81% approval); enacted March 14, 2026; annual issuance −53.6%
 - [[concepts/proof-of-personhood]] — Replaces staking with human-weighted validation; DIM1/2/3 rollout; announced Berlin 2025
+- [[concepts/opengov]] — Polkadot's fully on-chain governance (15 origin tracks, conviction voting 0.1x–6x, four-period referendum lifecycle, on-chain Treasury); Gov-v1 Council/Committee abolished June 2023; Decentralized Voices delegation experiment concluding after Cohort 5 (W3F Dec-2025); treasury income falling 18M→4.5M DOT/yr under the hard cap; canonical for "how Polkadot decides and funds things"
 - [[concepts/technological-republic]] — Thesis that US power is rooted in state-directed engineering ambition; Silicon Valley has abandoned this heritage for consumer trivialities
 - [[concepts/soft-belief]] — Shared national/cultural purpose and willingness to confront ideas; cultural prerequisite for civilization-scale achievement
 - [[concepts/x402-protocol]] — HTTP 402 Payment Required revived as M2M automated payment standard; V2 (2025-12) adds Session / any ERC-20 / CAIP standard; 1 billion transactions cumulative; daily real volume $28K (2026-03)

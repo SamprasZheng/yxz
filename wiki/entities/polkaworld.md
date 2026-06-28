@@ -17,7 +17,7 @@ Largest Polkadot community in Asia, operating since June 2019. Founded by **Xiao
 
 ## Governance history
 
-PolkaWorld experienced a significant funding crisis (approximately 2022–2023) when an OpenGov referendum for ~16,842 DOT (~$80,000 for 3 months) received only 6.7% approval despite the organization having received ~$694,000 in prior Treasury funding. The failure reflected broader ecosystem tension: ordinary DOT holders feared that approving large community grants would reduce token stability, creating headwinds for all ecosystem proposals. PolkaWorld overcame this crisis and continued operating.
+PolkaWorld experienced a significant funding crisis (approximately 2022–2023) when an [[concepts/opengov|OpenGov]] referendum for ~16,842 DOT (~$80,000 for 3 months) received only 6.7% approval despite the organization having received ~$694,000 in prior Treasury funding. The failure reflected broader ecosystem tension: ordinary DOT holders feared that approving large community grants would reduce token stability, creating headwinds for all ecosystem proposals. PolkaWorld overcame this crisis and continued operating — a concrete case study in OpenGov's [[concepts/opengov|Spender-track treasury discipline]], which the [[concepts/dot-hard-cap|hard cap]] has since tightened ecosystem-wide.
 
 ## 2025–2026 Operations (Referendum 1522)
 
@@ -39,7 +39,9 @@ Delivered in prior year (exceeded targets):
 
 ## Role in governance
 
-PolkaWorld participated as a **first-cohort Decentralized Voices (DV)** representative, voting on 54 proposals. They co-hosted Gavin Wood's four-city JAM Tour in mainland China.
+PolkaWorld participated as a **first-cohort Decentralized Voices (DV)** representative, voting on 54 proposals — making it the **largest organized China-based delegate bloc** in [[concepts/opengov|OpenGov]] (see that page for the DV program mechanics and its 2025–2026 wind-down). They co-hosted Gavin Wood's four-city JAM Tour in mainland China.
+
+> **Context update (2026):** the DV program PolkaWorld helped pioneer is **concluding by design** — Web3 Foundation announced in December 2025 it will not run a cohort after **Cohort 5** (Sep 2025 – Jan 2026), shifting from foundation-granted voting power toward organic delegate culture. PolkaWorld's standing now rests on its 12-consecutive-treasury-grant track record and its independent delegate weight rather than a W3F delegation.
 
 Xiaojie Pang also sits on the Harbour Industrial Capital funding advisory board alongside other Polkadot ecosystem members.
 
@@ -58,6 +60,8 @@ PolkaWorld translates key Polkadot content into Chinese and produces original an
 - [[entities/dotleap-gbaci]]
 - [[entities/bill-laboon]]
 - [[entities/shawn-tabrizi]]
+- [[entities/alice-und-bob]]
+- [[concepts/opengov]]
 - [[concepts/dot-hard-cap]]
 - [[concepts/jam]]
 - [[concepts/agile-coretime]]
