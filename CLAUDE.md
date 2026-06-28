@@ -13,6 +13,20 @@ The repository combines:
 - Firefly orbital data center mission-planning agents
 - Claude and Codex skills, agents, hooks, and automations
 
+## Privacy & Publishing Rules
+
+- NEVER push to a public repo without explicit confirmation. All crypto, KOL, portfolio, and finance data is PRIVATE by default unless I explicitly state it can be public.
+- `$hark/` and `D:/DOT/finance/` content is private and must never be committed to this public `yxz` repo.
+- Before any commit, push, or deploy: show exactly which files will be affected and whether the target is public, then wait for my explicit OK.
+
+## Data Sources
+
+- ALWAYS consult my existing local sources first before pulling fresh data from the web. Local sources are canonical:
+  - Stock/crypto picks, FOM, recommendations, backtests → read the `$hark` watchlist, recommendations, and rubric first.
+  - Portfolio holdings and audits → `$hark/outputs/portfolio-audit-*.json`.
+  - Research knowledge → `wiki/`.
+- Treat web data as a delta layer only — use it to update or fill gaps, never to replace canonical files.
+
 ## Commands
 
 All site commands run from `my-website/`:
@@ -131,6 +145,19 @@ Run tests after agent code changes:
 cd agents
 uv run pytest
 ```
+
+## Git Workflow
+
+- Before committing, verify ONLY the intended files are staged. Use `git status` and explicit `git add <file>`.
+- Never use blanket `git add .` / `git add -A` when other files may already be staged — it sweeps in unintended changes.
+
+## Windows/Scripting Notes
+
+- Write PowerShell and other scripts as ASCII-only. Keep non-ASCII data (e.g. Chinese text) in a separate UTF-8 data file — PowerShell 5.1 misreads inline Unicode.
+
+## Web Scraping
+
+- Avoid bulk or aggressive scraping and bot-detection probing (e.g. YouTube, X.com) that can get my IP rate-limited or blocked.
 
 ## Hooks And CI
 

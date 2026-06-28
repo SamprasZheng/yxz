@@ -13,6 +13,7 @@ Personal blog, portfolio, wiki, and AI-agent workspace for Sampras Zheng. The pu
 - Polkadot, JAM, XCM, and crypto infrastructure
 - AI agents, MCP workflows, personal knowledge systems, and automation
 - Macro and supply-chain analysis
+- US-equity macro/sector leading-indicator layer for the trader agent (AI-hardware supply, compute economics, real-economy capex, consumer credit, autonomy regulation, cyber, options market-structure)
 
 ## Repository Structure
 

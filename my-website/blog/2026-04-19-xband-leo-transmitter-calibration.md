@@ -6,6 +6,7 @@ date: 2026-04-19
 authors: [sampras]
 tags: [rf, phased-array, leo, hardware]
 image: /img/og/xband-leo-transmitter.png
+draft: true
 ---
 
 設計一個 800 Mbps、X-band 的 LEO 衛星傳輸器，最難的部分不是 RF 電路本身——而是量測完之後，面對一個歪七扭八的星座圖，你知道問題在哪嗎？

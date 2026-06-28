@@ -58,6 +58,10 @@ Taiwan's strength is concentrated in **Layer 2 (and adjacent passives)**: [[enti
 - Taiwan entities: [[entities/win-semiconductors]], [[entities/ascend-tech]], [[entities/huatong-pcb]]
 - Radiation gate: [[concepts/rha-radiation-hardening]], [[concepts/taiwan-radiation-test-ecosystem]], [[concepts/tid-total-ionizing-dose]], [[concepts/see-single-event-effects]]
 
+## See also
+
+- [[entities/qorvo]] — for Qorvo's **mobile / Wi-Fi cellular FEM business** (ACG + CSG segments: handset PA/BAW/iFEM, Wi-Fi 7 Dimensity 9400 design win). That is a distinct business from the defense/GaN/radar HPA segment covered in this synthesis page.
+
 ## Sources (accessed 2026-05-31)
 
 - SATCOM beamformer-IC market sizing & vendors: [Semiconductor Insight — Phased Array Beamforming IC for SATCOM market](https://semiconductorinsight.com/report/phased-array-antenna-beamforming-ic-for-satcom-market/); [Anokiwave SATCOM](https://www.anokiwave.com/satcom/index.html); [Renesas phased-array beamformers](https://www.renesas.com/us/en/products/rf-products/phased-array-beamformers)
