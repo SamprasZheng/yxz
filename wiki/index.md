@@ -57,6 +57,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-06-29]] — First run of the daily KOL + keyword digest; KOL list empty (0 KOLs), 11-keyword sweep (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks); 3 new entity stubs created ([[entities/anthropic]], [[entities/openai]], [[entities/claude-code]])
 
 ## Entities
 
@@ -96,6 +97,9 @@ type: index
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
 - [[entities/peter-steinberger]] — Austrian engineer (@steipete); PSPDFKit co-founder/CEO (€100M Insight exit 2021); creator of OpenClaw; OpenAI personal-agents lead (Feb 2026–)
+- [[entities/anthropic]] — US AI safety company; maker of Claude + Claude Code; stub (2026-06-29)
+- [[entities/openai]] — US AI lab; maker of GPT + ChatGPT + Codex; stub (2026-06-29)
+- [[entities/claude-code]] — Anthropic's agentic CLI/IDE coding tool; stub (2026-06-29)
 - [[entities/noaa-swpc]] — NOAA Space Weather Prediction Center: civilian space weather authority; Boulder CO; ISES flagship RWC; 24/7 alerts/watches/warnings; civil counterpart to USAF 557th Weather Wing
 
 - [[entities/lockheed-martin-space]] — Lockheed Martin Space AI/SDA product line: iSpace (C2 + sensor fusion), Space Fence (S-band radar), T-TAURI (onboard telemetry AI), ARISE; 80+ space AI/ML programs; no confirmed JEPA usage publicly
