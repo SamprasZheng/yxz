@@ -120,7 +120,7 @@ type: index
 - [[concepts/hydration-omnipool]] — Polkadot's primary DEX; single unified liquidity pool; HDX token; 4–75%+ APY
 - [[concepts/regionx]] — Coretime secondary market; sub-core purchases; dynamic depreciation pricing
 - [[concepts/xcm]] — Cross-Consensus Messaging: Polkadot's trustless cross-chain asset/message protocol; V5 planned 2025
-- [[concepts/dot-hard-cap]] — 2.1B DOT supply ceiling; Referendum 1710 (81% approval); enacted March 14, 2026; annual issuance −53.6%
+- [[concepts/dot-hard-cap]] — 2.1B DOT supply ceiling; Referendum 1710 (81% approval); enacted/live March 14, 2026 ("Pi Day"); annual issuance ~120M → ~56.9M DOT (≈−52.6%)
 - [[concepts/proof-of-personhood]] — Replaces staking with human-weighted validation; DIM1/2/3 rollout; announced Berlin 2025
 - [[concepts/technological-republic]] — Thesis that US power is rooted in state-directed engineering ambition; Silicon Valley has abandoned this heritage for consumer trivialities
 - [[concepts/soft-belief]] — Shared national/cultural purpose and willingness to confront ideas; cultural prerequisite for civilization-scale achievement

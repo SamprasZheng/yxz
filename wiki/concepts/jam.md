@@ -39,21 +39,27 @@ Developers purchase "core time" in DOT to run services — analogous to gas fees
 - Any team can deploy; only three entry functions required
 - Combines Ethereum smart-contract expressiveness with Polkadot-scale throughput
 
-## Status (verified 2026-06-01)
+## Status (re-verified 2026-06-29)
 
 | Milestone | Date | Note |
 |---|---|---|
+| Gray Paper v0.1 | April 2024 | first public draft |
 | Gray Paper v0.6 | Q2 2024 | first complete spec |
 | Community approval | May 2024 | 31 M+ DOT in support |
 | JAM Toaster (1,023-node test cluster) | 2025 | reference conformance harness |
-| Gray Paper v0.7.0 | 2025 (H2) | released per Polkadot.ERI weekly observations |
+| Gray Paper **v0.7.0** | June 2025 | added detailed **PVM pseudocode** |
+| Gray Paper **v0.7.1** | July 2025 | community-feedback revision |
+| Multiple clients at **100% conformance** | August 2025 | several clean-room impls passed the conformance suite |
+| Gray Paper **v0.8** | late 2025 | pre-audit draft |
 | **Open JAM testnet** | **January 2026** | ✅ public; supports multiple execution environments incl. RISC-V |
-| Gray Paper v0.8 → toward v1.0 | early 2026 → | final pre-audit drafts |
-| JAM Mainnet upgrade | targeted 2026, via OpenGov referendum | requires on-chain governance approval; CoreChain Phase 1 in the same window |
+| Gray Paper **v1.0** | targeted before mid-2026 | final pre-audit spec freeze |
+| **JAM Mainnet Proposal (OpenGov vote)** | **expected Q3–Q4 2026** | on-chain governance vote to upgrade the Relay Chain; CoreChain Phase 1 in the same window |
+
+⚠️ **Delivery-timeline caution:** in 2026 reporting, three JAM core developers framed full delivery as **"within 12–20 months"** (i.e. into 2027) when discussing the M1 / [[concepts/proof-of-personhood|PoP]] economic model and ZK roadmap alongside JAM — so treat "JAM mainnet in 2026" as the *governance-proposal* window, not a guaranteed production-mainnet date. The testnet is live (Jan 2026); the Relay-Chain cutover is a separate, later governance event.
 
 ### Implementation race (the decentralisation-of-clients story)
 
-JAM is being built as a **multi-client, multi-language** protocol from day one — by mid-2026 reporting, **~43 independent teams across ~15 programming languages** were building JAM implementations, competing for a **10 million DOT** prize pool. This is deliberate: a spec with dozens of clean-room clients (Rust, Go, C++, Zig, TypeScript, Python, etc.) is far harder to capture or ossify than a single reference client, and the geographic spread of teams (Europe, Asia incl. Japan/Korea/China dev communities, Americas) is itself a decentralisation property. Contrast Ethereum, which reached client diversity years *after* mainnet; JAM is attempting it *before*.
+JAM is being built as a **multi-client, multi-language** protocol from day one — by mid-2026 reporting, **~43 independent teams across ~15 programming languages** were building JAM implementations, competing for a **10 million DOT** prize pool administered by the Web3 Foundation (milestone rewards reportedly start at **~100,000 DOT for early conformance**, with further grants for full-performance builds that pass professional audit; multiple clients had already reached 100% conformance by August 2025). This is deliberate: a spec with dozens of clean-room clients (Rust, Go, C++, Zig, TypeScript, Python, etc.) is far harder to capture or ossify than a single reference client, and the geographic spread of teams (Europe, Asia incl. Japan/Korea/China dev communities, Americas) is itself a decentralisation property. Contrast Ethereum, which reached client diversity years *after* mainnet; JAM is attempting it *before*.
 
 Gavin Wood's framing (2025):
 > *"After EVM, JAM will become the new industry consensus."*

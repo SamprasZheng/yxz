@@ -5,7 +5,7 @@ tags: [polkadot, tokenomics, supply, dot, halving]
 
 # DOT Hard Supply Cap
 
-A supply ceiling of **2.1 billion DOT** approved via Polkadot governance, marking a fundamental shift in DOT's monetary policy from uncapped-inflationary to Bitcoin-style asymptotically-capped. The first issuance reduction takes effect **2026-03-14**.
+A supply ceiling of **2.1 billion DOT** approved via Polkadot governance, marking a fundamental shift in DOT's monetary policy from uncapped-inflationary to Bitcoin-style asymptotically-capped. The runtime upgrade was **enacted on 2026-03-12 and took mechanical effect on 2026-03-14 ("Pi Day")** — DOT is now a disinflationary, supply-capped asset (no longer a projection: confirmed live as of this writing, 2026-06-29).
 
 ## Key facts
 
@@ -15,11 +15,17 @@ A supply ceiling of **2.1 billion DOT** approved via Polkadot governance, markin
 | Governance vehicle | Referendum 1710, on the **"Wish for Change"** track | [Polkassembly #1710](https://polkadot.polkassembly.io/referenda/1710) |
 | Approval | 81% in favour | Polkadot (X, 2025-09) |
 | Supply at vote | ~1.6 B DOT existing; ~120 M DOT/yr minted | Polkadot, 2025-09 |
-| First reduction | **2026-03-14**: −13.14% of *remaining* u/issued supply, then every 2 years | Yahoo Finance / KuCoin, 2026 |
-| Initial issuance cut | ~120 M → ~56.9 M DOT/yr (≈ −52.6%) | Globe & Mail, 2026 |
-| Inflation glide path | ~7.5% (2025) → ~3.3% (2026) → < 1% by mid-2030s; curve softened post-2032 | Crypto press, 2026 |
+| Enactment | runtime upgrade **2026-03-12**, mechanics live **2026-03-14 "Pi Day"** | Phemex / CoinCodex, 2026 |
+| Supply at enactment | ~1.68 B DOT circulating (~80% of the 2.1 B ceiling) | MEXC / crypto press, 2026 |
+| First reduction (realized) | −13.14% of *remaining* un-issued supply, then every 2 years | Yahoo Finance / KuCoin, 2026 |
+| Initial issuance cut (realized) | ~120 M → ~56.88 M DOT/yr (≈ −52.6%) | crypto press, 2026 |
+| Inflation glide path | ~7–10% (pre-cap) → **~3.1% (post-enactment, 2026)** → < 1% by mid-2030s; curve softened post-2032 | CoinCodex / MEXC, 2026 |
 
-> **Verification note (2026-06-01):** Referendum 1710 passed on the **"Wish for Change"** governance track — a *signalling* referendum that binds the DAO to the policy direction; the binding runtime change that sets the new issuance function is enacted through follow-up technical/treasury referenda. The "2026-03-14 first reduction" is the scheduled effect of that enactment, not the date 1710 itself closed. Pages that call 1710 "the cap being enacted" are simplifying a two-step governance process.
+> **Verification note — updated 2026-06-29 (post-enactment).** The cap is now LIVE: a runtime upgrade enacted **2026-03-12** brought the new issuance function into effect, with the first reduction mechanics taking hold on **2026-03-14 ("Pi Day")**. Realized post-enactment figures match the projections within rounding (annual issuance ~120 M → ~56.88 M DOT; inflation ~3.1%; circulating ~1.68 B ≈ 80% of cap). The earlier two-step nuance still holds for the record: Referendum 1710 (the **"Wish for Change"** signalling track, 81%) bound the DAO to the *policy direction*; the binding runtime change that set the new issuance function was the separate enacted upgrade above — so 1710 was the mandate, the March-2026 upgrade was the mechanism.
+
+### The "Pi" design motif (layer-down)
+
+Two of the headline parameters are deliberate **π references**, not coincidences: the **2.1 B** cap is 100× Bitcoin's 21 M *and* echoes π (3.14…→ the "2.1" framing is marketed alongside Pi-Day), and the **13.14%** biennial residual cut and the **2026-03-14** ("3/14") enactment date both point at **Pi Day**. The mechanism is a stepped, pi-flavoured disinflation rather than Bitcoin's strict 4-year halving — a smoother residual-fraction decay that keeps issuance positive (asymptotic) forever while the marketing leans on the Bitcoin/π scarcity narrative for ETF and institutional audiences.
 
 ## Mechanism
 
