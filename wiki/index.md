@@ -193,6 +193,12 @@ type: index
 
 ## Synthesis
 
+### Trader / Research
+
+- [[synthesis/daily-trader-2026-06-29]] — 2026-06-29 daily trader evaluation (stub/offline — proxy blocked Yahoo Finance; 15-ticker seed watchlist + FOM formula defined)
+
+### Space / Technology
+
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window and three breakthrough paths (PCB integration / defense catalysis / upstream extension)
 - [[synthesis/sampras-2026-engineering-thesis]] — AI × Space × Crypto × RF × Radiation integrated stack thesis; 2026 convergence triggers and falsifiability table
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Canonical plan for NVIDIA Agent Challenge 2026 entry: satellite-lifecycle decision co-pilot (five phases × decision verbs × labeled dataset moat) on Nemotron + Hermes + NemoClaw; 2-day build + 2-day refine schedule; investment angle deliberately de-emphasised in favour of operator decisions
