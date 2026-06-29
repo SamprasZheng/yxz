@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-06-29] trader | Daily trader evaluation stub — proxy blocked Yahoo Finance; 15-ticker seed watchlist established; FOM formula defined; scan-2026-06-29.json written; PR opened for visibility. Fix: add Yahoo Finance to proxy allowlist or switch to Tiingo/Polygon.io.
+
 ## [2026-06-29] deepen | Polkadot core protocol & tokenomics cluster — post-enactment fact-check (DOT hard cap now LIVE / JAM Gray Paper v1.0 window / PoP DIM1-DIM2 staging)
 **Rotation:** picked the **Polkadot core protocol & tokenomics** cluster — decisive on staleness. The Polkadot *domain* split into core (06-01) and app-layer (06-13); the **core cluster was last deepened 2026-06-01 (~28 days), the stalest mine-to-touch cluster** on the board (all other domains touched within the prior ~9 days: SSA 06-27, radiation 06-26, regulatory 06-23, RF/supply 06-22, agentic-payments 06-21). Decisive extra factor: this cluster carries the corpus's most **time-sensitive, now-verifiable** claims — at the 06-01 pass the DOT hard cap was a *future* event ("first reduction takes effect 2026-03-14"); it is now **3.5 months post-enactment with realized data**, the textbook case for the 向外抓取 fact-check op against authoritative reporting. (AI-quant-trading domain skipped — owned by the trader agent; no mine-to-touch pages.) **Pages deepened (4 concept + 1 synthesis) + index alignment.**
 

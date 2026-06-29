@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-29",
+  "run_type": "stub_offline",
+  "tickers_scanned": 15,
+  "tickers_valid": 0,
+  "backtest": null,
+  "scan": [],
+  "errors": [
+    {"ticker": "NVDA", "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "AAPL", "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "TSLA", "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "MSFT", "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "AMD",  "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "GOOGL","error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "META", "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "AMZN", "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "SPY",  "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "QQQ",  "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "SMCI", "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "ARM",  "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "AVGO", "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "NFLX", "error": "yfinance blocked: proxy 403 on Yahoo Finance API"},
+    {"ticker": "PLTR", "error": "yfinance blocked: proxy 403 on Yahoo Finance API"}
+  ],
+  "notes": [
+    "BLOCKER: The remote execution environment's outbound proxy blocks Yahoo Finance (curl error 56, response 403).",
+    "yfinance v1.5.1 installed successfully but all HTTP requests to finance.yahoo.com are refused.",
+    "No real price data was retrieved. This is a stub/skeleton run.",
+    "All tickers seeded from the core default watchlist (no prior daily-trader-*.md existed).",
+    "FOM table and backtest table are N/A for this run.",
+    "Recommended fix: configure an alternate price data provider (Alpha Vantage, Polygon.io, Tiingo) that is accessible via this environment's proxy, OR add Yahoo Finance to the proxy allowlist.",
+    "Next run: once price data is accessible, the pipeline will produce a full scan with confidence/direction/FOM scores.",
+    "LLM_BACKEND=disabled (offline mode fallback) — no Anthropic thesis generation attempted."
+  ],
+  "watchlist_seed": ["NVDA","AAPL","TSLA","MSFT","AMD","GOOGL","META","AMZN","SPY","QQQ","SMCI","ARM","AVGO","NFLX","PLTR"],
+  "fom_formula": "FOM = 0.4 * confidence + 0.3 * norm_sizing_sigma + 0.2 * recent_hit_rate + 0.1 * news_momentum",
+  "fom_components": {
+    "confidence": "LLM directional conviction [0,1] — from thesis-agent or price momentum proxy",
+    "norm_sizing_sigma": "1/ann_vol normalized to [0,1] across watchlist — higher = calmer stock, larger allowed position",
+    "recent_hit_rate": "fraction of prior directional calls that were correct (rolling 20d) — neutral prior 0.5 on first run",
+    "news_momentum": "volume-ratio proxy: vol_5d_avg / vol_20d_avg — higher = elevated attention / news flow"
+  }
+}
