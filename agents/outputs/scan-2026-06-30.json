@@ -1,0 +1,42 @@
+{
+  "scan_date": "2026-06-30",
+  "generated_at": "2026-06-30T23:06:12Z",
+  "backend": "OFFLINE (yfinance-proxy-blocked)",
+  "status": "BLOCKED",
+  "blockers": [
+    {
+      "component": "yfinance / Yahoo Finance API",
+      "error": "ProxyError: CONNECT tunnel failed, response 403. Yahoo Finance domain not in remote-env HTTPS proxy allowlist.",
+      "retry_attempted": true,
+      "retry_result": "same 403 on all 15 tickers"
+    },
+    {
+      "component": "agents/src/trader/",
+      "error": "Directory does not exist. The trader CLI pipeline (trader scan / trader research) has not been built yet. agents/src/ only contains the Firefly orbital data center pipeline.",
+      "retry_attempted": false
+    }
+  ],
+  "watchlist_seeded": [
+    "NVDA", "AAPL", "TSLA", "MSFT", "AMD",
+    "GOOGL", "META", "AMZN", "SMCI", "PLTR",
+    "AVGO", "TSM", "ARM", "INTC", "QCOM"
+  ],
+  "tickers": [
+    {"ticker": "NVDA",  "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "AAPL",  "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "TSLA",  "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "MSFT",  "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "AMD",   "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "GOOGL", "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "META",  "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "AMZN",  "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "SMCI",  "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "PLTR",  "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "AVGO",  "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "TSM",   "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "ARM",   "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "INTC",  "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"},
+    {"ticker": "QCOM",  "direction": null, "confidence": null, "sizing_sigma": null, "error": "proxy-blocked"}
+  ],
+  "note": "First-run stub. To unblock: (1) Add finance.yahoo.com to the remote-env proxy allowlist, OR configure an alternative price feed (Alpha Vantage / Polygon.io / Tiingo). (2) Build agents/src/trader/ pipeline. See wiki/synthesis/daily-trader-2026-06-30.md for full diagnosis."
+}
