@@ -17,8 +17,13 @@ Chinese space-computing company (ADA Space / 国星宇航) executing the largest
 | Combined compute (first 12) | **≈5 POPS** (peta-ops/s); 30 TB onboard storage |
 | Optical inter-satellite link | up to **100 Gbps** per satellite |
 | On-orbit accelerator | up to **744 TOPS** per satellite (remote-sensing payloads processed onboard) |
+| On-orbit AI model | **8-billion-parameter** model resident on each satellite (onboard inference) |
 | Target constellation size | **2,800 satellites** |
 | Full-network target compute | **≈1,000 POPS** (one quintillion ops/s) |
+
+## In-Orbit Status (2026-06)
+
+The first 12 satellites have been on orbit for roughly **nine months** (launched 2025-05-14) and ADA Space / Zhejiang Lab report they have **demonstrated the constellation's core capabilities** (onboard processing, ISL, edge inference). The wider Chinese space-compute push was a headline theme at the **2026 Space Computing Industry Conference (April 2026)**, and reporting indicates Beijing is moving to **coordinate/manage** the several competing orbital-compute efforts — i.e. the program is transitioning from first-launch demonstration toward managed scale-up. This keeps China in the **"leads on deployed scale"** seat of the six-region map: it remains the only actor with a *dedicated compute constellation already operating in orbit*.
 
 ## Strategic Positioning
 
@@ -42,6 +47,13 @@ ADA Space is the reason the ODC race is not a US-only story. In the six-region m
 
 - [[concepts/orbital-data-center]]
 - [[concepts/leo-value-chain]]
+
+## Related Entities
+
+- [[entities/starcloud]], [[entities/google-suncatcher]], [[entities/axiom-space]]
+
+## Related Synthesis
+
 - [[synthesis/orbital-data-center-six-region]]
 - [[synthesis/leo-taiwan-odc-gap]]
 

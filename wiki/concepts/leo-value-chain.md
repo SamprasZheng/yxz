@@ -20,7 +20,7 @@ This segment determines the performance ceiling of satellites and is where Taiwa
 RF component economics connect directly to the transmitter stack: [[concepts/aesa]] / [[concepts/hybrid-phased-array]] set the array architecture, [[concepts/zero-if-transmitter]] defines the X-band upconversion trade, [[concepts/evm-calibration]] keeps LO leakage/IQ imbalance inside spec, and [[concepts/dpd-digital-predistortion]] protects PA linearity/ACPR.
 
 - **Win Semiconductors ([[entities/win-semiconductors]], 3105)**: Global leader in LEO-spec PA (power amplifier) contract manufacturing
-- **Ascend Tech ([[entities/ascend-tech]], 3491)**: Filters, waveguides; has entered Starlink and Amazon Kuiper supply chains; gross margin >50%
+- **Ascend Tech ([[entities/ascend-tech]], 3491)**: Filters, waveguides; has entered Starlink and Amazon Kuiper supply chains; **9M-2025 gross margin ≈47.3%** (reconciled 2026-06-30 to the canonical [[entities/ascend-tech]] figure; an earlier ">50%" draft on this page is superseded)
 
 ### Space-Grade Solar Cells (High-Efficiency GaAs Cells)
 As per-satellite power requirements surge from 2 kW to over 10 kW (Starlink V3, AI compute on orbit), high-efficiency GaAs solar cells become an essential need.
@@ -36,7 +36,7 @@ High-band (Ka/V) satellite antennas and RF modules require low-loss microwave su
 ## Mid-stream A: Satellite Bus Manufacturing and Systems Integration
 
 ### PCB and Structural Boards
-**[[entities/huatong-pcb]] (Huatong)**: Close to 80% global market share in LEO satellite-specific PCBs (as of end of 2025). LEO satellite board revenue in Q4 2025 exceeded NT$15.5 billion (historical high). Taiwan's PCB manufacturers collectively form a structural advantage.
+**[[entities/huatong-pcb]] (Compeq/Huatong)**: Close to 80% global market share in LEO satellite-specific PCBs (as of end of 2025). **FY2025 satellite-board revenue ≈NT$15.1B** (~20% of ≈NT$76B total; 2026 target NT$20B) — reconciled 2026-06-30 to the canonical [[entities/huatong-pcb]] figure; an earlier "Q4 2025 >NT$15.5B" draft on this page is superseded. Taiwan's PCB manufacturers collectively form a structural advantage.
 
 ### Constellation Operator Satellites (Starlink V3 / Amazon Leo)
 - Starlink V3 increases the proportion of laser inter-satellite links (ISL), placing higher demands on RF components and thermal management
@@ -78,8 +78,8 @@ As constellation scale grows, debris management becomes a dual regulatory and en
 
 → See [[concepts/orbital-data-center]] for details
 
-### On-Orbit Compute Nodes (Starcloud H100 / Axiom ODC)
-Core logic: Explosive growth in Earth data-center electricity (IEA *Energy and AI*, 2025: **≈415 TWh in 2024 → ≈945 TWh by 2030**, US + China = ~80% of the growth) × free space solar energy × radiative cooling → long-term cost disruption. Taiwan manufacturers are currently almost absent from this segment. Global ODC race mapped by region in [[synthesis/orbital-data-center-six-region]]; Taiwan-specific gap in [[synthesis/leo-taiwan-odc-gap]].
+### On-Orbit Compute Nodes ([[entities/starcloud]] H100→Blackwell / [[entities/axiom-space]] relay-node ODC)
+Core logic: Explosive growth in Earth data-center electricity (IEA *Energy and AI*, 2025: **≈415 TWh in 2024 → ≈945 TWh by 2030**, US + China = ~80% of the growth) × free space solar energy × radiative cooling → long-term cost disruption. By mid-2026 the US node race has concrete hardware: [[entities/starcloud]] (Starcloud-1 H100 flown 2025-11; Starcloud-2 Blackwell-B200 + AWS-blade H2 2026) and [[entities/axiom-space]] (operational ODC Node 1 & 2 on Kepler optical relay, 2026-01). Taiwan manufacturers are currently almost absent from this segment. Global ODC race mapped by region in [[synthesis/orbital-data-center-six-region]]; Taiwan-specific gap in [[synthesis/leo-taiwan-odc-gap]].
 
 ### Energy Systems (24hr Solar Arrays / Radiative Cooling)
 24/7 solar power (no cloud cover) + passive radiative cooling toward the cosmic background is the differentiated energy advantage of ODC.
@@ -131,7 +131,7 @@ Starlink Aviation (in-flight Wi-Fi) and Maritime services are already mature mar
 | Segment | Taiwan Presence | Notes |
 |------|-----------|------|
 | Upstream RF PA | ★★★★★ | Win Semiconductors global leader |
-| Upstream filters | ★★★★★ | Ascend Tech >50% gross margin |
+| Upstream filters | ★★★★★ | Ascend Tech ≈47.3% gross margin (9M-2025) |
 | Upstream high-frequency PCB | ★★★★★ | Huatong 80% market share |
 | Mid-stream A ISL optical communications | ★★☆☆☆ | Precision optics not a Taiwan strength |
 | Downstream ground terminals | ★★★★ | Antenna, LNB, power |

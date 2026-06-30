@@ -38,13 +38,14 @@ Ground data-center electricity: **≈415 TWh in 2024** (~1.5% of global electric
 | 2024 | Thales Alenia Space publishes results of EU/Horizon **ASCEND** feasibility study — concludes orbital data centres are technically feasible and economically viable, ROI in billions of € by 2050 (Europe) |
 | 2025-05-14 | [[entities/ada-space]] + Zhejiang Lab launch **12 satellites** (Jiuquan) of the "Three-Body Computing Constellation" / Star-Compute Program — first dedicated orbital-compute constellation (China) |
 | 2025-Q4 | Kepler Communications launches first tranche of optical data-relay satellites (9 + spare, SSO) |
-| 2025-fall | Axiom Space deploys **AxDCU-1** aboard the ISS (Red Hat Device Edge) to validate ODC payload ops |
+| 2025-fall | [[entities/axiom-space]] deploys **AxDCU-1** aboard the ISS (Red Hat Device Edge) to validate ODC payload ops |
 | 2025-11-02 | [[entities/starcloud]] **Starcloud-1** launched (SpaceX rideshare); 60 kg, single NVIDIA H100 — ~100× prior in-orbit GPU compute (US) |
-| 2025-11-04 | Google announces **Project Suncatcher** ([[entities/google-suncatcher]]) with a published system-design pre-print; Planet to build two prototype sats for early-2027 launch |
+| 2025-11-04 | Google announces **Project Suncatcher** ([[entities/google-suncatcher]]) with a published system-design pre-print; Planet to build two prototype sats for early-2027 launch; **HBM** flagged as the most TID-sensitive subsystem |
 | 2025-12 | Starcloud-1 trains NanoGPT (Karpathy) on-orbit and runs a Gemini model in space — first LLM training + first frontier-model inference in orbit |
-| 2026-01-11 | Axiom Space launches **ODC Node 1 & 2** to LEO on Kepler optical-relay satellites (2.5 Gbps optical, SDA Tranche-1 compatible) |
+| 2026-01-11 | [[entities/axiom-space]] launches **ODC Node 1 & 2** to LEO on Kepler optical-relay satellites (2.5 Gbps optical, SDA Tranche-1 compatible) — first *operational* relay-networked ODC nodes |
 | 2026-03-30 | Starcloud raises **$170M Series A** at $1.1B (Benchmark + EQT) — fastest YC unicorn (17 months) |
 | 2026 GTC | Jensen Huang frames space computing as "the ultimate frontier" |
+| 2026 (H2, planned) | [[entities/starcloud]] **Starcloud-2** (NVIDIA Blackwell B200 + AWS server blade, live commercial workloads; ~100× Starcloud-1 power); Starcloud FCC filing for ~88,000 satellites surfaces |
 
 ## Application Scenarios
 
@@ -69,8 +70,8 @@ This architecture allows enterprises to incrementally adopt ODC without fully mi
 
 | Player | Positioning |
 |------|------|
-| [[entities/starcloud]] | First mover in commercial GPU (H100) on-orbit validation; gigawatt-scale roadmap |
-| Axiom Space | AxDCU-1 (ISS, 2025) → ODC Node 1&2 (2026-01) on Kepler optical relay |
+| [[entities/starcloud]] | First mover in commercial GPU (H100→Blackwell) on-orbit validation; gigawatt-scale roadmap; ~88k-sat FCC filing |
+| [[entities/axiom-space]] | AxDCU-1 (ISS, 2025) → operational ODC Node 1&2 (2026-01) on Kepler optical relay; national-security/sovereign-cloud customers |
 | [[entities/ada-space]] | China's state-scaled 2,800-satellite Three-Body / Star-Compute constellation |
 | [[entities/google-suncatcher]] | Hyperscaler entry; Trillium TPU + free-space-optics formation flight |
 | Thales Alenia Space | EU **ASCEND** study lead — Europe's sustainability/sovereignty ODC blueprint |
@@ -82,7 +83,7 @@ ODC is no longer a single-country story. The corpus's signature six-region read 
 
 | Region | Lead actor(s) | Posture | Status (2026-06) |
 |---|---|---|---|
-| **US** 🇺🇸 | Starcloud, Axiom, Google Suncatcher, NVIDIA | Commercial-first, VC-funded, hardware in orbit | **Leads** — only region with GPUs + LLM training actually flown |
+| **US** 🇺🇸 | [[entities/starcloud]], [[entities/axiom-space]], [[entities/google-suncatcher]], [[entities/nvidia]] | Commercial-first, VC-funded, hardware in orbit | **Leads** — only region with GPUs + LLM training actually flown |
 | **China** 🇨🇳 | [[entities/ada-space]] + Zhejiang Lab | State-directed scale; dedicated compute constellation | **Leads on deployed scale** — 12 sats up, 2,800 planned |
 | **Europe** 🇪🇺 | Thales Alenia Space (ASCEND), Airbus, ArianeGroup, DLR | Study-stage; net-zero + data-sovereignty framing | Strong study, no hardware yet; ROI targeted by 2050 |
 | **Japan** 🇯🇵 | Space Compass (NTT × SKY Perfect JSAT) | Edge/relay network across GEO/LEO/HAPS, optical | Demo-stage (Expo 2025 Osaka optical comms) |
@@ -115,5 +116,5 @@ See mid-stream Segment C in [[concepts/leo-value-chain]]. Taiwan is currently al
 ## Related
 
 - [[concepts/leo-value-chain]], [[concepts/cots-gpu-radiation-risk]], [[concepts/rha-radiation-hardening]], [[concepts/see-single-event-effects]]
-- [[entities/starcloud]], [[entities/ada-space]], [[entities/google-suncatcher]], [[entities/nvidia]]
+- [[entities/starcloud]], [[entities/ada-space]], [[entities/google-suncatcher]], [[entities/axiom-space]], [[entities/nvidia]]
 - [[synthesis/orbital-data-center-six-region]], [[synthesis/leo-taiwan-odc-gap]]
