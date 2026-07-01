@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-01] kol-digest | automated daily sweep — 0 KOLs (list empty), 11 keywords, ~35 items captured (Claude Code/Anthropic, OpenAI GPT-5.6, NVIDIA Nemotron 3 + NemoClaw, Polkadot JAM/ETF, Plurality/Audrey Tang, PolkaSharks no new posts); file: [[sources/kol-digest-2026-07-01]]
+
 ## [2026-06-30] deepen | LEO / Orbital Data Center cluster — 4-month fact-refresh + Axiom Space entity split + leo-value-chain figure reconciliation
 **Rotation:** picked the **LEO / Orbital Data Center** cluster — the **stalest mine-to-touch cluster** by a clear margin: last deepened **2026-06-03 (27 days)**, while every other domain had been touched within ~9 days (Polkadot 06-29, commercial-STM/SSA 06-27, radiation 06-26, airspace 06-23, RF/supply 06-22, agentic-payments 06-21). Decisive secondary factor: the cluster's most time-sensitive claims (Starcloud "next sat", Suncatcher status, ADA Space in-orbit status) had all become **verifiable-and-changed** since the 06-03 pass, the textbook 向外抓取 case. **Pages touched (8):** [[concepts/orbital-data-center]], [[concepts/leo-value-chain]], [[entities/starcloud]], [[entities/ada-space]], [[entities/google-suncatcher]], [[synthesis/orbital-data-center-six-region]] + **NEW** [[entities/axiom-space]] + [[index]].
 
