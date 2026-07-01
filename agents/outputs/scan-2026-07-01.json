@@ -1,0 +1,28 @@
+{
+  "date": "2026-07-01",
+  "run_status": "BLOCKED",
+  "blockers": [
+    {
+      "id": "B1",
+      "component": "trader_pipeline",
+      "description": "agents/src/trader/ does not exist. The trader orchestrator, CLI, and schema files referenced in the task (trader/orchestrator.py, trader/cli.py, trader/tools/yfinance_client.py) have not yet been built in this repository. Only agents/src/firefly/ is present.",
+      "resolution": "Bootstrap the trader pipeline: create agents/src/trader/ with orchestrator.py, cli.py, schemas/, agents/, and tools/yfinance_client.py."
+    },
+    {
+      "id": "B2",
+      "component": "yfinance_network",
+      "description": "Outbound HTTPS to Yahoo Finance (finance.yahoo.com) is blocked by the remote execution environment proxy with HTTP 403. curl: (56) CONNECT tunnel failed. All 8 core tickers (NVDA, AAPL, TSLA, MSFT, AMD, GOOGL, META, AMZN) returned no data.",
+      "resolution": "Allow-list finance.yahoo.com in the environment's network policy, or provide an offline data fixture / mock API for TRADER_OFFLINE=1 mode."
+    }
+  ],
+  "watchlist": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+  "backtest": null,
+  "scan_verdicts": null,
+  "reranked_tiers": {
+    "tier_1": [],
+    "tier_2": [],
+    "dropped": []
+  },
+  "fom_table": null,
+  "fallback_used": "stub — pipeline missing and network blocked"
+}
