@@ -28,7 +28,13 @@ Bootstrapped the company in 2011 while waiting six months for a U.S. work visa �
 
 ## OpenAI (Feb 2026 – present)
 
-Joined OpenAI to lead the personal-agents division. OpenClaw was simultaneously moved to an **independent open-source foundation backed by OpenAI**; the project remains MIT-licensed and community-developed rather than absorbed.
+Announced **2026-02-14** that he was joining **OpenAI** to work on "bringing agents to everyone" (a personal-agents remit). OpenClaw was simultaneously moved to an independent non-profit — the **OpenClaw Foundation** — with **OpenAI as the primary financial sponsor**; the project remains MIT-licensed and community-developed rather than absorbed ([Yahoo/Reuters](https://finance.yahoo.com/news/openclaw-founder-steinberger-joins-openai-223554158.html), [steipete.me](https://steipete.me/posts/2026/openclaw)).
+
+## Significance & forward view
+
+Steinberger's arc is a **compact case study in the wiki's "own the layer you can move" thesis**: he did not build a frontier model or a chip — he built the **distribution + UX layer** ([[concepts/openclaw|OpenClaw]]) on top of *other people's* models, and that packaging is what went to GitHub #1 in under 60 days. It is the [[concepts/domain-specific-llm-agents|narrow-agent]] logic at the level of a single builder: the defensible move in 2026 is orchestration and reach, not scale.
+
+The forward question his own move surfaces is the one [[concepts/openclaw|OpenClaw's 100-year "who owns the actor" section]] frames: a *personal* agent whose foundation has a **single primary corporate sponsor** (OpenAI), whose default models are US-frontier, and whose author now works for that sponsor, is the early tell for **platform-recapture** of the user-owned agent — the same risk [[synthesis/digital-democracy-user-owned-social-six-region]] tracks for user-owned social graphs. Whether OpenClaw stays a genuine cage-and-commons or is quietly re-centralised is the thing to watch.
 
 ## Sources
 
@@ -47,3 +53,6 @@ Joined OpenAI to lead the personal-agents division. OpenClaw was simultaneously 
 - [[concepts/openshell-runtime]]
 - [[sources/nvidia-agent-challenge-2026]]
 - [[concepts/domain-specific-llm-agents]]
+- [[entities/nvidia]] — NemoClaw distributor of the OpenClaw agent
+- [[synthesis/digital-democracy-user-owned-social-six-region]] — the platform-recapture risk this bio's forward view points at
+- [[synthesis/open-weight-llm-agent-stack-six-region]] — the contested model layer under the region-neutral agent runtime

@@ -70,7 +70,7 @@ WhatsApp, Telegram, Discord, Slack, Microsoft Teams, Twitch, Google Chat are con
 
 Reportedly the fastest-growing project in GitHub history, overtaking React / Vue / TensorFlow's pace. Steinberger publicly disclosed running 100 internal agents that burned ~$1.3M/month in OpenAI tokens building OpenClaw itself.
 
-In February 2026, Steinberger joined **OpenAI** to lead a personal-agents division. OpenClaw was moved to an **independent open-source foundation with OpenAI backing**; it remains MIT-licensed and community-developed.
+**Verified 2026 timeline (WebSearch, 2026-07-02):** official launch **2026-01-25** (≈9K stars in the first 24h) → **~100K by 2026-02-02** → **~250K by 2026-03-03, overtaking React (~243K)** to become GitHub's most-starred project. On **2026-02-14** Steinberger announced he was **joining OpenAI** ("bringing agents to everyone"), and that a non-profit **OpenClaw Foundation** would provide future stewardship with **OpenAI as the primary financial sponsor** — the project stays **MIT-licensed and community-developed**, not absorbed. In under 60 days it went from a solo side project to GitHub's #1 repo, an NVIDIA-distributed enterprise product ([[concepts/nemoclaw]]), and an OpenAI hire ([Yahoo/Reuters](https://finance.yahoo.com/news/openclaw-founder-steinberger-joins-openai-223554158.html), [steipete.me](https://steipete.me/posts/2026/openclaw)).
 
 ## Comparison vs Hermes Agent Framework
 
@@ -94,6 +94,41 @@ When [[concepts/nemoclaw]] is installed in its default mode, the agent process r
 - The exposed surface is the OpenAI-compatible API on `127.0.0.1:8642` plus an OpenClaw browser dashboard on `127.0.0.1:18789`. The Hermes profile only exposes `:8642` — see [[sources/nemoclaw-hermes-install-runbook-2026]].
 
 This means an unmodified OpenClaw install on a bare host has effectively root-level reach (intended — it's "the AI that actually does things"); NemoClaw is what makes the *same agent* safe to run autonomously over long horizons.
+
+## Lineage — the personal computer-use agent (拉長時間軸)
+
+OpenClaw is best read not as a 2025 novelty but as the point the **personal-agent** and **computer-use** lineages finally converged into a shipping consumer product.
+
+| Era | Milestone | What it established |
+|---|---|---|
+| 1987 | Apple **Knowledge Navigator** concept video | The vision: a conversational agent that *acts* on your behalf across your tools |
+| 1995–2007 | MS Bob / **Clippy**, desktop assistants | Assistant-in-the-OS UX (and how badly a passive one grates) |
+| 2011 | **Siri** (→ Alexa/Assistant) | Voice NL front-end, but read-only — no real computer use |
+| 2023 | **AutoGPT / BabyAGI** | The autonomous LLM loop (plan→act→observe) goes viral, but brittle and headless |
+| 2024-10 | **Claude Computer Use** (Anthropic) | A frontier model driving a real screen/shell — computer-use becomes a first-class capability |
+| 2025-01 | **OpenAI Operator** / browser agents | Vendor-hosted computer-use, but cloud-bound and gated |
+| 2025-11 → 2026-01 | **OpenClaw** (Clawd → Moltbot → OpenClaw) | Merges the two: a *local, chat-driven, model-agnostic* agent that does things — the consumer packaging the earlier threads lacked |
+
+The through-line: each step added one missing piece (NL front-end → autonomous loop → real computer use → local + consumer packaging). OpenClaw's contribution is **distribution and UX** (chat apps + Skills + one-command install), not a new capability primitive — which is exactly why it grew faster than it defended, and why the [[concepts/nemoclaw|NemoClaw sandbox]] had to arrive alongside it.
+
+## Six-region positioning (台美日韓中國歐洲)
+
+Like [[concepts/hermes-agent-framework|Hermes Agent]], the **agent-runtime layer is largely region-neutral** — OpenClaw is model-agnostic (Claude / GPT / local Ollama), so the same loop can drive any region's model, and the contested ground is the [[synthesis/open-weight-llm-agent-stack-six-region|model layer]] underneath, not the loop. Where OpenClaw *does* carry a regional signature is **origin and governance**: an **Austrian**-authored ([[entities/peter-steinberger]]), **US**-capital-stewarded (OpenClaw Foundation, **OpenAI** primary sponsor) project distributed globally under MIT. The meaningful six-region axis is therefore **who governs the personal-agent standard**:
+
+- **US** — sets the de-facto standard by capital + platform gravity (OpenAI-sponsored Foundation; NVIDIA-distributed via NemoClaw; the model providers OpenClaw defaults to are US-frontier).
+- **Europe** — origin of the code (Steinberger/Vienna) + the regulatory rail (an autonomous host-level agent is squarely in scope for the EU AI Act's transparency/oversight duties — cf. [[synthesis/digital-democracy-user-owned-social-six-region]]).
+- **China** — a parallel domestic personal-agent ecosystem (WeChat/Alipay-embedded agents, sovereign models per [[synthesis/open-weight-llm-agent-stack-six-region]]) rather than adoption of a US-governed MIT project.
+- **Japan / Korea** — consumers + messaging-platform integrators (LINE/KakaoTalk as the channel layer), not standard-setters.
+- **Taiwan** — consumer + the hackathon-builder niche ([[entities/sampras]]'s Spacesharks entry via the NemoClaw stack), the recurring upstream-strong/midstream-absent signature at the agent-app layer.
+
+## Long-horizon question — who owns the actor on your machine (100-year, scenario)
+
+OpenClaw crystallises a governance question the wiki tracks across domains: **as agents move from advisory to acting, the control point shifts from the model to the runtime that holds the credentials and the host.** Two labelled scenarios:
+
+1. **Cage-and-commons** — the actor stays user-owned + open (MIT OpenClaw), but must run inside an independently-governed cage ([[concepts/nemoclaw]]/[[concepts/openshell-runtime]] Landlock/seccomp/L7 credential proxy). The 100-year invariant, shared with the [[synthesis/firefly-nemoclaw-reference-implementation|sandbox cluster]]: *the actor must be constrained below the layer it can reason about* — you cannot let a prompt-manipulable process hold raw keys.
+2. **Platform-recapture** — the "personal" agent is quietly re-centralised because the credentials, the sponsor, and the default model provider all sit with one platform (the Foundation-with-a-single-primary-sponsor structure is the early tell). This is the same platform-recapture risk [[synthesis/digital-democracy-user-owned-social-six-region]] flags for user-owned social graphs, now at the agent layer.
+
+Which branch wins turns on the same [[concepts/proof-of-personhood|"prove-a-human-without-a-honeypot"]] and provenance ([[concepts/agentic-provenance]]) primitives the rest of the corpus depends on — an autonomous actor with your credentials needs both an identity it can prove and an audit trail it cannot forge.
 
 ## Sources
 
