@@ -1,0 +1,44 @@
+{
+  "run_date": "2026-07-02",
+  "status": "STUB — pipeline and market data unavailable",
+  "blockers": [
+    {
+      "blocker": "trader_pipeline_missing",
+      "detail": "agents/src/trader/ does not exist. The repo only ships agents/src/firefly/ (Firefly orbital data center mission planner). The trader CLI (trader scan, trader research) has not been implemented yet.",
+      "action_required": "Build agents/src/trader/ with orchestrator, schemas, CLI, and yfinance_client per the daily-trader routine spec."
+    },
+    {
+      "blocker": "yfinance_proxy_403",
+      "detail": "The remote execution environment's outbound proxy blocks CONNECT tunnels to fc.yahoo.com:443 (policy denial, HTTP 403). pip install yfinance succeeded but all Ticker.history() calls fail with 'curl: (56) CONNECT tunnel failed, response 403'. Market data cannot be fetched in this environment without either (a) a self-hosted market data API accessible through the proxy or (b) an allowlist exception for Yahoo Finance.",
+      "proxy_log": "ts: 2026-07-02T23:09:35.942Z kind: connect_rejected detail: gateway answered 403 to CONNECT host: fc.yahoo.com:443",
+      "action_required": "Either add Yahoo Finance to the proxy allowlist, or integrate an alternative data source (Alpha Vantage, Polygon.io, Quandl) accessible through the proxy."
+    },
+    {
+      "blocker": "anthropic_backend_scan_skipped",
+      "detail": "Without the trader CLI and market data, no LLM scan (trader scan --tickers ... --window 7) could be executed. The Anthropic backend is available in this environment (anthropic package installed) but has no entry point wired up.",
+      "action_required": "Implement agents/src/trader/cli.py with trader scan command."
+    }
+  ],
+  "watchlist_seeded": {
+    "source": "core_defaults (no prior daily-trader-*.md found)",
+    "tickers": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"]
+  },
+  "backtest": {
+    "status": "skipped — no prior recommendations to test (first run)"
+  },
+  "scan_verdicts": {},
+  "reranked_tiers": {
+    "tier_1": [],
+    "tier_2": [],
+    "note": "Cannot rank without scan data. Watchlist order preserved from core defaults."
+  },
+  "fom_table": [],
+  "fom_formula": {
+    "definition": "FOM = 0.4 * confidence + 0.3 * normalized_sizing_sigma + 0.2 * recent_hit_rate + 0.1 * news_momentum",
+    "normalization": "each component normalized to [0, 1] across the watchlist universe",
+    "confidence": "LLM thesis confidence score from trader scan (0-1)",
+    "normalized_sizing_sigma": "position-sizing signal from trader scan, normalized to [0,1] across watchlist",
+    "recent_hit_rate": "rolling 5-day hit rate from backtest module",
+    "news_momentum": "news_scout sentiment score (0-1), 0 if no news surfaced"
+  }
+}
