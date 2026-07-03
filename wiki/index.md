@@ -6,6 +6,7 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-07-03]] — KOL + keyword digest 2026-07-03: automated sweep of 11 keywords (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks); KOL list empty; top signals: Claude Sonnet 5 + Fable 5 (Anthropic), Nemotron TwoTower (NVIDIA), GPT-5.6 + 5% gov stake (OpenAI), Hyperbridge mainnet (Polkadot)
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
@@ -69,6 +70,8 @@ type: index
 - [[entities/ycc-duo-nine]] — Duo Nine YCC (@DU09BTC); Western crypto educator; occasional DOT TA; Bitcoin-first altcoin skeptic
 - [[entities/alexander-karp]] — Palantir CEO, social theory PhD, author of *The Technological Republic*; advocates defense-tech patriotism
 - [[entities/palantir]] — US defense/intelligence data analytics company (Gotham, Foundry, AIP); co-founded by Karp and Peter Thiel
+- [[entities/anthropic]] — US AI safety company; Claude family (Haiku/Sonnet/Opus/Fable/Mythos); Claude Code; Fable 5 restored July 1 2026 after 19-day export-control suspension; Claude Sonnet 5 launched July 1 2026
+- [[entities/openai]] — US AI company; GPT-5.6 (Sol/Terra/Luna, July 2026 limited preview); OpenClaw Foundation primary sponsor (Feb 2026); 5% US government stake proposed July 2 2026
 - [[entities/coinbase]] — US cryptocurrency exchange (NASDAQ: COIN); x402 protocol initiator; Base L2 issuer; CDP developer platform
 - [[entities/stripe]] — Fintech payment infrastructure; MPP + ACP co-initiator; Agentic Commerce Suite; also supports x402
 - [[entities/mastercard]] — Global card payment network; Agent Pay (Agentic Token + Verifiable Intent); co-developed trust framework with Google AP2 (2025-04)
