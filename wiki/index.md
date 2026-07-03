@@ -169,8 +169,8 @@ type: index
 - [[concepts/notam]] — NOTAM structure: number format, Q-line fields, ICAO A/B/C/D/E fields, NOTAMN/R/C types, Q-codes QRDCA/QRDXX/QRTCA, AHA vs TFR distinction, public + SWIM retrieval
 - [[concepts/launch-window-slip]] — Slip taxonomy: instantaneous vs window, hold/scrub/slip/wave-off definitions, 5 slip-driver categories, NOTAM FSM, slip-probability scoring formula, IFT-8/IFT-9 verified timelines
 - [[concepts/schedule-s]] — FCC Form 312 technical annex: orbital parameters, frequency bands, EIRP density, antenna beam characteristics, EPFD compliance commitment; proposed replacement Schedule O/F
-- [[concepts/epfd-equivalent-power-flux-density]] — ITU Article 22 NGSO-to-GSO aggregate interference metric; EPFD↓/↑ limit tables; free ITU EPFD validation software; Resolution 76 aggregate limits
-- [[concepts/processing-round]] — FCC mechanism for concurrent review of competing NGSO constellation applications; 2020 Ku/Ka round (SpaceX Gen2, Kuiper, OneWeb); milestone conditions
+- [[concepts/epfd-equivalent-power-flux-density]] — ITU Article 22 NGSO-to-GSO aggregate interference metric; EPFD↓/↑ limit tables; free ITU EPFD validation software; Resolution 76 aggregate limits; WRC-2000→WRC-27-study lineage; **2026-04-30 FCC 26-26 breaks from ITU fixed limits to performance-based GSO protection (first US divergence from the single-global standard)**
+- [[concepts/processing-round]] — FCC mechanism for concurrent review of competing NGSO constellation applications; four-wave lineage (2016 OneWeb-first / 2017 / 2020 Kuiper / 2021 ~81k sats); milestone conditions; a **US-specific instrument** with no clean six-region equivalent; Part 100 "assembly line" 2026-07-22 vote
 - [[concepts/ngso-gso-coordination]] — ITU NGSO/GSO coordination pipeline: API → CR/C → CR/D → Notification → SNS Master Register; EPFD compliance replaces bilateral GSO coordination
 
 - [[concepts/openshell-runtime]] — Sandbox runtime layer under NemoClaw/OpenClaw; policy enforcement and credential egress mediation

@@ -15,6 +15,8 @@ This process operates under the ITU Radio Regulations (primarily Article 22 and 
 
 The operative compliance mechanism is the **[[concepts/epfd-equivalent-power-flux-density|EPFD]]** limit framework of Article 22. An NGSO system that demonstrates EPFD compliance is deemed not to cause unacceptable interference to any GSO network worldwide — eliminating the need for bilateral coordination with each GSO operator.
 
+> **Update (2026-04-30) — the US domestic mechanism is shifting from "blanket EPFD finding" to "coordinate-first."** In FCC 26-26 (*Modernizing Spectrum Sharing for Satellite Broadband*, adopted 2026-04-30, effective 2026-07-13) the FCC replaced fixed Article 22 EPFD limits with **performance-based GSO protection + mandatory good-faith coordination** in three Ku/Ka bands: NGSO and GSO operators are now expected to **privately bargain** interference protections, with a technical backstop applying only where coordination fails. For those US bands the "EPFD compliance = no coordination needed" shortcut no longer fully holds — coordination becomes the primary path, not the exception. The *international* filing a US operator submits at the ITU still runs against Article 22. See [[concepts/epfd-equivalent-power-flux-density]] for the full correction and the single-global-standard implications.
+
 ## ITU Coordination Pipeline (FCC Operator Pathway)
 
 For a US-licensed satellite operator, the pipeline runs through the FCC Space Bureau, which acts as the filing administration at ITU:

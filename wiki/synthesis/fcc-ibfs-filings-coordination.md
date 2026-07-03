@@ -77,6 +77,8 @@ EPFD is calculated via time-domain simulation across the full constellation over
 
 Article 22 establishes per-system EPFD limits; **Resolution 76 (Rev.WRC-23)** adds **aggregate** limits (Tables 1A–1D) for multiple co-frequency NGSO systems combined.
 
+> **Material change (2026-04-30):** the FCC's domestic EPFD framework is no longer a straight adoption of ITU Article 22. In **FCC 26-26** (*Modernizing Spectrum Sharing for Satellite Broadband*, adopted 2026-04-30, effective 2026-07-13) the Commission **replaced fixed EPFD power-density limits with a performance-based GSO-protection framework + mandatory good-faith coordination** in the 10.7–12.7 / 17.3–18.6 / 19.7–20.2 GHz bands. For US interference-attribution work this means the operative test in those bands is now "does the NGSO operation degrade GSO service quality," adjudicated through operator coordination with a technical backstop — not a fixed dBW/m²/MHz cap. The international Notification still runs against Article 22. See [[concepts/epfd-equivalent-power-flux-density]] for the full correction.
+
 ### 2.2 NGSO/NGSO Coordination and Processing Rounds
 
 EPFD compliance does not resolve NGSO/NGSO interference (two LEO constellations interfering with each other). For this, the FCC uses the [[concepts/processing-round|processing round]] system: multiple competing NGSO constellation applications in the same band are batched and reviewed concurrently. Grants may be conditioned on bilateral spectrum-sharing agreements.
@@ -85,19 +87,21 @@ The **2020 Ku/Ka-band processing round** — encompassing SpaceX Gen2, Kuiper, a
 
 ---
 
-## 3. Recent Rulings That Shape the Interference Landscape (2020–2024)
+## 3. Recent Rulings That Shape the Interference Landscape (2020–2026)
 
 Full details in [[sources/fcc-starlink-gen2-kuiper-rulings-2022-2024]]. Summary:
 
-| Operator | Grant / event | Sats authorised | Bands | Key date |
+| Operator / action | Grant / event | Sats / effect | Bands | Key date |
 |---|---|---|---|---|
 | Amazon Kuiper | Initial Part 25 grant (FCC 20-102) | 3,236 | Ka | Jul 2020 |
 | SpaceX Starlink | Gen2 partial grant (FCC 22-91) | 7,500 | Ku/Ka | Dec 2022 |
 | OneWeb | Expedited partial grant (processing round) | ~648 + Gen2 pending | Ku | Sep 2022 |
 | SpaceX Starlink | Gen2 V/E-band partial grant (DA-24-1193) | (part of 7,500) | V/E | Nov 2024 |
 | AST SpaceMobile | SCS direct-to-device authorization (DA-24-756) | 248 | 700 MHz / 850 MHz cellular | 2024 |
+| **FCC (EPFD reform)** | **R&O FCC 26-26** — fixed EPFD limits → **performance-based GSO protection + good-faith coordination** | rule change (all NGSO/GSO ops in-band) | 10.7–12.7 / 17.3–18.6 / 19.7–20.2 GHz | **adopted 2026-04-30, eff. 2026-07-13** |
+| **FCC (Part 100)** | Space Modernization Order — Part 25 → **Part 100** "licensing assembly line," default-to-yes, modular single-Form-312 | licensing-process overhaul | all satellite/earth-station | **vote scheduled 2026-07-22** |
 
-**For interference attribution**: Starlink Gen2 (7,500 sats Ku/Ka + V-band) and Kuiper (3,232 sats Ka) are the dominant co-frequency sources in Ku/Ka bands. AST introduces a new cellular-band (700 MHz / 850 MHz) interference class not previously associated with LEO FSS. [[entities/starcloud]] and [[entities/ada-space]] orbital data center operators in LEO are the most exposed to these interference environments.
+**For interference attribution**: Starlink Gen2 (7,500 sats Ku/Ka + V-band) and Kuiper (3,232 sats Ka) are the dominant co-frequency sources in Ku/Ka bands. AST introduces a new cellular-band (700 MHz / 850 MHz) interference class not previously associated with LEO FSS. [[entities/starcloud]] and [[entities/ada-space]] orbital data center operators in LEO are the most exposed to these interference environments. **New in 2026:** for the Ku/Ka bands above, the attribution test shifts from "did the operator exceed a fixed EPFD limit" to "did it degrade GSO service quality under the performance-based framework, and had good-faith coordination been reached" — a qualitatively different evidentiary question for the Mission Desk verb.
 
 ---
 
@@ -177,6 +181,9 @@ For the [[concepts/aesa|AESA]] / [[concepts/hybrid-phased-array|hybrid phased-ar
 - SpaceX Gen2 partial grant: FCC 22-91, December 1, 2022, 7,500 satellites Ku/Ka-band
 - SpaceX Gen2 V/E-band: DA-24-1193, November 26, 2024
 - AST SpaceMobile SCS: 248 satellites, 700 MHz / 850 MHz cellular bands, 2024 authorization
+- **EPFD reform (FCC 26-26):** adopted 2026-04-30 (3–0), effective 2026-07-13; replaced fixed ITU Article 22 EPFD limits with performance-based GSO protection + mandatory good-faith coordination in 10.7–12.7 / 17.3–18.6 / 19.7–20.2 GHz — first US domestic divergence from the ITU EPFD standard
+- **Part 100 (Space Modernization):** Part 25 → Part 100 "licensing assembly line" / default-to-yes / modular single-Form-312; NPRM comments 2026-01-20, replies 2026-02-18; Space Modernization Order scheduled for full-Commission vote 2026-07-22
+- **Processing-round lineage:** four modern Ku/Ka NGSO FSS rounds — 2016 (OneWeb-triggered, closed 2016-11-15; first modern round), 2017, 2020 (Kuiper-triggered), 2021 (~81,195 sats requested); ~43 NGSO FSS applications total; the round is a US-specific instrument with no clean six-region equivalent
 
 ---
 
