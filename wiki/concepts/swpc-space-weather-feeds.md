@@ -80,6 +80,10 @@ The May 2024 Gannon storm (Dst nadir: −461 nT; peak Kp: 9) demonstrated the ca
 5. **Satellite loss**: 12 Starlink satellites were lost to orbital decay pre-conditioned by elevated drag beginning ~25 April 2024, with the G5 storm delivering the final perturbation
 6. **Key lesson**: When Kp ≥ 7, CDM Pc (probability of collision) values issued before storm onset should be treated as stale; operators should request or wait for updated CDMs before making manoeuvre decisions
 
+> **Declining-phase update (2026-07-04).** May 2024 remains the SC25 *extreme* (G5) reference, but the storm cascade above recurs at G4 on a regular cadence through the **declining phase**: G4 on 2025-06-01/02, G4 on 2025-11-12 (behind an **X5.1** flare — the strongest of 2025), and a G4 alert on 2026-01-20. The polling logic below (§ Operational Decision Logic) is therefore a *standing* requirement, not a solar-max-only posture. Full chain + physics in [[concepts/solar-cycle-25-leo-radiation]].
+>
+> **L1 source update.** The `mag-5-minute` / `plasma-5-minute` / DSCOVR feeds now carry data from **NOAA SOLAR-1 (SWFO-L1)**, which reached L1 on 2026-01-23 and entered operational service **2026-06-10**, replacing the aging DSCOVR/ACE as the primary real-time solar-wind monitor; its coronagraph also delivers CME imagery to SWPC within ~30 minutes of capture. Feed URLs are unchanged. See [[entities/noaa-swpc]].
+
 ## Feed Selection by Operational Priority
 
 | Priority | Feed | Why |

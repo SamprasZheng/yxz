@@ -63,8 +63,9 @@ SWPC is the world's *flagship* civilian center, but operational space-weather fo
 ## Data Infrastructure
 
 SWPC's primary observational inputs:
-- **DSCOVR** (Deep Space Climate Observatory) — L1 halo orbit; primary solar wind monitor since 2016-07-27; provides Bz, Bt, speed, density at 1-second resolution
-- **ACE** (Advanced Composition Explorer) — L1; DSCOVR backup; also feeds ACE text products (`ace-magnetometer.txt`, `ace-swepam.txt`)
+- **SOLAR-1 (SWFO-L1)** — NOAA's dedicated space-weather L1 observatory; launched 2025-09-24 (Falcon 9, KSC), reached L1 2026-01-23, **operational 2026-06-10** as the **new primary** real-time solar-wind monitor (solar-wind suite + a compact coronagraph delivering CME imagery to SWPC within ~30 min); replaces the aging DSCOVR/ACE fleet and closes the long-feared L1 data-continuity gap
+- **DSCOVR** (Deep Space Climate Observatory) — L1 halo orbit; primary solar wind monitor 2016-07-27 → 2026 (now backup to SOLAR-1); provides Bz, Bt, speed, density at 1-second resolution
+- **ACE** (Advanced Composition Explorer) — L1; legacy backup; also feeds ACE text products (`ace-magnetometer.txt`, `ace-swepam.txt`)
 - **GOES-16/GOES-18** — Geostationary; X-ray flux (XRS), proton/electron flux (SEISS), magnetometers, solar imagery (SUVI, EXIS)
 - **Ground magnetometer network** — 13 stations (44°–60° geomagnetic latitude) for Kp calculation
 
@@ -79,8 +80,13 @@ See [[sources/noaa-swpc-product-catalog]] for the full JSON URL table.
 
 ## Operational History Notes
 
+- **2026-06-10** — **SOLAR-1 (SWFO-L1)** entered operational service as the new primary L1 monitor (launched 2025-09-24; arrived L1 2026-01-23); adds an operational L1 coronagraph feeding CME imagery to SWPC forecasters within ~30 min
+- **2026-01-20** — G4 (Severe) geomagnetic storm alert (SC25 declining phase)
+- **2025-11-11/12** — **X5.1** flare (strongest of 2025) 2025-11-11 1004 UTC → **G4** storm 2025-11-12 0120 UTC; aurora to Florida/Texas/Arizona/Mexico; R3 HF blackouts over Africa & Europe
+- **2025-06-01/02** — G4 (Severe) storm from a 2025-05-30 CME
+- **2024-10-15** — NASA/NOAA jointly declared the SC25 **solar maximum** (smoothed SSN ≈161); max-activity interval Aug 2024 – Jan 2025
 - **2018-12-03** — JSON data format announced as new delivery channel (previously FTP/text only)
-- **2016-07-27** — DSCOVR became primary RTSW spacecraft (replaced ACE as primary)
+- **2016-07-27** — DSCOVR became primary RTSW spacecraft (replaced ACE as primary; itself superseded by SOLAR-1 in 2026)
 - **2024-05-10** — May 2024 G5 superstorm (Gannon storm); Dst nadir −461 nT; largest storm in 20 years; 3–5× drag increase on LEO satellites; ~half of active LEO satellites fired thrusters simultaneously; 12 Starlink satellites lost to orbital decay pre-conditioning
 - **2023-04-04** — WSA-Enlil V3.0 deployed; introduced run-on-demand CME model (retired fixed bi-hourly schedule)
 

@@ -5,19 +5,22 @@ tags: [space, radiation, leo, solar-cycle, van-allen, environment]
 
 # Solar Cycle 25 and LEO Radiation Environment (Solar Cycle 25 × LEO)
 
-Solar activity cycles directly affect LEO satellite radiation exposure. Solar Cycle 25 (SC25) has proven far stronger than predicted, creating a more severe radiation environment for on-orbit spacecraft, with peak conditions occurring in 2024–2026.
+Solar activity cycles directly affect LEO satellite radiation exposure. Solar Cycle 25 (SC25) proved far stronger than predicted, creating a more severe radiation environment for on-orbit spacecraft. The **maximum-activity interval is now past** — a percentile-based classification of adjusted F10.7 flux places it at **Aug 2024 – Jan 2025** (>190 M-class + 19 X-class flares, multiple CMEs > 2000 km/s; [arXiv 2511.16788](https://arxiv.org/pdf/2511.16788)) — and as of mid-2026 the cycle is in its **declining phase**. Critically, the declining phase is *not* the low-risk part of the cycle: historically the **strongest** geomagnetic storms of a cycle often occur 1–3 years **after** solar maximum (e.g. the 2003 Halloween storms came ~3 yr after the SC23 max), and SC25's declining phase has already delivered a chain of G4 (Severe) storms through 2025–2026 (see "Declining Phase" below). The elevated-radiation LEO window therefore extends well beyond the 2024 max.
 
 ## SC25 Intensity Overview
 
 | Parameter | Prediction (NOAA initial) | Actual Result |
 |---|---|---|
 | Maximum sunspot number | 95–130 | Exceeded upper bound in practice |
-| Peak timing | ~early 2025 | Late 2024 – early 2026 |
+| Peak timing | ~early 2025 | Solar-max declared 2024-10-15; max-activity interval Aug 2024 – Jan 2025 |
 | Intensity assessment | "Weak cycle" | Strongest in nearly 20 years |
+| Yearly-mean sunspot number | 95–130 (max) | 2024 ≈ 150.6 → 2026 ≈ 85 *(projection, declining phase)* |
 
-**Conclusion**: SC25 is stronger than predicted, making 2024–2026 one of the worst radiation environment windows for LEO satellites.
+**Conclusion**: SC25 was stronger than predicted; the solar-max interval (Aug 2024 – Jan 2025) is now past, but the **declining phase (2025 →)** keeps 2025–2027 an elevated-radiation window for LEO because the cycle's severest storms cluster after max.
 
 > **Update (verified 2026-06-08):** NASA, NOAA, and the Solar Cycle Prediction Panel jointly **declared the solar maximum period on 2024-10-15**, with a smoothed sunspot number ≈161 (the strongest in ~23 years); SC25 produced an **X9.0** flare on 2024-10-03. The *exact* peak month is only confirmable in retrospect after a sustained decline, but the maximum window is now official. ([NASA/NOAA joint announcement](https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/))
+>
+> **Update (verified 2026-07-04):** SC25 is now unambiguously in its **declining phase** — 2025 was fully post-max and the fall continues through 2026 (yearly-mean SSN ≈ 150.6 in 2024 → a projected ≈ 85 in 2026). This does **not** lower extreme-event risk: the declining phase has produced a repeated G4 (Severe) storm cadence (2025-06, 2025-11, 2026-01 — see below). Long-lived coronal holes and post-max active regions make 2025–2027 a persistent high-drag / elevated-SEP window for LEO. ([Space.com: 2026 auroras](https://www.space.com/stargazing/auroras/will-2026-still-bring-strong-auroras-what-the-suns-recent-activity-tells-us); [STCE SC25 tracking](https://www.stce.be/content/sc25-tracking))
 
 ## May 2024 Extreme Geomagnetic Storm Event (G5 Level)
 
@@ -39,6 +42,18 @@ The extreme geomagnetic storm created two new transient radiation belts **betwee
 - Solar cells degrade faster due to proton radiation damage (protons are the primary damage source for solar cells)
 - High-inclination LEO satellites (polar, SSO) pass through the South Atlantic Anomaly (SAA) at unchanged frequency, but background proton flux is elevated
 
+## Declining-Phase Severe Storms (2025–2026) — the risk did not end at max
+
+Solar maximum is a *sunspot-number* peak, not a *hazard* peak. The largest geomagnetic storms of a cycle are historically drawn from the declining phase, when fast solar-wind streams from long-lived coronal holes combine with residual eruptive active regions. SC25's declining phase has borne this out with a repeated G4 (Severe) cadence — each one an operational drag/charging/CDM-degradation event for LEO, even though none reached the May-2024 G5 extreme:
+
+| Date (UTC) | Peak | Driver | Notable impacts | Source |
+|---|---|---|---|---|
+| 2025-06-01 → 06-02 | **G4** | CME erupted 2025-05-30 | Aurora to mid-latitudes; G4 watch upgraded | NOAA SWPC |
+| 2025-11-12 (0120 UTC) | **G4** | **X5.1** flare peaked 2025-11-11 1004 UTC (strongest flare of 2025); CMEs Nov 9–12 | Aurora as far south as Florida/Texas/Arizona/Mexico; HF radio blackouts across Africa & Europe (R3); ISS imagery of the storm | [Live Science](https://www.livescience.com/space/the-sun/strongest-solar-flare-of-2025-erupts-and-it-could-bring-auroras-to-half-the-us-on-wednesday); [NASA SVS](https://svs.gsfc.nasa.gov/31375/) |
+| 2026-01-20 | **G4 (alert)** | CME impact | Severe-storm alert issued | NOAA SWPC |
+
+**Operator takeaway:** treat the 2025–2027 declining phase as a *sustained* elevated-risk regime, not a wind-down. Each G4 above is a live instance of the operational cascade documented in [[concepts/swpc-space-weather-feeds]] (drag spike → bulk manoeuvring → CDM Pc staleness) — the same decision logic in [[concepts/space-weather-operational-indices]] applies, just at G4 rather than G5 severity. The persistence of ≥X-class flares (X5.1 in Nov 2025) 13 months after the declared max is the concrete evidence for keeping RDM elevated (§ below) through the full descent.
+
 ## Direct Observations of SC25 Impact on LEO Dose Rate
 
 **CALET instrument (ISS) observations** recorded multiple Solar Energetic Particle (SEP) events during SC25:
@@ -56,7 +71,7 @@ The extreme geomagnetic storm created two new transient radiation belts **betwee
 
 **1. RDM (Radiation Design Margin) should be conservatively estimated**
 
-Satellites launched during the SC25 peak period (2024–2026) face higher TID doses than historical models predict; design RDM should be increased from 1.5 to ≥2.0.
+Satellites launched during the SC25 peak-and-descent window (2024 through the declining phase, ~2027) face higher TID doses than weak-cycle (SC24-era) models predict; design RDM should be increased from 1.5 to ≥2.0. The declining-phase G4 chain (2025–2026, above) confirms the elevated regime is not confined to the 2024 max month.
 
 **2. SEP event probability is elevated**
 
@@ -75,7 +90,7 @@ SC25 is one realisation of a hazard on **fixed physical clocks**, which makes th
 - **Carrington-class storms (1859)** — the canonical recurrence estimate is **~12% per decade** (Riley 2012), i.e. *near-certain within a 100-year mission-fleet horizon*; the planetary worst case against which grids, GNSS, and satellite fleets are stress-tested.
 - **Miyake-class events** (cosmogenic-isotope superflares, e.g. 774 AD) — far rarer (millennial) but an order of magnitude beyond Carrington; the true civilisational tail risk.
 
-**Implication for the corpus:** the radiation environment is a *permanent* design driver, not a transient SC25 anomaly — the same "physical invariant" logic as the σT⁴ heat-rejection ceiling ([[synthesis/orbital-data-center-six-region]]) and the GCR floor ([[synthesis/radiation-test-rad-hard-six-region]]). The forecasting side of this hazard (who watches the Sun, with what vantage) is mapped six-region in [[synthesis/space-weather-forecasting-six-region]]; the key permanent infrastructure is the shared **L1** solar-wind vantage (NOAA SWFO-L1 launched 2025, replacing aging ACE/DSCOVR) and the coming **L5** side-view (ESA Vigil, launch 2031) — a cross-national architecture because no single nation sustains a 360° view of the Sun.
+**Implication for the corpus:** the radiation environment is a *permanent* design driver, not a transient SC25 anomaly — the same "physical invariant" logic as the σT⁴ heat-rejection ceiling ([[synthesis/orbital-data-center-six-region]]) and the GCR floor ([[synthesis/radiation-test-rad-hard-six-region]]). The forecasting side of this hazard (who watches the Sun, with what vantage) is mapped six-region in [[synthesis/space-weather-forecasting-six-region]]; the key permanent infrastructure is the shared **L1** solar-wind vantage — NOAA's **SWFO-L1 launched 2025-09-24, reached L1 2026-01-23, and entered operational service 2026-06-10 as SOLAR-1** (coronagraph CME imagery to SWPC within 30 min), replacing aging ACE/DSCOVR — and the coming **L5** side-view (ESA Vigil, launch 2031) — a cross-national architecture because no single nation sustains a 360° view of the Sun.
 
 ## Connections to Existing Concepts
 
@@ -102,3 +117,6 @@ Key connection: the transient radiation belts created by the May 2024 G5 storm a
 - NASA CIRBE / CIRBE-REPTile-2 observations (2025-02, JGR: Space Physics, Li et al.)
 - CALET ISS instrument observations (2026, GRL, Ficklin et al.)
 - ScienceDirect: High-latitude LEO radiation environment monitoring 2023-07 to 2024-07
+- SC25 declining-phase / max-interval characterization (arXiv 2511.16788, 2025-11; percentile F10.7 classification of the maximum phase)
+- NOAA/NASA solar-max declaration (2024-10-15) and SC25 progression tracking (NOAA SWPC Solar Cycle Progression; STCE SC25 tracking)
+- 2025–2026 declining-phase G4 storm chain (NOAA SWPC alerts; Live Science / NASA SVS for the 2025-11 X5.1/G4 event)

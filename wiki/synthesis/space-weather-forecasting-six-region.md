@@ -21,7 +21,7 @@ Every other six-region map in this corpus ends in *enclosure* or *contest*: ITU 
 
 | Region | Lead operational center(s) | ICAO global-center bloc | Governance model | Distinctive capability / niche |
 |---|---|---|---|---|
-| **US 美** | **NOAA SWPC** (Boulder CO, 24/7, DoC/NWS); **USAF 557th Weather Wing** (military) | **NOAA** (solo global center) | Sovereign single-authority + ISES *flagship* RWC | Sets ISES standards + global feed infra; owns the L1 fleet upgrade (SWFO-L1, launched 2025) and the WSA-Enlil/-derived CME models |
+| **US 美** | **NOAA SWPC** (Boulder CO, 24/7, DoC/NWS); **USAF 557th Weather Wing** (military) | **NOAA** (solo global center) | Sovereign single-authority + ISES *flagship* RWC | Sets ISES standards + global feed infra; owns the L1 fleet upgrade (**SOLAR-1 / SWFO-L1** — launched 2025-09-24, operational at L1 2026-06-10, now the primary real-time solar-wind + coronagraph monitor) and the WSA-Enlil/-derived CME models |
 | **Europe 歐** | **ESA Space-Weather Service Network / SWESNET** (coordinated from the SSCC, Space Pole, Brussels; 5 Expert Service Centres, 40+ teams); **UK Met Office MOSWOC** (est. 2014, 24/7) | **PECASUS** (Finland-led consortium: FI/BE/AT/IT/UK/CY/PL/NL/DE/ZA) | **Federated / pooled** — multi-national network behind one front desk | Coordination-as-product (same model as EU SST in SSA); building the **L5 vantage** via ESA **Vigil** (launch 2031, carries NOAA CCOR coronagraph) |
 | **China 中** | **NSSC** (CAS) + **CMA National Center for Space Weather**; **Meridian Project** Phase II (national acceptance Mar 2025 — world's largest ground-based monitoring network) | **CRC** (China-Russia Consortium; free service extended to Nov 2026) | Sovereign single-authority, multilateral-outward but data-largely-closed | Largest ground sensor ring ("two-vertical/two-horizontal" along 100°E·120°E × 30°N·40°N); 72-hr warnings; launching the **International Meridian Circle Program (IMCP)** 120°E→60°W |
 | **Japan 日** | **NICT** (space-weather forecasts since **1949**; ISES RWC since **1996**; 4 ionosondes) | **ACFJ** (Australia-Canada-France-Japan consortium) | National-agency + pooled-consortium contributor | Longest continuous forecast lineage in Asia; ionospheric/HF-propagation specialty; the "J" in ACFJ |
@@ -47,7 +47,7 @@ The distinctive twist versus the other domains: **ICAO has forced a fourth, supr
 
 **Why the infrastructure is permanent.** Forecast *skill* improves, but lead time is **capped by physics**: a flare's X-rays and the fastest protons arrive at light-speed (≈0 warning for the R-scale / prompt-SEU threat), while a CME's transit gives only **~1–4 days** ([[concepts/space-weather-operational-indices]] timeline). Closing even that window requires a permanent, *shared* vantage architecture no single nation sustains alone:
 
-- **L1** (sunward, ~1.5M km): operational since SOHO/ACE/DSCOVR (1995→); **NOAA SWFO-L1** launched **2025** to replace the aging fleet and avoid a solar-wind data gap.
+- **L1** (sunward, ~1.5M km): operational since SOHO/ACE/DSCOVR (1995→); **NOAA SWFO-L1** launched **2025-09-24**, reached L1 **2026-01-23**, and entered operational service **2026-06-10 as SOLAR-1** — now the primary real-time solar-wind monitor (with a compact coronagraph delivering CME imagery to SWPC within ~30 min), closing the long-feared data-continuity gap left by the aging ACE/DSCOVR.
 - **L5** (60° behind Earth): the side-view that sees CMEs *and* active regions before they rotate to face Earth; **ESA Vigil** (launch **2031**, lifetime 5 yr) is the first operational L5 mission — and it carries a **NOAA** coronagraph, i.e. the flagship bet is *already* cross-national.
 
 **Scenario fork (≈2030 / 2050 / 2100).**
@@ -91,6 +91,7 @@ The 100-year question is therefore **institutional, not physical**: the Sun guar
 - Taiwan CWB/SWOO + FORMOSAT-7/COSMIC-2 GNSS-RO (launched 2019-06-25) — [MDPI Atmosphere 13(6):858](https://www.mdpi.com/2073-4433/13/6/858), [eoPortal FormoSat-7/COSMIC-2](https://www.eoportal.org/satellite-missions/stp2-formosat-7)
 - SC25 maximum declared 2024-10-15, SSN ≈161 — [NASA/NOAA joint announcement](https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/)
 - Carrington recurrence ~12%/decade — [Riley 2012, Space Weather](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2011sw000734)
-- L1 fleet + SWFO-L1 (2025) + ESA Vigil L5 (2031, carries NOAA CCOR) — [NOAA SWFO-L1](https://www.nesdis.noaa.gov/our-satellites/future-programs/swfo/space-weather-follow-l1-mission), [ESA Vigil](https://www.esa.int/Space_Safety/Vigil/Vigil_mission_overview)
+- L1 fleet + SWFO-L1 → **SOLAR-1 operational 2026-06-10** (launched 2025-09-24, arrived L1 2026-01-23) + ESA Vigil L5 (2031, carries NOAA CCOR) — [NOAA SWFO-L1 mission](https://www.nesdis.noaa.gov/our-satellites/future-programs/swfo/space-weather-follow-l1-mission), [NOAA SOLAR-1 operational release](https://www.noaa.gov/news-release/noaas-solar-1-enters-new-era-of-space-weather-monitoring), [ESA Vigil](https://www.esa.int/Space_Safety/Vigil/Vigil_mission_overview)
+- SC25 now in **declining phase** with a sustained G4 storm cadence (2025-06, 2025-11 behind an X5.1 flare, 2026-01) — the hazard did not end at the 2024 max; detail in [[concepts/solar-cycle-25-leo-radiation]]
 </content>
 </invoke>

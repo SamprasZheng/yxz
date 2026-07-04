@@ -69,7 +69,7 @@ See [[concepts/swpc-space-weather-feeds]] for the JSON URLs that deliver these i
 | 150–200 | High activity | ~30–50% drag increase; orbit lifetime shortening |
 | > 200 | Extreme (SC25 peaks) | > 50% drag increase; LEO RDM should be recalculated |
 
-**SC25 context**: Solar Cycle 25 has consistently produced F10.7 values above 150 sfu during peak activity (2024–2026), meaning the drag baseline for current LEO constellation operators is significantly elevated compared to historical SC24 planning assumptions.
+**SC25 context (updated 2026-07-04)**: Solar Cycle 25 consistently produced F10.7 values above 150 sfu through its maximum interval (Aug 2024 – Jan 2025). As of mid-2026 the cycle is in its **declining phase** and F10.7 is trending down from the peak, but it remains well above the SC24-era baseline and — crucially — the declining phase still spikes on individual active regions (an **X5.1** flare on 2025-11-11 drove a G4 storm). Operators should keep the drag baseline elevated versus historical SC24 planning assumptions through the descent (~2027); see [[concepts/solar-cycle-25-leo-radiation]] for the declining-phase storm chain.
 
 **JSON feeds**:
 - Observed: `https://services.swpc.noaa.gov/json/f107_cm_flux.json`
