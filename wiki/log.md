@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-05] daily-trader | Run #1 stub — trader pipeline + yfinance both blocked; watchlist seeded (15 tickers: NVDA/TSM/MSFT/PLTR/AVGO tier-1); FOM v1.0 formula defined; blockers documented in [[synthesis/daily-trader-2026-07-05]]; PR opened on auto/daily-trader-2026-07-05.
+
 ## [2026-07-05] deepen | Digital-democracy / user-owned-social cluster — falsifier-fired update (Bluesky >10M MAU, Team Mirai seat, TikTok deal closed)
 **Rotation:** picked the **digital-democracy / user-owned-social cluster** — the **calendar-stalest domain**, last deepened **2026-06-18** (17 days), staler than defense-tech (06-19), conjunction-math (06-20), Taiwan-RF (06-22), NOTAM-airspace (06-23); every other domain worked within ~15 days. The pages were rich but carried **two time-decaying claims that today's date (2026-07-05) turns wrong**: a future-tense TikTok "closing target ~2026-01-22" and a falsifier table asserting "MeWe's ~500K is the high-water mark" for Axis A — both overtaken by events. **Pages deepened (2 concepts + 3 entities + 1 synthesis):** [[concepts/dsnp]], [[concepts/proof-of-personhood]], [[entities/project-liberty]], [[entities/frequency]], [[entities/audrey-tang]], [[synthesis/digital-democracy-user-owned-social-six-region]]. No new synthesis (domain already owned by the six-region hub; deepened in place per "new synthesis = new domain only"). No split (pages under-refreshed, not over-scoped). All public/citable.
 
