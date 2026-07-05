@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-05] kol-digest | automated daily sweep — 0 KOLs, 11 keywords, ~50 items; sources/kol-digest-2026-07-05.md created; entities/openai.md stub created (5+ digest mentions)
+
 ## [2026-07-04] deepen | Space-weather / SC25-radiation cluster — declining-phase fact-refresh + SOLAR-1(SWFO-L1) operational + 2025-26 G4 storm chain
 **Rotation:** picked the **space-weather / SC25-radiation cluster** — the **single calendar-stalest domain**, last deepened **2026-06-08** (the space-weather-forecasting-six-region pass) and **not re-touched since** (26 days), while every other domain was worked within ~9 days (SDA 06-27, radiation-physics 06-26, ODC 06-30, Polkadot 06-29, agentic 07-01, AI-agent 07-02, FCC/ITU 07-03). The pages were rich but carried a **time-decaying framing** ("SC25 peak 2024–2026") and a **now-stale future-tense claim** ("SWFO-L1 launched 2025") that today's date (2026-07-04) makes wrong on both counts. **Pages deepened (3 concepts + 1 entity + 1 synthesis):** [[concepts/solar-cycle-25-leo-radiation]], [[concepts/space-weather-operational-indices]], [[concepts/swpc-space-weather-feeds]], [[entities/noaa-swpc]], [[synthesis/space-weather-forecasting-six-region]]. No new synthesis (domain already owned by the six-region page; deepened in place per "new synthesis = new domain only"). No split (pages were under-refreshed, not over-scoped). All public/citable (NOAA/NASA/ESA primary + peer-review).
 
