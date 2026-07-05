@@ -22,10 +22,11 @@ Frequency is the *settlement and data-availability layer* for the user-owned soc
 | Batched messages | Bulk social events are committed off-chain in Parquet-style batches and anchored on-chain (an L2-companion pattern), so a feed of millions of actions does not require millions of individual extrinsics. |
 | Core developer | **Amplica Labs** (under the [[entities/project-liberty]] umbrella) builds Frequency + DSNP core protocols; also ships "Frequency/Amplica Access" SSO-style account onboarding. |
 
-## Adoption signal (verified 2026-06-18)
+## Adoption signal (verified 2026-07-05)
 
-- **MeWe migration:** Amplica Labs + MeWe moved **500,000+ MeWe users** onto Frequency (milestone announced 2024); the original 2023 announcement framed a path to MeWe's ~20 M-user base. This is among the largest Web2→Web3 social migrations to date.
+- **MeWe migration:** Amplica Labs + MeWe moved **500,000+ MeWe users** onto Frequency (milestone announced Jan 2024); by 2025–2026 the figure is reported as **"almost a million"** DSNP identities. The original 2023 announcement framed a path to MeWe's ~20 M-user base, so penetration of MeWe's own base remains partial. MeWe appointed **Carlos Betancourt** CEO in 2025 to continue the Web3 push. Still among the largest Web2→Web3 social migrations to date.
 - Frequency has at times **led the Polkadot ecosystem in daily active addresses** (press figures ~70 K DAA) ⚠️ — engagement metric from ecosystem coverage, not an audited on-chain report; treat as order-of-magnitude.
+- **Scale context (the humbling comparison):** the *federated/off-chain* rival **AT Protocol / Bluesky** reached **~15 M MAU / ~43.5 M registered (Apr 2026)** — ~40× Frequency's DSNP-identity count. Chain-anchoring buys a stronger portability guarantee but has *not* won the adoption race; the market picked the lighter DID/federation model. See the architecture-split table on [[synthesis/digital-democracy-user-owned-social-six-region]].
 
 ## Horizontal view — decentralized-social substrates compared
 

@@ -36,6 +36,8 @@ DSNP is one of several rival answers; they differ on *what* they standardize:
 
 The decisive distinction: DSNP tries to make the **graph itself** a public good on a shared ledger; ActivityPub/AT Proto keep it in federated servers; Nostr/Farcaster put identity on-chain but the graph off-chain.
 
+**Adoption reality (verified 2026-07-05).** The architectures have diverged by ~two orders of magnitude on adoption. DSNP has **~1 M identities** (the [[entities/frequency]]/MeWe migration, up from the 500 K announced Jan 2024; MeWe appointed **Carlos Betancourt** CEO in 2025 to continue the Web3 push). Meanwhile the *federated/off-chain* rival — **AT Protocol / Bluesky** — reached **~15 M MAU and ~43.5 M registered accounts (Apr 2026)**. So the "user-owned social at mass scale" question is now *answered* — but the market chose the **lighter portability model (DIDs/federation) over DSNP's harder L1-anchored-graph bet.** DSNP's remaining edge is the *strength* of its portability guarantee (a chain-anchored graph is harder to reverse than a federated one), not its adoption. See the architecture-split table on [[synthesis/digital-democracy-user-owned-social-six-region]].
+
 ## Why it matters here
 
 DSNP is the **social-protocol counterpart to chain-level governance experiments** like [[entities/polkadot|Polkadot OpenGov]]: both try to replace centralized gatekeeping with transparent, user-participatory systems. It is also the operational expression of [[concepts/plurality]] applied to social networks, and its identity primitive is a cousin of [[concepts/proof-of-personhood]] — DSNP asks "can your *graph* be yours and portable?", PoP asks "can your *personhood* be yours and portable?"

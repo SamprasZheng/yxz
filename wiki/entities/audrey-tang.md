@@ -37,10 +37,12 @@ Tang is the **Taiwan** node of the global digital-democracy field; the comparabl
 | **US** | [[entities/project-liberty]] (private, McCourt-funded) + a16z/Bluesky on the protocol side | philanthropy- and market-led |
 | **Europe** | EU **Conference on the Future of Europe** + Decidim (Barcelona) + eIDAS/EUDI identity rail | state-/municipal-led, regulation-anchored |
 | **Korea** | Seoul "mVoting" / Democracy Seoul participatory platforms | municipal e-participation |
-| **Japan** | "Digital Democracy 2030" / Takahiro Anno's **AI Mayor**-style campaigns + Digital Agency | tech-modernization-led, top-down |
+| **Japan** | **Team Mirai** — Takahiro Anno's explicitly [[concepts/plurality]]-inspired party won **1 House of Councillors seat in 2025** (~2.3%), after his 5th-place 2024 Tokyo-governor run; "Digital Democracy 2030" + Digital Agency | tech-led, **now electoral** — Tang's model exported into a foreign legislature |
 | **China** | "consultative" e-government portals; no open deliberation layer | state-controlled, surveillance-adjacent |
 
 The throughline: Tang's distinctiveness is that Taiwan **institutionalized** grassroots civic-tech inside a ministry, where most peers are either private (US) or state-managed (China). This is why she became the connective node between Taiwan OpenGov and the on-chain OpenGov of [[entities/polkadot]] in [[sources/plurality-audrey-tang-sampras-2025]].
+
+**Cross-border export signal (2025–2026).** The Japan row is no longer a hypothetical: **Team Mirai**, founded by AI-engineer-turned-politician Takahiro Anno and explicitly citing the Tang/[[entities/glen-weyl]] *Plurality* framework, won a seat in Japan's 2025 House of Councillors election — the first time the Taiwan/Plurality model has moved from imitation into a *foreign national legislature*. It is the strongest evidence to date that Tang's civic-tech model travels beyond Taiwan's specific political conditions (though a single ~2.3% seat is a beachhead, not a wave). See [[synthesis/digital-democracy-user-owned-social-six-region]].
 
 ## Long-horizon view (scenario / projection)
 
