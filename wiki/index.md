@@ -33,6 +33,7 @@ type: index
 - [[sources/nemoclaw-build-a-claw-portal-2026]] — NVIDIA "Build-a-Claw" onboarding portal: Brev / DGX Spark / Jetson install paths (2026)
 - [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
 - [[sources/noaa-swpc-product-catalog]] — NOAA SWPC product and data catalog: full JSON URL table with cadences for all operational space weather feeds (ingested 2026-05-24)
+- [[sources/kol-digest-2026-07-06]] — Daily KOL + keyword digest 2026-07-06: 0 KOLs (list empty), 11 keywords; Anthropic $965B + Sonnet 5, Fable 5 restored; Nemotron 3 Ultra open-weight; OpenAI GPT-5.6; Polkadot JAM + Moonbeam exit; NemoClaw production-preview (ingested 2026-07-06)
 
 - [[sources/msbai-orbitguard-dod-contract-2025]] — MSBAI OrbitGuard $1.2M DoD SBIR (Sept 2025): JEPA + MARL neuro-symbolic SDA copilot; 94–98% lab accuracy across ~15,000 objects; AMOS 2025 poster; CEO Grosvenor verbatim quote (ingested 2026-05-24)
 - [[sources/scnoc-agentic-sun-2025]] — SCNOC-Agentic paper (Electronics 2025, 14(16), 3320): first LLM multi-agent framework for satellite communications NetOps; four components (intent refinement / multi-agent workflow / long-term memory / graph-RAG); qwen2.5-70B improved network task planning accuracy 15.6%→32.2% (ingested 2026-05-24)
@@ -97,6 +98,8 @@ type: index
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
 - [[entities/peter-steinberger]] — Austrian engineer (@steipete); PSPDFKit co-founder/CEO (€100M Insight exit 2021); creator of OpenClaw; OpenAI personal-agents lead (Feb 2026–)
+- [[entities/anthropic]] — US AI safety company; Claude LLM family (Haiku/Sonnet/Opus/Fable/Mythos); $965B valuation (July 2026); annualized revenue ~$47B; Claude Code + Claude Science key products
+- [[entities/openai]] — US AI company; ChatGPT + GPT-5.6 family (Sol/Terra/Luna, July 2026); $852B valuation; $25–33B annualized revenue; personal-agents division (Peter Steinberger, Feb 2026)
 - [[entities/noaa-swpc]] — NOAA Space Weather Prediction Center: civilian space weather authority; Boulder CO; ISES flagship RWC; 24/7 alerts/watches/warnings; civil counterpart to USAF 557th Weather Wing
 
 - [[entities/lockheed-martin-space]] — Lockheed Martin Space AI/SDA product line: iSpace (C2 + sensor fusion), Space Fence (S-band radar), T-TAURI (onboard telemetry AI), ARISE; 80+ space AI/ML programs; no confirmed JEPA usage publicly
