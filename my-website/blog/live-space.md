@@ -13,6 +13,29 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-07-07
+
+- Market/Sentiment stance: **neutral** (score 0)
+- Web signals collected: 0
+- Social-search signals collected: 10
+- Updated at: 2026-07-07T23:27:25.701Z
+
+Key web signals:
+- [ASCEND Project](https://ascend-horizon.eu/)
+- [CORDIS ASCEND Fact Sheet](https://cordis.europa.eu/project/id/101082517)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [For the very first time Elon Musk explains the "space data center plan ...](https://x.com/rohanpaul_ai/status/2064165951936094364)
+- [In a newly released technical update, SpaceX&#x27;s leadership team, which ...](https://x.com/tslaming/status/2064156791940981167)
+- [SpaceX has unveiled the design of... - Space and Technology - Facebook](https://www.facebook.com/SpaceTechnologyPage/posts/spacex-has-unveiled-the-design-of-its-first-orbital-data-center-satellite-ai1-th/1827979351789482/)
+- [Ahead of the IPO, SpaceX has unveiled the AI1 — its first ... - Facebook](https://www.facebook.com/interestingengineering/videos/musk-shows-detailed-design-of-ai-data-center-satellite/1011966071311689/)
+- [Instagram](https://www.instagram.com/p/DRAVZCwj_dm/)
+- [Instagram](https://www.instagram.com/reel/DV_ku8yEWbF/)
+
+Data quality notes:
+- Web signals fetch failed: HTTP 503 Service Unavailable
+- No web news signals, fallback to empty set.
+
 ### 2026-07-06
 
 - Market/Sentiment stance: **neutral** (score 1)
@@ -295,32 +318,6 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Space FrontPage - Anthropic is considering using SpaceX&#x27;s ... - Facebook](https://www.facebook.com/SpaceXFP/posts/anthropic-is-considering-using-spacexs-orbital-data-center-satellites-%EF%B8%8F-anthropi/1017809040767152/)
 - [Instagram](https://www.instagram.com/p/DZdA0QkiE8N/)
 - [Instagram](https://www.instagram.com/reels/DSIvnmGk44G/)
-
-Data quality notes:
-- No major data-quality issue in this run.
-
-### 2026-06-25
-
-- Market/Sentiment stance: **neutral** (score 2)
-- Web signals collected: 10
-- Social-search signals collected: 10
-- Updated at: 2026-06-25T23:49:55.142Z
-
-Key web signals:
-- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
-- [Orbital raises $5 million to join orbital data center race - SpaceNews](https://news.google.com/rss/articles/CBMihwFBVV95cUxNRERScGM0eDBSUUZ6T1BWaC0xVDFEMF94R0hqcXhSVTltOVQzcHBPV2RUaVdDanFsNHBfUjhRTF9FTHptWThBbmRobGVNOFlpbXhXYnBIZlI3b21sMXliUzRFaUFuRHpPOXBLeFpRRUxvS1EtSGRiMThwc3poeXBpcE8tNUs2R1U?oc=5)
-- [SpaceX confirms Starmind, targets one million satellites - Let's Data Science](https://news.google.com/rss/articles/CBMingFBVV95cUxQS2JNeGZpYkJ3bWJFMzlxQ0RDRFRsM2NRSElHOVB2bnJ5WFo1bDl2M2pFSHBTdWJ3MGdBN2ZxdHNtNGR1M2VTbzVoenZJWndzalRQNExnNlNUNnlERjRsYVQ1elFvOHM1cVlQRUxHcEczMVk3VXpnY212U3V1YVhSM2VpTW02dV84dGFqS2Z5bnVTMDZLaUp4TXc3aGpSdw?oc=5)
-- [SpaceX IPO: Building the Space Economy for the AI Era - semivision](https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ2M0S01OV3Y4UG9EOUFJdFRtOURaN1FBbGpNN2E0WnlPWmRmMXl3MnUtSmZrWTFLSUpseVQzR2hCWVFneVZhdlpVNVNaWUVFYmFqWDhqU1BPZURFaHMxZHZLOEtYWndDcE9sYm5pNXNDVmE3SDdIRGZKa0xQWkhHYy1kdnE?oc=5)
-- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
-- [Space Based Data Center Market Size, Share | Fotrecast [2034] - Fortune Business Insights](https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWhfWEV5d1NuYkRJNVV5bHNFM2hGVnM2aDMtVWQyZlZ5MGE3eVVmd3czQWppeS1sejluaVpWQXExV0RzMUhKV0lQS21pTVlWZmczS1pubTZodEpMa1d2SENtUnFYNFpHNFNWanFrQzFMWVZKOEpUY0ZwWVh3QktnSGNtbw?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [In a newly released technical update, SpaceX&#x27;s leadership team, which ...](https://x.com/tslaming/status/2064156791940981167)
-- [Is AI outgrowing Earth and will... - TechTalk With Solomon | Facebook](https://www.facebook.com/TechTalkWithSolomon/posts/is-ai-outgrowing-earth-and-will-the-next-data-center-be-in-space-as-global-deman/1402775541219088/)
-- [Instagram](https://www.instagram.com/p/DQ4l084jASo/)
-- [For the very first time Elon Musk explains the "space data center plan ...](https://x.com/rohanpaul_ai/status/2064165951936094364)
-- [SpaceX has unveiled the design of... - Space and Technology - Facebook](https://www.facebook.com/SpaceTechnologyPage/posts/spacex-has-unveiled-the-design-of-its-first-orbital-data-center-satellite-ai1-th/1827979351789482/)
-- [Instagram](https://www.instagram.com/p/DRAVZCwj_dm/)
 
 Data quality notes:
 - No major data-quality issue in this run.
