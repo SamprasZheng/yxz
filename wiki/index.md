@@ -57,6 +57,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-07-07]] — KOL + keyword digest 2026-07-07: 0 KOLs (list empty), 11 keywords (AI agents / Claude Code / Anthropic / OpenAI / Polkadot / OpenClaw / NemoClaw / Plurality / Audrey Tang / Nemotron / PolkaSharks); automated daily sweep; ~30 items
 
 ## Entities
 
@@ -113,6 +114,8 @@ type: index
 
 - [[entities/nspo]] — Taiwan national civil space agency (NSPO → **TASA** renamed 2023-01-01, under NSTC); founded 1991; 3rd-phase program NT$25.1B 2019–2028 + ~NT$40B 2023 B5G-LEO boost; FORMOSAT-8A launched 2025-11-28, TRITON GNSS-R 2023; public-sector demand node for the XT-144 / LEO supply chain
 - [[entities/tron-future-tech]] — Taiwan dual-use AESA integrator founded 2018 by ex-NCTU prof Yu-Jiu Wang; T.Radar counter-drone radar + T.SpaceRouter 1024-element Ka-band LEO terminal; Series A ~NT$900M (2024), 26-system military contract (2025); the concrete "midstream array-integrator" counter to Taiwan's absent-midstream thesis
+- [[entities/anthropic]] — US AI safety company; Claude model family (Haiku/Sonnet/Opus/Fable); $47B annualized revenue 2026; Fable 5 globally restored July 1; Sonnet 5 default for all users
+- [[entities/openai]] — US AI company; GPT-5.6 Sol/Terra/Luna family; primary OpenClaw Foundation sponsor; ~$25–33B annualized revenue 2026; proposed 5% US government equity stake
 
 ## Concepts
 
