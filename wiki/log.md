@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-07] kol-digest | Automated daily sweep 2026-07-07: 0 KOLs (list empty), 11 keywords, ~30 items found; new file wiki/sources/kol-digest-2026-07-07.md; stubs created for entities/anthropic + entities/openai (both recurring ≥3 mentions).
+
 ## [2026-07-06] deepen | Polkadot application/interoperability layer (XCM / Hydration / RegionX / Agile-Coretime) — 23-day fact-check: Hyperbridge realised-loss + relaunch, Hydration TVL reset, coretime-burn RFC-0010, DOT sub-$1
 **Rotation:** picked the **Polkadot application/interoperability cluster** — the **stalest mine-to-touch cluster**: last deepened **2026-06-13** (23 days), while the Polkadot *core* slice was refreshed 06-29 and every other domain within ~9 days (space-weather 07-04, digital-democracy 07-05, FCC/ITU 07-03, AI-agent 07-02, agentic 07-01, ODC 06-30). The rival calendar-stalest (SSA national-infra six-region, 06-05) was passed over because its neighbours were worked 06-20 (conjunction-math) + 06-27 (commercial-STM) leaving no thin survivors, whereas this cluster carried the corpus's **most time-decaying, now-verifiable** claims — the textbook 向外抓取 case. **Pages deepened (4 concepts + 1 synthesis):** [[concepts/xcm]], [[concepts/hydration-omnipool]], [[concepts/regionx]], [[concepts/agile-coretime]], [[synthesis/polkadot-interoperability-defi-coretime-app-layer]]. No new synthesis (domain already owned by the app-layer hub; deepened in place per "new synthesis = new domain only"). No split (pages under-refreshed, not over-scoped). All public/citable.
 
