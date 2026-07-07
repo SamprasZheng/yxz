@@ -7,7 +7,7 @@ tags: [llm-agent, satellite-operations, competitive-intel, mission-desk, spacesh
 
 This page maps the academic frontier, commercial vendor landscape, and hyperscaler offerings in the emerging category of **LLM-powered satellite operations agents**. It is the competitive intelligence core for [[synthesis/spacesharks-mission-desk-hackathon-plan]].
 
-Last researched: 2026-05-24.
+Last researched: 2026-05-24. **Fact-check pass 2026-07-07** — verified/updated: MSBAI Direct-to-Phase-II framing + SDA TAP Lab Apollo Demo Day (2025-08-13, KeepTrack integration) → see [[concepts/jepa-sda-multi-agent-rl]] §3; MCP now Linux-Foundation/Agentic-AI-Foundation governed with an individual-based Steering Group → see [[concepts/mcp-aerospace-applications]]; AIKO funding corrected to €6.5M total (Series A €3.5M Oct 2024) + new ASI-funded **ASIMOV** proximity-operations program; China "Air Target Agent System" confirmed via SCMP (2026-05-28 unveil).
 
 ---
 
@@ -45,7 +45,7 @@ The IAPGOS paper is earlier-stage (RAG-only, no MCP/ReAct, Indian engineering co
 | [[entities/slingshot-aerospace]] | Beacon + Agatha | CDM aggregation + fleet coordination (Beacon); anomaly behavior detection via IRL (Agatha) | Space-Track CDMs; own telescope network; NOAA TraCSS | Space Force ($25.2M digital twin contract), NOAA ($13.3M TraCSS), DARPA (Agatha) | ~$110M | Not confirmed — IRL/ML, not LLM |
 | [[entities/kayhan-space]] | Pathfinder / Satcat Suite | Autonomous collision avoidance maneuver planning; M2M maneuver coordination | Space-Track + commercial CDMs; proprietary OD | Capella Space, Lynk Global, Globalstar | ~$10.7M VC + USSF STTR | Not confirmed — ML orbit determination |
 | [[entities/privateer-space]] | Wayfinder + TerraScope | SSA visualization + geospatial AI (post Orbital Insight acquisition) | Space-Track, satellite imagery, geospatial feeds | Government + commercial (undisclosed) | $56.5M Series A | Not confirmed — geospatial ML |
-| [[entities/aiko-space]] | GENE / OLIVER / DANA | On-board + ground anomaly detection; autonomous mission replanning; collision avoidance | Live satellite telemetry (internal); on-board sensors | Tyvak International, Thales Alenia Space | ~€7M (~$7.5M) | Not confirmed — deep learning / RL |
+| [[entities/aiko-space]] | gifted_GENE / orbital_OLIVER / DANA | On-board + ground anomaly detection; autonomous mission replanning; collision avoidance; `orbital_OLIVER` = onboard OS for autonomous spacecraft ops | Live satellite telemetry (internal); on-board sensors | Tyvak International, Thales Alenia Space | **€6.5M total** (Series A €3.5M/~$4.0M, Oct 2024; corrected 2026-07-07 from prior "~€7M") | Not confirmed — deep learning / RL |
 | LeoLabs | Commercial tracking + CDMs | Phased-array radar tracking; < 5-min CDMs; 22K+ objects | Own radar network | Operators, Space Force | Undisclosed (Series B+) | Not confirmed |
 
 ### Key Observations

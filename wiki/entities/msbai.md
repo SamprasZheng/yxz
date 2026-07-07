@@ -29,7 +29,9 @@ Allan Grosvenor, in the September 2025 press release, described OrbitGuard as:
 
 ## DoD contract (2025)
 
-MSBAI received a $1.2 million Direct-to-Phase II SBIR award from the DoD CDAO (Air Force Digital Transformation Office executing). The 18-month contract targets scaling OrbitGuard to monitor 20,000+ resident space objects at ≤2-minute latency. See [[sources/msbai-orbitguard-dod-contract-2025]] for full details.
+MSBAI received a $1.2 million Direct-to-Phase II SBIR award from the DoD CDAO (competitively selected by the Office of the Secretary of Defense; Air Force Digital Transformation Office executing). The 18-month contract targets scaling OrbitGuard to monitor 20,000+ resident space objects at ≤2-minute latency. It builds on a prior Space Force contract (**FA864923P1191**, AFRL/RVSX "DRAGON Army"). See [[sources/msbai-orbitguard-dod-contract-2025]] for full details.
+
+**Live-demo milestone (verified 2026-07-07):** OrbitGuard demonstrated at the **SDA TAP Lab Apollo Project Demo Day** (Space Systems Command, Colorado Springs, **2025-08-13**), showing autonomous integration with **KeepTrack** for orbital tracking/analysis/visualization — the first public evidence of the JEPA+MARL stack running against a live tasking loop. The SDA TAP Lab pathway ties MSBAI into the government-anchored commercial market mapped in [[synthesis/commercial-space-traffic-management-six-region]].
 
 ## Relationship to Lockheed Martin
 

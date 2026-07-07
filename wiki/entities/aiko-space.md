@@ -11,17 +11,16 @@ AIKO is a Turin, Italy-based space autonomy startup founded in **2017** that dev
 
 - **Founded:** 2017, Torino, Italy
 - **Legal entity:** AIKO S.r.l. (Torino) and AIKOSPACE S.a.S (Toulouse)
-- **Total funding:** ~€7M (Series A round open for additional investment up to €5M max)
+- **Total funding:** **~€6.5M** (Series A €3.5M / ~$4.0M closed **October 2024**; corrected 2026-07-07 from a prior "~€7M / est-2023" estimate)
 
 ## Funding
 
 | Round | Amount | Date | Investors |
 |---|---|---|---|
 | Early stage (incl. Primo Space Fund) | Not disclosed | ~2019–2021 | Primo Space |
-| Series A close | €3.5M | October (year est. 2023) | Deep Blue Ventures + Primo Space |
+| Series A close | €3.5M (~$4.0M) | **October 2024** | Deep Blue Ventures + Primo Ventures |
 | Series A extension | €520K | 2024 | Club degli Investitori (via Simon Fiduciaria) |
-| **Series A total** | **€4M** (open to €5M max) | — | — |
-| **Total funding** | **~€7M** | — | — |
+| **Total funding** | **~€6.5M** | — (verified 2026-07-07) | — |
 
 AIKO was admitted to Thales Alenia Space's **Space Business Catalyst** industrial accelerator at the start of 2024.
 
@@ -48,6 +47,10 @@ Onboard payload data processor: reduces ground data downlink dependency by proce
 ### DANA
 
 Autonomous maneuvering and in-orbit servicing software: collision avoidance, orbit repositioning, and proximity operations support.
+
+### ASIMOV (2026 program)
+
+**Verified 2026-07-07:** AIKO leads **ASIMOV**, a program **funded by the Italian Space Agency (ASI)** that applies AIKO's autonomy stack to **rendezvous and proximity operations (RPO)**, with sustainability (debris mitigation / servicing) as the stated mission. Significance: it moves AIKO's autonomy from *detect* (GENE anomaly) and *plan* (OLIVER onboard OS) into the highest-consequence closed loop — autonomous maneuvering *near another object* — the RPO capability that JAXA/Astroscale (Japan) and the US SDA copilots also chase. Confirms AIKO is climbing the on-board twin-fidelity ladder rather than staying at ground anomaly detection. See [[concepts/satellite-digital-twin]] §Forward trajectory.
 
 ## Technical Approach
 

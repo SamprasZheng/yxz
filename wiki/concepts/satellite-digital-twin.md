@@ -49,6 +49,8 @@ Slingshot Aerospace holds a **$25.2M US Space Force contract** to build a "digit
 
 AIKO's [[entities/aiko-space|gifted_GENE]] platform implements the telemetry-mirror level (L1) of the digital twin concept: it ingests live telemetry streams, builds statistical models of normal subsystem behavior, and detects deviations. This is the closest production deployment of a functional satellite digital twin that has been publicly validated. The 4-of-5 anomaly detection result in 3 minutes (Tyvak International) demonstrates L1 digital twin fidelity in production.
 
+**Forward trajectory (verified 2026-07-07):** AIKO pairs `gifted_GENE` (predictive maintenance / anomaly) with **`orbital_OLIVER`**, an *onboard operating system* for autonomous spacecraft operation — the L1-mirror twin evolving toward an on-board L2/L3 planning twin that can act during comms blackout. In 2026 AIKO leads **ASIMOV**, an **Italian Space Agency (ASI)**-funded program applying this autonomy stack to **rendezvous and proximity operations (RPO)** — the highest-consequence closed-loop use of an on-board twin (a wrong prediction risks a collision, not just a missed alert). This is the clearest European datapoint that on-board autonomy is climbing the twin-fidelity ladder from *detect* (GENE) → *operate* (OLIVER) → *maneuver-in-proximity* (ASIMOV). Funding is modest (€6.5M total, Series A €3.5M Oct 2024), underlining that the European edge here is agency-anchored program access, not capital scale — see [[synthesis/llm-satellite-operations-six-region]].
+
 ## Where MCP and LLM Fit
 
 The 2025 Journal of Space Operations paper ([[sources/developing-ai-agents-satellite-ops-2025]]) proposes the most developed published architecture for LLM + SDT integration:
