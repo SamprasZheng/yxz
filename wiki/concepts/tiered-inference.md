@@ -27,9 +27,17 @@ The cascade mechanism: submit to the cheapest model; use a learned scorer to eva
 
 ### RouteLLM (Ong et al. — UC Berkeley / Anyscale, 2024)
 
-A learned router rather than a cascade: for each incoming query, a classifier predicts the probability that a strong model would outperform a weak model, and a threshold α controls the quality-cost tradeoff. Reported result: **up to 75% cost reduction** on MT Bench with minimal quality degradation. Four router architectures evaluated: similarity-weighted ranking, matrix factorization, BERT classifier, and causal-LLM classifier. Open-source at [github.com/lm-sys/RouteLLM](https://github.com/lm-sys/RouteLLM); LMSYS blog post: [lmsys.org/blog/2024-07-01-routellm](https://www.lmsys.org/blog/2024-07-01-routellm/); arXiv [2406.18665](https://arxiv.org/abs/2406.18665).
+A learned router rather than a cascade: for each incoming query, a classifier predicts the probability that a strong model would outperform a weak model, and a threshold α controls the quality-cost tradeoff. Published at **ICLR 2025**; headline result: a matrix-factorisation router sent only **14% of queries to the strong model** while keeping **95% of GPT-4-Turbo quality on MT Bench** — an **~85% cost reduction** (a sharper figure than the ~75% first reported; on MMLU a BERT classifier reached ~45% at comparable quality). Four router architectures evaluated: similarity-weighted ranking, matrix factorization, BERT classifier, causal-LLM classifier. Open-source at [github.com/lm-sys/RouteLLM](https://github.com/lm-sys/RouteLLM); LMSYS blog: [lmsys.org/blog/2024-07-01-routellm](https://www.lmsys.org/blog/2024-07-01-routellm/); arXiv [2406.18665](https://arxiv.org/abs/2406.18665).
 
-Key insight: RouteLLM uses human preference data (80k Chatbot Arena battles) to train the router rather than requiring labeled task data, partially sidestepping the cold-start problem — but satellite-ops is far enough from chat-arena distribution that domain adaptation would still be needed.
+Key insight: RouteLLM uses human preference data (80k Chatbot Arena battles) to train the router rather than requiring labeled task data, partially sidestepping the cold-start problem — but satellite-ops is far enough from chat-arena distribution that domain adaptation would still be needed. **Caveat carried forward:** these figures come from specific benchmark suites at a fixed quality threshold; production query distributions are typically less favourable, so treat 85% as proof the technique works, not the number a deployment will hit.
+
+### Routing benchmarks matured (2024→2026)
+
+The field acquired standard benchmarks, which is the tell that routing crossed from technique to infrastructure: **ROUTERBENCH** (arXiv [2403.12031](https://arxiv.org/pdf/2403.12031), 2024, ~8 datasets/early-gen models) → **LLMRouterBench** (arXiv [2601.07206](https://arxiv.org/abs/2601.07206), 2026 — **400K+ instances, 21 datasets, 33 models**) and **RouterArena** (arXiv [2510.00202](https://arxiv.org/html/2510.00202v1), 2025, open comparison platform). Martian introduced the original **RouterBench** as a commercial anchor.
+
+### Routing became a product default (2025)
+
+By 2025 tiered routing stopped being a bolt-on: **GPT-5 shipped with a built-in router** that silently selects reasoning depth per query, and **OpenRouter's Auto Router (powered by NotDiamond)** exposes a `cost_quality_tradeoff` dial (0 = always most capable → 10 = always cheapest, default 7) at no surcharge. The orchestrator-level cascade this page describes is now, in large part, absorbed *into* the model endpoint — which raises the design question for an ops desk: build your own auditable cascade (tier + reason logged to [[concepts/agentic-provenance]]) or inherit an opaque vendor router you cannot attest. For a provenance-first desk, the auditable self-built cascade wins despite the extra engineering.
 
 ### Martian Model Router (commercial, 2023–)
 
@@ -49,15 +57,36 @@ OpenAI's o3 and o4-mini expose explicit compute tiers ("low / medium / high reas
 
 ### Nemotron Cost-Per-Token Reference
 
-Current API pricing for the Spacesharks tier mapping (via OpenRouter / ArtificialAnalysis, May 2026):
+Current API pricing for the tier mapping (via OpenRouter, **June 2026**). The line refreshed since May 2026: NVIDIA's current family is now **Nemotron 3** (Nano 30B-A3B / Super 120B-A12B / Ultra 550B, all MoE), superseding the Nano-2-9B / Super-49B / Ultra-253B generation the earlier build assumed — the tier ladder holds, the specific SKUs moved up.
 
-| Model | Input $/M | Output $/M | Notes |
+| Model (2026 line) | Input $/M | Output $/M | Notes |
 |---|---|---|---|
-| Nemotron Nano 2 (9B v2) | $0.04 | $0.16 | Free tier also available; 6× higher throughput vs. next-best 9B class |
-| Nemotron Super 49B v1.5 | $0.10 | $0.40 | ~48 tok/s on hosted endpoints |
-| Nemotron Ultra 253B | ~$0.20–0.80 | ~$0.80–3.20 | Via Bitdeer/CoreWeave/DigitalOcean; varies by provider |
+| Nemotron Nano 9B v2 (prior gen) | $0.04 | $0.16 | Still listed; cheapest tier-1 |
+| **Nemotron 3 Nano 30B A3B** | $0.05 | $0.20 | Current tier-1; free tier also available |
+| Nemotron Super 49B v1.5 (prior gen) | $0.10 | $0.40 | ~48 tok/s hosted |
+| **Nemotron 3 Super 120B A12B** | $0.08–0.09 | $0.45 | Current tier-2 |
+| **Nemotron 3 Ultra 550B** | up to $0.50 | up to $2.20 | Current tier-3; varies by provider |
 
-Sources: [openrouter.ai/nvidia/nemotron-nano-9b-v2](https://openrouter.ai/nvidia/nemotron-nano-9b-v2); [artificialanalysis.ai/models/llama-nemotron-super-49b-v1-5-reasoning](https://artificialanalysis.ai/models/llama-nemotron-super-49b-v1-5-reasoning).
+Sources: [openrouter.ai/nvidia](https://openrouter.ai/nvidia); [OpenRouter pricing 2026 guide (June update)](https://betonai.net/openrouter-pricing-2026-complete-guide-to-every-model-tier-and-hidden-cost/). The two-order-of-magnitude spread from cheapest tier-1 to tier-3 output tokens (~$0.16 → ~$2.20) is exactly the gradient the cascade exists to exploit.
+
+## Six-region routing-ecosystem read (台美日韓中國歐洲)
+
+Where the routing layer's R&D and commercial supply live — and why the geography matters for a cascade's economics:
+
+| Region | Position | Evidence |
+|---|---|---|
+| **US** | **Leads** research *and* commercial routing | FrugalGPT (Stanford), RouteLLM (Berkeley/Anyscale, ICLR 2025), Martian/RouterBench, NotDiamond, OpenRouter Auto Router, **GPT-5 built-in router** — routing became a default product feature here first |
+| **China** | Makes cascades *economically dominant* from the bottom | The world's cheapest-per-token open-weight frontier (DeepSeek/Qwen/Kimi — see [[synthesis/open-weight-llm-agent-stack-six-region]]) means the tier-1 floor is near-free, so the *savings* from routing are larger where the cheap tier is Chinese-open-weight |
+| **Europe** | Sovereignty-framed | Mistral's small/large split is a native two-tier ladder; routing pitched as EU-hosted cost + data-residency control |
+| **Japan / Korea** | Consume + integrate | National models (tsuzumi / EXAONE / HyperCLOVA X) can seat the cheap tier for language-sovereign deployments; little native router research |
+| **Taiwan** | Largely N/A at the orchestration layer | Upstream compute-supply strength ([[entities/nvidia]] via TSMC) but no domestic router ecosystem — the upstream-strong/midstream-absent pattern of [[synthesis/leo-taiwan-odc-gap]] recurring at the inference-orchestration layer |
+
+The non-obvious point: **cheap-tier economics are set by whoever ships the cheapest capable open-weight model**, and by 2026 that is China — so the *value* a cascade extracts is partly a function of a geopolitically-contested supply. A US-frontier-only stack pays more for its tier-1 floor than a stack willing to route routine load to open-weight Chinese models, which is a policy decision, not just an engineering one.
+
+## Long-horizon trajectory (100-year, labelled scenario)
+
+- **Lineage:** hierarchical/cascade classifiers are decades old in ML (Viola-Jones attentional cascade, 2001); the LLM-era move is that the "cheap classifier vs expensive classifier" gate is now itself a language model. 2023 FrugalGPT → 2024 RouteLLM → 2025 GPT-5 built-in router → the cascade collapsing *into* the endpoint.
+- **Forward (scenario):** as per-query capability self-assessment ([[concepts/calibrated-confidence-llm]]) improves, the orchestrator-level router and the in-model router converge — the model routes *itself* by reasoning-budget, and the external cascade survives only where **auditability** (which tier, why) is a hard requirement the vendor router cannot provide. The 100-year invariant is economic, not technical: **there is always a cost gradient across capability, so there is always a routing decision** — the open question is only whether that decision is made in an auditable orchestrator you control or an opaque endpoint you rent. For safety-critical ops (satellite conjunction, launch-slip), the auditable-cascade requirement is structural and does not go away.
 
 ## Escalation Triggers
 
@@ -105,5 +134,7 @@ Small models handle 80% of routine satellite ops; escalation to bigger models fi
 - [[concepts/pc-probability-of-collision]] — the Pc thresholds driving trigger 2
 - [[concepts/spacesharks-mission-desk-evaluation-rubric]] — metrics that measure cascade calibration quality
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — the broader Mission Desk plan this fits into
+- [[synthesis/spacesharks-trust-stack]] — reliability architecture where tiered inference is the cost spine
+- [[synthesis/open-weight-llm-agent-stack-six-region]] — the open-weight model supply that sets the cheap-tier economics
 - [[entities/nvidia]] — model vendor and hackathon host
 - [[entities/nous-research]] — Hermes LLM series provider for the tier stack

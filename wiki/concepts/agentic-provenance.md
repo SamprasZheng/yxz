@@ -77,7 +77,7 @@ The canonical academic vocabulary for provenance. [PROV-DM](https://www.w3.org/T
 
 ### C2PA / Content Credentials
 
-[C2PA](https://c2pa.org/) (Coalition for Content Provenance and Authenticity) specifies manifest-based, cryptographically-signed provenance records attached to digital content. The v2.0/v2.1 specification (2024) introduced AI training data disclosure assertions. The analogue for agentic outputs: every agent recommendation is a "content unit" that carries a C2PA-style manifest chaining back to its raw sources. The `evidence_hash` in the event schema plays the role of the C2PA content hash; the `policy_preset_hash` plays the role of the tool/software assertion. Technical specification: [spec.c2pa.org](https://spec.c2pa.org/specifications/specifications/2.4/explainer/Explainer.html).
+[C2PA](https://c2pa.org/) (Coalition for Content Provenance and Authenticity) specifies manifest-based, cryptographically-signed provenance records attached to digital content. The current specification is **v2.3 (December 2025)**, which — directly relevant to agentic outputs — added **manifests for unstructured text (LLM outputs)** and live-video-streaming support, extending provenance beyond media files to exactly the class of artefact an agent emits ([Content Authenticity Initiative, "State of Content Authenticity 2026"](https://contentauthenticity.org/blog/the-state-of-content-authenticity-in-2026)). Adoption is now hardware-deep (Google integrated **C2PA Assurance Level 2 into Pixel camera silicon**; OpenAI DALL·E/Sora, Adobe Firefly, Google Imagen embed credentials; TikTok mandates labels for realistic AI content). The analogue for agentic outputs: every agent recommendation is a "content unit" carrying a C2PA-style manifest chaining back to its raw sources. The `evidence_hash` in the event schema plays the role of the C2PA content hash; the `policy_preset_hash` plays the role of the tool/software assertion. Technical specification: [spec.c2pa.org](https://spec.c2pa.org/).
 
 ### NIST AI 600-1 — Generative AI Profile
 
@@ -101,11 +101,36 @@ The Mission Desk's JSONL audit trail is functionally equivalent to a self-hosted
 
 ### EU AI Act Article 50
 
-[Article 50](https://artificialintelligenceact.eu/article/50/) of the EU AI Act (in force; implementation details finalising August 2026) requires that providers of AI systems generating synthetic content mark outputs in a machine-readable format detectable as AI-generated. The markings must be effective, interoperable, robust, and resistant to deliberate removal. For the Mission Desk, every published row carries `recommended_by` (which agent version) and `evidence_hash` (tamper-evident source link) — satisfying the machine-readable marking and preservation-of-provenance obligations for the EU market.
+[Article 50](https://artificialintelligenceact.eu/article/50/) of the EU AI Act requires that providers of AI systems generating synthetic content mark outputs in a machine-readable format detectable as AI-generated. The markings must be effective, interoperable, robust, and resistant to deliberate removal. **Application date: 2 August 2026** (the AI Omnibus provisional agreement of May 2026 grandfathers GenAI systems already on the market until **2 December 2026** for the Article 50(2) marking requirement); a Commission [Code of Practice on AI-generated content](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content) (2nd draft March 2026, final expected mid-2026) operationalises it, converging on C2PA as the reference marking format ([Sidley, "Preparing for Compliance by 2 August 2026"](https://datamatters.sidley.com/2026/06/24/eu-ai-act-transparency-obligations-preparing-for-compliance-by-2-august-2026/)). For the Mission Desk, every published row carries `recommended_by` (which agent version) and `evidence_hash` (tamper-evident source link) — satisfying the machine-readable marking and preservation-of-provenance obligations for the EU market.
 
 ### NemoClaw audit log + L7 credential proxy
 
 The runtime hook for Layer 4. [[concepts/nemoclaw]] enforces audit logging outside the agent process: a sandboxed agent cannot suppress its own log lines even if compromised. The L7 credential proxy is also an audit surface — every inference call that egresses the sandbox passes through it, so model calls are logged at the network layer independent of the agent's own instrumentation. This is the key distinction from commercial observability platforms, which depend on the agent self-reporting.
+
+---
+
+## 2.5 Six-region provenance-regulation map (台美日韓中國歐洲)
+
+Provenance is the one AI-trust layer that has moved from voluntary spec to **hard law** — and it inverts the usual six-region pattern. On model *capability* the US leads and everyone else chases (see [[synthesis/open-weight-llm-agent-stack-six-region]]); on AI-content *provenance regulation* the pattern flips: **China and Korea legislated mandatory labelling first, while the US remains voluntary/state-patchwork**. For an always-on agent that publishes machine-generated recommendations across markets, the binding constraint is the *strictest* regime it touches.
+
+| Region | Instrument (dated) | Mandatory? | Mechanism | Posture |
+|---|---|---|---|---|
+| **China** | *Measures for Labeling AI-Generated Synthetic Content* + national standard **GB 45438-2025**, effective **2025-09-01** (CAC + MIIT + MPS + SARFT) | **Yes — world-first mandatory** | **Both** explicit on-screen label **and** implicit watermark/metadata (provider code, content ID, generation timestamp); **extraterritorial** | State-mandated, first-mover ([Inside Privacy](https://www.insideprivacy.com/international/china/china-releases-new-labeling-requirements-for-ai-generated-content/), [China Law Translate](https://www.chinalawtranslate.com/en/ai-labeling/)) |
+| **Korea** | **AI Basic Act** (world's first *comprehensive* AI law), enforced **2026-01** | **Yes** | Generative-AI outputs must be labelled human- or machine-readably; **visible** watermark mandatory for high-harm deepfakes, **invisible/provenance-standard** acceptable otherwise | Comprehensive-law-led ([Stimson](https://www.stimson.org/2026/south-koreas-ai-basic-act-seeking-balance-between-industry-innovation-and-social-risk/), [FPF](https://fpf.org/blog/south-koreas-new-ai-framework-act-a-balancing-act-between-innovation-and-regulation/)) |
+| **Europe** | **EU AI Act Article 50(2)**, applies **2026-08-02** (grandfather to 2026-12-02); Code of Practice + C2PA reference | **Yes** | Machine-readable marking, "effective/interoperable/robust/removal-resistant" | Regulation-led, standard-converging |
+| **US** | No federal mandate; **NIST AI 600-1** (voluntary); state laws e.g. **California SB 942** AI Transparency Act; industry-led C2PA (Adobe/Microsoft/OpenAI/Google founders) | **No (federal)** | Voluntary provenance + patchwork state disclosure | Industry- + state-led, laggard on mandate |
+| **Japan** | **AI Promotion Act** (2025, innovation-first, no penalties) | **No** | Sole duty: notify users they are interacting with AI; **no** content-watermark mandate | Light-touch/reputational ([FPF](https://fpf.org/blog/understanding-japans-ai-promotion-act-an-innovation-first-blueprint-for-ai-regulation/)) |
+| **Taiwan** | Draft **AI Basic Act** (no dedicated content-labelling mandate yet) | Not yet | — | Recipient of others' standards; the upstream-strong/midstream-absent pattern of [[synthesis/leo-taiwan-odc-gap]] recurring at the AI-governance layer |
+
+**The structural read:** provenance regulation is *converging on the same technical primitives* (content hash + signed metadata + watermark) that this page's four-layer model already implements — but the political leadership is Asian-state-first, not US-industry-first. An agent built provenance-complete from day one (evidence hash, model/prompt hash, policy hash) is over-compliant everywhere by construction, which is the durable reason to bake it into the schema rather than bolt it on per-market. This is the AI-governance sibling of the identity-provenance question in [[synthesis/digital-democracy-user-owned-social-six-region]] (both ask "prove where this came from without a surveillance honeypot") and the political-economy frame of [[synthesis/techno-industrial-state-defense-tech-six-region]].
+
+## 2.6 Lineage and 100-year trajectory
+
+- **1990s–2013:** provenance formalised for scientific workflows and the semantic web → **W3C PROV-DM** (Recommendation 2013-04-30) fixes the entity/activity/agent vocabulary this page instantiates.
+- **2016–2021:** software supply-chain shock (SolarWinds) drives **SBOM** mandates (US EO 14028); CycloneDX/SPDX standardise machine-readable bills of materials — the pattern later cloned for models (**ML-BOM**, CycloneDX v1.5 2023 → **v1.7 Oct 2025 / ECMA-424 2nd ed**, the final 1.x; v2.0 in development).
+- **2021–2024:** generative-AI provenance crisis → **C2PA** founded (2021), NIST AI 600-1 (2024), EU AI Act adopted (2024).
+- **2025–2026:** provenance goes *mandatory* — China GB 45438 (Sep 2025), Korea AI Basic Act (Jan 2026), EU Article 50 (Aug 2026); **C2PA v2.3 extends manifests to text/LLM output** — the exact artefact an agent emits.
+- **Forward (labelled scenario, not forecast):** by ~2035, signed provenance is expected to be a *default transport property* of machine-generated content the way TLS became default for transport — an unsigned agent recommendation reads as an unsigned certificate does today. The 100-year invariant: **as agents move from advising to acting, the question "who/what authored this and on what evidence" becomes the load-bearing trust primitive of the whole stack** — the same shift, one layer up, that [[concepts/openclaw]]'s "control point moves from model to the runtime holding the credentials" describes. The open long-horizon fork is whether provenance stays an *open cryptographic commons* (C2PA-style, verifiable by anyone) or fragments into *per-jurisdiction sovereign watermark registries* (the China/Korea/EU divergence taken to its limit) — the provenance analogue of the spectrum-commons-vs-enclosure fork on [[concepts/epfd-equivalent-power-flux-density]].
 
 ---
 
@@ -149,5 +174,9 @@ Every satellite recommendation the desk makes is reproducible to a raw byte, tra
 - [[concepts/tiered-inference]] — tier field in Layer 2
 - [[concepts/calibrated-confidence-llm]] — calibrated confidence in Layer 2
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — parent plan; dataset moat thesis in §1 and §2
+- [[synthesis/spacesharks-trust-stack]] — Layer 4 (system trust) of the four-layer trust architecture this page operationalises
+- [[synthesis/digital-democracy-user-owned-social-six-region]] — identity-provenance sibling ("prove origin without a surveillance honeypot")
+- [[synthesis/open-weight-llm-agent-stack-six-region]] — model-capability six-region map that the provenance-regulation map inverts
+- [[synthesis/techno-industrial-state-defense-tech-six-region]] — political-economy frame beneath the six-region regulation divergence
 - [[entities/spacesharks-gpt]] — eventual dataset consumer
 - [[entities/sampras]] — wiki owner and Mission Desk builder

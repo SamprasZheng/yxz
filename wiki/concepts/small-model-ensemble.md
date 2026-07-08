@@ -109,6 +109,14 @@ Anthropic's open-source Petri framework ([anthropic.com/research/petri-open-sour
 
 ---
 
+## Lineage, six-region read, and 100-year view
+
+**Lineage.** The ensemble-beats-single insight is one of the oldest results in machine learning — bagging (Breiman 1996), boosting (Freund-Schapire 1997) and random forests (Breiman 2001) all trade a single high-variance model for a diversified committee. The LLM-era move is twofold: (1) the committee members are now *role-specialised generative models* rather than identical weak learners, and (2) the aggregation step can itself be a model (MoA's aggregator) or a deterministic arbiter. The "jury of diverse models beats one strong judge" finding (Verga PoLL, 2024) is the direct classical-ensemble descendant, and the "use disjoint base families to decorrelate errors" prescription is bagging's decorrelation principle restated for foundation models. **The through-line: diversity-of-error is the mechanism; only the base learner (decision stump → CNN → LLM) changed.** By 2025–2026 diverse-family LLM juries became standard practice for eval and safety auditing (Petri's Auditor/Target/Judge triad in production across 14 frontier models), confirming the pattern graduated from research to infrastructure.
+
+**Six-region (honest N/A).** Like [[concepts/calibrated-confidence-llm|calibration]], the ensemble/MoA *architecture* is not geographically contested — the seminal work is US (Together AI MoA, Anthropic CAI/Petri) with the jury result from a US/UK team. Where geography enters is the **base-model supply** the ensemble draws from: the page's own decorrelation prescription ("draw specialists from disjoint base-model lineages — e.g. Nemotron, Qwen-3, a Mistral derivative") is *only achievable* because the open-weight frontier is now multipolar (US Nemotron/Llama, China Qwen/DeepSeek, Europe Mistral — see [[synthesis/open-weight-llm-agent-stack-six-region]]). A monoculture open-weight supply would silently defeat the decorrelation guarantee. So six-region diversity of the *model layer* is a precondition for the correlated-error mitigation this pattern depends on — a rare case where geopolitical model-diversity is an engineering asset, not just a sovereignty concern.
+
+**100-year view (labelled scenario).** The invariant is information-theoretic, not architectural: **independent estimators with uncorrelated errors always beat a single estimator of equal individual skill** — this is why juries, second opinions, and redundant flight computers exist, and it does not expire with model scale. Forward: as single models get more capable, the ensemble's *cost* advantage erodes but its *auditability and abstention* advantage (per-member disagreement as a first-class abstention signal, feeding [[concepts/calibrated-confidence-llm]]) persists — for the same reason safety-critical avionics use triple-modular redundancy even when a single computer is highly reliable. The open long-horizon question mirrors the one on the sibling pages: whether a calibrated multi-model committee is ever trusted to act *unsupervised* in high-stakes settings, or whether the arbiter's "needs-review" route remains a permanent human-in-the-loop requirement.
+
 ## Spacesharks Mission Desk Application
 
 In the [[synthesis/spacesharks-mission-desk-hackathon-plan]], the three-specialist layout maps directly onto the satellite-ops decision pipeline:
@@ -141,6 +149,8 @@ A low-cost multi-model copilot that fans out specialist reasoning in parallel, i
 - [[concepts/spacesharks-mission-desk-evaluation-rubric]] — `calibration_per_tier` and `recommendation_acceptance_rate` metrics this pattern produces
 - [[concepts/spacesharks-mission-desk-governance]] — governance policy layered above the arbiter's output
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — canonical hackathon plan that this pattern serves
+- [[synthesis/spacesharks-trust-stack]] — Layer 2 (model trust) of the four-layer trust architecture
+- [[synthesis/open-weight-llm-agent-stack-six-region]] — multipolar open-weight supply that makes disjoint-family decorrelation achievable
 - [[entities/sampras]] — wiki owner and hackathon entrant
 - [[entities/spacesharks-gpt]] — operator/engineering persona used in the desk's debate verb
 

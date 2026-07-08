@@ -74,7 +74,7 @@ The arbiter triggers the [[concepts/tiered-inference]] escalation; together they
 | T2 | Nemotron Super 49B / Hermes-4 70B | ~15% (ambiguous classifications) | Red Pc event OR high-impact asset OR T2 itself returns medium-confidence |
 | T3 | Nemotron Ultra 253B / Hermes-4 405B (local or sandboxed cloud egress via [[concepts/openshell-runtime]]) | ~5% (red events, crewed proximity, novel event types) | Manual review only |
 
-The cost evidence (FrugalGPT 98% reduction, RouteLLM 75% on MT Bench, Together MoA 65.1% AlpacaEval beating GPT-4o with open-source models) is documented in [[concepts/tiered-inference]] §"Published Analogues and Industry Evidence". The Nemotron token-cost reference table is also there.
+The cost evidence (FrugalGPT 98% reduction, **RouteLLM ~85% on MT Bench at 95% GPT-4-Turbo quality, ICLR 2025** — sharper than the ~75% first reported, only 14% of queries routed to the strong model, Together MoA 65.1% AlpacaEval beating GPT-4o with open-source models) is documented in [[concepts/tiered-inference]] §"Published Analogues and Industry Evidence". The Nemotron token-cost reference table there was refreshed to the **Nemotron 3** line (Nano 30B-A3B / Super 120B-A12B / Ultra 550B) in June 2026; the T1/T2/T3 SKUs named in the table below are the earlier generation but the tier *ladder* is unchanged.
 
 **Local-only ceiling.** [[concepts/dgx-spark]] caps local inference at the 128 GB unified-memory footprint; tier-3 models that exceed this egress through the NemoClaw L7 credential proxy and are logged at the network layer — the audit row records both the model identifier and the egress event, satisfying Layer 4 provenance even when the inference itself happens off-box.
 
@@ -125,6 +125,16 @@ If anything on this page conflicts with the canonical companion page above, the 
 ## 10. Decision provenance
 
 This synthesis was filed on 2026-05-24 after the owner's third refinement of the Mission Desk thesis. The first refinement (earlier same day) pivoted from "port Jamia/Spacesharks GPTs onto Nemotron" to "satellite-lifecycle decision co-pilot." The second refinement de-emphasised the investment-prediction angle in favour of operator decisions and the labelled-lifecycle dataset moat. **This third refinement formalises the reliability stack itself** — small-model ensemble + tiered inference + calibrated confidence + agentic provenance — as the defensibility argument, on the grounds that "we have the biggest model" is not a defensible hackathon claim, but "we have a system that is correct, honest, cheap, and auditable" is.
+
+## 11. 2026 mid-year deepening note (2026-07-08)
+
+A fact-check + dimension pass on the four Layer-2/3/4 concept pages surfaced two cross-cutting reads that sharpen the trust-stack thesis:
+
+1. **Provenance regulation inverts the model-capability six-region pattern.** On model *capability* the US leads and Asia chases ([[synthesis/open-weight-llm-agent-stack-six-region]]); on AI-content-*provenance* law the flip is stark — **China legislated mandatory labelling first** (GB 45438-2025, effective 2025-09-01, explicit + implicit watermark/metadata, extraterritorial), **Korea** followed (AI Basic Act, enforced 2026-01), the **EU** applies Article 50(2) machine-readable marking **2026-08-02**, while the **US** stays voluntary/state-patchwork (NIST AI 600-1 + California SB 942). The design consequence: an agent built provenance-complete from day one (evidence/model/prompt/policy hashes) is over-compliant in *every* market by construction — the durable reason to bake Layer 1 + Layer 4 into the schema, not bolt them on per-jurisdiction. Full map on [[concepts/agentic-provenance]] §2.5. **C2PA v2.3 (Dec 2025) now covers text/LLM outputs**, so the reference marking format finally matches the artefact class an agent emits.
+
+2. **Multipolar open-weight supply is a *precondition* for Layer-2 decorrelation.** The arbiter's correlated-error mitigation (§4) depends on drawing the three specialists from disjoint base-model families — which is only achievable because the open-weight frontier is now genuinely multipolar (US Nemotron/Llama, China Qwen/DeepSeek, Europe Mistral). A monoculture supply would silently defeat the guarantee. Geopolitical model-diversity is therefore an engineering asset here, not merely a sovereignty concern.
+
+Also refreshed: RouteLLM figure (75%→85%, ICLR 2025), Nemotron 3 pricing line, the 2025 conformal-prediction wave for LLMs (ACM SIGKDD 2025 survey + ConU/TECP), and the LLM-router benchmark lineage (ROUTERBENCH → LLMRouterBench 2026 / RouterArena) with routing now a *default product feature* (GPT-5 built-in router, OpenRouter Auto Router). The 05-24 flag on [[concepts/calibrated-confidence-llm]]'s Guo/Kadavath citations was cleared by live web-verification. No layer's *architecture* changed — the stack thesis holds; the evidence under it is now current and dated.
 
 ## See also
 
