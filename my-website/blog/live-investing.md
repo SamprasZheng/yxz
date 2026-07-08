@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-07-08
+
+- Market/Sentiment stance: **neutral** (score 3)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-07-08T23:34:06.591Z
+
+Key web signals:
+- [ETH Futures Contract (Jul 2026) Trade Ideas — DERIBIT:ETHUSD09N2026 - TradingView](https://news.google.com/rss/articles/CBMiqwFBVV95cUxORUVqWVEtSXFna3hPVGRscEZvQmowaTgxaTk4eWhwV0JmVjlSZi1GSHd5MEVXbFlZZW56YnFnb3NEU0ViM201c0VCTFlJTnVBTXVld1BMSUw1cm05QnZkSUFBNmZwTWhpajhpNENIelJIdDB5S25oTFYtcDNMRnlVSHpvZENJZVpDMnpUZmp4eG1qeWFkX1VqV2FpU1kycmxEOTBHUnBsSjBBdlk?oc=5)
+- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
+- [Bitcoin, Nasdaq investors are celebrating, while U.S. consumers turn gloomy. - CoinDesk](https://news.google.com/rss/articles/CBMiugFBVV95cUxOSmUwb205UGFnOC1kMnBRS1EzYUU2Q29taXdVX3k5Mld5VjZvTnpHV3RzSU0zak9nWENuOElGdThTX3VCZjRsVGFmblNJWmpoR3U1TGZieDFkRTV4eFotc0hVczZoYl81WE9yN3ZZYnBybDkteFo4XzJqaTRtSnExRWE2Uzk1d1o5Q0tOSXlpM3RLVlZKNHdnS1NId3R3UUljdGhrdmhUQXFnMzZjbUhVRkRoRGRnSGxmSVE?oc=5)
+- [Market Update (November 2025) - Crypto.com](https://news.google.com/rss/articles/CBMiY0FVX3lxTE4yR1hOZWZvakFQSmMtc3ZoUjdjX1lFMGdrdE5maW96VjZzdzdHWXRFUTFOaFZqYl9pZEtxMTdwdmw3V1BVOW5raWFMZWVZRUZGbUZibTlxUFFpZG9QelRJSEFGYw?oc=5)
+- [Stock market today: Dow jumps 450 points as S&P 500, Nasdaq log back-to-back records on surging Fed rate cut bets - Yahoo Finance](https://news.google.com/rss/articles/CBMi8wFBVV95cUxNOE85VlMySUdnR19yRzhycnM0cE1DTEdEcTlFMnJYeVpxdFNMNUs2cjNtOVJhcWFZWnZxa1VnaktZLWdzRkhLYUZSVFM5OURPenJMLVZrVHY5YURQdktOSTFROFVKU0tZZWVIQ01Jc09zVlFmRGd4eTl1NzJQNWU1QkJvV29GZzRMWDNXbVE0RXhWTmdLaU1raGp6RjZ6YldHMmhkczBKSU9MUXdrMVhpdHlUMW5aZHhPOUxndmpkZEs5VzljT1F1dHhrZjZwdmZocllzd3lncVhJOHdkUU9rcUJ1eGM5Z0plOE5UWndXTVNlOTA?oc=5)
+- [Bitcoin Inflation Hedge Analysis: Why BTC Hit $81K Amid 3.8% CPI Surge - Intellectia AI](https://news.google.com/rss/articles/CBMibEFVX3lxTFBwd2l2amFURU5SREE5MUlKTTBRVm9nUXJUYV8tcU5Ca2RGQmhYZTZ3MmRQZHVveGl0TXFfeHhRM2xwT3drM0piaXpiMVo0MzJCZEQzVXV5U2lNcEMwdlZ4RVRDSnh6bFl3NGJDaw?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-07-07
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -234,27 +255,6 @@ Key web signals:
 - [Market Update (November 2025) - Crypto.com](https://news.google.com/rss/articles/CBMiY0FVX3lxTE4yR1hOZWZvakFQSmMtc3ZoUjdjX1lFMGdrdE5maW96VjZzdzdHWXRFUTFOaFZqYl9pZEtxMTdwdmw3V1BVOW5raWFMZWVZRUZGbUZibTlxUFFpZG9QelRJSEFGYw?oc=5)
 - [Bitcoin Inflation Hedge Analysis: Why BTC Hit $81K Amid 3.8% CPI Surge - Intellectia AI](https://news.google.com/rss/articles/CBMibEFVX3lxTFBwd2l2amFURU5SREE5MUlKTTBRVm9nUXJUYV8tcU5Ca2RGQmhYZTZ3MmRQZHVveGl0TXFfeHhRM2xwT3drM0piaXpiMVo0MzJCZEQzVXV5U2lNcEMwdlZ4RVRDSnh6bFl3NGJDaw?oc=5)
 - [Bitcoin was waiting for cuts. Hot CPI inflation data just put hikes back on the table - CryptoSlate](https://news.google.com/rss/articles/CBMimgFBVV95cUxOSFR5cHE3VWJUYU5FRGZoWFlfX0kxZlV4WjNNNlFHZjRPenc4UDJNbzFIRXFEVlN6eEVjdEJZamN1UzJneXltOXg2Nmx0ZTg5YnRuSVEyMFdRYUVfNzM1dDlGbmJWR1NfQjhRUzNYYU5xQ3BsVUJEYk5kWk56aGtjdHJ2ZlEwaTZYSTJqc2MxQmZPR204MldSUFpR?oc=5)
-- [Bitcoin Price Surge: BTC Jumps a Staggering 1.73% in Five Minutes on Binance - CryptoRank](https://news.google.com/rss/articles/CBMifkFVX3lxTE03RkVBQlB5a21tTnFGMWE2MzQxUG9xWGQyVG1OaGdlTE1NeGdvUEdMMzA1d3FwTlBRbmdHclhhRjl0UkJyNGlvemhrRDNhVHlaRWpTc3B2bXBEVno5WGk2OHR2ZjZTNEdBZEU0cWZKbVRLb1lUS0h5MG1JakZ0UQ?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-06-26
-
-- Market/Sentiment stance: **neutral** (score 2)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-06-26T23:41:11.379Z
-
-Key web signals:
-- [ETHUSD CM Futures Contract (Jul 2026) - TradingView](https://news.google.com/rss/articles/CBMijwFBVV95cUxOUHdEQjh4WUdMLUhyWjVyTkkzeEd2bVJfbExCU0VHZTdRRlc0c2VJbERySURIMmhwT0xYNmdiVk9tdDltRGhqbkUwc0ZkSzcxVThLLWh1RmdCRjk2T2RNTFJlUnVLU0VGUnpUcDdXSllickpQRmFCUy0yMHlsd3RuLW8yVHBsaDVQSmlfU1o2MA?oc=5)
-- [Bitcoin, Nasdaq investors are celebrating, while U.S. consumers turn gloomy. - CoinDesk](https://news.google.com/rss/articles/CBMiugFBVV95cUxOSmUwb205UGFnOC1kMnBRS1EzYUU2Q29taXdVX3k5Mld5VjZvTnpHV3RzSU0zak9nWENuOElGdThTX3VCZjRsVGFmblNJWmpoR3U1TGZieDFkRTV4eFotc0hVczZoYl81WE9yN3ZZYnBybDkteFo4XzJqaTRtSnExRWE2Uzk1d1o5Q0tOSXlpM3RLVlZKNHdnS1NId3R3UUljdGhrdmhUQXFnMzZjbUhVRkRoRGRnSGxmSVE?oc=5)
-- [Market Update (November 2025) - Crypto.com](https://news.google.com/rss/articles/CBMiY0FVX3lxTE4yR1hOZWZvakFQSmMtc3ZoUjdjX1lFMGdrdE5maW96VjZzdzdHWXRFUTFOaFZqYl9pZEtxMTdwdmw3V1BVOW5raWFMZWVZRUZGbUZibTlxUFFpZG9QelRJSEFGYw?oc=5)
-- [Market Analysis: Why Bitcoin and Global Markets Just Collapsed - CryptoTicker](https://news.google.com/rss/articles/CBMijAFBVV95cUxON1Y5b1B6WDVWQ0I2QTFUbVBCVHFuUFZKczdBbWJ1ZEQ3N0NRWG96RklUdklSRks0RjV5bnVRdU93OWdDaEFaVm9wSm5oTlZ0U25BWWNqTGUyc0tRaGY1d0ZCUkp0QVZReFRWY3ZVWnFYdi1oM0dHbTVwRzYxb2xvVlBhN1dCaG5Qdkk4Mw?oc=5)
-- [Bitcoin Inflation Hedge Analysis: Why BTC Hit $81K Amid 3.8% CPI Surge - Intellectia AI](https://news.google.com/rss/articles/CBMibEFVX3lxTFBwd2l2amFURU5SREE5MUlKTTBRVm9nUXJUYV8tcU5Ca2RGQmhYZTZ3MmRQZHVveGl0TXFfeHhRM2xwT3drM0piaXpiMVo0MzJCZEQzVXV5U2lNcEMwdlZ4RVRDSnh6bFl3NGJDaw?oc=5)
 - [Bitcoin Price Surge: BTC Jumps a Staggering 1.73% in Five Minutes on Binance - CryptoRank](https://news.google.com/rss/articles/CBMifkFVX3lxTE03RkVBQlB5a21tTnFGMWE2MzQxUG9xWGQyVG1OaGdlTE1NeGdvUEdMMzA1d3FwTlBRbmdHclhhRjl0UkJyNGlvemhrRDNhVHlaRWpTc3B2bXBEVno5WGk2OHR2ZjZTNEdBZEU0cWZKbVRLb1lUS0h5MG1JakZ0UQ?oc=5)
 
 Key social-search signals (X / Threads / Instagram / Facebook via search):
