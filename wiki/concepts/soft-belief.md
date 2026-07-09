@@ -48,7 +48,7 @@ Soft belief is the book's load-bearing concept and also its softest: it is **def
 - Defense-tech venture funding as a share of total VC (Anduril/Helsing/Palantir scale — see [[synthesis/techno-industrial-state-defense-tech-six-region]])
 - Public-trust-in-institutions survey series (the cultural substrate the book invokes)
 
-The 2025–26 re-coupling (Palantir FY25 ≈$4.475B; Anduril ~$30→$60B) is the closest thing to a *falsification of the decline half* of the thesis — talent and capital did rotate back toward defense, arguably driven more by **threat environment + returns** than by any cultural reawakening, which is the materialist counter-reading.
+The 2025–26 re-coupling (Palantir FY25 ≈$4.475B → Q1-2026 revenue +85% YoY; Anduril $61B Series H May 2026, up from $30.5B a year prior, 2025 rev $2.2B; [[synthesis/techno-industrial-state-defense-tech-six-region#six-region-scorecard|Helsing $18B]] May 2026) is the closest thing to a *falsification of the decline half* of the thesis — talent and capital did rotate back toward defense, arguably driven more by **threat environment + returns** than by any cultural reawakening, which is the materialist counter-reading. A sharpening 2026-H1 data point *for* the materialist read: Palantir's **stock fell ~27%** in the same half its revenue growth *accelerated* to 85% — capital re-priced the multiple down even as the underlying "return to defense" strengthened, which is hard to square with a pure cultural-reawakening story.
 
 ## The comparative angle — soft belief is not US-specific
 

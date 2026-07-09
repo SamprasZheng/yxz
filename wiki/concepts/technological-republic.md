@@ -26,7 +26,7 @@ The thesis stands on a specific, datable institutional pipeline, not vibes. The 
 | 1961–69 | **Apollo** | Peak of mission-driven national engineering as shared cultural project (the [[concepts/soft-belief]] exhibit) |
 | 1990s–2010s | **The decoupling** | Cold-War end → talent and capital rotate to consumer software; the founding compact lapses |
 | 2017–18 | **Project Maven / Google revolt** | The concrete rupture: Google engineers force withdrawal from a DoD CV contract; [[entities/palantir]] later inherits Maven (now ≈$1.3B MSS) — the event that crystallised Karp's thesis |
-| 2025–26 | **Re-coupling** | Palantir FY25 ≈$4.475B rev / ~$424B peak market cap; Anduril ~$30→$60B; the "techno-industrial state" returns as a *commercial* phenomenon, not a government lab |
+| 2025–26 | **Re-coupling** | Palantir FY25 ≈$4.475B rev → **Q1-2026 +85% YoY** (fastest since 2020) / FY26 guide ≈$7.65B; Anduril **$61B Series H (May 2026, 2× the $30.5B a year prior)**, 2025 rev doubled to $2.2B; the "techno-industrial state" returns as a *commercial* phenomenon, not a government lab. Caveat: PLTR *stock* fell ~27% in 2026-H1 even as revenue accelerated — the **business** re-coupling is more robust than the **valuation** (see [[entities/palantir]]) |
 
 ## The decline thesis
 

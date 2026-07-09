@@ -22,9 +22,9 @@ The 21st-century power competition is decided less by who *has* frontier AI/comp
 
 | Region | Governance model | Flagship instruments (dated) | Soft-belief supply | Posture |
 |---|---|---|---|---|
-| **US** | Commercial public-private fusion | [[entities/palantir]] Maven/MSS (DoD ceiling ≈$1.3B→2029; NATO sole-source Mar 2025); FY25 rev ≈$4.475B / peak mkt cap ≈$424B Dec 2025. Anduril ~$30.5B→$60B+ (2026). SpaceX. | Market + threat-driven; *contested* (the book's whole complaint) | ★★★★★ leads — but via VC-funded primes, not gov labs |
+| **US** | Commercial public-private fusion | [[entities/palantir]] Maven/MSS (DoD ceiling ≈$1.3B→2029; NATO sole-source Mar 2025); FY25 rev ≈$4.475B → **Q1-2026 +85% YoY / FY26 guide ≈$7.65B**; mkt cap peaked ≈$424B Dec 2025 then re-crossed $300B Jul 2026 (stock −27% YTD — multiple compressed *into* accelerating revenue). **Anduril $61B Series H (2026-05-13, 2× the $30.5B a year prior; 2025 rev $2.2B, >$11B raised)**. SpaceX. | Market + threat-driven; *contested* (the book's whole complaint) | ★★★★★ leads — but via VC-funded primes, not gov labs |
 | **China** | State-directed **Military-Civil Fusion (军民融合)** | Legal mandate routing civilian AI/dual-use to PLA; modernization targets 2035 / world-class-military 2049; AI named central to future war | State-supplied (top-down) — abundant, at the cost of pluralism | ★★★★★ structural rival; the thing the US thesis implicitly reacts to |
-| **Europe** | Sovereign-autonomy by necessity | Helsing (~$18B, 2026, German); EU strategic-autonomy doctrine; but Germany *holds back* on Palantir over US-dependence | Fractured across 27 sovereignties — the weakest cultural cohesion | ★★★☆☆ building, fast, but coordination-limited |
+| **Europe** | Sovereign-autonomy by necessity | Helsing **$1.2B round at ≈$18B valuation (2026-05, Dragoneer/Lightspeed-led; up from ≈$14B/€12B Series D Jun 2025; ~80% European-held)** — Germany's most valuable startup, explicitly positioned as the *sovereign-European alternative to Anduril* (HX-2 loitering munition, Altra, CA-1 Europa wingman); EU strategic-autonomy doctrine; but Germany *holds back* on Palantir over US-dependence | Fractured across 27 sovereignties — the weakest cultural cohesion | ★★★☆☆ building, fast, but coordination-limited |
 | **Japan** | Re-armament with industrial muscle | ¥43T 2023–27 Defense Buildup (~$275B); eased arms-export rules (2023); record FY26 budget (~$58B) | Threat-driven (China deterrence); pacifist-constitution friction | ★★★☆☆ rising; deep manufacturing base |
 | **Korea** | Industrial-export defense state | K-defense exports ≈$15.4B (2025); "Big Four" (Hanwha/Hyundai Rotem/LIG Nex1/KAI) ₩40.45T rev; Hanwha exports >50% of defense segment | Industrial-competitiveness-driven (export pride) | ★★★☆☆ rising exporter, esp. into Europe |
 | **Taiwan** | Existential dual-use | [[entities/tron-future-tech]] (dual-use AESA, T.Radar/T.SpaceRouter); drone/asymmetric programs; [[entities/nspo]] (TASA) | **Threat-forged** — necessity manufactures soft belief most directly | ★★☆☆☆ upstream-strong / midstream-absent ([[synthesis/leo-taiwan-odc-gap]] pattern) |
@@ -41,12 +41,18 @@ The structural bet: **the 1995–2020 era of borderless consumer software was th
 
 ## Falsifier table
 
-| Claim | Would be falsified if… | Status (2026-06) |
+| Claim | Would be falsified if… | Status (2026-07) |
 |---|---|---|
-| Defense-tech re-coupling is structural, not a cycle | Palantir/Anduril/Helsing valuations + defense-VC share revert to 2019 levels by ~2030 | Holding — valuations still climbing |
+| Defense-tech re-coupling is structural, not a cycle | Palantir/Anduril/Helsing valuations + defense-VC share revert to 2019 levels by ~2030 | Holding on **revenue/private valuations** (Palantir Q1-26 +85%, Anduril→$61B, Helsing→$18B, all 2026-05) — but **watch the public-market wobble**: PLTR −27% YTD in 2026-H1 is the first crack, a *stock-multiple* correction not yet a *business* reversal |
 | Soft belief (not capital/chips) is the binding US constraint | Talent rotates to defense purely on returns/threat with no cultural shift | ⚠️ Partly contradicted — 2025 re-coupling looks threat+returns-driven (materialist counter-read) |
 | China's MCF gives a durable cohesion edge | MCF underperforms on *innovation* despite mandate (the "myths of MCF" literature) | Contested in scholarship (CNAS/CSET skeptics) |
 | Europe builds sovereign defense-tech at scale | US primes (Palantir/Anduril) capture NATO procurement faster than Helsing scales | ⚠️ Tension live — NATO chose Palantir MSS sole-source 2025 |
+
+## Sources (2026-07 refresh)
+
+- Palantir Q1-2026 (+85% YoY, US +104%, FY26 guide $7.65–7.66B): [CNBC](https://www.cnbc.com/2026/05/04/palantir-pltr-q1-earnings-report-2026.html), [Palantir release via Yahoo](https://finance.yahoo.com/markets/stocks/articles/palantir-reports-q1-2026-u-200500041.html), [Seeking Alpha guidance](https://seekingalpha.com/news/4585277-palantir-signals-7_650b-7_662b-fy2026-revenue-outlook-as-u-s-demand-remains-the-constraint); PLTR mkt cap / −27% YTD: [stockanalysis.com](https://stockanalysis.com/stocks/pltr/market-cap/)
+- Anduril $61B Series H (2026-05-13, from $30.5B; 2025 rev $2.2B): [TechCrunch](https://techcrunch.com/2026/05/13/anduril-raises-5b-doubles-valuation-to-61b/), [Anduril newsroom](https://www.anduril.com/news/anduril-announces-usd5b-series-h-raise)
+- Helsing ≈$18B / $1.2B round (2026-05, from ≈$14B Jun 2025): [TechCrunch](https://techcrunch.com/2026/05/11/daniel-ek-backed-defense-tech-helsing-to-raise-1-2b-at-18b-valuation/), [Helsing — Wikipedia](https://en.wikipedia.org/wiki/Helsing_(company))
 
 ## See also
 
