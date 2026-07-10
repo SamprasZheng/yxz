@@ -62,13 +62,27 @@ Advantages: maximum flexibility; Disadvantages: high power consumption and cost.
 Combination of digital phase shifting and analog phase shifters. See [[concepts/hybrid-phased-array]].
 Advantages: lower power consumption, lower complexity; suitable for power-constrained scenarios such as LEO satellites.
 
-## Phase Control Mathematics
+## Phase Control Mathematics (Mechanism Layer)
 
-Phase difference between adjacent antenna elements:
+**Progressive phase.** Phase difference between adjacent antenna elements to steer the beam to angle $\theta_0$:
 
-$$\Delta\Theta = \frac{2\pi d \sin\theta}{\lambda}$$
+$$\Delta\Theta = \frac{2\pi d \sin\theta_0}{\lambda}$$
 
-where $d$ is the element spacing, $\lambda$ is the wavelength, and $\theta$ is the beam steering angle.
+where $d$ is the element spacing, $\lambda$ is the wavelength, and $\theta_0$ is the beam steering angle.
+
+**Array factor.** For $N$ equally-spaced, equally-weighted elements, the far-field array factor is
+
+$$\mathrm{AF}(\theta) = \frac{\sin\!\left(\tfrac{N}{2}\psi\right)}{N\sin\!\left(\tfrac{1}{2}\psi\right)}, \qquad \psi = \frac{2\pi d}{\lambda}(\sin\theta - \sin\theta_0)$$
+
+The main-lobe peak sits where $\psi = 0$ (i.e. $\theta = \theta_0$); the first nulls set the beamwidth. Half-power beamwidth for a broadside uniform array is $\approx 0.886\,\lambda/(Nd)$ rad — **beamwidth shrinks as $1/N$**, which is *why* element count is the primary design lever ([[concepts/hybrid-phased-array]] trades $N$ against power/cost).
+
+**Grating-lobe condition — the hard spacing constraint.** Copies of the main lobe (grating lobes) appear whenever $\psi = \pm 2\pi m$. To keep them out of real space for a scan out to $\theta_0$:
+
+$$\frac{d}{\lambda} \le \frac{1}{1 + |\sin\theta_0|}$$
+
+Broadside ($\theta_0 = 0$) permits $d \le \lambda$; scanning to $\pm 60°$ tightens this to $d \le 0.54\lambda$ — this is the origin of the familiar **"element pitch ≈ λ/2"** rule, and it fixes element count (hence T/R-module count, hence cost and thermal load) for a given aperture. Missing this is a top-tier design bug in the [[concepts/rf-soc-debug-taxonomy|HW-layer]] taxonomy.
+
+**Beam squint & true-time-delay.** A *phase* shifter produces the correct steering angle only at the design frequency; across an instantaneous bandwidth $\Delta f$ the beam "squints" by $\Delta\theta \approx -\tan\theta_0 \cdot (\Delta f/f_0)$. For wideband apertures (wideband SATCOM, radar) the fix is **true-time-delay (TTD)** at the sub-array level rather than pure phase shift — the same wideband pressure that pushes hybrid arrays toward per-sub-array TTD and all-digital beamforming. Element-level amplitude/phase errors (from PA nonlinearity, temperature, aging) raise sidelobes and degrade EVM, which is why per-element [[concepts/dpd-digital-predistortion|DPD]] and [[sources/hsieh-xband-leo-transmitter-2020|BIST self-calibration]] become mandatory as $N$ grows.
 
 ## Application Scenarios
 
@@ -90,11 +104,12 @@ Who leads vs lags across the AESA / phased-array stack. Component-level supply-c
 | **Europe** | Leads in segments — Thales/Leonardo/Saab/Hensoldt AESA; ESA SATCOM | Mid — UMS/OMMIC (France) GaN foundries, terminal vendors | GaN foundry + design (UMS, OMMIC, Infineon) |
 | **Taiwan** | No indigenous *fighter* AESA, but an emerging dual-use array integrator — [[entities/tron-future-tech]] builds in-house AESA counter-drone radar (T.Radar) deployed with Taiwan's military (T-Dome) | Emerging: [[entities/tron-future-tech]] T.SpaceRouter 1024-element Ka-band AESA LEO terminal; otherwise component supply | **Upstream foundry strength** — [[entities/win-semiconductors]] GaAs/GaN MMIC (+Viper RF, 1–150 GHz); [[entities/ascend-tech]] filters; the "strong upstream, absent midstream" pattern of [[synthesis/leo-taiwan-odc-gap]], now partially countered at the array-integrator node |
 
-## Sources & Verification (accessed 2026-05-31)
+## Sources & Verification (accessed 2026-05-31; market re-checked 2026-07-10)
 
 - AESA fighter history: [J/APG-1 — Wikipedia](https://en.wikipedia.org/wiki/J/APG-1); [Mitsubishi F-2 — Wikipedia](https://en.wikipedia.org/wiki/Mitsubishi_F-2)
-- SATCOM beamformer-IC market: market sized ~USD 2.87B (2025) → ~7.94B by 2034 — [Phased Array Beamforming IC for SATCOM market report (Semiconductor Insight)](https://semiconductorinsight.com/report/phased-array-antenna-beamforming-ic-for-satcom-market/); vendor products — [Anokiwave SATCOM](https://www.anokiwave.com/satcom/index.html), [Renesas phased-array beamformers](https://www.renesas.com/us/en/products/rf-products/phased-array-beamformers)
-- GaN RF foundry landscape (top-5 ≈ 60% revenue; DoD GaN MRL-10): [Mordor Intelligence GaN RF report](https://www.mordorintelligence.com/industry-reports/gan-rf-semiconductor-devices-market)
+- Beamforming/AF math (grating-lobe condition $d/\lambda \le 1/(1+|\sin\theta_0|)$, HPBW $\approx 0.886\lambda/Nd$, beam-squint $\approx -\tan\theta_0\,\Delta f/f_0$): standard array theory (Balanis, *Antenna Theory*; Mailloux, *Phased Array Antenna Handbook*) — textbook, not web-verified.
+- SATCOM beamformer-IC market: **estimates diverge** by source — Semiconductor Insight put it ~USD 2.87B (2025)→7.94B (2034, ~10.6% CAGR, restated ~3.21B for 2026); SNS/Verified/DataIntelo reports span ~USD 4.3–6.9B (2025–26) with 11–19% CAGRs. Treat the *direction* (double-digit growth driven by LEO flat-panel volume) as robust and the *level* as uncertain — [Phased Array Beamforming IC for SATCOM (Semiconductor Insight)](https://semiconductorinsight.com/report/phased-array-antenna-beamforming-ic-for-satcom-market/); vendor products — [Anokiwave SATCOM](https://www.anokiwave.com/satcom/index.html), [Renesas phased-array beamformers](https://www.renesas.com/us/en/products/rf-products/phased-array-beamformers)
+- GaN RF foundry landscape (top-5 ≈ 60% revenue; DoD GaN MRL-10; GaN IC cost ~2–3× silicon): [Mordor Intelligence GaN RF report](https://www.mordorintelligence.com/industry-reports/gan-rf-semiconductor-devices-market)
 
 ## Related Links
 
