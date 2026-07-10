@@ -57,6 +57,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-07-10]] — KOL + keyword digest for 2026-07-10: 11 keywords swept (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks); KOL list empty; top items: NemoClaw Deep Agents Blueprint (NVIDIA + LangChain), Claude Sonnet 5 + FedRAMP-High launch, GPT-5.6, Polkadot staking overhaul (refs 1909+1910)
 
 ## Entities
 
