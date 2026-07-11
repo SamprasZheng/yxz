@@ -6,6 +6,8 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-07-11]] — Automated daily KOL + keyword digest (2026-07-11): 11 keywords swept, KOL list empty; top items: NemoClaw Deep Agents blueprint (NVIDIA+LangChain Jul 8), Claude Sonnet 5 default + Fable 5 global (Jul 1), GPT-5.6 Sol/Terra/Luna (Jul 9), Polkadot staking overhaul (Ref 1909/1910) + BITW removal, OpenClaw non-profit + security crisis
+
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
