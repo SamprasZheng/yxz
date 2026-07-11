@@ -8,7 +8,7 @@ tags: [conjunction, cdm, pc, ssa, space-track, space-debris, mission-desk, firef
 Canonical operational reference for the Spacesharks Mission Desk conjunction triage verb. Covers: the Conjunction Data Message format, Pc computation, maneuver decision thresholds, MVP retrieval from public Space-Track data, and the commercial upgrade path for production use. Integrates with `agents/src/firefly/agents/launch_planner.py` and the broader Firefly orchestrator.
 
 > **繁體中文摘要**
-> 本頁是火衛（Firefly）聯合偵測代理人的操作參考文件。近接事件（conjunction）的標準資料格式為 CCSDS CDM（CCSDS 508.0-B-1），由 18 SDS（美國太空部隊第 18 太空防衛中隊）透過 Space-Track.org 發布。碰撞機率（Pc）以二維高斯積分計算，NASA CARA 以 Pc ≥ 1×10⁻⁴ 為紅色高風險門檻（必須機動），7×10⁻⁵ ≤ Pc < 1×10⁻⁴ 為黃色監測門檻。美國商務部辦公室正推進 TraCSS（預計 2026 年正式上線）逐步取代 Space-Track 作為民用太空交通管理介面。MVP 驗證階段使用免費 Space-Track `/class/cdm_public` 端點即可；付費升級路徑為 LeoLabs（協方差品質更優、更新頻率高達 400%）或 Slingshot Beacon（支援機動協調）。
+> 本頁是火衛（Firefly）聯合偵測代理人的操作參考文件。近接事件（conjunction）的標準資料格式為 CCSDS CDM（CCSDS 508.0-B-1），由 18 SDS（美國太空部隊第 18 太空防衛中隊）透過 Space-Track.org 發布。碰撞機率（Pc）以二維高斯積分計算，NASA CARA 以 Pc ≥ 1×10⁻⁴ 為紅色高風險門檻（必須機動），7×10⁻⁵ ≤ Pc < 1×10⁻⁴ 為黃色監測門檻。美國商務部辦公室（OSC）正推進 TraCSS 逐步取代 Space-Track 作為民用太空交通管理介面；惟 2025 年 NOAA FY2026 預算案曾試圖終止 TraCSS，經國會撥款委員會恢復（最終編列 $52.5M），原訂 2026 年 1 月全面上線時程因而延後，並開始評估「使用者付費」模式。截至 2026 年 6 月為試營運擴大階段（52 個試點用戶 + 英國、澳洲兩個國家帳號，約 11,125 顆衛星），尚未取代 Space-Track 成為唯一權威介面（查核日 2026-07-11）。MVP 驗證階段使用免費 Space-Track `/class/cdm_public` 端點即可；付費升級路徑為 LeoLabs（協方差品質更優、更新頻率高達 400%）或 Slingshot Beacon（支援機動協調）。
 
 ## 1. The Signal Chain: CDM → Pc → Decision
 
@@ -285,8 +285,10 @@ Every agent output that cites Pc should include:
 ⚠️ Secondary covariance: not available in cdm_public — Pc is 18 SDS estimate, cannot independently verify
 ⚠️ Yellow threshold: 7e-5 (NASA default) — your mission may use a different value
 ⚠️ Covariance realism: 18 SDS TLE-based covariances are known to be optimistic; Pc may be underestimated for small debris secondaries
-⚠️ TraCSS transition: Space-Track CDM API endpoint will migrate to TraCSS.gov (production target 2026)
+⚠️ TraCSS transition: an *additive* civil interface at TraCSS.gov, NOT a confirmed Space-Track cutover — the program survived a proposed FY2026 termination (rescued by Congress at $52.5M), its "operational Jan 2026" target slipped, and a user-fee model is under study. Keep Space-Track (18 SDS) as the authoritative baseline; do not hard-code a TraCSS.gov migration date (fact-checked 2026-07-11).
 ```
+
+> **TraCSS status note (2026-07-11 fact-check):** the "production target 2026" wording formerly carried across this cluster understated real political risk. NOAA's FY2026 budget proposed to **terminate** TraCSS and gut the Office of Space Commerce; House + Senate appropriators **restored funding** (final FY2026: **$52.5M** to OSC). The Jan-2026 full-operational milestone slipped; Commerce is studying a **user-fee** structure. As of June 2026 TraCSS is an expanded, internationalising beta — **52 pilot users + 2 National Government Accounts (UK, Australia)**, ~11,125 satellites — still short of the authoritative production replacement. Detail + citations on [[concepts/conjunction-screening-providers]] and [[concepts/cdm-conjunction-data-message]]. Sources: [SpaceNews](https://spacenews.com/commerce-department-budget-proposal-would-halt-work-on-tracss/), [Breaking Defense](https://breakingdefense.com/2025/07/appropriators-restore-funding-for-commerces-tracss-spacewatch-effort/), [SpacePolicyOnline](https://spacepolicyonline.com/news/senate-appropriators-retain-funding-for-noaas-tracss-space-traffic-system/).
 
 ## See Also
 

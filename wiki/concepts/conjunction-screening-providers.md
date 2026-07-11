@@ -12,7 +12,7 @@ Conjunction screening providers maintain catalogs of resident space objects (RSO
 | Provider | Data Source | Update Cadence | Coverage | Latency (event → CDM) | Cost Model | API | Authoritative / Advisory |
 |---|---|---|---|---|---|---|---|
 | **18 SDS / Space-Track** | Ground radar (SSN), Space Fence | ~8 h batch | ~27,000 objects (LEO+GEO+HEO); ≥10 cm LEO debris | Up to 8 h | Free (registration) | REST (`space-track.org`); JSON/XML/KVN/CSV | **Authoritative** (US DoD) |
-| **TraCSS (OSC/NOAA)** | Civil SSA sources + commercial data vendors | ~8 h (beta); target: continuous | Inherits 18 SDS catalog + commercial augmentation | Similar to Space-Track (shares interface in beta) | Free (operator registration at space.commerce.gov) | Via Space-Track.org (beta); TraCSS.gov (production 2026) | **Authoritative** (US DoC civil STM) |
+| **TraCSS (OSC/NOAA)** | Civil SSA sources + commercial data vendors | ~8 h (beta); target: continuous | Inherits 18 SDS catalog + commercial augmentation | Similar to Space-Track (shares interface in beta) | Free today (operator registration at TraCSS.gov); **user-fee model under study** | TraCSS.gov (expanded beta; direct registration live 2026); production date slipped (see below) | **Authoritative** (US DoC civil STM) *once complete* |
 | **LeoLabs** | Phased-array radar network (6+ global sites: NZ, Texas, Alaska, Costa Rica, Azores) | Every 1–2 h for active events; on-demand < 30 s | 22,000+ objects; ≤10 cm RCS class | < 5 min from observation | Commercial subscription (pricing not public; contact sales) | REST (`api.leolabs.space`); JSON/XML | Advisory |
 | **COMSPOC / SDA SDC** | Multi-source fusion (SDA member operator ephemerides + ground sensors); 500,000+ object catalog | Sub-hourly; orbit update within 5–10 min of data receipt | All orbital regimes; SDA member objects with operator-provided states | ~5–10 min per source refresh | SDA membership fee required; operators must share ephemeris data | Proprietary API + web portal (`comspoc.com`) | Advisory (member community) |
 | **Slingshot Aerospace (Beacon)** | Optical sensor network (150+ sensors in SGSN) + ingests Space-Track CDMs | Depends on source; Beacon is primarily an aggregation/presentation layer | Augments government catalog; focuses on LEO | Inherits upstream latency; real-time alerting layer | Commercial (demo required; pricing not public) | Platform API (`beacon.slingshot.space`) | Advisory |
@@ -94,8 +94,18 @@ The [[sources/tracss-oasis-announcement-2024|Traffic Coordination System for Spa
 
 - OSC awarded Commercial Conjunction Assessment Screening Services (CASS) pilot contracts (announced 2026)
 - TraCSS will aggregate commercial provider data and provide a single civil interface at TraCSS.gov
-- 17 pilot operator users as of February 2026; SpaceX joined as 10th beta user by July 2025
 - The commercial providers above (LeoLabs, Slingshot, COMSPOC, Kayhan, SpaceNav) all receive OSC contracts to feed data into TraCSS
+
+### The 2025–2026 budget near-death and rescue (fact-check, accessed 2026-07-11)
+
+TraCSS is the clearest case in this cluster of a civil-STM layer that is **politically contingent, not guaranteed** — the prior wiki framing of a smooth "production 2026" understated the risk:
+
+- **Proposed termination:** NOAA's **FY2026 budget proposal** (released ~June 2025) sought to gut the Office of Space Commerce and **end federal funding for TraCSS**, on the argument that the commercial sector should absorb space-traffic coordination ([SpaceNews](https://spacenews.com/commerce-department-budget-proposal-would-halt-work-on-tracss/), [Payload](https://payloadspace.com/noaa-proposes-terminating-tracss-program/), [The Conversation](https://theconversation.com/office-of-space-commerce-faces-an-uncertain-future-amid-budget-cuts-and-new-oversight-265710)). The Space Force publicly *opposed* the cut, having planned to hand civil STM off ([Air & Space Forces Mag](https://www.airandspaceforces.com/space-force-opposes-to-cutting-tracss-program-from-commerce-budget/)).
+- **Congressional restoration:** House and Senate appropriators **restored the money**; the final FY2026 bill gave OSC **$52.5M**, keeping TraCSS alive ([Breaking Defense](https://breakingdefense.com/2025/07/appropriators-restore-funding-for-commerces-tracss-spacewatch-effort/), [SpacePolicyOnline](https://spacepolicyonline.com/news/senate-appropriators-retain-funding-for-noaas-tracss-space-traffic-system/)).
+- **Schedule slipped:** the "fully operational by January 2026" target was pushed back; OSC now moves more deliberately and is studying a **user-fee / new financial structure** rather than a purely appropriated free service.
+- **Current footprint (June 2026):** **52 pilot users + 2 National Government Accounts — the United Kingdom and Australia** — together ~**11,125 satellites** (up from 35 pilot users / 10,696 satellites in April 2026), now able to register directly through the TraCSS webpage. This is an expanded, *internationalising* beta — a real milestone (first foreign national accounts) but still short of the authoritative production replacement for [[entities/space-track-19sds|Space-Track]].
+
+**Implication for provider selection:** treat Space-Track (18 SDS) as the durable authoritative baseline for the near term; TraCSS is additive and improving but should not be assumed to be the sole civil interface on any fixed date. The *commercial* providers in the table above are, if anything, strengthened by TraCSS's funding fragility — a user-fee civil service raises the relative attractiveness of a paid commercial subscription. Market-structure read: [[synthesis/commercial-space-traffic-management-six-region]].
 
 ## See Also
 

@@ -66,6 +66,23 @@ Pc alone is not sufficient for decision-making:
 - Operators combine: (1) Pc, (2) raw miss distance, (3) covariance quality flag (realism score), (4) object sizes, (5) maneuver cost.
 - The "dilution region" (high miss distance, poor covariance) requires special handling — CARA tags these events separately.
 
+## Layer Up: Pc Is an Input, Not the Decision (拉高維度)
+
+A recurring category error — visible in the wide spread of operator thresholds above — is treating Pc *as* the maneuver decision. It is not. The decision is a **cost–loss (expected-value) comparison**, and Pc is only one term in it:
+
+```
+maneuver  ⇔  E[loss | no maneuver]  >  cost(maneuver)
+            ≈  Pc × C_consequence    >  ΔV-fuel + mission-downtime + re-acquisition + collateral-risk
+```
+
+- **C_consequence** is not constant. A crewed vehicle or a $500M flagship carries a consequence term orders of magnitude above a $50k cubesat — which is *why* a rational operator maneuvers the flagship at a lower Pc. The single "Red ≥ 1×10⁻⁴" number is a **default consequence assumption baked into a threshold**, not a law of physics.
+- **cost(maneuver)** is also asset-specific: a satellite with abundant propellant and a flexible payload schedule has a cheap maneuver; one near end-of-life fuel, or mid-tasking for a paying customer, has an expensive one. The same Pc yields opposite decisions across these two.
+- **The threshold hides both terms.** Publishing a fixed Pc trigger is a way of pre-declaring a consequence/cost ratio so the operator does not re-derive the loss function per event. It is administratively necessary and analytically lossy.
+
+For the Firefly / Mission Desk agent this reframing is load-bearing: the agent should surface Pc **and** the two hidden terms (asset value class, maneuver cost proxy) rather than emitting a bare tier, and it should treat the threshold as a *configurable operator input*, not a constant — exactly the calibrated, abstention-aware posture argued in [[concepts/calibrated-confidence-llm]] and [[synthesis/spacesharks-trust-stack]]. A high-Pc event on a maneuverable, well-fuelled, low-value asset is a *cheaper* decision than a mid-Pc event on a crewed vehicle, and a system that only prints "YELLOW" has thrown that away.
+
+The historical reason the number-not-the-loss-function habit took hold: after the 2009 Iridium-Cosmos collision (lineage in [[concepts/cdm-conjunction-data-message]]), agencies needed a *communicable, auditable* trigger fast — a scalar threshold is defensible in a mishap review in a way "our loss function said no" is not. The metric's authority is partly institutional.
+
 ## Long-Horizon: Pc in a Kessler-Densifying Environment
 
 Pc is computed per-event today, but the *background* Pc of any given orbit shell is a function of debris density — and that density is rising structurally. Per the ESA *Space Environment Report 2025*, at ~550 km the debris-threat population is now the same order of magnitude as active satellites, and even with zero new launches the population would keep growing for **200+ years** (Kessler cascade). Two consequences for the metric:

@@ -131,6 +131,37 @@ Space Surveillance Catalog (TLEs / SP vectors)
 
 Update cadence: 18 SDS / Space-Track batch-refreshes CDMs approximately every **8 hours**. Commercial providers (LeoLabs) can deliver updated CDMs within **5 minutes** of new observations.
 
+## Historical Lineage: Why the CDM Exists (拉長時間軸)
+
+The CDM is not a first-principles design — it is the standardised residue of a sequence of debris events that each forced a new layer of the conjunction-assessment apparatus into existence. The format is younger than the problem by three decades.
+
+| Year | Event / milestone | Consequence for the CDM chain |
+|---|---|---|
+| **1978** | Kessler & Cour-Palais publish the collisional-cascade paper (JGR) | Establishes that LEO debris density is self-sustaining above a threshold — the theoretical reason conjunction screening is permanent, not transitional |
+| **1996** | French **Cerise** satellite boom severed by a catalogued Ariane fragment | First confirmed accidental collision between an operational satellite and tracked debris; proves the threat is operational, not hypothetical |
+| **2007** | China **Fengyun-1C** ASAT test | +3,000 catalogued fragments (~⅓ of the then-LEO catalog in one event); the single largest debris-generating act to date; forced catalog-scale screening |
+| **2009-02-10** | **Iridium-33 × Cosmos-2251** collision, 789 km over Siberia, 11.7 km/s | **The operational turning point.** First hypervelocity collision between two *intact* satellites. Before it, the USG (via what is now [[entities/18-sds]]) released only covariance-free TLEs (see [[concepts/covariance-ellipsoid]]) — the week-before predictions swung from 117 m (Feb 6) to 1.24 km (Feb 7), demonstrably useless for a go/no-go call. Prompted NASA **CARA** collaboration with Iridium and controlled sharing of SP-quality data + covariance via JSpOC/18th (NTRS 20100002023, [Kelso AMOS 2009](https://celestrak.org/publications/AMOS/2009/AMOS-2009.pdf)) |
+| **2013-06** | **CCSDS 508.0-B-1** Blue Book published ([[sources/ccsds-508-cdm-2013]]) | The lessons of 2009 crystallised into an international interchange standard — covariance made mandatory-for-Pc, a common field vocabulary across agencies |
+| **~2015-2016** | NASA **CARA** formalised at Goddard as a standing service; thresholds documented (NTRS 20190029214) | The Red/Yellow/Green threshold table this page uses is a CARA-architecture artifact, not a physical constant |
+| **2020** | **Space Fence** (Kwajalein) operational; catalog radar floor drops toward ~5 cm LEO | More secondaries tracked → more CDMs generated per satellite-year (the same trend the Pc page projects forward) |
+| **2021-10** | CCSDS 508.0-B-1 **Technical Corrigendum 2** | Current authoritative issue; verified 2026-07-11 as still B-1-through-TC2, *not* B-2 |
+| **2024** | **TraCSS** DoD→DoC civil-STM transition begins ([[sources/tracss-oasis-announcement-2024]]); commercial CASS pathfinders let | Conjunction screening starts civilianising — a governance shift, not a format change |
+| **2025-2026** | TraCSS **near-termination and Congressional rescue** (see fact-check below) | The civil-STM layer is politically contingent, not guaranteed; the authoritative CDM source could revert wholly to the DoD |
+| **Forward (labelled projection)** | Machine-to-machine CDM + coordination-message (OCM) exchange; on-board autonomous collision avoidance (Starlink-style, already partial); a possible **user-fee** STM utility model | The human-in-the-loop 8-hour poll of this page becomes an M2M negotiation between constellations; the CDM stops being a report a human reads and becomes a message two autonomy stacks exchange |
+
+**Reading the lineage:** every row is a debris event or a governance decision, never a technology push. The CDM format has been near-frozen since 2013 (only corrigenda + the in-progress 508.0-P1.1 revision) precisely because the *hard* problem was never the message schema — it was catalog authority, covariance realism, and the political question of who pays to run the screening. That last question is now live.
+
+### TraCSS 2026 status — fact-check (accessed 2026-07-11)
+
+The prior wiki text across this cluster stated a clean "TraCSS production target 2026." That framing is now stale in an important way: the program nearly did not survive.
+
+- **Near-termination:** NOAA's **FY2026 budget proposal** (released ~June 2025) sought to gut the Office of Space Commerce and **terminate federal funding for TraCSS**, arguing the private sector should absorb the function ([SpaceNews](https://spacenews.com/commerce-department-budget-proposal-would-halt-work-on-tracss/), [Payload](https://payloadspace.com/noaa-proposes-terminating-tracss-program/)).
+- **Congressional rescue:** House and Senate appropriators **restored funding**; the final FY2026 bill provided **$52.5M** to OSC, allowing TraCSS work to continue ([Breaking Defense](https://breakingdefense.com/2025/07/appropriators-restore-funding-for-commerces-tracss-spacewatch-effort/), [SpacePolicyOnline](https://spacepolicyonline.com/news/senate-appropriators-retain-funding-for-noaas-tracss-space-traffic-system/)).
+- **Schedule slip:** the plan to have the initial system "fully operational by January 2026" slipped; work now proceeds more deliberately, with Commerce exploring a "new operating and financial structure" possibly including **user fees**.
+- **Actual footprint (as of June 2026):** TraCSS reports **52 pilot users + 2 National Government Accounts (United Kingdom, Australia)**, together ~**11,125 satellites**, now registering directly through the TraCSS webpage — i.e. an expanded, internationalising beta, *not yet* the finished authoritative replacement for [[entities/space-track-19sds|Space-Track]].
+
+For the Firefly/agent implication: the authoritative CDM endpoint remains **Space-Track (18 SDS)** through at least the near term; do not hard-code a TraCSS.gov cutover date. Full provider-market treatment: [[concepts/conjunction-screening-providers]]; the geopolitics of catalog authority: [[synthesis/space-situational-awareness-six-region]].
+
 ## Pc Thresholds and Operator Action
 
 The [[concepts/pc-probability-of-collision|Pc]] field drives the operational response:
