@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-11] daily-trader | STUB — first run; trader module absent + yfinance proxy-blocked (403). Watchlist seeded (15 tickers: NVDA/AVGO/TSM/AMD/ARM T1; MSFT/GOOGL/AAPL/META/SMCI T2). FOM formula defined. Two blockers documented in [[synthesis/daily-trader-2026-07-11]].
+
 ## [2026-07-11] deepen | Conjunction / Pc collision-avoidance core cluster (CDM / Pc / screening-providers / cdm-pc-decisioning) — historical lineage + TraCSS budget-rescue fact-check + Pc-as-loss-function layer-up
 **Rotation:** picked the **conjunction / Pc collision-decisioning core** — [[concepts/cdm-conjunction-data-message]], [[concepts/pc-probability-of-collision]], [[concepts/conjunction-screening-providers]], [[synthesis/cdm-pc-decisioning]]. Stalest on both criteria: the two central pages (CDM hub + Pc) had their last real content edit **2026-06-15 (~26 days)**, and the 06-20 deepen pass deliberately hit only the *math primitives* ([[concepts/tca-time-of-closest-approach]] / [[concepts/covariance-ellipsoid]] / [[concepts/hard-body-radius]] / [[concepts/screening-volume]]), leaving the decision-core pages untouched. General, citable, public SSA/astrodynamics — no holdings/trade data in scope. **Pages deepened: 3 concepts + 1 synthesis.** No new page (domain already owned by [[synthesis/space-situational-awareness-six-region]] + [[synthesis/commercial-space-traffic-management-six-region]] for the six-region cut, per "new synthesis = new domain only"), so `index.md` + `wiki/AGENTS.md` unchanged. No split (each page stayed one coherent idea).
 
