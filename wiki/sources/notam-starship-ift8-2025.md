@@ -74,6 +74,21 @@ IFT-8's in-flight failure triggered:
 
 This illustrates a key agent heuristic: **a filed NOTAM does not guarantee an imminent launch** when a mishap investigation is open or a license modification is pending.
 
+## 4a. Post-IFT-9 cadence (2025–2026) — extending the case study
+
+Carrying the NOTAM/AHA record forward past this case study (verified against SpaceX/Spaceflight Now/SpacePolicyOnline):
+
+| Flight | Launch (UTC) | NOTAM/AHA note | Outcome |
+|---|---|---|---|
+| **IFT-9** | 2025-05-27 23:36 | NOTAM A1559/25 filed ~14 days early during the mishap hold; new Bahamas/Turks & Caicos AHA | Loss of attitude control; no Starlink-sim deploy |
+| **IFT-10** | 2025-08-26 23:30 | recovered after two August scrubs; standard Gulf + downrange AHA | **Success** — first clean 8-Starlink-sim deploy; B16 hard splashdown |
+| **IFT-11** | 2025-10-13 | nominal single-window attempt; final Block 2 flight | **Success** — booster soft splashdown; ship suborbital splashdown +1h06 |
+| **Flight 12 (V3)** | 2026-05-22 22:30 | scrub 2026-05-21, launched next day; **new Launch Pad 2**; wider AHA for the larger V3 energy | **Partial** — Ship 39 reached payload deploy (20 sims + 2 modified Starlink V3); Booster 19 broke up over the Gulf |
+
+**Two agent-relevant lessons from the extended record:**
+1. **The 7-month IFT-11 → Flight 12 gap was a first-of-type / new-pad bring-up, not a mishap hold** — distinct from the IFT-9 regulatory tail. Agents should separate *investigation-driven* slips (bounded by FAA closure) from *program-schedule* slips (bounded by hardware readiness), which have very different priors.
+2. **AHA grows at each vehicle-version step.** The IFT-9 Bahamas/Turks & Caicos expansion (§6) was the first instance; Starship V3 (407 ft, 33 Raptor 3, ~18M lbf thrust) repeats the pattern from a new pad. Parse and diff the E)-field polygon at each version boundary — a widening hazard area is an early, machine-readable signal of a more energetic vehicle.
+
 ## 5. Agent inference rules
 
 From this case, the mission-desk agent should encode:

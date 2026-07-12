@@ -66,6 +66,23 @@ L-72h (earliest)
 - Backup windows: May 14, 15, 16, 17 at same hours embedded in E) field
 - Actual launch: May 27, 2025 23:36 UTC — the ~2-week gap reflects FAA license modification (May 15) + mishap investigation closure
 
+## 3a. Empirical slip record — Starship 2025 → 2026 (dated)
+
+The single richest public slip dataset is the Starship flight-test campaign. Extending the IFT-8/IFT-9 examples forward gives a full-year cadence the mission-desk agent can calibrate against (all verified against SpaceX/Spaceflight Now/SpacePolicyOnline reporting):
+
+| Flight | Vehicle | Target → actual launch | Slip drivers | Outcome |
+|---|---|---|---|---|
+| **IFT-8** | Block 2 | Feb 28 → **Mar 6, 2025** (6-day slip) | ground spin-start pressure (tech) + weather | Ship lost T+8:26; triggered mishap investigation |
+| **IFT-9** | Block 2 | ~May 13 NOTAM → **May 27, 2025** (~14-day slip) | **regulatory** (IFT-8 mishap closure + license mod May 15) | Launched; loss of attitude control, no Starlink-sim deploy |
+| **IFT-10** | Block 2 | **Aug 26, 2025** | recovered after two Aug scrubs | **Success** — all objectives; first successful 8-Starlink-sim deploy; B16 hard splashdown (no catch) |
+| **IFT-11** | Block 2 (last) | **Oct 13, 2025** | nominal | **Success** — booster soft splashdown, ship suborbital splashdown +1h06; final Block 2 flight; last flight of 2025 |
+| **Flight 12** | **V3** | May 19 → scrub May 21 → **May 22, 2026** | pad/first-of-type readiness (new Launch Pad 2) | **Partial** — Ship 39 reached payload deploy (20 sims + 2 modified Starlink V3); Booster 19 broke up over the Gulf after off-nominal flip |
+
+**Slip patterns the record confirms:**
+- **Regulatory holds dominate the tail.** The two longest slips (IFT-9 ~14 days; the ~7-month IFT-11 → Flight 12 gap) were driven by *mishap investigation + first-of-type vehicle bring-up*, not weather. A filed NOTAM during an open mishap investigation carries `P(launch_in_window) ≈ 0.05` (see [[sources/notam-starship-ift8-2025]] §5).
+- **Cadence maturity lowers per-flight slip risk.** Block 2's mid-campaign flights (IFT-10, IFT-11) launched near their first NOTAM window; the historical Starship scrub weight (`0.35` in §5 below) is dominated by early-campaign and first-of-type flights (IFT-8, Flight 12) and should be **conditioned on vehicle-block maturity**, not applied as a flat constant.
+- **AHA continuity across the version break.** Flight 12 flew from a new pad under the same § 450.161 hazard-area machinery; the V3 vehicle's larger energy (407 ft, 33 Raptor 3, ~18M lbf) widens the debris footprint, so agents should expect the AHA polygon to *grow* at each vehicle-version step (the IFT-9 Bahamas/Turks-&-Caicos expansion was the first instance of this pattern; see [[sources/notam-starship-ift8-2025]] §6).
+
 ## 4. Timeline from L-30 to T-0
 
 | Milestone | Typical calendar | Actor |

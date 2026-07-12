@@ -31,13 +31,18 @@ As of March 10, 2026, all new licenses are issued under 14 CFR **Part 450** (Str
 | **Mission-Specific License** | One launch or reentry operation; typically for novel vehicles/trajectories | Single operation |
 | **Experimental Permit** | R&D / test-to-failure operations; not for revenue payload | Up to 1 year, renewable |
 
-Part 450 licenses issued to date (2025 data): **seven Part 450 licenses**, including Astra Space, ABL Space, Inversion Space, Relativity Space, SpaceX (multiple vehicle types), Stratolaunch, and Varda Space.
+Part 450 licenses issued: an early tranche (Astra Space, ABL Space, Inversion Space, Relativity Space, SpaceX multiple vehicle types, Stratolaunch, Varda Space); by the **March 10, 2026** full-compliance milestone the FAA had issued **14 Part 450 licenses** since the rule took effect in March 2021 (FAA, Mar 2026). All legacy Part 415/417/431/435 licenses were transitioned by the **March 9, 2026** deadline — including Blue Origin New Shepard, Firefly Aerospace Alpha, SpaceX Falcon 9/Falcon Heavy/Dragon, Rocket Lab Electron, and ULA Atlas/Vulcan — so as of 2026 **all** US launch/reentry licensing occurs under Part 450.
+
+## 2a. 2025–2026 record cadence and reform status (dated)
+
+- **Record year (FY2025):** the FAA licensed **>200 commercial space operations** in FY2025 — a record, up from **148 in FY2024** and ~90 in FY2023 — reflecting the SpaceX-driven cadence step-change. The cumulative **1,000th** licensed/permitted operation was recorded **Aug 14, 2025**.
+- **Executive Order "Enabling Competition in the Commercial Space Industry" (2025-08-13):** directs the FAA/DOT (Sec. Sean Duffy, then also Acting NASA Administrator) to *"reevaluate, amend, or rescind"* Part 450 requirements, to consider *less-stringent* licensing tiers for some vehicle classes, and to *"eliminate or expedite"* NEPA/environmental reviews for launch and reentry licensing and spaceport construction. This is the first top-down political mandate to loosen the performance-based regime described below, and the direction of travel is explicitly "default-to-yes." (White House presidential action, 2025-08-13.)
+- **SpARC (Part 450 rulemaking committee):** convened Nov 2024 (Buttigieg-era), industry + academia across nine topics (flight-safety analysis, system safety, means of compliance, etc.); recommendations reported to the FAA in 2025 to seed a future amendment cycle — the amendment now proceeds under the 2025 EO mandate rather than as a routine refresh.
+- **Forward trajectory (labeled projection):** the EO + SpARC pipeline points toward a **tiered Part 450** (proven high-cadence vehicles on a lighter-touch path; novel vehicles retaining full flight-safety analysis) and toward **dynamic/machine-readable hazard products** rather than static day-of-flight NOTAMs — see [[synthesis/space-launch-airspace-integration-six-region]]. The binding long-horizon constraint stays the § 450.101 **EC ≤ 10⁻⁴** public-risk ceiling: deregulation can compress *process* time but cannot legally lower the casualty-expectation gate without new statute.
 
 ## 3. Application timeline
 
-The statutory review period is **180 days** from receipt of a complete application. In 2024 the FAA reported an average of **151 days** for full review. Notable fast-track: Blue Origin New Glenn first launch licensed in **114 days**. For two Part 450 licenses the FAA exceeded the 180-day limit.
-
-The Part 450 Aerospace Rulemaking Committee (ARC) was launched in 2025 to recommend revisions; report expected late summer 2025.
+The statutory review period is **180 days** from receipt of a complete application. In 2024 the FAA reported an average of **151 days** for full review. Notable fast-track: Blue Origin New Glenn first launch licensed in **114 days**. For two Part 450 licenses the FAA exceeded the 180-day limit. The 2025 EO's "expedite environmental review" mandate targets exactly this clock; NEPA/EA determination (step 5 below) has historically been the dominant slip driver in the review chain.
 
 ### Application workflow steps
 

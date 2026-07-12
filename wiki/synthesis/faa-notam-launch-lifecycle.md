@@ -265,6 +265,16 @@ The `launch_planner.py` agent (`agents/src/firefly/agents/launch_planner.py`) sh
 
 The [[concepts/nemoclaw]] OpenShell sandbox provides the network-isolation layer: the agent can reach public FAA endpoints (`notams.aim.faa.gov`) via the credential proxy without exposing auth tokens. The [[concepts/hermes-agent-framework]] learning loop can improve the slip_probability model over time as the agent accumulates launch history in the dataset.
 
+## 11a. 2025–2026 update: FAA reform + empirical Starship cadence (dated)
+
+Two developments since this page's original writing sharpen the slip model:
+
+**Regulatory (deregulatory turn).** Part 450 transition is **complete as of 2026-03-10** — all US launch/reentry licensing now runs under one framework (14 Part 450 licenses issued since 2021; legacy holders — Blue Origin, Firefly Alpha, SpaceX Falcon/Dragon, Rocket Lab Electron, ULA Atlas/Vulcan — transitioned by 2026-03-09). The **EO "Enabling Competition in the Commercial Space Industry" (2025-08-13)** directs the FAA to *"reevaluate, amend, or rescind"* Part 450 and to *"eliminate or expedite"* NEPA reviews; FY2025 set a record at **>200 licensed operations** (vs 148 in FY2024). *Agent implication:* the **environmental-review** and **completeness-check** clocks (the L-90→L-30 band in §3) are the ones being compressed; model shorter *review* latency going forward, but **do not** relax the § 450.101 **EC ≤ 10⁻⁴** flight-commit gate — it is statutory and unchanged, so weather/technical/LCOLA slip drivers keep their full weight. Full detail: [[sources/faa-ast-launch-licensing-2025]] §2a, [[sources/faa-part-450-2020]] §1a.
+
+**Empirical slip record (Starship 2025→2026).** IFT-9 (2025-05-27, ~14-day regulatory slip) → IFT-10 (2025-08-26, success) → IFT-11 (2025-10-13, last Block 2, success) → **Flight 12 / V3** (2026-05-22, partial; new Launch Pad 2). The record confirms two priors the `slip_probability()` model in §10 should encode explicitly: (a) **regulatory/first-of-type holds dominate the long tail** (the two multi-week+ gaps were mishap-closure and V3 bring-up, not weather), so the flat `Starship: 0.35` historical scrub weight should be **conditioned on vehicle-block maturity**; and (b) **the AHA polygon grows at each vehicle-version step** (IFT-9 Bahamas/Turks & Caicos → V3's wider footprint), so diffing the E)-field polygon at version boundaries is a machine-readable early-warning signal. Full record: [[concepts/launch-window-slip]] §3a, [[sources/notam-starship-ift8-2025]] §4a.
+
+**Long-horizon (labeled projection).** The 100-year trajectory of this axis is *static day-of-flight NOTAM → dynamic, machine-readable hazard volume*: as cadence rises past the ~200/yr FY2025 record toward hundreds-per-site, one-launch-one-airspace-closure becomes untenable and the FAA's Time-Based Launch Procedures / dynamic corridors (see [[synthesis/space-launch-airspace-integration-six-region]]) replace the mosaic of TFRs/Warning Areas. The invariant underneath deregulation is physical, not procedural — air and orbit share the same vertical column, and the EC ceiling on third-party casualty risk is the floor no reform can move.
+
 ## 12. Cross-references
 
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Phase 1 (Pre-launch) signals and decision verbs this page supports
