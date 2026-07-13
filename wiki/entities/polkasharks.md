@@ -61,4 +61,12 @@ Practical and educational tone. Frequently includes hands-on wallet/DeFi tutoria
 
 ## Graph role
 
-Polkasharks is the Chinese/Taiwanese education bridge into the [[entities/polkadot]] knowledge cluster. Compare with [[entities/polkaworld]] for Asia-wide community operations, [[entities/dotleap-gbaci]] for English weekly ecosystem aggregation, [[entities/shawn-tabrizi]] for developer-facing technical education, and [[entities/bill-laboon]] for Web3 Foundation education/governance coordination.
+Polkasharks is the Chinese/Taiwanese education bridge into the [[entities/polkadot]] knowledge cluster. Compare with [[entities/polkaworld]] for Asia-wide community operations, [[entities/dotleap-gbaci]] for English weekly ecosystem aggregation, [[entities/shawn-tabrizi]] for developer-facing technical education, and [[entities/bill-laboon]] for Web3 Foundation education/governance coordination. Within the six-region adoption map (see [[entities/polkadot]] and [[synthesis/polkadot-2026-jam-tokenomics-six-region]]), Polkasharks + [[entities/sampras]] are the Taiwan education/civic-tech node.
+
+## Related
+
+Concepts this creator has covered (topic → canonical page):
+
+- [[concepts/hydration-omnipool]] (EP3) · [[concepts/agile-coretime]] (EP6) · [[concepts/regionx]] (EP7) · [[concepts/jam]] (JAM deep-dive) · [[entities/mythical-games]] (EP4)
+- [[entities/gavin-wood]] · [[entities/polkadot]]
+- Domain frame: [[synthesis/polkadot-2026-jam-tokenomics-six-region]], [[synthesis/polkadot-interoperability-defi-coretime-app-layer]]

@@ -62,3 +62,5 @@ PolkaWorld translates key Polkadot content into Chinese and produces original an
 - [[concepts/jam]]
 - [[concepts/agile-coretime]]
 - [[concepts/proof-of-personhood]]
+- [[synthesis/polkadot-2026-jam-tokenomics-six-region]] — the macro frame; PolkaWorld is the China education/community node in its six-region map
+- [[synthesis/polkadot-interoperability-defi-coretime-app-layer]] — app-layer companion

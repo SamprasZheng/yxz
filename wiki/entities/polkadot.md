@@ -34,22 +34,22 @@ Layer-0 blockchain protocol enabling interoperability between heterogeneous bloc
 - **Multi-Chain Rally (early 2026)**: 100,000+ TPS without raising user fees
 - **Second Era** announced (Berlin Web3 Summit, July 2025): [[concepts/dot-hard-cap]], [[concepts/proof-of-personhood]], pUSD stablecoin, validator reward halving
 
-## Technology roadmap
+## Technology roadmap (status verified 2026-07-13)
 
-| Feature | Status (updated 2026) |
+| Feature | Status |
 |---|---|
 | Async Backing | ✅ Shipped |
 | Agile Coretime | ✅ Shipped |
 | Elastic Scaling | ✅ Shipped |
 | Polkadot Hub (Revive / PolkaVM) | ✅ Shipped 2025 |
-| DOT Hard Cap (2.1B) | ✅ March 2026 |
+| [[concepts/dot-hard-cap]] (2.1 B), first issuance cut | ✅ **LIVE** — runtime upgrade enacted 2026-03-12, mechanics from 2026-03-14 ("Pi Day"); issuance ~120 M → ~56.88 M DOT/yr, net inflation ~3.1%, circulating ~1.68 B (~80% of cap) — see [[concepts/dot-hard-cap]] for canonical numbers |
+| [[concepts/jam]] **open testnet** | ✅ **January 2026** (~43 teams / 15 languages / 10 M DOT prize) |
+| [[concepts/jam]] Gray Paper → v1.0 | 🔜 pre-audit near-final draft early 2026 (was v0.8 late 2025); v1.0 = the audit/mainnet gate |
+| [[concepts/jam]] mainnet | 🔜 **milestone-gated, not calendar-gated** — advances M1 (conformance) → M4 (full-speed + professional security audit) then an OpenGov referendum; core devs estimate ~12–20 months from early 2026, i.e. realistically **late-2026 → 2027**, *not* a clean "2026 launch" |
+| [[concepts/proof-of-personhood]] (Project Individuality) | 🔜 phased 2026 — DIM1 (unique-human) Q1, DIM2 (verified-individual) Q2, full deployment targeted Q3; Ref. 1783 $3 M funding; "fairest airdrop ever" framing |
 | NOMT (~10× TPS boost) | 🔜 2026 |
 | 500ms BASTI blocks | 🔜 2026 |
 | CoreChain Phase 1 | 🔜 2026 |
-| [[concepts/jam]] **open testnet** | ✅ **January 2026** (~43 teams / 15 languages / 10 M DOT prize) |
-| [[concepts/jam]] mainnet | 🔜 2026 target, via OpenGov referendum |
-| [[concepts/dot-hard-cap]] (2.1 B), first issuance cut | 🔜 **2026-03-14** (Ref. 1710, "Wish for Change", 81%) |
-| [[concepts/proof-of-personhood]] (Project Individuality) | 🔜 DIM1 from Q4 2025; Ref. 1783 $3 M funding |
 
 ## Key ecosystem projects
 
@@ -61,12 +61,14 @@ Layer-0 blockchain protocol enabling interoperability between heterogeneous bloc
 
 ## Six-region adoption & regulatory map (2026 — 台美日韓中國歐洲)
 
-Polkadot is a globally-distributed protocol; its development, capital, regulation, and community sit in different places. Snapshot as of mid-2026:
+> **Canonical synthesis:** for the full unifying frame, read [[synthesis/polkadot-2026-jam-tokenomics-six-region]] (scarce token + durable blockspace + verified-human demand, six-region adoption, 100-year fee-funded-security question) and its app-layer companion [[synthesis/polkadot-interoperability-defi-coretime-app-layer]] (interop / DeFi / coretime-market pillars). The table below is the entity-level snapshot; the synthesis pages carry the comparative scorecards and falsifier tables.
+
+Polkadot is a globally-distributed protocol; its development, capital, regulation, and community sit in different places. Snapshot verified 2026-07-13:
 
 | Region | Role in the Polkadot stack | 2026 regulatory / market state | Lead nodes |
 |---|---|---|---|
 | **Europe** | **Core development & governance home.** Web3 Foundation (Zug, Switzerland); Parity Technologies (Berlin/London). JAM Gray Paper, runtime, and OpenGov tooling originate here. | Swiss FINMA token clarity; EU MiCA fully in force; eIDAS 2.0 EUDI wallets due Dec 2026 (relevant to [[concepts/proof-of-personhood]]) | Web3 Foundation, Parity, [[entities/gavin-wood]] |
-| **US** | **Capital-markets gateway, regulatory-constrained.** No US-based core dev; main story is institutional access. | **DOT spot-ETF filings pending** — 21Shares (S-1, Jan 2026) + Grayscale via Nasdaq (19b-4); SEC decisions repeatedly extended through 2025–2026; Bloomberg analysts rate odds "pretty good." Net: access improving, dev presence thin. | 21Shares, Grayscale/Nasdaq |
+| **US** | **Capital-markets gateway, now with a live spot vehicle.** No US-based core dev; the story is institutional access, which crossed a threshold in Q1 2026. | **First US spot DOT ETF is LIVE:** 21Shares **TDOT** listed on **Nasdaq 2026-03-06** (seeded ~$11 M, 0.30% fee, physically-backed under the '33 Act) — the first US spot Polkadot ETF; Grayscale's competing DOT ETF followed via Nasdaq 19b-4. Net: access is no longer "pending" — it shipped; dev presence still thin. | 21Shares (TDOT/Nasdaq), Grayscale/Nasdaq |
 | **Japan** | **Strongest Asian app-chain ecosystem.** [[entities/polkadot]] → **Astar Network** (Sota Watanabe / Startale Labs) is the enterprise/gaming gateway, dual-deployed Polkadot + Ethereum. | Sony Innovation Fund led **$13 M into Startale (Jan 2026)**; Astar fixed-supply 10 B ASTR from March 2026; FSA **"Digital Year-One"** crypto reform | Astar, Startale, Sony Soneium (adjacent) |
 | **Korea** | **Retail-liquidity & exchange demand.** Strong retail trading; DOT listed on major won-pairs. | Bank-linked real-name exchange rules; tightening institutional framework 2025–2026 | Upbit/Bithumb listings |
 | **China** | **Developer & education base under a trading ban.** Crypto trading banned (2021) but Mandarin dev/education community remains substantial. | Trading prohibited; mainland real-name-ID regime hostile to permissionless PoP; activity routes via HK | [[entities/polkaworld]] (co-hosted Gavin's China JAM tour, 874 attendees) |
@@ -96,3 +98,10 @@ The wiki's Polkadot graph has three knowledge channels:
 - [[concepts/xcm]]
 - [[concepts/dot-hard-cap]]
 - [[concepts/proof-of-personhood]]
+- [[concepts/hydration-omnipool]] — largest DeFi protocol on Polkadot
+- [[concepts/regionx]] — coretime secondary market
+
+## Canonical synthesis
+
+- [[synthesis/polkadot-2026-jam-tokenomics-six-region]] — the 2026 macro frame (tokenomics × JAM × PoP × six regions)
+- [[synthesis/polkadot-interoperability-defi-coretime-app-layer]] — the app-layer companion (interop / DeFi / coretime market)
