@@ -1,0 +1,37 @@
+{
+  "run_date": "2026-07-14",
+  "run_mode": "STUB — offline fallback",
+  "blockers": [
+    {
+      "component": "yfinance / Yahoo Finance API",
+      "detail": "Proxy denied CONNECT to fc.yahoo.com:443 with HTTP 403. All price fetches failed.",
+      "action": "Continued with N/A data; FOM framework documented for future runs with live data."
+    },
+    {
+      "component": "agents/src/trader pipeline",
+      "detail": "No trader sub-module exists under agents/src/. Only the firefly orbital pipeline is present. The LLM-powered scan (thesis, news_scout, sizing_sigma) could not be executed.",
+      "action": "Seed tickers hardcoded; all scan verdicts set to N/A."
+    },
+    {
+      "component": "LLM_BACKEND=anthropic trader scan",
+      "detail": "trader CLI entrypoint does not exist (no agents/src/trader/cli.py).",
+      "action": "Skipped; fallback to stub report."
+    }
+  ],
+  "watchlist": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+  "prior_backtest": null,
+  "scan_verdicts": {
+    "NVDA": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": "N/A — no pipeline"},
+    "AAPL": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": "N/A — no pipeline"},
+    "TSLA": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": "N/A — no pipeline"},
+    "MSFT": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": "N/A — no pipeline"},
+    "AMD":  {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": "N/A — no pipeline"},
+    "GOOGL":{"direction": null, "confidence": null, "sizing_sigma": null, "thesis": "N/A — no pipeline"},
+    "META": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": "N/A — no pipeline"},
+    "AMZN": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": "N/A — no pipeline"}
+  },
+  "fom_scores": null,
+  "tier_1": [],
+  "tier_2": [],
+  "notes": "First-ever run. All components blocked. See wiki/synthesis/daily-trader-2026-07-14.md for full report and remediation checklist."
+}
