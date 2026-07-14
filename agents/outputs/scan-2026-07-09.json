@@ -1,0 +1,125 @@
+{
+  "scan_date": "2026-07-09",
+  "pipeline_note": "STUB: agents/src/trader/ does not exist (only Firefly implemented). yfinance blocked by proxy (CONNECT 403). Data sourced via WebSearch. LLM_BACKEND=disabled/offline.",
+  "blockers": [
+    "agents/src/trader/ pipeline not implemented — referenced CLI/orchestrator/schemas do not exist",
+    "yfinance blocked by network proxy (HTTP 403 CONNECT tunnel failure on Yahoo Finance endpoints)",
+    "No prior daily-trader-*.md found — backtest skipped (first run)"
+  ],
+  "data_source": "WebSearch (CNBC/Yahoo Finance/Motley Fool/TradingKey/Options Trading Report, accessed 2026-07-09)",
+  "tickers": {
+    "NVDA": {
+      "close_prev": 204.13,
+      "price_today": 204.27,
+      "pct_1d": 0.07,
+      "pct_streak": "+3 consecutive days (Jul 7-9); +3.65% on Jul 8",
+      "52wk_range": "158.39-236.54",
+      "direction": "long",
+      "confidence": 0.62,
+      "sizing_sigma": 0.80,
+      "news_momentum": 0.60,
+      "thesis": "Goldman Sachs: 21.7x P/E compelling post-Kyber delay denial. 3-day gain streak, moderate upward momentum. Still ~14% below 52-week high.",
+      "risks": "Below 52-week high; Kyber delay is a near-term overhang"
+    },
+    "AAPL": {
+      "close_prev": 314.71,
+      "price_today": 312.30,
+      "pct_1d": -0.77,
+      "intraday_range": "307.05-314.81",
+      "direction": "abstain",
+      "confidence": 0.45,
+      "sizing_sigma": 0.60,
+      "news_momentum": 0.30,
+      "thesis": "Quiet news day. Down -0.77% with limited catalyst. No near-term event to trade around.",
+      "risks": "N/A — low news flow, sideways action"
+    },
+    "TSLA": {
+      "close_prev": 393.45,
+      "price_today": 419.82,
+      "pct_1d": 6.71,
+      "direction": "abstain",
+      "confidence": 0.50,
+      "sizing_sigma": 1.00,
+      "news_momentum": 0.50,
+      "thesis": "Triple catalyst bounce: Miami robotaxi debut Jul 5, European registrations +57.2% YoY, NHTSA closed 2022 investigation. RBC raised PT to $500. BUT: P/E 381x, EPS -46.79% YoY, revenue -2.93% YoY. Intraday bearish signals post-bounce.",
+      "risks": "Fundamental deterioration; high multiple at risk if sentiment shifts; still below prior $432 high",
+      "rbc_target": 500
+    },
+    "MSFT": {
+      "close_prev": 383.34,
+      "price_today": 384.25,
+      "pct_1d": 0.24,
+      "intraday_range": "373.35-384.65",
+      "direction": "abstain",
+      "confidence": 0.50,
+      "sizing_sigma": 0.65,
+      "news_momentum": 0.20,
+      "thesis": "Near-flat on the day. Headwind: Bloomberg report that Starbucks is replacing Microsoft/IBM software with in-house AI — signals enterprise churn risk at the margin.",
+      "risks": "Enterprise AI replacement narrative if Starbucks story generalizes"
+    },
+    "AMD": {
+      "close_prev": 517.44,
+      "price_today": 553.94,
+      "pct_1d": 7.06,
+      "ytd_pct": 142.0,
+      "direction": "long",
+      "confidence": 0.72,
+      "sizing_sigma": 1.20,
+      "news_momentum": 0.90,
+      "thesis": "Advancing AI 2026 event Jul 22-23 (Lisa Su keynote, SF); MI450 GPU ramp + Helios rack-scale H2 2026 visibility; Q2 earnings Aug 4. Goldman: durable server CPU demand. 142% YTD — event is a clear near-term catalyst.",
+      "risks": "P/E 75x — event disappointment = sharp reversal. Already up 7% today, partial buy-in risk",
+      "catalyst_date": "2026-07-22",
+      "earnings_date": "2026-08-04"
+    },
+    "GOOGL": {
+      "close_prev": 351.70,
+      "price_today": 350.00,
+      "pct_1d": -0.49,
+      "direction": "abstain",
+      "confidence": 0.50,
+      "sizing_sigma": 0.65,
+      "news_momentum": 0.30,
+      "thesis": "META cloud announcement is a competitive headwind (cloud revenue share at risk). Down 2.0% yesterday. No positive catalyst visible today.",
+      "risks": "META cloud buildout accelerating competitive dynamic for GCP"
+    },
+    "META": {
+      "close_prev": 614.86,
+      "price_today": 651.75,
+      "pct_1d": 6.00,
+      "direction": "long",
+      "confidence": 0.75,
+      "sizing_sigma": 1.00,
+      "news_momentum": 0.95,
+      "thesis": "Major catalyst: META announced cloud computing division to compete with AWS/Azure/GCP. Plan to lease excess data center capacity to recoup capex. Jumped ~6% pre-market. Strong conviction on infrastructure monetization narrative.",
+      "risks": "Cloud buildout is capital-intensive; stock already up 6% — buy-in risk; sell-the-news dynamic possible",
+      "headline": "Meta announces cloud computing plans to rival Amazon, Microsoft"
+    },
+    "AMZN": {
+      "close_prev": 242.63,
+      "price_today": 243.00,
+      "pct_1d": 0.15,
+      "direction": "abstain",
+      "confidence": 0.50,
+      "sizing_sigma": 0.65,
+      "news_momentum": 0.25,
+      "thesis": "Near-flat. META cloud announcement is a headwind for AWS (competitive dynamic). Down 0.4% yesterday. No positive catalyst.",
+      "risks": "If META cloud gains traction, AWS market share narrative weakens at the margin"
+    }
+  },
+  "fom_table": {
+    "formula": "FOM = 0.4*confidence + 0.3*norm_sizing_sigma + 0.2*recent_hit_rate + 0.1*news_momentum",
+    "normalization": "norm_sizing_sigma = sizing_sigma / 1.20 (max sigma in watchlist). recent_hit_rate = 0.5 (neutral, no backtest history — first run).",
+    "results": [
+      {"ticker": "AMD",   "confidence": 0.72, "norm_sigma": 1.000, "hit_rate": 0.5, "news": 0.90, "fom": 0.778, "tier": "tier-1"},
+      {"ticker": "META",  "confidence": 0.75, "norm_sigma": 0.833, "hit_rate": 0.5, "news": 0.95, "fom": 0.745, "tier": "tier-1"},
+      {"ticker": "NVDA",  "confidence": 0.62, "norm_sigma": 0.667, "hit_rate": 0.5, "news": 0.60, "fom": 0.608, "tier": "tier-1"},
+      {"ticker": "TSLA",  "confidence": 0.50, "norm_sigma": 0.833, "hit_rate": 0.5, "news": 0.50, "fom": 0.600, "tier": "tier-1"},
+      {"ticker": "GOOGL", "confidence": 0.50, "norm_sigma": 0.542, "hit_rate": 0.5, "news": 0.30, "fom": 0.493, "tier": "tier-1"},
+      {"ticker": "AMZN",  "confidence": 0.50, "norm_sigma": 0.542, "hit_rate": 0.5, "news": 0.25, "fom": 0.488, "tier": "tier-2"},
+      {"ticker": "MSFT",  "confidence": 0.50, "norm_sigma": 0.542, "hit_rate": 0.5, "news": 0.20, "fom": 0.483, "tier": "tier-2"},
+      {"ticker": "AAPL",  "confidence": 0.45, "norm_sigma": 0.500, "hit_rate": 0.5, "news": 0.30, "fom": 0.460, "tier": "tier-2"}
+    ]
+  },
+  "backtest": null,
+  "backtest_note": "No prior daily-trader-*.md found. First run — backtest not possible. Start tracking from 2026-07-09 verdicts."
+}
