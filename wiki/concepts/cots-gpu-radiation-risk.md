@@ -25,7 +25,7 @@ Modern AI GPUs (NVIDIA H100, Jetson AGX Orin, etc.) deployed to LEO as COTS comp
 - Function: can detect and correct single-bit upsets (SEU) in real time
 
 **Critical weaknesses (unprotected)**:
-- **TID (Total Ionizing Dose)**: no hardening; 4nm process has thin oxide layers, but thinner oxide layers actually have relatively better TID tolerance (counterintuitive)
+- **TID (Total Ionizing Dose)**: no hardening; the H100 is fabbed on **TSMC 4N** (a 5 nm-class node). Its thin gate oxide is actually relatively TID-*tolerant* — but that is only the gate-oxide half of the **two-oxide story**: the offsetting failure path is radiation-induced leakage in the shallow-trench-isolation (STI) oxide, which does not scale. See [[concepts/tid-total-ionizing-dose]] scaling section.
 - **SEL (Single Event Latchup)**: no protection; COTS CMOS contains parasitic PNPN structures
 - **SEGR (Gate Rupture)**: no protection
 
@@ -89,6 +89,54 @@ Modern AI GPUs (NVIDIA H100, Jetson AGX Orin, etc.) deployed to LEO as COTS comp
 
 The NewSpace economics that put H100s and Orins in orbit ([[entities/starcloud]], [[concepts/orbital-data-center]]) shift the work from *"buy a qualified rad-hard part"* to *"upscreen a commercial lot"* ([[concepts/rha-radiation-hardening]]). Counter-intuitively this makes the **heavy-ion accelerator the binding constraint, not the fab**: every unqualified COTS lot now needs its own SEU/SEL cross-section curve, so beam-hour demand rises per program even as unit cost falls. This is why *who owns heavy-ion test capacity* is a strategic question, not a procurement detail — and why Taiwan's missing heavy-ion lane bites its AI-in-orbit ambitions specifically. Six-region map of who owns that capacity: [[synthesis/radiation-test-rad-hard-six-region]].
 
+## Public Radiation-Evidence Ledger for Flown/Planned COTS AI Compute (向外抓取 — 數據查核)
+
+What is actually *published* about the radiation survival of data-center-class COTS AI accelerators is thin and vendor-controlled. This ledger tracks the disclosed hard numbers as of 2026-07 — the honest state of the evidence, not marketing:
+
+| Payload | Part | Radiation data disclosed | Source |
+|---|---|---|---|
+| **Starcloud-1** (LEO, launched 2025-11) | NVIDIA H100 (TSMC 4N) | Operated through launch + on-orbit; trained NanoGPT and ran Google Gemma / Gemini in orbit (first LLM *trained* in space, Dec 2025). Carries radiation shielding + ISS-heritage cooling. **No on-orbit SEU/SEL/TID rates released.** | [DCD](https://www.datacenterdynamics.com/en/news/starcloud-1-satellite-reaches-space-with-nvidia-h100-gpu-now-operating-in-orbit/) |
+| **Project Suncatcher** (planned 2027) | Google Trillium TPU v6e | **Ground beam test (only quantified public data):** 67 MeV proton; **no TID-attributable hard failure to 15 krad(Si)/chip**; **HBM = most sensitive subsystem**, first irregularities at ~2 krad(Si) ≈ **3× the shielded 5-yr mission dose of 750 rad(Si)** | [Google Research](https://research.google/blog/exploring-a-space-based-scalable-ai-infrastructure-system-design/) |
+| **Aitech S-A2300** | Jetson AGX Orin Industrial | Co-60 TID to 10 krad(Si) bare / 20 krad w/ 5–7.5 mm Al; **no SEE data** (see section above) | Aitech (2025-05) |
+| **Three-Body / Star-Compute** (China, 12 sats launched 2025-05-14) | Undisclosed (likely domestic; NVIDIA leading-node export-controlled) | Deployed at scale (5 POPS combined, 30 TB storage); **radiation approach not publicly disclosed** | [SpaceNews](https://spacenews.com/china-launches-first-of-2800-satellites-for-ai-space-computing-constellation/) |
+
+**Reading:** the only *quantified beam* datum in public is Google's Trillium result, and it **confirms the wiki's standing thesis — HBM is the binding TID-sensitive subsystem**, degrading ~3× sooner than the logic. Starcloud's flight is an *existence proof, not a dataset*: no on-orbit error rates have been released, so the single most important number in LEO AI computing — the actual on-orbit SEU/SEL rate of a leading-node GPU — **remains unpublished** (the same data gap flagged in the Starcloud section above, now confirmed still-open one flight later). Next data points to watch: **Starcloud-2** (planned late 2026, NVIDIA Blackwell B200, ~100× power of Starcloud-1) and the Suncatcher on-orbit prototypes (early 2027).
+
+## Historical Lineage: From Rad-Hard-Only to COTS-in-Orbit (拉長時間軸)
+
+| Era | Doctrine | Driver |
+|---|---|---|
+| **1970s–2000s** | **Rad-hard-only** — fly only RHBD/RHBP parts (RAD750, RAD5545), 2–3 process nodes behind commercial, at 10–100× the price | Starfish-Prime-era total-loss experience ([[concepts/tid-total-ionizing-dose]] lineage); mil/gov single-satellite missions where failure = mission loss |
+| **2000s–2010s** | **COTS-tolerant CubeSat era** — universities + NewSpace fly automotive/industrial COTS in LEO, accept higher part-failure, lean on redundancy | Launch-cost collapse; short missions; smallsat *statistics* make per-unit failure survivable |
+| **2020–2024** | **COTS-for-payload-compute** — Snapdragon/edge-AI accelerators on smallsats for on-board inference (still not data-center class) | On-board autonomy + edge-inference demand |
+| **2025–2026** | **Data-center-class COTS in orbit** — H100 (Starcloud-1, 2025-11), Trillium (Suncatcher), Orin (Aitech), B200 (Starcloud-2 planned) | ODC economics + terrestrial AI compute/power crunch; the "recompute is cheaper than rad-harden" bet |
+
+The 60-year arc is a steady **relaxation of the rad-hard requirement** as mission economics shift from *"one satellite, cannot fail"* to *"a constellation, designed to tolerate failures."* COTS-in-orbit is not a radiation *solution* — it is a change in what counts as acceptable failure.
+
+## Six-Region Radiation Strategy for Orbital AI Compute (台美日韓中國歐洲)
+
+The ODC *player/capability* map lives on [[synthesis/orbital-data-center-six-region]]; the distinct, less-duplicated axis here is each region's **radiation-survival strategy** for its flown/planned AI-compute payloads:
+
+| Region | Lead payload | Radiation strategy | Public evidence |
+|---|---|---|---|
+| **US** | [[entities/starcloud]] (H100→B200), [[entities/google-suncatcher]] (Trillium), [[entities/axiom-space]] (AxDCU) | **COTS + shielding + external SEL-cutoff + software ECC/retry** — "characterize-and-tolerate" | **Strongest** — only region publishing beam data (Google) *and* a flight existence proof (Starcloud) |
+| **China** | [[entities/ada-space]] / Zhejiang Lab Three-Body (12 sats 2025 → 2,800 ~2035) | Deployed at the **largest scale**; parts likely domestic (leading NVIDIA silicon export-controlled); methodology closed | Scale-first; radiation approach **undisclosed** |
+| **Europe** | Thales Alenia **ASCEND** (study, ROI-by-2050) | ESA rad-hard heritage → likely **qualified-parts/conservative** bias; net-zero-anchored | Study-stage; no flown AI-compute payload yet |
+| **Japan** | NTT × SKY Perfect JSAT **Space Compass** (optical-relay edge fabric) | **Edge/relay** rather than in-orbit training → smaller radiation-exposure surface | Relay-first |
+| **Korea** | Hanwha / KARI (bus, SAR, AI-analytics supply) | Supply-side + **AI-on-imagery at the edge** | Component/analytics |
+| **Taiwan** | ❌ no sovereign ODC compute payload | Upstream-supply/midstream-absent; the **missing heavy-ion + rad-hard lane** ([[concepts/rha-radiation-hardening]]) specifically caps any domestic AI-in-orbit program | — |
+
+The split maps onto two camps: **US "characterize-and-tolerate COTS"** vs **everyone-else "conservative-or-undisclosed,"** and it is the *US* camp generating the only public radiation-survival data — an openness asymmetry that mirrors the model-layer one on [[synthesis/open-weight-llm-agent-stack-six-region]] but **inverted** (here the US is the *open* discloser, China the closed one).
+
+## 100-Year Structural View (labelled scenario, not fact)
+
+COTS-in-orbit is fundamentally a bet that **recompute is cheaper than radiation-hardening** — that at constellation scale it is more economic to let parts upset/degrade and recover in software (ECC, retry, checkpoint-restart, redundant nodes) than to pay the 10–100× rad-hard premium and fly 2–3 nodes behind. Two forces decide the century:
+
+- **If the bet holds:** the rad-hard-IC industry shrinks to a deep-space/mil niche while LEO compute runs on N−1-generation commercial silicon, and the binding constraints stay **HBM/back-end-memory TID** (the Trillium result) plus **heat rejection** (σT⁴, the ODC ceiling on [[synthesis/orbital-data-center-six-region]]) — *never* the logic node.
+- **If it fails** (an un-mitigated [[concepts/see-single-event-effects|SEL]] destroys a flagship node, or a solar-particle-event dose spike overwhelms software recovery — see [[concepts/solar-cycle-25-leo-radiation]]): the pendulum swings back toward qualified parts, and Taiwan's absent heavy-ion/rad-hard lane becomes a **hard** gate rather than a soft one.
+
+Either way the astrophysical forcing (GCR + trapped belts + solar cycle) is fixed for the century; only the **device-side economics** move. This is the applied-compute instance of the "qualification toll booth never closes" invariant ([[synthesis/radiation-test-rad-hard-six-region]]) — the toll is now paid in *software resilience budget* instead of *rad-hard silicon premium*, but it is never waived.
+
 ## Related
 
 - [[concepts/see-single-event-effects]] — SEU/SEL fundamental mechanisms
@@ -97,5 +145,10 @@ The NewSpace economics that put H100s and Orins in orbit ([[entities/starcloud]]
 - [[concepts/orbital-data-center]] — overall ODC engineering challenge framework
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 peak multiplier effect on GPU on-orbit risk
 - [[synthesis/radiation-test-rad-hard-six-region]] — six-region heavy-ion test capacity + rad-hard supply; why COTS-upscreen raises beam demand
-- [[entities/starcloud]] — H100-in-orbit operator whose COTS-everything model drives the bottleneck above
+- [[synthesis/orbital-data-center-six-region]] — the ODC player/capability map; radiation-strategy companion to the six-region table above
+- [[synthesis/open-weight-llm-agent-stack-six-region]] — the (inverted) openness-asymmetry analogue referenced in the six-region reading
+- [[entities/starcloud]] — H100-in-orbit operator (Starcloud-1 flew Nov 2025; Starcloud-2/B200 next) whose COTS-everything model drives the bottleneck above
+- [[entities/google-suncatcher]] — Trillium TPU 67 MeV-proton beam result: the only quantified public radiation datum in the ledger above
+- [[entities/axiom-space]] — relay-networked-edge ODC node (US six-region column)
+- [[entities/ada-space]] — China's state-scaled Three-Body/Star-Compute AI constellation (radiation approach undisclosed)
 - [[sources/space-radiation-tid-see-2025]]
