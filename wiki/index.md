@@ -33,6 +33,7 @@ type: index
 - [[sources/nemoclaw-build-a-claw-portal-2026]] — NVIDIA "Build-a-Claw" onboarding portal: Brev / DGX Spark / Jetson install paths (2026)
 - [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
 - [[sources/noaa-swpc-product-catalog]] — NOAA SWPC product and data catalog: full JSON URL table with cadences for all operational space weather feeds (ingested 2026-05-24)
+- [[sources/kol-digest-2026-07-15]] — KOL + keyword digest 2026-07-15: 11 keywords swept (AI agents / Claude Code / Anthropic / OpenAI / Polkadot / OpenClaw / NemoClaw / Plurality / Audrey Tang / NVIDIA Nemotron / PolkaSharks); KOL list empty; top signals: China humanlike-agent rules, Anthropic Sonnet 5 default, Nemotron 3 LangChain benchmark, DOT ATL + Moonbeam shutdown, Audrey Tang at WebX2026
 
 - [[sources/msbai-orbitguard-dod-contract-2025]] — MSBAI OrbitGuard $1.2M DoD SBIR (Sept 2025): JEPA + MARL neuro-symbolic SDA copilot; 94–98% lab accuracy across ~15,000 objects; AMOS 2025 poster; CEO Grosvenor verbatim quote (ingested 2026-05-24)
 - [[sources/scnoc-agentic-sun-2025]] — SCNOC-Agentic paper (Electronics 2025, 14(16), 3320): first LLM multi-agent framework for satellite communications NetOps; four components (intent refinement / multi-agent workflow / long-term memory / graph-RAG); qwen2.5-70B improved network task planning accuracy 15.6%→32.2% (ingested 2026-05-24)
