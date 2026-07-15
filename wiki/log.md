@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-15] daily-trader BLOCKED | Run #1 stub — trader module missing + yfinance proxy-blocked (fc.yahoo.com 403); seed watchlist 8 tickers (NVDA/AAPL/TSLA/MSFT/AMD/GOOGL/META/AMZN), FOM formula documented, 6 action items for unblocking run #2
+
 ## [2026-07-15] deepen | LEO / Orbital Data Center cluster — the Asia rows (Japan + Korea + China cadence): Hanwha $36B ODC entity split, Space Compass demo→procurement, ADA–Tencent + H2-2026 scale-up
 **Rotation:** picked the **LEO / Orbital Data Center cluster** — the stalest standalone domain (last real deepen **2026-06-30**, ~15 days; every other domain touched 07-01→07-14). Yesterday's 07-14 radiation pass touched [[entities/ada-space]] / [[entities/google-suncatcher]] / [[entities/starcloud]] but strictly from the **radiation-strategy** angle (beam data, SEL/TID); this pass is the orthogonal **ODC-player / deployment** angle — no re-tread. Within the cluster the **US rows were fresh** (Starcloud/Axiom refreshed 06-30) and the **thinnest, most-outbound-stub sections were the two Asia rows** (Japan "demo-stage", Korea "enabling layer, not ODC operator") plus China's stale cadence — that was the target. Public/citable ODC research only; no holdings/trade data; `agents/` read-only (untouched); no trader/KOL/maintenance namespaces touched; explicit `git add` of only the wiki files changed.
 
