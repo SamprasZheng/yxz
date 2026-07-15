@@ -21,9 +21,16 @@ Chinese space-computing company (ADA Space / 国星宇航) executing the largest
 | Target constellation size | **2,800 satellites** |
 | Full-network target compute | **≈1,000 POPS** (one quintillion ops/s) |
 
-## In-Orbit Status (2026-06)
+## In-Orbit Status (2026-07)
 
-The first 12 satellites have been on orbit for roughly **nine months** (launched 2025-05-14) and ADA Space / Zhejiang Lab report they have **demonstrated the constellation's core capabilities** (onboard processing, ISL, edge inference). The wider Chinese space-compute push was a headline theme at the **2026 Space Computing Industry Conference (April 2026)**, and reporting indicates Beijing is moving to **coordinate/manage** the several competing orbital-compute efforts — i.e. the program is transitioning from first-launch demonstration toward managed scale-up. This keeps China in the **"leads on deployed scale"** seat of the six-region map: it remains the only actor with a *dedicated compute constellation already operating in orbit*.
+The first 12 satellites have been on orbit for roughly **fourteen months** (launched 2025-05-14) and ADA Space / Zhejiang Lab report they have **demonstrated the constellation's core capabilities** (onboard processing, ISL, edge inference) — including a reported demonstration of **tasking robots on Earth from orbit**. The wider Chinese space-compute push was a headline theme at the **2026 Space Computing Industry Conference (April 2026)**, and Beijing is moving to **coordinate/manage** the several competing orbital-compute efforts — i.e. the program is transitioning from first-launch demonstration toward managed scale-up.
+
+Two 2026 developments extend this:
+
+- **Commercial pull-through (2026-06-05):** ADA Space signed a **strategic AI cooperation agreement with Tencent**, letting Tencent tap the constellation's on-orbit compute — the first named hyperscale-tier customer for a flying compute constellation, and evidence the "state-directed" read now carries a commercial-demand arm ([china-in-space](https://www.china-in-space.com/p/ada-space-signs-strategic-ai-agreement)).
+- **Scale-up cadence (2026 H2):** the **second and third satellite groups** are slated to launch later in 2026 — the **third group ≈14 satellites, ~3,000 kg to a 525 km SSO, in Q4 2026** — boosting combined compute and the number of concurrently deployable models.
+
+The revised deployment staging is now **~1,000 satellites by 2030 → 2,800 by ~2035** (previously stated as "2,800 planned" without a clear year). This keeps China in the **"leads on deployed scale"** seat of the six-region map ([[synthesis/orbital-data-center-six-region]]): it remains the only actor with a *dedicated compute constellation already operating in orbit*, now with a named commercial customer and a concrete H2-2026 scale-up. Sources: [china-in-space](https://www.china-in-space.com/p/ada-space-eyes-launching-2800-ai), [SpaceNews (2025-05)](https://spacenews.com/china-launches-first-of-2800-satellites-for-ai-space-computing-constellation/), [Live Science](https://www.livescience.com/technology/computing/china-is-building-a-constellation-of-ai-supercomputers-in-space-and-just-launched-the-first-pieces) (all accessed 2026-07-15).
 
 ## Strategic Positioning
 
@@ -50,7 +57,7 @@ ADA Space is the reason the ODC race is not a US-only story. In the six-region m
 
 ## Related Entities
 
-- [[entities/starcloud]], [[entities/google-suncatcher]], [[entities/axiom-space]]
+- [[entities/starcloud]], [[entities/google-suncatcher]], [[entities/axiom-space]], [[entities/hanwha-aerospace]]
 
 ## Related Synthesis
 

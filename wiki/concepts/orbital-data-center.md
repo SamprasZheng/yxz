@@ -44,8 +44,11 @@ Ground data-center electricity: **≈415 TWh in 2024** (~1.5% of global electric
 | 2025-12 | Starcloud-1 trains NanoGPT (Karpathy) on-orbit and runs a Gemini model in space — first LLM training + first frontier-model inference in orbit |
 | 2026-01-11 | [[entities/axiom-space]] launches **ODC Node 1 & 2** to LEO on Kepler optical-relay satellites (2.5 Gbps optical, SDA Tranche-1 compatible) — first *operational* relay-networked ODC nodes |
 | 2026-03-30 | Starcloud raises **$170M Series A** at $1.1B (Benchmark + EQT) — fastest YC unicorn (17 months) |
+| 2026-03 | **Japan** — Space Compass (NTT × SKY Perfect JSAT) orders its **first GEO optical data-relay satellite from Swissto12**; selected for **JAXA's Space Strategy Fund** + signs an **Airbus DS MOU** (optical comms + EO) in April 2026 — the relay/edge fabric moves from demo to procurement |
 | 2026 GTC | Jensen Huang frames space computing as "the ultimate frontier" |
-| 2026 (H2, planned) | [[entities/starcloud]] **Starcloud-2** (NVIDIA Blackwell B200 + AWS server blade, live commercial workloads; ~100× Starcloud-1 power); Starcloud FCC filing for ~88,000 satellites surfaces |
+| 2026-06-05 | **China** — [[entities/ada-space]] signs a **strategic AI cooperation agreement with Tencent** (Tencent to use constellation compute) — first named hyperscale-tier customer for a flying compute constellation |
+| 2026-07-03 | **Korea** — [[entities/hanwha-aerospace]] (Hanwha Group) commits **≈55 trillion won (~$36B) to space + AI by 2040**, *including an orbital AI data center* + 64 VLEO SAR sats by 2031 — Korea's shift from enabling-supplier toward a declared sovereign ODC operator |
+| 2026 (H2, planned) | [[entities/starcloud]] **Starcloud-2** (NVIDIA Blackwell B200 + AWS server blade, live commercial workloads; ~100× Starcloud-1 power); Starcloud FCC filing for ~88,000 satellites surfaces. [[entities/ada-space]] launches **2nd + 3rd satellite groups** (3rd ≈14 sats, ~3,000 kg to 525 km SSO, Q4 2026) |
 
 ## Application Scenarios
 
@@ -75,7 +78,8 @@ This architecture allows enterprises to incrementally adopt ODC without fully mi
 | [[entities/ada-space]] | China's state-scaled 2,800-satellite Three-Body / Star-Compute constellation |
 | [[entities/google-suncatcher]] | Hyperscaler entry; Trillium TPU + free-space-optics formation flight |
 | Thales Alenia Space | EU **ASCEND** study lead — Europe's sustainability/sovereignty ODC blueprint |
-| Space Compass (NTT × SKY Perfect JSAT) | Japan's GEO/LEO/HAPS "Space Integrated Computing Network" |
+| Space Compass (NTT × SKY Perfect JSAT) | Japan's GEO/LEO/HAPS "Space Integrated Computing Network"; first GEO optical-relay sat on order (Swissto12, 2026) |
+| [[entities/hanwha-aerospace]] | Korea's ₩55T/~$36B (by 2040) space+AI plan incl. a space AI data center over a 64-sat VLEO SAR fleet |
 
 ## Six-Region Comparison (台美日韓中國歐洲)
 
@@ -86,8 +90,8 @@ ODC is no longer a single-country story. The corpus's signature six-region read 
 | **US** 🇺🇸 | [[entities/starcloud]], [[entities/axiom-space]], [[entities/google-suncatcher]], [[entities/nvidia]] | Commercial-first, VC-funded, hardware in orbit | **Leads** — only region with GPUs + LLM training actually flown |
 | **China** 🇨🇳 | [[entities/ada-space]] + Zhejiang Lab | State-directed scale; dedicated compute constellation | **Leads on deployed scale** — 12 sats up, 2,800 planned |
 | **Europe** 🇪🇺 | Thales Alenia Space (ASCEND), Airbus, ArianeGroup, DLR | Study-stage; net-zero + data-sovereignty framing | Strong study, no hardware yet; ROI targeted by 2050 |
-| **Japan** 🇯🇵 | Space Compass (NTT × SKY Perfect JSAT) | Edge/relay network across GEO/LEO/HAPS, optical | Demo-stage (Expo 2025 Osaka optical comms) |
-| **Korea** 🇰🇷 | Hanwha Aerospace/Systems, KARI | Bus + SAR + AI-analytics supplier, not dedicated ODC | Enabling layer; Jeju Space Center (2025, 100 sats/yr) |
+| **Japan** 🇯🇵 | Space Compass (NTT × SKY Perfect JSAT) | Edge/relay network across GEO/LEO/HAPS, optical | Procuring the fabric — first GEO optical-relay sat ordered (Swissto12, 2026-03) + JAXA Space Strategy Fund |
+| **Korea** 🇰🇷 | [[entities/hanwha-aerospace]] (Hanwha Aerospace/Systems), KARI | Bus + SAR + onboard AI-analytics → now **declared** sovereign ODC | Largest declared commitment (₩55T/~$36B by 2040, 2026-07-03) but no compute flown yet; Jeju Space Center 100 sats/yr |
 | **Taiwan** 🇹🇼 | Win Semi / Ascend / Huatong (upstream only) | World-class components, **no midstream-C integrator** | Structural gap → opportunity ([[synthesis/leo-taiwan-odc-gap]]) |
 
 ## Historical Lineage and Long-Horizon Trajectory
@@ -116,5 +120,5 @@ See mid-stream Segment C in [[concepts/leo-value-chain]]. Taiwan is currently al
 ## Related
 
 - [[concepts/leo-value-chain]], [[concepts/cots-gpu-radiation-risk]], [[concepts/rha-radiation-hardening]], [[concepts/see-single-event-effects]]
-- [[entities/starcloud]], [[entities/ada-space]], [[entities/google-suncatcher]], [[entities/axiom-space]], [[entities/nvidia]]
+- [[entities/starcloud]], [[entities/ada-space]], [[entities/google-suncatcher]], [[entities/axiom-space]], [[entities/hanwha-aerospace]], [[entities/nvidia]]
 - [[synthesis/orbital-data-center-six-region]], [[synthesis/leo-taiwan-odc-gap]]
