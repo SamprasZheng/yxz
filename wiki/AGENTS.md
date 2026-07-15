@@ -122,6 +122,7 @@ Current synthesis pages (keep this list in sync when adding a new one):
 
 - `[[synthesis/spacesharks-mission-desk-hackathon-plan]]` — NVIDIA Agent Challenge 2026 entry; satellite-lifecycle decision co-pilot on Nemotron + Hermes + NemoClaw. Canonical for hackathon scope, build plan, decision verbs.
 - `[[synthesis/spacesharks-trust-stack]]` — Companion to the Mission Desk plan. Four interlocking trust layers (data / model / decision / system) operationalised by small-model ensemble, tiered inference, calibrated confidence, agentic provenance. Canonical for "why should the agent's output be trusted."
+- `[[synthesis/spacesharks-mission-desk-verification-plan]]` — Verification & test plan for the NVIDIA Agent Challenge entry: seven-layer test pyramid across four deployment surfaces (Open Cloud / Nemo Cloud / Sandbox / Docker); Nemotron-attestation as the non-negotiable final delivery gate. Canonical for "how to prove the submission runs Nemotron and passes all test surfaces."
 - `[[synthesis/cdm-pc-decisioning]]` — End-to-end CDM → Pc → maneuver decision workflow with NASA CARA thresholds and the public-Space-Track MVP recipe. Canonical for the conjunction triage verb.
 - `[[synthesis/faa-notam-launch-lifecycle]]` — Full FAA NOTAM lifecycle, AHA vs TFR, USCG NOTMAR, slip-probability scoring. Canonical for the launch-slip verb.
 - `[[synthesis/fcc-ibfs-filings-coordination]]` — FCC IBFS + Schedule S + ITU EPFD pipeline; Starlink/Kuiper/AST rulings; public-data MVP. Canonical for the interference-attribution verb.
