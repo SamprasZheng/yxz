@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-16] kol-digest | automated daily sweep — 0 KOLs (list empty), 11 keywords, ~40 items captured: NemoClaw+LangChain blueprint (July 8), Anthropic Fable 5 restored + IPO S-1, OpenAI GPT-5.6, Polkadot staking overhaul + dotID live, Claude Cowork mobile + hidden-tracker controversy, Nemotron-Labs-Diffusion arXiv, OpenClaw v2026.7.1, Audrey Tang at WebX 2026. New file: [[sources/kol-digest-2026-07-16]].
+
 ## [2026-07-15] deepen | LEO / Orbital Data Center cluster — the Asia rows (Japan + Korea + China cadence): Hanwha $36B ODC entity split, Space Compass demo→procurement, ADA–Tencent + H2-2026 scale-up
 **Rotation:** picked the **LEO / Orbital Data Center cluster** — the stalest standalone domain (last real deepen **2026-06-30**, ~15 days; every other domain touched 07-01→07-14). Yesterday's 07-14 radiation pass touched [[entities/ada-space]] / [[entities/google-suncatcher]] / [[entities/starcloud]] but strictly from the **radiation-strategy** angle (beam data, SEL/TID); this pass is the orthogonal **ODC-player / deployment** angle — no re-tread. Within the cluster the **US rows were fresh** (Starcloud/Axiom refreshed 06-30) and the **thinnest, most-outbound-stub sections were the two Asia rows** (Japan "demo-stage", Korea "enabling layer, not ODC operator") plus China's stale cadence — that was the target. Public/citable ODC research only; no holdings/trade data; `agents/` read-only (untouched); no trader/KOL/maintenance namespaces touched; explicit `git add` of only the wiki files changed.
 
