@@ -21,6 +21,7 @@ dependencies = [
     "satmad>=0.1.2",
     # NeMo Agent Toolkit (optional — install with `pip install nvidia-nat`)
     # "nvidia-nat>=1.7.0",
+    "yfinance>=1.5.1",
 ]
 
 [project.optional-dependencies]
