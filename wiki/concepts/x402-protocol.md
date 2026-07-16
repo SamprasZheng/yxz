@@ -67,10 +67,13 @@ In December 2025, Coinbase and Cloudflare announced the **x402 Foundation** to m
 
 > **Updated (2026)**: the Foundation was placed under **Linux Foundation** governance to keep the standard vendor-neutral. It was initially developed by **Coinbase, Cloudflare, and Stripe**, and its founding-intent membership already spans most regions of [[synthesis/agentic-payments-six-region]]: Adyen, AWS, American Express, Ampersend.ai, Base, Circle, Fiserv, Google, **KakaoPay**, Mastercard, Microsoft, Polygon Labs, PPRO, Shopify, Sierra, Solana Foundation, Stripe, thirdweb, and Visa ([Linux Foundation press, 2025](https://www.linuxfoundation.org/press/linux-foundation-is-launching-the-x402-foundation-and-welcoming-the-contribution-of-the-x402-protocol); [Decrypt](https://decrypt.co/363173/coinbase-linux-foundation-launch-x402-foundation)). China and Taiwan are the conspicuous absentees from the membership list.
 
+> **Operational launch — 2026-07-14.** The Linux Foundation announced the **operational launch** of the x402 Foundation and Coinbase's completed contribution of the protocol; **40 organisations** joined in the ~3 months since the April intent-to-launch. **Premier members**: Adyen, AWS, American Express, Circle, Cloudflare, Coinbase, Fiserv, Google, Mastercard, **Monad Foundation, MoonPay, [[entities/ripple|Ripple]], Stellar Development Foundation**, Shopify, Solana Foundation, Stripe, Visa. The spec now spans **"traditional cards to stablecoins"** payment types, not crypto-only ([Linux Foundation press, 2026-07-14](https://www.linuxfoundation.org/press/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications)). The two newest structurally-significant entrants are **[[entities/ripple|Ripple]]** (adds **XRP + RLUSD** settlement on the XRP Ledger) and the **Stellar Development Foundation** — both dilute the earlier "x402 = USDC-on-Base/Solana monoculture" read: x402 is consolidating into *the* neutral settlement standard rather than a single-issuer rail.
+
 ## Supported Ecosystem
 
 - **Infrastructure**: Coinbase CDP, Cloudflare Workers, Vercel
-- **Chains (V2)**: Base, Solana, any EVM L2 (via modular SDK); Polygon / Stellar / Algorand (V1 legacy)
+- **Chains (V2)**: Base, Solana, any EVM L2 (via modular SDK); **XRP Ledger** (via [[entities/ripple|Ripple]], 2026-07), Stellar; Polygon / Algorand (V1 legacy)
+- **Settlement tokens**: primarily USDC; **RLUSD + XRP** added with Ripple's Premier membership (2026-07-14) — first non-USDC-first major issuer on the rail
 - **Traditional payments**: ACH / SEPA / card via facilitator (new in V2)
 - **Integrations**: Google AP2 (x402 as official crypto extension), Stripe (supports both x402 + MPP), Visa TAP (card payment layer), AWS, Nous Research, World AgentKit (2026-03)
 
@@ -121,6 +124,7 @@ In December 2025, Coinbase and Cloudflare announced the **x402 Foundation** to m
 - [[concepts/agentic-payment-protocols]] — full comparison of x402 vs ACP vs AP2 vs MPP vs L402
 - [[sources/x402-protocol-coinbase-2025]] — detailed source material
 - [[entities/coinbase]] — protocol originator
+- [[entities/ripple]] — x402 Foundation Premier Member (2026-07-14); brings XRP + RLUSD settlement on the XRP Ledger
 - [[entities/stripe]] — co-developer; supports x402 + MPP + ACP
 - [[entities/visa]] — adds card payment layer to x402 via TAP
 - [[entities/mastercard]] — x402 Foundation member; Agent Pay / Verifiable Intent

@@ -77,7 +77,8 @@ For detailed comparison, see [[concepts/agentic-payment-protocols]].
 ## Major Ecosystem Participants (2025–2026)
 
 ### Crypto-native Camp
-- **Coinbase** (x402): HTTP-native stablecoin payments, V2 released 2025-12, 100M cumulative transactions
+- **Coinbase** (x402): HTTP-native stablecoin payments, V2 released 2025-12; x402 Foundation operationally launched under the Linux Foundation 2026-07-14 (40 orgs)
+- **[[entities/ripple]]** (x402): joined the x402 Foundation as a Premier Member 2026-07-14, adding **XRP + RLUSD** settlement on the XRP Ledger — first non-USDC-first major issuer on the rail
 - **Lightning Labs** (L402): Bitcoin Lightning, in production since 2020, released AI agent toolkit 2026-02
 
 ### Traditional Payment Giants
@@ -114,6 +115,7 @@ For detailed comparison, see [[concepts/agentic-payment-protocols]].
 - [[concepts/agentic-payment-protocols]] — full comparison of five major protocols
 - [[sources/x402-protocol-coinbase-2025]] — detailed source material
 - [[entities/coinbase]] — x402 originator
+- [[entities/ripple]] — x402 Foundation Premier Member (XRP/RLUSD); full MiCA CASP (2026-07)
 - [[entities/stripe]] — MPP + ACP co-originator
 - [[entities/visa]] — Intelligent Commerce / TAP
 - [[entities/mastercard]] — Agent Pay / Verifiable Intent

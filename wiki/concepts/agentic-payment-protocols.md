@@ -33,7 +33,9 @@ Core mechanism: HTTP 402 status code triggers on-chain USDC payment, < 2 second 
 - Modular SDK: developers can add chains/assets/payment schemes as plugins
 - 6-month cumulative total: **over 100 million payments**, 600+ developer Telegram community
 
-**Supported chains (V2)**: Base, Solana, other L2s, traditional rails (ACH / SEPA / card) via facilitator
+**Supported chains (V2)**: Base, Solana, other L2s, **XRP Ledger** (via [[entities/ripple|Ripple]], 2026-07), Stellar; traditional rails (ACH / SEPA / card) via facilitator. Settlement tokens: USDC-primary, **+ RLUSD + XRP** since Ripple's Premier membership.
+
+**Governance (2026-07-14)**: the [Linux Foundation](https://www.linuxfoundation.org/press/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications) announced the **operational launch** of the x402 Foundation; **40 organisations** joined since the April intent. Premier members now include [[entities/ripple|Ripple]], Stellar Development Foundation, Monad Foundation and MoonPay alongside Coinbase / Circle / Stripe / Visa / Mastercard / Google / AWS. The spec explicitly spans **cards → stablecoins**, no longer crypto-only.
 
 **Ecosystem position**: Stripe supports both MPP and x402; AP2 lists x402 as the official crypto extension.
 
@@ -194,11 +196,13 @@ The five protocols above are all US-originated and assume an **open, permissionl
 | Region | Stablecoin/agent regime | Status |
 |---|---|---|
 | US | **GENIUS Act** (enacted 2025-07-18; 1:1 reserves; not a security/commodity) | live, OCC/FDIC rulemaking 2025–26 |
-| EU | **MiCA** + PSD2/PSD3 + EU AI Act | MiCA full enforcement 2026-07-01 |
+| EU | **MiCA** + PSD2/PSD3 + EU AI Act | **Fully enforced 2026-07-01** — grandfathering closed; only ~244 CASPs authorised EEA-wide (~83% of prior registrants unlicensed); fines up to **12.5% of global turnover** |
 | Japan | FSA stablecoin framework | JPYC live Oct 2025 |
 | Korea | Digital Asset Basic Act | FSC bill expected end-2026 |
 | China | PBoC/Ant supervision; e-CNY separate | operating inside existing regime |
 | Taiwan | VASP Act → FSC stablecoin rules | H2 2026 earliest |
+
+> **MiCA's EMT bar handed a US issuer the euro rail (2026-07).** MiCA classifies a single-fiat-pegged stablecoin as an **e-money token (EMT)**, offer-able to EU retail only with a separate EMT authorisation. As of July 2026 **USDC and Circle's euro-pegged EURC are the only stablecoins in ESMA's EMT register** — so a US issuer (Circle) dominates the euro-stablecoin market (**EURC ~41% share, up from ~17% a year earlier**; 8 MiCA-compliant euro stablecoins, total cap **+128% YoY to ~$673.9M**). Even [[entities/ripple|Ripple]], which won a **full MiCA CASP license** (Luxembourg CSSF, 2026-07-06) covering all 30 EEA markets, still cannot passport **RLUSD** to EU retail — RLUSD is not yet in the EMT register. The "digital dollarization" fear the [[synthesis/agentic-payments-six-region|Europe row]] flagged has materialised, prompting an **EU MiCA stablecoin rewrite** in July 2026 ([Genfinity](https://genfinity.io/2026/07/08/mica-enforcement-ripple-casp-license-europe-stablecoin/); [Ripple press](https://ripple.com/ripple-press/ripple-receives-full-eu-mica-casp-license/)).
 
 ## Protocol Layer Analysis
 
@@ -227,6 +231,7 @@ The five protocols above are all US-originated and assume an **open, permissionl
 - [[concepts/x402-protocol]] — x402 detailed specifications and V2 upgrade
 - [[concepts/agentic-payments]] — AI agent autonomous payment framework
 - [[entities/coinbase]] — x402 originator
+- [[entities/ripple]] — x402 Foundation Premier Member (XRP/RLUSD rail) + full MiCA CASP; bridges the US-rail and EU-regulatory layers
 - [[entities/stripe]] — MPP + ACP co-originator
 - [[entities/visa]] — Intelligent Commerce + TAP
 - [[entities/mastercard]] — Agent Pay + Verifiable Intent

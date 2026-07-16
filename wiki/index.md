@@ -70,6 +70,7 @@ type: index
 - [[entities/alexander-karp]] — Palantir CEO, social theory PhD, author of *The Technological Republic*; advocates defense-tech patriotism
 - [[entities/palantir]] — US defense/intelligence data analytics company (Gotham, Foundry, AIP); co-founded by Karp and Peter Thiel
 - [[entities/coinbase]] — US cryptocurrency exchange (NASDAQ: COIN); x402 protocol initiator; Base L2 issuer; CDP developer platform
+- [[entities/ripple]] — US crypto-payments firm (XRP Ledger + RLUSD stablecoin ~$1.78B); x402 Foundation Premier Member 2026-07-14 (XRP/RLUSD settlement); full MiCA CASP via Luxembourg CSSF 2026-07-06 (30 EEA markets) but RLUSD not yet an ESMA EMT; the July-2026 bridge between the US-rail and EU-regulatory rows of the agentic-payments map
 - [[entities/stripe]] — Fintech payment infrastructure; MPP + ACP co-initiator; Agentic Commerce Suite; also supports x402
 - [[entities/mastercard]] — Global card payment network; Agent Pay (Agentic Token + Verifiable Intent); co-developed trust framework with Google AP2 (2025-04)
 - [[entities/visa]] — Global card payment network; Visa Intelligent Commerce + Trusted Agent Protocol (TAP); RFC 9421 HTTP signing; 100+ partners (2025-10)
