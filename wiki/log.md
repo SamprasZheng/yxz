@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-17] kol-digest | automated daily sweep — 0 KOLs, 11 keywords, ~45 items; notable: Fable 5 global redeployment, NemoClaw+LangChain blueprint, OpenClaw SecretRef security flag, DOT staking overhaul + ATL
+
 ## [2026-07-16] deepen | Agentic-payments cluster — July-2026 fact-refresh: x402 Foundation operational launch + Ripple/XRP/RLUSD node + MiCA-live "digital-dollarization-realised"
 **Rotation:** picked the **agentic-payments cluster** — the stalest domain by last real deepen (**2026-07-01** US-entity pass, ~15 days; every other domain touched 07-02→07-15) and, within it, the three *concept* pages carried only June-2026 data (Chainalysis 06-21) while two dated events they flagged as *future* had since gone live. Public/citable payments research only; no holdings/watchlist/trade data; `agents/` untouched; no trader (`daily-trader-*`) / KOL (`kol-digest-*`) / maintenance namespaces touched; explicit `git add` of only the wiki files changed.
 
