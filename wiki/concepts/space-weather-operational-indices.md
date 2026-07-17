@@ -105,7 +105,7 @@ See [[concepts/swpc-space-weather-feeds]] for the JSON URLs that deliver these i
 
 ## Bz — IMF Southward Component (Solar Wind)
 
-**What it measures**: The z-component (northward/southward) of the Interplanetary Magnetic Field (IMF) in nanoTesla, measured at the L1 Lagrange point by DSCOVR (primary) or ACE (backup), approximately 1.5 million km sunward of Earth. Travel time from L1 to Earth's magnetosphere: 20–60 minutes depending on solar wind speed.
+**What it measures**: The z-component (northward/southward) of the Interplanetary Magnetic Field (IMF) in nanoTesla, measured at the L1 Lagrange point ~1.5 million km sunward of Earth. As of **2026-06-10** the primary real-time solar-wind monitor is **SOLAR-1 (SWFO-L1)**, with **DSCOVR** demoted to backup and **ACE** legacy backup (see [[entities/noaa-swpc]]). Travel time from L1 to Earth's magnetosphere: 20–60 minutes depending on solar wind speed — this L1-to-Earth lead time is the physics-capped warning the whole domain is built around ([[synthesis/space-weather-forecasting-six-region]]).
 
 **Why it is the most critical leading indicator**: Storm onset requires sustained southward Bz (negative Bz) to allow reconnection between the IMF and Earth's dayside magnetosphere. A Kp=9 storm cannot develop without a sustained Bz < −15 nT.
 

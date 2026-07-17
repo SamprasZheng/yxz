@@ -53,7 +53,7 @@ ISES member RWCs include centers operated by ESA, JAXA, IPS (Australia), and oth
 
 SWPC is the world's *flagship* civilian center, but operational space-weather forecasting is the **most internationally pooled** of all the space domains (the inverse of the spectrum/SSA enclosure dynamics) — because the driver is a single shared Sun and no nation can see the whole magnetosphere or the Sun's far side from its own territory. The full six-region map (台美日韓中國歐洲), the three governance models, and the 100-year view live in [[synthesis/space-weather-forecasting-six-region]]. In brief:
 
-- **ICAO aviation layer:** the entire planet is served by **four** global advisory centers on a rotating two-week On-Duty-Center schedule — **NOAA** (US, solo), **PECASUS** (Finland-led European consortium), **ACFJ** (Australia-Canada-France-Japan), and **CRC** (China-Russia). SWPC is the US bloc.
+- **ICAO aviation layer:** the entire planet is served by **four** global advisory centers on a rotating two-week On-Duty-Center schedule — **NOAA** (US, solo), **PECASUS** (Finland-led European consortium), **ACFJ** (Australia-Canada-France-Japan), and **CRC** (China-Russia). SWPC is the US bloc. As of the 2025 ICAO A42 Assembly, **PECASUS and ACFJ are seeking cost recovery** for the service while **CRC offers it free only through Nov 2026** — the first sign the physically-pooled domain may fragment on *funding* before geopolitics (see the pessimistic fork in [[synthesis/space-weather-forecasting-six-region]]).
 - **Europe:** ESA Space-Weather Service Network / SWESNET (coordinated from the SSCC at the Space Pole, Brussels; 5 Expert Service Centres) + UK Met Office **MOSWOC** (24/7 since 2014) — the federated bet.
 - **China:** NSSC (CAS) + CMA National Center for Space Weather; the **Meridian Project** Phase II (national acceptance Mar 2025) is the world's largest ground-based monitoring network.
 - **Japan:** **NICT** — continuous forecasts since 1949; ISES RWC since 1996.
@@ -80,8 +80,9 @@ See [[sources/noaa-swpc-product-catalog]] for the full JSON URL table.
 
 ## Operational History Notes
 
+- **2026-07-03/04** — **G3 (Strong)** geomagnetic storm (Kp 7.33) off an **X1.1** flare (2026-06-30); SWPC issued a G4 watch that did not verify; aurora to New Mexico / ~26 US states — a declining-phase reminder that isolated X-flares still drive strong storms 21 months after max
 - **2026-06-10** — **SOLAR-1 (SWFO-L1)** entered operational service as the new primary L1 monitor (launched 2025-09-24; arrived L1 2026-01-23); adds an operational L1 coronagraph feeding CME imagery to SWPC forecasters within ~30 min
-- **2026-01-20** — G4 (Severe) geomagnetic storm alert (SC25 declining phase)
+- **2026-01-19/20** — G4 (Severe) geomagnetic storm; G4 levels reached 2026-01-19, severe-storm alert issued 2026-01-20 (SC25 declining phase)
 - **2025-11-11/12** — **X5.1** flare (strongest of 2025) 2025-11-11 1004 UTC → **G4** storm 2025-11-12 0120 UTC; aurora to Florida/Texas/Arizona/Mexico; R3 HF blackouts over Africa & Europe
 - **2025-06-01/02** — G4 (Severe) storm from a 2025-05-30 CME
 - **2024-10-15** — NASA/NOAA jointly declared the SC25 **solar maximum** (smoothed SSN ≈161); max-activity interval Aug 2024 – Jan 2025

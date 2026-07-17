@@ -52,7 +52,7 @@ The distinctive twist versus the other domains: **ICAO has forced a fourth, supr
 
 **Scenario fork (≈2030 / 2050 / 2100).**
 - *Optimistic — global-utility consolidation:* the four ICAO blocs + ISES harden into a permanent shared early-warning utility; L1+L5 (and eventually L4) vantage is jointly funded; forecasting is treated like GPS — a global public good. The "you cannot nationalize the Sun" logic wins because the physics never stops demanding a 360° view.
-- *Pessimistic — pooling fractures on geopolitics:* the CRC free-service window (currently extended only to **Nov 2026**) lapses; sensor/model data gets export-controlled the way rad-hard and SSA data already are; regions duplicate L1/L5 assets defensively. Forecasting *degrades* precisely because the one domain that physically demands cooperation gets caught in the same enclosure dynamic as spectrum and SSA.
+- *Pessimistic — pooling fractures on geopolitics **or cost**:* the CRC free-service window (currently extended only to **Nov 2026**) lapses; sensor/model data gets export-controlled the way rad-hard and SSA data already are; regions duplicate L1/L5 assets defensively. Forecasting *degrades* precisely because the one domain that physically demands cooperation gets caught in the same enclosure dynamic as spectrum and SSA. **The first cracks are already showing on the *cost* axis, not the geopolitical one:** at the ICAO A42 Assembly (2025), **PECASUS and ACFJ began seeking cost recovery** for their global-advisory services, while only the **CRC (China-Russia) is still offering the service free — and only through Nov 2026**. A domain that is pooled *by physics* is nonetheless funded *by nations*, and the funding is where the pooling is most fragile: if the aviation-advisory tier fragments into paid/free tiers, the "global public good" framing weakens from the billing side before any export-control fight begins.
 
 The 100-year question is therefore **institutional, not physical**: the Sun guarantees the hazard and caps the warning; the open question is whether the unusually-pooled governance of *this* domain survives the enclosure pressure that dominates every *other* space domain in this corpus.
 
@@ -66,6 +66,7 @@ The 100-year question is therefore **institutional, not physical**: the Sun guar
 | Carrington-class frequency is shown to be ≪1%/decade (Riley over-estimated) | the storm tail is a near-certain 100-year planning case |
 | L5 (Vigil) is cancelled and no nation funds a side-view vantage | the permanent shared L1+L5 architecture is the long-horizon invariant |
 | CRC / cross-national coronagraph-sharing (Vigil-CCOR) collapses on export-control grounds before 2035 | the optimistic global-utility fork is the base case |
+| The ICAO SWX advisory service settles into a stable free-for-all with no cost-recovery tiering (PECASUS/ACFJ drop their A42 cost-recovery bids) | the pessimistic "pooling fractures on cost before geopolitics" signal is real rather than a transient billing dispute |
 
 ## See also
 
@@ -80,9 +81,11 @@ The 100-year question is therefore **institutional, not physical**: the Sun guar
 - [[synthesis/orbital-data-center-six-region]] — the LEO/ODC assets exposed to the G/S/R hazard
 - [[synthesis/leo-taiwan-odc-gap]] — the Taiwan upstream-strong/midstream-absent pattern this map repeats
 
-## Sources (verified 2026-06-08)
+## Sources (verified 2026-06-08; fact-refreshed 2026-07-17)
 
 - ICAO four global centers (NOAA / PECASUS / ACFJ / CRC), two-week rotation, CRC free service to Nov 2026 — [PECASUS](https://pecasus.eu/), [Spaceweather-CRC](https://www.spaceweather-crc.com/views/home.html), [STCE ICAO SWX service](https://www.stce.be/content/icao-space-weather-information-service)
+- **[2026-07-17 refresh]** ICAO A42 cost-recovery pressure — PECASUS + ACFJ seeking cost recovery, CRC free only to Nov 2026 — [ICAO A42 WP cost recovery](https://www.icao.int/sites/default/files/Meetings/a42/Documents/WP/wp_541_en.pdf); the concrete evidence for the pessimistic-fork "pooling fractures on cost" signal
+- **[2026-07-17 refresh]** SC25 declining-phase storm cadence continues into H2-2026: **G3 (Strong)** storm 2026-07-04 (Kp 7.33) off an **X1.1** flare 2026-06-30, aurora to New Mexico / ~26 US states — [SWPC](https://www.swpc.noaa.gov/news/g3-strong-geomagnetic-storming-continues-g4-severe-still-expected), [The Watchers](https://watchers.news/2026/07/04/g3-strong-geomagnetic-storm-observed-aurora-as-low-as-new-mexico-after-june-30-cme-impacts-earth/); full chain in [[concepts/solar-cycle-25-leo-radiation]]
 - ESA Space-Weather Service Network / SWESNET, SSCC at Space Pole Brussels, 5 ESCs / 40+ teams — [ESA Space Weather Office](https://www.esa.int/Space_Safety/Space_weather/Space_Weather_Office), [ESA SWE Programme](https://swe.ssa.esa.int/space-weather-and-space-safety-programme)
 - UK Met Office MOSWOC (est. 2014, 24/7) — [Met Office](https://www.metoffice.gov.uk/blog/2025/how-does-the-met-office-monitor-space-weather)
 - China Meridian Project Phase II national acceptance Mar 2025, 72-hr warnings, IMCP — [CAS](https://english.cas.cn/newsroom/cas_media/202503/t20250324_908599.shtml), [NSSC](https://english.nssc.ac.cn/news/202503/t20250320_908344.html)
