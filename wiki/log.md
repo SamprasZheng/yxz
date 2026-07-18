@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-18] daily-trader | First run — OFFLINE_STUB (proxy blocked yfinance). Watchlist seeded: 15 tickers (NVDA/PLTR/AVGO/TSM/META top FOM). No realized-return data; qualitative FOM baseline established. New synthesis: [[synthesis/daily-trader-2026-07-18]].
+
 ## [2026-07-18] deepen | AI-agent runtime/orchestration/sandbox core cluster (Nemotron / NemoClaw / Hermes) — new middle-layer six-region synthesis + agent-loop & sandbox lineages + Hermes fact-refresh
 **Rotation:** picked the **AI-agent core runtime cluster** — the genuinely stalest flagship core. The concept pages [[concepts/nemotron]], [[concepts/nemoclaw]], [[concepts/hermes-agent-framework]] (+ policy-presets/openshell/dgx-spark) last showed as touched **2026-06-23**, but that was a *link-only* edit inside the space-launch-airspace deepen commit — their last *substantive* deepen was the 2026-05-24 ingest + 2026-06-14 firefly-reference synthesis (~55 days). Every other flagship domain was worked 07-03→07-17. Public/citable AI-infra research only; `agents/` READ-only (not modified); no trader/KOL/maintenance namespaces touched; explicit `git add` of only the 6 wiki files changed.
 
