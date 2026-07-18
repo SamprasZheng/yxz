@@ -13,6 +13,32 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-07-18
+
+- Market/Sentiment stance: **neutral** (score 1)
+- Web signals collected: 10
+- Social-search signals collected: 10
+- Updated at: 2026-07-18T23:23:15.211Z
+
+Key web signals:
+- [Investor: ‘By 2050, The Biggest Companies Operating in Space Won’t Be Space Companies’ - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWVF3ay1oVDBCWlBNOTZVTFZfd1RXRWpCYUJvWEZjbGlZZDFrOEd4YzdCV3FVOXFCc0ZURW91QTRiQkpHaTF3a0MtMzRValdBV1VpWEFOa2tLN1ZDaGRiTlB3Z2tORHVkclZhczBhYlk0OTRQTjIzVWhQQ3JUZEdtd0wwWDNiWlRRdlNTWnNrMFplVW9MRkNFc0RWZ2J5WWJCM2sySW81T2ZfRTlvNDZNdlRwNTNiN0tsWWc4SWFvcVNfOVE?oc=5)
+- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
+- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
+- [Space Based Data Center Market Size, Share | Fotrecast [2034] - Fortune Business Insights](https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWhfWEV5d1NuYkRJNVV5bHNFM2hGVnM2aDMtVWQyZlZ5MGE3eVVmd3czQWppeS1sejluaVpWQXExV0RzMUhKV0lQS21pTVlWZmczS1pubTZodEpMa1d2SENtUnFYNFpHNFNWanFrQzFMWVZKOEpUY0ZwWVh3QktnSGNtbw?oc=5)
+- [‘Networking becomes the make-or-break factor’: Orbital data centers reintroduce a challenge we’ve now fixed on land - TechRadar](https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeklsWVhoeGowa0pBZDRGNmEtWlJqWGcyVTFmdjVSNmVteVRPcllabW5DSmgtS25pRzUzRTR5dFpTc3FvVXNramJLSzRMaFhXTmJIMWlNanEtSzBGZE84YkFuRC1NakJNRVVOS0RZUG9rdTgtclVxOFBVZ296VGk5czNsQm1kZDNYQUpZeW1WZUlfdXJMUlJCSkk3bk5qQjBhaks0N0Y0YnRBbWd2eDlQbmFnWnQ0QUl5RGZJT05YVEkxb2NsSFFzWnBMSXFDRVBzaGgwbEFCaEg?oc=5)
+- [Could Space Become the Next Frontier for AI Data Centers? - HPCwire](https://news.google.com/rss/articles/CBMipwFBVV95cUxOdzZVWGJidHNMTE1CdEtGTEpSdXhYVnVjOVFTd1ViY0xsSVBJWEpGdzhxb0FYVl9NZ0k3VkZfQWZSS2liRk1VSGxwbVFJNXlkV3NELUxFdlJQT2VoY2NnRE5PVEM3enJfR3dsbUFmRV9SUlhPR2gycFR4Wm5USldKMlpzMFRWMzdoVEhxeWlTVGF3UlNObDFrSG5VQndZdWpYNXI0RHFROA?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [For the very first time Elon Musk explains the "space data center plan ...](https://x.com/rohanpaul_ai/status/2064165951936094364)
+- [SpaceX is moving humanity&#x27;s AI compute off the planet, and construction ...](https://x.com/tetsuoai/status/2065958879230660755)
+- [SpaceX has unveiled the design of... - Space and Technology - Facebook](https://www.facebook.com/SpaceTechnologyPage/posts/spacex-has-unveiled-the-design-of-its-first-orbital-data-center-satellite-ai1-th/1827979351789482/)
+- [Ahead of the IPO, SpaceX has unveiled the AI1 — its first ... - Facebook](https://www.facebook.com/interestingengineering/videos/musk-shows-detailed-design-of-ai-data-center-satellite/1011966071311689/)
+- [Instagram](https://www.instagram.com/p/DRAVZCwj_dm/)
+- [Instagram](https://www.instagram.com/p/DUROItTCPgT/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-07-17
 
 - Market/Sentiment stance: **neutral** (score 2)
@@ -295,30 +321,4 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 Data quality notes:
 - Web signals fetch failed: HTTP 503 Service Unavailable
 - No web news signals, fallback to empty set.
-
-### 2026-07-06
-
-- Market/Sentiment stance: **neutral** (score 1)
-- Web signals collected: 10
-- Social-search signals collected: 10
-- Updated at: 2026-07-06T23:35:07.892Z
-
-Key web signals:
-- [Data centers in space - JLL](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15RVYzNW8zQTRINzFsSlo3ZFBpQ2pobV9Yb1FESDN5ampzUjZGRVlfTkZkckpKU2RFZERobFBTdlBIZ28wUElkRnk4WGUtZGVXRUdzbmxYTjJnNWNsM3VDRGlpWW1PYlk?oc=5)
-- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
-- [AI Investment Test? SpaceX IPO Turns Orbital Data Centers into a Wall Street Bet - ERP Today](https://news.google.com/rss/articles/CBMickFVX3lxTE5vVHlxT1lYOHAyNTVIV2ZubmxqOFdqU2t4V2ktRnJKU0tNQ3hXLTRFUUNrZFJ5Um5Ia3pTbkoxQ1RfWTk4TnI1UVBSWmFjdUQwMGVFSG5RdlVvYmI3LVZEQ1J0RHFabGpoYVVtMkE0OE1EZw?oc=5)
-- [Orbital raises $5 million to join orbital data center race - SpaceNews](https://news.google.com/rss/articles/CBMihwFBVV95cUxNRERScGM0eDBSUUZ6T1BWaC0xVDFEMF94R0hqcXhSVTltOVQzcHBPV2RUaVdDanFsNHBfUjhRTF9FTHptWThBbmRobGVNOFlpbXhXYnBIZlI3b21sMXliUzRFaUFuRHpPOXBLeFpRRUxvS1EtSGRiMThwc3poeXBpcE8tNUs2R1U?oc=5)
-- [The Case for Decentralized AI Training in Space - Medium](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeXcyMzJhV1VZMkZwMEpXeDR4M2F3SER3a0xCcjVwcmUxaEp0TDdjdGpDdm9IcXdTdGx5LW9vSUF4TUtFRXpoZWlEX1F5Z3pNWUh0Z2xEaFZyaXVrLUc1cmFnQ0J1M2xvd3g0QnJOV2hGYmVaTGhDSURDWFVhc09RMEd3VzR2NEUySENj?oc=5)
-- [Space Based Data Center Market Size, Share | Fotrecast [2034] - Fortune Business Insights](https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWhfWEV5d1NuYkRJNVV5bHNFM2hGVnM2aDMtVWQyZlZ5MGE3eVVmd3czQWppeS1sejluaVpWQXExV0RzMUhKV0lQS21pTVlWZmczS1pubTZodEpMa1d2SENtUnFYNFpHNFNWanFrQzFMWVZKOEpUY0ZwWVh3QktnSGNtbw?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [For the very first time Elon Musk explains the "space data center plan ...](https://x.com/rohanpaul_ai/status/2064165951936094364)
-- [Part 1/2 Why orbital AI data centers are the only realistic path ...](https://x.com/CLAngelillo/status/2066218257942519955)
-- [Ahead of the IPO, SpaceX has unveiled the AI1 — its first ... - Facebook](https://www.facebook.com/interestingengineering/videos/musk-shows-detailed-design-of-ai-data-center-satellite/1011966071311689/)
-- [SpaceX has unveiled the design of... - Space and Technology - Facebook](https://www.facebook.com/SpaceTechnologyPage/posts/spacex-has-unveiled-the-design-of-its-first-orbital-data-center-satellite-ai1-th/1827979351789482/)
-- [Instagram](https://www.instagram.com/p/DRAVZCwj_dm/)
-- [Instagram](https://www.instagram.com/p/DQ4l084jASo/)
-
-Data quality notes:
-- No major data-quality issue in this run.
 
