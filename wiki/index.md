@@ -57,6 +57,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-07-18]] — KOL + keyword digest 2026-07-18: 0 KOLs (list empty), 11 keywords, ~27 items; top signals: NemoClaw blueprint, OpenClaw 7.1+Foundation, Anthropic Ode JV, OpenAI Apple lawsuit+IPO, Polkadot staking reform, Nemotron 3 Ultra
 
 ## Entities
 
@@ -115,6 +116,8 @@ type: index
 
 - [[entities/nspo]] — Taiwan national civil space agency (NSPO → **TASA** renamed 2023-01-01, under NSTC); founded 1991; 3rd-phase program NT$25.1B 2019–2028 + ~NT$40B 2023 B5G-LEO boost; FORMOSAT-8A launched 2025-11-28, TRITON GNSS-R 2023; public-sector demand node for the XT-144 / LEO supply chain
 - [[entities/tron-future-tech]] — Taiwan dual-use AESA integrator founded 2018 by ex-NCTU prof Yu-Jiu Wang; T.Radar counter-drone radar + T.SpaceRouter 1024-element Ka-band LEO terminal; Series A ~NT$900M (2024), 26-system military contract (2025); the concrete "midstream array-integrator" counter to Taiwan's absent-midstream thesis
+- [[entities/anthropic]] — US AI safety company; Claude LLM family; Ode JV ($1.5B with Blackstone/HF/GS, July 2026); Claude Code; MCP protocol; closed-frontier US node in the open-weight six-region map
+- [[entities/openai]] — US AI company; GPT-5/5.6 + ChatGPT; Apple trade-secret lawsuit (July 2026); IPO confidential filing ~$730B; ACP agentic-payments protocol; closed-frontier + open-as-funnel US node
 
 ## Concepts
 

@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-18] kol-digest | Automated daily sweep: 0 KOLs (list empty), 11 keywords, ~27 items; top signals: NemoClaw+LangChain blueprint, OpenClaw 7.1+Foundation, Anthropic Ode JV, OpenAI Apple lawsuit+IPO, Polkadot staking reform+Moonbeam exit, Nemotron 3 Ultra. New stubs: [[entities/anthropic]], [[entities/openai]].
+
 ## [2026-07-17] deepen | Space-weather / SC25 forecasting cluster — H2-2026 storm-chain extension + ICAO cost-recovery "pooling-under-pressure" signal + SOLAR-1-primary stale-fact fix
 **Rotation:** picked the **space-weather cluster** — the stalest legitimate domain by last real deepen (**2026-07-04**, 13 days; every other domain touched 07-05→07-16). (The only staler notional domain, *AI quant-trading*, has no public concept pages and sits in the trader-agent lane + guardrail-sensitive territory for a public repo, so deliberately skipped — noted here for the rotation record.) Within space-weather, the storm chronology in [[concepts/solar-cycle-25-leo-radiation]] stopped at **2026-01-20** (6 months stale) and the [[synthesis/space-weather-forecasting-six-region]] sources were "verified 2026-06-08" (40 days). Public/citable heliophysics only; `agents/` untouched; no trader/KOL/maintenance namespaces touched; explicit `git add` of only the wiki files changed.
 
