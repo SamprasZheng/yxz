@@ -37,7 +37,7 @@ The **Nemotron-H** architecture replaces most self-attention layers with **Mamba
 | **Nemotron Nano 2 (9B v2)** | 2025-08-18 | 9B dense | **128K** | Hybrid Mamba-Transformer; distilled from 12B base trained on 20T tokens (FP8); on-par accuracy with Qwen3-8B, **6× faster** at 8K-in/16K-out; runs on a single A10G |
 | **Nemotron 3 Nano** (Omni) | 2025-12 | 31.6B MoE / 3.2B active | up to **1M** | Multimodal (vision + audio + text); cheapest tier; on free build.nvidia.com tier as of 2026 |
 | **Nemotron 3 Super** | 2026-03 | ~120B MoE / ~12B active | up to **1M** | Reasoning workhorse for multi-agent apps; paid via Bitdeer/CoreWeave/DigitalOcean partners |
-| **Nemotron 3 Ultra** | **released ~2026-Q2** | ~500B MoE / ~50B active | TBD | Deep-research / strategic planning. **Update (2026-06):** now released — leads US open-weights at **Artificial Analysis Intelligence Index ~48** (ahead of Gemma 4 31B ~39, Nemotron 3 Super ~36, gpt-oss-120b ~33) but **behind the China-led open-weight frontier Kimi K2.6 ~54** ([Artificial Analysis](https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-released)) |
+| **Nemotron 3 Ultra** | **released ~2026-Q2** | **~550B** MoE / ~50B active | TBD | Deep-research / strategic planning. **Update (2026-06):** now released — leads US open-weights at **Artificial Analysis Intelligence Index ~48** (ahead of Gemma 4 31B ~39, Nemotron 3 Super ~36, gpt-oss-120b ~33) but **behind the China-led open-weight frontier Kimi K2.6 ~54** ([Artificial Analysis](https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-released)). NVIDIA paired it with **[[concepts/hermes-agent-framework|Hermes Agent]] as a reference runtime** — coupling the model to the agent-runtime layer ([[synthesis/agent-runtime-orchestration-six-region]]) |
 
 ## Benchmark positioning
 
@@ -113,6 +113,7 @@ The "one model, two modes" idea above is implemented concretely by this wiki's [
 
 - [[synthesis/firefly-nemoclaw-reference-implementation]] -> how Nemotron is actually wired (and the Claude-vs-Nemotron orchestration gap)
 - [[synthesis/open-weight-llm-agent-stack-six-region]] -> six-region map of who builds open-weight base models and why it became a sovereignty question
+- [[synthesis/agent-runtime-orchestration-six-region]] -> six-region map of the runtime layer *above* the model; Nemotron is the mandated US model the runtime calls
 - [[concepts/dgx-spark]] -> local reasoning workstation context for on-prem agent demos
 - [[concepts/hermes-agent-framework]] -> framework path used with Nemotron in the GTC Taipei stack
 - [[concepts/nemoclaw]] -> sandbox/runtime layer around long-running Nemotron agents

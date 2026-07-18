@@ -7,7 +7,7 @@ tags: [ai-agents, hermes, nous-research, agent-framework, self-improving-agents,
 
 **Hermes Agent** is an open-source self-improving AI agent framework built by [[entities/nous-research]]. It is distinct from the [[entities/hermes-llm-series]] (Hermes-2/3/4) — Hermes Agent is the orchestration/runtime layer, the Hermes LLM series is the model lineage. Both ship from the same org, the framework can drive any provider's models, not just Nous's.
 
-**Repo:** https://github.com/NousResearch/hermes-agent — MIT License, Python 88.6%, latest release **v0.14.0 (2026-05-16)**, ~165k stars / 27k forks reported in May 2026.
+**Repo:** https://github.com/NousResearch/hermes-agent — MIT License, Python 88.6%. **Public launch 2026-02-25**; by June 2026 the repo had crossed **~188k stars** (from ~40k in April → ~188k in June, a peak ~24k stars/week) — the **fastest-growing open-source agent framework of 2026** and the single most-starred entry in the [[synthesis/agent-runtime-orchestration-six-region|six-region agent-runtime map]]. A major accelerant: **NVIDIA selected Hermes as a reference runtime for its Nemotron 3 Ultra (~550B) model** (sources accessed 2026-07-18: Dealroom, The Agent Report, DEV Community, GitHub). <!-- fact-refresh 2026-07-18: prior page said "~165k stars … May 2026"; corrected up to ~188k (June 2026) + added the 2026-02-25 launch and NVIDIA-reference-runtime fact -->
 
 **Site:** https://hermes-agent.nousresearch.com/
 
@@ -62,12 +62,28 @@ NVIDIA explicitly marks the Hermes path as experimental and not production-recom
 
 This is the framework recommended for the **NVIDIA Agent Challenge 2026** (see [[sources/nvidia-agent-challenge-2026]] for deadline + rules) that [[entities/sampras]] is competing in. <!-- deduped → [[sources/nvidia-agent-challenge-2026]] --> Hermes Agent's design — long-running, persistent, skill-evolving — directly matches the hackathon theme "long agents that run, persist, and perform — not demos, not slide decks." See also [[concepts/domain-specific-llm-agents]] for the broader narrow-agent philosophy that Hermes operationalizes.
 
+## Lineage — where Hermes sits in the agent-loop family tree
+
+Hermes is the current head of a four-step **agent-loop lineage** (distinct from the *sandbox* lineage traced on [[concepts/nemoclaw]]):
+
+| Era | Milestone | What it added |
+|---|---|---|
+| 2022 | **ReAct** (Yao et al.) | interleaved reason + act; the primitive every later framework inherits |
+| 2023 | **AutoGPT / BabyAGI** | the viral "autonomous loop" moment — goal → self-generated subtasks; brittle but proved the shape |
+| 2023–24 | **LangChain / AutoGen / CrewAI** | the framework wars — tool abstraction, multi-agent conversation, role-based crews |
+| 2025–26 | **self-improving, skill-authoring agents** (Hermes) | durable cross-session memory + agent-written skills that improve *between* runs — the "grows with you" step |
+
+Hermes' differentiator is the **last** step: it does not just orchestrate a loop, it *persists learning across sessions* (the memory loop above). That is the property the [[synthesis/agent-runtime-orchestration-six-region|runtime-layer 100-year thesis]] argues is the durable moat — "the agent that remembers you" outlasts "the model that answers you."
+
+**Forward trajectory (labelled scenario, not fact):** ~2030s — memory/skill portability standards (carry your agent between vendors, like email) vs vendor-captured memory stores; ~2050s — hardware-attested, permission-audited agent enclaves as a regulated capability. The fork is portability-vs-capture, tracked in [[synthesis/agent-runtime-orchestration-six-region]].
+
 ## The agent layer is region-neutral; the model layer is contested
 
 Hermes Agent's defining design choice — **model-agnostic, 25+ providers, switch with `hermes model`, no lock-in** — means the *runtime* layer is geopolitically neutral while the *model* layer underneath it is the contested ground. The same Hermes loop can drive a US Nemotron, a Chinese Qwen/DeepSeek/GLM/Kimi/MiniMax/Xiaomi-MiMo, a French Mistral, or a local Korean/Japanese sovereign model — its provider list already spans all six regions (NVIDIA NIM, OpenAI, Anthropic, DeepSeek, Alibaba Qwen, z.ai/GLM, Kimi/Moonshot, MiniMax, Xiaomi MiMo). This is the practical payoff of the [[synthesis/open-weight-llm-agent-stack-six-region|six-region open-weight map]]: because the open-weight frontier moved to China in 2026 (Kimi K2.6 leads open-weights) while the mandated-for-the-hackathon core is US (Nemotron), a model-agnostic framework lets a builder honour the [[sources/nvidia-agent-challenge-2026|Nemotron requirement]] for the graded path *and* benchmark against the cheaper/stronger Chinese open frontier for everything ungated. Nous Research itself embodies the entanglement — see [[entities/hermes-llm-series]], whose Hermes-4 14B is built on a **Chinese (Qwen-3)** base.
 
 ## See also
 
+- [[synthesis/agent-runtime-orchestration-six-region]] -> six-region map of the **runtime layer Hermes belongs to** (frameworks + sandboxes + memory); Hermes = the most-starred entry + the memory-moat exemplar
 - [[synthesis/open-weight-llm-agent-stack-six-region]] -> six-region map of the model layer this region-neutral framework runs on
 - [[concepts/dgx-spark]] -> local/on-prem deployment surface mentioned in the NVIDIA integration path
 - [[concepts/nemotron]] -> NVIDIA model family used in the challenge stack

@@ -64,6 +64,32 @@ A pluggable component that strips PII from prompts before they leave the sandbox
 
 The NemoClaw plugin injects **sandbox and policy context into every agent turn**, so when a tool call is blocked the agent receives a structured rejection (and the operator gets an auditable log line) rather than a silent failure. Operator-defined policy can require explicit intent confirmation for high-risk actions.
 
+## Lineage — the sandbox family tree
+
+NemoClaw's isolation primitives are **not new**; what is new is wiring 1979–2018 isolation technology to an agent that writes and runs its *own* code. The **sandbox / isolation lineage** (distinct from the *agent-loop* lineage traced on [[concepts/hermes-agent-framework]]):
+
+| Year | Primitive | Contribution |
+|---|---|---|
+| 1979 | `chroot` | first filesystem-scope confinement |
+| 2000 | FreeBSD **jails** | process + network confinement, not just FS |
+| 2004 | Solaris **Zones** | OS-level virtualization |
+| 2013 | LXC / **Docker** | containers go mainstream; the default sandbox substrate |
+| 2018 | **gVisor** (Google) + **Firecracker** (AWS, for Lambda) | user-space kernel / microVM — strong isolation at container speed |
+| 2025–26 | **agent-specific sandboxes** (NemoClaw, E2B, Modal, Daytona) | the new step: **out-of-process credential + intent enforcement** for self-modifying agents |
+
+NemoClaw's genuine novelty is the **[[concepts/openshell-runtime|OpenShell]] L7 credential proxy** — the agent never holds real provider keys; egress is rewritten host-side. That is the piece no 1979–2018 primitive provides, and it is what makes "the agent cannot exfiltrate its own keys or rewrite its own guardrails" true rather than aspirational.
+
+## Six-region sandbox positioning (台美日韓中國歐洲)
+
+The agent-sandbox market is a **US–Europe axis** (see the full [[synthesis/agent-runtime-orchestration-six-region|runtime six-region map]]):
+
+- **US** — deepest and most plural: **NemoClaw/OpenShell** (security-forward, Landlock+seccomp+netns+L7 proxy), **Modal** (gVisor), **Fly Machines**, Cloudflare; OpenAI's Agents SDK ships sandboxed execution.
+- **Europe** — owns the **standalone-sandbox flagship**: **E2B** (Czech-founded, Firecracker microVMs; used by HuggingFace/Perplexity, cited "94% of Fortune 100") and **Daytona** (Croatian-founded, $24M Series A 2026-02, compliance-first). This is Europe's component-specialist bet — it does not build a full-stack framework, it owns the cage.
+- **China** — sandboxing is *folded into* the frameworks (AgentScope 2.0's permission system) rather than sold as standalone infra.
+- **Japan / Korea / Taiwan** — consumers; the owner's [[synthesis/firefly-nemoclaw-reference-implementation|Firefly]] stack consumes NemoClaw (US) as its cage — the Taiwan-as-integrator pattern.
+
+**Where NemoClaw is differentiated:** most sandbox vendors (E2B, Modal, Daytona) optimize for *untrusted-code execution at scale*; NemoClaw optimizes for the *always-on, self-evolving single agent* with hot-reloadable [[concepts/nemoclaw-policy-presets|policy presets]] and out-of-process intent verification — a different point on the same isolation curve.
+
 ## Install
 
 Single-command installer (Apache 2.0):
@@ -143,6 +169,7 @@ The owner's own [[synthesis/firefly-nemoclaw-reference-implementation|Firefly mi
 
 ## Relationship to other NVIDIA agent stack pieces
 
+- [[synthesis/agent-runtime-orchestration-six-region]] — the **six-region map of the whole runtime layer** NemoClaw sits in; NemoClaw = the US security-forward sandbox, E2B = the European flagship, China folds sandboxing into frameworks.
 - [[concepts/openshell-runtime]] — the underlying sandbox runtime; NemoClaw is the opinionated distribution of it.
 - [[concepts/openclaw]] — the **default agent profile** that runs inside the sandbox; community-owned (MIT), created by [[entities/peter-steinberger]], not an NVIDIA project.
 - [[concepts/hermes-agent-framework]] — the second supported agent profile (experimental). Hermes provides the agent loop; NemoClaw provides the cage.
