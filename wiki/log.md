@@ -1,5 +1,8 @@
 # Wiki Log
 
+## [2026-07-19] kol-digest | automated daily sweep — 0 KOLs (list empty), 11 keywords, ~47 items
+KOL list is empty (seed-only); keyword sweep ran for all 11 terms: AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks. Top signals: (1) NemoClaw × LangChain Deep Agents Blueprint launched July 8 — >10× cost reduction ($4.48 vs $43.48/run on Nemotron 3 Ultra); (2) Anthropic J-space discovery + $1.5B Ode implementation JV (Blackstone/Goldman/H&F); (3) OpenAI GPT-5.6 (Sol/Luna/Terra) broadly released July 9; (4) OpenClaw 2026.7.2 + CVE-2026-25253 (CVSS 8.8) + NVIDIA one-command NemoClaw install for OpenClaw; (5) Polkadot staking overhaul July 8, dotID live July 5, DOT at all-time low ~$0.83. Pages touched: [[sources/kol-digest-2026-07-19]] (new) + index + log.
+
 ## [2026-07-18] deepen | AI-agent runtime/orchestration/sandbox core cluster (Nemotron / NemoClaw / Hermes) — new middle-layer six-region synthesis + agent-loop & sandbox lineages + Hermes fact-refresh
 **Rotation:** picked the **AI-agent core runtime cluster** — the genuinely stalest flagship core. The concept pages [[concepts/nemotron]], [[concepts/nemoclaw]], [[concepts/hermes-agent-framework]] (+ policy-presets/openshell/dgx-spark) last showed as touched **2026-06-23**, but that was a *link-only* edit inside the space-launch-airspace deepen commit — their last *substantive* deepen was the 2026-05-24 ingest + 2026-06-14 firefly-reference synthesis (~55 days). Every other flagship domain was worked 07-03→07-17. Public/citable AI-infra research only; `agents/` READ-only (not modified); no trader/KOL/maintenance namespaces touched; explicit `git add` of only the 6 wiki files changed.
 
