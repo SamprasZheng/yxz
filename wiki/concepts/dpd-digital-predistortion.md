@@ -124,6 +124,7 @@ This is the bridge from the RF front-end cluster to the [[entities/nvidia|NVIDIA
 - [[concepts/nemotron]] / [[entities/nvidia]] — shared GPU compute lineage for on-board NN-DPD
 - [[entities/win-semiconductors]] — Taiwan GaN PA foundry whose devices DPD corrects
 - [[synthesis/phased-array-rf-frontend-supply-chain]] — where DPD-paired GaN PAs / DFE sit in the supply chain
+- [[synthesis/rf-transmitter-acceptance-layer-six-region]] — DFE/DPD IP is sub-layer B of the transmitter *acceptance* (certification) map
 
 ## Sources (accessed 2026-05-31; six-region + vendor layer added 2026-07-10)
 

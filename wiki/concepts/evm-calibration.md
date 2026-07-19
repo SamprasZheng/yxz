@@ -23,6 +23,8 @@ Authoritative limits, **3GPP TS 38.104 (5G NR base station)** — identical to t
 
 A typical engineering target of **1.5–2% EVM** (this page) therefore corresponds to "clean enough for 256-QAM with margin." Satellite waveforms (DVB-S2X high-order APSK; e.g. 16APSK on [[sources/hsieh-xband-leo-transmitter-2020]]) follow the same risk curve — higher-order constellations demand tighter EVM, which is why the 8% measured 16APSK result on that source counts as a pass for its order but would fail a 256-QAM link.
 
+**Layer-down — why the ceiling costs power:** meeting the 3.5% 256-QAM ceiling forces the [[concepts/dpd-digital-predistortion|PA]] to run roughly **8–10 dB below its P1dB compression point** (output back-off) so residual nonlinearity stays under the error budget — directly trading transmit efficiency for constellation cleanliness. [[concepts/dpd-digital-predistortion|DPD]] exists precisely to recover part of that back-off (run the PA hotter at the same EVM), which is why the DPD/DFE tier is inseparable from the EVM gate. This is the ship/no-ship framing made quantitative: EVM ceiling → required back-off → PA efficiency → node DC/thermal budget.
+
 ## Definition
 
 EVM (Error Vector Magnitude) measures the vector distance between the actual received constellation point and its ideal position, expressed as a percentage or in dB. It is the most fundamental quantitative metric for wireless transmitter signal quality.
@@ -141,6 +143,8 @@ EVM calibration is gated by the measurement instrument (VSA / signal analyzer / 
 
 This mirrors the converter-layer gap in [[concepts/zero-if-transmitter]] and the front-end map in [[synthesis/phased-array-rf-frontend-supply-chain]]: Taiwan and Korea fab and assemble RF at world scale but depend on US/Europe/Japan for the instruments that *certify* it. Calibration know-how (this page) is portable IP; the instrument is the chokepoint.
 
+**Market anchor (verified 2026-07-19):** the merchant vector-signal-analysis market is ≈**$422.9M (2025)**, ~7.1% CAGR to 2033, and **Keysight + Rohde & Schwarz + Anritsu together hold >50%** of it (Keysight ~27% / R&S ~19% of the adjacent VNA volume). This narrow three-vendor concentration is *why* the instrument, not the calibration algorithm, is the least-substitutable link — and it is sub-layer C of the [[synthesis/rf-transmitter-acceptance-layer-six-region]] map.
+
 ## Historical note
 
 EVM superseded older scalar quality metrics (carrier-to-noise, adjacent-channel power alone) as digital QAM/PSK modulation made the *vector* error — not just power — the binding constraint. The vector-error framing scales cleanly from early QPSK links to today's 256/1024-QAM and DVB-S2X APSK, which is why the same six VSA windows and the same LO-leakage/IQ-imbalance/DPD correction triad remain the working toolkit decades on; what changes is only how tight the ceiling has become as constellation order climbed.
@@ -153,6 +157,7 @@ EVM superseded older scalar quality metrics (carrier-to-noise, adjacent-channel 
 - [[concepts/zero-if-transmitter]] — primary source architecture for EVM issues
 - [[concepts/aesa]] — system-level impact of EVM in phased array systems
 - [[concepts/dpd-digital-predistortion]] — another class of EVM degradation caused by PA nonlinearity
+- [[synthesis/rf-transmitter-acceptance-layer-six-region]] — EVM is the acceptance gate; the T&M tier is sub-layer C of this map
 - [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region front-end supply map (instrument tier complements the chip tier)
 - [[concepts/leo-value-chain]] — EVM ceiling sets the achievable LEO downlink/ISL data rate
 - [[sources/hsieh-xband-leo-transmitter-2020]] — actual measurement data source (LO calibration: −10 dB → pass; 16APSK EVM: 8%)

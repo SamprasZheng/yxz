@@ -83,7 +83,9 @@ The structural read: **zero-IF is not "the future," it is the current cost optim
 | Multi-band / digital beamforming | Limited; retune LO | **Native** — multiple simultaneous beams anywhere in band |
 | Where it wins | Consumer terminals, dense LEO element count | Defense AESA, wideband SATCOM, fully-digital arrays |
 
-Reference: Analog Devices, *Radio Architecture Matters: A Review of RF Sampling vs. Zero-IF* ([analog.com](https://www.analog.com/en/resources/technical-articles/radio-architecture-matters.html)); AMD/Xilinx Zynq UltraScale+ RFSoC backgrounder (8–16 ADC at 12–14 bit / 2–5 GSPS, 8–16 DAC at 14 bit / 6–10 GSPS), accessed 2026-06-11.
+**Where the calibration burden goes (layer-down, verified 2026-07-19):** removing the mixer does not remove *all* calibration — it relocates it from LO-leakage/IQ-imbalance to **converter linearity (spurs/SFDR) and clock jitter**. Measured anchor on the current merchant part (AMD/Xilinx Zynq UltraScale+ RFSoC **Gen 3**, ZCU208): eight 14-bit RF-DACs at **10 GSPS**, eight 14-bit RF-ADCs at **5 GSPS**; RF-DAC noise-spectral-density ≈ **−160 dBm/Hz** and RF-ADC ≈ **−153 dBm/Hz** at a 3.5 GHz carrier. In the direct-RF chain the SEM/EVM budget is then set by that converter NSD, SFDR, and aperture-jitter — the discipline moves from the analog-quadrature domain of [[concepts/evm-calibration]] to converter/clock characterization.
+
+Reference: Analog Devices, *Radio Architecture Matters: A Review of RF Sampling vs. Zero-IF* ([analog.com](https://www.analog.com/en/resources/technical-articles/radio-architecture-matters.html)); AMD/Xilinx Zynq UltraScale+ RFSoC Gen-3 converter parameters (ZCU208: 8× 14-bit ADC / 5 GSPS, 8× 14-bit DAC / 10 GSPS; RF-DAC NSD ≈ −160 dBm/Hz, RF-ADC ≈ −153 dBm/Hz at 3.5 GHz), *Understanding Key Parameters for RF-Sampling Data Converters* (WP509) and WP489 *An Adaptable Direct RF Sampling Solution*, verified 2026-07-19.
 
 ## Six-region map — who supplies the transceiver / data-converter layer
 
@@ -98,7 +100,7 @@ This is the integrated-circuit tier *below* the beamformer-IC/PA front-end mappe
 | **China** | Fast-rising merchant RF, transceiver gap narrowing under sanction pressure | Maxscend (卓胜微), Vanchip; converter tier still trails ADI/TI |
 | **Taiwan** | **Upstream-strong, space-grade transceiver-absent** | MediaTek/Richwave (handset/Wi-Fi transceivers), [[entities/win-semiconductors|Win Semiconductors]] foundry for the PA tier — but no sovereign space-grade RF-sampling converter; same midstream-C gap as [[synthesis/leo-taiwan-odc-gap]] |
 
-Taiwan's position is consistent across every RF layer: world-class foundry and module capacity, no domestic space-grade transceiver/converter IP. The defect-correction expertise captured on this page and [[concepts/evm-calibration]] is exactly the system-integration know-how that the midstream gap leaves on the table.
+Taiwan's position is consistent across every RF layer: world-class foundry and module capacity, no domestic space-grade transceiver/converter IP. The defect-correction expertise captured on this page and [[concepts/evm-calibration]] is exactly the system-integration know-how that the midstream gap leaves on the table. This transceiver/converter tier (sub-layer A) is one of the three columns of the [[synthesis/rf-transmitter-acceptance-layer-six-region]] map, which welds it to the DFE/DPD-IP and T&M-instrument tiers into the full "who can independently *certify* a high-order-QAM/APSK transmitter" view.
 
 ## Related Links
 
@@ -106,7 +108,8 @@ Taiwan's position is consistent across every RF layer: world-class foundry and m
 - [[concepts/aesa]] — Zero-IF transmitters are typically embedded in AESA systems
 - [[concepts/hybrid-phased-array]] — per-element replication that multiplies any architecture saving by N
 - [[concepts/dpd-digital-predistortion]] — PA nonlinearity compensation (another key correction in Zero-IF systems)
-- [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region map of the front-end tier above the transceiver
+- [[synthesis/rf-transmitter-acceptance-layer-six-region]] — this architecture is sub-layer A of the transmitter *acceptance* (certification) map
+- [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region map of the analog front-end tier above the transceiver
 - [[concepts/leo-value-chain]] — where the transmitter sits in the LEO upstream RF segment
 - [[synthesis/leo-taiwan-odc-gap]] — the midstream-C gap this architecture know-how could help close
 - [[sources/hsieh-xband-leo-transmitter-2020]] — actual Zero-IF X-band system measurement data

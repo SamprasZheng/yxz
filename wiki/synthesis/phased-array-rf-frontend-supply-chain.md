@@ -53,6 +53,7 @@ Taiwan's strength is concentrated in **Layer 2 (and adjacent passives)**: [[enti
 ## Cross-links
 
 - Architecture mechanism: [[concepts/aesa]], [[concepts/hybrid-phased-array]], [[concepts/zero-if-transmitter]], [[concepts/evm-calibration]], [[concepts/dpd-digital-predistortion]]
+- Mixed-signal + verification companion: [[synthesis/rf-transmitter-acceptance-layer-six-region]] — the transceiver/converter + DFE/DPD-IP + T&M-instrument tier that *certifies* the front-end this page maps
 - Source measurements: [[sources/hsieh-xband-leo-transmitter-2020]]
 - System-level + investment framing: [[synthesis/leo-taiwan-odc-gap]], [[concepts/leo-value-chain]], [[concepts/orbital-data-center]]
 - Taiwan entities: [[entities/win-semiconductors]], [[entities/ascend-tech]], [[entities/huatong-pcb]]
