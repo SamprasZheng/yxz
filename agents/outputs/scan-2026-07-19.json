@@ -1,0 +1,162 @@
+{
+  "scan_date": "2026-07-19",
+  "mode": "offline-stub",
+  "blockers": [
+    "No trader pipeline exists in this repo (only Firefly orbital planner; agents/src/trader/ absent).",
+    "yfinance blocked by remote-env proxy (403 CONNECT tunnel for Yahoo Finance API calls).",
+    "Price data sourced from web searches; daily % change available only for NVDA, AAPL, TSLA, PLTR.",
+    "LLM scan (LLM_BACKEND=anthropic trader scan) not runnable — CLI does not exist."
+  ],
+  "market_context": {
+    "last_trading_day": "2026-07-17",
+    "note": "July 18 = Saturday, July 19 = Sunday; scan uses Friday July 17 close as anchor.",
+    "sp500_close": 7457.69,
+    "sp500_chg_1d_pct": -1.01,
+    "nasdaq_close": 25520.24,
+    "nasdaq_chg_1d_pct": -1.40,
+    "djia_close": 52146.42,
+    "djia_chg_1d_pct": -0.77,
+    "smh_week_pct": -9.0,
+    "phlx_chip_from_june22_peak_pct": -20.2,
+    "theme": "Semiconductor rout week 4; Chinese AI model (Kimi) improvements fueling AI hyperscaler capex fears; small caps outperforming (+20% YTD Russell 2000 vs S&P ~+10%); rotation to value/defensives. AAPL notable outlier +5.8% on week vs Mag7 weakness."
+  },
+  "tickers": [
+    {
+      "symbol": "NVDA",
+      "last_close": 207.40,
+      "chg_1d_pct": -2.21,
+      "direction": "short",
+      "confidence": 0.65,
+      "sizing_sigma": 1.80,
+      "news_momentum": 0.20,
+      "thesis": "AI capex headwinds deepening; PHLX chip index -20.2% from June 22 peak; Kimi Chinese AI improvements reducing hyperscaler GPU demand narrative; still highest signal-clarity ticker."
+    },
+    {
+      "symbol": "AAPL",
+      "last_close": 333.74,
+      "chg_1d_pct": 0.14,
+      "direction": "long",
+      "confidence": 0.60,
+      "sizing_sigma": 0.80,
+      "news_momentum": 0.80,
+      "thesis": "+5.8% on week vs broad Mag7 weakness; services/hardware mix insulated from AI capex debate; relative strength breakout signal."
+    },
+    {
+      "symbol": "AMD",
+      "last_close": 500.90,
+      "chg_1d_pct": null,
+      "direction": "short",
+      "confidence": 0.60,
+      "sizing_sigma": 1.50,
+      "news_momentum": 0.20,
+      "thesis": "Fell ~5% intra-day July 17 before partial recovery; exposed to same AI capex re-rating as NVDA; MI300X demand outlook questioned."
+    },
+    {
+      "symbol": "COIN",
+      "last_close": 157.12,
+      "chg_1d_pct": null,
+      "direction": "short",
+      "confidence": 0.55,
+      "sizing_sigma": 1.60,
+      "news_momentum": 0.40,
+      "thesis": "Risk-off environment; crypto correlation to large-cap growth risk assets; BTC consolidating; high beta to sentiment shifts."
+    },
+    {
+      "symbol": "PLTR",
+      "last_close": 132.38,
+      "chg_1d_pct": -1.53,
+      "direction": "long",
+      "confidence": 0.55,
+      "sizing_sigma": 1.30,
+      "news_momentum": 0.55,
+      "thesis": "Defense/gov software secular demand (AIP, NATO contract); less exposed to AI hyperscaler capex narrative; relative resilience vs pure-semis in rout."
+    },
+    {
+      "symbol": "TSLA",
+      "last_close": 380.84,
+      "chg_1d_pct": -2.61,
+      "direction": "short",
+      "confidence": 0.55,
+      "sizing_sigma": 1.40,
+      "news_momentum": 0.30,
+      "thesis": "Growth/AI-adjacent selloff; FSD delivery pace uncertain; energy storage positive but diluted by macro."
+    },
+    {
+      "symbol": "MA",
+      "last_close": null,
+      "chg_1d_pct": null,
+      "direction": "long",
+      "confidence": 0.50,
+      "sizing_sigma": 1.00,
+      "news_momentum": 0.70,
+      "thesis": "Value rotation beneficiary; payments infrastructure FCF compounder insulated from AI capex debate; agentic-payments tailwind (wiki thesis)."
+    },
+    {
+      "symbol": "V",
+      "last_close": 358.56,
+      "chg_1d_pct": null,
+      "direction": "long",
+      "confidence": 0.50,
+      "sizing_sigma": 1.00,
+      "news_momentum": 0.70,
+      "thesis": "Same thesis as MA; global payment volumes resilient; defensive rotation playbook."
+    },
+    {
+      "symbol": "MSFT",
+      "last_close": 393.82,
+      "chg_1d_pct": null,
+      "direction": "abstain",
+      "confidence": 0.45,
+      "sizing_sigma": 1.10,
+      "news_momentum": 0.55,
+      "thesis": "Azure cloud exposure to AI spending questioned; Copilot monetization real but AI capex scale uncertain; conflicting signals → abstain."
+    },
+    {
+      "symbol": "GOOGL",
+      "last_close": 346.77,
+      "chg_1d_pct": null,
+      "direction": "abstain",
+      "confidence": 0.45,
+      "sizing_sigma": 1.00,
+      "news_momentum": 0.55,
+      "thesis": "Search moat intact; AI Overviews growing; but heavy TPU/infra capex re-rated by market; mixed signals."
+    },
+    {
+      "symbol": "META",
+      "last_close": 646.01,
+      "chg_1d_pct": null,
+      "direction": "abstain",
+      "confidence": 0.45,
+      "sizing_sigma": 1.00,
+      "news_momentum": 0.50,
+      "thesis": "Ad revenue solid; Llama open-weight strategy differentiates; but heavy AI capex drag; abstain."
+    },
+    {
+      "symbol": "AMZN",
+      "last_close": 247.23,
+      "chg_1d_pct": null,
+      "direction": "abstain",
+      "confidence": 0.45,
+      "sizing_sigma": 1.00,
+      "news_momentum": 0.50,
+      "thesis": "AWS AI spending questioned; e-commerce floor; logistics moat; conflicting signals → abstain."
+    }
+  ],
+  "fom_sorted": [
+    {"symbol": "AAPL", "fom": 0.66},
+    {"symbol": "NVDA", "fom": 0.635},
+    {"symbol": "AMD",  "fom": 0.60},
+    {"symbol": "COIN", "fom": 0.585},
+    {"symbol": "PLTR", "fom": 0.57},
+    {"symbol": "TSLA", "fom": 0.56},
+    {"symbol": "MA",   "fom": 0.555},
+    {"symbol": "V",    "fom": 0.555},
+    {"symbol": "MSFT", "fom": 0.535},
+    {"symbol": "GOOGL","fom": 0.52},
+    {"symbol": "META", "fom": 0.515},
+    {"symbol": "AMZN", "fom": 0.515}
+  ],
+  "tier_1": ["AAPL", "NVDA", "AMD", "COIN", "PLTR"],
+  "tier_2": ["TSLA", "MA", "V", "MSFT", "GOOGL"],
+  "dropped": ["META", "AMZN"]
+}
