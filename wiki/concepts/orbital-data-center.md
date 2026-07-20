@@ -43,12 +43,14 @@ Ground data-center electricity: **≈415 TWh in 2024** (~1.5% of global electric
 | 2025-11-04 | Google announces **Project Suncatcher** ([[entities/google-suncatcher]]) with a published system-design pre-print; Planet to build two prototype sats for early-2027 launch; **HBM** flagged as the most TID-sensitive subsystem |
 | 2025-12 | Starcloud-1 trains NanoGPT (Karpathy) on-orbit and runs a Gemini model in space — first LLM training + first frontier-model inference in orbit |
 | 2026-01-11 | [[entities/axiom-space]] launches **ODC Node 1 & 2** to LEO on Kepler optical-relay satellites (2.5 Gbps optical, SDA Tranche-1 compatible) — first *operational* relay-networked ODC nodes |
+| 2026-01-30 | **US** — [[entities/spacex-orbital-data-center]] files with the **FCC for up to 1,000,000 satellites** (500–2,000 km, 30°+SSO); ~100 GW/yr of compute per ~1M t/yr launched; FCC Space Bureau accepts for filing **2026-02-04 (DA-26-113)** — the largest ODC filing by satellite count, following SpaceX's xAI acquisition |
 | 2026-03-30 | Starcloud raises **$170M Series A** at $1.1B (Benchmark + EQT) — fastest YC unicorn (17 months) |
 | 2026-03 | **Japan** — Space Compass (NTT × SKY Perfect JSAT) orders its **first GEO optical data-relay satellite from Swissto12**; selected for **JAXA's Space Strategy Fund** + signs an **Airbus DS MOU** (optical comms + EO) in April 2026 — the relay/edge fabric moves from demo to procurement |
 | 2026 GTC | Jensen Huang frames space computing as "the ultimate frontier" |
 | 2026-06-05 | **China** — [[entities/ada-space]] signs a **strategic AI cooperation agreement with Tencent** (Tencent to use constellation compute) — first named hyperscale-tier customer for a flying compute constellation |
 | 2026-07-03 | **Korea** — [[entities/hanwha-aerospace]] (Hanwha Group) commits **≈55 trillion won (~$36B) to space + AI by 2040**, *including an orbital AI data center* + 64 VLEO SAR sats by 2031 — Korea's shift from enabling-supplier toward a declared sovereign ODC operator |
-| 2026 (H2, planned) | [[entities/starcloud]] **Starcloud-2** (NVIDIA Blackwell B200 + AWS server blade, live commercial workloads; ~100× Starcloud-1 power); Starcloud FCC filing for ~88,000 satellites surfaces. [[entities/ada-space]] launches **2nd + 3rd satellite groups** (3rd ≈14 sats, ~3,000 kg to 525 km SSO, Q4 2026) |
+| 2026-07-07 | **US** — **Orbital Compute Inc.** (a five-month-old startup, CEO Euwyn Poon) files with the **FCC for up to 100,000 satellites** totalling **10 GW** of compute (100 kW-class nodes, 500–850 km) — a fourth US ODC filer alongside SpaceX/Starcloud, evidence the ODC land-rush is now a multi-entrant FCC queue |
+| 2026-10 (targeted) | [[entities/starcloud]] **Starcloud-2** (NVIDIA Blackwell B200 + AWS server blade, live commercial workloads; ~100× Starcloud-1 power; **largest radiator yet flown**); Starcloud FCC filing for ~88,000 satellites surfaces. [[entities/ada-space]] launches **2nd + 3rd satellite groups** (3rd ≈14 sats, ~3,000 kg to 525 km SSO, Q4 2026) |
 
 ## Application Scenarios
 
@@ -74,6 +76,7 @@ This architecture allows enterprises to incrementally adopt ODC without fully mi
 | Player | Positioning |
 |------|------|
 | [[entities/starcloud]] | First mover in commercial GPU (H100→Blackwell) on-orbit validation; gigawatt-scale roadmap; ~88k-sat FCC filing |
+| [[entities/spacex-orbital-data-center]] | Launch-integrated hyperscale bet; **1,000,000-sat** FCC filing (2026-01, accepted DA-26-113); xAI acquisition + reported Anthropic compute demand; no node flown yet |
 | [[entities/axiom-space]] | AxDCU-1 (ISS, 2025) → operational ODC Node 1&2 (2026-01) on Kepler optical relay; national-security/sovereign-cloud customers |
 | [[entities/ada-space]] | China's state-scaled 2,800-satellite Three-Body / Star-Compute constellation |
 | [[entities/google-suncatcher]] | Hyperscaler entry; Trillium TPU + free-space-optics formation flight |
@@ -87,7 +90,7 @@ ODC is no longer a single-country story. The corpus's signature six-region read 
 
 | Region | Lead actor(s) | Posture | Status (2026-06) |
 |---|---|---|---|
-| **US** 🇺🇸 | [[entities/starcloud]], [[entities/axiom-space]], [[entities/google-suncatcher]], [[entities/nvidia]] | Commercial-first, VC-funded, hardware in orbit | **Leads** — only region with GPUs + LLM training actually flown |
+| **US** 🇺🇸 | [[entities/starcloud]], [[entities/axiom-space]], [[entities/google-suncatcher]], [[entities/spacex-orbital-data-center]], [[entities/nvidia]] | Commercial-first, VC-funded, hardware in orbit — **plus** a launch-integrated hyperscale bet (SpaceX 1M-sat filing) | **Leads** — only region with GPUs + LLM training actually flown; now also the largest paper filing |
 | **China** 🇨🇳 | [[entities/ada-space]] + Zhejiang Lab | State-directed scale; dedicated compute constellation | **Leads on deployed scale** — 12 sats up, 2,800 planned |
 | **Europe** 🇪🇺 | Thales Alenia Space (ASCEND), Airbus, ArianeGroup, DLR | Study-stage; net-zero + data-sovereignty framing | Strong study, no hardware yet; ROI targeted by 2050 |
 | **Japan** 🇯🇵 | Space Compass (NTT × SKY Perfect JSAT) | Edge/relay network across GEO/LEO/HAPS, optical | Procuring the fabric — first GEO optical-relay sat ordered (Swissto12, 2026-03) + JAXA Space Strategy Fund |
@@ -109,6 +112,8 @@ ODC is no longer a single-country story. The corpus's signature six-region read 
 
 The constant across all horizons is the σT⁴ radiator limit — the one term that does not improve with Moore's-law-style scaling.
 
+**Authoritative neutral anchor (2026-07):** [Bain & Company, *Orbital Data Centers: Beyond the Grid* (2026-07)](https://www.bain.com/insights/orbital-data-centers-beyond-the-grid/) — reported via [Bloomberg (2026-07-17)](https://www.bloomberg.com/news/articles/2026-07-17/orbital-data-centers-to-have-modest-share-of-total-compute-bain) — concludes ODC could hold a **"modest but strategically important"** share of global compute by ~2040, with **launch cost and cadence** the determinant and **scaling not before the early 2030s**. This keeps the wiki's read evidence-led and cuts against hype in both directions: it validates the ~2030 hybrid-cloud horizon above while cautioning that the ~2050/2100 rows remain scenario, not forecast — and it directly bears on the falsifier "ODC bends the demand curve fails if launched compute stays <1% of the IEA 945 TWh."
+
 ## Supply Chain Position
 
 See mid-stream Segment C in [[concepts/leo-value-chain]]. Taiwan is currently almost absent from this segment, representing a structural gap — analysed in [[synthesis/leo-taiwan-odc-gap]] and placed in global context in [[synthesis/orbital-data-center-six-region]].
@@ -120,5 +125,5 @@ See mid-stream Segment C in [[concepts/leo-value-chain]]. Taiwan is currently al
 ## Related
 
 - [[concepts/leo-value-chain]], [[concepts/cots-gpu-radiation-risk]], [[concepts/rha-radiation-hardening]], [[concepts/see-single-event-effects]]
-- [[entities/starcloud]], [[entities/ada-space]], [[entities/google-suncatcher]], [[entities/axiom-space]], [[entities/hanwha-aerospace]], [[entities/nvidia]]
+- [[entities/starcloud]], [[entities/ada-space]], [[entities/google-suncatcher]], [[entities/axiom-space]], [[entities/spacex-orbital-data-center]], [[entities/hanwha-aerospace]], [[entities/nvidia]]
 - [[synthesis/orbital-data-center-six-region]], [[synthesis/leo-taiwan-odc-gap]]
