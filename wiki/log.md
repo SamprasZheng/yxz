@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-20] daily-trader | BLOCKED stub — trader pipeline absent + yfinance proxy-403; seeded watchlist NVDA/AAPL/TSLA/MSFT/AMD/GOOGL/META/AMZN; FOM formula documented; no live scan verdicts produced. See [[synthesis/daily-trader-2026-07-20]].
+
 ## [2026-07-19] deepen | RF transmitter-architecture & calibration *acceptance layer* (zero-IF / EVM / DPD) — new mixed-signal-and-verification six-region synthesis + converter-linearity layer-down + 3GPP/RFSoC/T&M fact-check
 **Rotation:** picked the **RF transmitter-calibration subcluster** — the stalest *content* slice in the corpus. [[concepts/zero-if-transmitter]] and [[concepts/evm-calibration]] last had a *substantive* deepen on **2026-06-11** (38 days; the 06-24 git touch was a chore living-topic refresh, not content); [[concepts/dpd-digital-predistortion]] was deepened 07-10, so it served as the third (already-rich) leg. Every other flagship domain was worked 07-05→07-18. Public/citable RF research only; no personal/financial data; `agents/` untouched; no trader/KOL/maintenance namespaces; explicit `git add` of only the wiki files changed.
 
