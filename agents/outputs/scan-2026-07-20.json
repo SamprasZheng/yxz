@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-20",
+  "status": "blocked",
+  "blockers": [
+    {
+      "blocker": "trader_pipeline_missing",
+      "detail": "agents/src/trader/ does not exist; only the firefly agent lives under agents/src/. The `trader` CLI command is not registered in agents/pyproject.toml."
+    },
+    {
+      "blocker": "yfinance_proxy_403",
+      "detail": "yfinance HTTP requests return CONNECT tunnel failed / 403 from the remote execution environment proxy for all tickers (NVDA, AAPL, TSLA, MSFT, AMD, GOOGL, META, AMZN). External financial data APIs are blocked in this sandbox."
+    },
+    {
+      "blocker": "llm_backend_disabled",
+      "detail": "With no trader CLI, LLM_BACKEND fallback path could not be exercised."
+    }
+  ],
+  "watchlist_seeded": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+  "prior_recommendations": null,
+  "backtest": null,
+  "scan_verdicts": null,
+  "fom_table": null,
+  "note": "Stub produced per blocker protocol. See wiki/synthesis/daily-trader-2026-07-20.md for full report."
+}
