@@ -168,5 +168,5 @@ FOM = 0.4 × confidence
 
 ---
 
-*Scan artifact:* `[[../agents/outputs/scan-2026-07-21.json]]`
+*Scan artifact:* `agents/outputs/scan-2026-07-21.json`
 *Next run:* 2026-07-22 — first real scan if network access restored.
