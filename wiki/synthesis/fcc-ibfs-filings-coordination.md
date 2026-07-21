@@ -85,6 +85,8 @@ EPFD compliance does not resolve NGSO/NGSO interference (two LEO constellations 
 
 The **2020 Ku/Ka-band processing round** — encompassing SpaceX Gen2, Kuiper, and OneWeb modification applications — established the current dominant operators in Ku/Ka NGSO spectrum over the US.
 
+> **Regularization ahead (2026-07):** the Part 100 R&O circulated for the 2026-07-22 vote (scheduled, not yet adopted) would adopt a **robust NGSO–NGSO sharing framework** and replace the *highly discretionary* Part 25 processing-round rules with a **rules-based, predictable process** — operators would be able to plan for a round to open rather than depend on staff discretion. For the Mission Desk's early-warning monitoring (§4), this makes the *timing* of contested-band rounds more forecastable. See [[concepts/processing-round]].
+
 ---
 
 ## 3. Recent Rulings That Shape the Interference Landscape (2020–2026)
@@ -99,7 +101,7 @@ Full details in [[sources/fcc-starlink-gen2-kuiper-rulings-2022-2024]]. Summary:
 | SpaceX Starlink | Gen2 V/E-band partial grant (DA-24-1193) | (part of 7,500) | V/E | Nov 2024 |
 | AST SpaceMobile | SCS direct-to-device authorization (DA-24-756) | 248 | 700 MHz / 850 MHz cellular | 2024 |
 | **FCC (EPFD reform)** | **R&O FCC 26-26** — fixed EPFD limits → **performance-based GSO protection + good-faith coordination** | rule change (all NGSO/GSO ops in-band) | 10.7–12.7 / 17.3–18.6 / 19.7–20.2 GHz | **adopted 2026-04-30, eff. 2026-07-13** |
-| **FCC (Part 100)** | Space Modernization Order — Part 25 → **Part 100** "licensing assembly line," default-to-yes, modular single-Form-312 | licensing-process overhaul | all satellite/earth-station | **vote scheduled 2026-07-22** |
+| **FCC (Part 100)** | Space Modernization **R&O + FNPRM** (SB Docket 25-306) — Part 25 → **Part 100** "licensing assembly line," default-to-yes, single-Form-312, **20-yr terms**, **regularized NGSO/NGSO processing round**, Variable-Trajectory license, certifications-over-showings | licensing-process overhaul | all satellite/earth-station | **vote scheduled 2026-07-22** (not yet adopted as of 07-21) |
 
 **For interference attribution**: Starlink Gen2 (7,500 sats Ku/Ka + V-band) and Kuiper (3,232 sats Ka) are the dominant co-frequency sources in Ku/Ka bands. AST introduces a new cellular-band (700 MHz / 850 MHz) interference class not previously associated with LEO FSS. [[entities/starcloud]] and [[entities/ada-space]] orbital data center operators in LEO are the most exposed to these interference environments. **New in 2026:** for the Ku/Ka bands above, the attribution test shifts from "did the operator exceed a fixed EPFD limit" to "did it degrade GSO service quality under the performance-based framework, and had good-faith coordination been reached" — a qualitatively different evidentiary question for the Mission Desk verb.
 
@@ -173,7 +175,7 @@ For the [[concepts/aesa|AESA]] / [[concepts/hybrid-phased-array|hybrid phased-ar
 - IBFS portal: `licensing.fcc.gov/myibfs/` (successor URL to `apps.fcc.gov/ibfsweb`); 24/7 public access; time-stamps filings to the millisecond
 - FCC Space Bureau created April 10–11, 2023, carved from the International Bureau; Chairwoman Rosenworcel's initiative; administers Part 25 SAT-*/SES-* filings
 - Schedule S is the mandatory technical annex to FCC Form 312 for space station applications; contains orbital parameters, frequency bands, EIRP density, antenna patterns, EPFD commitment
-- Part 25 standard license term: 15 years; small satellite: 6 years; processing time: 6–9 months (uncontested GSO) to 24+ months (NGSO processing round)
+- Part 25 standard license term: 15 years; small satellite: 6 years; processing time: 6–9 months (uncontested GSO) to 24+ months (NGSO processing round). *(The Part 100 R&O circulated for the 2026-07-22 vote would extend most space/earth-station terms to 20 years — see below.)*
 - Part 5 experimental: no commercial service allowed; 2–5 year terms; filing 3–6 months before launch
 - ITU Article 22 EPFD limits: per-system limits for NGSO → GSO downlink and uplink interference; Resolution 76 adds aggregate limits for multiple NGSO systems
 - ITU coordination pipeline: API establishes priority date (published in BR IFIC); CR/C → CR/D bilateral coordination; Notification → Master Register entry
@@ -182,7 +184,7 @@ For the [[concepts/aesa|AESA]] / [[concepts/hybrid-phased-array|hybrid phased-ar
 - SpaceX Gen2 V/E-band: DA-24-1193, November 26, 2024
 - AST SpaceMobile SCS: 248 satellites, 700 MHz / 850 MHz cellular bands, 2024 authorization
 - **EPFD reform (FCC 26-26):** adopted 2026-04-30 (3–0), effective 2026-07-13; replaced fixed ITU Article 22 EPFD limits with performance-based GSO protection + mandatory good-faith coordination in 10.7–12.7 / 17.3–18.6 / 19.7–20.2 GHz — first US domestic divergence from the ITU EPFD standard
-- **Part 100 (Space Modernization):** Part 25 → Part 100 "licensing assembly line" / default-to-yes / modular single-Form-312; NPRM comments 2026-01-20, replies 2026-02-18; Space Modernization Order scheduled for full-Commission vote 2026-07-22
+- **Part 100 (Space Modernization), SB Docket No. 25-306:** Part 25 → Part 100 "licensing assembly line" / default-to-yes / single-Form-312; NPRM comments 2026-01-20, replies 2026-02-18. **A Report and Order + FNPRM is circulated for the full-Commission vote at the 2026-07-22 Open Meeting** (scheduled, *not yet adopted* as of 2026-07-21). Per the July-1-2026 fact sheet, the R&O would (if adopted as circulated) replace Part 25 with Part 100, presume compliant applications in the public interest, **extend most space/earth-station license terms to 20 years** (from 15), **regularize the NGSO/NGSO processing round** via a robust rules-based sharing framework (replacing the discretionary Part 25 process), remove surety-bond requirements for most non-processing-round licenses, add a **Variable Trajectory Space Station** license category, and accept certifications over detailed showings; the FNPRM seeks comment on further Part 100 changes. This is a **process** overhaul distinct from the **FCC 26-26** EPFD interference-rule change above.
 - **Processing-round lineage:** four modern Ku/Ka NGSO FSS rounds — 2016 (OneWeb-triggered, closed 2016-11-15; first modern round), 2017, 2020 (Kuiper-triggered), 2021 (~81,195 sats requested); ~43 NGSO FSS applications total; the round is a US-specific instrument with no clean six-region equivalent
 
 ---

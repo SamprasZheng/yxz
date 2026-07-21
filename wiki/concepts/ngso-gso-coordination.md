@@ -51,6 +51,8 @@ EPFD compliance under Article 22 does **not** address NGSO-to-NGSO interference 
 - The ITU applies **resolution-based coordination** (e.g., for non-GSO FSS systems below 1° angular separation from a GSO arc)
 - The FCC uses its **[[concepts/processing-round|processing round]]** system to batch competing applications and may condition grants on bilateral spectrum-sharing agreements between operators
 
+> **Update (2026-07) — the US NGSO/NGSO domestic rule is being regularized.** The **Part 100 Report and Order** ("Space Modernization for the 21st Century," **SB Docket No. 25-306**) circulated for the **2026-07-22 Open Meeting** (scheduled, not yet adopted as of 2026-07-21) would adopt a **robust NGSO–NGSO spectrum-sharing framework** and replace the *highly discretionary* Part 25 processing-round rules with a **rules-based, transparent process** under which operators can plan for a round to open. This is the domestic-process complement to the international Article 22 EPFD (which governs NGSO/GSO, above): after Part 100, NGSO/NGSO contention is handled through a more predictable US round while NGSO/GSO sharing in three Ku/Ka bands is handled by the performance-based good-faith-coordination rule of [[concepts/epfd-equivalent-power-flux-density|FCC 26-26]]. See [[concepts/processing-round]] for the full R&O breakdown.
+
 ## GSO Arc Exclusion Zone
 
 Many NGSO operators implement operational constraints near the GSO arc (±8° or as negotiated) to avoid line-of-sight interference paths to GSO earth stations. This shows up in [[concepts/schedule-s|Schedule S]] antenna pattern exhibits and in the EPFD compliance simulations.
