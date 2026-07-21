@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-21] daily-trader | first run bootstrap — OFFLINE (yfinance proxy blocked); stub report + FOM formula defined; 15-ticker watchlist seeded; trader pipeline build queued
+
 ## [2026-07-21] deepen | FCC/ITU spectrum-coordination cluster — Part 100 R&O event-driven fact-check (SB Docket 25-306, 2026-07-22 vote) + processing-round open-question resolved + two-track (26-26 vs Part 100) disambiguation
 **Rotation:** picked the **FCC/ITU spectrum-coordination cluster** ([[concepts/epfd-equivalent-power-flux-density]] / [[concepts/ngso-gso-coordination]] / [[concepts/schedule-s]] / [[concepts/processing-round]] + [[synthesis/fcc-ibfs-filings-coordination]]) — the **stalest flagship**: last substantive deepen **2026-07-03** (18 days; every other domain worked 07-04→07-20). Trigger was event-driven: three of these pages carried a forward reference to the **FCC "Part 100" Space Modernization vote scheduled 2026-07-22** — which is *tomorrow* relative to today (2026-07-21), making this the highest-value fact-check window in the corpus. Public/citable regulatory research only; no personal/financial data; `agents/` untouched (regulatory pages, no code instance); no trader/KOL/maintenance namespaces; explicit `git add` of only the 5 wiki files changed.
 
