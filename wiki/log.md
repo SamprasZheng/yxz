@@ -1,5 +1,8 @@
 # Wiki Log
 
+## [2026-07-21] kol-digest | automated daily sweep — 0 KOLs, 11 keywords, ~50 items
+Automated kol-daily-digest run. KOL list empty (watchlist not yet populated). Keyword sweep across 11 terms: AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks. Notable finds: Fable 5 went global (July 1) + Anthropic IPO underway; NemoClaw × LangChain Deep Agents Blueprint launched (July 8, ~10× cost reduction); GPT-5.6 Sol/Terra/Luna + ChatGPT Work released; Polkadot staking overhaul live (July 8, 28d→48h unbonding) + Nakamoto Coefficient 166 (July 17); Audrey Tang at WebX2026 (July 13–14, Plurality). New source: [[sources/kol-digest-2026-07-21]]. No entity/concept stubs created (no topic exceeded 3 mentions as a new entity).
+
 ## [2026-07-19] deepen | RF transmitter-architecture & calibration *acceptance layer* (zero-IF / EVM / DPD) — new mixed-signal-and-verification six-region synthesis + converter-linearity layer-down + 3GPP/RFSoC/T&M fact-check
 **Rotation:** picked the **RF transmitter-calibration subcluster** — the stalest *content* slice in the corpus. [[concepts/zero-if-transmitter]] and [[concepts/evm-calibration]] last had a *substantive* deepen on **2026-06-11** (38 days; the 06-24 git touch was a chore living-topic refresh, not content); [[concepts/dpd-digital-predistortion]] was deepened 07-10, so it served as the third (already-rich) leg. Every other flagship domain was worked 07-05→07-18. Public/citable RF research only; no personal/financial data; `agents/` untouched; no trader/KOL/maintenance namespaces; explicit `git add` of only the wiki files changed.
 

@@ -58,6 +58,8 @@ type: index
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
 
+- [[sources/kol-digest-2026-07-21]] — KOL + keyword digest 2026-07-21: 0 KOLs tracked, 11-keyword sweep (AI agents / Claude Code / Anthropic / OpenAI / Polkadot / OpenClaw / NemoClaw / Plurality / Audrey Tang / NVIDIA Nemotron / PolkaSharks); top items: Fable 5 global, NemoClaw×LangChain Blueprint, GPT-5.6, Polkadot staking overhaul, Audrey Tang at WebX2026 (automated digest)
+
 ## Entities
 
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
