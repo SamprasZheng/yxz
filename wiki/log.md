@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-22] kol-digest | automated daily sweep — 0 KOLs (list empty), 11 keywords, ~43 items; digest at [[sources/kol-digest-2026-07-22]]; top signals: Anthropic $1.5B settlement approved + Fable 5 restored; OpenAI GPT-5.6 public; NemoClaw Deep Agents Blueprint + Nemotron Coalition; OpenClaw CVE-2026-25253 (CVSS 8.8 RCE); Polkadot staking reform (Refs 1909/1910).
+
 ## [2026-07-21] deepen | FCC/ITU spectrum-coordination cluster — Part 100 R&O event-driven fact-check (SB Docket 25-306, 2026-07-22 vote) + processing-round open-question resolved + two-track (26-26 vs Part 100) disambiguation
 **Rotation:** picked the **FCC/ITU spectrum-coordination cluster** ([[concepts/epfd-equivalent-power-flux-density]] / [[concepts/ngso-gso-coordination]] / [[concepts/schedule-s]] / [[concepts/processing-round]] + [[synthesis/fcc-ibfs-filings-coordination]]) — the **stalest flagship**: last substantive deepen **2026-07-03** (18 days; every other domain worked 07-04→07-20). Trigger was event-driven: three of these pages carried a forward reference to the **FCC "Part 100" Space Modernization vote scheduled 2026-07-22** — which is *tomorrow* relative to today (2026-07-21), making this the highest-value fact-check window in the corpus. Public/citable regulatory research only; no personal/financial data; `agents/` untouched (regulatory pages, no code instance); no trader/KOL/maintenance namespaces; explicit `git add` of only the 5 wiki files changed.
 
