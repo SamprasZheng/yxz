@@ -13,15 +13,17 @@ Current staking concentrates governance power with large DOT holders. PoP shifts
 
 ## Project Individuality and the DIMs (layer-down)
 
-The product name for Polkadot's PoP system is **Project Individuality** — the product of roughly **three years of design and development at Parity Technologies**. It is built from multiple **Decentralised Individuality Mechanisms (DIMs)** — Gavin Wood describes these as *"personhood games"* engineered to make it costly or difficult for one person to register as many identities (Sybil resistance), without a central KYC authority. Concretely, the launch DIMs are reported to combine **physical, hard-to-repeat marks (e.g. a tattoo/ink credential)** and **interactive video-game-style liveness challenges** — deliberately *behavioural and physical* uniqueness signals rather than a single biometric capture.
+The product name for Polkadot's PoP system is **Project Individuality** — the product of roughly **three years of design and development at Parity Technologies**. It is built from multiple **Decentralised Individuality Mechanisms (DIMs)** — Gavin Wood describes these as *"personhood games"* engineered to make it costly or difficult for one person to register as many identities (Sybil resistance), without a central KYC authority. The two launch DIMs now have official names (verified 2026-07-22): **Proof-of-Ink (PoI)** — a physical, hard-to-repeat mark (a tattoo/ink credential) — and **Proof-of-Video-Interaction (PoVI)** — an interactive video liveness challenge. These are deliberately *behavioural and physical* uniqueness signals rather than a single biometric capture.
 
-| Stage | Name | Target | Description |
-|---|---|---|---|
-| DIM1 | Proof of Individuality | **Q1 2026** launch | Basic uniqueness: prove you are not the same person as any other registered participant. Code reported *"basically complete"* on the technical-fellowship calls (June 2025). |
-| DIM2 | Proof of Verified Individuality | **Q2 2026** launch | Layer real-world identity signals on top of DIM1 uniqueness |
-| DIM3+ | Further mechanisms | through 2026 | Additional personhood games / privilege tiers |
+**Cryptographic mechanism (layer-down).** Project Individuality is built on **zero-knowledge proofs (ZK)** plus a **Bandersnatch Ring VRF** — the same anonymised-credential primitive Polkadot also uses in the SASSAFRAS block-production scheme. The Ring VRF lets a verified participant prove membership in the "set of unique humans" and derive a per-context pseudonym *without* revealing which member they are, so one-human-one-vote holds while individual votes stay unlinkable — the technical expression of the "prove uniqueness, not identity" stance below.
 
-**Design stance — privacy-preserving, not biometric.** PoP is a protocol-layer primitive intended to verify *unique humans in a Sybil-resistant way while avoiding centralised KYC and biometric data collection*. This is its deliberate contrast with **Worldcoin/World ID** (rebranded **"World"**), which establishes uniqueness via iris-biometric "Orb" scanning — an approach that has drawn data-protection bans and investigations in several jurisdictions. World is the *deployed-scale* rival: **~18 M Orb-verified humans across 160 countries, 948 active Orbs, and 30 M+ World App users (2026)**, with a 2026 "Full-Stack Proof of Human" re-architecture. Polkadot's bet is that decentralised "personhood games" can reach comparable Sybil resistance *without* a biometric honeypot — but as of mid-2026 the biometric approach has the multi-order-of-magnitude lead in verified humans, while Polkadot's DIM1 has yet to launch.
+| Stage | Name | Launch DIM(s) | Target | Description |
+|---|---|---|---|---|
+| DIM1 | Proof of Individuality | **Proof-of-Ink (PoI)** + **Proof-of-Video-Interaction (PoVI)** | **Q1 2026** target | Basic uniqueness: prove you are not the same person as any other registered participant. Code reported *"basically complete"* on the technical-fellowship calls (June 2025); as of mid-2026 reporting both DIMs were *"in the final stages of testing and optimisation… to launch in quick succession in the coming months"* — i.e. a **slip past the Q1 2026 target** (see Status below). |
+| DIM2 | Proof of Verified Individuality | credential attestation on top of DIM1 | **Q2 2026** target | Layer real-world identity signals on top of DIM1 uniqueness; higher assurance for high-value operations (e.g. Treasury payouts) |
+| Mainnet | Full PoP on Polkadot | — | **Q3 2026** target | Full Project Individuality deployment on Polkadot mainnet (new third milestone on the official roadmap, verified 2026-07-22) |
+
+**Design stance — privacy-preserving, not biometric.** PoP is a protocol-layer primitive intended to verify *unique humans in a Sybil-resistant way while avoiding centralised KYC and biometric data collection*. This is its deliberate contrast with **Worldcoin/World ID** (rebranded **"World"**), which establishes uniqueness via iris-biometric "Orb" scanning — an approach that has drawn data-protection bans and investigations in several jurisdictions. World is the *deployed-scale* rival: **~18 M Orb-verified humans across 160 countries and ~38 M World App downloads (Apr 2026)**, with a 2026 "Full-Stack Proof of Human" re-architecture and US consumer-integration deals (Tinder/Match age-check pilots, and a reported Zoom partnership) even as the iris-scan remains banned or under investigation in several jurisdictions. Polkadot's bet is that decentralised "personhood games" can reach comparable Sybil resistance *without* a biometric honeypot — but as of mid-2026 the biometric approach has the multi-order-of-magnitude lead in verified humans, while Polkadot's DIM1 has yet to launch.
 
 ## Governance connection
 
@@ -33,7 +35,7 @@ PoP does not exist in a vacuum — every major jurisdiction is simultaneously bu
 
 | Region | State / dominant identity rail (2026) | Model | Friction vs. a decentralised PoP |
 |---|---|---|---|
-| **EU/Europe** | **eIDAS 2.0 / EUDI Wallet** — all 27 states must offer a wallet by Dec 2026 (Reg. 2024/1183) | state-issued, wallet-based, privacy-by-design but government-rooted | Closest philosophical overlap (selective disclosure) but EUDI is state-anchored; a permissionless PoP is complementary, not a substitute |
+| **EU/Europe** | **eIDAS 2.0 / EUDI Wallet** — all 27 states must offer a wallet by **2026-12-24** (Reg. 2024/1183); as of mid-2026 **fewer than one-third of member states meet the readiness benchmark** (France Identité live and leading, Italy/Poland next; cross-border interoperability the hardest gap) | state-issued, wallet-based, privacy-by-design but government-rooted | Closest philosophical overlap (selective disclosure) but EUDI is state-anchored; a permissionless PoP is complementary, not a substitute |
 | **US** | No national ID; sectoral (state driver's licences, mDL, Login.gov) | fragmented, market-led | Light-touch regime → most room for a private PoP, but also least demand-pull |
 | **China** | Real-name registration mandatory; national digital ID pilot (2025) | centralised, state-controlled, anti-anonymity | Structurally hostile to anonymity-preserving PoP; crypto trading banned |
 | **Japan** | **My Number** card; FSA "Digital Year-One" reform (2026) | state ID + crypto-friendly finance reform | Crypto-progressive ([[entities/polkadot]] Japan row); a complement to My Number for on-chain use |
@@ -42,12 +44,12 @@ PoP does not exist in a vacuum — every major jurisdiction is simultaneously bu
 
 The throughline: **states are building identity wallets that prove *who you are*; PoP tries to prove *that you are a unique human* without revealing who.** Those are different primitives — PoP is closest to the EU's selective-disclosure ideal and to Taiwan's [[concepts/plurality]] consent ethos, and most at odds with real-name regimes (China, Korea-exchange).
 
-## Status (re-verified 2026-06-29)
+## Status (re-verified 2026-07-22)
 
-- Announced July 2025 (Berlin Web3 Summit) as part of the "Second Era" package; ~3 years of Parity design behind it
-- **DIM1 (Proof of Individuality)** scheduled to go live **Q1 2026**; **DIM2 (Proof of Verified Individuality)** **Q2 2026** — note this is a slip from the originally-floated "Q4 2025" Project-Individuality target
-- **Referendum 1783** (Nov 2025): ~$3 M treasury request to fund initial deployment ("fairest airdrop ever") — Gavin Wood's first personal treasury proposal
-- DIM1 code reported "basically complete" (June 2025 fellowship calls); DIM2/DIM3 timelines staged through 2026
+- Announced July 2025 (Berlin Web3 Summit) as part of the "Second Era" package; ~3 years of Parity design behind it; built on **ZK + Bandersnatch Ring VRF**
+- Official roadmap (as of 2026-07): **DIM1 Q1 2026 → DIM2 Q2 2026 → full Polkadot mainnet Q3 2026** — the earlier "DIM3+ through 2026" framing is superseded by a named three-step ladder ending in mainnet deployment
+- **DIM1 launch DIMs named — Proof-of-Ink (PoI) + Proof-of-Video-Interaction (PoVI)**; as of mid-2026 reporting both were *"in the final stages of testing and optimisation… to launch in quick succession in the coming months"* → the Q1 2026 target has **slipped** (a further slip on top of the earlier "Q4 2025 → Q1 2026" one). ⚠️ No confirmed mainnet-live date for PoI/PoVI as of 2026-07-22 — flagged for re-check next pass.
+- **Referendum 1783** (Nov 2025), the **"Polkadot People Initiative"**: ~$3 M treasury request to fund initial deployment ("the fairest airdrop ever") — Gavin Wood's first personal treasury proposal; goal = onboard millions of verified-unique users irrespective of token holdings. Passage status not independently confirmed here.
 - Gavin Wood's framing (2026): *"There is a need for an authentic social media where the content is authentic and the people are authentic. Proof of personhood and content credentials are going to play a huge role."*
 
 ## Long-horizon view (scenario / projection)
@@ -57,6 +59,9 @@ As AI agents become indistinguishable from humans in text, *proof of humanity* p
 ## Sources
 
 - [[sources/gavin-wood-second-era-2025]]
+- **[2026-07-22 fact-check]** DIM1/DIM2/mainnet Q1/Q2/Q3-2026 roadmap; PoI + PoVI names; ZK + Bandersnatch Ring VRF; Referendum 1783 "Polkadot People Initiative" — [Polkadot official blog](https://polkadot.com/blog/proof-of-personhood-polkadot-project-individuality/), [Ref. 1783 (Subsquare)](https://polkadot.subsquare.io/referenda/1783), [CryptoPotato](https://cryptopotato.com/polkadot-unveils-bold-vision-for-proof-of-personhood-identity-system/)
+- **[2026-07-22 fact-check]** World ID ~18 M Orb-verified / ~38 M World App downloads (Apr 2026) + US consumer integrations — [World.org "Full-Stack Proof of Human"](https://world.org/blog/announcements/world-id-full-stack-proof-of-human), [Rest of World](https://restofworld.org/2026/sam-altman-worldcoin-zoom-tinder-partnerships/)
+- **[2026-07-22 fact-check]** EUDI Wallet 2026-12-24 deadline + <⅓-of-states readiness — [Corbado EUDI 2026](https://www.corbado.com/blog/eudi-wallet-2026-deadline-rollout-eic-2026), Reg. (EU) 2024/1183
 
 ## Related
 
@@ -66,3 +71,6 @@ As AI agents become indistinguishable from humans in text, *proof of humanity* p
 - [[concepts/plurality]] — Audrey Tang's consent-based, pluralistic identity ethos (closest civic parallel)
 - [[entities/audrey-tang]] — Taiwan civic-tech alignment
 - [[concepts/jam]] — JAM core devs discuss the PoP / "M1" economic model alongside JAM delivery
+- [[synthesis/digital-democracy-user-owned-social-six-region]] — the six-region map where PoP is the **load-bearing shared dependency** for both the user-owned graph and plural-decision axes
+- [[concepts/agentic-payments]] — the mirror-image demand: as autonomous agents proliferate, distinguishing human from machine payer/voter is the same Sybil problem PoP solves
+- [[synthesis/polkadot-2026-jam-tokenomics-six-region]] — PoP as the *verified-human-demand* leg of Polkadot's 2026 thesis

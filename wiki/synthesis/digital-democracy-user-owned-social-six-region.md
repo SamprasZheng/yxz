@@ -23,7 +23,7 @@ Two movements are converging on the same goal — wresting the primitives of onl
 |---|---|---|
 | **A. User-owned social graph** | identity + follow-graph + content as portable public infrastructure | [[concepts/dsnp]] / [[entities/frequency]]; ActivityPub; AT Protocol (Bluesky); Farcaster; Nostr |
 | **B. Plural collective decision-making** | deliberation, voting, public-goods funding | [[concepts/plurality]]; Quadratic Voting/Funding ([[entities/glen-weyl]]); vTaiwan/Polis/Join ([[entities/audrey-tang]]); Gitcoin QF |
-| **⚓ Shared dependency** | proof you are a unique human | [[concepts/proof-of-personhood]] (Polkadot Project Individuality, DIM1 Q1-2026); EU EUDI (all 27 states by Dec 2026, Reg. 2024/1183); **World ID** (biometric — ~18 M Orb-verified across 160 countries, 948 Orbs, "Full-Stack Proof of Human" re-architecture 2026; contested) |
+| **⚓ Shared dependency** | proof you are a unique human | [[concepts/proof-of-personhood]] (Polkadot Project Individuality — launch DIMs **Proof-of-Ink + Proof-of-Video-Interaction** on ZK+Bandersnatch Ring VRF; DIM1→DIM2→mainnet Q1→Q2→Q3-2026 roadmap, **slipping** as of mid-2026); EU EUDI (all 27 states by **2026-12-24**, Reg. 2024/1183 — but **<⅓ of states ready**, France Identité leading); **World ID** (biometric — ~18 M Orb-verified across 160 countries, ~38 M World App downloads, "Full-Stack Proof of Human" 2026 + US Tinder/Zoom integrations; contested/banned in places) |
 
 ## Six-region comparison (台美日韓中國歐洲)
 
