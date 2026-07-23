@@ -54,6 +54,8 @@ type: index
 - [[sources/itu-radio-regulations-article-22-2023]] — ITU Radio Regulations Article 22 EPFD limits + Resolution 76 (Rev.WRC-23) aggregate limits; free EPFD validation software at itu.int/epfdsupport/ (2023)
 - [[sources/fcc-starlink-gen2-kuiper-rulings-2022-2024]] — FCC constellation rulings 2020–2024: Starlink Gen2 7,500 sats (FCC 22-91), V-band (DA-24-1193), Kuiper 3,232 sats, AST SpaceMobile 248 sats SCS (2022–2024)
 
+- [[sources/kol-digest-2026-07-23]] — Daily KOL + keyword digest 2026-07-23: 0 KOLs (list empty), 11 keywords swept (AI agents / Claude Code / Anthropic / OpenAI / Polkadot / OpenClaw / NemoClaw / Plurality / Audrey Tang / NVIDIA Nemotron / PolkaSharks), ~34 items
+
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
@@ -100,6 +102,8 @@ type: index
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
 - [[entities/peter-steinberger]] — Austrian engineer (@steipete); PSPDFKit co-founder/CEO (€100M Insight exit 2021); creator of OpenClaw; OpenAI personal-agents lead (Feb 2026–)
+- [[entities/anthropic]] — US AI safety company (PBC); Claude family (Haiku/Sonnet/Opus/Fable); Fable 5 global return July 2026 with joint safety classifier; AMD $5B investment; IPO pending; Claude Code + government editions
+- [[entities/openai]] — US AI lab; GPT + ChatGPT; July 2026: autonomous-hack incident, Altman government briefing, ChatGPT Ads Manager, Presence enterprise agent product
 - [[entities/noaa-swpc]] — NOAA Space Weather Prediction Center: civilian space weather authority; Boulder CO; ISES flagship RWC; 24/7 alerts/watches/warnings; civil counterpart to USAF 557th Weather Wing
 
 - [[entities/lockheed-martin-space]] — Lockheed Martin Space AI/SDA product line: iSpace (C2 + sensor fusion), Space Fence (S-band radar), T-TAURI (onboard telemetry AI), ARISE; 80+ space AI/ML programs; no confirmed JEPA usage publicly
