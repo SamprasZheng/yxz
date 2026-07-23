@@ -32,9 +32,19 @@ Between 2020 and 2023, Taiwan established initial space component radiation test
 **Equipment highlights**:
 - Superconducting cyclotron: capable of providing high-energy proton beams (protons account for 90% of high-energy cosmic ray particles)
 - FLASH ultra-high dose rate beam capability (medical use with test acceleration potential)
-- Projected to be **operational in 2023**
+- Projected operational in 2023 — **now confirmed in routine service** (the alliance reports 500+ tests through 2025; see the mid-2026 maturity update below)
 
 **Strategic significance**: Prior to this, Taiwan manufacturers had to ship electronic components overseas (Europe, USA) for radiation testing, increasing time and cost. This collaboration brings proton SEE testing capability back to Taiwan.
+
+## Maturity Update — the alliance is now a going concern (fact-check, accessed 2026-07-23)
+
+The 2022–2023 framing above described a *projected* capability ("projected to be operational in 2023"). As of mid-2026 the alliance is no longer a plan but an operating service, and the earlier stubs should be read as history:
+
+- **Scale-up: founding trio → 13 member institutions.** The 「臺灣太空輻射環境驗測聯盟」 (Taiwan Space Radiation Environment Testing Alliance), founded 2020, now lists **~13 member units** and reports **500+ radiation tests completed over its first five years (2020–2025)** — evidence the domestic TID + proton-SEE pipeline is being exercised at real volume, not just stood up. ([TASA 太空輻射環境驗測 service page](https://www.tasa.org.tw/zh-TW/service-and-tech/space-services/industrial/service/7c714c28-af5c-4b2a-8095-e2489ea56654); figures surfaced 2026-07-23 — the primary page returned 403 to automated fetch, so treat the exact count as authoritative-source-reported rather than page-verified.)
+- **TASA now markets it as a formal industrial service.** Post-2023-rename [[entities/nspo|TASA]] advertises 「太空輻射環境驗測」 as an industrial-support offering: it integrates domestic gamma (TID) and high-energy proton resources to run spec-conformant qualification for vendors' electronic parts, against international test standards (MIL-STD / ESCC-aligned — see the standards-authorship table on [[concepts/tid-total-ionizing-dose]]).
+- **Ecosystem convening:** TASA scheduled a 「太空抗輻射技術與驗測論壇」 (Space Anti-Radiation Technology & Testing Forum) for **2025-09-19**, gathering industry/government/academia on rad-hard chip design and Taiwan-spec qualification — a signal the topic has graduated from a supply-chain footnote to a named national programme line.
+
+**What has *not* changed:** heavy-ion SEE (LET > 10 MeV·cm²/mg) is still absent domestically (the alliance's "heavy-particle" coverage is via foreign beam partnerships, not a Taiwan machine), and there is still **no rad-hard IC line** and **no sovereign radiation test standard**. The 2026-06-04 six-region verdict — Taiwan at ★★☆☆☆, one notch behind Korea on heavy-ion hardware — stands.
 
 ## Taiwan's Current Testing Capability Map
 
