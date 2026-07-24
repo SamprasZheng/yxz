@@ -1,0 +1,164 @@
+{
+  "scan_date": "2026-07-24",
+  "generated_at": "2026-07-24T23:15:00Z",
+  "backend": "offline/WebSearch-only (yfinance blocked: fc.yahoo.com:443 denied by org egress policy)",
+  "blockers": [
+    "agents/src/trader/ pipeline does not exist — this is the bootstrap run",
+    "yfinance blocked: proxy CONNECT to fc.yahoo.com:443 returns 403 (org egress policy denial)",
+    "Data sourced via WebSearch (Motley Fool midday report, 247wallst.com, StatMuse, MacroTrends, MarketBeat)"
+  ],
+  "data_quality": "INTRADAY_MIDDAY — prices are from midday July 24 2026 US Eastern, not official closes",
+  "tickers": [
+    {
+      "ticker": "SMCI",
+      "latest_close": 31.20,
+      "pct_1d": 19.84,
+      "direction": "long",
+      "confidence": 0.88,
+      "sizing_sigma": 3.92,
+      "catalyst": "Preliminary Q4 results: record backlog >$60B, gross margin guidance raised to 15-17%",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "AAPL",
+      "latest_close": 332.97,
+      "pct_1d": 3.5,
+      "direction": "long",
+      "confidence": 0.72,
+      "sizing_sigma": 1.85,
+      "catalyst": "Oil prices plunge (Brent -6% on US-Iran talks); macro tailwind for consumer tech; Blue-chip rebound day",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "INTC",
+      "latest_close": 98.00,
+      "pct_1d": -5.0,
+      "direction": "short",
+      "confidence": 0.70,
+      "sizing_sigma": 1.62,
+      "catalyst": "Q2 beat ($0.42 EPS vs $0.22 est, rev $16.1B +25% YoY) but capex raised $18B→$20B+ through 2027; sell-on-news",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "ARM",
+      "latest_close": 141.38,
+      "pct_1d": -13.4,
+      "direction": "short",
+      "confidence": 0.78,
+      "sizing_sigma": 3.10,
+      "catalyst": "High-volume sell-off ($21.94 drop, 22M+ shares); no confirmed catalyst found — possible after-hours spill from July 23",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "PLTR",
+      "latest_close": 131.79,
+      "pct_1d": null,
+      "pct_range": {"low": 129.05, "high": 134.77},
+      "direction": "long",
+      "confidence": 0.68,
+      "sizing_sigma": 1.30,
+      "catalyst": "Government AI spend tailwind; Oracle $7B Pentagon deal driving sector sentiment; PLTR >$300B market cap re-attained July 2026",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "AVGO",
+      "latest_close": 395.00,
+      "pct_1d": -3.0,
+      "direction": "short",
+      "confidence": 0.58,
+      "sizing_sigma": 1.20,
+      "catalyst": "Broadcom-driven semiconductor sector sell-off wave (ATH $480.77 on June 2; $374.45 on July 16); partial bounce expected",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "TSLA",
+      "latest_close": 312.84,
+      "pct_1d": -2.1,
+      "direction": "short",
+      "confidence": 0.52,
+      "sizing_sigma": 1.00,
+      "catalyst": "Broad tech weakness day; no specific TSLA catalyst identified",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "AMD",
+      "latest_close": 545.49,
+      "pct_1d": 1.1,
+      "direction": "long",
+      "confidence": 0.55,
+      "sizing_sigma": 0.72,
+      "catalyst": "AI demand resilience; sector headwinds absorbed; OpenAI partnership momentum persisting",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "META",
+      "latest_close": 595.20,
+      "pct_1d": -1.8,
+      "direction": "short",
+      "confidence": 0.48,
+      "sizing_sigma": 0.88,
+      "catalyst": "Broad tech pullback; earnings week positioning",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "TSM",
+      "latest_close": 415.58,
+      "pct_1d": -1.3,
+      "direction": "short",
+      "confidence": 0.45,
+      "sizing_sigma": 0.75,
+      "catalyst": "52-week range $223.70-$479.00; strong fundamentals (>40% FY2026 rev growth) vs short-term semicap headwinds; avg 12m PT $527",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "QCOM",
+      "latest_close": 173.00,
+      "pct_1d": -2.0,
+      "direction": "short",
+      "confidence": 0.45,
+      "sizing_sigma": 0.80,
+      "catalyst": "Mizuho PT cuts; Qualcomm AI Data Center push priced in; >50% upside thesis unresolved vs recent selling",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "NVDA",
+      "latest_close": 206.66,
+      "pct_1d": -1.0,
+      "direction": "short",
+      "confidence": 0.40,
+      "sizing_sigma": 0.60,
+      "catalyst": "Mild weakness; still largest AI-chip franchise; no major catalyst",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "AMZN",
+      "latest_close": 232.02,
+      "pct_1d": -0.7,
+      "direction": "neutral",
+      "confidence": 0.35,
+      "sizing_sigma": 0.40,
+      "catalyst": "Minor weakness; AWS cloud AI spend thesis intact; mixed macro signals",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "GOOGL",
+      "latest_close": 319.00,
+      "pct_1d": 0.2,
+      "direction": "neutral",
+      "confidence": 0.35,
+      "sizing_sigma": 0.10,
+      "catalyst": "Flat; Gemini AI products key watch item for upcoming earnings",
+      "last_date": "2026-07-24"
+    },
+    {
+      "ticker": "MSFT",
+      "latest_close": 381.64,
+      "pct_1d": 0.0,
+      "direction": "neutral",
+      "confidence": 0.32,
+      "sizing_sigma": 0.05,
+      "catalyst": "Flat; Copilot/Azure AI spend; earnings upcoming",
+      "last_date": "2026-07-24"
+    }
+  ]
+}
