@@ -22,6 +22,8 @@ DGX Spark is NVIDIA's **small-form-factor personal AI supercomputer** — a desk
 
 The key architectural bet is **unified memory**: 128 GB shared CPU↔GPU means a 70–120 B model fits without the PCIe-transfer tax of a discrete-GPU workstation — the trait that makes it a credible *continuous* agent host rather than a batch box. The NVFP4 4-bit format is what stretches a 273 GB/s memory bus to "200 B-parameter local."
 
+> **Ceiling note (2026-07-25):** [[concepts/nemotron|Nemotron 3 Ultra]] (released 2026-06-04, **550 B total / 55 B active** MoE) sits *above* even a two-unit DGX Spark cluster's ~405 B dense ceiling — so Ultra is a **cloud-NIM tier**, not a local-Spark tier. What a single DGX Spark *can* host locally is the [[concepts/hermes-agent-framework|NemoClaw-for-Hermes]] default `nemotron-3-super-120b-a12b` (≈120 B, MoE-active far below dense) — i.e. the Spark's real role in this stack is hosting the **Super** runtime model on-prem while Ultra stays a metered cloud call for offline deep-research passes.
+
 ## Why it matters for a long-running agent (layer up)
 
 The [[sources/nvidia-agent-challenge-2026|NVIDIA Agent Challenge 2026]] theme is *agents that run, persist, and perform* — not demos. A cloud-only agent burns metered tokens 24/7 and leaks every prompt to a third party; DGX Spark is the answer to **"where does an always-on agent's inference live when you want it private, flat-cost, and never rate-limited?"** It is the hardware end of the same argument [[concepts/openshell-runtime]] makes in software (keep the trust boundary local) and [[concepts/nemoclaw-policy-presets]] makes in policy (the "remote GPU assistant" recipe puts the sandbox on a box like this while the laptop holds only credentials).

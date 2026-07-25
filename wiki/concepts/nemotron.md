@@ -9,7 +9,7 @@ tags: [ai, llm, nvidia, nemotron, reasoning, agents, hackathon]
 
 This page is the canonical lineage + variant-selection reference for [[entities/sampras]]'s [[entities/nvidia|NVIDIA]] Agent Challenge 2026 entry (GTC Taipei — see [[sources/nvidia-agent-challenge-2026]] for deadline + rules), where Nemotron is the **mandatory reasoning core**. <!-- deduped → [[sources/nvidia-agent-challenge-2026]] -->
 
-## Family lineage (as of May 2026)
+## Family lineage (as of July 2026; Nemotron 3 Ultra fact-checked 2026-07-25)
 
 ### Generation 1 — Dense Transformer (2023–2024)
 | Model | Release | Params | Base | Notes |
@@ -37,7 +37,7 @@ The **Nemotron-H** architecture replaces most self-attention layers with **Mamba
 | **Nemotron Nano 2 (9B v2)** | 2025-08-18 | 9B dense | **128K** | Hybrid Mamba-Transformer; distilled from 12B base trained on 20T tokens (FP8); on-par accuracy with Qwen3-8B, **6× faster** at 8K-in/16K-out; runs on a single A10G |
 | **Nemotron 3 Nano** (Omni) | 2025-12 | 31.6B MoE / 3.2B active | up to **1M** | Multimodal (vision + audio + text); cheapest tier; on free build.nvidia.com tier as of 2026 |
 | **Nemotron 3 Super** | 2026-03 | ~120B MoE / ~12B active | up to **1M** | Reasoning workhorse for multi-agent apps; paid via Bitdeer/CoreWeave/DigitalOcean partners |
-| **Nemotron 3 Ultra** | **released ~2026-Q2** | **~550B** MoE / ~50B active | TBD | Deep-research / strategic planning. **Update (2026-06):** now released — leads US open-weights at **Artificial Analysis Intelligence Index ~48** (ahead of Gemma 4 31B ~39, Nemotron 3 Super ~36, gpt-oss-120b ~33) but **behind the China-led open-weight frontier Kimi K2.6 ~54** ([Artificial Analysis](https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-released)). NVIDIA paired it with **[[concepts/hermes-agent-framework|Hermes Agent]] as a reference runtime** — coupling the model to the agent-runtime layer ([[synthesis/agent-runtime-orchestration-six-region]]) |
+| **Nemotron 3 Ultra** | **2026-06-04** | **550B** MoE / **55B active** | up to **1M** | Deep-research / strategic planning; hybrid Mamba-Transformer MoE. **Now released** (was "~2026-Q2 / TBD" on prior revisions): the **most intelligent US open-weight model** at **Artificial Analysis Intelligence Index 47.7** — ahead of the next US open-weight models Gemma 4 31B (39.2), Nemotron 3 Super (36.0) and gpt-oss-120b (33.3), but **behind the China-led open-weight frontier Kimi K2.6 (53.9)**. Served **>300 tok/s** on a pre-release DeepInfra endpoint (peer China-lab 550B-class models DeepSeek/Kimi typically 50–100 tok/s) — the *speed-at-intelligence* is the differentiator, not the raw score. NVIDIA paired it with **[[concepts/hermes-agent-framework|Hermes Agent]] as a reference runtime** (Nous Research inducted into NVIDIA's **Nemotron Coalition**), coupling the model to the agent-runtime layer ([[synthesis/agent-runtime-orchestration-six-region]]) ([Artificial Analysis](https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-released)) |
 
 ## Benchmark positioning
 
@@ -78,6 +78,8 @@ OpenAI-compatible REST endpoint: `https://integrate.api.nvidia.com/v1/chat/compl
 - Termination clause if licensee initiates patent infringement claim against NVIDIA
 - Llama-Nemotron derivatives additionally inherit Llama 3.1/3.3 Community License terms
 
+> **Openness note (2026-07-25 fact-check):** the **Nemotron 3 Ultra** release (2026-06-04) was reported as shipping not only the open weights but the **training data and recipes** under a permissive license, positioning it toward the "fully open" end of the spectrum vs weights-only peers ([Artificial Analysis](https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-released)). Treat the exact license identifier as *reported* until confirmed against NVIDIA's own model card; the NVIDIA Open Model License terms above remain the documented baseline for the Nemotron 3 family.
+
 ## Variant selection for a "long-running agent" hackathon entry
 
 For [[entities/sampras]]'s GTC Taipei Agent Challenge 2026 entry — agentic loop, tool calling, RAG over Obsidian KB ([[concepts/obsidian-llm-knowledge-base]]), small team (deadline + rules canonical at [[sources/nvidia-agent-challenge-2026]]): <!-- deduped → [[sources/nvidia-agent-challenge-2026]] -->
@@ -97,8 +99,8 @@ For [[entities/sampras]]'s GTC Taipei Agent Challenge 2026 entry — agentic loo
 - Pairs well with Super-49B as orchestrator/worker split
 
 **Avoid for this hackathon:**
-- Nemotron 3 Super 120B — paid only ($0.20/$0.80 per M tok), credits won't last
-- Nemotron 3 Ultra — not yet released
+- Nemotron 3 Super 120B — paid only ($0.20/$0.80 per M tok), credits won't last (note: this SKU, `nvidia/nemotron-3-super-120b-a12b`, is nonetheless the **default model of the NemoClaw-for-Hermes blueprint** — see [[concepts/hermes-agent-framework]] — so the hackathon-runtime path and the free-tier-budget path pull in opposite directions; keep the router pointed at Super-49B/Nano for cost)
+- Nemotron 3 Ultra — **released 2026-06-04** (correcting the earlier "not yet released" note): now a deep-research/strategic-planning tier at 550B/55B-active. Still avoid *for a credit-budgeted hackathon loop* — it is overkill for a triage/tool-calling agent and its size makes it a paid/heavier tier that will burn the 1,000-credit budget; reach for it only for offline deep-research passes, not the live agent loop
 - Llama-3.1-Nemotron-Ultra-253B — overkill, slower, will burn the 1,000 credit budget fast
 
 ## Six-region open-weight positioning (台美日韓中國歐洲)
