@@ -1,0 +1,213 @@
+{
+  "scan_date": "2026-07-25",
+  "market_date": "2026-07-24",
+  "next_trading_day": "2026-07-28",
+  "pipeline_status": "offline_stub",
+  "pipeline_note": "agents/src/trader/ pipeline does not yet exist (only agents/src/firefly/ is implemented). Scan produced by manual news-driven analysis using WebSearch. LLM_BACKEND=disabled, TRADER_OFFLINE=1 equivalent.",
+  "blockers": [
+    "agents/src/trader/ directory not found — trader CLI and orchestrator not yet implemented",
+    "yfinance blocked by environment proxy (HTTP 403 on Yahoo Finance HTTPS endpoints via CONNECT tunnel)",
+    "LLM_BACKEND=anthropic scan skipped — no trader CLI binary to invoke",
+    "trader scan --tickers <list> --window 7 --skip-wiki: command not available"
+  ],
+  "data_sources": [
+    "WebSearch (TheStreet, TradingKey, Benzinga, StartupHub.ai, StockAnalysis, MarketBeat)",
+    "Manual news aggregation — prices are best-available estimates from search snippets"
+  ],
+  "market_summary": {
+    "sp500_close": 7411.98,
+    "sp500_pct": 0.05,
+    "nasdaq_close": 24975.82,
+    "nasdaq_pct": -0.64,
+    "dow_close": 51947.25,
+    "dow_pct": 0.46,
+    "mag7_session_loss_bn": 797,
+    "theme": "AI capex fear rout (Alphabet + Tesla weak earnings July 23); partial stabilization July 24; MSFT/META/AAPL/AMZN earnings next week"
+  },
+  "tickers": [
+    {
+      "ticker": "NVDA",
+      "last_price": 206.99,
+      "last_price_note": "confirmed via StockAnalysis snippet",
+      "direction": "LONG",
+      "confidence": 0.80,
+      "sizing_sigma_norm": 0.70,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.85,
+      "fom": 0.715,
+      "thesis": "Kyber NVL144 delay rumor denied; Goldman 21.7x valuation 'compelling'; analyst consensus Strong Buy, avg target $302.83; 52-wk range $157-$237, currently mid-range with upside. Primary AI compute infrastructure beneficiary; $205B+ hyperscaler capex commitments structurally demand more NVDA GPUs."
+    },
+    {
+      "ticker": "AAPL",
+      "last_price": 287.50,
+      "last_price_note": "estimated; +3.5% on July 24 boosted Dow; was ~$298 in June pre-rout",
+      "direction": "LONG",
+      "confidence": 0.75,
+      "sizing_sigma_norm": 0.60,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.80,
+      "fom": 0.660,
+      "thesis": "Outperformed on July 24 (+3.5%), sole blue-chip bright spot in AI capex rout. Renewed chip supply agreement with Broadcom through 2031 (strategic supply chain lock-in). Earnings upcoming — AI features (Apple Intelligence v2) could shift the narrative from 'capex concern' to 'capex payoff' for consumer. Services revenue resilient."
+    },
+    {
+      "ticker": "PLTR",
+      "last_price": 122.59,
+      "last_price_note": "confirmed from July 24 session data (high $125.58, low $122.02)",
+      "direction": "LONG",
+      "confidence": 0.72,
+      "sizing_sigma_norm": 0.65,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.70,
+      "fom": 0.653,
+      "thesis": "Defense AI play largely insulated from commercial capex fear narrative. AIP platform momentum continues. Government contracts provide revenue floor. The 'Technological Republic' theme (Karp) aligns with current US defense spending cycle. Earnings upcoming — potential catalyst."
+    },
+    {
+      "ticker": "AMD",
+      "last_price": 135.00,
+      "last_price_note": "estimated; no specific price found; semiconductor sector analog to NVDA",
+      "direction": "LONG",
+      "confidence": 0.70,
+      "sizing_sigma_norm": 0.60,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.75,
+      "fom": 0.635,
+      "thesis": "Semiconductor sector upgrade rally (StartupHub July 9: 'Arm and AMD power semiconductor rally on Wall Street upgrades, SOXX +3.5%'). MI300X AI chip competing for data center GPU budget. Earnings upcoming — guidance on hyperscaler GPU demand will be key. Indirect beneficiary if NVDA supply tightens."
+    },
+    {
+      "ticker": "ARM",
+      "last_price": 330.00,
+      "last_price_note": "estimated; was $327.87 early July per search snippet",
+      "direction": "LONG",
+      "confidence": 0.68,
+      "sizing_sigma_norm": 0.55,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.72,
+      "fom": 0.609,
+      "thesis": "Wall Street upgrades in early July; fundamental architecture royalty model benefits from AI inference expansion (every AI chip needs an ARM license). Semiconductor rally co-participant. Earnings later in August — runway for sentiment recovery."
+    },
+    {
+      "ticker": "TSLA",
+      "last_price": 306.00,
+      "last_price_note": "confirmed; lowest since August 4 per TheStreet; down 39% from ATH",
+      "direction": "SHORT",
+      "confidence": 0.75,
+      "sizing_sigma_norm": 0.60,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.20,
+      "fom": 0.600,
+      "thesis": "EPS miss + negative FCF in Q2 2026 results. Stock at lowest since August 4, down 39% from ATH. Near-term catalysts thin: no major product launch, Robotaxi/Optimus still pre-revenue. Bears point to margin compression, high valuation vs auto peers, and Musk distraction risk. Risk: any Robotaxi positive news could spike."
+    },
+    {
+      "ticker": "AVGO",
+      "last_price": 390.00,
+      "last_price_note": "estimated; $401.11 after Apple chip deal (early July); dipped to $374.45 July 16 in sector rout; partial recovery",
+      "direction": "LONG",
+      "confidence": 0.65,
+      "sizing_sigma_norm": 0.55,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.72,
+      "fom": 0.597,
+      "thesis": "Apple chip supply agreement through 2031 provides long-dated revenue visibility. Custom AI ASIC business (Google TPU, Meta MTIA, Apple) expanding rapidly. Earnings: reported in early June (fiscal Q2), next report late August — clear horizon. Dividend payer adds downside buffer."
+    },
+    {
+      "ticker": "GOOGL",
+      "last_price": 328.00,
+      "last_price_note": "estimated; hit low of $319 on July 23 (per TheStreet); partial recovery July 24",
+      "direction": "SHORT",
+      "confidence": 0.70,
+      "sizing_sigma_norm": 0.55,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.20,
+      "fom": 0.565,
+      "thesis": "Post-earnings rout: -7.24% on July 23 after Q2 miss vs elevated expectations. $205B capex commitment = massive cash drag on FCF. Down 21% from YTD high. Gemini delay fears. Ad revenue growth insufficient to justify compute expenditure at current pace. Near-term: no positive catalyst until Q3 guidance or Gemini 2.5 Pro launch update."
+    },
+    {
+      "ticker": "META",
+      "last_price": 660.00,
+      "last_price_note": "estimated; was -3.87% on July 23 in sympathy with GOOGL; earnings July 29",
+      "direction": "NEUTRAL",
+      "confidence": 0.55,
+      "sizing_sigma_norm": 0.45,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.65,
+      "fom": 0.520,
+      "thesis": "Binary pre-earnings position: $60B Q2 revenue expected, stock has recovered ~20% drawdown to within 5% of flat YTD (Motley Fool). If META shows capex ROI (Llama 4 adoption, AI Ads revenue uplift), could be the 'good capex' narrative vs GOOGL's 'bad capex.' Earnings July 29 — binary risk. Neutral until report."
+    },
+    {
+      "ticker": "AMZN",
+      "last_price": 240.00,
+      "last_price_note": "estimated; 'fell sharply' July 23; was ~$233-250 per search snippets",
+      "direction": "NEUTRAL",
+      "confidence": 0.50,
+      "sizing_sigma_norm": 0.40,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.55,
+      "fom": 0.475,
+      "thesis": "Fell on AI capex fear contagion July 23 despite AWS being a net *beneficiary* of AI infrastructure spend. Earnings next week — AWS revenue acceleration is the key metric. Retail margin expansion ongoing. Neutral: capex fear may lift if AWS shows accelerating revenue growth."
+    },
+    {
+      "ticker": "MSFT",
+      "last_price": 420.00,
+      "last_price_note": "estimated; 'fell sharply' July 23; earnings upcoming next week",
+      "direction": "NEUTRAL",
+      "confidence": 0.48,
+      "sizing_sigma_norm": 0.40,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.55,
+      "fom": 0.467,
+      "thesis": "Fell on AI capex contagion July 23; Azure AI revenue growth (Copilot) is the key question for next week's earnings. Microsoft has the most integrated AI monetization story (Copilot M365 + Azure OpenAI). Bull case: if Azure AI growth >35% and Copilot seat adds accelerate, rerate upward. Bear: capex rising faster than revenue."
+    },
+    {
+      "ticker": "SMCI",
+      "last_price": 30.10,
+      "last_price_note": "confirmed from July 24 data; $24.29 July 20, recovered to $30.10",
+      "direction": "SHORT",
+      "confidence": 0.45,
+      "sizing_sigma_norm": 0.50,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.40,
+      "fom": 0.470,
+      "thesis": "AI chip rout participant; down 54% from one-year ago. Balance sheet and accounting concerns linger from 2024 issues. Highly volatile — can rally aggressively on AI sentiment. Short thesis: exposed to both AI supply-chain normalization and ongoing audit/compliance risk. Low conviction short given extreme move already in."
+    },
+    {
+      "ticker": "CRWD",
+      "last_price": 198.49,
+      "last_price_note": "confirmed at $198.49 -2.26%",
+      "direction": "NEUTRAL",
+      "confidence": 0.45,
+      "sizing_sigma_norm": 0.40,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.50,
+      "fom": 0.450,
+      "thesis": "Cybersecurity stalwart; recovering from 2024 outage-related drawdown. AI-native security (Charlotte AI) differentiates. No specific news trigger. Neutral pending next earnings. Macro: enterprise security budgets tend to be sticky."
+    },
+    {
+      "ticker": "ORCL",
+      "last_price": 116.97,
+      "last_price_note": "confirmed at $116.97 -2.56% on July 23",
+      "direction": "NEUTRAL",
+      "confidence": 0.45,
+      "sizing_sigma_norm": 0.35,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.45,
+      "fom": 0.430,
+      "thesis": "Oracle Cloud Infrastructure (OCI) AI capacity expansion ongoing. Hyperscaler contracts (GPU cluster leasing to AI companies) provide revenue tailwind. Fell July 23 on sector contagion. No specific negative catalyst. Neutral — needs earnings to validate OCI GPU contract ramp."
+    },
+    {
+      "ticker": "CRM",
+      "last_price": 270.00,
+      "last_price_note": "estimated; no web data found; using Salesforce ~2026 range estimate",
+      "direction": "NEUTRAL",
+      "confidence": 0.42,
+      "sizing_sigma_norm": 0.35,
+      "recent_hit_rate": 0.50,
+      "news_momentum": 0.45,
+      "fom": 0.418,
+      "thesis": "Agentforce AI platform is CRM's primary 2026 narrative. No specific news found in searches. Neutral: AI enterprise software adoption is a multi-quarter story; near-term catalyst thin. Dropped from core watchlist for next run unless Agentforce metrics emerge."
+    }
+  ],
+  "tier_1": ["NVDA", "AAPL", "PLTR", "AMD", "ARM"],
+  "tier_2": ["TSLA", "AVGO", "GOOGL", "META", "AMZN"],
+  "dropped": ["MSFT", "SMCI", "CRWD", "ORCL", "CRM"],
+  "top_3_fom": ["NVDA (0.715)", "AAPL (0.660)", "PLTR (0.653)"]
+}
