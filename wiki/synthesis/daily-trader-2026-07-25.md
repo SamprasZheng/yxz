@@ -185,5 +185,5 @@ FOM = 0.4 × confidence + 0.3 × sizing_σ_norm + 0.2 × recent_hit_rate + 0.1 �
 
 ---
 
-*Scan artifact: `[[agents/outputs/scan-2026-07-25.json]]` — `pipeline_status: offline_stub`*
+*Scan artifact: `agents/outputs/scan-2026-07-25.json` — `pipeline_status: offline_stub`*
 *Generated: 2026-07-25 UTC | Next run: 2026-07-28 (Monday)*
