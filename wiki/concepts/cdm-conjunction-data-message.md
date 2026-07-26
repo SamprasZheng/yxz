@@ -173,7 +173,11 @@ The [[concepts/pc-probability-of-collision|Pc]] field drives the operational res
 | **Green** | 1×10⁻⁷ ≤ Pc < 1×10⁻⁵ | Monitoring warranted |
 | **Noise** | Pc < 1×10⁻⁷ | Generally no action |
 
-JAXA uses 1×10⁻³ as its maneuver threshold (more conservative). SpaceX Starlink uses the Alfano two-dimensional method; its specific maneuver threshold is not publicly disclosed.
+JAXA uses 1×10⁻³ as its maneuver threshold (more conservative). SpaceX Starlink uses the Alfano two-dimensional method; its autonomous-maneuver threshold **is** disclosed in SpaceX's semi-annual FCC constellation reports as **Pc > 3×10⁻⁷ (≈ 1-in-3.3-million)** — ~300× more conservative than the 1×10⁻⁴ "red" default ([[sources/spacex-starlink-conjunction-semiannual-2026]], accessed 2026-07-26; prior wiki text "not publicly disclosed" corrected 2026-07-26).
+
+### Operational tempo — the M2M future is already here (fact-check, accessed 2026-07-26)
+
+The "forward projection" row above (M2M CDM exchange, on-board autonomous CAM) is no longer speculative for the largest operator. Per SpaceX's July-2026 semi-annual FCC report ([[sources/spacex-starlink-conjunction-semiannual-2026]]), Starlink executed **207,152 avoidance maneuvers in Dec 2025 – May 2026** (up ~60k from the prior half-year), a **rolling ≈355,000/yr** — >3× the 2024 figure — at **~40 maneuvers/satellite/yr** across ~10,000 units, projected toward **~1M/yr by 2027**. Against the **ESA Space Environment Report 2026** (10th ed., 2026-05-01 — [[sources/esa-space-environment-report-2026]]: >43,000 tracked >10 cm, ~1.2M untrackable 1–10 cm, LEO collision risk ≈+20% YoY), the human-polled 8-hour CDM cadence this page documents has already been superseded, at fleet scale, by continuous autonomous triage. The CDM-as-a-report-a-human-reads is becoming the CDM-as-a-message-two-autonomy-stacks-exchange faster than the format itself evolves.
 
 ## Manoeuvre Decision Lifecycle
 
@@ -216,6 +220,8 @@ The full implementation recipe is at [[synthesis/cdm-pc-decisioning]].
 - [[sources/nasa-cara-handbook-2023]] — NASA operational Pc thresholds and procedures
 - [[sources/tracss-oasis-announcement-2024]] — TraCSS CDM spec extension and transition timeline
 - [[sources/leolabs-conjunction-alerts-2025]] — commercial CDM upgrade path
+- [[sources/spacex-starlink-conjunction-semiannual-2026]] — disclosed Starlink Pc>3×10⁻⁷ threshold + 355k/yr maneuver tempo
+- [[sources/esa-space-environment-report-2026]] — 2026 catalog-density / untrackable-gap anchor
 - [[entities/18-sds]] — primary US government CDM source
 - [[entities/space-track-19sds]] — 18 SDS / 19 SDS operational roles
 - [[entities/leolabs]] — commercial CDM provider

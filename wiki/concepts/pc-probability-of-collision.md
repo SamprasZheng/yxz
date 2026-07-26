@@ -53,7 +53,7 @@ NASA CARA's implementation recommendations (NTRS 20190028900) benchmark these me
 Notes:
 - The NASA yellow/green boundary is frequently cited as 7×10⁻⁵ in CARA architecture documentation (NTRS 20190029214) though some sources round to 1×10⁻⁵.
 - ESA uses Pc ≥ 1×10⁻⁴ for High Impact Events (HIE). JAXA uses 1×10⁻³ (more conservative).
-- SpaceX Starlink uses the Alfano two-dimensional method for CDM Pc population; their maneuver threshold is not publicly disclosed.
+- SpaceX Starlink uses the Alfano two-dimensional method for CDM Pc population. Its autonomous-maneuver threshold **is** now public: **Pc > 3×10⁻⁷ (≈ 1-in-3.3-million)** per SpaceX's semi-annual FCC constellation reports ([[sources/spacex-starlink-conjunction-semiannual-2026]], accessed 2026-07-26) — ~300× more conservative than the 1×10⁻⁴ industry "red." (Prior wiki text said "not publicly disclosed"; corrected 2026-07-26.) This is the sharpest real-world illustration of the cost–loss reframing below: a fleet with near-zero-cost autonomous maneuvers rationally sets a threshold ~300× tighter than the default.
 - Commercial operators vary widely: some execute maneuvers at 1×10⁻⁵, others at 1×10⁻⁶. No international standard.
 
 ⚠️ The exact NASA yellow floor (7×10⁻⁵ vs 1×10⁻⁵) is a known ambiguity in public documentation. The Firefly agent should treat any event with Pc ≥ 1×10⁻⁵ as requiring maneuver analysis and flag the threshold uncertainty in its output.
@@ -85,9 +85,9 @@ The historical reason the number-not-the-loss-function habit took hold: after th
 
 ## Long-Horizon: Pc in a Kessler-Densifying Environment
 
-Pc is computed per-event today, but the *background* Pc of any given orbit shell is a function of debris density — and that density is rising structurally. Per the ESA *Space Environment Report 2025*, at ~550 km the debris-threat population is now the same order of magnitude as active satellites, and even with zero new launches the population would keep growing for **200+ years** (Kessler cascade). Two consequences for the metric:
+Pc is computed per-event today, but the *background* Pc of any given orbit shell is a function of debris density — and that density is rising structurally. Per the **ESA *Space Environment Report 2026*** (10th ed., 2026-05-01 — [[sources/esa-space-environment-report-2026]]), the catalog now holds **>43,000 tracked objects >10 cm** (~9,300 active payloads), MASTER-8 estimates **~1.2M untrackable 1–10 cm fragments** and **>140M <1 cm**, and modelled **LEO collision risk rose ≈20% year-over-year in 2026**; even with zero new launches the population keeps growing for **200+ years** (Kessler cascade). Two consequences for the metric:
 
-1. **More events per satellite-year.** Higher density → more screening-volume entries → more CDMs → more Pc evaluations; the triage cadence in [[synthesis/cdm-pc-decisioning]] tightens over the mission lifetime.
+1. **More events per satellite-year — now measured, not projected.** Higher density → more screening-volume entries → more CDMs → more Pc evaluations. This is no longer a scenario: SpaceX's Starlink fleet logged **>355,000 avoidance maneuvers in the year to May 2026 (~40/satellite/yr, one dodge per satellite roughly weekly)**, projected toward ~1M/yr by 2027 ([[sources/spacex-starlink-conjunction-semiannual-2026]]). The triage cadence in [[synthesis/cdm-pc-decisioning]] tightens over the mission lifetime, and human-in-the-loop Pc review is already infeasible at fleet scale.
 2. **Threshold pressure.** A fixed maneuver threshold (Red ≥ 1×10⁻⁴) that is rational at today's density implies *more frequent maneuvers* as density rises — eventually a fuel-budget and operations constraint, not just a safety one. This is why the **1–10 cm "deadly-but-untrackable" debris gap** (below the ~5–10 cm sensor floor) is the binding long-term limit on Pc reliability: the integral assumes you *know* the secondary exists. See the regional SSA capacity comparison and the 100-year view in [[synthesis/space-situational-awareness-six-region]].
 
 ## Relation to CDM Fields
@@ -105,3 +105,5 @@ The CDM (CCSDS 508.0-B-1) includes `COLLISION_PROBABILITY` and `COLLISION_PROBAB
 - [[sources/nasa-cara-handbook-2023]] — NASA operational Pc procedures and thresholds
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — conjunction triage verb in the mission desk
 - [[synthesis/space-situational-awareness-six-region]] — regional catalog capacity that determines whether the secondary is even tracked + the Kessler long view
+- [[sources/spacex-starlink-conjunction-semiannual-2026]] — disclosed Starlink Pc>3×10⁻⁷ threshold + cost–loss illustration
+- [[sources/esa-space-environment-report-2026]] — 2026 debris-density anchor for the background-Pc argument
