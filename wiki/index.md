@@ -122,6 +122,7 @@ type: index
 ## Concepts
 
 - [[concepts/jam]] — Join-Accumulate Machine: Polkadot relay chain replacement; RISC-V; 850 MB/s; testnet Jan 2026; mainnet post-2026
+- [[concepts/polkavm]] — PolkaVM (PVM): register-based RISC-V (RV64EM) VM under both JAM services and Polkadot Hub contracts; Jan Bujak/Parity; single-pass O(n) compile, ≤128 KB/instance, JIT roadmap; Revive (`resolc`→LLVM→`pallet-revive`) contracts live on Polkadot Hub 2026-01-20; Ethereum's 2025 RISC-V-EVM proposal = independent convergence
 - [[concepts/agile-coretime]] — Polkadot 2.0 compute purchasing model: on-demand / bulk / secondary market; replaces slot auctions
 - [[concepts/hydration-omnipool]] — Polkadot's primary DEX; single unified liquidity pool; HDX token; 4–75%+ APY
 - [[concepts/regionx]] — Coretime secondary market; sub-core purchases; dynamic depreciation pricing

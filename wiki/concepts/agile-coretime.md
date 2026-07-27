@@ -73,6 +73,7 @@ If blockspace genuinely commoditises over the coming decades, the coretime marke
 - [[concepts/hydration-omnipool]] -> DeFi workload that depends on interoperable execution
 
 - [[concepts/jam]] — JAM extends this model further (coretime as universal metering unit)
+- [[concepts/polkavm]] — the RISC-V VM the purchased/burned coretime actually executes
 - [[concepts/regionx]] — secondary market
 - [[concepts/dot-hard-cap]] — coretime burn is the demand sink for the capped supply
 - [[entities/polkadot]]

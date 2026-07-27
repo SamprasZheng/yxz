@@ -27,7 +27,7 @@ JAM replaces the Relay Chain with a generalized, permissionless computation laye
 
 ### Why RISC-V / PVM (the layer-down mechanism)
 
-JAM swaps the Wasm interpreter for a register-based RISC-V (RV64EM) instruction set. The reasons are durability and performance: RISC-V is a frozen, royalty-free open ISA (base spec ratified 2019, lineage from UC Berkeley 2010) with broad hardware support, so a JAM PVM can be JIT-compiled close to bare metal and remain stable for decades. The same PVM backend underpins **Revive/PolkaVM**, which lets contract authors choose 100% EVM compatibility *or* native PVM performance. Choosing a hardware-native open ISA over a sandbox bytecode is a deliberate **century-scale bet on a stable substrate** rather than a fast-moving VM.
+JAM swaps the Wasm interpreter for **[[concepts/polkavm|PolkaVM (PVM)]]**, a register-based RISC-V (RV64EM) VM — see that page for the full mechanism (single-pass O(n) compile, ≤128 KB per-instance footprint, sandboxed-by-default, JIT roadmap). The reasons are durability and performance: RISC-V is a frozen, royalty-free open ISA (base spec ratified 2019, lineage from UC Berkeley 2010) with broad hardware support, so JAM's PVM can be JIT-compiled close to bare metal and remain stable for decades. Crucially the **same PolkaVM substrate spans both surfaces**: JAM's on-chain service compute *and* Polkadot Hub's smart-contract layer (via `pallet-revive` / the Revive compiler, which lets contract authors choose 100% EVM source-compatibility *or* native PVM performance — **Revive went live on Polkadot Hub 2026-01-20**). Choosing a hardware-native open ISA over a sandbox bytecode is a deliberate **century-scale bet on a stable substrate** rather than a fast-moving VM — a bet Ethereum independently echoed with Vitalik's 2025 RISC-V-EVM proposal.
 
 ## Economic model
 
@@ -39,7 +39,7 @@ Developers purchase "core time" in DOT to run services — analogous to gas fees
 - Any team can deploy; only three entry functions required
 - Combines Ethereum smart-contract expressiveness with Polkadot-scale throughput
 
-## Status (re-verified 2026-06-29)
+## Status (re-verified 2026-07-27)
 
 | Milestone | Date | Note |
 |---|---|---|
@@ -52,6 +52,7 @@ Developers purchase "core time" in DOT to run services — analogous to gas fees
 | Multiple clients at **100% conformance** | August 2025 | several clean-room impls passed the conformance suite |
 | Gray Paper **v0.8** | late 2025 | pre-audit draft |
 | **Open JAM testnet** | **January 2026** | ✅ public; supports multiple execution environments incl. RISC-V |
+| **Revive / [[concepts/polkavm]] contracts live on Polkadot Hub** | **2026-01-20** | ✅ same PVM substrate now runs *contracts* (EVM+PVM unified), ahead of the JAM relay-chain cutover |
 | Gray Paper **v1.0** | targeted before mid-2026 | final pre-audit spec freeze |
 | **JAM Mainnet Proposal (OpenGov vote)** | **expected Q3–Q4 2026** | on-chain governance vote to upgrade the Relay Chain; CoreChain Phase 1 in the same window |
 
@@ -59,7 +60,7 @@ Developers purchase "core time" in DOT to run services — analogous to gas fees
 
 ### Implementation race (the decentralisation-of-clients story)
 
-JAM is being built as a **multi-client, multi-language** protocol from day one — by mid-2026 reporting, **~43 independent teams across ~15 programming languages** were building JAM implementations, competing for a **10 million DOT** prize pool administered by the Web3 Foundation (milestone rewards reportedly start at **~100,000 DOT for early conformance**, with further grants for full-performance builds that pass professional audit; multiple clients had already reached 100% conformance by August 2025). This is deliberate: a spec with dozens of clean-room clients (Rust, Go, C++, Zig, TypeScript, Python, etc.) is far harder to capture or ossify than a single reference client, and the geographic spread of teams (Europe, Asia incl. Japan/Korea/China dev communities, Americas) is itself a decentralisation property. Contrast Ethereum, which reached client diversity years *after* mainnet; JAM is attempting it *before*.
+JAM is being built as a **multi-client, multi-language** protocol from day one — by mid-2026 reporting, **~43 independent teams across ~15 programming languages** were building JAM implementations, competing for a **10 million DOT** prize pool administered by the Web3 Foundation (milestone rewards reportedly start at **~100,000 DOT for early conformance**, with further grants for full-performance builds that pass professional audit; multiple clients had already reached 100% conformance by August 2025). By **January 2026, ~15 teams had lodged their Milestone-1 (M1) deliveries** as pull requests to the `w3f/jam-milestone-delivery` GitHub repository for Web3 Foundation review — the concrete, auditable evidence that the multi-client race is real and not just announced. This is deliberate: a spec with dozens of clean-room clients (Rust, Go, C++, Zig, TypeScript, Python, etc.) is far harder to capture or ossify than a single reference client, and the geographic spread of teams (Europe, Asia incl. Japan/Korea/China dev communities, Americas) is itself a decentralisation property. Contrast Ethereum, which reached client diversity years *after* mainnet; JAM is attempting it *before*.
 
 Gavin Wood's framing (2025):
 > *"After EVM, JAM will become the new industry consensus."*
@@ -82,6 +83,7 @@ Community debate: whether to call the JAM transition **"Polkadot 3.0"** — supp
 
 ## Related concepts
 
+- [[concepts/polkavm]] — the RISC-V/PVM virtual machine JAM executes on (and that also powers Polkadot Hub contracts)
 - [[concepts/agile-coretime]] — resource purchasing model JAM builds on
 - [[concepts/dot-hard-cap]] — monetary endgame that JAM's coretime demand must underwrite
 - [[concepts/proof-of-personhood]] — the "M1 / PoP economic model" discussed by JAM core devs alongside JAM delivery
