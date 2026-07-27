@@ -119,4 +119,4 @@ The task prompt references `agents/src/trader/` but this directory **does not ye
 
 *Analysis only — no order placement, no money movement.*
 
-*Scan JSON: [[../agents/outputs/scan-2026-07-27.json]]*
+*Scan JSON: `agents/outputs/scan-2026-07-27.json` (gitignored — written locally, not committed)*
