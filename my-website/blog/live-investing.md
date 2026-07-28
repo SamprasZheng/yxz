@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-07-28
+
+- Market/Sentiment stance: **neutral** (score 0)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-07-28T23:27:50.753Z
+
+Key web signals:
+- [ETHUSD CM Futures Contract (Aug 2026) Trade Ideas — OKX:ETHUSD07Q2026 - TradingView](https://news.google.com/rss/articles/CBMijwFBVV95cUxPWWp5R2lLVGNQWFk5d05DcXBkQUpZeklSd09Ya1drOWRleTdwMmRTNlgtT3RGVEJPZ1lWMkxlZTNzelNFV1Zfdy1aTkpQNV9qLVJ4NU5zX0JRdnd6QnpXMnJzclI3b1dNMEdGeUxEbkJLb25tR1h6emZITWZPZDMyOVdOWnJKcWpUaVVvTVBTcw?oc=5)
+- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
+- [Crypto Trends 2026–2027: Why Bitcoin Is Becoming a High-Beta Macro Asset - quasa.io](https://news.google.com/rss/articles/CBMimgFBVV95cUxPNTlpT3NZbUp4VnJBUTZyY1dmVXZNWE5KYUFLYy1jMGNVWFZ6bF9YOTlLejdtdldVN214V0pPVDd2b0NVMGxzU3ZObUhkYzhrQjhtcm0zdUNxSnhOUzZiWWVMakZvZE9UUVVKY1NrcG94Tnc1UTlUcnRzNjd2a2pZTkFTZXNReHNWNG9WZXFDNmlSbGw3TnRiQWxB?oc=5)
+- [BTC Price News: Bitcoin rises to key level while analyst sets $100,000 target - CoinDesk](https://news.google.com/rss/articles/CBMizAFBVV95cUxOdWdHSmswZnBhMHRkS2dCaWFOTjA1M0dnN180TDdvbU54bFlzYnAxb09pM2dURTBfNEpuNEplTW1kaGFZTkxkUU0wd1ZRVGVvZFc5NlhuT3BXdmlxTGRjd1FEVHdtR0l6eFBYT2Via1NabWN0dWtIck5PTm1Ld3ZNb2lCTU9DbkJfME5zZkJpSUF6Z1NXeDdRVHJaSVo3eXBZSzY0c19KVGY2ZHlRNGFFbUozOHZFaHpvVXpXd0NlNFhIX0FBT043dElJYXY?oc=5)
+- [March 2026 FOMC: BTC, ETH Price Impact and Fed Outlook - Crypto.com International - Crypto.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cakh4bmFTamVhc0VLaHE2YVpja0M2RDFWTC1vU2V1ZG5nQVlpUlZleW41V1lYQ2lSNHZVRl9OYTQweEJaUjRMUzh3bmhZUUdzdGFUOUk2NUgzUEtPc3ZoS1ZkVGNNYmZ2b0plTzZjZVFNTWtadEZNaUlGTjE?oc=5)
+- [Bitcoin Inflation Hedge Analysis: Why BTC Hit $81K Amid 3.8% CPI Surge - Intellectia AI](https://news.google.com/rss/articles/CBMibEFVX3lxTFBwd2l2amFURU5SREE5MUlKTTBRVm9nUXJUYV8tcU5Ca2RGQmhYZTZ3MmRQZHVveGl0TXFfeHhRM2xwT3drM0piaXpiMVo0MzJCZEQzVXV5U2lNcEMwdlZ4RVRDSnh6bFl3NGJDaw?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-07-27
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -233,27 +254,6 @@ Key web signals:
 - [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
 - [Crypto Daily Market Report – July 16, 2026 - KuCoin](https://news.google.com/rss/articles/CBMiggFBVV95cUxNdjQzUldZUmxPalFIMGI1ZlBtc2tvUjNnUkNJZjNST1lKdVJGUDlGT1lTaGlsbG9lbkczUGhPQlV2d1FYS3RNRnFZNnhBcUtjZHhyUDNzbl82U29WYl9xYk5JMlhxNDFfOEY1am9PaHRKd2tkR0s5STR6dWlBOUJNU0xR?oc=5)
 - [ETH Futures Contract (Jul 2026) Trade Ideas — DERIBIT:ETHUSD14N2026 - TradingView](https://news.google.com/rss/articles/CBMilAFBVV95cUxQTkZnWWQwckRabXZmOTFWclo0SEtVZkJOTFZUYnJGQTVtTkF3WkM1MlcwTWpCSUlDaC02czhCOXF3MkF6bG9sbzJMRl9ZQkswVFFlS0ZvQ1JSX1VERU9pVTN2TnBoVG1makNsT1V1XzhTZjJ5eHM2UWhiQlpPMXV5S0lKaHNzeVZ0YmdfWi1vMG9FNGJ3?oc=5)
-- [BTC Price News: Bitcoin rises to key level while analyst sets $100,000 target - CoinDesk](https://news.google.com/rss/articles/CBMizAFBVV95cUxOdWdHSmswZnBhMHRkS2dCaWFOTjA1M0dnN180TDdvbU54bFlzYnAxb09pM2dURTBfNEpuNEplTW1kaGFZTkxkUU0wd1ZRVGVvZFc5NlhuT3BXdmlxTGRjd1FEVHdtR0l6eFBYT2Via1NabWN0dWtIck5PTm1Ld3ZNb2lCTU9DbkJfME5zZkJpSUF6Z1NXeDdRVHJaSVo3eXBZSzY0c19KVGY2ZHlRNGFFbUozOHZFaHpvVXpXd0NlNFhIX0FBT043dElJYXY?oc=5)
-- [🥛 There’s no need to panic 🧘♂️ - Milk Road](https://news.google.com/rss/articles/CBMiYkFVX3lxTE94UldvWDE4YjFrODNjanloRnptMV9xNHpza3pRUUxzZ0ZUTlNUNW5RVWhYY0YyVkhwU05hMlBzYmhEY2VHOE91LS1ISU1Pd0tOT0tDVXBnaTdRbTZJTDJDTFB3?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-07-16
-
-- Market/Sentiment stance: **neutral** (score 1)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-07-16T23:23:03.588Z
-
-Key web signals:
-- [ETH Futures Contract (Jul 2026) Trade Ideas — DERIBIT:ETHUSD14N2026 - TradingView](https://news.google.com/rss/articles/CBMilAFBVV95cUxQTkZnWWQwckRabXZmOTFWclo0SEtVZkJOTFZUYnJGQTVtTkF3WkM1MlcwTWpCSUlDaC02czhCOXF3MkF6bG9sbzJMRl9ZQkswVFFlS0ZvQ1JSX1VERU9pVTN2TnBoVG1makNsT1V1XzhTZjJ5eHM2UWhiQlpPMXV5S0lKaHNzeVZ0YmdfWi1vMG9FNGJ3?oc=5)
-- [Crypto Daily Market Report – July 16, 2026 - KuCoin](https://news.google.com/rss/articles/CBMiggFBVV95cUxNdjQzUldZUmxPalFIMGI1ZlBtc2tvUjNnUkNJZjNST1lKdVJGUDlGT1lTaGlsbG9lbkczUGhPQlV2d1FYS3RNRnFZNnhBcUtjZHhyUDNzbl82U29WYl9xYk5JMlhxNDFfOEY1am9PaHRKd2tkR0s5STR6dWlBOUJNU0xR?oc=5)
-- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
-- [ETH Futures Contract (Jul 2026) Trade Ideas — DERIBIT:ETHUSD11N2026 - TradingView](https://news.google.com/rss/articles/CBMilAFBVV95cUxOdFdNUjRWdTlKdndhX3ZoS2hlbEI0OWw2X214WWhsaWppNXlpdWlTVVRadWluNHpzbmEwX013VHBkY2Rnay1EeUczSWt3X1FKTnptM0sxSEpNSk5WRzhHUF9yNV9scHFnRjlBVllEYUtHRTE4X1p6LW9UbEV3aks2TFRiUzNraTVBVGR6MnNlUzZ5WUxG?oc=5)
 - [BTC Price News: Bitcoin rises to key level while analyst sets $100,000 target - CoinDesk](https://news.google.com/rss/articles/CBMizAFBVV95cUxOdWdHSmswZnBhMHRkS2dCaWFOTjA1M0dnN180TDdvbU54bFlzYnAxb09pM2dURTBfNEpuNEplTW1kaGFZTkxkUU0wd1ZRVGVvZFc5NlhuT3BXdmlxTGRjd1FEVHdtR0l6eFBYT2Via1NabWN0dWtIck5PTm1Ld3ZNb2lCTU9DbkJfME5zZkJpSUF6Z1NXeDdRVHJaSVo3eXBZSzY0c19KVGY2ZHlRNGFFbUozOHZFaHpvVXpXd0NlNFhIX0FBT043dElJYXY?oc=5)
 - [🥛 There’s no need to panic 🧘♂️ - Milk Road](https://news.google.com/rss/articles/CBMiYkFVX3lxTE94UldvWDE4YjFrODNjanloRnptMV9xNHpza3pRUUxzZ0ZUTlNUNW5RVWhYY0YyVkhwU05hMlBzYmhEY2VHOE91LS1ISU1Pd0tOT0tDVXBnaTdRbTZJTDJDTFB3?oc=5)
 
