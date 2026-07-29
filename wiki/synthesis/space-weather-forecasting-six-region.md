@@ -7,6 +7,7 @@ concepts:
   - "[[concepts/swpc-space-weather-feeds]]"
   - "[[concepts/space-weather-operational-indices]]"
   - "[[concepts/solar-cycle-25-leo-radiation]]"
+  - "[[concepts/cme-propagation-geoeffectiveness]]"
 ---
 
 # Space-Weather Forecasting — Six-Region Operational Map (台美日韓中國歐洲)
@@ -45,7 +46,7 @@ The distinctive twist versus the other domains: **ICAO has forced a fourth, supr
 - **Carrington-class storms** (1859) — Riley (2012) put the canonical figure at **~12% per decade**, i.e. *near-certain within a 100-year window* (per-century estimates run ~50–60% on the higher models, lower on lognormal fits). A modern repeat is the planetary-grid / GNSS / satellite-fleet stress event everyone plans against.
 - **Miyake-class events** (cosmogenic-isotope superflares, e.g. 774 AD) — far rarer (millennial), but an order of magnitude beyond Carrington; the genuine civilizational tail.
 
-**Why the infrastructure is permanent.** Forecast *skill* improves, but lead time is **capped by physics**: a flare's X-rays and the fastest protons arrive at light-speed (≈0 warning for the R-scale / prompt-SEU threat), while a CME's transit gives only **~1–4 days** ([[concepts/space-weather-operational-indices]] timeline). Closing even that window requires a permanent, *shared* vantage architecture no single nation sustains alone:
+**Why the infrastructure is permanent.** Forecast *skill* improves, but lead time is **capped by physics**: a flare's X-rays and the fastest protons arrive at light-speed (≈0 warning for the R-scale / prompt-SEU threat), while a CME's transit gives only **~1–4 days** ([[concepts/space-weather-operational-indices]] timeline; full Sun-to-Earth causal chain in [[concepts/cme-propagation-geoeffectiveness]]). And even inside that window the models forecast *when* far better than *how bad* — arrival-time MAE ~10–13 h, but the non-magnetized Cone CME cannot predict the storm-driving Bz, so **severity is only read at L1 ~30–60 min before impact**. That timing-vs-severity asymmetry is the deep reason the L1/L5 vantage is irreplaceable and worth pooling. Closing even that window requires a permanent, *shared* vantage architecture no single nation sustains alone:
 
 - **L1** (sunward, ~1.5M km): operational since SOHO/ACE/DSCOVR (1995→); **NOAA SWFO-L1** launched **2025-09-24**, reached L1 **2026-01-23**, and entered operational service **2026-06-10 as SOLAR-1** — now the primary real-time solar-wind monitor (with a compact coronagraph delivering CME imagery to SWPC within ~30 min), closing the long-feared data-continuity gap left by the aging ACE/DSCOVR.
 - **L5** (60° behind Earth): the side-view that sees CMEs *and* active regions before they rotate to face Earth; **ESA Vigil** (launch **2031**, lifetime 5 yr) is the first operational L5 mission — and it carries a **NOAA** coronagraph, i.e. the flagship bet is *already* cross-national.
@@ -72,6 +73,7 @@ The 100-year question is therefore **institutional, not physical**: the Sun guar
 
 - [[concepts/swpc-space-weather-feeds]] — the US-node feed/polling how-to this page sits above
 - [[concepts/space-weather-operational-indices]] — Kp/Ap/F10.7/Dst/Bz/S/R definitions + the storm-timeline that sets the physics-capped lead time
+- [[concepts/cme-propagation-geoeffectiveness]] — the Sun-to-Earth mechanism this map's centers forecast: three-arrival structure, the four geoeffectiveness drivers, cannibal-CME complex ejecta, and the timing-vs-severity forecast asymmetry that makes the shared L1/L5 vantage irreplaceable
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 intensity, May-2024 G5 case, the damage-side physics
 - [[entities/noaa-swpc]] — the US flagship node + ISES + 557th WW detail
 - [[sources/noaa-swpc-product-catalog]] — the verified feed catalog
@@ -81,7 +83,7 @@ The 100-year question is therefore **institutional, not physical**: the Sun guar
 - [[synthesis/orbital-data-center-six-region]] — the LEO/ODC assets exposed to the G/S/R hazard
 - [[synthesis/leo-taiwan-odc-gap]] — the Taiwan upstream-strong/midstream-absent pattern this map repeats
 
-## Sources (verified 2026-06-08; fact-refreshed 2026-07-17)
+## Sources (verified 2026-06-08; fact-refreshed 2026-07-17, 2026-07-29)
 
 - ICAO four global centers (NOAA / PECASUS / ACFJ / CRC), two-week rotation, CRC free service to Nov 2026 — [PECASUS](https://pecasus.eu/), [Spaceweather-CRC](https://www.spaceweather-crc.com/views/home.html), [STCE ICAO SWX service](https://www.stce.be/content/icao-space-weather-information-service)
 - **[2026-07-17 refresh]** ICAO A42 cost-recovery pressure — PECASUS + ACFJ seeking cost recovery, CRC free only to Nov 2026 — [ICAO A42 WP cost recovery](https://www.icao.int/sites/default/files/Meetings/a42/Documents/WP/wp_541_en.pdf); the concrete evidence for the pessimistic-fork "pooling fractures on cost" signal
@@ -96,5 +98,4 @@ The 100-year question is therefore **institutional, not physical**: the Sun guar
 - Carrington recurrence ~12%/decade — [Riley 2012, Space Weather](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2011sw000734)
 - L1 fleet + SWFO-L1 → **SOLAR-1 operational 2026-06-10** (launched 2025-09-24, arrived L1 2026-01-23) + ESA Vigil L5 (2031, carries NOAA CCOR) — [NOAA SWFO-L1 mission](https://www.nesdis.noaa.gov/our-satellites/future-programs/swfo/space-weather-follow-l1-mission), [NOAA SOLAR-1 operational release](https://www.noaa.gov/news-release/noaas-solar-1-enters-new-era-of-space-weather-monitoring), [ESA Vigil](https://www.esa.int/Space_Safety/Vigil/Vigil_mission_overview)
 - SC25 now in **declining phase** with a sustained G4 storm cadence (2025-06, 2025-11 behind an X5.1 flare, 2026-01) — the hazard did not end at the 2024 max; detail in [[concepts/solar-cycle-25-leo-radiation]]
-</content>
-</invoke>
+- **[2026-07-29 refresh]** Two mid-2026 **cannibal-CME** (complex-ejecta) cases — G3 on 2026-06-09 (aurora to France/NZ) and a live G2–G3 watch for 2026-07-29→31 (multiple CMEs from 27–28 July) — [SWPC "Storm Watches in Effect 29–31 July (up to G3)"](https://www.spaceweather.gov/news/geomagnetic-storm-watches-effect-29-31-july-g3-strong); CME arrival-time forecast skill (MAE ~10–13 h, but non-magnetized Cone → no Bz) — [Wold et al. 2018 *JSWSC*](https://www.swsc-journal.org/articles/swsc/full_html/2018/01/swsc170034/swsc170034.html), [Kay & Palmerio 2024 *Space Weather*](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024SW003951); complex-ejecta geoeffectiveness — [Lugaz et al. 2015](https://arxiv.org/pdf/1402.1075). Mechanism captured in new page [[concepts/cme-propagation-geoeffectiveness]]

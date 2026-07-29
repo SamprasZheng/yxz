@@ -53,4 +53,3 @@ A reader (or a future agent) asking *"is the owner's hackathon entry actually bu
 - [[synthesis/spacesharks-trust-stack]] — the reliability architecture the degradation/abstention behavior implements
 - [[synthesis/open-weight-llm-agent-stack-six-region]] — why a model-agnostic transport layer is strategically valuable (the model layer is the contested one)
 - [[concepts/hermes-agent-framework]] — the alternative agent-loop profile (region-neutral runtime, same NemoClaw cage)
-</content>

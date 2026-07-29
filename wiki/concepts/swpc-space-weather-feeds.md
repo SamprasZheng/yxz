@@ -26,7 +26,7 @@ See [[sources/noaa-swpc-product-catalog]] for the complete verified URL catalog.
 | **GOES integral proton flux (1-day)** | `https://services.swpc.noaa.gov/json/goes/primary/integral-protons-1-day.json` | 1-minute | ≥10 MeV proton flux in pfu | S1: 10 pfu; S2: 100 pfu; S3: 1000 pfu → SEU/SEL elevated; S5 → satellite mission risk |
 | **GOES integral electron flux (1-day)** | `https://services.swpc.noaa.gov/json/goes/primary/integral-electrons-1-day.json` | 1-minute | ≥2 MeV electrons (relativistic) | Deep dielectric charging risk; >1000 pfu for multiple days → internal satellite anomalies |
 | **Dst index (hourly)** | `https://services.swpc.noaa.gov/json/geospace/geospace_dst_1_hour.json` | Hourly | Dst (nT) ring current proxy | Dst < −50 nT → moderate storm; < −100 nT → intense; < −350 nT → extreme (May 2024 G5 reached −461 nT) |
-| **ENLIL time series** | `https://services.swpc.noaa.gov/json/enlil_time_series.json` | Run-on-demand (CME) + daily 00Z | Solar wind density/velocity + CME arrival prediction at L1 | 1–4 day CME arrival warning; start drag pre-computation when CME flagged as Earth-directed |
+| **ENLIL time series** | `https://services.swpc.noaa.gov/json/enlil_time_series.json` | Run-on-demand (CME) + daily 00Z | Solar wind density/velocity + CME arrival prediction at L1 | 1–4 day CME arrival warning (arrival-time MAE ~10–13 h); start drag pre-computation when CME flagged as Earth-directed. **Note:** Cone-CME is non-magnetized → predicts *when*, not *how bad*; severity needs the L1 Bz read ~30–60 min out. See [[concepts/cme-propagation-geoeffectiveness]] |
 | **45-day Ap/F10.7 forecast** | `https://services.swpc.noaa.gov/json/45-day-forecast.json` | Daily (days 1–7); weekly Sunday (days 8–45) | Predicted Ap and F10.7 | Mission planning: high F10.7 → elevated atmospheric drag baseline (orbit decay rate input) |
 | **Observed F10.7** | `https://services.swpc.noaa.gov/json/f107_cm_flux.json` | Daily | F10.7 cm solar radio flux in sfu | Input to atmospheric drag models (NRLMSISE-00, JB2008); F10.7 > 200 sfu → ~30% orbit lifetime reduction |
 | **OVATION aurora** | `https://services.swpc.noaa.gov/json/ovation_aurora_latest.json` | ~5-minute | Global auroral power and precipitation map | Ground-track passes through high-latitude aurora → elevated SEU rate; ground station HF comms affected |
@@ -80,7 +80,7 @@ The May 2024 Gannon storm (Dst nadir: −461 nT; peak Kp: 9) demonstrated the ca
 5. **Satellite loss**: 12 Starlink satellites were lost to orbital decay pre-conditioned by elevated drag beginning ~25 April 2024, with the G5 storm delivering the final perturbation
 6. **Key lesson**: When Kp ≥ 7, CDM Pc (probability of collision) values issued before storm onset should be treated as stale; operators should request or wait for updated CDMs before making manoeuvre decisions
 
-> **Declining-phase update (2026-07-04).** May 2024 remains the SC25 *extreme* (G5) reference, but the storm cascade above recurs at G4 on a regular cadence through the **declining phase**: G4 on 2025-06-01/02, G4 on 2025-11-12 (behind an **X5.1** flare — the strongest of 2025), and a G4 alert on 2026-01-20. The polling logic below (§ Operational Decision Logic) is therefore a *standing* requirement, not a solar-max-only posture. Full chain + physics in [[concepts/solar-cycle-25-leo-radiation]].
+> **Declining-phase update (2026-07-29).** May 2024 remains the SC25 *extreme* (G5) reference, but the storm cascade above recurs at G3–G4 on a regular cadence through the **declining phase**: G4 on 2025-06-01/02, G4 on 2025-11-12 (behind an **X5.1** flare — the strongest of 2025), G4 alert on 2026-01-20, G3 on 2026-07-03/04, and two cannibal-CME cases (G3 on 2026-06-09; a G2–G3 watch live for 2026-07-29→31). The polling logic below (§ Operational Decision Logic) is therefore a *standing* requirement, not a solar-max-only posture. Full chain in [[concepts/solar-cycle-25-leo-radiation]]; the CME→storm mechanism (and why cannibal CMEs beat their forecast) in [[concepts/cme-propagation-geoeffectiveness]].
 >
 > **L1 source update.** The `mag-5-minute` / `plasma-5-minute` / DSCOVR feeds now carry data from **NOAA SOLAR-1 (SWFO-L1)**, which reached L1 on 2026-01-23 and entered operational service **2026-06-10**, replacing the aging DSCOVR/ACE as the primary real-time solar-wind monitor; its coronagraph also delivers CME imagery to SWPC within ~30 minutes of capture. Feed URLs are unchanged. See [[entities/noaa-swpc]].
 
@@ -101,6 +101,7 @@ The May 2024 Gannon storm (Dst nadir: −461 nT; peak Kp: 9) demonstrated the ca
 - [[sources/noaa-swpc-product-catalog]] — full verified URL catalog
 - [[entities/noaa-swpc]] — agency structure, ISES, 557th WW
 - [[concepts/space-weather-operational-indices]] — Kp/ap/Ap/Dst/F10.7 definitions
+- [[concepts/cme-propagation-geoeffectiveness]] — what the ENLIL feed models and why it predicts arrival time but not severity
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 physics, G5 storm transient radiation belts
 - [[concepts/orbital-data-center]] — assets exposed to space weather risk
 - [[concepts/cdm-conjunction-data-message]] — CDM staleness during geomagnetic storms

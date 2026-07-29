@@ -86,5 +86,3 @@ Midstream-A segment of [[concepts/leo-value-chain]] (board/interconnect), feedin
 - [[synthesis/leo-taiwan-odc-gap]]
 - [[synthesis/phased-array-rf-frontend-supply-chain]]
 - [[synthesis/orbital-data-center-six-region]]
-</content>
-</invoke>

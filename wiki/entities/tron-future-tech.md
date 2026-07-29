@@ -70,4 +70,3 @@ It sits *downstream* of Taiwan's upstream foundries ([[entities/win-semiconducto
 - [[concepts/leo-value-chain]] — midstream node Tron Future partially fills
 - [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region RF front-end map
 - [[synthesis/leo-taiwan-odc-gap]] — the "absent midstream" thesis Tron Future partially counters
-</content>

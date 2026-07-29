@@ -71,4 +71,3 @@ Upstream RF (passive) segment of [[concepts/leo-value-chain]], feeding the same 
 - [[entities/huatong-pcb]]
 - [[synthesis/phased-array-rf-frontend-supply-chain]]
 - [[synthesis/leo-taiwan-odc-gap]]
-</content>

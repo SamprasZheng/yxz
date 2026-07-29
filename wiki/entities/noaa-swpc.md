@@ -63,7 +63,7 @@ SWPC is the world's *flagship* civilian center, but operational space-weather fo
 ## Data Infrastructure
 
 SWPC's primary observational inputs:
-- **SOLAR-1 (SWFO-L1)** — NOAA's dedicated space-weather L1 observatory; launched 2025-09-24 (Falcon 9, KSC), reached L1 2026-01-23, **operational 2026-06-10** as the **new primary** real-time solar-wind monitor (solar-wind suite + a compact coronagraph delivering CME imagery to SWPC within ~30 min); replaces the aging DSCOVR/ACE fleet and closes the long-feared L1 data-continuity gap
+- **SOLAR-1 (SWFO-L1)** — NOAA's *first satellite dedicated solely to operational space weather*; L1 observatory launched 2025-09-24 (Falcon 9, KSC), reached L1 2026-01-23, **operational 2026-06-10** as the **new primary** real-time solar-wind monitor; replaces the aging DSCOVR/ACE fleet and closes the long-feared L1 data-continuity gap. Instrument suite: **SWiPS** (Solar Wind Plasma Sensor — first data shared during commissioning), a magnetometer, a suprathermal-ion sensor, and the **CCOR** compact coronagraph delivering CME imagery to SWPC within ~30 min of capture. Renamed SOLAR-1 (Space weather Observations at L1 to Advance Readiness) on reaching orbit ([NOAA NESDIS](https://www.nesdis.noaa.gov/our-satellites/currently-flying/solar-1-launch))
 - **DSCOVR** (Deep Space Climate Observatory) — L1 halo orbit; primary solar wind monitor 2016-07-27 → 2026 (now backup to SOLAR-1); provides Bz, Bt, speed, density at 1-second resolution
 - **ACE** (Advanced Composition Explorer) — L1; legacy backup; also feeds ACE text products (`ace-magnetometer.txt`, `ace-swepam.txt`)
 - **GOES-16/GOES-18** — Geostationary; X-ray flux (XRS), proton/electron flux (SEISS), magnetometers, solar imagery (SUVI, EXIS)
@@ -80,6 +80,8 @@ See [[sources/noaa-swpc-product-catalog]] for the full JSON URL table.
 
 ## Operational History Notes
 
+- **2026-07-29 → 31** — **Geomagnetic storm watches in effect, up to G3 (Strong)**: multiple CMEs from 27–28 July merging into complex ejecta (a "**cannibal CME**"), WSA-Enlil projecting G2–G3 most likely 30 July; the second mid-2026 cannibal-CME case (mechanism in [[concepts/cme-propagation-geoeffectiveness]]) — live/forecast as of this refresh
+- **2026-06-09** — **G3 (Strong)** cannibal-CME storm; aurora to France and New Zealand — the first of two mid-2026 complex-ejecta over-performances
 - **2026-07-03/04** — **G3 (Strong)** geomagnetic storm (Kp 7.33) off an **X1.1** flare (2026-06-30); SWPC issued a G4 watch that did not verify; aurora to New Mexico / ~26 US states — a declining-phase reminder that isolated X-flares still drive strong storms 21 months after max
 - **2026-06-10** — **SOLAR-1 (SWFO-L1)** entered operational service as the new primary L1 monitor (launched 2025-09-24; arrived L1 2026-01-23); adds an operational L1 coronagraph feeding CME imagery to SWPC forecasters within ~30 min
 - **2026-01-19/20** — G4 (Severe) geomagnetic storm; G4 levels reached 2026-01-19, severe-storm alert issued 2026-01-20 (SC25 declining phase)
@@ -96,6 +98,7 @@ See [[sources/noaa-swpc-product-catalog]] for the full JSON URL table.
 - [[sources/noaa-swpc-product-catalog]] — full JSON feed catalog with URLs and cadences
 - [[concepts/swpc-space-weather-feeds]] — operational feed guide for agent integration
 - [[concepts/space-weather-operational-indices]] — Kp/ap/Ap/Dst/F10.7 definitions and thresholds
+- [[concepts/cme-propagation-geoeffectiveness]] — the Sun-to-Earth mechanism the SOLAR-1 L1 monitor + WSA-Enlil model exist to close (timing vs severity forecast asymmetry)
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 physics and damage context
 - [[concepts/orbital-data-center]] — affected LEO assets
 - [[synthesis/space-weather-forecasting-six-region]] — six-region map of national forecast centers; SWPC as the flagship node of a pooled global system

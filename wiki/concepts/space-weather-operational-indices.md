@@ -164,8 +164,12 @@ See [[concepts/swpc-space-weather-feeds]] for the JSON URLs that deliver these i
 ```
 Operational timeline of a geomagnetic storm event:
 
-T-48h to T-24h:  ENLIL CME model flags Earth-directed CME
+T-4d to T-1d:    ENLIL CME model flags Earth-directed CME (arrival-time
+                  MAE ~10-13h; but Cone CME is non-magnetized, so severity
+                  is NOT yet known — see [[concepts/cme-propagation-geoeffectiveness]])
                   → Pre-stage drag correction; alert operators
+                  → If multiple CMEs in transit, watch for a "cannibal CME"
+                    merge (complex ejecta) that can exceed the G-scale forecast
 
 T-1h to T-30min: Bz drops < -10 nT (DSCOVR L1)
                   → Imminent storm warning; stage CDM staleness flags
@@ -189,6 +193,7 @@ Daily baseline:   F10.7 consumed once per day
 ## Related Pages
 
 - [[concepts/swpc-space-weather-feeds]] — operational feed URLs and polling patterns
+- [[concepts/cme-propagation-geoeffectiveness]] — the mechanism layer beneath these indices: how a CME becomes a Kp/Dst spike, the four geoeffectiveness drivers, and the timing-vs-severity forecast asymmetry
 - [[sources/noaa-swpc-product-catalog]] — complete JSON URL table
 - [[entities/noaa-swpc]] — agency structure
 - [[concepts/solar-cycle-25-leo-radiation]] — SC25 storm physics and radiation belt effects

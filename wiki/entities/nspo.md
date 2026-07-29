@@ -71,5 +71,3 @@ Relative to peers: TASA's budget and cadence (≈1 sat/yr) sit far below NASA/ES
 - [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region RF front-end map
 - [[synthesis/space-regulatory-regimes-six-region]] — Taiwan regulatory node (TASA + NCC)
 - [[synthesis/orbital-data-center-six-region]] — Taiwan ODC position
-</content>
-</invoke>

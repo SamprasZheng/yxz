@@ -62,5 +62,3 @@ Ant/Alipay is **not** a member of the [[concepts/x402-protocol|x402 Foundation]]
 - [[concepts/agentic-payment-protocols]] — five Western protocols + regional architecture families
 - [[concepts/x402-protocol]] — the open US standard Ant pointedly does *not* join
 - [[entities/coinbase]] · [[entities/stripe]] · [[entities/visa]] · [[entities/mastercard]] — the Western x402-Foundation members Ant competes against
-</content>
-</invoke>

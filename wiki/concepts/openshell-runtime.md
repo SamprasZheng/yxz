@@ -84,5 +84,3 @@ Sandbox/runtime isolation is one of the few stack layers that is **genuinely not
 - Linux kernel docs — [Landlock](https://docs.kernel.org/userspace-api/landlock.html), [seccomp-BPF](https://docs.kernel.org/userspace-api/seccomp_filter.html).
 - [Firecracker microVM](https://firecracker-microvm.github.io/) (AWS) and [gVisor](https://gvisor.dev/) (Google) — isolation-spectrum reference points.
 - bureado, [*awesome-agent-runtime-security*](https://github.com/bureado/awesome-agent-runtime-security) — 2026 category index.
-</content>
-</invoke>
