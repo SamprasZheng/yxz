@@ -136,5 +136,5 @@ Each component is normalized to [0, 1]. FOM range is therefore [0, 1].
 
 ---
 
-*Scan output: [[outputs/scan-2026-07-30.json]] (OFFLINE STUB)*
+*Scan output: `agents/outputs/scan-2026-07-30.json` (OFFLINE STUB — gitignored, not committed)*
 *Next run: 2026-07-31 — will backtest today's LONG/SHORT calls vs realized prices*
