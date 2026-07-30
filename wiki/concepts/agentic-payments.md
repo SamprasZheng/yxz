@@ -105,7 +105,7 @@ For detailed comparison, see [[concepts/agentic-payment-protocols]].
 1. **Wallet security**: security model for agents holding private keys or authorizations
 2. **Cost runaway risk**: agent attack or logic error causing large uncontrolled expenditures
 3. **Regulatory compliance**: varying stablecoin payment regulations across countries
-4. **Demand validation**: current (2026 Q1) x402 real transaction volume only $28,000/day; business model still to be validated
+4. **Demand validation**: x402 real daily volume was only ~$28,000 in 2026 Q1; by 2026-07 cumulative count had compounded to **~157M txns / ~$41M settled on-chain** with **95% of txns ≥ $1** (test traffic receding), yet absolute settled value remains small versus China's ~300M Alipay AI Pay txns — the business model is validating slowly, not proven (see [[concepts/x402-protocol]])
 5. **Protocol fragmentation**: x402 / ACP / AP2 / MPP / L402 coexisting; complex developer choices
 
 ## Related Pages

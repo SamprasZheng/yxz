@@ -88,14 +88,16 @@ In December 2025, Coinbase and Cloudflare announced the **x402 Foundation** to m
 | Settlement speed | T+1~T+3 | Instant (but intermediated) | < 2 second on-chain finality |
 | Fee | 3% | 2.9%+$0.30 | ~$0.0001 |
 
-## Adoption Status (2026 Q2 — Chainalysis June 2026 data)
+## Adoption Status (updated 2026-07 — cross-chain tracker snapshot)
 
 | Metric | Value | Notes |
 |---|---|---|
-| Cumulative transaction count | **140M+** | Chainalysis, June 2026 ([Crowdfund Insider](https://www.crowdfundinsider.com/2026/06/283501-chainalysis-shares-insights-on-agentic-payments-reaching-key-milestone-x402-protocol-shows-signs-of-traction-on-base/)) |
-| Base chain | **119M+ txns / ~$35M** value | Base dominates cumulative txn count ([Chainalysis](https://www.chainalysis.com/blog/x402-agentic-payments-adoption/)) |
+| Cumulative transaction count (cross-chain) | **~157.4M** (157,413,420) | as of 2026-07-19, across **7 chains / 18 tracked facilitators** ([Major Matters x402 tracker](https://majormatters.co/x402)) — up from ~140M (Chainalysis, June 2026) |
+| Cumulative on-chain settled volume | **~$41M** | tracker snapshot 2026-07-19; roughly consistent with the June "~$45–50M" (methodology/facilitator-set differs; treat as ~$40–50M conservative settled band) |
+| Trailing-30-day activity (mid-July) | **~75M txns / ~$24M** | x402.org dashboard, mid-July 2026 — i.e. ~half of all-time txns occurred in one recent month, so growth is front-loaded, not evenly historical |
+| Base chain | **119M+ txns / ~$35M** value | Base still dominates cumulative txn count ([Chainalysis, June 2026](https://www.chainalysis.com/blog/x402-agentic-payments-adoption/)) |
 | Solana | 35M+ txns / $10M+ | since x402-on-Solana launch summer 2025 |
-| Cumulative on-chain settled volume | **~$45–50M** | Base $35M + Solana $10M; the conservative settled figure |
+| **XRP Ledger** (via [[entities/ripple|Ripple]]) | **1,434,517** autonomous agent txns, **+127%** since the 2026-06-09 embed | as of 2026-07-22 ([Coinspeaker](https://www.coinspeaker.com/x402-protocol-xrpl-ai-agent-transactions-ripple/)) — <1% of cross-chain total; fast-growing minority path, not a Base challenger |
 | Headline/notional volume | **"$600M+"** | facilitator-quoted/notional, not settled on-chain (see contradiction note) |
 | Share of txns valued ≥ $1 | **95%** (up from 49% in early 2025) | Chainalysis June 2026 — *the* signal that wash/test activity is receding |
 | Daily real transaction volume | ~$28,000 | CoinDesk 2026-03 baseline; ~131K txns/day, avg ~$0.20 |
