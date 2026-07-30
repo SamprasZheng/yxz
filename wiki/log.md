@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-07-30] daily-trader | First-run stub — yfinance blocked by remote-env proxy (403); 8-ticker core watchlist seeded (NVDA/AMD/MSFT/META/GOOGL/AMZN/AAPL/TSLA); FOM formula established; NVDA top FOM (0.624); pipeline scaffold at agents/src/trader/ still needed; scan JSON at agents/outputs/scan-2026-07-30.json
+
 ## [2026-07-27] deepen | Polkadot core-protocol / tokenomics cluster — new PolkaVM (PVM) execution-substrate page split out of JAM + Revive-live/M1 fact-refresh + dense re-linking
 **Rotation:** picked the **Polkadot core-protocol / tokenomics cluster** ([[concepts/jam]] / [[concepts/dot-hard-cap]] / [[concepts/agile-coretime]] / [[concepts/regionx]] + canonical [[synthesis/polkadot-2026-jam-tokenomics-six-region]]). Per the deepen log this was the **stalest domain**: Polkadot's most-recent touches were the core-*entity* cluster (07-13) and the app-layer (07-06), but the **core protocol/tokenomics concept slice was last deepened 2026-06-29 (28 days)** while every other domain was worked 07-16→07-26 (conjunction 07-26, AI-agent 07-25, RF 07-24, radiation 07-23, digital-democracy 07-22, FCC/ITU 07-21, ODC 07-20). Public/citable Polkadot research only; **no personal/financial data**; `agents/` not read or modified (Polkadot is not in the Firefly codebase — no code instance, no divergence to report); no trader/KOL/maintenance namespaces; explicit `git add` of only the 6 wiki files changed.
 
