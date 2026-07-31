@@ -59,6 +59,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-07-31]] — Daily KOL + keyword digest 2026-07-31: 0 KOLs (list empty), 11 keywords; top items: Claude Opus 5 + Anthropic–AMD deal, NemoClaw+LangChain Deep Agents Blueprint, OpenAI GPT-5.6 Luna −80%, Polkadot staking overhaul live + DOT all-time low, China binding AI-agent regulation (automated)
 
 ## Entities
 
@@ -118,6 +119,8 @@ type: index
 
 - [[entities/nspo]] — Taiwan national civil space agency (NSPO → **TASA** renamed 2023-01-01, under NSTC); founded 1991; 3rd-phase program NT$25.1B 2019–2028 + ~NT$40B 2023 B5G-LEO boost; FORMOSAT-8A launched 2025-11-28, TRITON GNSS-R 2023; public-sector demand node for the XT-144 / LEO supply chain
 - [[entities/tron-future-tech]] — Taiwan dual-use AESA integrator founded 2018 by ex-NCTU prof Yu-Jiu Wang; T.Radar counter-drone radar + T.SpaceRouter 1024-element Ka-band LEO terminal; Series A ~NT$900M (2024), 26-system military contract (2025); the concrete "midstream array-integrator" counter to Taiwan's absent-midstream thesis
+- [[entities/anthropic]] — Anthropic PBC; Claude model family (Haiku/Sonnet 5/Opus 5/Fable); Claude Code; AMD $5B equity + 2 GW MI450 compute deal July 2026; AI safety + frontier research
+- [[entities/openai]] — OpenAI; GPT-5.6 series (Luna −80% July 30); ChatGPT; agentic security incident (Hugging Face breach July 2026); AI slowdown letter initiator (1,100+ signatories July 28, 2026)
 
 ## Concepts
 
