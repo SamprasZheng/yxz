@@ -46,7 +46,7 @@ Where the *plural-governance* practice actually runs (honest-N/A noted):
 | **US** | RadicalxChange + Gitcoin QF (crypto public goods); Colorado used **STAR/Quadratic-style** experiments | strong in crypto, niche in government |
 | **Europe** | Decidim (Barcelona), CONSUL, EU Conference on the Future of Europe; QF in some city budgets | municipal-led, regulation-friendly |
 | **Korea** | Seoul mVoting / Democracy Seoul participatory budgeting | municipal e-participation |
-| **Japan** | "Digital Democracy 2030" + AI-assisted candidate experiments | emerging, tech-led |
+| **Japan** | "Digital Democracy 2030" + **[[entities/audrey-tang|Team Mirai]]** (Takahiro Anno) — explicitly *Plurality*-inspired party, **won 1 House of Councillors seat 2025** (~2.3%) | **now electoral** — the model reached a foreign national legislature |
 | **China** | N/A — consultative e-gov portals only; open deliberation is structurally excluded | not applicable by design |
 
 ## Connections beyond the blog

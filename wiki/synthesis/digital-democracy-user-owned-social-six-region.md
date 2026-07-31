@@ -53,11 +53,16 @@ The single most important cluster update since this map was drawn: **Axis A now 
 
 | Axis-A substrate | Architecture | Scale (2026) | Read |
 |---|---|---|---|
-| **AT Protocol / Bluesky** | federated PDS + DIDs (off-chain) | ~15 M MAU · ~43.5 M registered (Apr 2026); +60% in 2025 | the winner *at scale*; portability via DIDs, no token |
+| **AT Protocol / Bluesky** | federated PDS + DIDs (off-chain) | **~43 M registered (mid-2026)**; MAU **not officially disclosed** — third-party trackers span **~15–27.5 M** across H1-2026 (methodology-dependent), DAU ~2–4 M | the winner *at scale*; portability via DIDs, no token |
 | **ActivityPub / Mastodon** | federated instances | ~1 M+ MAU (fediverse-wide larger) | the standards incumbent |
-| **[[concepts/dsnp]] / [[entities/frequency]]** | chain-anchored graph (Polkadot L1) | **~1 M** DSNP identities (MeWe migration, up from 500 K) | the strongest *portability guarantee*, the weakest *adoption* |
+| **[[concepts/dsnp]] / [[entities/frequency]]** | chain-anchored graph (Polkadot L1) | **~1.3 M** MeWe users migrated (**~600 K with full social graphs**; "over 1 M" PR Aug-2024, up from 500 K Jan-2024) | the strongest *portability guarantee*, the weakest *adoption* |
 
 **The refined thesis:** "user-owned social can reach mass scale" is no longer speculative — Bluesky settled it. What remains open is **whether the graph must live on a chain to be truly user-owned.** The market has voted for the *lighter* portability model (DIDs/federation) over the *harder* one (L1-anchored graph + token). So the chain-anchored bet ([[entities/project-liberty]]'s DSNP wager) is now competing not against Web2 silos but against a *decentralized-but-off-chain* rival that already won the adoption race — a much harder position than the original 2021 framing assumed.
+
+> **Update — re-verified 2026-07-31 (measurement caveat + shared-dependency sync).**
+> - **Bluesky's "MAU" is not a firm number.** Bluesky **does not officially report** monthly active users; the earlier "~15 M MAU (Apr 2026)" was one third-party estimate presented as fact. Across H1-2026 trackers the estimates span **~15–27.5 M MAU** (e.g. one Feb-2026 tracker put it at ~27.5 M) with DAU ~2–4 M, while **registered accounts ~43 M** is the consistent, firmer figure. The *directional* claim (Bluesky is the first decentralized-substrate app well past 10 M active) holds regardless; the *precise* MAU does not — treat it as a range, not a level. ([Backlinko — Bluesky statistics 2026](https://backlinko.com/bluesky-statistics), [Skyscraper — Bluesky MAU Jan-2026](https://getskyscraper.com/blog/bluesky-mau-monthly-active-users-january-2026))
+> - **Frequency/DSNP figure tightened:** the "over 1 million users" milestone (Amplica/MeWe PR, Aug-2024) resolves to **~1.3 M MeWe users migrated, ~600 K of them with full social graphs** — the more precise reading of the ~1 M identity count. ([Frequency — over 1 M users](https://www.prnewswire.com/news-releases/frequency-blockchain-celebrates-over-1-million-users-in-partnership-with-mewe-302227534.html))
+> - **Shared-dependency (PoP) sync:** as of end-July 2026 there is **still no confirmed mainnet-live date** for Polkadot's DIM1 launch mechanisms (Proof-of-Ink + Proof-of-Video-Interaction) — the Q1-2026 target remains slipped (see [[concepts/proof-of-personhood]]). The load-bearing dependency of *both* axes is therefore **still unmet in production**: no region has yet shipped a live, Sybil-resistant, no-KYC personhood layer at scale — the EU's EUDI (mandatory 2026-12-24) and World's biometric Orb (~18 M) remain the only deployed-scale answers, and neither is the decentralised-no-honeypot ideal.
 
 ## 100-year invariant (scenario — not fact)
 
@@ -67,7 +72,7 @@ The century question is whether the primitives of online life — **identity, gr
 
 | If this happens | Effect on the thesis |
 |---|---|
-| A user-owned-graph app crosses ~10 M MAU and retains them | **✅ FIRED (2026):** [[entities/frequency|Bluesky]] on the AT Protocol reached **~15 M MAU / ~43.5 M registered accounts (Apr 2026)** with a strong ~30% DAU/MAU ratio — the first *decentralized-substrate* social app past 10 M MAU, strengthening Axis A **decisively**. Caveat below: this fired for the **federated/off-chain** architecture, **not** the chain-anchored DSNP bet (still ~1 M) |
+| A user-owned-graph app crosses ~10 M MAU and retains them | **✅ FIRED (2026):** [[entities/frequency|Bluesky]] on the AT Protocol reached **~43 M registered accounts (mid-2026)**; it does **not** publish MAU, but third-party trackers put active users in the tens of millions (**~15–27.5 M** MAU range across H1-2026 trackers) — comfortably past 10 M and the first *decentralized-substrate* social app to do so, strengthening Axis A **decisively**. Caveat below: this fired for the **federated/off-chain** architecture, **not** the chain-anchored DSNP bet (still ~1.3 M migrated) |
 | A national government *mandates* social-graph portability | strengthens the EU regulation-rail model decisively (EUDI mandates *identity* portability by Dec 2026, not yet the graph) |
 | QV/QF gets adopted in a binding national budget (not just municipal/crypto) | strengthens Axis B beyond niche status |
 | A Plurality-inspired party wins elected office | **✅ FIRED (2025):** Japan's **Team Mirai** (Takahiro Anno, explicitly [[concepts/plurality]]-inspired) won a House of Councillors seat (~2.3%) — Axis B crossed from experiment to legislature |
