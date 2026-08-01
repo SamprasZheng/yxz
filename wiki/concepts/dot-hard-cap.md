@@ -12,16 +12,18 @@ A supply ceiling of **2.1 billion DOT** approved via Polkadot governance, markin
 | Parameter | Value | Source |
 |---|---|---|
 | Hard cap | 2.1 billion DOT (100× Bitcoin's 21M) | Ref. 1710 |
-| Governance vehicle | Referendum 1710, on the **"Wish for Change"** track | [Polkassembly #1710](https://polkadot.polkassembly.io/referenda/1710) |
+| Governance vehicle | Referendum 1710 (**"Wish for Change"** signalling track) + companion **Ref. 1828** (the binding issuance-function change) | [Polkassembly #1710](https://polkadot.polkassembly.io/referenda/1710); MEXC/CoinCodex 2026 |
 | Approval | 81% in favour | Polkadot (X, 2025-09) |
 | Supply at vote | ~1.6 B DOT existing; ~120 M DOT/yr minted | Polkadot, 2025-09 |
 | Enactment | runtime upgrade **2026-03-12**, mechanics live **2026-03-14 "Pi Day"** | Phemex / CoinCodex, 2026 |
 | Supply at enactment | ~1.68 B DOT circulating (~80% of the 2.1 B ceiling) | MEXC / crypto press, 2026 |
 | First reduction (realized) | −13.14% of *remaining* un-issued supply, then every 2 years | Yahoo Finance / KuCoin, 2026 |
-| Initial issuance cut (realized) | ~120 M → ~56.88 M DOT/yr (≈ −52.6%) | crypto press, 2026 |
+| Initial issuance cut (realized) | ~120 M → ~56.88 M DOT/yr (≈ −52.6% by the arithmetic; some outlets round it to "−53.6%") | crypto press, 2026 |
+| Cap mathematically reached | **~2160** (~135 yr out; asymptote never *exactly* touched but rounds to 2.1 B) | Yahoo Finance / MEXC, 2026 |
 | Inflation glide path | ~7–10% (pre-cap) → **~3.1% (post-enactment, 2026)** → < 1% by mid-2030s; curve softened post-2032 | CoinCodex / MEXC, 2026 |
 
-> **Verification note — updated 2026-06-29 (post-enactment).** The cap is now LIVE: a runtime upgrade enacted **2026-03-12** brought the new issuance function into effect, with the first reduction mechanics taking hold on **2026-03-14 ("Pi Day")**. Realized post-enactment figures match the projections within rounding (annual issuance ~120 M → ~56.88 M DOT; inflation ~3.1%; circulating ~1.68 B ≈ 80% of cap). The earlier two-step nuance still holds for the record: Referendum 1710 (the **"Wish for Change"** signalling track, 81%) bound the DAO to the *policy direction*; the binding runtime change that set the new issuance function was the separate enacted upgrade above — so 1710 was the mandate, the March-2026 upgrade was the mechanism.
+> **Verification note — updated 2026-06-29 (post-enactment).** The cap is now LIVE: a runtime upgrade enacted **2026-03-12** brought the new issuance function into effect, with the first reduction mechanics taking hold on **2026-03-14 ("Pi Day")**. Realized post-enactment figures match the projections within rounding (annual issuance ~120 M → ~56.88 M DOT; inflation ~3.1%; circulating ~1.68 B ≈ 80% of cap). The earlier two-step nuance still holds for the record: Referendum 1710 (the **"Wish for Change"** signalling track, 81%) bound the DAO to the *policy direction*; the binding runtime change that set the new issuance function was a separate enacted upgrade (companion **Ref. 1828**) — so 1710 was the mandate, the March-2026 upgrade was the mechanism.
+> **Re-verified 2026-08-01.** No further monetary changes since enactment; ~5 months of live data continue to match the glide path (inflation **~3.11%**, issuance ~56.88 M DOT/yr). Two refinements added this pass: (i) the terminal asymptote rounds to 2.1 B around **~2160** (~135 yr out — a *later* horizon than a naïve "Bitcoin-like tail by the 2050s" read, because the residual-fraction decay keeps a small positive emission for well over a century); (ii) sources disagree on the headline cut depth — **−52.6%** is the correct arithmetic on 120 → 56.88 M, though several outlets round to "−53.6%." *(Sources: [Yahoo Finance — "Put Away Your Calculators"](https://finance.yahoo.com/news/polkadots-2-1-billion-hard-122300662.html); [CoinCodex — Polkadot halving](https://coincodex.com/article/83208/polkadot-halving/); [MEXC — DOT price history / sub-$1 2026](https://www.mexc.com/news/1174328), accessed 2026-08-01.)*
 
 ### The "Pi" design motif (layer-down)
 
@@ -57,7 +59,7 @@ A ~100-year structural sketch, labelled as projection:
 
 - **2026–2032 (issuance decay phase):** four biennial cuts take annual emission from ~120 M → roughly the low-tens-of-millions; inflation crosses below ~1% in the mid-2030s. Staking yield compresses; security budget migrates from inflation-funded toward fee/coretime-funded.
 - **2030s–2050s (asymptotic tail):** circulating supply approaches the 2.1 B ceiling; the marginal new DOT becomes negligible. If coretime demand grows, **burn can exceed issuance** → net-deflationary DOT, structurally like Bitcoin's post-tail but with a usage-linked sink Bitcoin lacks.
-- **Century horizon:** with subsidy issuance effectively exhausted, protocol security must be **entirely demand-funded** (coretime + transaction burn recycled or fee-redistributed). This is the same long-run question Bitcoin faces at its 2140 tail — DOT reaches it decades earlier and, unlike Bitcoin, has a non-zero structural demand sink (compute), which is the central bet of the [[concepts/agile-coretime]] / [[concepts/jam]] design.
+- **Century horizon (to ~2160):** the residual-fraction decay keeps issuance mathematically positive but negligible until the count rounds to the 2.1 B ceiling around **~2160** — notably *later* than Bitcoin's 2140 tail, not earlier as the "reaches it decades earlier" intuition suggests. What DOT *does* reach earlier is the **sub-1%-inflation regime** (early-2030s), at which point protocol security must migrate to being **demand-funded** (coretime + transaction burn — see [[concepts/regionx|RFC-0010: 80% of coretime revenue burned]]) rather than subsidy-funded. Unlike Bitcoin, DOT has a non-zero structural demand sink (compute), which is the central bet of the [[concepts/agile-coretime]] / [[concepts/jam]] design — and the [[synthesis/polkadot-interoperability-defi-coretime-app-layer|app-layer synthesis]] tracks whether that sink is actually filling (as of mid-2026: not yet — burn still well below issuance).
 
 This long-run "security must become fee-funded" question is the tokenomic counterpart to JAM's throughput bet: scarce supply only holds value if blockspace demand is real and growing.
 
@@ -73,4 +75,6 @@ This long-run "security must become fee-funded" question is the tokenomic counte
 - [[entities/polkadot]] — six-region adoption + ETF/regulatory context
 - [[concepts/proof-of-personhood]] — demand-side complement to supply-side scarcity
 - [[concepts/agile-coretime]] — the coretime burn that becomes the structural demand sink
+- [[concepts/regionx]] — RFC-0010 burns 80% of coretime revenue → the concrete DOT sink
 - [[concepts/jam]] — throughput bet that underwrites long-run fee-funded security
+- [[synthesis/polkadot-interoperability-defi-coretime-app-layer]] — tracks whether the demand sink is actually filling
