@@ -6,6 +6,7 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-08-02]] — KOL + keyword digest 2026-08-02: Claude Opus 5 default on Claude Max, OpenAI Atlas deprecated Aug 9, Polkadot Products Devnet + JAM vote Q3–Q4, OpenClaw 180K stars + NemoClaw CVE, Audrey Tang at Victoria Forum; 0 KOLs / 11 keywords (automated)
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
@@ -103,6 +104,7 @@ type: index
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
 - [[entities/peter-steinberger]] — Austrian engineer (@steipete); PSPDFKit co-founder/CEO (€100M Insight exit 2021); creator of OpenClaw; OpenAI personal-agents lead (Feb 2026–)
 - [[entities/noaa-swpc]] — NOAA Space Weather Prediction Center: civilian space weather authority; Boulder CO; ISES flagship RWC; 24/7 alerts/watches/warnings; civil counterpart to USAF 557th Weather Wing
+- [[entities/openai]] — US AI research company; creator of GPT/ChatGPT/Codex; ACP agentic-payments protocol; Atlas deprecated Aug 2026; Astra multi-agent family incoming; employer of OpenClaw founder Steinberger (Feb 2026)
 
 - [[entities/lockheed-martin-space]] — Lockheed Martin Space AI/SDA product line: iSpace (C2 + sensor fusion), Space Fence (S-band radar), T-TAURI (onboard telemetry AI), ARISE; 80+ space AI/ML programs; no confirmed JEPA usage publicly
 - [[entities/msbai]] — MSBAI (Microsurgeonbot Inc.); LA-based defense AI startup; CEO Allan Grosvenor; OrbitGuard JEPA + MARL copilot; Air Force Techstars '20; $1.2M DoD SBIR 2025
