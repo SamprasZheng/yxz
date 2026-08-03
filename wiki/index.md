@@ -118,6 +118,7 @@ type: index
 
 - [[entities/nspo]] — Taiwan national civil space agency (NSPO → **TASA** renamed 2023-01-01, under NSTC); founded 1991; 3rd-phase program NT$25.1B 2019–2028 + ~NT$40B 2023 B5G-LEO boost; FORMOSAT-8A launched 2025-11-28, TRITON GNSS-R 2023; public-sector demand node for the XT-144 / LEO supply chain
 - [[entities/tron-future-tech]] — Taiwan dual-use AESA integrator founded 2018 by ex-NCTU prof Yu-Jiu Wang; T.Radar counter-drone radar + T.SpaceRouter 1024-element Ka-band LEO terminal; Series A ~NT$900M (2024), 26-system military contract (2025); the concrete "midstream array-integrator" counter to Taiwan's absent-midstream thesis
+- [[entities/liscotech]] — Taiwan space-electronics vendor; GPGPU100 on-orbit compute module (Nvidia Jetson Orin Nano ~40 TOPS, TASA-licensed 2025-04-15) flown on Black Kite-1 (2025-11-28, Rapidtek); Taiwan's **first flown space-grade GPGPU** — the concrete edge-tier counter to the "midstream-C absent" thesis (hyperscale tier still absent)
 
 ## Concepts
 
@@ -201,7 +202,7 @@ type: index
 
 ## Synthesis
 
-- [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" structural gap; ODC commercialization window and three breakthrough paths (PCB integration / defense catalysis / upstream extension)
+- [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" gap, **now reframed (2026-08-03) as an edge-vs-hyperscale gradient**: edge on-orbit compute is *flown* ([[entities/liscotech]] GPGPU100 Orin-Nano 40 TOPS, Black Kite-1) + array integration exists ([[entities/tron-future-tech]]), but hyperscale (H100/Blackwell-class) integration stays absent while China (Orbital Chenguang $8.4B) + US build gigawatt-class; IEA 415→945 TWh anchor; four breakthrough paths (PCB→compute-board / defense-sovereign-cloud / upstream-extension / agency-catalysed edge); H1-2026 financials (UMT LEO +131% YoY, Compeq +13%); falsifier table
 - [[synthesis/sampras-2026-engineering-thesis]] — AI × Space × Crypto × RF × Radiation integrated stack thesis; 2026 convergence triggers and falsifiability table
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Canonical plan for NVIDIA Agent Challenge 2026 entry: satellite-lifecycle decision co-pilot (five phases × decision verbs × labeled dataset moat) on Nemotron + Hermes + NemoClaw; 2-day build + 2-day refine schedule; investment angle deliberately de-emphasised in favour of operator decisions
 - [[synthesis/spacesharks-trust-stack]] — Reliability-architecture companion to the Mission Desk plan: four interlocking trust layers (data / model / decision / system) operationalised by small-model ensemble, tiered inference, calibrated confidence, and agentic provenance; the defensibility argument for why a calibrated multi-model system beats "we used the biggest model"

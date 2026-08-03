@@ -24,7 +24,8 @@ TASA is the single largest *sovereign demand signal* in Taiwan's space build-out
 - **1 January 2023** — officially becomes **TASA**, an administrative corporation under the **National Science and Technology Council (NSTC)**; HQ remains in **Hsinchu**.
 - **October 2023** — government announces an additional **~NT$40 billion** boost, much of it directed at **Beyond-5G (B5G) LEO communications satellites**.
 - **2023** — **TRITON** (Wind-Hunter), Taiwan's first self-developed meteorological satellite, launched with a domestic **GNSS-R** ocean-surface-wind payload.
-- **28 November 2025** — **FORMOSAT-8A** (first of an 8-satellite high-resolution optical EO constellation) plus three CubeSats launched on a SpaceX rideshare from Vandenberg SFB (slipped from Oct 2025 partly via the US federal-government shutdown).
+- **15 April 2025** — TASA **licenses its satellite-grade general-purpose GPU (GPGPU) design to [[entities/liscotech]]** for commercialisation — a public-agency→industry technology transfer that seeds Taiwan's first *on-orbit compute* product (the [[synthesis/leo-taiwan-odc-gap|midstream-C]] edge tier).
+- **28 November 2025** — **FORMOSAT-8A** (first of an 8-satellite high-resolution optical EO constellation) plus three CubeSats launched on a SpaceX rideshare from Vandenberg SFB (slipped from Oct 2025 partly via the US federal-government shutdown). In the **same 2025-11-28 Vandenberg rideshare window**, **Black Kite-1** (built by Rapidtek) flew the **TASA-derived [[entities/liscotech]] GPGPU100** (Nvidia Jetson Orin Nano, ~40 TOPS) — Taiwan's **first flown space-grade GPGPU**, an explicit on-orbit compute demonstration.
 
 ## Current Program Portfolio (as of 2026-06)
 
@@ -34,6 +35,7 @@ TASA is the single largest *sovereign demand signal* in Taiwan's space build-out
 | **TRITON** | GNSS-R ocean-wind meteorology | Operational since 2023 |
 | **B5G LEO comms** | Sovereign LEO communications satellites (resilience vs subsea-cable cut) | In development; first flight targeted mid/late 2020s |
 | **FORMOSAT-7 / COSMIC-2** | GNSS radio-occultation (US-Taiwan), feeds [[concepts/swpc-space-weather-feeds|space-weather]] + ionospheric models | Operational (cross-links [[synthesis/space-weather-forecasting-six-region]]) |
+| **Satellite-grade GPGPU** | On-orbit edge compute IP; licensed to [[entities/liscotech]] → GPGPU100 | Flown on Black Kite-1 (2025-11-28); the sovereign-agency pull into [[synthesis/leo-taiwan-odc-gap|midstream-C]] |
 
 ## Six-Region Context (where TASA sits)
 
@@ -63,6 +65,7 @@ Relative to peers: TASA's budget and cadence (≈1 sat/yr) sit far below NASA/ES
 - [[sources/hsieh-xband-leo-transmitter-2020]] — X-band LEO transmitter for which NSPO was the application collaborator
 - [[sources/thesis-aesa-modules-zheng-2021]] — XT-144 / AESA system context
 - [[entities/tron-future-tech]] — Taiwan private RF/AESA vendor; industry counterpart to public-sector TASA
+- [[entities/liscotech]] — commercialised TASA's satellite-grade GPGPU (GPGPU100, flown Black Kite-1); Taiwan's first on-orbit compute node
 - [[concepts/leo-value-chain]] — where TASA's demand sits in the LEO chain
 - [[concepts/taiwan-radiation-test-ecosystem]] — NSPO×NTU cyclotron MoU; qualification gate
 - [[concepts/rha-radiation-hardening]] — radiation hardening assurance

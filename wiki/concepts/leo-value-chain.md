@@ -79,7 +79,7 @@ As constellation scale grows, debris management becomes a dual regulatory and en
 → See [[concepts/orbital-data-center]] for details
 
 ### On-Orbit Compute Nodes ([[entities/starcloud]] H100→Blackwell / [[entities/axiom-space]] relay-node ODC)
-Core logic: Explosive growth in Earth data-center electricity (IEA *Energy and AI*, 2025: **≈415 TWh in 2024 → ≈945 TWh by 2030**, US + China = ~80% of the growth) × free space solar energy × radiative cooling → long-term cost disruption. By mid-2026 the US node race has concrete hardware: [[entities/starcloud]] (Starcloud-1 H100 flown 2025-11; Starcloud-2 Blackwell-B200 + AWS-blade H2 2026) and [[entities/axiom-space]] (operational ODC Node 1 & 2 on Kepler optical relay, 2026-01). Taiwan manufacturers are currently almost absent from this segment. Global ODC race mapped by region in [[synthesis/orbital-data-center-six-region]]; Taiwan-specific gap in [[synthesis/leo-taiwan-odc-gap]].
+Core logic: Explosive growth in Earth data-center electricity (IEA *Energy and AI*, 2025: **≈415 TWh in 2024 → ≈945 TWh by 2030**, US + China = ~80% of the growth) × free space solar energy × radiative cooling → long-term cost disruption. By mid-2026 the US node race has concrete hardware: [[entities/starcloud]] (Starcloud-1 H100 flown 2025-11; Starcloud-2 Blackwell-B200 + AWS-blade H2 2026) and [[entities/axiom-space]] (operational ODC Node 1 & 2 on Kepler optical relay, 2026-01). **Taiwan is no longer flatly absent at the *edge* tier**: [[entities/liscotech]]'s GPGPU100 (Nvidia Jetson Orin Nano, ~40 TOPS, TASA-licensed) flew on Black Kite-1 (2025-11-28) — Taiwan's first flown space-grade GPGPU — though the *hyperscale* (H100/Blackwell-class) integration tier stays absent. Global ODC race mapped by region in [[synthesis/orbital-data-center-six-region]]; Taiwan-specific edge-vs-hyperscale gradient in [[synthesis/leo-taiwan-odc-gap]].
 
 ### Energy Systems (24hr Solar Arrays / Radiative Cooling)
 24/7 solar power (no cloud cover) + passive radiative cooling toward the cosmic background is the differentiated energy advantage of ODC.
@@ -135,7 +135,8 @@ Starlink Aviation (in-flight Wi-Fi) and Maritime services are already mature mar
 | Upstream high-frequency PCB | ★★★★★ | Huatong 80% market share |
 | Mid-stream A ISL optical communications | ★★☆☆☆ | Precision optics not a Taiwan strength |
 | Downstream ground terminals | ★★★★ | Antenna, LNB, power |
-| **Mid-stream C ODC hardware integration** | **★☆☆☆☆** | **Structural gap → potential opportunity** |
+| **Mid-stream C — on-orbit compute (edge)** | **★★☆☆☆** | **[[entities/liscotech]] GPGPU100 flown 2025-11 (Orin Nano ~40 TOPS) — gap narrowing at edge tier** |
+| **Mid-stream C — on-orbit compute (hyperscale)** | **★☆☆☆☆** | **No H100/Blackwell-class integrator → structural gap remains** |
 | **Radiation testing infrastructure (TID/SEE)** | **★☆☆☆☆** | **Implicit threshold: no local capability; manufacturers must qualify overseas** |
 
 > ⚠️ **Implicit threshold**: All upstream components (RF PA, filters, PCB substrates) entering formal constellation supply chains must pass complete TID / SEE qualification. Taiwan currently has no local heavy-ion accelerator or large Co-60 facility, representing a structural weakness that has not yet been publicly discussed. See [[concepts/rha-radiation-hardening]] for details.
