@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-04",
+  "run_mode": "OFFLINE_STUB",
+  "blockers": [
+    {
+      "component": "trader_pipeline",
+      "detail": "agents/src/trader/ does not exist; only agents/src/firefly/ is present. No CLI entry point trader scan is available."
+    },
+    {
+      "component": "yfinance_market_data",
+      "detail": "yfinance 1.5.2 is installed but Yahoo Finance API returns HTTP 403 via the session proxy (CONNECT tunnel failed). Real price data could not be fetched."
+    }
+  ],
+  "watchlist_seed": [
+    "NVDA", "AAPL", "TSLA", "MSFT", "AMD",
+    "GOOGL", "META", "AMZN", "SMCI", "TSM",
+    "AVGO", "PLTR", "CRWD", "ARM", "INTC"
+  ],
+  "tickers": [
+    {"ticker": "NVDA",  "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "GPU AI-infrastructure leader; needs live data for thesis."},
+    {"ticker": "AAPL",  "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "Consumer hardware + services; needs live data for thesis."},
+    {"ticker": "TSLA",  "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "EV + robotics; needs live data for thesis."},
+    {"ticker": "MSFT",  "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "Azure + Copilot cloud cycle; needs live data for thesis."},
+    {"ticker": "AMD",   "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "GPU/CPU challenger to NVDA; needs live data for thesis."},
+    {"ticker": "GOOGL", "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "Search + Gemini AI + GCP; needs live data for thesis."},
+    {"ticker": "META",  "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "Social + LLaMA open-source AI moat; needs live data for thesis."},
+    {"ticker": "AMZN",  "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "AWS + Bedrock AI inference; needs live data for thesis."},
+    {"ticker": "SMCI",  "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "AI server supply chain; needs live data for thesis."},
+    {"ticker": "TSM",   "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "Semiconductor foundry; Taiwan risk + AI demand tailwind; needs live data."},
+    {"ticker": "AVGO",  "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "Custom AI silicon (XPU) + networking; needs live data for thesis."},
+    {"ticker": "PLTR",  "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "Defense AI analytics; AIP momentum; needs live data for thesis."},
+    {"ticker": "CRWD",  "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "Cybersecurity cloud-native leader; needs live data for thesis."},
+    {"ticker": "ARM",   "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "ISA royalties + AI edge compute; needs live data for thesis."},
+    {"ticker": "INTC",  "direction": "ABSTAIN", "confidence": null, "sizing_sigma": null, "thesis": "Turnaround play / foundry IFS; needs live data for thesis."}
+  ],
+  "backtest_prior": null,
+  "rerank": {
+    "tier_1": [],
+    "tier_2": [],
+    "note": "Cannot rerank without live data. All tickers receive ABSTAIN direction this run."
+  },
+  "fom_table": [],
+  "next_steps": [
+    "Unblock Yahoo Finance access via proxy allowlist or use an alternative data source (Alpha Vantage, Polygon.io, or a locally cached dataset).",
+    "Bootstrap agents/src/trader/ with orchestrator, schemas, CLI (trader research / trader scan), yfinance_client, and LLM thesis generator.",
+    "Re-run after proxy is unblocked to get T-1 actuals for all 15 seed tickers and produce the first real backtest.",
+    "Consider adding TSM, AVGO, SMCI to the core seed list given ODC / AI-hardware thesis alignment in the wiki."
+  ]
+}
