@@ -6,6 +6,8 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-08-04]] — Daily KOL + keyword digest 2026-08-04: Claude Code Sonnet 5 default/1M ctx, OpenAI Astra math breakthrough, China AI agent regulation, Anthropic IPO prep, Polkadot Products Devnet, OpenClaw/NemoClaw v0.0.75, Audrey Tang Victoria Forum
+
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
@@ -61,6 +63,9 @@ type: index
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
 
 ## Entities
+
+- [[entities/anthropic]] — US AI safety company; Claude model family; Claude Code; 2026 IPO prep; 300K+ enterprise customers
+- [[entities/openai]] — US AI research company; GPT-5.6 / Astra / o-series; Astra solved 10 open math problems Aug 2026; Atlas deprecated
 
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
 - [[entities/polkadot]] — Layer-0 relay chain + parachain protocol; DOT token; JAM roadmap; DOT hard cap March 2026
