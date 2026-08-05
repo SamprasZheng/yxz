@@ -200,6 +200,10 @@ type: index
 - [[concepts/calibrated-confidence-llm]] — Calibration techniques (temperature scaling, Platt, verbalised, P(IK), conformal prediction, selective prediction); three-class `answer / abstain / escalate` output; coverage-risk operating point per decision-verb class; Layer 3 of the Spacesharks trust stack
 - [[concepts/agentic-provenance]] — Four-layer trust model (data / model / decision / system); W3C PROV-DM / C2PA / NIST AI 600-1 / EU AI Act Article 50 / CycloneDX ML-BOM analogues; reproducibility invariant tying every published row back to its raw evidence blob; the labelled-lifecycle-dataset moat is provenance-defensible only
 
+## Trader / Daily Research
+
+- [[synthesis/daily-trader-2026-08-05]] — First run (2026-08-05): BLOCKED — yfinance 403 via proxy; synthetic stub; 15-ticker core watchlist seeded; tier-1 NVDA/PLTR/META/GOOGL/ARM; FOM formula documented; trader CLI scaffold missing
+
 ## Synthesis
 
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" gap, **now reframed (2026-08-03) as an edge-vs-hyperscale gradient**: edge on-orbit compute is *flown* ([[entities/liscotech]] GPGPU100 Orin-Nano 40 TOPS, Black Kite-1) + array integration exists ([[entities/tron-future-tech]]), but hyperscale (H100/Blackwell-class) integration stays absent while China (Orbital Chenguang $8.4B) + US build gigawatt-class; IEA 415→945 TWh anchor; four breakthrough paths (PCB→compute-board / defense-sovereign-cloud / upstream-extension / agency-catalysed edge); H1-2026 financials (UMT LEO +131% YoY, Compeq +13%); falsifier table
