@@ -6,6 +6,8 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-08-05]] — KOL + keyword digest 2026-08-05: EU AI Act enforcement live; OpenAI GPT-5.6 Sol security incident; Claude Code v2.1.221 + Opus 5; Polkadot devnet prototypes; NemoClaw/OpenClaw enterprise maturation (automated)
+
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
@@ -98,6 +100,8 @@ type: index
 - [[entities/jamia-gpt]] — Sampras's Custom GPT for Polkadot / JAM / Coretime / XCM / OpenGov
 - [[entities/spacesharks-gpt]] — Sampras's Custom GPT for LEO constellations, ODC, ISL, Taiwan space supply chain
 - [[entities/nvidia]] — NVIDIA Corp; GPU + Nemotron LLM vendor; GTC Taipei 2026 Agent Challenge host; cross-cuts AI, space (Starcloud H100), radiation (Orin TID)
+- [[entities/openai]] — US AI lab; GPT-5.6 / Astra model family; ChatGPT; Aug 2026 GPT-5.6 Sol security incident + Astra open-math Lean proofs; competitor/reference in open-weight synthesis
+- [[entities/anthropic]] — US AI safety company; Claude model family + Claude Code; MCP 400M monthly SDK downloads (4× YoY); Opus 5 default Aug 2026
 - [[entities/nous-research]] — Open-source AI lab founded 2023; CEO Jeffrey Quesnelle + Teknium/Karan4D/Shivani Mitra; $65M Series A April 2025 led by Paradigm at $1B valuation; builds Hermes LLMs, Hermes Agent, Psyche decentralized training
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
