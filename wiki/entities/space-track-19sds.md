@@ -92,13 +92,13 @@ Authentication: TLS-secured username/password POST to `/ajaxauth/login`. Session
 
 ## TraCSS Transition
 
-Under Space Policy Directive-3 (2018), the civil STM mission is transitioning from DoD/18 SDS to the Department of Commerce (NOAA Office of Space Commerce) via TraCSS:
+Under Space Policy Directive-3 (2018), the civil STM mission has been transitioning from DoD/18 SDS to the Department of Commerce **Office of Space Commerce (OSC)** via TraCSS:
 
 - DoD retains the **Space Domain Awareness (SDA)** mission for national security objects
 - DoC takes the **civil/commercial conjunction screening** mission
 - Some functions are also being shifted to DoC, as acknowledged in the SIA 2024 award
 
-As of February 2026, 17 organisations are TraCSS pilot users. The full TraCSS.gov interface will replace the Space-Track.org interface for civil operators when production is declared. 18 SDS and 19 SDS will continue as the military SDA mission providers post-transition.
+**Status (mid-2026) — the transition is now budget-contested, not a scheduled completion.** TraCSS pilot participation grew from 17 organisations (early 2026) to **52 pilot users + the first two national-government accounts (UK, Australia), ~11,125 satellites**, registering directly via TraCSS.gov. But NOAA's FY2026 budget proposal (mid-2025) sought to *terminate* federal TraCSS funding; the Space Force opposed the cut; Congress restored the money at **$52.5M enacted for FY2026** — while the **FY2027 request again seeks ~$11M to OSC (≈80% cut)**, the "fully operational by January 2026" target slipped, a **user-fee** model is under study, and a **2025-08-13 EO** elevated OSC to report directly to the Secretary of Commerce (out from under NOAA; Taylor Jordan named director 2025-12-02). The full TraCSS.gov interface is intended to serve civil operators once production is declared, but no fixed date should be assumed; 18 SDS and 19 SDS continue as the military SDA mission providers regardless. Canonical fact-check: [[concepts/conjunction-screening-providers]] §"The 2025–2026 budget near-death and rescue"; geopolitical framing: [[synthesis/space-situational-awareness-six-region]] §2.
 
 ## International Context
 

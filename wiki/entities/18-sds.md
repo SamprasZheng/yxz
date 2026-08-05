@@ -18,7 +18,7 @@ The 18th Space Defense Squadron (18 SDS) is the United States Space Force unit r
 ## Mission Areas
 
 1. **Space Surveillance Network (SSN) command and control**: tasks sensors (ground radar, telescope, space-based) against catalog maintenance and special tasking
-2. **Resident Space Object (RSO) catalog maintenance**: maintains ~27,000+ tracked objects (2024–2026) including active payloads, rocket bodies, and debris ≥ ~10 cm in LEO
+2. **Resident Space Object (RSO) catalog maintenance**: maintains ~27,000+ tracked objects in the public catalog (2024–2026) including active payloads, rocket bodies, and debris ≥ ~10 cm in LEO — against a broader tracked environment of **>43,000 objects >10 cm** and a modeled ~1.2 M in the 1–10 cm "deadly-but-untrackable" band ([[sources/esa-space-environment-report-2026|ESA SER 2026]])
 3. **Conjunction Assessment (CA)**: screens all tracked objects against all other tracked objects for predicted close approaches; generates CDMs within the [[concepts/screening-volume|screening volume]] filter
 4. **Human Spaceflight Support**: provides conjunction assessment for ISS and crewed vehicles
 5. **Reentry / breakup assessment**: predicts reentry windows and on-orbit fragmentation events
@@ -43,13 +43,15 @@ The `cdm_public` class exposes a subset of CDM fields without the sensitive seco
 
 ## Transition to TraCSS / OASIS
 
-Under Space Policy Directive-3 (2018) and subsequent DoC/DoD agreements, the civil Space Traffic Management role is transitioning from DoD/18 SDS to the **Office of Space Commerce (OSC)** under NOAA/DoC via [[sources/tracss-oasis-announcement-2024|TraCSS]]:
+Under Space Policy Directive-3 (2018) and subsequent DoC/DoD agreements, the civil Space Traffic Management role has been transitioning from DoD/18 SDS to the **Office of Space Commerce (OSC)** via [[sources/tracss-oasis-announcement-2024|TraCSS]]:
 
 - September 2024: TraCSS 1.0 initial capabilities fielded; OSC CDMs distributed via Space-Track.org interface
-- February 2026: OSC opened TraCSS waitlist for operators
-- Target: operators migrate to TraCSS.gov as interface matures; 18 SDS retains the military space domain awareness (SDA) mission
+- February 2026: OSC opened TraCSS registration for operators
+- Mid-2026: expanded beta — **52 pilot users + the first two national-government accounts (UK, Australia), ~11,125 satellites** — registering directly via TraCSS.gov; 18 SDS retains the military space domain awareness (SDA) mission
 
-Post-transition, 18 SDS will continue generating CDMs for military/national security objects while OSC/TraCSS serves the civil/commercial operator community.
+**But the hand-off is now budget-contested, not a scheduled 2026 completion.** NOAA's FY2026 budget proposal (mid-2025) sought to *terminate* federal TraCSS funding (arguing commercial vendors should absorb it); the Space Force opposed the cut; Congress restored the money at **$52.5M enacted for FY2026** — while the **FY2027 request again seeks ~$11M to OSC (≈80% cut)**, the "fully operational by January 2026" target slipped, a **user-fee** model is under study, and a **2025-08-13 EO** elevated OSC to report directly to the Secretary of Commerce (out from under NOAA; Taylor Jordan named director 2025-12-02). Full fact-check + provider-selection implication: [[concepts/conjunction-screening-providers]] §"The 2025–2026 budget near-death and rescue"; geopolitical framing: [[synthesis/space-situational-awareness-six-region]] §2.
+
+Post-transition (if it completes), 18 SDS continues generating CDMs for military/national-security objects while OSC/TraCSS serves the civil/commercial operator community. Until then, treat **Space-Track (18 SDS) as the durable authoritative baseline**.
 
 ## International Context
 
@@ -61,6 +63,8 @@ The Space Surveillance Network is the most capable of six regional SSA systems a
 - [[synthesis/space-situational-awareness-six-region]] — the SSN among the six regional SSA programs
 - [[entities/space-track-19sds]] — 18 SDS + 19 SDS combined operational structure
 - [[sources/tracss-oasis-announcement-2024]] — DoD→DoC transition details
+- [[concepts/conjunction-screening-providers]] — canonical TraCSS budget-contest fact-check + commercial provider comparison
+- [[sources/esa-space-environment-report-2026]] — the debris environment the catalog tracks against (SER 2026)
 - [[concepts/screening-volume]] — the geometric filter 18 SDS applies to generate CDMs
 - [[concepts/pc-probability-of-collision]] — Pc computed by 18 SDS and populated in CDMs
 - [[synthesis/cdm-pc-decisioning]] — how Firefly agents consume 18 SDS CDM output
