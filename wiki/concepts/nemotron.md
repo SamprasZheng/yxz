@@ -109,11 +109,11 @@ Nemotron is the **US national-champion open-weight line**, but it does not sit a
 
 ## Reference implementation in this repo
 
-The "one model, two modes" idea above is implemented concretely by this wiki's [[synthesis/firefly-nemoclaw-reference-implementation|Firefly agent]]: `agents/src/firefly/llm/router.py` serves the **same** `nemotron-3-nano:4b` as a planner (`detailed thinking on`, temp 0.15) and an executor (`detailed thinking off`, temp 0.3), forced by RTX 5070 VRAM ("can't hold two checkpoints hot") — the cleanest statement of why the Nemotron-family reasoning toggle is the differentiator. Cloud-NIM mode swaps in two SKUs (Super-49B planner + Nano-9B executor). See [[synthesis/firefly-nemoclaw-reference-implementation]] — including the flagged divergence that the workflow-of-record still orchestrates on Claude, not Nemotron.
+The "one model, two modes" idea above is implemented concretely by this wiki's [[synthesis/firefly-nemoclaw-reference-implementation|Firefly agent]]: `agents/src/firefly/llm/router.py` serves the **same** `nemotron-3-nano:4b` as a planner (`detailed thinking on`, temp 0.15) and an executor (`detailed thinking off`, temp 0.3), forced by RTX 5070 VRAM ("can't hold two checkpoints hot") — the cleanest statement of why the Nemotron-family reasoning toggle is the differentiator. Cloud-NIM mode swaps in two SKUs (Super-49B planner + Nano-9B executor). See [[synthesis/firefly-nemoclaw-reference-implementation]] — where, as **re-verified 2026-08-06**, the Python runtime-of-record (`orchestrator.py`, the real entrypoint) now drives *every* agent through this router on Nemotron; the only lagging artifact is `nemo_workflow.yaml`, which still *declares* `claude-opus-4-7` (a doc-only cleanup, not a runtime gap).
 
 ## Related
 
-- [[synthesis/firefly-nemoclaw-reference-implementation]] -> how Nemotron is actually wired (and the Claude-vs-Nemotron orchestration gap)
+- [[synthesis/firefly-nemoclaw-reference-implementation]] -> how Nemotron is actually wired (Python runtime now Nemotron end-to-end as of 2026-08-06; only the `nemo_workflow.yaml` declaration still lags on Claude)
 - [[synthesis/open-weight-llm-agent-stack-six-region]] -> six-region map of who builds open-weight base models and why it became a sovereignty question
 - [[synthesis/agent-runtime-orchestration-six-region]] -> six-region map of the runtime layer *above* the model; Nemotron is the mandated US model the runtime calls
 - [[concepts/dgx-spark]] -> local reasoning workstation context for on-prem agent demos

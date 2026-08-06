@@ -11,6 +11,8 @@ sources: ["[[sources/nvidia-agent-challenge-2026]]", "[[sources/nemoclaw-hermes-
 
 This is the **向內消化 / concept↔code 整合** page for the AI-agent-runtime cluster: every claim below is grounded in a file in `agents/`, read directly (not the LLM's prior). Code is **never modified** by this routine — divergences are recorded for the owner.
 
+> **Re-verified against the `agents/` tree on 2026-08-06** (code last changed at commit `7817a4d`, 2026-07-13). The headline finding of this pass: the orchestration divergence documented on 2026-06-14 has **inverted** — the Python runtime-of-record now runs Nemotron end-to-end, and the lone `claude-opus-4-7` declaration that remains is in `nemo_workflow.yaml`, which now *lags* the code rather than driving it (full detail in the divergence section below).
+
 ## The stack, abstract → concrete
 
 | Layer | Concept page (abstract) | Firefly file (concrete) | Match? |
@@ -21,7 +23,7 @@ This is the **向內消化 / concept↔code 整合** page for the AI-agent-runti
 | **Runtime distribution** | [[concepts/nemoclaw]] — 4 policy domains + intent injection | `firefly-sandbox.yaml` header: `openshell sandbox create … nemoclaw inference set … nemoclaw agent run` | ✅ faithful |
 | **Egress policy** | [[concepts/nemoclaw-policy-presets]] — deny-default + per-service presets, recipe #5 model-switch | `firefly-sandbox.yaml` `network.default: deny` + 6 `reason:`-annotated hosts; `inference.rerouting` ollama↔nim | ✅ worked example |
 | **On-prem host** | [[concepts/dgx-spark]] — GB10, on-prem NIM tier | `nemotron.py` transport #3 "ON-PREM NIM … e.g. on DGX Spark" (but default is transport #1, RTX 5070 Ollama) | ⚠️ aspirational tier |
-| **Orchestration** | [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Nemotron-driven multi-agent | `nemo_workflow.yaml` orchestrator + agents `llm: claude-opus-4-7` | ⚠️ **divergence** (below) |
+| **Orchestration** | [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Nemotron-driven multi-agent | `orchestrator.py` (the real `entrypoint`) builds `LLMRouter()` → Nemotron and injects it into every agent's `context["router"]`; `nemo_workflow.yaml` still *declares* `llm: claude-opus-4-7` | ✅ in code / ⚠️ **YAML lags** (below) |
 
 ## What the code does *better* than the prose
 
@@ -31,20 +33,28 @@ The Firefly router is a cleaner statement of the [[concepts/nemotron]] "one mode
 - **Transport-abstraction = recipe #5 in code.** `resolve_backend()` makes LOCAL Ollama / CLOUD NIM / ON-PREM NIM a single env-var swap (`NEMOTRON_BACKEND`, `NEMOTRON_BASE_URL`) behind one OpenAI-compatible surface — the runtime model-switching recipe ([[concepts/nemoclaw-policy-presets]] #5) realized at the client layer, complementing the gateway-layer swap in `firefly-sandbox.yaml`.
 - **Graceful degradation.** `NEMOTRON_BACKEND=disabled` makes every call return an error so the orchestrator falls back to deterministic stubs — "demos never crash." A reliability primitive consistent with the [[synthesis/spacesharks-trust-stack|trust-stack]] abstention philosophy.
 
-## Divergence flagged for the owner (no code changed)
+## Divergence status — RESOLVED in code, now inverted to the YAML (re-verified 2026-08-06)
 
-**The workflow-of-record runs on Claude, not Nemotron.** `nemo_workflow.yaml` declares both the `orchestrator` and the one real agent (`orbit_designer`) as `llm: claude-opus-4-7`, with the inline comment *"MVP; v2 benchmarks Nemotron via NIM."* Meanwhile the Nemotron dual-mode stack (`router.py` + `nemotron.py`) is fully built but lives in a **parallel module not referenced by `nemo_workflow.yaml`**. So today:
+The 2026-06-14 version of this page flagged that "the workflow-of-record runs on Claude, not Nemotron." **Re-reading the `agents/` tree on 2026-08-06 shows the code has moved past that** — the divergence has inverted, and the prior page is now the thing that was stale. Two grounded facts:
 
-- The **agent reasoning** path = Claude (via `ANTHROPIC_API_KEY`, per `README.md` quick-start).
-- The **Nemotron path** = implemented, tested, sandbox-policy'd (`firefly-sandbox.yaml` defaults to `nemotron-3-nano:4b`), but **not wired into the orchestrator**.
+**1. The Python runtime-of-record runs Nemotron end-to-end.** `orchestrator.py` — the actual `entrypoint: firefly.orchestrator:run` — instantiates `router = LLMRouter()` (→ `NemotronClient` → `resolve_backend()`, whose no-env-override default is **local Ollama `nemotron-3-nano:4b`**) and passes it in `context["router"]` to every agent. Then:
+- `orbit_designer.run()` calls `router.planner()` → Nemotron with `detailed thinking on` (temp 0.15);
+- the executor-tier agents call `router.chat(Role.EXECUTOR, …)` through `_tool_loop.py` → Nemotron with `detailed thinking off` (temp 0.3);
+- the orchestrator's own docstring now declares *"Architecture (Nemotron dual-model split)."*
 
-This matters because the [[sources/nvidia-agent-challenge-2026|NVIDIA Agent Challenge]] treats Nemotron as the **mandatory reasoning core** ([[concepts/nemotron]]). The MVP is honest about this ("v2 benchmarks Nemotron"), but **a submission graded today would not be running Nemotron in its orchestration loop.** The wiring gap — point `orchestrator.run` and `orbit_designer.run` at `LLMRouter` instead of a Claude client — is the single highest-leverage change to make the build hackathon-conformant. *Recorded for the owner; this routine does not edit code.*
+**Claude is no longer in the Python path at all** — `claude-opus-4-7` appears in *no* `.py` file. The only non-Nemotron path left is the deterministic `_fallback()` stub that fires when the router is unavailable (`NVIDIA_API_KEY` unset / transport error), preserving the "demos never crash" reliability primitive. So the hackathon-conformance worry the earlier page raised — *"a submission graded today would not be running Nemotron in its loop"* — **has closed at the code level.**
 
-> **Secondary note.** `firefly-sandbox.yaml` opens `inference.local` on ports `[443, 8443, 8642]`; `8642` is the NemoClaw OpenAI-compatible port ([[concepts/nemoclaw]], [[sources/nemoclaw-hermes-install-runbook-2026]]) — consistent. The cloud fallback (`integrate.api.nvidia.com:443`) and tool hosts (`www.space-track.org`, `ll.thespacedevs.com`, `services.swpc.noaa.gov`, `celestrak.org`) all match the [[concepts/conjunction-screening-providers|tool layer]] the OrbitDesignerAgent uses — the egress allowlist is tight and complete, no over-grant.
+**2. The lone remaining Claude declaration is the YAML, and it is now the lagging artifact.** `nemo_workflow.yaml` still declares `orchestrator.llm` **and** `orbit_designer.llm` as `claude-opus-4-7` (lines 18, 37) with the comment *"MVP; v2 benchmarks Nemotron via NIM,"* and its own header calls it *"the architecture-of-record."* So the two sources of truth now **disagree**: the YAML says Claude; the Python — the real entrypoint — runs Nemotron. `firefly-sandbox.yaml` agrees with the Python (`default_provider: ollama-local`, `default_model: nemotron-3-nano:4b`, `description: "Nemotron-driven"`), leaving `nemo_workflow.yaml` as the sole outlier.
+
+**Net for the owner:** the one-line cleanup that remains is **documentation-only** — update `nemo_workflow.yaml` lines 18 and 37 from `claude-opus-4-7` to the Nemotron SKU the Python already uses, so the "architecture-of-record" stops contradicting the runtime. This is the inverse of the 2026-06-14 recommendation (which asked to wire *code* to Nemotron); the code fix already happened. *Recorded for the owner; this routine does not edit code.*
+
+> **Secondary code-internal inconsistency (new note, 2026-08-06).** `orbit_designer.py`'s docstring says *"Nemotron Super-49B reasoning … `nvidia/llama-3.3-nemotron-super-49b-v1.5`,"* but the **default** backend serves **`nemotron-3-nano:4b` on local Ollama for both tiers** — Super-49B is used only when `NEMOTRON_BACKEND=nim` (cloud) is set (`CLOUD_PLANNER_MODEL` in `nemotron.py`). So the docstring describes the *cloud* planner, not the *default* local one: a reader running the quick-start locally gets Nano-4B, not Super-49B. Minor, doc-only, recorded for the owner.
+
+> **Egress-allowlist note (unchanged, still valid).** `firefly-sandbox.yaml` opens `inference.local` on ports `[443, 8443, 8642]`; `8642` is the NemoClaw OpenAI-compatible port ([[concepts/nemoclaw]], [[sources/nemoclaw-hermes-install-runbook-2026]]) — consistent. The cloud fallback (`integrate.api.nvidia.com:443`) and tool hosts (`www.space-track.org`, `ll.thespacedevs.com`, `services.swpc.noaa.gov`, `celestrak.org`) all match the [[concepts/conjunction-screening-providers|tool layer]] the OrbitDesignerAgent uses — the egress allowlist is tight and complete, no over-grant.
 
 ## Why this is durable (the compounding value)
 
-A reader (or a future agent) asking *"is the owner's hackathon entry actually built on the stack the wiki documents?"* now gets a one-page, code-grounded answer instead of re-reading five concept pages and three source files. The reconciliation table is also a **conformance checklist**: each ✅ is a verified match, each ⚠️ is a tracked gap with a named fix. When the owner wires Nemotron into the orchestrator, this page's orchestration row flips ✅ and the divergence section resolves — a concrete, testable definition of "done."
+A reader (or a future agent) asking *"is the owner's hackathon entry actually built on the stack the wiki documents?"* now gets a one-page, code-grounded answer instead of re-reading five concept pages and three source files. The reconciliation table is also a **conformance checklist**: each ✅ is a verified match, each ⚠️ is a tracked gap with a named fix. This pass is itself the proof the checklist works — between 2026-06-14 and 2026-08-06 the code silently moved the orchestration row from ⚠️ toward ✅ (agents now call Nemotron), and re-verifying against the tree is what caught it. The remaining ⚠️ is now a **pure documentation lag** (`nemo_workflow.yaml` still names Claude): "done" is reached when that YAML's two `llm:` lines match the Nemotron SKU the Python already runs — a concrete, testable, code-free fix.
 
 ## See also
 
@@ -52,4 +62,5 @@ A reader (or a future agent) asking *"is the owner's hackathon entry actually bu
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — the hackathon scope/plan Firefly serves
 - [[synthesis/spacesharks-trust-stack]] — the reliability architecture the degradation/abstention behavior implements
 - [[synthesis/open-weight-llm-agent-stack-six-region]] — why a model-agnostic transport layer is strategically valuable (the model layer is the contested one)
+- [[synthesis/agent-runtime-orchestration-six-region]] — the six-region map of the runtime/orchestration layer this Firefly stack instantiates; the "model commoditizes, the orchestration+memory+permission layer is where lock-in accretes" thesis is exactly why the router's transport-abstraction matters more than which SKU it points at
 - [[concepts/hermes-agent-framework]] — the alternative agent-loop profile (region-neutral runtime, same NemoClaw cage)

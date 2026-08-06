@@ -86,7 +86,7 @@ These two clocks fuse in the 2026 hackathon stack: Hermes (agent-loop lineage) i
 
 - [[synthesis/open-weight-llm-agent-stack-six-region]] — the **model layer below** this runtime (who builds the weights it calls)
 - [[synthesis/llm-satellite-operations-six-region]] — the **applied vertical above** it (satellite-ops agents built on a runtime)
-- [[synthesis/firefly-nemoclaw-reference-implementation]] — the repo's own runtime instance (Hermes/Nemotron-router inside NemoClaw) and its Claude-vs-Nemotron divergence
+- [[synthesis/firefly-nemoclaw-reference-implementation]] — the repo's own runtime instance (Nemotron dual-mode router inside NemoClaw); its Python runtime is now Nemotron end-to-end (re-verified 2026-08-06), with only the `nemo_workflow.yaml` declaration still lagging on Claude — a concrete worked example of this map's "the model is swappable, the runtime is the durable layer" thesis
 - [[synthesis/spacesharks-trust-stack]] — the reliability architecture layered *on top of* a runtime (small-model ensemble, tiered inference, calibrated confidence, provenance)
 - [[concepts/hermes-agent-framework]] · [[concepts/nemoclaw]] · [[concepts/openshell-runtime]] · [[concepts/openclaw]] · [[concepts/nemotron]] · [[concepts/nemoclaw-policy-presets]] · [[concepts/dgx-spark]]
 
