@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-07",
+  "run_status": "STUB — blockers recorded",
+  "blockers": [
+    {
+      "id": "B1",
+      "component": "trader CLI",
+      "detail": "agents/src/trader/ does not exist. The trader pipeline (orchestrator, schemas, agents, CLI) has not been built yet. 'uv run trader scan' cannot be invoked."
+    },
+    {
+      "id": "B2",
+      "component": "yfinance / market data",
+      "detail": "Network proxy in this remote env returns HTTP 403 on CONNECT tunnel to finance.yahoo.com. yfinance 1.5.2 installed successfully but all ticker fetches fail with curl error 7 (CONNECT tunnel failed, response 403). Retried once after 5s backoff — same result. Price data is unavailable in this environment."
+    },
+    {
+      "id": "B3",
+      "component": "LLM scan backend",
+      "detail": "LLM_BACKEND=anthropic would require the trader CLI (B1 prerequisite). LLM_BACKEND=disabled TRADER_OFFLINE=1 stub mode also requires the trader CLI. No scan verdicts produced."
+    },
+    {
+      "id": "B4",
+      "component": "prior history",
+      "detail": "No prior wiki/synthesis/daily-trader-*.md files exist. This is run #1. No yesterday's backtest is possible; FOM backward score component is 0 / N/A for all tickers."
+    }
+  ],
+  "watchlist_seed": {
+    "source": "core seed (no prior report)",
+    "tickers": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN", "PLTR", "AVGO", "TSM", "SMCI", "ARM", "INTC", "QCOM"],
+    "count": 15
+  },
+  "scan_verdicts": null,
+  "backtest_results": null,
+  "fom_scores": null,
+  "tiers": {
+    "tier_1": null,
+    "tier_2": null
+  },
+  "setup_requirements": [
+    "Build agents/src/trader/ pipeline (orchestrator.py, schemas.py, agents/, cli.py with 'trader scan' command)",
+    "Open outbound HTTPS to finance.yahoo.com in network policy, OR integrate an alternative market-data source accessible through the proxy (e.g., Alpha Vantage, Polygon.io)",
+    "Set ANTHROPIC_API_KEY env var for LLM_BACKEND=anthropic scans",
+    "Register 'trader' entry-point in agents/pyproject.toml [project.scripts]"
+  ]
+}
