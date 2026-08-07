@@ -147,5 +147,5 @@ Each component is normalized to [0, 1] before weighting.
 
 ---
 
-*Scan artifact:* `[[../agents/outputs/scan-2026-08-07.json]]`  
+*Scan artifact:* `agents/outputs/scan-2026-08-07.json`  
 *Run log entry:* `wiki/log.md` — 2026-08-07
