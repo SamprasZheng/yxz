@@ -13,6 +13,28 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-08-08
+
+- Market/Sentiment stance: **neutral** (score 0)
+- Web signals collected: 2
+- Social-search signals collected: 10
+- Updated at: 2026-08-08T22:54:39.883Z
+
+Key web signals:
+- [Top Polkadot Projects in 2026: Best DOT DApps For DeFi, RWA & Privacy - Coin Bureau](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ycGk3TXVQZTBWaVZGaHdkb01jOUFTQkpiWUgxRnZwZk10OVoyemRqMEVOY0cyQkhYcm42YkNXZ016MXczcHZYeU5DSFZpZnVRZmpieXd6czYyenl3SFdldFB2bw?oc=5)
+- [Polkadot (DOT) Review 2026: JAM, Hard Cap & The Honest Verdict - Coin Bureau](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYcnpBakw3WFNGZEpKTzRsWjRjb3o0OXlGTlNMaEFYa0x3ZGRlRHRINXdBdm1QT0JESHVIUDNyaVpEQ1V4X0RqODlUcjZnbGF3NE1aSw?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Polkadot 2.0 Explained: Agile Coretime and What It Changes for ...](https://x.com/BSCNews/article/2064595663892189684)
+- [Polkadot has changed a lot since the parachain auction era. - Polkadot ...](https://x.com/coinbureau/status/2054677804919509395)
+- [Polkadot Parachain Development - Instagram](https://www.instagram.com/popular/polkadot-parachain-development/)
+- [Polkadot (@Polkadot) / Posts / X - Twitter](https://x.com/Polkadot)
+- [Gavin&#x27;s follow-up on JAMKB answers many of the questions raised after ...](https://x.com/D0tSama/status/2070970190184013873)
+- [Seen some FUD on Polkadot activity. Like "Last transaction was 12h ago ...](https://x.com/Defi_Warhol/status/2028843351391560134)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-08-07
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -260,28 +282,6 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Polkadot DOT - Facebook](https://www.facebook.com/groups/polkadot.dot/)
 - [Polkadot Ecosystem Update - Instagram](https://www.instagram.com/popular/polkadot-ecosystem-update/)
 - [BSCN (@BSCNews) on X](https://x.com/BSCNews/status/2074446930537787490)
-
-Data quality notes:
-- No major data-quality issue in this run.
-
-### 2026-07-27
-
-- Market/Sentiment stance: **neutral** (score 0)
-- Web signals collected: 2
-- Social-search signals collected: 10
-- Updated at: 2026-07-27T23:32:11.781Z
-
-Key web signals:
-- [Top Polkadot Projects in 2026: Best DOT DApps For DeFi, RWA & Privacy - Coin Bureau](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ycGk3TXVQZTBWaVZGaHdkb01jOUFTQkpiWUgxRnZwZk10OVoyemRqMEVOY0cyQkhYcm42YkNXZ016MXczcHZYeU5DSFZpZnVRZmpieXd6czYyenl3SFdldFB2bw?oc=5)
-- [Polkadot (DOT) Review 2026: JAM, Hard Cap & The Honest Verdict - Coin Bureau](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYcnpBakw3WFNGZEpKTzRsWjRjb3o0OXlGTlNMaEFYa0x3ZGRlRHRINXdBdm1QT0JESHVIUDNyaVpEQ1V4X0RqODlUcjZnbGF3NE1aSw?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Polkadot 2.0 Explained: Agile Coretime and What It Changes for ...](https://x.com/BSCNews/article/2064595663892189684)
-- [How Could JAM Turn Polkadot Into a Completely Different Kind of Network?](https://x.com/BSCNews/article/2080533026161987743)
-- [Polkadot DOT - Facebook](https://www.facebook.com/groups/polkadot.dot/)
-- [Polkadot (@Polkadot) / Posts / X - Twitter](https://x.com/Polkadot)
-- [Polkadot has changed a lot since the parachain auction era. - Polkadot ...](https://x.com/coinbureau/status/2054677804919509395)
-- [Polkadot - Facebook](https://www.facebook.com/polkadotnetwork/)
 
 Data quality notes:
 - No major data-quality issue in this run.
