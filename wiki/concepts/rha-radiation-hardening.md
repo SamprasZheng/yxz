@@ -104,6 +104,7 @@ The ordering matters: mitigation decisions feed back into RDM, which feeds back 
 | **Zero-G Radiation Assurance** | USA | Co-60 TID + heavy-ion + proton SEE | >6000 COTS radiation database entries; leading commercial lab for SmallSat ecosystem; >20 years of NASA commercial program experience |
 | **JPL Radiation Effects Group** | Pasadena, USA | Full range | NASA government use; accepts some commercial clients |
 | **BNL NASA NSRL** | Brookhaven, USA | Heavy-ion (space simulation) | Dual-use for biological + electronics |
+| **MSU FRIB (FSEE + KSEE)** | East Lansing, USA | Heavy-ion SEE — penetrating high-energy beams | **FSEE** live since Aug 2022 (~2,000 hr/yr, 41 corporate users, ~1,200 hr in FY2025); **KSEE** K500 chip-test line inaugurated 2026-02 (user-ops Sep 2025, up to 6,000 hr/yr); ~8k combined hr/yr of *new* US capacity; [FRIB FSEE](https://frib.msu.edu/science/fsee), [MSUToday](https://msutoday.msu.edu/news/2026/02/k500-chip-testing-ribbon-cutting-news-release) |
 
 **Zero-G's COTS database** is one of the most important tools for commercial New Space: over 6000 radiation test records primarily for COTS and automotive-grade components, enabling pre-screening of components before formal testing and significantly reducing costs.
 
@@ -113,7 +114,7 @@ Heavy-ion SEE is the scarcest, most capital-intensive mode and therefore the tru
 
 | Region | Heavy-ion SEE | Rad-hard IC line |
 |---|---|---|
-| **US** | Leads — TAMU REF (~80k beam-hrs, He→Au 40 MeV/u), LBNL BASE, BNL NSRL | Leads — BAE RAD750/RAD5545, Microchip |
+| **US** | Leads — TAMU REF (~80k beam-hrs, He→Au 40 MeV/u), LBNL BASE, BNL NSRL, **+ MSU FRIB FSEE/KSEE (~8k hr/yr new capacity, 2022→2026)** | Leads — BAE RAD750/RAD5545, Microchip |
 | **Japan** | Strong — HIMAC (p→Xe 800 MeV/u), TIARA, RIKEN | Yes — Renesas |
 | **Europe** | Leads (ESA-coordinated ECIF) — GANIL, GSI, UCLouvain, RADEF/Jyväskylä (to 2027) | Yes — STMicro, Infineon, Teledyne e2v, 3D Plus |
 | **China** | Sovereign — HIRFL (IMP-CAS, 2 SEE terminals), CIAE | Domestic-only (US export controls forced indigenization) |
@@ -144,7 +145,7 @@ RHA is often taught as a static checklist; it is better read as a **process that
 | **1975→** | SEE named (Binder); heavy-ion ground test (LBNL 1979) | Assurance splits into TID *and* SEE tracks — RDM alone no longer covers single-particle destructive modes |
 | **1990s–2000s** | ELDRS (1991) + RHBD layout libraries mature | Assurance adds a *dose-rate* dimension and a cheaper *by-design* path on commercial foundries |
 | **2010s–20s** | **NewSpace COTS-upscreening** becomes the LEO default; Zero-G-style COTS databases | Assurance shifts from "qualify one part forever" to "screen *this lot*, trace it, re-screen next lot" — a statistical, per-lot discipline |
-| **2024–26** | Solar Cycle 25 peak + COTS-in-space explosion ([[concepts/cots-gpu-radiation-risk]]) | Demand for RHA *services* surges while the US National Academies calls its own heavy-ion test base "fragile" — capacity, not physics, becomes the binding constraint |
+| **2024–26** | Solar Cycle 25 peak + COTS-in-space explosion ([[concepts/cots-gpu-radiation-risk]]); **MSU FRIB FSEE/KSEE heavy-ion lines come online** (FSEE 2022, KSEE inaugurated 2026-02, ~8k hr/yr combined) | Demand for RHA *services* surges while the US National Academies' "fragile" heavy-ion base begins to be *answered* by new capacity — capacity, not physics, is the binding constraint, and it is now a funded race against NewSpace volume |
 
 **100-year structural view (labelled scenario, not fact):** the *physics* RHA insures against is astrophysically fixed (GCR + trapped belts + solar particle events never "close"), so **assurance is a permanent tax on anything flown, not a problem that gets solved**. What migrates is *where* the assurance effort concentrates: from special fabs (RHBP) → to layout libraries on commodity nodes (RHBD) → to **statistical lot-screening + designed-in software resilience** (upscreening + ECC/scrubbing/TMR) as parts get cheaper and more numerous than any test campaign can individually qualify. The long-run equilibrium is *system-level* assurance — you stop trying to make every atom immortal and instead architect a fleet that tolerates-and-recovers, exactly the SEE "resilience is designed in, not bolted on" conclusion ([[concepts/see-single-event-effects]] 100-year view). The test-capacity bottleneck — heavy-ion beam-hours — is the one part of this that money can relieve but physics cannot cheapen, which is why it stays the sovereignty lever mapped on [[synthesis/radiation-test-rad-hard-six-region]] (the "qualification toll booth never closes").
 
