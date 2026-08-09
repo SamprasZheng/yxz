@@ -60,7 +60,7 @@ The SDA customer base confirms the US government is buying AI satellite-ops auto
 
 ## Commercial-Market Position (six-region)
 
-Cognitive Space sits in the **Operate (AI tasking/ops automation)** adjacency rather than the three core space-safety tiers — collection scheduling + sensor management, not conjunction screening or debris removal. But it shares the cluster's defining trait: **US government-anchored demand** (SDA/AFRL/NOAA/DARPA SBIR-scale), and it overlaps the [[synthesis/llm-satellite-operations-six-region|applied AI-ops software layer]]. Among the four US vendors here it is the **ops-automation** node (vs Slingshot/Kayhan = decide, Privateer = exited). Market structure + six-region: [[synthesis/commercial-space-traffic-management-six-region]].
+Cognitive Space sits in the **Operate (AI tasking/ops automation)** adjacency rather than the three core space-safety tiers — collection scheduling + sensor management, not conjunction screening or debris removal. But it shares the cluster's defining trait: **US government-anchored demand** (SDA/AFRL/NOAA/DARPA SBIR-scale), and it overlaps the [[synthesis/llm-satellite-operations-six-region|applied AI-ops software layer]]. **Re-verified 2026-08:** no new priced funding round surfaced beyond the ~$11.2M / Oct-2023 seed; the SBIR-scale, gov-anchored contract profile (SDA mesh-routing + USSF in-orbit data-sharing + NOAA next-gen ground demo) and the TRL-9 claim still hold — the cluster's "small SBIR engagements, not program-of-record" scale caveat is unchanged. Among the four US vendors here it is the **ops-automation** node (vs Slingshot/Kayhan = decide, Privateer = exited). Market structure + six-region: [[synthesis/commercial-space-traffic-management-six-region]].
 
 ## See Also
 

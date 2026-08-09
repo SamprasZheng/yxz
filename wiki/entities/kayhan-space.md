@@ -23,7 +23,7 @@ Kayhan Space is a Boulder, Colorado-based space safety startup that provides aut
 | USSF STTR Phase 1 | $250K | September 2022 |
 | **Total VC** | ~$10.7M | — |
 
-The September 2023 seed extension was led by **Space Capital** and **Eve Atlas**.
+The September 2023 seed extension was led by **Space Capital** and **Eve Atlas**. As of 2026-08 no Series A has been announced; startup trackers (Tracxn) now cite **~$12M total across 4 rounds**, ~$1M above the itemized rounds here — the delta is an undisclosed small round, not a priced Series A.
 
 ## Products
 
@@ -45,6 +45,11 @@ Officially released **February 2025**, merges Pathfinder's conjunction capabilit
 - Satcat (space object catalog intelligence) + Pathfinder + Dynamics (proprietary orbital propagator)
 - **Tiered productization**: free **Pathfinder Essentials** (fleet status + threat assessment) + subscription **Pathfinder Pro** (automated real-time CA) — the freemium funnel that, like Slingshot Beacon's dashboard, is how a T2 vendor builds operator lock-in
 - Satcat named a **2025 Fast Company Innovation by Design** honoree (UX category)
+- Aggregates **60,000+ space objects from 12+ sources** (2026 figure) into a single AI/ML-enhanced conjunction-assessment + coordination layer
+
+### Satcat Terminal + adjacent-customer expansion (2026)
+
+In 2026 Kayhan launched **Satcat Terminal** and moved to widen its customer base beyond operators to **investors and insurers** — selling orbital-intelligence/risk analytics (constellation health, collision-risk exposure) to the finance side of the space economy. This is the same "know→decide" value migration Slingshot pursues, but pointed at underwriting/diligence buyers rather than only fleet operators — an attempt to build **non-government commercial revenue**, the exact axis on which [[entities/privateer-space|Privateer]] failed.
 
 ### Eagle
 
