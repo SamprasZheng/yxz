@@ -107,6 +107,7 @@ Taiwan's position is consistent across every RF layer: world-class foundry and m
 - [[concepts/evm-calibration]] — practical LO leakage + IQ imbalance correction
 - [[concepts/aesa]] — Zero-IF transmitters are typically embedded in AESA systems
 - [[concepts/hybrid-phased-array]] — per-element replication that multiplies any architecture saving by N
+- [[concepts/true-time-delay-beam-squint]] — direct-RF sampling makes true-time-delay a digital operation, structurally removing beam squint alongside LO leakage / IQ imbalance
 - [[concepts/dpd-digital-predistortion]] — PA nonlinearity compensation (another key correction in Zero-IF systems)
 - [[synthesis/rf-transmitter-acceptance-layer-six-region]] — this architecture is sub-layer A of the transmitter *acceptance* (certification) map
 - [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region map of the analog front-end tier above the transceiver

@@ -37,7 +37,7 @@ The hybrid array's defining limit follows directly from its topology. Digital be
 
 $$\Delta\theta_{\text{sub}} \approx -\tan\theta_0 \cdot \frac{\Delta f}{f_0}$$
 
-and — unlike an all-digital array, which can apply per-element true-time-delay (TTD) in the digital domain — the hybrid array cannot fully correct this in the analog sub-array. The usable fractional bandwidth at scan angle $\theta_0$ scales as $\sim 1/(M\tan\theta_0)$: **bigger sub-arrays save converters but shrink the squint-free bandwidth and scan volume.** This is the single most important design tension of the architecture, and it is why wideband hybrid designs push TTD down to the *sub-array* boundary (a middle path between per-element TTD and pure phase shift). Grating-lobe spacing ($d \le \lambda/(1+|\sin\theta_0|)$) and beamwidth ($\propto \lambda/Nd$) inherit unchanged from the [[concepts/aesa|parent AESA phase-control math]]; the sub-array partition adds *quantisation lobes* from the coarse digital-weight granularity.
+and — unlike an all-digital array, which can apply per-element [[concepts/true-time-delay-beam-squint|true-time-delay (TTD)]] in the digital domain — the hybrid array cannot fully correct this in the analog sub-array. The usable fractional bandwidth at scan angle $\theta_0$ scales as $\sim 1/(M\tan\theta_0)$: **bigger sub-arrays save converters but shrink the squint-free bandwidth and scan volume.** This is the single most important design tension of the architecture, and it is why wideband hybrid designs push TTD down to the *sub-array* boundary (a middle path between per-element TTD and pure phase shift) — a 2025 TTD-at-sub-array + phase-at-element design cut 60°-scan pointing error across 800 MHz from ±3.5° to ±1° (see [[concepts/true-time-delay-beam-squint]] for the mechanism and citation). Grating-lobe spacing ($d \le \lambda/(1+|\sin\theta_0|)$) and beamwidth ($\propto \lambda/Nd$) inherit unchanged from the [[concepts/aesa|parent AESA phase-control math]]; the sub-array partition adds *quantisation lobes* from the coarse digital-weight granularity.
 
 ## Historical Lineage & Time Axis
 
@@ -90,6 +90,7 @@ X-band hybrid phased array transmitter (reference: publicly available iCASE 2020
 - [[sources/thesis-aesa-modules-zheng-2021]] -> XT-144 / AESA system source stub
 
 - [[concepts/aesa]] — parent architecture concept
+- [[concepts/true-time-delay-beam-squint]] — the beam-squint / TTD trade the sub-array partition manages
 - [[concepts/dpd-digital-predistortion]] — PA nonlinearity compensation (required in hybrid architectures)
 - [[concepts/tid-total-ionizing-dose]] — radiation reliability
 - [[concepts/see-single-event-effects]] — single event effects
