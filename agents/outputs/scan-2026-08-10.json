@@ -1,0 +1,21 @@
+{
+  "run_date": "2026-08-10",
+  "status": "STUB_BLOCKERS_HIT",
+  "blockers": [
+    {
+      "id": "TRADER_CLI_ABSENT",
+      "description": "agents/src/trader/ directory does not exist. pyproject.toml only registers the 'firefly' entrypoint. 'uv run trader scan' cannot run.",
+      "severity": "fatal"
+    },
+    {
+      "id": "YFINANCE_NETWORK_403",
+      "description": "yfinance HTTP CONNECT tunnel returns 403 for all Yahoo Finance endpoints. Outbound HTTPS to finance.yahoo.com is blocked by the remote environment network policy.",
+      "severity": "fatal"
+    }
+  ],
+  "watchlist": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+  "backtest": null,
+  "scan_verdicts": null,
+  "fom_table": null,
+  "note": "This is a stub scan produced when both the trader pipeline and market-data fetching were unavailable. See wiki/synthesis/daily-trader-2026-08-10.md for the full blocker report and proposed remediation."
+}
