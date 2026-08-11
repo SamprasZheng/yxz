@@ -24,7 +24,7 @@ Position in the corpus:
 - It is the **AI-software companion** to [[synthesis/space-situational-awareness-six-region]] (which maps the *sensor/catalog hardware*) — the SSA page maps who *tracks* objects; this page maps who builds the *agentic reasoning* over those tracks.
 - It is the global landscape behind [[synthesis/spacesharks-mission-desk-hackathon-plan]] (the owner's Taiwan entry) — see also the US-centric competitive map [[concepts/llm-satellite-operations-landscape]].
 
-Last researched / verified: 2026-06-10.
+Last researched / verified: 2026-06-10; **fact-refreshed 2026-08-11** — added [[entities/slingshot-aerospace|Slingshot]] MENTAT/Talos ($69.2M USSF OTTI SBIR-III, 2026-07-15) to the US column; MSBAI active-spacecraft ops anchor (>17,000 active by 2026); China "Air Target Agent System" re-confirmed across SCMP/IE/The Star (still secondary-press-only); AIKO ASIMOV RPO program already current (07-07).
 
 ---
 
@@ -32,7 +32,7 @@ Last researched / verified: 2026-06-10.
 
 | Region | Lead actors (ops-AI software) | What they build | Compute / model base | Strategy archetype | Frontier gap |
 |---|---|---|---|---|---|
-| **🇺🇸 US** | [[entities/msbai]] (OrbitGuard), [[entities/lockheed-martin-space]] (iSpace), [[entities/cognitive-space]], [[entities/slingshot-aerospace]], [[entities/kayhan-space]], [[entities/privateer-space]]; JPL FAME, NASA Goddard, CU Boulder | Defense SDA copilots (JEPA+MARL maneuver-intent), collection scheduling, autonomous collision avoidance, fleet/digital-twin sim | NVIDIA GPU + [[concepts/nemotron|Nemotron]]/closed frontier; classified UDL data | **Defense-funded vertical SDA copilot** | LLM *reasoning* layer still thin — most "AI" is classical ML/RL/optimizer |
+| **🇺🇸 US** | [[entities/msbai]] (OrbitGuard), [[entities/lockheed-martin-space]] (iSpace), [[entities/cognitive-space]], [[entities/slingshot-aerospace]] (Beacon + **MENTAT/Talos**), [[entities/kayhan-space]], [[entities/privateer-space]]; JPL FAME, NASA Goddard, CU Boulder | Defense SDA copilots (JEPA+MARL maneuver-intent), collection scheduling, autonomous collision avoidance, fleet/digital-twin sim, **AI mission-rehearsal/strategy agents (Slingshot Talos, $69.2M USSF OTTI 2026-07)** | NVIDIA GPU + [[concepts/nemotron|Nemotron]]/closed frontier; classified UDL data | **Defense-funded vertical SDA copilot** | LLM *reasoning* layer for *live flight ops* still thin — fielded "AI" is classical ML/RL/optimizer; the newest named agents (Slingshot Talos) are training/rehearsal-scoped, LLM core unconfirmed |
 | **🇨🇳 China** | "Air Target Agent System" (2026-05), [[sources/scnoc-agentic-sun-2025|SCNOC-Agentic]], Three-Body / Star-Compute in-orbit AI | LLM "brain + tool army" for autonomous targeting/surveillance; NetOps agent (intent + graph-RAG); in-orbit edge AI | Huawei Ascend + Chinese open-weight (Qwen/DeepSeek) — outside US export control | **Sovereign full-stack autonomy** | Data-closed; capability claims unverifiable externally |
 | **🇪🇺 Europe** | [[entities/aiko-space]] (GENE/OLIVER/DANA, Italy), ESA PhiLab / Φ-sat, Vyoma (DE) | On-board + ground anomaly detection, autonomous replanning, RPO; only production on-board deep-learning at scale | ESA/agency compute; deep-learning/RL (no LLM layer) | **Agency-anchored on-board autonomy** | No LLM-reasoning layer; institutional market only |
 | **🇯🇵 Japan** | Synspective (SAR + MoD constellation), JAXA on-board FDIR, Astroscale (RPO autonomy) | SAR-data autonomy for sovereign reconnaissance; on-orbit servicing/rendezvous autonomy | Domestic + commercial GPU | **Sovereign-reconnaissance autonomy** | Ops-AI is SAR/imagery-centric, not a lifecycle copilot |
@@ -47,7 +47,7 @@ Last researched / verified: 2026-06-10.
 
 The twelve+ actors above resolve into **three structural bets** on who controls the ops-AI layer — the same trichotomy that recurs across the corpus's space domains ([[synthesis/space-situational-awareness-six-region]], [[synthesis/radiation-test-rad-hard-six-region]]):
 
-1. **Defense-funded vertical SDA copilot (US).** The moat is *classified labeled data + sensor access + security clearance*, not the model. [[entities/msbai|MSBAI OrbitGuard]] fuses IR/CelesTrak/EO with JEPA world models + RL planning agents, reports 94–98% anomaly accuracy across ~15,000 objects, and is scaling to >20,000 RSOs at two-minute latency under its $1.2M DoD CDAO SBIR (kickoff Sept 2025). The barrier to a hackathon entrant is structural — see the moat analysis in [[concepts/jepa-sda-multi-agent-rl]].
+1. **Defense-funded vertical SDA copilot (US).** The moat is *classified labeled data + sensor access + security clearance*, not the model. [[entities/msbai|MSBAI OrbitGuard]] fuses IR/CelesTrak/EO with JEPA world models + RL planning agents, reports 94–98% anomaly accuracy across ~15,000 objects, and is scaling to >20,000 RSOs at two-minute latency under its $1.2M DoD CDAO SBIR (kickoff Sept 2025) — an ops backdrop where active spacecraft are projected to pass **17,000 by 2026**. The barrier to a hackathon entrant is structural — see the moat analysis in [[concepts/jepa-sda-multi-agent-rl]]. The **2026 escalation sits at the *training/rehearsal* edge of this archetype:** [[entities/slingshot-aerospace|Slingshot]] won a **$69.2M USSF SBIR-Phase-III OTTI award (2026-07-15, its largest ever)** for **MENTAT** — an AI mission-rehearsal platform whose core agent **Talos** is billed as an "AI-powered operational training and strategy agent" on a *Sense → Fuse → Decide → Act* loop (following a $27M AI-training-environment award 2026-01-15) — and rebranded itself the leader in **"Space Operations Intelligence & Autonomy (SOIA)."** Scope caveat: Talos *wargames and rehearses* decisions rather than flying a live bus, and Slingshot does not publicly confirm an LLM core — so it *widens* the US deployment lead without yet closing the thin-*live*-reasoning-layer gap (see the falsifier table §5).
 
 2. **Agency-anchored on-board autonomy (Europe + Japan).** ESA/CNES/JAXA fund *safety-framed* on-board AI bounded by mission rules. [[entities/aiko-space|AIKO]] (Italy) is the flagship — the first European company to run deep learning in orbit, with GENE in production at Tyvak International (4-of-5 anomalies in 3 min, ≤4-day-ahead prediction, >30% operator-workload reduction). Japan's Synspective + JAXA FDIR sit here too, but tuned to sovereign SAR reconnaissance rather than generic ops. The bet: autonomy with the agency as anchor customer and the safety envelope as the product.
 
@@ -87,15 +87,21 @@ The open governance question — unique to *this* domain — is **autonomy escal
 
 What would overturn the claims on this page:
 
-| Claim | Falsified if… | Status (2026-06-10) |
+| Claim | Falsified if… | Status (2026-08-11) |
 |---|---|---|
-| US leads but its LLM-*reasoning* layer is thin | A US vendor ships a production LLM-reasoning sat-ops copilot (not classical ML) | Holding — all confirmed US "AI" is ML/RL/optimizer ([[concepts/llm-satellite-operations-landscape]]) |
-| China has the most aggressive *autonomous-action* ops-AI | The Air Target Agent System is shown to be a demo/overclaim | Holding — reported by SCMP/IE (secondary press), not independently verified |
+| US leads but its LLM-*reasoning* layer for *live ops* is thin | A US vendor ships a production LLM-reasoning *flight-ops* copilot (not classical ML, not a training sim) | Holding — confirmed US *live-ops* "AI" is still ML/RL/optimizer. Slingshot's 2026 MENTAT/**Talos** "operational training and strategy agent" ($69.2M OTTI) is the closest move, but it is *training/rehearsal-scoped* and its LLM core is unconfirmed — it does not falsify the *live-copilot* claim ([[concepts/llm-satellite-operations-landscape]]) |
+| China has the most aggressive *autonomous-action* ops-AI | The Air Target Agent System is shown to be a demo/overclaim | Holding — re-confirmed 2026-08 across SCMP / Interesting Engineering / The Star (2026-05-28 unveil, port-monitoring test), but still secondary-press-only, not independently verified |
 | Europe = on-board autonomy, no LLM layer | AIKO or an EU lab ships an LLM-reasoning ops agent | Holding — AIKO is deep-learning/RL, no LLM |
 | The moat is data access, not model access | A team with only public data + open model matches MSBAI on maneuver-intent | Holding — MSBAI's own dataset is thin but UDL-backed |
 | Taiwan has no sovereign ops-AI vendor | A TASA/Taiwan firm ships an ops-AI product | Holding — Spacesharks (individual) is the only Taiwan ops-AI effort |
 
 ---
+
+## Sources (2026-08 refresh)
+
+- **Slingshot MENTAT/Talos — $69.2M USSF OTTI SBIR-III** (2026-07-15, 4.5-yr, "AI-powered mission readiness"; core agent Talos on Sense→Fuse→Decide→Act; "Space Operations Intelligence & Autonomy"): [Business Wire](https://www.businesswire.com/news/home/20260715761196/en/Slingshot-Aerospace-Wins-$69.2-Million-U.S.-Space-Force-Contract-to-Advance-AI-Powered-Mission-Readiness-for-Space-Defense), [Via Satellite](https://www.satellitetoday.com/government-military/2026/07/15/slingshot-aerospace-wins-space-force-contract-to-expand-ai-mission-rehearsal/); prior **$27M AI-training-environment** award (2026-01-15): [Business Wire](https://www.businesswire.com/news/home/20260115783294/en/)
+- **MSBAI OrbitGuard** — >17,000 active spacecraft by 2026 ops anchor; Graph-JEPA + Patch-Time-Series-Transformer upgrade path; no new award beyond the Sept-2025 $1.2M SBIR as of 2026-08: [PR Newswire](https://www.prnewswire.com/news-releases/msbai-secures-1-2m-dod-contract-to-advance-hybrid-intelligence-orbitguard-empowering-real-time-space-domain-awareness-302543915.html), [SpaceDaily](https://www.spacedaily.com/reports/MSBAI_wins_DoD_contract_to_accelerate_OrbitGuard_hybrid_intelligence_platform_for_space_situational_awareness_999.html)
+- **China "Air Target Agent System"** (2026-05-28 unveil, Huawei Ascend, autonomous-action-without-human-handoff, port-monitoring test): [SCMP](https://www.scmp.com/news/china/science/article/3355215/china-unveils-ai-system-automate-satellite-targeting-and-surveillance), [Interesting Engineering](https://interestingengineering.com/space/china-llm-powered-automates-satellite-surveillance)
 
 ## 6. See also
 

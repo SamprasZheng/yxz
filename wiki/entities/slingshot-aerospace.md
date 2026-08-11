@@ -60,7 +60,18 @@ Technical approach:
 
 Agatha is positioned as a defense intelligence tool for distinguishing threatening from non-threatening anomalous behavior in orbit. It has been validated by "respective satellite operators" against operational commercial constellations.
 
-The $25.2M US Space Force contract to build a "digital twin space simulator" is cited alongside the $13M NOAA TraCSS contract as Slingshot's largest government engagements.
+The $25.2M US Space Force contract to build a "digital twin space simulator" is cited alongside the $13M NOAA TraCSS contract as Slingshot's largest government engagements — now itself eclipsed by the 2026 MENTAT award (below).
+
+## MENTAT / Talos — AI Mission-Rehearsal & Strategy Agent (2026)
+
+**Verified 2026-08-11.** In 2026 Slingshot moved decisively into the *agentic* ops-AI layer, rebranding its category as **"Space Operations Intelligence & Autonomy (SOIA)":**
+
+- **$69.2M USSF OTTI award (2026-07-15)** — a ~4.5-year **SBIR Phase III** contract under the Space Force **Operational Test and Training Infrastructure (OTTI)** program to deliver AI-powered **mission rehearsal** and operational-training capability; **Slingshot's largest contract to date.** The program is named **MENTAT** (after the human strategists of *Dune*); its core agent **Talos** is billed as an "AI-powered operational training and strategy agent" on Slingshot's **Sense → Fuse → Decide → Act** framework, fusing the company's sensor network with other sources for mission planning and operational awareness.
+- **$27M USSF award (2026-01-15)** — the earlier "AI-Driven Training Environment for Space Warfare" contract that MENTAT scales.
+
+**Scope caveat (falsifier-relevant nuance):** Talos *wargames, rehearses, and strategizes* rather than flying a live spacecraft, and Slingshot has **not publicly confirmed an LLM core.** So MENTAT widens the US ops-AI deployment lead but does **not** by itself falsify the [[synthesis/llm-satellite-operations-six-region]] finding that a production *live-flight* LLM-reasoning copilot is still absent in the US market (see that page's falsifier table §5). It does make Slingshot the most explicitly *agent*-branded US vendor — ahead of [[entities/msbai|MSBAI]]'s live-SDA OrbitGuard on funding scale, though MSBAI's product runs against a live SDA tasking loop while Talos runs against a training/rehearsal loop.
+
+Sources: [Business Wire — $69.2M OTTI (2026-07-15)](https://www.businesswire.com/news/home/20260715761196/en/Slingshot-Aerospace-Wins-$69.2-Million-U.S.-Space-Force-Contract-to-Advance-AI-Powered-Mission-Readiness-for-Space-Defense); [Via Satellite (2026-07-15)](https://www.satellitetoday.com/government-military/2026/07/15/slingshot-aerospace-wins-space-force-contract-to-expand-ai-mission-rehearsal/); [Business Wire — $27M AI training environment (2026-01-15)](https://www.businesswire.com/news/home/20260115783294/en/).
 
 ## Commercial-Market Position (six-region)
 
@@ -73,6 +84,8 @@ Slingshot is the canonical **US "government-anchored commercial market"** case: 
 - [[entities/leolabs]] — complementary commercial tracking provider
 - [[entities/kayhan-space]] · [[entities/privateer-space]] · [[entities/cognitive-space]] — fellow US commercial space-safety vendors
 - [[concepts/conjunction-screening-providers]] — provider capability comparison table (Beacon row)
+- [[synthesis/llm-satellite-operations-six-region]] — ops-AI six-region map; Slingshot MENTAT/Talos in the US "defense-funded vertical SDA copilot" column
+- [[concepts/llm-satellite-operations-landscape]] — US-centric ops-AI competitive map (Slingshot row)
 - [[synthesis/commercial-space-traffic-management-six-region]] — six-region commercial STM market map
 - [[synthesis/space-situational-awareness-six-region]] — national SSA infrastructure (governmental layer)
 - [[synthesis/cdm-pc-decisioning]] — where Slingshot Beacon fits in the operator workflow (Tier 2)
