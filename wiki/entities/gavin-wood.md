@@ -29,7 +29,7 @@ His position: Polkadot is the more faithful execution of Ethereum's original mul
 At the 2025 Berlin Web3 Summit, Wood unveiled a package of Polkadot-transforming proposals — see [[sources/gavin-wood-second-era-2025]]:
 
 - **DOT hard cap** of 2.1 billion DOT — mandate via Referendum 1710 (81%), runtime enacted 2026-03-12, mechanics live 2026-03-14 ("Pi Day"); now confirmed LIVE (issuance ~120 M → ~56.88 M DOT/yr, net inflation ~3.1%) — [[concepts/dot-hard-cap]]
-- **Proof of Personhood** replacing staking-based Sybil resistance — phased through 2026 (DIM1 unique-human Q1 → DIM2 verified-individual Q2 → full deployment Q3), paired with the "fairest airdrop ever" framing and a $3 M treasury proposal (Ref. 1783) — [[concepts/proof-of-personhood]]
+- **Proof of Personhood** replacing staking-based Sybil resistance — phased through 2026 (DIM1 unique-human Q1 → DIM2 verified-individual Q2 → full deployment Q3; DIM1 PoI/PoVI still unshipped as of Aug 2026), paired with the "fairest airdrop ever" framing and his **first personal treasury proposal, Ref. 1783** ($3.01 M → HOLLAR on the People Chain), which **entered confirmation at ~87.7% Aye / ≈160.88 M DOT** (Dec 2025) — the funding cleared even as the mechanism it funds slipped — [[concepts/proof-of-personhood]]
 - **Validator reward cap** ($5,000/month, biennial halving) cutting security costs 80%
 - **pUSD stablecoin** — DOT-collateralized, integrated with Treasury and OpenGov
 - **Polkadot Hub** — native smart contracts via PolkaVM (Revive), enabling both EVM compatibility and native Polkadot performance
@@ -39,7 +39,7 @@ At the 2025 Berlin Web3 Summit, Wood unveiled a package of Polkadot-transforming
 Wood describes JAM as the successor to the Relay Chain — a "transactionless general-purpose supercomputer." Quote:
 > *"After EVM, JAM will become the new industry consensus."*
 
-JAM open testnet launched January 2026 (~43 implementer teams, 15 languages, 10 M DOT prize). The Gray Paper moved from v0.8 (late 2025) toward a near-final **pre-audit v1.0 draft in early 2026** — v1.0 is the gate for the security audit that precedes mainnet. Delivery is **milestone-gated (M1 conformance → M4 full-speed + professional audit), not calendar-gated**; core developers publicly estimate ~12–20 months from early 2026, so mainnet is realistically **late-2026 → 2027**, contingent on a final OpenGov referendum. See [[concepts/jam]].
+JAM open testnet launched January 2026 (~43 implementer teams, 15 languages, 10 M DOT prize). The Gray Paper moved from v0.8 (late 2025) toward a near-final pre-audit v1.0 draft — but **v1.0 has slipped: as of Aug 2026 it is still "progressing toward v1.0," not released**, and v1.0 is the gate for both the security audit that precedes mainnet *and* the JAM-prize payouts. Delivery is **milestone-gated (M1 conformance → M4 full-speed + professional audit), not calendar-gated**; the first team (**JAMdotTech**) cleared the full **M1** review — passing the Fellowship interview in **early Aug 2026** after ~25 months — while core developers estimate ~12–20 months from early 2026, so mainnet is realistically **late-2026 → 2027**, contingent on a final OpenGov referendum. See [[concepts/jam]].
 
 ## 2026 strategic pivot
 
