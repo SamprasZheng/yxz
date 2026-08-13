@@ -851,3 +851,32 @@ Cluster picked as the **stalest domain per the log** (radiation last touched 202
 **向內消化 — code:** no `agents/` code in this cluster (protocol-concept pages, not Firefly implementation) → no code/concept divergence to report. Deliberately did **not** edit [[concepts/dot-hard-cap]]: Ref. 1783's HOLLAR funding is a Hydration-stablecoin flow, not a DOT scarcity/coretime-burn sink, so linking it into the hard-cap demand-sink argument would have been an overreach.
 
 **PUBLIC-repo guardrail honored:** all content is general/citable public protocol-governance + press facts — no personal/financial/private data, no `$hark`/finance sourcing. **Lane:** no other-agent namespaces (daily-trader-*/kol-digest-*/maintenance-*) or `agents/`/`.claude/`/`.github/`/`my-website/src` touched. **Index:** no new/renamed pages → no index change. **Lint:** `yarn lint:wiki` passed (201 pages). **Contradictions/divergences for owner:** none source-vs-source; open re-check items for next pass = JAM v1.0 release date + PoP DIM1/PoVI shipped-launch date (both still plan-stage).
+
+## [2026-08-13] deepen | Orbital Data Center (ODC) six-region cluster — the optical-ISL chokepoint reframed as a flown-vs-bench split (China leads in-orbit endurance, US leads bench bandwidth)
+
+**Cluster & why chosen:** ODC six-region was the stalest domain — its canonical synthesis was last deepened 2026-07-20 (US column) / 2026-07-15 (Asia row), 24 days ago, vs every other domain fresher (space-weather 07-29, agentic-payments 07-30, FCC/ITU 08-02, SDA 08-05/08-09, radiation 08-08, RF 08-10, LLM-sat-ops 08-11, Polkadot 08-12). Rotated back to it.
+
+**Pages touched (5):** [[synthesis/orbital-data-center-six-region]] (canonical), [[concepts/orbital-data-center]], [[entities/ada-space]], [[entities/google-suncatcher]], [[entities/axiom-space]]. No new/renamed pages → no index.md change.
+
+**拉高維度 (the dimension added):** promoted cross-cutting read 2 ("optical ISL is the contested chokepoint") from a static list of who-uses-optics into a **flown-vs-bench axis**. The optics that net compute together are being industrialised fastest by the *scale* player, not the *capability* player — inverting, on this one load-bearing technology, the compute-layer "US leads on capability / China on scale" framing.
+
+**向外抓取 — 數據查核比對 (facts verified + sources, all accessed 2026-08-13):**
+- **China / Three-Body 8-day continuous laser-ISL demo (announced 2026-07-29):** two constellation satellites held an optical link for **192 h 8 m 45 s at 99.99 % data-transmission availability over separations up to 1,000 km** — first *multi-day flown* optical-ISL endurance datum from any compute constellation. Corroborated across china-in-space (2026-07-29 report) + search snippets. Also new: strategic-partner widening beyond Tencent — **Shanghai Meteorological Bureau** agreement, **Alibaba Cloud** support, **SJTU** collaboration; and a **~100-satellite-by-2027** constellation milestone.
+- **US / Google Suncatcher:** pre-print reports a **1.6 Tbps bench-scale free-space optical link** (the US bandwidth-ceiling datum) — but still a *lab* result; 2 Planet prototypes early-2027 unchanged. Source: Google Research Suncatcher pre-print + DCD/ViaSat corroboration.
+- **US / Axiom-Kepler:** Kepler flew **10 optical-relay sats 2026-01-11** (Falcon 9, Vandenberg), each ~300 kg / **≥4 optical terminals + multi-GPU + TB storage**; **2.5 Gbps flown**, with a **100-Gbit second tranche** announced (backward-compatible, not yet up). Source: Kepler + Introl.
+- **US / Starcloud:** 88k-sat FCC filing pinned to **accepted for filing 2026-03-13, 600–850 km SSO** (precision on the prior "surfaces" language). Source: [SpaceNews](https://spacenews.com/starcloud-files-plans-for-88000-satellite-constellation/). Starcloud-2 Oct-2026 (Blackwell B200 + AWS blade + largest radiator flown) re-confirmed, unchanged.
+- **US / Orbital Compute:** added its **$5M pre-seed from a16z Speedrun** funding detail (CEO Euwyn Poon, 100k-sat/10 GW filing 2026-07-07 already on page).
+
+**水平展開 (六地域):** the flown-vs-bench read touches three of the six regions directly (China flown-endurance / US bench-ceiling+relay-flown / Europe still study-stage optics via ASCEND). Japan (Space Compass optical fabric) and Korea (Hanwha VLEO-SAR relay) rows unchanged this pass — no new primary optical-ISL evidence surfaced for them; the canonical region table was verified-current.
+
+**拉長時間軸:** no change to the σT⁴ 100-year heat-rejection invariant or the ~2030/2040/2050/2100 scenario rows — today's facts are near-term (2026) technology-readiness data, not structural-horizon shifts. The flown optical-endurance datum incrementally supports the ~2040 "optical mesh default" row.
+
+**拆分細化:** none needed — all five pages stayed single-topic; the flown-vs-bench material is a sharpening of an existing cross-cutting read, not a second idea warranting a split.
+
+**向內消化 — code:** no `agents/` code in this cluster (ODC is external-industry research, no Firefly implementation) → no code/concept divergence to report.
+
+**多密集連結、不脱鉤:** each touched page now cross-links the flown-vs-bench triangle explicitly — [[entities/ada-space]] ↔ [[entities/google-suncatcher]] ↔ [[entities/axiom-space]] all reference each other's optical-ISL datum and point back to cross-cutting read 2 on [[synthesis/orbital-data-center-six-region]]. No orphan created; no page left with zero inbound links.
+
+**Conservatism note for owner (contradiction-style flag):** did **not** assert a Three-Body second-group August launch. A 2026-08-13 NASASpaceFlight China-roundup headline references "AI satellites" but is a generic multi-mission digest, and both nasaspaceflight.com and china-in-space.com were **WebFetch proxy-blocked (egress)** so could only be read via search snippets. H2-2026/Q4-2026 (3rd group ≈14 sats) staging left unchanged pending a primary confirmation. Open re-check item next pass: confirm whether the 2nd/3rd Three-Body groups have flown, and the 100-Gbit Kepler tranche launch date.
+
+**PUBLIC-repo guardrail honored:** all content general/citable public industry + press facts — no personal/financial/private data, no `$hark`/finance sourcing. **Lane:** no other-agent namespaces (daily-trader-*/kol-digest-*/maintenance-*) or `agents/`/`.claude/`/`.github/`/`my-website/src` touched.

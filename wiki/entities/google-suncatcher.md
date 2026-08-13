@@ -16,7 +16,7 @@ Google (Alphabet) **Project Suncatcher** — a research "moonshot" to scale mach
 | Element | Description |
 |------|------|
 | Computing core | Google in-house **Trillium-generation TPU**; survived particle-accelerator radiation testing simulating LEO levels without damage to the logic |
-| Architecture | Pre-print sketches an **81-satellite cluster** flying in formation within a **~1 km radius**, with free-space optical inter-satellite links |
+| Architecture | Pre-print sketches an **81-satellite cluster** flying in formation within a **~1 km radius**, with free-space optical inter-satellite links; a **bench-scale free-space optical link at 1.6 Tbps total bandwidth** is already demonstrated in the lab (the US *bandwidth-ceiling* datum) |
 | Orbit | **Sun-synchronous orbit ≈650 km** — chosen for near-constant solar exposure (Google estimates panels up to **~8× more productive** than on Earth) |
 | Computing mode | Orbital ML compute scaled by formation flight + optical mesh, integrated with Google's ground infrastructure |
 | Timeline | 2 prototype satellites via Planet, **launch early 2027**; cluster scale and final design explicitly flagged as subject to change |
@@ -28,7 +28,7 @@ The widely-quoted "Trillium TPU survived LEO-simulated radiation" headline has a
 
 ## Strategic Significance
 
-Google Suncatcher is the clearest signal that **hyperscalers**, not just startups, are entering [[concepts/orbital-data-center]]. Where [[entities/starcloud]] proved a COTS NVIDIA H100 works in orbit and [[entities/axiom-space]] proved the relay-networked edge node, Suncatcher diversifies the compute layer onto **proprietary TPUs** and bets on **formation flight + free-space optics** rather than a single large platform — making optical ISL ([[concepts/leo-value-chain]] midstream A) the load-bearing technology. The two Planet-built prototype satellites remain on track for an **early-2027** launch to test TPU performance and high-bandwidth ISL. In the six-region map ([[synthesis/orbital-data-center-six-region]]) it is the US hyperscaler entry, contrasting with China's state-scaled [[entities/ada-space]] and Europe's study-stage ASCEND.
+Google Suncatcher is the clearest signal that **hyperscalers**, not just startups, are entering [[concepts/orbital-data-center]]. Where [[entities/starcloud]] proved a COTS NVIDIA H100 works in orbit and [[entities/axiom-space]] proved the relay-networked edge node, Suncatcher diversifies the compute layer onto **proprietary TPUs** and bets on **formation flight + free-space optics** rather than a single large platform — making optical ISL ([[concepts/leo-value-chain]] midstream A) the load-bearing technology. The two Planet-built prototype satellites remain on track for an **early-2027** launch to test TPU performance and high-bandwidth ISL. In the six-region map ([[synthesis/orbital-data-center-six-region]]) it is the US hyperscaler entry, contrasting with China's state-scaled [[entities/ada-space]] and Europe's study-stage ASCEND. On the optical-ISL front specifically, Suncatcher's **1.6 Tbps bench link** is the US *bandwidth-ceiling* proof point — but it is still a *lab* result, whereas [[entities/ada-space]] has flown a **multi-day (8-day) laser ISL in orbit**: the US leads on bench bandwidth, China on demonstrated-in-orbit endurance (the flown-vs-bench split in cross-cutting read 2 of the six-region synthesis).
 
 ## Related Concepts
 
