@@ -44,7 +44,7 @@ This is the first daily-trader run. Watchlist is seeded from the core set define
 | 6 | GOOGL | Core; Mag-7 / Gemini |
 | 7 | META | Core; Llama / AI infra capex |
 | 8 | AMZN | Core; AWS cloud |
-| 9 | PLTR | Wiki coverage: Q2-2026 $1.935B +93% YoY; stock ≈$155.92 on 2026-08-07 per [[wiki/log.md]] |
+| 9 | PLTR | Wiki coverage: Q2-2026 $1.935B +93% YoY; stock ≈$155.92 on 2026-08-07 per [[log]] |
 | 10 | SMCI | AI server supply chain; NVIDIA ecosystem |
 | 11 | ARM | Chip IP; AI edge inference |
 | 12 | AVGO | Networking ASICs; AI cluster interconnect |
@@ -80,7 +80,7 @@ This is the first daily-trader run. Watchlist is seeded from the core set define
 - Stock rebounded +29.5% to $162.66 on 2026-08-04; ≈$155.92 on 2026-08-07
 - Market cap ≈$409B (near Dec-2025 all-time peak ≈$424B)
 - FY26 guidance raised to ≈$8.15B; US-commercial target >$3.42B
-- Source: [[wiki/log.md]] entry 2026-08-07
+- Source: [[log]] entry 2026-08-07
 
 This wiki-sourced context is **stale by 7 days** and cannot substitute for live scan output.
 
