@@ -880,3 +880,25 @@ Cluster picked as the **stalest domain per the log** (radiation last touched 202
 **Conservatism note for owner (contradiction-style flag):** did **not** assert a Three-Body second-group August launch. A 2026-08-13 NASASpaceFlight China-roundup headline references "AI satellites" but is a generic multi-mission digest, and both nasaspaceflight.com and china-in-space.com were **WebFetch proxy-blocked (egress)** so could only be read via search snippets. H2-2026/Q4-2026 (3rd group ≈14 sats) staging left unchanged pending a primary confirmation. Open re-check item next pass: confirm whether the 2nd/3rd Three-Body groups have flown, and the 100-Gbit Kepler tranche launch date.
 
 **PUBLIC-repo guardrail honored:** all content general/citable public industry + press facts — no personal/financial/private data, no `$hark`/finance sourcing. **Lane:** no other-agent namespaces (daily-trader-*/kol-digest-*/maintenance-*) or `agents/`/`.claude/`/`.github/`/`my-website/src` touched.
+
+## [2026-08-14] maintenance | Daily wiki maintenance scan — 201 pages scanned, 8 issues flagged in log.md
+Automated daily maintenance pass. Scanned all 201 content pages (50 sources / 55 entities / 70 concepts / 26 synthesis) under `wiki/`. Schema check per [[wiki/AGENTS.md]]: frontmatter (`type` + `tags`; source pages: `title` / `author` / `date` / `ingested`), wikilink resolution, internal-markdown-URL detection, and [[index.md]] coverage.
+
+**Result: content pages 100% clean. 8 dead-wikilink patterns flagged in `log.md` only (historical log artifacts — no content pages affected).**
+
+**Frontmatter:** PASS — all 201 pages carry required `type` + `tags`; all 50 source pages carry `title` / `author` / `date` / `ingested`. Zero missing fields.
+
+**Wikilinks in content pages:** PASS — zero dead wikilinks across all 201 source / entity / concept / synthesis pages.
+
+**Internal markdown-URL refs:** PASS — no `[text](internal/path)` links found anywhere in the wiki; all internal references use `[[wikilink]]` syntax.
+
+**Index coverage:** PASS — all 201 content pages appear in [[index.md]] under their correct section.
+
+**Dead wikilinks in `log.md` (flagged, not auto-fixed — append-only history file):**
+1. Line ~19: `[[index.md]]` — `.md` extension in wikilink; target does not exist as a file named `index.md.md`. Correct form: `[[index]]`.
+2. Lines ~484, ~518, ~735, ~742: `[[wiki/index.md]]` (×4 occurrences) — erroneous `wiki/` prefix; no file at `wiki/wiki/index.md`. Correct form: `[[index]]`.
+3. Line ~560: `[[sources/polkasharks-jam]]` — stale slug; file is `sources/polkasharks-jam-article.md`. The log entry documents fixing this in content pages, but the historical log text retained the old slug unescaped.
+4. Line ~767: `[[wiki/index]]` — erroneous `wiki/` prefix. Correct form: `[[index]]`.
+5. Line ~767: `[[wiki/AGENTS]]` — erroneous `wiki/` prefix. Correct form: `[[AGENTS]]`.
+
+**Action taken:** no content pages modified (none needed). Maintenance log entry appended (this entry). PR opened for owner review of the flagged `log.md` patterns — they are historical log artifacts and safe to leave or clean up at owner discretion. No structural schema changes; AGENTS.md untouched.
