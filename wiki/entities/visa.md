@@ -55,6 +55,12 @@ Visa supports Stripe + Tempo's Machine Payments Protocol (MPP), providing card n
 
 Visa unveiled **Intelligent Commerce Connect**, a **network-, protocol-, and token-vault-agnostic "on-ramp"** that lets agent builders, merchants, and enablers plug into agentic commerce through a single integration rather than wiring each rail separately. In late 2025 Visa and partners announced **hundreds of secure agent-initiated transactions** completed; APAC and Europe pilots were slated to begin **early 2026**, with LatAm/Caribbean readiness over the following year. Visa's stated forecast: **millions of consumers** using AI agents to buy by the **2026 holiday season**, framed as "2025 = the final year consumers checkout alone" ([Visa newsroom](https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.21961.html), [Visa Intelligent Commerce](https://www.visa.com/en-us/solutions/intelligent-commerce)).
 
+### Visa × OpenAI ChatGPT integration (2026-06-10)
+
+Visa **plugged its payment network directly into OpenAI's ChatGPT** on **2026-06-10**, letting AI agents inside ChatGPT complete purchases at *any Visa-accepting merchant*. Mechanism: developers/merchants accept agent-initiated Visa payments using **tokenized Visa credentials**, with **real-time authorization and fraud monitoring**, and each transaction **bound by user-set spending limits, merchant categories, and approvals** — the consumer-distribution complement to the merchant-side TAP framework ([Digital Commerce 360, 2026-06-12](https://www.digitalcommerce360.com/2026/06/12/visa-openai-agent-led-payments/)). Strategically this is Visa's answer to the distribution question the open protocols cannot easily solve — it reaches agent users *where they already are* (ChatGPT's installed base) rather than waiting for a permissionless agent web to form.
+
+**Same-day symmetry with Mastercard.** On the *same date* (2026-06-10) [[entities/mastercard]] launched **Agent Pay for Machines (AP4M)** for pure M2M settlement. The two US card networks crossed into agent-native payments in lockstep — a signal that the incumbent rail is moving as a bloc into the [[synthesis/agentic-payments-six-region|agentic-payments]] layer, not lagging it. Where Mastercard's same-day move was *machine-to-machine* (AP4M), Visa's was *consumer-agent distribution* (ChatGPT) — the two incumbents splitting the agent-payment surface between the human-facing and machine-facing halves.
+
 ## Comparison with Mastercard
 
 | Dimension | Visa (TAP / VIC) | Mastercard (Agent Pay) |
@@ -72,7 +78,7 @@ Visa is also a member of the **x402 Foundation** (under Linux Foundation governa
 - **1958** — **BankAmericard** launched by Bank of America (Fresno "drop"); the first successful general-purpose consumer credit card.
 - **1976** — rebranded **Visa**; **1970** the bank consortium (later Visa Inc.) formalises the four-party network model.
 - **2008** — IPO (NYSE: V), then the largest US IPO to date; the network becomes a pure toll-taker on ~$13T+ annual payments volume.
-- **2025–2026** — **Visa Intelligent Commerce** + **TAP** (RFC 9421) + **Intelligent Commerce Connect**: rather than replace the rail, Visa adds an **agent-authentication + trusted-checkout layer** on top of it.
+- **2025–2026** — **Visa Intelligent Commerce** + **TAP** (RFC 9421) + **Intelligent Commerce Connect** + **Visa×OpenAI ChatGPT** (2026-06-10): rather than replace the rail, Visa adds an **agent-authentication + trusted-checkout layer** on top of it, then distributes it directly into the largest agent user base.
 
 The through-line: Visa's structural bet is **the four-party card network survives the agent era by becoming the trust/identity layer for agents** — the rail stays, the agent proves it is a legitimate delegate (not a bot) via signed intent. This is the opposite of [[entities/coinbase]]'s "replace the rail with a stablecoin" bet and the near-twin of [[entities/mastercard]]'s Agent Pay.
 

@@ -88,18 +88,18 @@ In December 2025, Coinbase and Cloudflare announced the **x402 Foundation** to m
 | Settlement speed | T+1~T+3 | Instant (but intermediated) | < 2 second on-chain finality |
 | Fee | 3% | 2.9%+$0.30 | ~$0.0001 |
 
-## Adoption Status (updated 2026-07 — cross-chain tracker snapshot)
+## Adoption Status (updated 2026-08 — cross-chain tracker snapshot)
 
 | Metric | Value | Notes |
 |---|---|---|
-| Cumulative transaction count (cross-chain) | **~157.4M** (157,413,420) | as of 2026-07-19, across **7 chains / 18 tracked facilitators** ([Major Matters x402 tracker](https://majormatters.co/x402)) — up from ~140M (Chainalysis, June 2026) |
+| Cumulative transaction count (cross-chain) | **160M+** (Coinbase claim, Aug 2026); **~157.4M** tracked (157,413,420, 2026-07-19) | Coinbase states x402 has "now processed more than 160 million agentic payments" ([Chainalysis blog, updated 2026-08](https://www.chainalysis.com/blog/x402-agentic-payments-adoption/)); tracker count across **7 chains / 18 tracked facilitators** ([Major Matters x402 tracker](https://majormatters.co/x402)) — up from ~140M (Chainalysis, June 2026) |
 | Cumulative on-chain settled volume | **~$41M** | tracker snapshot 2026-07-19; roughly consistent with the June "~$45–50M" (methodology/facilitator-set differs; treat as ~$40–50M conservative settled band) |
 | Trailing-30-day activity (mid-July) | **~75M txns / ~$24M** | x402.org dashboard, mid-July 2026 — i.e. ~half of all-time txns occurred in one recent month, so growth is front-loaded, not evenly historical |
 | Base chain | **119M+ txns / ~$35M** value | Base still dominates cumulative txn count ([Chainalysis, June 2026](https://www.chainalysis.com/blog/x402-agentic-payments-adoption/)) |
 | Solana | 35M+ txns / $10M+ | since x402-on-Solana launch summer 2025 |
 | **XRP Ledger** (via [[entities/ripple|Ripple]]) | **1,434,517** autonomous agent txns, **+127%** since the 2026-06-09 embed | as of 2026-07-22 ([Coinspeaker](https://www.coinspeaker.com/x402-protocol-xrpl-ai-agent-transactions-ripple/)) — <1% of cross-chain total; fast-growing minority path, not a Base challenger |
 | Headline/notional volume | **"$600M+"** | facilitator-quoted/notional, not settled on-chain (see contradiction note) |
-| Share of txns valued ≥ $1 | **95%** (up from 49% in early 2025) | Chainalysis June 2026 — *the* signal that wash/test activity is receding |
+| Share of txns valued ≥ $1 | **95%** (up from 49% in early 2025) | Chainalysis — *the* signal that wash/test activity is receding; mirror-image, the **10¢–$1 band collapsed from 46% → 4%** over the same window, i.e. the sub-dollar test/wash tier is being squeezed out, not the genuine micro-tier merely diluted |
 | Daily real transaction volume | ~$28,000 | CoinDesk 2026-03 baseline; ~131K txns/day, avg ~$0.20 |
 | Single-day peak (Feb 2026) | 3.8M txns / ~$2M | burst activity, not sustained |
 | Active agents | ~69,000 | late April 2026 |
@@ -109,7 +109,7 @@ In December 2025, Coinbase and Cloudflare announced the **x402 Foundation** to m
 
 > **Contradiction — now explained (updated 2026-06-21)**: the long-flagged conflict between the **"$600M cumulative volume"** headline and the **~$50M on-chain settled** figure is reconciled by Chainalysis's June-2026 breakdown: settled on-chain value across the two main chains is **Base ~$35M + Solana ~$10M ≈ $45M**, while the "$600M+" is a facilitator-quoted/notional aggregate. Treat **~$45–50M as the conservative settled number** and "$600M" as notional throughput. The discrepancy is therefore one of *definition*, not of bad data. Tracked in [[synthesis/agentic-payments-six-region]].
 
-**Note (wash-trading, updated)**: A CoinDesk (2026-03) investigation found ~half of observed x402 transactions were "gamified" (wash/testing) rather than genuine commercial demand. The **Chainalysis June-2026 figure that 95% of transactions are now ≥ $1 (up from 49% in early 2025)** is the first quantitative sign that real, sub-dollar-filtered usage is displacing test traffic — though absolute volume remains small versus China's [[entities/ant-group-alipay|Alipay AI Pay]] (~300M cumulative txns). Consistent with the 25-year micropayment-failure lineage analysed in [[synthesis/agentic-payments-six-region]].
+**Note (wash-trading, updated 2026-08)**: A CoinDesk (2026-03) investigation found ~half of observed x402 transactions were "gamified" (wash/testing) rather than genuine commercial demand. Chainalysis traced the specific mechanism: the Q4-2025 volume surge was driven largely by **PING**, a "pay-to-mint" meme experiment that required users to query a URL, receive an HTTP 402, and pay 1 USDC to mint tokens — turning x402 into a speculative game (PING alone processed 150,000+ txns in its first month; weekly volume spiked >10,000%). The **Chainalysis figure that 95% of transactions are now ≥ $1 (up from 49% in early 2025), with the 10¢–$1 band collapsing 46% → 4%,** is the first quantitative sign that real, sub-dollar-filtered usage is displacing that test/wash traffic — though absolute volume remains small versus China's [[entities/ant-group-alipay|Alipay AI Pay]] (~300M cumulative txns). Consistent with the 25-year micropayment-failure lineage analysed in [[synthesis/agentic-payments-six-region]].
 
 ## Limitations and Risks
 

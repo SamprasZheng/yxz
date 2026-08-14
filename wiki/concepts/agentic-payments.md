@@ -86,8 +86,8 @@ For detailed comparison, see [[concepts/agentic-payment-protocols]].
 |---|---|---|---|
 | [[entities/stripe]] | MPP + ACP + Agentic Commerce Suite | 2025-09 / 2026-03 | Bets on both fiat + crypto |
 | PayPal | Agent Ready + Store Sync | 2025-10 | Zero-integration onboarding for millions of merchants |
-| [[entities/visa]] | Intelligent Commerce + TAP | 2025-10 | RFC 9421 signed HTTP messages |
-| [[entities/mastercard]] | Agent Pay (Agentic Token + Verifiable Intent) | 2025-04 | Per-agent token + SD-JWT authorization records |
+| [[entities/visa]] | Intelligent Commerce + TAP; **Visa×OpenAI ChatGPT** (2026-06-10) | 2025-10 / 2026-06 | RFC 9421 signed HTTP messages; agent purchases at any Visa merchant with tokenized credentials + user-set caps |
+| [[entities/mastercard]] | Agent Pay (Agentic Token + Verifiable Intent); **Agent Pay for Machines / AP4M** (2026-06-10) | 2025-04 / 2026-06 | Per-agent token + SD-JWT records; AP4M = M2M settlement to fractions of a cent, multi-rail (cards/accounts/**stablecoins**), credentials on Polygon/Solana/Base, 31 partners |
 
 ### Tech Platforms
 - **Google** (AP2): 60+ partners, Mandate authorization framework, 2025-09-17
@@ -105,7 +105,7 @@ For detailed comparison, see [[concepts/agentic-payment-protocols]].
 1. **Wallet security**: security model for agents holding private keys or authorizations
 2. **Cost runaway risk**: agent attack or logic error causing large uncontrolled expenditures
 3. **Regulatory compliance**: varying stablecoin payment regulations across countries
-4. **Demand validation**: x402 real daily volume was only ~$28,000 in 2026 Q1; by 2026-07 cumulative count had compounded to **~157M txns / ~$41M settled on-chain** with **95% of txns ≥ $1** (test traffic receding), yet absolute settled value remains small versus China's ~300M Alipay AI Pay txns — the business model is validating slowly, not proven (see [[concepts/x402-protocol]])
+4. **Demand validation**: x402 real daily volume was only ~$28,000 in 2026 Q1; by 2026-08 cumulative count had compounded to **160M+ txns** (Coinbase) / **~$41M settled on-chain**, with **95% of txns ≥ $1** and the 10¢–$1 wash band collapsing 46%→4% (test traffic receding), yet absolute settled value remains small versus China's ~300M Alipay AI Pay txns — the business model is validating slowly, not proven (see [[concepts/x402-protocol]])
 5. **Protocol fragmentation**: x402 / ACP / AP2 / MPP / L402 coexisting; complex developer choices
 
 ## Related Pages

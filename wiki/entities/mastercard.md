@@ -20,7 +20,15 @@ tags: [mastercard, payments, card-network, agentic-commerce, verifiable-intent, 
 
 Q4 2025: CEO Michael Miebach confirmed the first agentic transaction completed on the network. By 2026 the framework is **broadly available through Mastercard-certified processors**.
 
-**Agent Pay for Machines (2026-06):** Mastercard extended Agent Pay to **machine-to-machine, always-on micropayments** — "super-fast, always-on payments" for autonomous machine/agent transactions, moving beyond human-in-the-loop shopping into pure M2M settlement (the card-network answer to [[concepts/x402-protocol]]/MPP streaming micropayments) ([Mastercard press 2026-06](https://www.mastercard.com/us/en/news-and-trends/press/2026/june/mastercard-launches-agent-pay-for-machines.html)).
+**Agent Pay for Machines (2026-06-10):** Mastercard extended Agent Pay to **machine-to-machine, always-on micropayments** — "super-fast, always-on payments" for autonomous machine/agent transactions, moving beyond human-in-the-loop shopping into pure M2M settlement (the card-network answer to [[concepts/x402-protocol]]/MPP streaming micropayments) ([Mastercard press 2026-06-10](https://www.mastercard.com/us/en/news-and-trends/press/2026/june/mastercard-launches-agent-pay-for-machines.html); [The Block](https://www.theblock.co/post/404288/mastercard-agent-pay-machines-support-autonomous-ai-transactions-stablecoins)). Mechanism (the layer-down that makes AP4M strategically notable):
+
+- **Multi-rail settlement across cards, bank accounts, *and* stablecoins** — the first time Mastercard settles agent transactions natively over stablecoins, not just cards.
+- **Microtransactions to fractions of a cent**, at very high volume and extremely low latency — "services bought and sold among agents at fundamentally different scales than payments today."
+- **Agent credentials + spending permissions stored on public blockchains — Polygon, Solana, and Base** — i.e. the card network writing its agent-authorization layer *onto the same chains x402 settles on*, rather than keeping it wholly on proprietary rails. This is the concrete evidence for the "incumbent card rail converging with the open-protocol substrate" read in [[synthesis/agentic-payments-six-region]].
+- **31 launch partners**, including [[entities/coinbase]], Adyen, [[entities/stripe]], and Cloudflare — a partner set that overlaps heavily with the [[concepts/x402-protocol|x402 Foundation]], underscoring the convergence rather than a head-on rail war.
+- Credentialing runs through Mastercard's **Verifiable Intent** framework (below) with programmable permissioning/spending controls.
+
+Same-day symmetry: [[entities/visa]] announced its **OpenAI ChatGPT** agent-payment integration on the *same date* (2026-06-10), so both US card networks crossed into agent-native settlement in lockstep — the incumbents moving as a bloc, not as stragglers.
 
 ### Agentic Token
 
