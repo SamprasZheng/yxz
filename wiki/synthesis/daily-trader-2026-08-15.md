@@ -123,4 +123,4 @@ Each component normalized to [0, 1]:
 
 ---
 
-*Scan artifact: [[../agents/outputs/scan-2026-08-15.json]]*
+*Scan artifact: `agents/outputs/scan-2026-08-15.json`*
