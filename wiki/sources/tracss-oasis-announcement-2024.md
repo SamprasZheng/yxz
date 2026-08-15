@@ -41,13 +41,18 @@ TraCSS has three main components:
 | November 2024 | Slingshot Aerospace awarded $13.3M contract to build TraCSS user interface (with COMSPOC, T&T) |
 | February 2026 | OSC opened TraCSS waitlist for satellite operators |
 | May 27, 2026 | University Spacecraft Operators Forum scheduled |
-| 2026 (target) | TraCSS production release; user migration from space-track.org to TraCSS.gov |
+| June 2026 | Footprint: 52 pilot users + 2 National Government Accounts (UK, Australia), ~11,125 satellites |
+| 2026 (target, **slipped**) | TraCSS production release; user migration from space-track.org to TraCSS.gov — deliberately deferred while OSC studies a new operating/financial structure |
 
 ## What TraCSS Changes for Operators
 
 **Current state (as of May 2026)**: TraCSS CDMs are distributed via the **existing Space-Track.org interface** to beta users. The trajectory of the spacecraft stays the same — operators still register at space-track.org and pull CDMs via the same API. The underlying data begins to come from TraCSS rather than purely from 18 SDS.
 
 **Future state (TraCSS.gov live)**: Operators migrate to the TraCSS.gov interface. The plan does not eliminate Space-Track.org immediately; OSC will "work with DoD to migrate satellite operators" over time.
+
+## Funding Fragility (fact-check, accessed 2026-08-15)
+
+TraCSS is politically contingent, not guaranteed. NOAA's **FY2026** proposal sought to terminate it; Congress restored funding at **$52.5M**. A **2025-08-13 EO** then elevated OSC to report directly to the Secretary of Commerce (Taylor Jordan named director 2025-12-02) — yet the **FY2027 request seeks only ~$11M, an ≈83% cut from FY2024's $65M** (≈79% below FY2026 enacted). Director Jordan says work continues on FY2026 money (operator onboarding + code containerization) while the long-term funding model — possibly **user fees** — stays unresolved. Full narrative + all citations are canonicalised on [[concepts/conjunction-screening-providers]] and [[synthesis/commercial-space-traffic-management-six-region]]; keep [[entities/space-track-19sds|Space-Track (18 SDS)]] as the durable authoritative baseline and do not hard-code a TraCSS.gov cutover date.
 
 ## TraCSS CDM Specification
 
