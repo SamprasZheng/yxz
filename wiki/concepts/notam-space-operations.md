@@ -53,7 +53,7 @@ Re-entry vehicles (spent upper stages, reusable first stages, returning crew cap
 - **RTLS (Return to Launch Site) re-entry corridor:** When a reusable booster returns to the launch site (e.g., Falcon 9 booster at Cape Canaveral or Falcon Heavy side cores), a separate AHA NOTAM covers the re-entry trajectory and landing zone.
 - **Starship orbital re-entry:** Generates a third AHA covering the re-entry corridor (currently over the Indian Ocean or Pacific for IFT missions; over the Bahamas/Turks & Caicos for Starship-at-KSC trajectories per the May 2025 license modification covering IFT-9).
 
-**Verified example:** Starship IFT-5 (October 2024) generated NOTAM `F3682/24` specifically for the Ship (Stage 2) atmospheric re-entry and splashdown zone, in addition to the main AHA NOTAM for the ascent phase.
+**Verified example:** Starship IFT-5 (October 2024) generated NOTAM `F3682/24` specifically for the Ship (Stage 2) atmospheric re-entry and splashdown zone, in addition to the main AHA NOTAM for the ascent phase. By 2026 Starship had moved to **Version 3 (V3)**: Flight 12 (first V3, 2026-05-22) was declared a mishap and grounded pending an FAA-required investigation (closed 2026-07-13); **Flight 13** flew successfully 2026-07-24 from Pad B — after a T-0 ignition abort (2026-07-16, four engines failed to light) and a weather scrub (2026-07-23) — and was the first Starship to deploy operational payload (20 Starlink, suborbital). Each V3 flight still spawns the multi-AHA set (launch-site + ascent-corridor + booster-recovery + Ship re-entry), and the southernmost trajectories close airspace in the Mexico/Cuba/Jamaica/Cayman FIRs.
 
 **EOL/deorbit NOTAMs:** Controlled satellite re-entry generates NOTAMs for the predicted impact footprint. These are issued by the range authority responsible for the disposal trajectory, coordinated through the operator's deorbit plan filed with the FAA. For uncontrolled re-entries, the FAA issues a NOTAM when the impact window narrows to less than 12 hours and the footprint is defined with sufficient confidence. For Spacesharks Phase 5 (EOL & deorbit), an agent should poll NOTAM Search for the satellite's catalog number or operator name during the predicted decay window.
 
@@ -95,7 +95,9 @@ Q-codes relevant to spectrum/RF NOTAMs:
 
 ## 5. NMS modernization and ICAO format transition (2026–2028)
 
-**NMS deployment (April 18, 2026):** The FAA replaced its 1980s-era U.S. NOTAM System (USNS) with the cloud-based **NOTAM Management Service (NMS)**, deployed April 18, 2026 between midnight–04:00 Eastern. The system processes 4+ million NOTAMs per year. This was a back-end replacement; NOTAM content, format, and the public search interface at `notams.aim.faa.gov/notamSearch/` are unchanged.
+**NMS deployment (April 18, 2026):** The FAA replaced its 1980s-era U.S. NOTAM System (USNS) with the cloud-based **NOTAM Management Service (NMS)**, deployed April 18, 2026 between midnight–04:00 Eastern. The system processes 4+ million NOTAMs per year. This was a back-end replacement; NOTAM content, format, and the public search interface at `notams.aim.faa.gov/notamSearch/` are unchanged. **Verified outcome (2026-08):** DOT/FAA described the cutover as completed at "record speed" with a transparent transition and no reported operator-facing outage — this closes phase one of NOTAM modernization; the "harder half" (the domestic→ICAO format retirement below) is what remains.
+
+**Statutory context (2026):** The full **14 CFR Part 450** rule applies to *all* FAA launch/re-entry licenses from **March 10, 2026** (end of the Part 415/417/431/435 legacy transition), and the **FAA Reauthorization Act** requires the agency to complete space-launch integration into the NAS by **December 2026** — the legal forcing-function behind the CSINAS efficiency push. Under Time-Based Procedures + dynamic windows the FAA now reports mean airspace closures cut from **more than four hours to just over two hours per launch**; TFR/AHA/DRA for a given operation are bundled in an **Airspace Management Plan (AMP)**.
 
 **ICAO format transition (planned late 2027 – early 2028):** The FAA missed its December 2024 target for full ICAO format adoption. As of April 2026, NOTAMs remain available in domestic, ICAO, or plain-language formats simultaneously. Full retirement of the domestic format is planned for late 2027 or early 2028.
 
@@ -124,8 +126,8 @@ Who *originates* a launch NOTAM is a function of who launches — a different qu
 | Region | Issuing authority | Origin FIR(s) | Practice an agent must expect |
 |---|---|---|---|
 | **US** | FAA AIM | KZ** ARTCCs | 48–72 h advance; SDI dynamic-corridor shrink; CSINAS Time-Based Procedures |
-| **Europe** | EUROCONTROL **EAD** + national ANSPs (NATS/CAA, LFV, Avinor, Isavia) | EGPX/ESAA/ENOR/BIRD | **Temporary Danger Areas** for SaxaVord/Esrange/Andøya; pooled in EAD |
-| **China** | **CAAC** (state) | ZBPE/ZSHA/ZGZU | **Short-notice**; inland sites drop spent stages over land; debris NOTAMs reach CAAP (Philippines) + RCAA (Taipei); closures double as strategic signaling |
+| **Europe** | EUROCONTROL **EAD** + national ANSPs (NATS/CAA, LFV, Avinor, Isavia) | EGPX/ESAA/ENOR/BIRD | **Temporary Danger Areas** for SaxaVord/Esrange/Andøya; pooled in EAD; Isar Spectrum flight 2 **auto-aborted 2026-03-25 when a vessel entered the Andøya danger zone** (mechanism working) |
+| **China** | **CAAC** (state) | ZBPE/ZSHA/ZGZU | **Short-notice**; inland sites drop spent stages over land (Zhuque-3 land-recovery over Gansu 2026-08-10); debris NOTAMs reach CAAP (Philippines — LM-12 drop zone in the Philippine EEZ 2026-08-16) + RCAA (Taipei); closures double as strategic signaling |
 | **Japan** | **JCAB** | RJJJ (Fukuoka) | Tanegashima/Uchinoura (JAXA) + Hokkaido (Interstellar); standard advance filing |
 | **Korea** | **KOCA / MOLIT** | RKRR (Incheon) | Naro launches; region dominated by **DPRK** missile/launch danger-area NOTAMs spilling into RKRR/RJJJ |
 | **Taiwan** | **CAA / MOTC** | RCAA (Taipei) | **No sovereign orbital launch** → almost never originates a launch NOTAM; reacts to PRC launch-debris NOTAMs bordering RCAA |

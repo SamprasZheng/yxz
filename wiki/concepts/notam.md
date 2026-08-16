@@ -85,7 +85,7 @@ Space launch NOTAMs often implement an **Aircraft Hazard Area (AHA)** — a mosa
 - **TFR** (Temporary Flight Restriction, 14 CFR 91.137-91.145): general-purpose airspace tool; used for security, VIP movement, disasters; smaller/simpler geometry
 - **AHA**: specific to space launch debris risk; sized by flight safety analysis per § 450.133; may cover hundreds of nautical miles of ocean
 
-For Starship IFT-9, the AHA extended over a portion of the Bahamas and Turks & Caicos Islands, affecting more than 175 airline flights (average 40-minute delay per flight per FAA environmental assessment May 2025).
+For Starship IFT-9, the AHA extended over a portion of the Bahamas and Turks & Caicos Islands, affecting more than 175 airline flights (average 40-minute delay per flight per FAA environmental assessment May 2025). The program has since moved to **Version 3**: Flight 12 (first V3, 2026-05-22) was a mishap, and **Flight 13** flew successfully on 2026-07-24 (first Starship to deploy operational Starlink) — its V3 AHAs again closed oceanic airways across the Gulf/Atlantic and the Mexico/Cuba/Jamaica/Cayman FIRs. Note the FAA now bundles a launch's TFR + AHA + DRA into a single **Airspace Management Plan (AMP)**, and Time-Based Procedures have cut mean closure duration from >4 h to ~2 h per launch (see [[concepts/notam-space-operations]] §5).
 
 Long-term Starbase TFRs (standing restrictions at low altitude) have been issued to allow non-flight testing without per-event filings:
 - TFR 5/3678: 2026-01-01 to 2027-01-01, surface to 2,000 ft
