@@ -1,0 +1,25 @@
+{
+  "run_date": "2026-08-16",
+  "status": "STUB — blockers prevented live scan",
+  "blockers": [
+    {
+      "id": "B1",
+      "component": "trader pipeline",
+      "detail": "agents/src/trader/ does not exist. Only the Firefly orbital-mission pipeline (agents/src/firefly/) is present. The trader CLI (trader scan / trader research) is not implemented. The daily-trader task was configured before the pipeline was built."
+    },
+    {
+      "id": "B2",
+      "component": "yfinance / Yahoo Finance network",
+      "detail": "Outbound HTTPS to finance.yahoo.com is blocked by the remote-execution proxy (CONNECT tunnel 403). yfinance installed successfully but every ticker returned 'curl: (7) CONNECT tunnel failed, response 403'. Cannot fetch realised price data or run backtests without an alternative data source."
+    }
+  ],
+  "fallback_mode": "TRADER_OFFLINE stub — no LLM scan, no price data",
+  "watchlist_seed": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+  "scan_verdicts": [],
+  "backtest_results": [],
+  "fom_table": [],
+  "remediation": {
+    "B1": "Implement agents/src/trader/ pipeline (orchestrator, schemas, news_scout, thesis generator, sizing agent) and register `trader` CLI entry-point in agents/pyproject.toml.",
+    "B2": "Either (a) allowlist finance.yahoo.com / query1.finance.yahoo.com in the proxy config, or (b) switch to an alternative data source accessible from the remote env (e.g. Alpha Vantage, Polygon.io, or a HTTPS-proxied yfinance mirror)."
+  }
+}
