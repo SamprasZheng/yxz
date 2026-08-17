@@ -1,0 +1,18 @@
+{
+  "date": "2026-08-17",
+  "status": "blocked",
+  "blockers": [
+    "trader pipeline not found at agents/src/trader/",
+    "yfinance not installed",
+    "outbound market-data network blocked by proxy (403)"
+  ],
+  "watchlist": ["NVDA","AAPL","TSLA","MSFT","AMD","GOOGL","META","AMZN",
+                 "PLTR","ORCL","ARM","INTC","AVGO","SPY","QQQ"],
+  "verdicts": [],
+  "fom_formula": {
+    "confidence_weight": 0.4,
+    "sizing_sigma_weight": 0.3,
+    "recent_hit_rate_weight": 0.2,
+    "news_momentum_weight": 0.1
+  }
+}
