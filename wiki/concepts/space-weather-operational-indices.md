@@ -141,6 +141,8 @@ See [[concepts/swpc-space-weather-feeds]] for the JSON URLs that deliver these i
 
 **Operator rule**: S2+ should trigger a hardware-safe mode check for any satellite carrying non-radiation-hardened COTS processing units (see [[concepts/cots-gpu-radiation-risk]]). S3+ should trigger a power-cycling of vulnerable subsystems before SEL occurs (see [[concepts/see-single-event-effects]]).
 
+**Recent instance (dated):** the 2026-07-30 M1.9/filament CME event produced a brief **S1 (Minor)** radiation storm alongside the [[concepts/cme-propagation-geoeffectiveness|cannibal-CME]] geomagnetic watch — a reminder that even mid-M-class eruptions in the SC25 declining phase can lift the proton index into the SEU-watch band ([[concepts/solar-cycle-25-leo-radiation]]).
+
 ---
 
 ## R-Scale — Radio Blackout Index (X-ray Flux / Solar Flare)
@@ -154,6 +156,8 @@ See [[concepts/swpc-space-weather-feeds]] for the JSON URLs that deliver these i
 | R3 | X1 | Wide-area HF blackout ~1 hour; GPS errors elevated |
 | R4 | X10 | HF blackout, sunlit side, 1–2 hours; GPS positioning errors significant |
 | R5 | X20 | Complete HF blackout for hours; extended GPS outage |
+
+**Recent instance (dated):** the **X8.1** flare on 2026-02-01 (AR4366, the 3rd-strongest of SC25) drove an **R3 (Strong)** radio blackout over the S. Pacific / E. Australia / NZ — yet its CME only glanced Earth, giving a mere G1 storm. This is the canonical demonstration that the **R-scale (flare) and G-scale (storm) hazards are decoupled**: a top-of-cycle flare need not produce a major geomagnetic storm, and vice-versa (mechanism in [[concepts/cme-propagation-geoeffectiveness]]).
 
 **JSON feed**: `https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json`
 

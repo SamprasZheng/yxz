@@ -60,7 +60,17 @@ When a **faster CME launched later overtakes a slower one still in transit**, th
 SC25's declining phase produced two textbook cases inside two months, both driven by multi-active-region eruption clusters:
 
 - **2026-06-09 — G3** from a cannibal-CME merger; aurora reached France and New Zealand.
-- **2026-07-29 → 07-31 — SWPC "Geomagnetic Storm Watches in Effect… up to G3 (Strong)"** ([SWPC news, 2026-07-27](https://www.spaceweather.gov/news/geomagnetic-storm-watches-effect-29-31-july-g3-strong)): multiple CMEs from 27–28 July, arrival from 29 July, WSA-Enlil projecting **G2–G3 most likely on 30 July** as successive ejecta merge into complex ejecta. A live, dated instance of the declining-phase "isolated active regions still drive strong storms" pattern **21 months after the SC25 max** — folded into the storm chain in [[concepts/solar-cycle-25-leo-radiation]].
+- **2026-07-29 → 08-01 — forecast "up to G3 (Strong)", *observed only G1–G2*** ([SWPC watch, 2026-07-27](https://www.spaceweather.gov/news/geomagnetic-storm-watches-effect-29-31-july-g3-strong); [extended into 1 Aug](https://www.spaceweather.gov/news/geomagnetic-storm-watches-now-continue-1-august)): multiple CMEs from 27–28 July plus an M1.9/filament CME (N20W67, partial halo) on 30 July, WSA-Enlil projecting **G2–G3 most likely on 30 July** as successive ejecta merged. But the realized storm **under-performed the forecast by ~2 levels** (G1–G2, not G3), with an S1 radiation storm on 30 July. This is the **flip side** of the 3–4 July case, which *over*-performed (G2 forecast → G3 observed). Both folded into the storm chain in [[concepts/solar-cycle-25-leo-radiation]].
+
+**The asymmetry cuts both ways — three 2026 cases make the point:**
+
+| Date | Pre-arrival forecast | Observed | Why the miss |
+|---|---|---|---|
+| 2026-07-03/04 | ~G2 | **G3** (Kp 7.33) | southward Bz stronger/longer than the non-magnetized Cone model could carry |
+| 2026-07-29→08-01 | **up to G3** | G1–G2 | merged ejecta arrived with weaker/less-sustained southward Bz than the "worst-case" watch assumed |
+| 2026-02-01/04 | large flare (X8.1) → CME | **G1** (Kp 5) | the CME merely *glanced* Earth — geometry, not field strength, capped the storm |
+
+The lesson the Enlil-Cone limitation guarantees (below): forecasters can be wrong in **either** direction on severity, because the two variables that decide it — the internal **Bz** and the **impact geometry** — are both invisible until the cloud is ~30–60 min from L1. The 2026-02-01 X8.1 case is the sharpest reminder that **flare magnitude and storm magnitude are decoupled**: the cycle's 3rd-strongest flare (R3 radio blackout) produced only a minor G1 storm, because its ejecta was aimed to graze rather than hit ([SWPC](https://www.spaceweather.gov/news/update-x81-strong-flare-region-4366)).
 
 ## 拉長時間軸 — why this mechanism is a permanent operational constraint
 
