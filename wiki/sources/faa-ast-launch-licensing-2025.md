@@ -97,10 +97,10 @@ FAA AST is the **most mature commercial** launch regulator, but the launch-autho
 |---|---|---|---|
 | **US** | FAA AST | 51 U.S.C. § 50901; 14 CFR Part 450 (EC ≤ 1×10⁻⁴) | Performance-based; "default-to-yes" reform direction (2025–26) |
 | **China** | State (CASC) under SASTIND/CNSA + military ranges | No FAA-style independent commercial license | Launch *is* the state; commercial activity layered on top |
-| **Japan** | Cabinet Office (PM) | Space Activities Act (Act No. 76 of 2016, eff. 2018); cabinet-approved amendment 2026-03-27 | 3 licenses; modernizing for reuse/OOS/return |
-| **Korea** | KASA (est. 2024-05-27) | Space Development Promotion Act | MSIT amendment (2024) allows repeated-launch license for same vehicle/site |
-| **Europe** | National — France CNES/Min. of Economy (FSOA 2008), UK CAA (Space Industry Act 2018), etc. | 13 fragmented national laws | EU Space Act (proposed 2025-06, applies 2030) to harmonize |
-| **Taiwan** | TASA (launch permits, vehicle/spacecraft registration) | Space Development Act (太空發展法, 2021) | No sovereign orbital launch yet; building national launch site |
+| **Japan** | Cabinet Office (PM) | Space Activities Act (Act No. 76 of 2016, eff. 2018); amendment cabinet-approved 2026-03-27 → **cleared House of Councillors 2026-04-24** | 3 licenses; extends to reuse/OOS/return + test vehicles w/o satellites; enforcement targeted late-2026/2027 |
+| **Korea** | KASA (est. 2024-05-27) | Space Development Promotion Act; **amendment proclaimed 2026-08-11, eff. 2027-02-12** | 2024 rule = repeated-launch license (same vehicle/site); 2026 amendment adds **batch-approval for repeated launches of the same rocket** |
+| **Europe** | National — France CNES/Min. of Economy (FSOA 2008), UK CAA (Space Industry Act 2018), etc. | 13 fragmented national laws | EU Space Act (proposed 2025-06; **Council compromise 2026-05, in trilogue** — adoption before late-2027 unlikely, 2030 application date slipping) to harmonize |
+| **Taiwan** | TASA (launch permits, vehicle/spacecraft registration) | Space Development Act (太空發展法, 2021) | No sovereign orbital launch yet; **National Launch Site sited at Manzhou, Pingtung (2025), completion 2030s** |
 
 The Mission Desk launch-slip workflow ([[synthesis/faa-notam-launch-lifecycle]], [[concepts/launch-window-slip]]) is built on US airspace mechanics (NOTAM/AHA/NOTMAR); a non-US launch requires the analogous national clearance signal (UK CAA range licence, Japan MIC + Cabinet Office, etc.). Full comparison incl. the spectrum axis: [[synthesis/space-regulatory-regimes-six-region]].
 

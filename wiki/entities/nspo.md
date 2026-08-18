@@ -25,9 +25,11 @@ TASA is the single largest *sovereign demand signal* in Taiwan's space build-out
 - **October 2023** — government announces an additional **~NT$40 billion** boost, much of it directed at **Beyond-5G (B5G) LEO communications satellites**.
 - **2023** — **TRITON** (Wind-Hunter), Taiwan's first self-developed meteorological satellite, launched with a domestic **GNSS-R** ocean-surface-wind payload.
 - **15 April 2025** — TASA **licenses its satellite-grade general-purpose GPU (GPGPU) design to [[entities/liscotech]]** for commercialisation — a public-agency→industry technology transfer that seeds Taiwan's first *on-orbit compute* product (the [[synthesis/leo-taiwan-odc-gap|midstream-C]] edge tier).
+- **2025** — **National Launch Site sited at Manzhou township, Pingtung county** (southern tip of Taiwan) under the Space Development Act's mandate for TASA to build a sovereign launch site; **completion targeted for the 2030s**. A separate **sounding-rocket launch site (assembly hall, control building, launch area; hybrid-engine sounding rockets) was completed in 2025** — the near-term testbed while the orbital site is built. The government frames direct sovereign access to space as a **sovereignty/resilience** imperative (subsea-cable vulnerability, cross-Strait contingency).
 - **28 November 2025** — **FORMOSAT-8A** (first of an 8-satellite high-resolution optical EO constellation) plus three CubeSats launched on a SpaceX rideshare from Vandenberg SFB (slipped from Oct 2025 partly via the US federal-government shutdown). In the **same 2025-11-28 Vandenberg rideshare window**, **Black Kite-1** (built by Rapidtek) flew the **TASA-derived [[entities/liscotech]] GPGPU100** (Nvidia Jetson Orin Nano, ~40 TOPS) — Taiwan's **first flown space-grade GPGPU**, an explicit on-orbit compute demonstration.
+- **February 2026** — TASA **announced plans for a space-rocket research center** (Taipei Times, 2026-02-22), the R&D anchor for a domestic ~25–28 m launch vehicle able to loft ~200 kg to orbit by ~2030; the **Siraya Rocket Plan** could enable a first sovereign orbital launch **as early as 2026 if the Legislative Yuan approves funding** — i.e. sovereign launch is a *budget-gated* decision, not a capability that yet exists.
 
-## Current Program Portfolio (as of 2026-06)
+## Current Program Portfolio (as of 2026-08)
 
 | Program | Purpose | Status |
 |---|---|---|
@@ -36,12 +38,13 @@ TASA is the single largest *sovereign demand signal* in Taiwan's space build-out
 | **B5G LEO comms** | Sovereign LEO communications satellites (resilience vs subsea-cable cut) | In development; first flight targeted mid/late 2020s |
 | **FORMOSAT-7 / COSMIC-2** | GNSS radio-occultation (US-Taiwan), feeds [[concepts/swpc-space-weather-feeds|space-weather]] + ionospheric models | Operational (cross-links [[synthesis/space-weather-forecasting-six-region]]) |
 | **Satellite-grade GPGPU** | On-orbit edge compute IP; licensed to [[entities/liscotech]] → GPGPU100 | Flown on Black Kite-1 (2025-11-28); the sovereign-agency pull into [[synthesis/leo-taiwan-odc-gap|midstream-C]] |
+| **Sovereign launch (National Launch Site + Siraya)** | Domestic orbital-launch capability (~25–28 m LV, ~200 kg to orbit by ~2030) — the missing **launch-authorization** leg of [[synthesis/space-regulatory-regimes-six-region]] | Sounding-rocket site done (2025); orbital site **sited Manzhou, Pingtung (2025), completion 2030s**; research center announced 2026-02; first sovereign orbital launch **budget-gated** on Legislative Yuan funding |
 
 ## Six-Region Context (where TASA sits)
 
 TASA is the **Taiwan** civil-space node in the wiki's six-region maps. Its profile is *civil-agency-building, upstream-strong / midstream-absent*, the same archetype that recurs across domains:
 
-- **Regulatory:** TASA is paired with the NCC (spectrum) under the *Space Development Act 2021* — see [[synthesis/space-regulatory-regimes-six-region]] (Taiwan = nascent, no sovereign launch).
+- **Regulatory:** TASA is paired with the NCC (spectrum) under the *Space Development Act 2021*, which also mandates TASA to build the sovereign launch site (now sited at Manzhou, Pingtung, 2025) — see [[synthesis/space-regulatory-regimes-six-region]] (Taiwan = nascent launch-authorization node; no sovereign orbital launch yet).
 - **ODC / compute:** Taiwan is upstream-strong / midstream-C-absent — see [[synthesis/orbital-data-center-six-region]] and [[synthesis/leo-taiwan-odc-gap]].
 - **Radiation qualification:** Taiwan has TID + proton but no heavy-ion SEE — see [[synthesis/radiation-test-rad-hard-six-region]] and [[concepts/taiwan-radiation-test-ecosystem]] (NSPO×NTU Cancer Center cyclotron MoU).
 - **RF front-end:** Taiwan is a component supplier; the *emerging* array-integrator counter-example is the private vendor [[entities/tron-future-tech]] — see [[synthesis/phased-array-rf-frontend-supply-chain]].
@@ -59,6 +62,7 @@ Relative to peers: TASA's budget and cadence (≈1 sat/yr) sit far below NASA/ES
 - 2023 rename + status upgrade + 1991 founding + NSTC parent: [Focus Taiwan, "Taiwan's space agency rebrands as TASA" (2023-01-06)](https://focustaiwan.tw/sci-tech/202301060017); [Taipei Times, "Space agency renamed TASA" (2023-01-02)](https://www.taipeitimes.com/News/taiwan/archives/2023/01/02/2003791834); [Taiwan Space Agency — Wikipedia](https://en.wikipedia.org/wiki/Taiwan_Space_Agency)
 - 3rd-phase program NT$25.1B / 2019–2028 + ~NT$40B 2023 boost for LEO comms: [Taipei Times, "Tsai announces NT$40bn boost for space program" (2023-10-31)](https://www.taipeitimes.com/News/front/archives/2023/10/31/2003808468); [Taiwan Insight, "Commencing Countdown" (2025-02-28)](https://taiwaninsight.org/2025/02/28/commencing-countdown-taiwans-journey-in-space-development/)
 - FORMOSAT-8A launch 2025-11-28 Vandenberg via SpaceX + TRITON 2023: [Formosat-8 — Wikipedia](https://en.wikipedia.org/wiki/Formosat-8); [TASA FORMOSAT-8 mission page](https://www.tasa.org.tw/en-US/missions/detail/FORMOSAT-8)
+- National Launch Site sited Manzhou/Pingtung (2025, completion 2030s) + sounding-rocket site (2025) + space-rocket research center (2026-02) + Siraya plan (accessed 2026-08-18): [TASA — National Launch Site](https://www.tasa.org.tw/en-US/space-facilities/launch/national-launch-site); [TASA — Sounding Rocket Launch Site](https://www.tasa.org.tw/en-US/space-facilities/launch/sounding-rocket-launch-site); [Taipei Times — "TASA announces space rocket research center plans" (2026-02-22)](https://www.taipeitimes.com/News/front/archives/2026/02/22/2003852673); [National Launch Site — Wikipedia](https://en.wikipedia.org/wiki/National_Launch_Site)
 
 ## Related
 
