@@ -20,7 +20,7 @@ The **Hermes LLM series** is the open-weight fine-tuned model lineage from [[ent
 
 Hermes-4 is described on HuggingFace as a "frontier, hybrid-mode reasoning model." The 14B variant uses Qwen-3-14B as base, breaking the Llama-only convention of earlier generations.
 
-**Six-region note:** that base-model switch is geopolitically loaded. A **US** open-weight lab fine-tuning on Alibaba's **Chinese** Qwen-3 base reflects the central finding of [[synthesis/open-weight-llm-agent-stack-six-region]] — by 2026 the strongest open-weight *bases* increasingly come from China (Qwen, DeepSeek V4 Pro, GLM-5.2, and Moonshot's **Kimi K3** — the largest open-weight model ever at 2.8T params and the AA-Intelligence-Index open-weight #1 as of Aug 2026), so even US labs build on them. The Hermes lineage is thus a **US-alignment-layer on a Chinese-and-American base mix**, distributed for a US (NVIDIA) hackathon — the open-weight commons in one artifact.
+**Six-region note:** that base-model switch is geopolitically loaded. A **US** open-weight lab fine-tuning on Alibaba's **Chinese** Qwen-3 base reflects the central finding of [[synthesis/open-weight-llm-agent-stack-six-region]] — by 2026 the strongest open-weight *bases* increasingly come from China (Qwen, DeepSeek V4 Pro, and — tied for the AA-Intelligence-Index open-weight #1 at **60** as of Aug 2026 — Moonshot's **Kimi K3** (the largest open-weight model ever at 2.8T params) and Z.AI's **GLM-5.3** (launched 2026-08-14)), so even US labs build on them. The Hermes lineage is thus a **US-alignment-layer on a Chinese-and-American base mix**, distributed for a US (NVIDIA) hackathon — the open-weight commons in one artifact.
 
 ## Positioning
 
