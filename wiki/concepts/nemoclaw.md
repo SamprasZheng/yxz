@@ -83,8 +83,8 @@ NemoClaw's genuine novelty is the **[[concepts/openshell-runtime|OpenShell]] L7 
 
 The agent-sandbox market is a **US–Europe axis** (see the full [[synthesis/agent-runtime-orchestration-six-region|runtime six-region map]]):
 
-- **US** — deepest and most plural: **NemoClaw/OpenShell** (security-forward, Landlock+seccomp+netns+L7 proxy), **Modal** (gVisor), **Fly Machines**, Cloudflare; OpenAI's Agents SDK ships sandboxed execution.
-- **Europe** — owns the **standalone-sandbox flagship**: **E2B** (Czech-founded, Firecracker microVMs; used by HuggingFace/Perplexity, cited "94% of Fortune 100") and **Daytona** (Croatian-founded, $24M Series A 2026-02, compliance-first). This is Europe's component-specialist bet — it does not build a full-stack framework, it owns the cage.
+- **US** — deepest and most plural: **NemoClaw/OpenShell** (security-forward, Landlock+seccomp+netns+L7 proxy), **Modal** (gVisor), **Fly Machines**, Cloudflare, **Runloop**; OpenAI's Agents SDK shipped **Sandbox Agents (2026-04-15)** hosting *seven* providers (Blaxel/Cloudflare/Daytona/E2B/Modal/Runloop/Vercel) — a US framework turning the sandbox into an interchangeable backend, which quietly commoditizes the European cage vendors below it.
+- **Europe** — owns the **standalone-sandbox flagship**: **E2B** (Czech-founded, Firecracker microVMs ~150 ms boot; used by HuggingFace/Perplexity, cited "94% of Fortune 100") and **Daytona** (Croatian-founded, hardened-OCI 27–90 ms; **moved its production codebase closed-source in June 2026** on security grounds — OSS repo now unmaintained). This is Europe's component-specialist bet — it does not build a full-stack framework, it owns the cage; but see the US row's Sandbox-Agents move for how that cage is being abstracted into a swappable provider slot.
 - **China** — sandboxing is *folded into* the frameworks (AgentScope 2.0's permission system) rather than sold as standalone infra.
 - **Japan / Korea / Taiwan** — consumers; the owner's [[synthesis/firefly-nemoclaw-reference-implementation|Firefly]] stack consumes NemoClaw (US) as its cage — the Taiwan-as-integrator pattern.
 
