@@ -59,6 +59,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-08-23]] — Daily KOL + keyword digest 2026-08-23: 0 KOLs (list empty), 11 keywords; top items: Anthropic $65B ARR + IPO, NVIDIA Nemotron 3.5 Lightning + Nemotron 4 leak, Claude Code auto-mode default, OpenAI Astra safety halt, Polkadot 702K commits (Chainspect #1) + Grayscale ETF withdrawal
 
 ## Entities
 
