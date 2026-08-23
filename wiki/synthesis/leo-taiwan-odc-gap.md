@@ -32,9 +32,9 @@ These three developments together mean: **ODC is no longer science fiction — i
 
 | Segment | Taiwan Presence | Representative Vendors |
 |------|-----------|---------|
-| Upstream RF PA | ★★★★★ World leader | [[entities/win-semiconductors]] (3105) — FY2025 rev NT$16.6B, >50% global GaAs foundry share, pivoting to optical-datacom + LEO RF |
-| Upstream filters/waveguides | ★★★★★ | [[entities/ascend-tech]] (3491, UMT) — **9M-2025 gross margin ≈47.3%** (record FY2025 NT$2.452B; **Q1-2026 rev NT$1.02B, +64% YoY, LEO demand +131% YoY**), in Starlink/Kuiper supply chain |
-| Upstream high-frequency PCB | ★★★★★ | [[entities/huatong-pcb]] (2313, Compeq) — analyst ~80% LEO-dedicated-PCB share (directional, unaudited); **H1-2026 rev NT$39.54B +13.2% YoY**; 2026 satellite-board est. ~NT$18.5B |
+| Upstream RF PA | ★★★★★ World leader | [[entities/win-semiconductors]] (3105) — FY2025 rev NT$16.6B, >50% global GaAs foundry share; **H1-2026 rev NT$9.85B, EPS NT$3.56 (Q2 rev NT$5.26B +39% YoY, ~4-yr high, EPS NT$2.30 beat)**; optical-datacom now high-single-digit % of rev (≈2× YoY) + LEO RF the twin Q3 drivers |
+| Upstream filters/waveguides | ★★★★★ | [[entities/ascend-tech]] (3491, UMT) — **H1-2026 rev NT$1.922B, gross margin ≈56.9% (up from 47.3% in 9M-2025), EPS NT$8.15 — H1 profit alone beat every prior full-year total**; LEO now **80% of revenue**; in Starlink/Kuiper supply chain |
+| Upstream high-frequency PCB | ★★★★★ | [[entities/huatong-pcb]] (2313, Compeq) — analyst ~80% LEO-dedicated-PCB share (directional, unaudited); **H1-2026 rev NT$39.54B +13.2% YoY; Jul-2026 NT$6.96B +16.0% YoY**; 2026 satellite-board est. ~NT$18.5B (+22%) |
 | Midstream A ISL optical comms | ★★☆☆☆ | Precision optics is not a Taiwan strength; dominated by Mynaric, SA Photonics |
 | Midstream (array integration) | ★★★☆☆ (emerging) | [[entities/tron-future-tech]] — indigenous AESA integrator (C-UAS radar + T.SpaceRouter Ka-band LEO terminal) |
 | **Midstream C — on-orbit compute (edge tier)** | **★★☆☆☆ (now flown)** | **[[entities/liscotech]] GPGPU100** (Jetson Orin Nano ~40 TOPS, TASA-licensed, flown Black Kite-1 2025-11) |
@@ -71,9 +71,9 @@ The **actually-realised** first step: [[entities/nspo|TASA]] developed a satelli
 
 ## Comparison: China's National-Scale Orbital Compute
 
-[[entities/ada-space]] launched the first batch of 12 satellites in May 2025, each with a 100 Gbps optical link + **744 TOPS** on-orbit accelerator; target a 2,800-satellite distributed orbital supercomputing network. And in **April 2026, Orbital Chenguang** (Beijing) secured **¥57.7B (≈US$8.4B) in strategic credit lines** from 12 major financial institutions (Bank of China, ABC, BoCom…) toward **1 GW+ LEO compute by ~2035**.
+[[entities/ada-space]] launched the first batch of 12 satellites in May 2025, each with a 100 Gbps optical link + **744 TOPS** on-orbit accelerator; the "Star-Compute / 星算" plan is now specified as **2,800 satellites = 2,400 inference + 400 training** (dawn-dusk/SSO/low-inclination, 500–1,000 km), with **groups 2 & 3 in production for orbital deployment in 2026**, a thousand-satellite scale + commercial ops targeted by 2030 and full build by 2035. Zhejiang Lab's parallel **Three-Body Computing Constellation** (first 12 sats May-2025, 100-sat target by 2027) reported, as of **July 2026, two satellites holding an optical-laser ISL for >8 days at 99.99% uptime across up to 1,000 km** — a *flown-endurance* datapoint (not a bench result), the same China-leads-in-orbit / US-leads-on-bench split developed in [[synthesis/orbital-data-center-six-region]]. And in **April 2026, Orbital Chenguang** (Beijing) secured **¥57.7B (≈US$8.4B) in strategic credit lines** from 12 major financial institutions (Bank of China, ABC, BoCom…) toward **1 GW+ LEO compute by ~2035**.
 
-This is not one company vs. one company — it is **national-scale strategic capital** vs. Taiwan's single flown 40-TOPS CubeSat node. The asymmetry is the point:
+This is not one company vs. one company — it is **national-scale strategic capital + flown in-orbit ISL endurance** vs. Taiwan's single flown 40-TOPS CubeSat node. The asymmetry is the point:
 
 > ⚠️ If Taiwan stays at the edge-inference tier while China and the US build **gigawatt-class** orbital compute, added value shifts from "hardware margins" to "ODC compute and data services." Taiwan's high-margin upstream (Win/UMT/Compeq) risks compression into an OEM/ODM role feeding others' hyperscale ODCs — the same *make-the-atoms, rent-the-system-elsewhere* pattern seen in [[synthesis/orbital-data-center-six-region]], [[synthesis/phased-array-rf-frontend-supply-chain]], and [[synthesis/radiation-test-rad-hard-six-region]].
 
@@ -87,7 +87,9 @@ This is not one company vs. one company — it is **national-scale strategic cap
 | 2026-01 | [[entities/axiom-space]] ODC Node 1 & 2 on Kepler optical relay |
 | 2026 GTC | Jensen Huang: "Space computing — the ultimate frontier" |
 | 2026-04 | Orbital Chenguang (China) ¥57.7B/$8.4B credit lines for 1 GW+ LEO compute; DigiTimes: Taiwan supply chain "sets sights on orbital data centers" |
-| 2026-H1 | UMT record 1H-2026 (LEO +131% YoY); Compeq H1 rev NT$39.54B +13.2% |
+| 2026-H1 | **UMT H1 rev NT$1.922B, GM 56.9%, EPS NT$8.15 (H1 profit > every prior full year), LEO 80% of rev; Win H1 rev NT$9.85B (Q2 +39% YoY); Compeq H1 rev NT$39.54B +13.2%** |
+| 2026-07 | China Three-Body constellation holds >8-day optical ISL (99.99% uptime, ≤1,000 km) — flown-endurance milestone; Compeq Jul rev NT$6.96B +16% YoY |
+| 2026-08 | **Starcloud-2 (Blackwell B200, 8 kW, ≈100× Starcloud-1 power) launch slips from Oct-2026 into 2027 on rideshare scarcity; +$250M raise → $2.3B valuation** |
 | 2026–2028 | First commercial wave for midstream-C hyperscale nodes (US/China lead) |
 
 ITU spectrum/slot preemption remains the parallel scarcity: **first to file, first to secure** (see [[synthesis/space-regulatory-regimes-six-region]] and [[synthesis/fcc-ibfs-filings-coordination]]). SpaceX, OneWeb, and Kuiper have locked positions; latecomers' remaining opportunity concentrates in the ODC "new-type satellite" theme.
@@ -110,7 +112,7 @@ ITU spectrum/slot preemption remains the parallel scarcity: **first to file, fir
 
 ## Conclusions
 
-1. Taiwan's upstream LEO advantages are real and, per H1-2026 data, **accelerating** (UMT LEO +131% YoY; Compeq +13% H1) — but they **do not automatically extend to hyperscale midstream C**.
+1. Taiwan's upstream LEO advantages are real and, per H1-2026 actuals, **accelerating *with margin expansion*, not compression** (UMT GM 47.3%→**56.9%** and H1 profit alone beat every prior full year; Win Q2 rev +39% YoY; Compeq H1 +13%) — the "operators dual-source → margins compress" risk (falsifier #5) has **not** triggered through mid-2026; but none of this **automatically extends to hyperscale midstream C**.
 2. The void is now a **gradient**: edge-inference on-orbit compute has been **demonstrated and flown** ([[entities/liscotech]]), array integration exists ([[entities/tron-future-tech]]), but **kW-to-hyperscale ODC integration remains absent**.
 3. 2026–2028 is the first commercial wave for hyperscale midstream C; Taiwan needs the **tier jump**, not just another edge node.
 4. Most likely bridges: **PCB → compute-board assembly** (path B) or **TASA/defense sovereign-cloud pull** (paths C/D). Pure upstream foundries (path A) remain technically closest but culturally slowest — a strategic acquisition or JV would be the trigger.

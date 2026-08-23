@@ -37,6 +37,18 @@ Compeq is a core PCB supplier to **SpaceX Starlink** and **Amazon Kuiper**, leve
 
 > **Corrected (2026-06-22):** the prior version of this page recorded "2025 **Q4** LEO satellite-board revenue >NT$15.5 B (all-time high)." The authoritative figure (~NT$15.1 B, ≈20% of NT$76 B total) is a **full-year 2025** number, not a single quarter — the "Q4" attribution was an error. Restated above; the older $25B→$45B "global LEO investment" framing came from [[sources/leo-space-datacenter-analysis-2025]] and is one analyst definition (LEO market-size estimates vary widely by methodology — e.g. ~$12.6B (2024)→~$41B (2033) on a narrower "LEO satellite market" basis), so treat absolute market totals as order-of-magnitude.
 
+## H1-2026 revenue trajectory (verified 2026-08-23)
+
+| Metric | Value | Source |
+|---|---|---|
+| Q2-2026 revenue | **NT$19.99 B** (NT$199.91 億), +2.3% QoQ, +9.8% YoY | [udn money 2026](https://money.udn.com/money/story/5710/9266904) |
+| **H1-2026 revenue** | **NT$39.54 B**, **+13.2% YoY** | [cnYES 2026-07](https://news.cnyes.com/news/id/6523171) / statementdog |
+| Jun-2026 monthly revenue | NT$6.915 B, +2% MoM, **+20.96% YoY** | cnYES |
+| Jul-2026 monthly revenue | **NT$6.955 B, +16.0% YoY** | [statementdog 2313](https://statementdog.com/analysis/2313/monthly-revenue-growth-rate) |
+| 2026 satellite-board target | **≈NT$18.5 B (+22% YoY)** — from >NT$15.1 B / +15% in FY2025 | udn / vocus |
+
+The satellite-board line is now framed by Taiwan analysts as **"only the appetizer"** — Compeq is pursuing a **three-theme growth map** (低軌衛星 LEO satellite boards + AI-data-center optical-transceiver-module boards + capex-driven capacity), with the satellite franchise the anchor and AI-datacenter boards the next leg. This is the same optical-datacenter demand vector now visible in [[entities/win-semiconductors|Win's]] 1.6T-PD ramp — the ODC/AI buildout pulling *two* Taiwan upstream nodes at once.
+
 > The frequently-cited **"~80% global market share in LEO-dedicated PCBs"** is an analyst/market-level figure repeated in Taiwan press; no independent primary audit of the denominator was found on a 2026-06-22 check — treat as directional dominance, not a precise audited share.
 
 ## Competitive advantages

@@ -24,6 +24,21 @@ tags: [taiwan, rf-hardware, satellite, leo, filter, waveguide, supply-chain]
 
 > **Corrected (2026-06-22):** the prior page listed gross margin "**>50%**" sourced only to [[sources/leo-space-datacenter-analysis-2025]] and flagged it as unconfirmed. The verified 9M-2025 figure is **47.3%** — high (well above PCB makers, consistent with the passive-precision moat) but not >50%. Restated above with a primary source. Named-customer (Starlink/Kuiper) attribution remains market-level, not a disclosed contract.
 
+## H1-2026 financials — margin expansion + record half (self-reported, verified 2026-08-23)
+
+| Metric | Value | Source |
+|---|---|---|
+| Q1-2026 revenue | **NT$1.02 B** (NT$10.2 億), single-quarter record | [cnYES 2026](https://news.cnyes.com/news/id/6546787) |
+| Q2-2026 revenue | **NT$902 M** (NT$9.02 億) | cnYES / [Yahoo TW 2026-07](https://tw.stock.yahoo.com/news/昇達科自結上半年稅後賺5-61億元-eps8-15元) |
+| Q2-2026 gross margin | **55.6%** (−2.38 pt QoQ, **+12.25 pt YoY**) | cnYES |
+| Q2-2026 net profit / EPS | NT$308 M / **EPS NT$4.47** | cnYES |
+| **H1-2026 revenue** | **NT$1.922 B**, gross margin **≈56.9%** | Yahoo TW / cnYES |
+| **H1-2026 net profit / EPS** | **NT$561 M / EPS NT$8.15 — H1 profit alone > every prior full-year total** | Yahoo TW |
+| LEO product mix | **≈80% of revenue** (Q1 LEO rev ≈NT$815 M) | [cnYES 2026 法說](https://news.cnyes.com/news/id/6562930) |
+| Outlook | Q3 > Q2's NT$902 M; Q4 to exceed the Q1 NT$1.02 B record; 2027 further growth | cnYES |
+
+> **Margin update (2026-08-23):** the canonical gross-margin figure on this page steps from **9M-2025 ≈47.3% → H1-2026 ≈56.9%** — a ~10-point expansion, driven by LEO product mix rising to ≈80% of revenue and satellite-grade pricing power. This is the concrete rebuttal to the cluster's "operators dual-source → Taiwan upstream margins compress" risk ([[synthesis/leo-taiwan-odc-gap]] falsifier #5): through mid-2026 the passive-precision moat is *widening* margins, not eroding them. Both the record-half framing and the margin are **company self-reported (自結)** ahead of audited financials — treat as directional-but-management-sourced.
+
 ## LEO satellite positioning
 
 Widely reported as having entered the **Starlink** and **Amazon Kuiper** supply chains; among the highest-gross-margin Taiwan LEO upstream component makers. Revenue is now visibly LEO-cyclical — the Q4-2025 / FY-2025 records track the international constellations' deployment cadence, which is the cleanest evidence in the cluster that a Taiwan passive-RF vendor has cleared satellite-grade qualification rather than staying in terrestrial telecom.

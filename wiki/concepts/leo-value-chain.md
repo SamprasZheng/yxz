@@ -20,7 +20,7 @@ This segment determines the performance ceiling of satellites and is where Taiwa
 RF component economics connect directly to the transmitter stack: [[concepts/aesa]] / [[concepts/hybrid-phased-array]] set the array architecture, [[concepts/zero-if-transmitter]] defines the X-band upconversion trade, [[concepts/evm-calibration]] keeps LO leakage/IQ imbalance inside spec, and [[concepts/dpd-digital-predistortion]] protects PA linearity/ACPR.
 
 - **Win Semiconductors ([[entities/win-semiconductors]], 3105)**: Global leader in LEO-spec PA (power amplifier) contract manufacturing
-- **Ascend Tech ([[entities/ascend-tech]], 3491)**: Filters, waveguides; has entered Starlink and Amazon Kuiper supply chains; **9M-2025 gross margin ≈47.3%** (reconciled 2026-06-30 to the canonical [[entities/ascend-tech]] figure; an earlier ">50%" draft on this page is superseded)
+- **Ascend Tech ([[entities/ascend-tech]], 3491)**: Filters, waveguides; has entered Starlink and Amazon Kuiper supply chains; gross margin stepped from **9M-2025 ≈47.3% → H1-2026 ≈56.9%** as LEO rose to ≈80% of revenue (H1-2026 profit alone beat every prior full year — canonical figures on [[entities/ascend-tech]], verified 2026-08-23)
 
 ### Space-Grade Solar Cells (High-Efficiency GaAs Cells)
 As per-satellite power requirements surge from 2 kW to over 10 kW (Starlink V3, AI compute on orbit), high-efficiency GaAs solar cells become an essential need.
@@ -36,7 +36,7 @@ High-band (Ka/V) satellite antennas and RF modules require low-loss microwave su
 ## Mid-stream A: Satellite Bus Manufacturing and Systems Integration
 
 ### PCB and Structural Boards
-**[[entities/huatong-pcb]] (Compeq/Huatong)**: Close to 80% global market share in LEO satellite-specific PCBs (as of end of 2025). **FY2025 satellite-board revenue ≈NT$15.1B** (~20% of ≈NT$76B total; 2026 target NT$20B) — reconciled 2026-06-30 to the canonical [[entities/huatong-pcb]] figure; an earlier "Q4 2025 >NT$15.5B" draft on this page is superseded. Taiwan's PCB manufacturers collectively form a structural advantage.
+**[[entities/huatong-pcb]] (Compeq/Huatong)**: Close to 80% global market share in LEO satellite-specific PCBs (as of end of 2025). **FY2025 satellite-board revenue ≈NT$15.1B** (~20% of ≈NT$76B total); **2026 satellite-board est. ≈NT$18.5B (+22%)**, with **H1-2026 group revenue NT$39.54B +13.2% YoY and Jul-2026 NT$6.96B +16% YoY** (canonical figures on [[entities/huatong-pcb]], verified 2026-08-23; the earlier "Q4 2025 >NT$15.5B" draft is superseded). Taiwan's PCB manufacturers collectively form a structural advantage.
 
 ### Constellation Operator Satellites (Starlink V3 / Amazon Leo)
 - Starlink V3 increases the proportion of laser inter-satellite links (ISL), placing higher demands on RF components and thermal management
@@ -79,7 +79,7 @@ As constellation scale grows, debris management becomes a dual regulatory and en
 → See [[concepts/orbital-data-center]] for details
 
 ### On-Orbit Compute Nodes ([[entities/starcloud]] H100→Blackwell / [[entities/axiom-space]] relay-node ODC)
-Core logic: Explosive growth in Earth data-center electricity (IEA *Energy and AI*, 2025: **≈415 TWh in 2024 → ≈945 TWh by 2030**, US + China = ~80% of the growth) × free space solar energy × radiative cooling → long-term cost disruption. By mid-2026 the US node race has concrete hardware: [[entities/starcloud]] (Starcloud-1 H100 flown 2025-11; Starcloud-2 Blackwell-B200 + AWS-blade H2 2026) and [[entities/axiom-space]] (operational ODC Node 1 & 2 on Kepler optical relay, 2026-01). **Taiwan is no longer flatly absent at the *edge* tier**: [[entities/liscotech]]'s GPGPU100 (Nvidia Jetson Orin Nano, ~40 TOPS, TASA-licensed) flew on Black Kite-1 (2025-11-28) — Taiwan's first flown space-grade GPGPU — though the *hyperscale* (H100/Blackwell-class) integration tier stays absent. Global ODC race mapped by region in [[synthesis/orbital-data-center-six-region]]; Taiwan-specific edge-vs-hyperscale gradient in [[synthesis/leo-taiwan-odc-gap]].
+Core logic: Explosive growth in Earth data-center electricity (IEA *Energy and AI*, 2025: **≈415 TWh in 2024 → ≈945 TWh by 2030**, US + China = ~80% of the growth) × free space solar energy × radiative cooling → long-term cost disruption. By mid-2026 the US node race has concrete hardware: [[entities/starcloud]] (Starcloud-1 H100 flown 2025-11; Starcloud-2 Blackwell-B200 8 kW + AWS-blade **slipped from Oct-2026 into 2027** on rideshare-launch scarcity, per TechCrunch 2026-08-21; +$250M raise → $2.3B valuation) and [[entities/axiom-space]] (operational ODC Node 1 & 2 on Kepler optical relay, 2026-01). **Taiwan is no longer flatly absent at the *edge* tier**: [[entities/liscotech]]'s GPGPU100 (Nvidia Jetson Orin Nano, ~40 TOPS, TASA-licensed) flew on Black Kite-1 (2025-11-28) — Taiwan's first flown space-grade GPGPU — though the *hyperscale* (H100/Blackwell-class) integration tier stays absent. Global ODC race mapped by region in [[synthesis/orbital-data-center-six-region]]; Taiwan-specific edge-vs-hyperscale gradient in [[synthesis/leo-taiwan-odc-gap]].
 
 ### Energy Systems (24hr Solar Arrays / Radiative Cooling)
 24/7 solar power (no cloud cover) + passive radiative cooling toward the cosmic background is the differentiated energy advantage of ODC.
