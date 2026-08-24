@@ -19,9 +19,11 @@ Authoritative limits, **3GPP TS 38.104 (5G NR base station)** — identical to t
 | 16-QAM | **12.5%** | |
 | 64-QAM | **8%** | |
 | 256-QAM | **3.5%** | LO leakage / IQ imbalance now first-order |
-| 1024-QAM | ~2% (not yet a ratified 3GPP BS limit; ~2% used in practice/proposals) | calibration-limited regime |
+| 1024-QAM | **≈1.8%** (ratified — see note) | calibration/converter/phase-noise-limited regime |
 
-A typical engineering target of **1.5–2% EVM** (this page) therefore corresponds to "clean enough for 256-QAM with margin." Satellite waveforms (DVB-S2X high-order APSK; e.g. 16APSK on [[sources/hsieh-xband-leo-transmitter-2020]]) follow the same risk curve — higher-order constellations demand tighter EVM, which is why the 8% measured 16APSK result on that source counts as a pass for its order but would fail a 256-QAM link.
+> **Updated 2026-08-24:** 1024-QAM downlink is now a **ratified optional modulation in 3GPP Release 17** for the base station (prior text here read "not yet a ratified 3GPP BS limit" — corrected). The reported EVM ceiling is **≈1.8%** (secondary technical sources; the exact TS 38.104 Table 6.5.2.2-1 cell was not primary-verified this pass — reported, not asserted). Meeting it demands the full acceptance stack past 256-QAM: integrated phase noise <~0.3° RMS, PA linearization ([[concepts/dpd-digital-predistortion|DPD]]) with strong IMD suppression, and IQ calibration at the sub-0.1 dB / sub-0.5° level — i.e. the binding constraint sits on the converter/LO/calibration layer, not the PA.
+
+A typical engineering target of **1.5–2% EVM** (this page) therefore corresponds to "clean enough for 256-QAM with margin" — and now brushes the **1024-QAM** ceiling, which is exactly why the highest ratified order is converter- and phase-noise-limited rather than PA-limited. Satellite waveforms (DVB-S2X high-order APSK; e.g. 16APSK on [[sources/hsieh-xband-leo-transmitter-2020]]) follow the same risk curve — higher-order constellations demand tighter EVM, which is why the 8% measured 16APSK result on that source counts as a pass for its order but would fail a 256-QAM link.
 
 **Layer-down — why the ceiling costs power:** meeting the 3.5% 256-QAM ceiling forces the [[concepts/dpd-digital-predistortion|PA]] to run roughly **8–10 dB below its P1dB compression point** (output back-off) so residual nonlinearity stays under the error budget — directly trading transmit efficiency for constellation cleanliness. [[concepts/dpd-digital-predistortion|DPD]] exists precisely to recover part of that back-off (run the PA hotter at the same EVM), which is why the DPD/DFE tier is inseparable from the EVM gate. This is the ship/no-ship framing made quantitative: EVM ceiling → required back-off → PA efficiency → node DC/thermal budget.
 
@@ -143,7 +145,7 @@ EVM calibration is gated by the measurement instrument (VSA / signal analyzer / 
 
 This mirrors the converter-layer gap in [[concepts/zero-if-transmitter]] and the front-end map in [[synthesis/phased-array-rf-frontend-supply-chain]]: Taiwan and Korea fab and assemble RF at world scale but depend on US/Europe/Japan for the instruments that *certify* it. Calibration know-how (this page) is portable IP; the instrument is the chokepoint.
 
-**Market anchor (verified 2026-07-19):** the merchant vector-signal-analysis market is ≈**$422.9M (2025)**, ~7.1% CAGR to 2033, and **Keysight + Rohde & Schwarz + Anritsu together hold >50%** of it (Keysight ~27% / R&S ~19% of the adjacent VNA volume). This narrow three-vendor concentration is *why* the instrument, not the calibration algorithm, is the least-substitutable link — and it is sub-layer C of the [[synthesis/rf-transmitter-acceptance-layer-six-region]] map.
+**Market anchor (re-verified 2026-08-24, unchanged):** the merchant vector-signal-analysis market is ≈**$422.9M (2025)**, ~7.1% CAGR to 2033, and **Keysight + Rohde & Schwarz + Anritsu together hold >50%** of it (Keysight ~27% / R&S ~19% of the adjacent VNA volume; the wider spectrum-and-signal-analyzer market ≈$1.48B in 2026 → ~$2.20B by 2035 carries the same three-vendor concentration). This narrow three-vendor concentration is *why* the instrument, not the calibration algorithm, is the least-substitutable link — and it is sub-layer C of the [[synthesis/rf-transmitter-acceptance-layer-six-region]] map.
 
 ## Historical note
 
