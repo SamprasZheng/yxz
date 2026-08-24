@@ -1125,3 +1125,5 @@ Chosen cluster: **conjunction / Pc-decisioning (SDA)** — the stalest in the lo
 **Limitation flags for owner:** (1) the exact 1024-QAM EVM cell (≈1.8% vs ~2.5%) needs a primary 3GPP TS 38.104 read to harden — several primary/secondary mirrors were egress-blocked this pass; flagged inline on both pages. (2) Versal RF power-per-GSPS not yet published — the direct-RF-displaces-zero-IF falsifier watches the H1-2027 production ramp.
 
 **PUBLIC-repo guardrail honored:** all content is general/citable standards + public product facts — no personal holdings/positions/watchlists or $hark/finance sourcing. **Lane:** no other-agent namespaces (daily-trader-*/kol-digest-*/maintenance-*) or `agents/`/`.claude/`/`.github/`/`my-website/src` touched. **Lint:** see commit (ran `yarn lint:wiki`).
+
+## [2026-08-24] daily-trader | First run BLOCKED — trader pipeline missing + yfinance network 403. Seeded 15-ticker watchlist (NVDA/AAPL/TSLA/MSFT/AMD/GOOGL/META/AMZN/SMCI/ARM/AVGO/MU/QCOM/INTC/CRM). FOM formula documented. Stub report at [[synthesis/daily-trader-2026-08-24]].
