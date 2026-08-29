@@ -44,7 +44,7 @@ The read: the FY2025 "handset-GaAs → optical-datacom + LEO RF" pivot narrative
 
 ## Six-region foundry context
 
-Win is the Taiwan node of the GaN/GaAs RF foundry tier mapped in [[synthesis/phased-array-rf-frontend-supply-chain]]: it competes with the captive/IDM GaN lines of **Qorvo / Wolfspeed / MACOM (US)**, **STMicro / Infineon (Europe)**, **Sumitomo / Mitsubishi (Japan)**, and the sovereign-by-sanction domestic GaN build-out in **China (CETC-affiliated)**. Win's edge is merchant-foundry scale and >50% GaAs share; its structural limit is the same as the rest of Taiwan's RF stack — foundry-strong, **system/space-grade-integration-absent** ([[synthesis/leo-taiwan-odc-gap]]).
+Win is the Taiwan node of the GaN/GaAs RF foundry tier mapped in [[synthesis/phased-array-rf-frontend-supply-chain]]: it competes with the captive/IDM RF-GaN lines of **Qorvo / MACOM (US)** — MACOM now holds the ex-Wolfspeed RF GaN-on-SiC line (2023 acquisition, RTP fab transferred Jul 2025; Wolfspeed itself exited RF and, post-Chapter-11 in Sep 2025, is a SiC-*substrate*/power maker) — **STMicro / Infineon (Europe)**, **Sumitomo / Mitsubishi (Japan)**, and the sovereign-by-sanction domestic GaN build-out in **China (CETC-affiliated)**. Win's edge is merchant-foundry scale and >50% GaAs share; its structural limit is the same as the rest of Taiwan's RF stack — foundry-strong, **system/space-grade-integration-absent** ([[synthesis/leo-taiwan-odc-gap]]).
 
 ## Company lineage + long-horizon view (拉長時間軸)
 
