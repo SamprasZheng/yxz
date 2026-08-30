@@ -97,14 +97,14 @@ Who leads vs lags across the AESA / phased-array stack. Component-level supply-c
 
 | Region | Defense AESA radar | Commercial SATCOM / 5G phased array | Underlying semiconductor role |
 |---|---|---|---|
-| **US** | Leads — APG-77/81, SPY-6, 80+ space AI/SDA programs; DoD raised GaN to MRL-10, >$3B radar funding 2024–25 | Leads beamformer ICs (Analog Devices, Anokiwave) and GaN (Wolfspeed/Qorvo) | Designs + much of GaN-on-SiC capacity |
+| **US** | Leads — APG-77/81, SPY-6, 80+ space AI/SDA programs; DoD raised GaN to MRL-10, >$3B radar funding 2024–25 | Leads beamformer ICs (Analog Devices, **Qorvo** — absorbed Anokiwave 2024) and GaN PA (**Qorvo, [[entities/macom]]** — absorbed Wolfspeed's RF GaN 2023) | Designs + much of GaN-on-SiC capacity |
 | **Japan** | Early leader — **first operational AESA fighter (J/APG-1, 1995–2002)**; Mitsubishi Electric naval/air radar | Mid — strong components, smaller terminal market | GaAs/GaN device strength (Sumitomo, Mitsubishi) |
 | **Korea** | **Series-production milestone (2025-08):** [[entities/hanwha-aerospace|Hanwha]] Systems rolled out the *first mass-produced* KF-21 AESA — ~1,000 GaN T/R modules, Hanwha hardware + LIG Nex1 software; 40 sets to deliver 2025–2028; a Near-Field Chamber at Yongin tests 4 AESA units at once. First series-production **airframe** rolled out of KAI Sacheon under its own power **2026-03-25**; ~8 aircraft handed over in 2026 with operational deployment from **Sept 2026**, while ADD's multi-mode radar T&E runs through **Dec 2028** (re-verified 2026-08-10). Korea's first indigenous fighter AESA to reach series production | Mid — RFHIC GaN-on-SiC subsystems, MaxLinear DPD partnership (IMS 2024) | GaN-on-SiC subsystem leader (RFHIC; invested in SweGaN, Sweden) |
 | **China** | Leads by volume — CETC all-digital active phased arrays (YLC-16), 100+ systems shown at World Radar Expo 2025; GaN-based KJ-500 AEW | Growing — state-backed flat-panel + ODC ([[entities/ada-space]]) | Vertically integrated GaN/GaAs (CETC institutes) |
 | **Europe** | Leads in segments — Thales/Leonardo/Saab/Hensoldt AESA; ESA SATCOM | Mid — UMS/OMMIC (France) GaN foundries, terminal vendors | GaN foundry + design (UMS, OMMIC, Infineon) |
 | **Taiwan** | No indigenous *fighter* AESA, but an emerging dual-use array integrator — [[entities/tron-future-tech]] builds in-house AESA counter-drone radar (T.Radar) deployed with Taiwan's military (T-Dome); expanding into AI-guided munitions (Singapore Airshow 2026) | Emerging: [[entities/tron-future-tech]] **T.SpaceRouter** Ka-band AESA satcom-on-the-move user terminal — 1024-element TX + 1024-element RX, DL 17.8–20.2 / UL 27.5–30 GHz, ≤250 MHz IBW, 16APSK/QPSK/BPSK, EIRP >36 dBW, <100 W (Foxconn-EV / connected-vehicle trials); otherwise component supply | **Upstream foundry strength** — [[entities/win-semiconductors]] GaAs/GaN MMIC (+Viper RF, 1–150 GHz); [[entities/ascend-tech]] filters; the "strong upstream, absent midstream" pattern of [[synthesis/leo-taiwan-odc-gap]], now partially countered at the array-integrator node |
 
-## Sources & Verification (accessed 2026-05-31; market re-checked 2026-07-10; six-region refresh 2026-07-24; KF-21 airframe/deployment refresh 2026-08-10)
+## Sources & Verification (accessed 2026-05-31; market re-checked 2026-07-10; six-region refresh 2026-07-24; KF-21 airframe/deployment refresh 2026-08-10; US GaN-vendor consolidation 2026-08-30)
 
 - AESA fighter history: [J/APG-1 — Wikipedia](https://en.wikipedia.org/wiki/J/APG-1); [Mitsubishi F-2 — Wikipedia](https://en.wikipedia.org/wiki/Mitsubishi_F-2)
 - Beamforming/AF math (grating-lobe condition $d/\lambda \le 1/(1+|\sin\theta_0|)$, HPBW $\approx 0.886\lambda/Nd$, beam-squint $\approx -\tan\theta_0\,\Delta f/f_0$): standard array theory (Balanis, *Antenna Theory*; Mailloux, *Phased Array Antenna Handbook*) — textbook, not web-verified.
@@ -115,6 +115,7 @@ Who leads vs lags across the AESA / phased-array stack. Component-level supply-c
 - KF-21 first series-production airframe rollout (KAI Sacheon, 2026-03-25) + ~8 aircraft in 2026 / Sept-2026 operational deployment + ADD radar T&E through Dec 2028 (re-verified 2026-08-10): [Army Recognition](https://www.armyrecognition.com/news/aerospace-news/2026/south-korea-rolls-out-first-mass-produced-kf-21-boramae-for-operational-deployment); [Zona Militar](https://www.zona-militar.com/en/2026/01/31/the-kf-21-fighters-new-aesa-radar-for-the-south-korean-air-force-enters-its-final-phase-of-testing-and-evaluation/)
 - Taiwan Tron Future T.SpaceRouter Ka-band AESA terminal specs (1024-element TX+RX, DL 17.8–20.2 / UL 27.5–30 GHz, EIRP >36 dBW, <100 W): [Tron Future — Space Tech solution](https://www.tronfuture.com/solutions/space-tech/)
 - GaN RF foundry landscape (top-5 ≈ 60% revenue; DoD GaN MRL-10; GaN IC cost ~2–3× silicon): [Mordor Intelligence GaN RF report](https://www.mordorintelligence.com/industry-reports/gan-rf-semiconductor-devices-market)
+- **US GaN/beamformer-vendor consolidation (2026-08-30):** Wolfspeed RF-business → [[entities/macom|MACOM]] (completed 2023-12-02; RTP GaN-on-SiC fab transfer 2025-07-25) — [MACOM PR](https://www.macom.com/updates/news/2025/macom-completes-transfer-of-rtp-wafer-fab); Qorvo absorbed Anokiwave (closed Q1 2024) — [Semiconductor Today](https://www.semiconductor-today.com/news_items/2024/feb/qorvo-010224.shtml)
 
 ## Related Links
 
@@ -130,5 +131,6 @@ Who leads vs lags across the AESA / phased-array stack. Component-level supply-c
 - [[concepts/leo-value-chain]] — where AESA apertures sit in the LEO upstream/midstream
 - [[concepts/orbital-data-center]] — ISL beam-steering application of space AESA
 - [[entities/win-semiconductors]] — Taiwan GaAs/GaN MMIC foundry feeding AESA T/R modules
+- [[entities/macom]] — US GaN-on-SiC RF-PA IDM (absorbed Wolfspeed's RF business) supplying the T/R power stage
 - [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region RF front-end supply-chain map
 - [[synthesis/leo-taiwan-odc-gap]] — Taiwan "strong upstream, absent midstream" structural context

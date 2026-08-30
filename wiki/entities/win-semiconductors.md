@@ -44,13 +44,13 @@ The read: the FY2025 "handset-GaAs → optical-datacom + LEO RF" pivot narrative
 
 ## Six-region foundry context
 
-Win is the Taiwan node of the GaN/GaAs RF foundry tier mapped in [[synthesis/phased-array-rf-frontend-supply-chain]]: it competes with the captive/IDM GaN lines of **Qorvo / Wolfspeed / MACOM (US)**, **STMicro / Infineon (Europe)**, **Sumitomo / Mitsubishi (Japan)**, and the sovereign-by-sanction domestic GaN build-out in **China (CETC-affiliated)**. Win's edge is merchant-foundry scale and >50% GaAs share; its structural limit is the same as the rest of Taiwan's RF stack — foundry-strong, **system/space-grade-integration-absent** ([[synthesis/leo-taiwan-odc-gap]]).
+Win is the Taiwan node of the GaN/GaAs RF foundry tier mapped in [[synthesis/phased-array-rf-frontend-supply-chain]]: it competes with the captive/IDM GaN lines of **Qorvo / [[entities/macom]] (US** — MACOM having absorbed Wolfspeed's RF GaN-on-SiC business in 2023, after which Wolfspeed exited RF entirely to focus on SiC substrates/power), **STMicro / Infineon (Europe)**, **Sumitomo / Mitsubishi (Japan)**, and the sovereign-by-sanction domestic GaN build-out in **China (CETC-affiliated)**. Win's edge is merchant-foundry scale and >50% GaAs share; its structural limit is the same as the rest of Taiwan's RF stack — foundry-strong, **system/space-grade-integration-absent** ([[synthesis/leo-taiwan-odc-gap]]).
 
 ## Company lineage + long-horizon view (拉長時間軸)
 
 - **Backward:** founded **1999**; built the merchant **GaAs HBT/pHEMT** foundry model that let fabless RF houses (Skyworks/Qorvo-class designs) outsource compound-semi fab, then extended into **GaN-on-SiC** for higher-power infrastructure/satellite PAs. Two decades of process accumulation = the same *qualification/process moat* that defends [[entities/ascend-tech]] (passives) and [[entities/huatong-pcb]] (boards).
 - **~2030:** the deliberate handset-GaAs → **optical-datacom + LEO RF** pivot (above) is the bet; growth tracks AI-cluster optical-interconnect volume and constellation PA demand.
-- **~2040+ / 100-year (labelled scenario):** compound semiconductors remain the unavoidable physics layer for high-power/high-frequency RF and optical front-ends — a permanent toll booth like the rest of the cluster. The structural risk is **GaN-IDM in-sourcing** (US/Europe primes captive lines) and **China's sovereign-by-sanction GaN build-out** eroding merchant-foundry share, not technology obsolescence ([[synthesis/phased-array-rf-frontend-supply-chain]], [[synthesis/orbital-data-center-six-region]]).
+- **~2040+ / 100-year (labelled scenario):** compound semiconductors remain the unavoidable physics layer for high-power/high-frequency RF and optical front-ends — a permanent toll booth like the rest of the cluster. The structural risk is **GaN-IDM in-sourcing** (US/Europe primes captive lines — the concrete 2023–2025 example is [[entities/macom]] absorbing Wolfspeed's RF GaN-on-SiC line and taking full control of the RTP fab in 2025-07) and **China's sovereign-by-sanction GaN build-out** eroding merchant-foundry share, not technology obsolescence ([[synthesis/phased-array-rf-frontend-supply-chain]], [[synthesis/orbital-data-center-six-region]]).
 
 ## Taiwan LEO Supply Chain Position
 
@@ -70,6 +70,7 @@ See [[concepts/leo-value-chain]] upstream RF segment.
 - [[concepts/rha-radiation-hardening]]
 - [[entities/ascend-tech]]
 - [[entities/huatong-pcb]]
+- [[entities/macom]]
 - [[synthesis/phased-array-rf-frontend-supply-chain]]
 - [[synthesis/leo-taiwan-odc-gap]]
 - [[synthesis/orbital-data-center-six-region]]

@@ -53,13 +53,13 @@ The architecture choice above is downstream of a **process choice**. The hybrid 
 
 | Function | Process options | Why | Region strength |
 |---|---|---|---|
-| Power amplifier (T/R front end) | **GaN-on-SiC** (high power density, efficiency), GaAs (mature, lower power), LDMOS (sub-6 GHz) | GaN gives the highest W/mm and thermal headroom — now the default for radar and high-EIRP SATCOM | US (Wolfspeed/Qorvo), Korea (RFHIC), Taiwan ([[entities/win-semiconductors]] GaAs/GaN MMIC), France (UMS/OMMIC) |
+| Power amplifier (T/R front end) | **GaN-on-SiC** (high power density, efficiency), GaAs (mature, lower power), LDMOS (sub-6 GHz) | GaN gives the highest W/mm and thermal headroom — now the default for radar and high-EIRP SATCOM | US (Qorvo, **[[entities/macom]]** — absorbed Wolfspeed's RF GaN 2023), Korea (RFHIC), Taiwan ([[entities/win-semiconductors]] GaAs/GaN MMIC), France (UMS/OMMIC) |
 | Integrated beamformer IC (multi-channel phase/gain) | **SiGe BiCMOS**, advanced **CMOS** | Silicon integrates 4–8+ channels of phase shift + VGA cheaply → makes *commercial* flat-panel SATCOM economic | US (Analog Devices, Anokiwave), Renesas |
 | Up-converter / DAC | CMOS SoC | Integration + power | Broad |
 
 This is why the **same hybrid array** can be a $100M defense radar (GaN-heavy, all-digital) or a sub-$1k consumer SATCOM terminal (SiGe beamformer, hybrid): the process mix, not the block diagram, sets the price. Market context: the SATCOM beamforming-IC segment was sized ≈ USD 2.87–4.3B in 2025–26 (source estimates diverge; ~10–19% CAGR toward the mid-2030s), driven by LEO flat-panel volume. The 2025–26 silicon-beamformer trend is explicit power reduction — Qorvo's Ku-band AWMF-0240/0241 ICs (2025-03) cut terminal power up to 25% (Tx) / 14% (Rx) — while the binding constraint upstream is **GaN-on-SiC capacity**: US RF foundries ran ~80–90% utilization with 20–35-week lead times in 2026 (re-verified 2026-07-24). See [[synthesis/phased-array-rf-frontend-supply-chain]] for the full six-region map and dated citations.
 
-**Six-region read (台美日韓中國歐洲), compact —** *full detail and citations in [[synthesis/phased-array-rf-frontend-supply-chain]]*: **US** leads the two IP chokepoints (SiGe/CMOS beamformer ICs — ADI/Anokiwave; GaN PA — Wolfspeed/Qorvo). **Europe** holds independent GaN foundry + design (UMS/OMMIC France, Infineon). **Japan** is device-strong (Sumitomo/Mitsubishi GaN/GaAs) feeding modules. **Korea** owns the GaN-on-SiC subsystem node (RFHIC). **China** is vertically integrated but sanction-isolated (CETC institutes; state-backed flat-panel + [[entities/ada-space|ODC]]). **Taiwan** is upstream-strong ([[entities/win-semiconductors]] GaAs/GaN MMIC) but historically midstream-absent at the *array integrator*, now partially countered by [[entities/tron-future-tech]]'s **T.SpaceRouter** Ka-band hybrid LEO terminal (1024-element TX + 1024-element RX, DL 17.8–20.2 / UL 27.5–30 GHz, EIRP >36 dBW, <100 W, 16APSK/QPSK/BPSK; Foxconn-EV satcom-on-the-move trials) — the [[synthesis/leo-taiwan-odc-gap]] pattern at the array node.
+**Six-region read (台美日韓中國歐洲), compact —** *full detail and citations in [[synthesis/phased-array-rf-frontend-supply-chain]]*: **US** leads the two IP chokepoints (SiGe/CMOS beamformer ICs — ADI + Qorvo, the latter having absorbed Anokiwave in 2024; GaN PA — Qorvo + [[entities/macom]], the latter having absorbed Wolfspeed's RF GaN-on-SiC line in 2023). **Europe** holds independent GaN foundry + design (UMS/OMMIC France, Infineon). **Japan** is device-strong (Sumitomo/Mitsubishi GaN/GaAs) feeding modules. **Korea** owns the GaN-on-SiC subsystem node (RFHIC). **China** is vertically integrated but sanction-isolated (CETC institutes; state-backed flat-panel + [[entities/ada-space|ODC]]). **Taiwan** is upstream-strong ([[entities/win-semiconductors]] GaAs/GaN MMIC) but historically midstream-absent at the *array integrator*, now partially countered by [[entities/tron-future-tech]]'s **T.SpaceRouter** Ka-band hybrid LEO terminal (1024-element TX + 1024-element RX, DL 17.8–20.2 / UL 27.5–30 GHz, EIRP >36 dBW, <100 W, 16APSK/QPSK/BPSK; Foxconn-EV satcom-on-the-move trials) — the [[synthesis/leo-taiwan-odc-gap]] pattern at the array node.
 
 ## Forward Trajectory (scenario)
 
@@ -96,11 +96,13 @@ X-band hybrid phased array transmitter (reference: publicly available iCASE 2020
 - [[concepts/see-single-event-effects]] — single event effects
 - [[concepts/leo-value-chain]] — where the RF front-end module sits in the LEO upstream
 - [[entities/win-semiconductors]] — GaAs/GaN MMIC foundry supplying the PA layer
+- [[entities/macom]] — US GaN-on-SiC RF-PA IDM (absorbed Wolfspeed's RF business) at the same PA layer
 - [[synthesis/phased-array-rf-frontend-supply-chain]] — six-region beamformer/GaN supply-chain map
 - [[synthesis/leo-taiwan-odc-gap]] — Taiwan upstream-strong / midstream-absent context
 
-## Sources (accessed 2026-05-31; market + Taiwan-terminal refresh 2026-07-24)
+## Sources (accessed 2026-05-31; market + Taiwan-terminal refresh 2026-07-24; US GaN-vendor consolidation 2026-08-30)
 
 - SATCOM beamformer-IC market sizing (2.87B 2025 → 3.21B 2026 → 7.94B 2034, 10.6% CAGR): [Phased Array Beamforming IC for SATCOM market report (Semiconductor Insight)](https://semiconductorinsight.com/report/phased-array-antenna-beamforming-ic-for-satcom-market/); silicon-beamformer power trend + US foundry utilization/lead-times — [Phased Array Beamforming ICs Market (SNS Insider)](https://www.snsinsider.com/reports/phased-array-beamforming-ics-market-9280)
 - Tron Future T.SpaceRouter Ka-band hybrid AESA terminal specs: [Tron Future — Space Tech solution](https://www.tronfuture.com/solutions/space-tech/)
 - GaN RF foundry landscape: [Mordor Intelligence GaN RF report](https://www.mordorintelligence.com/industry-reports/gan-rf-semiconductor-devices-market)
+- US GaN-PA vendor consolidation (Wolfspeed RF → [[entities/macom|MACOM]], RTP fab transfer 2025-07-25): [MACOM PR](https://www.macom.com/updates/news/2025/macom-completes-transfer-of-rtp-wafer-fab)
