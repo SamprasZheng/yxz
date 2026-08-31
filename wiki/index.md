@@ -203,6 +203,10 @@ type: index
 - [[concepts/calibrated-confidence-llm]] — Calibration techniques (temperature scaling, Platt, verbalised, P(IK), conformal prediction, selective prediction); three-class `answer / abstain / escalate` output; coverage-risk operating point per decision-verb class; Layer 3 of the Spacesharks trust stack
 - [[concepts/agentic-provenance]] — Four-layer trust model (data / model / decision / system); W3C PROV-DM / C2PA / NIST AI 600-1 / EU AI Act Article 50 / CycloneDX ML-BOM analogues; reproducibility invariant tying every published row back to its raw evidence blob; the labelled-lifecycle-dataset moat is provenance-defensible only
 
+## Trader / Research
+
+- [[synthesis/daily-trader-2026-08-29]] — 2026-08-29 bootstrap stub: trader pipeline absent + yfinance proxy-blocked; core watchlist seeded (NVDA/AAPL/TSLA/MSFT/AMD/GOOGL/META/AMZN); FOM formula established; build requirements documented
+
 ## Synthesis
 
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" gap, **now reframed (2026-08-03) as an edge-vs-hyperscale gradient**: edge on-orbit compute is *flown* ([[entities/liscotech]] GPGPU100 Orin-Nano 40 TOPS, Black Kite-1) + array integration exists ([[entities/tron-future-tech]]), but hyperscale (H100/Blackwell-class) integration stays absent while China (Orbital Chenguang $8.4B) + US build gigawatt-class; IEA 415→945 TWh anchor; four breakthrough paths (PCB→compute-board / defense-sovereign-cloud / upstream-extension / agency-catalysed edge); falsifier table (**deepened 2026-08-23**: H1-2026 actuals show the upstream thesis *accelerating with margin EXPANSION not compression* — UMT GM 47.3%→56.9% + H1 profit > every prior full year + LEO 80% of rev, Win Q2 +39% YoY / optical-datacom ≈2× YoY, Compeq H1 +13.2% / Jul +16%; China flown-endurance lead widened — Three-Body >8-day optical ISL 99.99% uptime Jul-2026; US Starcloud-2 Blackwell launch slipped Oct-2026→2027)
