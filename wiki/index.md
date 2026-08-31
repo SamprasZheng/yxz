@@ -59,6 +59,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-08-15]] — KOL + keyword digest 2026-08-15: Claude Code auto-mode default, Anthropic Decart AI ~$6B + IPO roadshow, NVIDIA Nemotron 3.5 Lightning + NeMo Switchyard, NemoClaw v0.0.101–v0.0.108, Polkadot tx spike 5→442 + JAMdotTech M1, Audrey Tang Mila AI keynote (automated, 0 KOLs / 11 keywords)
 
 ## Entities
 
