@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "date": "2026-08-30",
+    "run_mode": "STUB",
+    "llm_backend": "disabled",
+    "trader_offline": true,
+    "blockers": [
+      "agents/src/trader/ pipeline does not exist — only agents/src/firefly/ is present",
+      "yfinance blocked by proxy: Yahoo Finance cookie endpoint returns 403 in this remote execution environment",
+      "No prior daily-trader-*.md files found — first run, no backtest data"
+    ],
+    "watchlist": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+    "note": "Stub output. Market data and LLM scan require building the trader pipeline and allowing Yahoo Finance / an alternative data endpoint through the proxy."
+  },
+  "scan": [
+    {"ticker": "NVDA", "direction": "N/A", "confidence": null, "sizing_sigma": null, "thesis": "stub — no pipeline", "news_momentum": null},
+    {"ticker": "AAPL", "direction": "N/A", "confidence": null, "sizing_sigma": null, "thesis": "stub — no pipeline", "news_momentum": null},
+    {"ticker": "TSLA", "direction": "N/A", "confidence": null, "sizing_sigma": null, "thesis": "stub — no pipeline", "news_momentum": null},
+    {"ticker": "MSFT", "direction": "N/A", "confidence": null, "sizing_sigma": null, "thesis": "stub — no pipeline", "news_momentum": null},
+    {"ticker": "AMD",  "direction": "N/A", "confidence": null, "sizing_sigma": null, "thesis": "stub — no pipeline", "news_momentum": null},
+    {"ticker": "GOOGL","direction": "N/A", "confidence": null, "sizing_sigma": null, "thesis": "stub — no pipeline", "news_momentum": null},
+    {"ticker": "META", "direction": "N/A", "confidence": null, "sizing_sigma": null, "thesis": "stub — no pipeline", "news_momentum": null},
+    {"ticker": "AMZN", "direction": "N/A", "confidence": null, "sizing_sigma": null, "thesis": "stub — no pipeline", "news_momentum": null}
+  ],
+  "backtest": {
+    "prior_date": null,
+    "prior_watchlist": [],
+    "hit_rate": null,
+    "mean_realized_return": null,
+    "note": "No prior daily-trader report — nothing to backtest on first run."
+  },
+  "rerank": {
+    "tier_1": [],
+    "tier_2": [],
+    "dropped": [],
+    "note": "Rerank skipped — no scan scores available."
+  },
+  "fom": {
+    "formula": "FOM = 0.4 * confidence + 0.3 * normalized_sizing_sigma + 0.2 * recent_hit_rate + 0.1 * news_momentum",
+    "components": "Each component normalized to [0,1]. confidence = LLM thesis confidence. normalized_sizing_sigma = volatility-adjusted position size signal, normalized within watchlist. recent_hit_rate = trailing 5-day directional accuracy for this ticker. news_momentum = normalized recency-weighted positive/negative news score.",
+    "table": []
+  }
+}
