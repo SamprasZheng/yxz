@@ -60,6 +60,8 @@ type: index
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
 
+- [[sources/kol-digest-2026-08-20]] — KOL + keyword digest 2026-08-20: Nemotron 3.5 Lightning + Nemotron 4 tease; NemoClaw v0.0.108 host-mount; Claude Code self-hosted beta + $65B Anthropic ARR; OpenAI 1B users; DOT -7% + Grayscale ETF withdrawal (automated daily sweep)
+
 ## Entities
 
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
