@@ -32,6 +32,7 @@ Ant runs a **full-stack, multi-arm** agentic-payment effort. Three arms, three a
 ### 2. Agentic Commerce Trust Protocol + AI Wallet + Token Pay (the infrastructure layer)
 
 - **Agentic Commerce Trust Protocol** (Jan 2026): a partner-developed "common language" for AI systems ↔ service platforms, launched with Taobao Instant Commerce and Alibaba's **Qwen App**; the launch that drove the Feb 2026 volume surge.
+- **AHA Protocol + full-stack agentic-commerce infrastructure** (2026): Alipay's positioning as **China's first full-stack agentic-commerce infrastructure**, anchored by the **AHA Protocol** and an **interconnection alliance of 20+ partners incl. Huawei and BYD** — the domestic super-app answer to the fragmentation below. Paired with **"Abo"**, Ant's conversational AI-commerce interface (2026-06-16) ([Stellagent](https://stellagent.ai/insights/alipay-full-stack-agentic-commerce-aha-protocol)).
 - **AI Wallet** (launched 2026-05-26): consumer interface inside Alipay to monitor, manage, and **authorize** tasks an agent executes before/during/after a payment — the human-in-the-loop authorization layer (analogous to Google AP2 Mandates / [[entities/mastercard]] Verifiable Intent).
 - **Token Pay** (launched 2026-05-26): a **B2B** product aimed at AI model providers for subscription management, token top-ups, and complex microtransactions. ⚠️ The "token" here = **API tokens / digital credits, not blockchain tokens** — a centralized-infrastructure approach. Launch partners include **MiniMax** and **Stepfun** ([Business Wire, 2026-05-26](https://www.businesswire.com/news/home/20260526337824/en/); [KuCoin](https://www.kucoin.com/news/flash/ant-group-launches-ai-wallet-and-token-pay-to-challenge-wechat-in-mobile-commerce)).
 
@@ -42,6 +43,19 @@ Ant runs a **full-stack, multi-arm** agentic-payment effort. Three arms, three a
 
 > **Nuance for the six-region frame**: the synthesis describes China's lead architecture as "closed super-app AI checkout." That is true *domestically* (Alipay AI Pay). But Ant's **cross-border** arm is going *open* (AMP open-sourced) precisely where it must interoperate with non-Chinese platforms — i.e. closed where it owns the graph, open where it does not. This refines the binary "open West vs closed China" read tracked in [[synthesis/agentic-payments-six-region]].
 
+## Intra-China agent-layer protocol war (refined 2026-08)
+
+Ant is the volume leader, but it is **not** the whole of China's agentic-payment landscape — a framing correction the six-region synthesis now carries. Mid-2026 opened a **multi-player protocol war** with *no converged transaction-layer standard even inside China*:
+
+| Player | Vehicle / protocol | Date | Note |
+|---|---|---|---|
+| **Ant / Alipay** | AHA Protocol + AMP (cross-border) + "Abo" interface | 2026-04 → 06 | Volume leader (~300M cumulative); 20+-partner alliance (Huawei/BYD) |
+| **JD.com** | **A2P2** (Agent Autonomous Payment Protocol) | 2026-06-11 | Paired with a Tencent alliance linking WeChat users to JD fulfillment (A2A) |
+| **UnionPay** | **APOP** (Agent Payment Open Protocol) | 2026-06-16 | State card-network incumbent going agent-native |
+| **Tencent / WeChat** | in-app agent (swipe-right surface) | reg. filing ~2026-06 | ~1.3B MAU graph; execution layer via the JD partnership |
+
+Caixin frames this as a re-run of the **2010s QR-code payment standards scramble** — each player racing to lock in merchants/developers before a rival's protocol wins ([Caixin, 2026-03-20](https://www.caixinglobal.com/2026-03-20/in-depth-ai-agents-ignite-global-battle-for-the-future-of-payments-102425259.html); [The Next Web](https://thenextweb.com/news/chinas-tech-giants-are-replacing-the-search-bar-with-ai-agents-that-shop-for-you)). The takeaway for the wiki: "China's lead architecture = closed super-app" is directionally right on *volume* but hides an **unsettled domestic standards war** as fragmented as the West's five-protocol field.
+
 ## Conspicuous absence from the Western neutral layer
 
 Ant/Alipay is **not** a member of the [[concepts/x402-protocol|x402 Foundation]] (now under Linux Foundation governance). China and Taiwan are the only six-region members of [[synthesis/agentic-payments-six-region]] absent from that founding membership — Ant is building a parallel, sovereign agentic-payment stack rather than buying into the US-anchored open standard. (Contrast Korea, whose KakaoPay *did* join as a hedge.) China's e-CNY (digital yuan) runs on a separate state track.
@@ -51,7 +65,7 @@ Ant/Alipay is **not** a member of the [[concepts/x402-protocol|x402 Foundation]]
 | Dimension | Ant / Alipay AI Pay | x402 (Coinbase) | Stripe ACP/MPP | Visa/Mastercard |
 |---|---|---|---|---|
 | Substrate | Closed ~1B-user super-app | Open HTTP + stablecoin | Open spec + card rails | Card network + trust layer |
-| Real volume (2026) | **~300M cumulative txns** | ~140M cumulative txns | Early | "Hundreds"/early |
+| Real volume (2026) | **~300M cumulative txns** | 160M+ cumulative txns (but only ~$41M *value* settled; week of 2026-08-17 = 8.7M transfers / ~$368K) | Early | "Hundreds"/early |
 | Settlement | Centralized (AI Wallet) + crypto via Ant Digital | On-chain USDC/ERC-20 | Fiat + stablecoin | Card + tokens |
 | Governance | Sovereign / proprietary (AMP open-sourced cross-border) | x402 Foundation (Linux Foundation) | Apache 2.0 | FIDO/EMVCo/W3C |
 
