@@ -60,6 +60,8 @@ type: index
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
 
+- [[sources/kol-digest-2026-08-31]] — KOL + keyword digest (automated daily sweep, 2026-08-31): 0 KOLs (list empty), 11 keywords, ~50 items; top signals: Nemotron 3.5 Lightning released + Nemotron 4 (1T params) in dev, AI agent security crisis (OpenClaw CVE-2026-25253 + NemoClaw Ollama-poisoning), Claude Code auto mode default + Sonnet 5 pricing change (Aug 31), Polkadot 21Shares TDOT staking ETF + 900M+ DOT staked
+
 ## Entities
 
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
