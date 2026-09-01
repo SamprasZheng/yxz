@@ -1,0 +1,27 @@
+{
+  "scan_date": "2026-09-01",
+  "run_status": "STUB — pipeline and data source unavailable",
+  "blockers": [
+    {
+      "id": "B1",
+      "component": "agents/src/trader/",
+      "description": "Trader pipeline does not exist. Only agents/src/firefly/ is present. The CLI entrypoint trader/cli.py, orchestrator.py, schemas, and tool clients referenced in the scheduled task have not been built yet.",
+      "remediation": "Build the trader pipeline scaffold: cli.py, orchestrator.py, tools/yfinance_client.py, schemas.py, and at minimum a thesis-scoring agent. See PR for build plan."
+    },
+    {
+      "id": "B2",
+      "component": "yfinance / Yahoo Finance API",
+      "description": "All yfinance HTTP requests fail with CONNECT tunnel 403 (proxy blocks fc.yahoo.com and chart.finance.yahoo.com). This is a network-policy restriction in the remote execution environment, not a yfinance bug.",
+      "remediation": "Options: (1) Use an allowed data provider (Alpha Vantage, Polygon.io, Quandl) with an API key stored in repo secrets. (2) Request proxy allow-listing for finance.yahoo.com in the remote env settings. (3) Pre-fetch price data from a local/CI environment and commit a JSON fixture before the remote agent runs."
+    }
+  ],
+  "watchlist_seed": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN", "SMCI", "PLTR", "AVGO", "ARM", "CRM", "NOW", "SNOW"],
+  "scan_verdicts": [],
+  "reranked_tiers": {
+    "tier1": [],
+    "tier2": []
+  },
+  "fom_table": [],
+  "fom_formula": "FOM = 0.4 * confidence + 0.3 * normalized_sizing_sigma + 0.2 * recent_hit_rate + 0.1 * news_momentum",
+  "notes": "First run. No prior daily-trader report exists to backtest against. Hit rate = N/A. Scan deferred pending B1 + B2 resolution."
+}
