@@ -86,6 +86,8 @@ Based on the research at ingest, these aerospace MCP integrations were **not fou
 
 The claim in [[sources/nvidia-agent-challenge-2026]] context that "academia has only just started advocating MCP in aerospace" is **approximately accurate** — there is no academic paper on MCP-in-aerospace at ingest time; all implementations are practitioner-built GitHub repos.
 
+**Flown-agent datapoint (2026-09 update):** the first agentic system actually *flown in orbit*, NASA JPL's [[sources/navi-orbital-vlm-earth-obs-2026|NAVI-Orbital]] (Gemma 3 VLM on a Loft Orbital YAM-9, live 2026-04-16), is orchestrated by a **LangGraph graph-based state machine** coordinating detection + dialogue agents — **not MCP**. The near-simultaneous Europe milestone, Thales Alenia Space's [[sources/astrea-orbital-thermal-autonomy-2025|ASTREA]] (LLM-supervisor + RL on the ISS), is a bespoke asynchronous architecture, also not MCP. So as of 2026-09 the *proposal* literature ([[sources/developing-ai-agents-satellite-ops-2025]]) advocates MCP, but the *flown* systems do not yet use it — the tool-protocol layer for on-orbit agents is still pre-standardization, which keeps the "publish a Space-Track/SPICE MCP server" opening open rather than closed.
+
 ## The Spacesharks architectural angle
 
 The owner's claim is:

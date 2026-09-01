@@ -7,7 +7,7 @@ tags: [llm-agent, satellite-operations, competitive-intel, mission-desk, spacesh
 
 This page maps the academic frontier, commercial vendor landscape, and hyperscaler offerings in the emerging category of **LLM-powered satellite operations agents**. It is the competitive intelligence core for [[synthesis/spacesharks-mission-desk-hackathon-plan]].
 
-Last researched: 2026-05-24. **Fact-check pass 2026-07-07** — verified/updated: MSBAI Direct-to-Phase-II framing + SDA TAP Lab Apollo Demo Day (2025-08-13, KeepTrack integration) → see [[concepts/jepa-sda-multi-agent-rl]] §3; MCP now Linux-Foundation/Agentic-AI-Foundation governed with an individual-based Steering Group → see [[concepts/mcp-aerospace-applications]]; AIKO funding corrected to €6.5M total (Series A €3.5M Oct 2024) + new ASI-funded **ASIMOV** proximity-operations program; China "Air Target Agent System" confirmed via SCMP (2026-05-28 unveil). **Fact-refresh 2026-08-11** — [[entities/slingshot-aerospace|Slingshot]] **MENTAT/Talos** added ($69.2M USSF OTTI SBIR-III 2026-07-15, its largest-ever, + $27M AI-training-environment 2026-01-15), rebranding its category as "Space Operations Intelligence & Autonomy (SOIA)"; MSBAI >17,000-active-spacecraft-by-2026 ops anchor; China Air-Target-Agent re-confirmed (SCMP/IE/The Star, still secondary-press).
+Last researched: 2026-05-24. Fact-check 2026-07-07; fact-refresh 2026-08-11 (Slingshot MENTAT/Talos). **Deepened 2026-09-01** — the academic frontier stopped being *proposal-only*: two agentic LLM/VLM systems **flew in orbit** — [[sources/astrea-orbital-thermal-autonomy-2025|ASTREA]] (Thales Alenia Space, first agentic LLM controlling a live subsystem — thermal — aboard the ISS, TRL 9) and [[sources/navi-orbital-vlm-earth-obs-2026|NAVI-Orbital]] (NASA JPL, first in-orbit VLM, Gemma 3 + LangGraph on Loft Orbital YAM-9, 2026-04). Both use **small open-weight models on Jetson-class edge GPUs**. Also: **TALOS acronym decoded** ("Thinking Agent for Logical Operations and Strategy," still training/rehearsal-scoped). Earlier refresh (2026-08-11): Slingshot MENTAT/Talos added ($69.2M USSF OTTI SBIR-III 2026-07-15 + $27M AI-training-env 2026-01-15, "SOIA" rebrand); MSBAI >17,000-active-spacecraft ops anchor; China Air-Target-Agent (SCMP/IE/The Star, secondary-press).
 
 ---
 
@@ -33,6 +33,21 @@ The IAPGOS paper is earlier-stage (RAG-only, no MCP/ReAct, Indian engineering co
 
 **Venue correction**: The owner's intel briefing described both papers as appearing in "IEEE" and "OpsJournal." The Journal of Space Operations is the SpaceOps Technical Committee journal (not IEEE); the IAPGOS paper is not IEEE. Neither is in a top-tier venue. This means the academic field is early and accessible — no significant moat from publication difficulty.
 
+### First in-orbit agentic deployments — FLOWN, not proposed (2025-09 → 2026-04)
+
+The table above is *proposals*. As of 2026-09, two systems moved the frontier from paper to flight — the first agentic LLM/VLM systems to run **in orbit** rather than in a ground sim. They matter because they retire the "all LLM-for-sat-ops is architecture-diagram-only" read and replace it with a sharper "flown, but single-scope" read.
+
+| System | Builder / region | Host & date | Model + orchestration | Subsystem / task | Result | TRL |
+|---|---|---|---|---|---|---|
+| [[sources/astrea-orbital-thermal-autonomy-2025|ASTREA]] | Thales Alenia Space (🇪🇺 Europe) | ISS, arXiv 2025-09-16 | Qwen2.5-1.5B (4-bit) LLM *supervising* an RL controller, asynchronous | **Live thermal control** | First ISS run lost to baseline (inference latency vs ~90-min thermal cycle); after syncing decision cadence to orbit length, **beat baseline** (fewer violations, longer episodes) | 9 (flight-heritage HW) |
+| [[sources/navi-orbital-vlm-earth-obs-2026|NAVI-Orbital]] | NASA JPL + Loft Orbital (🇺🇸 US) | YAM-9, live 2026-04-16 | Gemma 3 VLM (zero-shot) + **LangGraph** state machine (detection + dialogue agents), Jetson Orin AGX | **EO scene classification + operator dialogue** (re-tasked via plain-English prompts) | **88%** zero-shot on a 7,960-image benchmark; two live captures (Toulouse, Argentina) | 9 (flown) |
+
+Three observations for the Spacesharks positioning:
+
+1. **The gap moved from "existence" to "scope."** Both are single-subsystem (thermal) or single-task (imagery), *not* the cross-phase lifecycle copilot Spacesharks targets — so the structural gap in §4 below (no lifecycle-axis fusion, no external-signal fusion) is unaffected. What changed is that "no LLM agent has ever flown" is now false and can no longer be an implicit selling point.
+2. **The binding constraint is inference cadence, not model capability.** ASTREA's honest "lost then won" ISS result shows the wall is latency-vs-orbital-dynamics — relevant to any on-board Spacesharks/Firefly deployment (a ground-side desk sidesteps it; an on-orbit one inherits it).
+3. **Both used open-weight models on commodity edge GPUs** (Qwen2.5-1.5B; Gemma 3 on Jetson Orin — the same [[concepts/cots-gpu-radiation-risk|Orin family]] as [[entities/liscotech|LiscoTech]]'s flown GPGPU100). Model access is not the differentiator; data + orchestration + lifecycle scope are — the [[synthesis/llm-satellite-operations-six-region|data-access-not-model-access]] thesis, now with flown evidence.
+
 ---
 
 ## 2. Commercial Vendors
@@ -52,7 +67,7 @@ The IAPGOS paper is earlier-stage (RAG-only, no MCP/ReAct, Indian engineering co
 
 1. **No vendor has publicly shipped an LLM-based conversational telemetry interface in production.** All AI in the table is classical ML (scheduling optimization, orbit determination, anomaly classification) or specialized deep learning (AIKO), not LLM reasoning.
 
-2. **Slingshot is the largest/best-funded pure-play** and, with the 2026 **MENTAT** program (core agent **Talos**, an "operational training and strategy agent," $69.2M USSF OTTI SBIR-III 2026-07-15), now the most explicitly *agent*-branded US vendor and self-styled leader in "Space Operations Intelligence & Autonomy (SOIA)." But its *confirmed* AI is still behavior-classification (IRL in Agatha) plus a training/rehearsal agent — **not a live-flight LLM-reasoning copilot**, and Slingshot does not disclose an LLM core. The distinction matters for the structural gap below: an *agent that wargames decisions* is not yet an *agent that flies the bus*.
+2. **Slingshot is the largest/best-funded pure-play** and, with the 2026 **MENTAT** program (core agent **TALOS** = "**T**hinking **A**gent for **L**ogical **O**perations and **S**trategy," $69.2M USSF OTTI SBIR-III 2026-07-15), now the most explicitly *agent*-branded US vendor and self-styled leader in "Space Operations Intelligence & Autonomy (SOIA)." TALOS **models realistic spacecraft behaviors and generates strategic response options** to make mission-rehearsal exercises unpredictable — i.e. it *wargames* an adversary spacecraft, it does not fly one. Its *confirmed* AI is still behavior-classification (IRL in Agatha) plus this training/rehearsal agent — **not a live-flight LLM-reasoning copilot**, and Slingshot does not disclose an LLM core. The distinction matters for the structural gap below: an *agent that wargames decisions* is not yet an *agent that flies the bus*. (Contrast the two systems that *did* fly a live loop — ASTREA/NAVI-Orbital above — neither of which is Slingshot's.)
 
 3. **Cognitive Space is the closest direct competitor** to Spacesharks in mission planning dimension, but its market is collection tasking for EO operators, not lifecycle decision co-piloting.
 
@@ -141,6 +156,8 @@ Key reframe: **the US leads on deployment despite a thin LLM-reasoning layer bec
 - [[concepts/swpc-space-weather-feeds]] — SWPC operational feeds and agent integration
 - [[sources/developing-ai-agents-satellite-ops-2025]] — closest academic analogue
 - [[sources/llm-expert-agent-mission-ops-2025]] — companion academic paper
+- [[sources/astrea-orbital-thermal-autonomy-2025]] — first flown agentic-LLM (Europe, ISS thermal control)
+- [[sources/navi-orbital-vlm-earth-obs-2026]] — first in-orbit VLM agent (US/NASA JPL, Gemma 3 + LangGraph)
 - [[entities/cognitive-space]] — closest commercial competitor
 - [[entities/slingshot-aerospace]] — largest-funded competitor
 - [[entities/kayhan-space]] — maneuver planning competitor
