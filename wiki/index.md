@@ -94,6 +94,8 @@ type: index
 - [[entities/bill-laboon]] — Web3 Foundation VP of Ecosystem (promoted Nov 2025); former Director of Education; launched Polkadot Agents Program; ex-CS lecturer at U of Pittsburgh
 - [[entities/dotleap-gbaci]] — DotLeap newsletter by gbaci/Gilbert Bassey; leading English weekly Polkadot ecosystem digest; newsletter.dotleap.com
 - [[entities/sampras]] — Sampras Zheng; RF/hardware engineer, Polkadot ambassador, wiki owner, builder of Jamia & Spacesharks myGPTs
+- [[entities/anthropic]] — US AI safety company (Claude / Claude Code / Claudeforce); Sonnet 5 standard pricing live 2026-09-01; Salesforce open beta Sept 2026
+- [[entities/openai]] — US AI company (ChatGPT / GPT / o-series); IPO S-1 imminent Sept 2026; $2B/month revenue; ACP co-author with Stripe
 - [[entities/audrey-tang]] — Former Taiwan Digital Minister; co-author of *Plurality*; civic-tech pioneer
 - [[entities/project-liberty]] — Sponsor of DSNP and cross-platform user-owned social networking push
 - [[entities/frequency]] — Polkadot parachain for DSNP social-graph data; FRQCY token + Capacity anti-spam model; built by Amplica Labs; MeWe 500K-user migration
