@@ -14,6 +14,7 @@ Layer-0 blockchain protocol enabling interoperability between heterogeneous bloc
 - **Token:** DOT — used for governance, staking, and coretime purchase
 - **Governance:** OpenGov — DOT holders initiate and vote on referenda directly on-chain
 - **Interop protocol:** [[concepts/xcm]] (Cross-Consensus Messaging)
+- **Decentralization (verified 2026-09-01):** **Nakamoto coefficient = 172** — #1 among major networks per [Chainspect](https://chainspect.app/dashboard/decentralization), far ahead of TON/Avalanche; the metric = the smallest number of independent validators that could collectively halt the chain, so a high value reflects Polkadot's ~500-validator NPoS validator spread. A durable, quantified "the security substrate is genuinely distributed" datapoint underneath the [[concepts/jam]]/[[concepts/dot-hard-cap]] long-horizon security bet ([PolkaWorld](https://twitter.com/polkaworld_org/status/1918271029123928181), CoinDesk corroboration)
 
 ## 2024 milestones (per [[sources/polkasharks-ep10-2024-annual]])
 
@@ -34,7 +35,7 @@ Layer-0 blockchain protocol enabling interoperability between heterogeneous bloc
 - **Multi-Chain Rally (early 2026)**: 100,000+ TPS without raising user fees
 - **Second Era** announced (Berlin Web3 Summit, July 2025): [[concepts/dot-hard-cap]], [[concepts/proof-of-personhood]], pUSD stablecoin, validator reward halving
 
-## Technology roadmap (status verified 2026-08-12)
+## Technology roadmap (status verified 2026-09-02)
 
 | Feature | Status |
 |---|---|
@@ -42,12 +43,13 @@ Layer-0 blockchain protocol enabling interoperability between heterogeneous bloc
 | Agile Coretime | ✅ Shipped |
 | Elastic Scaling | ✅ Shipped |
 | Polkadot Hub (Revive / PolkaVM) | ✅ Shipped 2025 |
+| **Products Devnet** (the "Platform & Product" surface) | ✅ **Launched 2026-08-31** — a feeless developer sandbox for building & hosting decentralised apps as **static web Products**: build a static web app → give it a **`.dot` domain** → publish the bundle → call `@parity/product-sdk` for platform services; Products run in the Polkadot host across the **Asset Hub + People + Bulletin** chains. First dated, shipped instance of [[entities/gavin-wood|Gavin Wood]]'s tech→**Platform-and-Product** pivot, and the delivery rail for [[concepts/proof-of-personhood|PoP]]'s personhood-gated short `.dot` names |
 | [[concepts/dot-hard-cap]] (2.1 B), first issuance cut | ✅ **LIVE** — runtime upgrade enacted 2026-03-12, mechanics from 2026-03-14 ("Pi Day"); issuance ~120 M → ~56.88 M DOT/yr, net inflation ~3.1%, circulating ~1.68 B (~80% of cap) — see [[concepts/dot-hard-cap]] for canonical numbers |
 | [[concepts/jam]] **open testnet** | ✅ **January 2026** (~43 teams / 15 languages / 10 M DOT prize) |
-| [[concepts/jam]] Gray Paper → v1.0 | ⚠️ **slipped** — still "progressing toward v1.0" as of Aug 2026 (was "targeted before mid-2026"); v1.0 = the audit/mainnet gate *and* the JAM-prize payout gate (prizes paid no earlier than Fellowship ratification of v1.0) |
+| [[concepts/jam]] Gray Paper → v1.0 | ⚠️ **still slipped (re-verified 2026-09-02)** — reporting continues to describe JAM as "progressing toward v1.0" (through **v0.8.0**), not ratified (was "targeted before mid-2026"); v1.0 = the audit/mainnet gate *and* the JAM-prize payout gate (prizes paid no earlier than Fellowship ratification of v1.0). The **JAM Mainnet Proposal** stays framed **Q3–Q4 2026** (governance-window, not production date) |
 | [[concepts/jam]] M1 (client conformance) | ✅ **first team through the full gate: JAMdotTech passed the Fellowship interview (early Aug 2026)**, beyond the ~15 teams that had merely lodged M1 PRs by Jan 2026 |
 | [[concepts/jam]] mainnet | 🔜 **milestone-gated, not calendar-gated** — M1 (conformance) → M4 (full-speed + professional security audit) → OpenGov referendum; core devs estimate ~12–20 months from early 2026, i.e. realistically **late-2026 → 2027**, *not* a clean "2026 launch"; the v1.0 slip pushes this right |
-| [[concepts/proof-of-personhood]] (Project Individuality) | 🔜 phased 2026 — DIM1 (unique-human) Q1, DIM2 (verified-individual) Q2, full deployment targeted Q3; **DIM1 (PoI/PoVI) still not shipped as of Aug 2026 (slip persists)**, but its **funding cleared governance** — Ref. 1783 ($3.01 M → HOLLAR) entered confirmation at ~87.7% Aye / ≈160.88 M DOT; "fairest airdrop ever" framing |
+| [[concepts/proof-of-personhood]] (Project Individuality) | 🔜 phased 2026 — DIM1 (unique-human) Q1, DIM2 (verified-individual) Q2, full deployment targeted Q3; **DIM1 (PoI/PoVI) still not shipped as of 2026-09-02 (slip persists)**, but its **funding cleared governance** — Ref. 1783 ($3.01 M → HOLLAR) entered confirmation at ~87.7% Aye / ≈160.88 M DOT; the personhood-gated **`.dot`-name product surface it unlocks is now testable in the Products Devnet** (2026-08-31, above), even though the mainnet personhood check itself has not launched |
 | NOMT (~10× TPS boost) | 🔜 2026 |
 | 500ms BASTI blocks | 🔜 2026 |
 | CoreChain Phase 1 | 🔜 2026 |
@@ -69,7 +71,7 @@ Polkadot is a globally-distributed protocol; its development, capital, regulatio
 | Region | Role in the Polkadot stack | 2026 regulatory / market state | Lead nodes |
 |---|---|---|---|
 | **Europe** | **Core development & governance home.** Web3 Foundation (Zug, Switzerland); Parity Technologies (Berlin/London). JAM Gray Paper, runtime, and OpenGov tooling originate here. | Swiss FINMA token clarity; EU MiCA fully in force; eIDAS 2.0 EUDI wallets due Dec 2026 (relevant to [[concepts/proof-of-personhood]]) | Web3 Foundation, Parity, [[entities/gavin-wood]] |
-| **US** | **Capital-markets gateway, now with a live spot vehicle.** No US-based core dev; the story is institutional access, which crossed a threshold in Q1 2026. | **First US spot DOT ETF is LIVE:** 21Shares **TDOT** listed on **Nasdaq 2026-03-06** (seeded ~$11 M, 0.30% fee, physically-backed under the '33 Act) — the first US spot Polkadot ETF; Grayscale's competing DOT ETF followed via Nasdaq 19b-4. Net: access is no longer "pending" — it shipped; dev presence still thin. | 21Shares (TDOT/Nasdaq), Grayscale/Nasdaq |
+| **US** | **Capital-markets gateway, now with a live spot vehicle.** No US-based core dev; the story is institutional access, which crossed a threshold in Q1 2026. | **First US spot DOT ETF is LIVE:** 21Shares **TDOT** listed on **Nasdaq 2026-03-06** (seeded ~$11 M, 0.30% fee, physically-backed under the '33 Act) — the first US spot Polkadot ETF; Grayscale's competing DOT ETF followed via Nasdaq 19b-4. **Aug-2026 update:** 21Shares **rebranded TDOT "Polkadot *Staking* ETF"** (part of a four-product wave with TETH/TSOL/TSUI), staking **40–95% of holdings** with **quarterly** yield pass-through. Objectivity flag (客觀): the staking add-on is not free lunch — one analysis found the fund **realised ≈$4.52 of NAV loss per $1 of staking reward** in its early window ([Protos](https://protos.com/polkadot-etf-realized-4-52-of-loss-per-1-in-staking-rewards/)), a caution that "staking ETF" ≠ costless yield. Net: access shipped and is now *staking-enabled*, but the early staking economics were poor; dev presence still thin. | 21Shares (TDOT/Nasdaq), Grayscale/Nasdaq |
 | **Japan** | **Strongest Asian app-chain ecosystem.** [[entities/polkadot]] → **Astar Network** (Sota Watanabe / Startale Labs) is the enterprise/gaming gateway, dual-deployed Polkadot + Ethereum. | Sony Innovation Fund led **$13 M into Startale (Jan 2026)**; Astar fixed-supply 10 B ASTR from March 2026; FSA **"Digital Year-One"** crypto reform | Astar, Startale, Sony Soneium (adjacent) |
 | **Korea** | **Retail-liquidity & exchange demand.** Strong retail trading; DOT listed on major won-pairs. | Bank-linked real-name exchange rules; tightening institutional framework 2025–2026 | Upbit/Bithumb listings |
 | **China** | **Developer & education base under a trading ban.** Crypto trading banned (2021) but Mandarin dev/education community remains substantial. | Trading prohibited; mainland real-name-ID regime hostile to permissionless PoP; activity routes via HK | [[entities/polkaworld]] (co-hosted Gavin's China JAM tour, 874 attendees) |

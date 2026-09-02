@@ -39,7 +39,7 @@ Developers purchase "core time" in DOT to run services — analogous to gas fees
 - Any team can deploy; only three entry functions required
 - Combines Ethereum smart-contract expressiveness with Polkadot-scale throughput
 
-## Status (re-verified 2026-08-12)
+## Status (re-verified 2026-09-02)
 
 | Milestone | Date | Note |
 |---|---|---|
@@ -54,8 +54,8 @@ Developers purchase "core time" in DOT to run services — analogous to gas fees
 | **Open JAM testnet** | **January 2026** | ✅ public; supports multiple execution environments incl. RISC-V |
 | **Revive / [[concepts/polkavm]] contracts live on Polkadot Hub** | **2026-01-20** | ✅ same PVM substrate now runs *contracts* (EVM+PVM unified), ahead of the JAM relay-chain cutover |
 | **First team through full M1 review** | **early August 2026** | **JAMdotTech passed the Polkadot Fellowship interview for JAM Prize Milestone 1** after ~25 months of work — the concrete "a team cleared the entire M1 gate" signal (conformance + KYC/AML + an authorship-and-understanding interview), a step beyond the ~15 teams that had merely *lodged* M1 PRs by Jan 2026 (Polkadot Socials Daily Digest, 2026-08-09) |
-| Gray Paper **v1.0** | ⚠️ **slipped — NOT released as of 2026-08-12** | was "targeted before mid-2026"; mid-2026 reporting still describes JAM as *"progressing toward v1.0"*. v1.0 is the **prize-payout and mainnet gate**: JAM-prize milestones are paid *"no earlier than the Polkadot Fellowship's ratification of JAM protocol version 1.0,"* so the v1.0 slip pushes both payout and the mainnet vote right |
-| **JAM Mainnet Proposal (OpenGov vote)** | **expected Q3–Q4 2026, now realistically 2027** | on-chain governance vote to upgrade the Relay Chain; CoreChain Phase 1 in the same window; gated on v1.0 ratification (above), which has slipped |
+| Gray Paper **v1.0** | ⚠️ **still slipped — NOT released as of 2026-09-02** | was "targeted before mid-2026"; through Q3 2026 reporting still describes JAM as *"progressing toward v1.0"* (the public Gray Paper line is **v0.8.0**, not yet v1.0 / not yet Fellowship-ratified). v1.0 is the **prize-payout and mainnet gate**: JAM-prize milestones are paid *"no earlier than the Polkadot Fellowship's ratification of JAM protocol version 1.0,"* so the v1.0 slip pushes both payout and the mainnet vote right |
+| **JAM Mainnet Proposal (OpenGov vote)** | **still framed Q3–Q4 2026, realistically 2027** (re-verified 2026-09-02) | on-chain governance vote to upgrade the Relay Chain; CoreChain Phase 1 in the same window; gated on v1.0 ratification (above), which has slipped — so the Q3–Q4 window is the *governance-proposal* window, not a production-mainnet date |
 
 ⚠️ **Delivery-timeline caution:** in 2026 reporting, three JAM core developers framed full delivery as **"within 12–20 months"** (i.e. into 2027) when discussing the M1 / [[concepts/proof-of-personhood|PoP]] economic model and ZK roadmap alongside JAM — so treat "JAM mainnet in 2026" as the *governance-proposal* window, not a guaranteed production-mainnet date. The testnet is live (Jan 2026); the Relay-Chain cutover is a separate, later governance event.
 
@@ -82,6 +82,7 @@ Community debate: whether to call the JAM transition **"Polkadot 3.0"** — supp
 - [[sources/gavin-wood-second-era-2025]] — Berlin Web3 Summit framing
 - [[sources/polkadot-roundup-2025]] — 2026 roadmap and testnet status
 - **[2026-08-12 fact-check]** JAMdotTech M1 Fellowship-interview pass (early Aug 2026, ~25 months) + Gray Paper still "progressing toward v1.0" (not yet released) + prizes paid no earlier than Fellowship ratification of JAM v1.0 — Polkadot Socials Daily Digest 2026-08-09 (forum.polkadot.network); "Inside the JAM Implementers Prize — 43 Teams, 15 Submissions, and the Road to JAM 1.0" (polkadot.cloud); Web3 Foundation JAM Prize rules (jam.web3.foundation/rules)
+- **[2026-09-02 fact-check]** JAM v1.0 **still unreleased / not Fellowship-ratified** (public Gray Paper line v0.8.0); Mainnet Proposal still framed Q3–Q4 2026 (governance window) — [Inside the JAM Implementers Prize — Road to JAM 1.0 (polkadot.cloud)](https://polkadot.cloud/blog/en/polkadot-jam-implementers-prize); [gavofyork/graypaper releases](https://github.com/gavofyork/graypaper/releases)
 
 ## Related concepts
 
