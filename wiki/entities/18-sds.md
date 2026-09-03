@@ -17,7 +17,7 @@ The 18th Space Defense Squadron (18 SDS) is the United States Space Force unit r
 
 ## Mission Areas
 
-1. **Space Surveillance Network (SSN) command and control**: tasks sensors (ground radar, telescope, space-based) against catalog maintenance and special tasking
+1. **Space Surveillance Network (SSN) command and control**: tasks sensors (ground radar, telescope, space-based) against catalog maintenance and special tasking — the space-based tier grew on **2026-08-10** with the **SĀCHI** GEO optical SDA payload (MIT Lincoln Lab) hosted on Japan's **QZS-7** over the Indo-Pacific ([[synthesis/space-situational-awareness-six-region]] §1b)
 2. **Resident Space Object (RSO) catalog maintenance**: maintains ~27,000+ tracked objects in the public catalog (2024–2026) including active payloads, rocket bodies, and debris ≥ ~10 cm in LEO — against a broader tracked environment of **>43,000 objects >10 cm** and a modeled ~1.2 M in the 1–10 cm "deadly-but-untrackable" band ([[sources/esa-space-environment-report-2026|ESA SER 2026]])
 3. **Conjunction Assessment (CA)**: screens all tracked objects against all other tracked objects for predicted close approaches; generates CDMs within the [[concepts/screening-volume|screening volume]] filter
 4. **Human Spaceflight Support**: provides conjunction assessment for ISS and crewed vehicles
@@ -55,7 +55,7 @@ Post-transition (if it completes), 18 SDS continues generating CDMs for military
 
 ## International Context
 
-The Space Surveillance Network is the most capable of six regional SSA systems and the only one whose catalog carries legal authority for collision-avoidance obligations. Its peers — Europe's federated [[synthesis/space-situational-awareness-six-region|EU SST Partnership]], China's sovereign CNSA + APSCO/APOSOS network, Japan's JAXA + military build-out, Korea's KASI OWL-Net, and Taiwan's consumer posture — are mapped, with governance models and the 100-year Kessler view, in [[synthesis/space-situational-awareness-six-region]].
+The Space Surveillance Network is the most capable of six regional SSA systems and the only one whose catalog carries legal authority for collision-avoidance obligations. Its peers — Europe's federated [[synthesis/space-situational-awareness-six-region|EU SST Partnership]] (19 members as of 2026-04-12), China's sovereign CNSA + APSCO/APOSOS network (now adding the commercial space-based Gande Constellation), Japan's JAXA + military build-out (and host of the US SĀCHI/QZS-7 payload), Korea's KASI OWL-Net, and Taiwan's consumer posture — are mapped, with governance models, the 2026 shift of sensors to orbit, and the 100-year Kessler view, in [[synthesis/space-situational-awareness-six-region]].
 
 ## See Also
 

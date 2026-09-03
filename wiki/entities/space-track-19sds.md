@@ -35,7 +35,7 @@ Access to the full `cdm` class (with secondary object state vectors and covarian
 
 **Primary missions:**
 
-1. **Space Surveillance Network (SSN) command and control**: Tasks ~30 contributing ground-based radar and optical sensors against catalog maintenance and special-tasking priorities
+1. **Space Surveillance Network (SSN) command and control**: Tasks ~30 contributing ground-based radar and optical sensors against catalog maintenance and special-tasking priorities — and, since **2026-08-10**, a **space-based GEO node**: the **SĀCHI** optical SDA payload (MIT Lincoln Laboratory; USSF Mission Delta 2) hosted on Japan's **QZS-7** in quasi-zenith orbit over the Indo-Pacific, feeding GEO-object tracking into the SSN in near-real-time (to Schriever SFB). The final of two launches under the QZSS Hosted-Payload (QZSS-HP) program — the first bilateral US-Japan national-security space effort. Full six-region framing: [[synthesis/space-situational-awareness-six-region]] §1b
 2. **Resident Space Object (RSO) catalog maintenance**: Maintains the authoritative public catalog of tracked space objects
 3. **SSA data sharing**: Operates Space-Track.org; manages the SSA sharing program with allied nations and commercial operators; direct interface between satellite operators and the US DoD
 4. **Human spaceflight support**: Provides conjunction assessment for ISS and crewed vehicles on priority basis
@@ -102,7 +102,7 @@ Under Space Policy Directive-3 (2018), the civil STM mission has been transition
 
 ## International Context
 
-18/19 SDS produce the only CDM stream with *legal* standing for US-licensed operators, and de-facto the global default — but they are one of six regional SSA systems. Europe runs a **federated** EU SST Partnership (15→19 members, Dec 2025; GESTRA/GRAVES/TIRA), China a **sovereign, data-closed** CNSA + APSCO/APOSOS network, Japan a fast-building civil-military system (JAXA + FY2026 SDA satellite), Korea an astronomy-institute-led optical network (KASI OWL-Net), and Taiwan is effectively a **consumer** of US SDA + commercial data. The contrast between Space-Track's *open* posture and China's *closed* catalog is itself a strategic choice. Full six-region map + governance models + the 100-year Kessler view: [[synthesis/space-situational-awareness-six-region]].
+18/19 SDS produce the only CDM stream with *legal* standing for US-licensed operators, and de-facto the global default — but they are one of six regional SSA systems. Europe runs a **federated** EU SST Partnership (**19 members**, new agreement in force 2026-04-12; GESTRA/GRAVES/TIRA), China a **sovereign, data-closed** CNSA + APSCO/APOSOS network **now adding a commercial space-based tier** (Gande Constellation, 120 sats, first launch 2026-07-24), Japan a fast-building civil-military system (JAXA + FY2026 SDA satellite, and host of the US SĀCHI/QZS-7 payload), Korea an astronomy-institute-led optical network (KASI OWL-Net + Sejong/Geochang SLR), and Taiwan is effectively a **consumer** of US SDA + commercial data. The contrast between Space-Track's *open* posture and China's *closed* catalog is itself a strategic choice. Full six-region map + governance models + the 100-year Kessler view: [[synthesis/space-situational-awareness-six-region]].
 
 ## See Also
 
