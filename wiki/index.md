@@ -61,6 +61,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-09-05]] — KOL + keyword digest 2026-09-05: GPT-6 Astra launch (Daybreak, cybersecurity threshold), Claude Fable 5.1/Mythos 5.1 + Claude Code Enterprise beta, OpenClaw 2.0 (933 contributors), NemoClaw self-model memory, Nemotron 3.5 Lightning + Nemotron 4 in training, Polkadot Products Devnet + JAMKB burn vote; KOL list empty
 
 ## Entities
 
@@ -123,6 +124,8 @@ type: index
 - [[entities/nspo]] — Taiwan national civil space agency (NSPO → **TASA** renamed 2023-01-01, under NSTC); founded 1991; 3rd-phase program NT$25.1B 2019–2028 + ~NT$40B 2023 B5G-LEO boost; FORMOSAT-8A launched 2025-11-28, TRITON GNSS-R 2023; public-sector demand node for the XT-144 / LEO supply chain
 - [[entities/tron-future-tech]] — Taiwan dual-use AESA integrator founded 2018 by ex-NCTU prof Yu-Jiu Wang; T.Radar counter-drone radar + T.SpaceRouter 1024-element Ka-band LEO terminal; Series A ~NT$900M (2024), 26-system military contract (2025); the concrete "midstream array-integrator" counter to Taiwan's absent-midstream thesis
 - [[entities/liscotech]] — Taiwan space-electronics vendor; GPGPU100 on-orbit compute module (Nvidia Jetson Orin Nano ~40 TOPS, TASA-licensed 2025-04-15) flown on Black Kite-1 (2025-11-28, Rapidtek); Taiwan's **first flown space-grade GPGPU** — the concrete edge-tier counter to the "midstream-C absent" thesis (hyperscale tier still absent)
+- [[entities/anthropic]] — US AI safety company (San Francisco, 2021); Claude model family + Claude Code; closed-frontier leader with Constitutional AI positioning; Claude Opus 5 at AA-Idx 63.0
+- [[entities/openai]] — US AI company (San Francisco, 2015); GPT model family, ChatGPT, Daybreak platform; GPT-6 Astra launched Sept 2026 as first model to meet "critical cybersecurity threshold"
 
 ## Concepts
 
