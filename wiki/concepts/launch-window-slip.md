@@ -78,6 +78,7 @@ The single richest public slip dataset is the Starship flight-test campaign. Ext
 | **IFT-11** | Block 2 (last) | **Oct 13, 2025** | nominal | **Success** — booster soft splashdown, ship suborbital splashdown +1h06; final Block 2 flight; last flight of 2025 |
 | **Flight 12** | **V3** | May 19 → scrub May 21 → **May 22, 2026** | pad/first-of-type readiness (new Launch Pad 2) | **Partial** — Ship 39 reached payload deploy (20 sims + 2 modified Starlink V3); Booster 19 broke up over the Gulf after off-nominal flip |
 | **Flight 13** | V3 (Booster 20) | Jul 16 T-0 auto-abort → Jul 23 weather scrub → **Jul 24, 2026 22:45 UTC** (~8-day slip) | **technical** (flight-software auto-abort at T-0: Raptor oxidiser turbopump anomaly on ~6 engines) + weather | **Success** — all mission goals met; **first 20 operational Starlink V3 sats deployed** (6 camera-equipped); Ship soft splashdown Indian Ocean; Booster 20 hard splashdown (only 10 of 13 landing-burn engines relit, ~5 at splashdown; no catch attempted) |
+| **Flight 14** | V3 (Booster 21) | NET **Sep 15, 2026** from Starbase Pad B | pre-flight readiness (Booster 21 static fire + FAA review) | **Pending** (as of 2026-09-05) — planned first *orbital* Starship flight test on V3; ~20 operational Starlink V3; the NET is the earliest observable slip signal (a filed AHA NOTAM confirms an attempt; its absence near NET is an early slip flag per §5) |
 
 **Slip patterns the record confirms:**
 - **Regulatory holds dominate the tail.** The two longest slips (IFT-9 ~14 days; the ~7-month IFT-11 → Flight 12 gap) were driven by *mishap investigation + first-of-type vehicle bring-up*, not weather. A filed NOTAM during an open mishap investigation carries `P(launch_in_window) ≈ 0.05` (see [[sources/notam-starship-ift8-2025]] §5).
@@ -135,7 +136,16 @@ See [[concepts/pc-probability-of-collision]], [[concepts/tca-time-of-closest-app
 
 ## 6a. Jurisdiction note
 
-The slip/scrub/hold taxonomy and its NOTAM finite-state machine above are **US-airspace-specific** — built on FAA AHA NOTAMs, USCG NOTMAR, and ARTCC coordination. A launch from another jurisdiction generates the equivalent slip signal through its own national clearance chain (UK CAA range licence under the Space Industry Act 2018; Japan MIC + Cabinet Office; etc.). The mission-desk agent must pick the right national signal source per launch site. See [[synthesis/space-regulatory-regimes-six-region]] for the six-region (台美日韓中國歐洲) launch + spectrum regulatory comparison.
+The slip/scrub/hold taxonomy and its NOTAM finite-state machine above are **US-airspace-specific** — built on FAA AHA NOTAMs, USCG NOTMAR, and ARTCC coordination. A launch from another jurisdiction generates the equivalent slip signal through its own national clearance chain (UK CAA range licence under the Space Industry Act 2018; Japan MIC + Cabinet Office; etc.). The mission-desk agent must pick the right national signal source per launch site. See [[synthesis/space-regulatory-regimes-six-region]] for the six-region (台美日韓中國歐洲) launch + spectrum regulatory comparison, and [[synthesis/space-launch-airspace-integration-six-region]] for the airspace-deconfliction axis specifically.
+
+**European worked example — Isar Aerospace Spectrum flight 2 (Andøya, Norway).** A ~5-month non-US slip chain driven by a **range/airspace-conflict** cause (§2 category 4) rather than weather or vehicle:
+
+- **2025-03-30** — Spectrum flight 1 ("Going Full Spectrum") launched, lost control ~30 s in (anomaly → investigation).
+- **2026-03-25** — flight 2 first attempt reached T-seconds but the **vehicle's own range-safety logic aborted when an unauthorised vessel entered the designated maritime danger zone** (a European Temporary-Danger-Area equivalent of the US AHA-intrusion scrub) — a **wave-off** in §1 terms, not a vehicle fault.
+- NET slipped to **2026-08-31**, then attempts from **2026-09-04**.
+- **2026-09-05** — launched and **reached orbit** ("Onward and Upward", 5 CubeSats + 1 DLR Microlauncher payload) — the first orbital launch from Western European soil.
+
+The agent lesson: a **danger-zone intrusion abort carries a *lower* residual slip probability than a mishap-triggered scrub** (the vehicle was intact and the fault external), the same distinction drawn for Starship Flight 13's T-0 auto-abort above — but the *signal source* is Norwegian (Avinor/Isavia Temporary Danger Areas pooled in EUROCONTROL EAD), not FAA. See [[synthesis/space-launch-airspace-integration-six-region]].
 
 ## 7. Related pages
 
