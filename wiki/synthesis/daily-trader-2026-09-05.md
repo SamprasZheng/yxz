@@ -121,5 +121,5 @@ where each component is normalized to [0, 1]:
 
 ---
 
-*Scan artifact: [[agents/outputs/scan-2026-09-05.json]]*
+*Scan artifact: `agents/outputs/scan-2026-09-05.json` (gitignored, not in wiki)*
 *Prior synthesis: none (first run)*
