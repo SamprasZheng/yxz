@@ -91,10 +91,20 @@ For the Firefly agent MVP, implementing Chan's analytic series or Alfano's serie
 | NASA missions (CARA-supported) | Pc ≥ 1×10⁻⁴ (mandatory); 7×10⁻⁵ (analysis start) | NASA CARA handbook |
 | ESA operational satellites | Pc ≥ 1×10⁻⁴ (HIE) | ESA SDC-8 proceedings |
 | JAXA | Pc ≥ 1×10⁻³ | ESA SDC-8 survey paper |
-| SpaceX Starlink | Not publicly disclosed | ⚠️ |
+| SpaceX Starlink | **Pc > 3×10⁻⁷** (≈1-in-3.3M; autonomous) — *disclosed* | [[sources/spacex-starlink-conjunction-semiannual-2026]] (2026-07-26) |
 | Planet, Maxar, Iridium | Typically 1×10⁻⁵–1×10⁻⁴ range; not publicly disclosed | ⚠️ |
 
-Commercial operators have no mandated threshold. The Firefly agent uses NASA CARA thresholds as the default and flags operator-specific calibration as a configuration parameter.
+Commercial operators have no mandated threshold. The Firefly agent uses NASA CARA thresholds as the default and flags operator-specific calibration as a configuration parameter. (Starlink's row was corrected 2026-09-07 from the prior "not publicly disclosed" — its semi-annual FCC reports now disclose a **Pc > 3×10⁻⁷** autonomous trigger, ~300× tighter than the industry red, the rational setpoint for a fleet whose maneuvers are near-zero-cost; see [[concepts/pc-probability-of-collision]].)
+
+### Dilution-region guard: max Pc and the presume-risky rule (2026-09-07)
+
+The tier table above quietly assumes the reported Pc is trustworthy. It is not always — and the workflow's most dangerous silent failure is clearing a **low-Pc-because-uncertain** event to green. Because Pc → 0 both when the covariance is very small *and* very large, a wide or missing covariance puts the event in the **dilution region**, where the reported Pc is depressed by *ambiguity*, not safety (full mechanism on [[concepts/pc-probability-of-collision]] and [[concepts/covariance-ellipsoid]]). The guard rule, added to every triage record:
+
+1. **Detect dilution.** Flag the event if the secondary covariance is absent (`cdm_public` default) or the combined covariance scale ≫ the miss distance — both mean the operating point is on the falling tail of the Pc-vs-covariance curve.
+2. **Carry the upper bound.** Alongside the reported Pc, compute/annotate **max Pc** (the peak of Pc over covariance scalings — the largest value consistent with the miss geometry + combined HBR). CARA's caveat travels with it: **max Pc is a dilution *flag*, never a stand-alone maneuver trigger** — a near-miss forces max Pc → 1.0 regardless of true risk ([NASA CARA, NTRS 20190029216](https://ntrs.nasa.gov/citations/20190029216)).
+3. **Presume risky, don't clear.** In the dilution region, do **not** emit "green" on a low Pc → hold `monitor_enhanced` until the covariance tightens (which it does as [[concepts/tca-time-of-closest-approach|TCA]] approaches). A flat low Pc days out is ambiguity; a rising Pc as OD sharpens is the true signal.
+
+> **Dated anchor (2026-03-20):** STARLINK-36658 × the Chinese EO satellite SITRO-AIS 37 — predicted min range **~9 m**, reported **max Pc = 1.0**, one HIGH pass among nine Starlink conjunctions over 2026-03-20→24. A max Pc pinned at 1.0 is geometry saturating the bound; the maneuver call still needs the covariance-conditioned Pc and the asset-specific cost–loss terms. ([FODNews, 2026-03](https://fodnews.com/starlink-nine-conjunction-threats-march-2026-leo-congestion/) — media report of tracking data, flagged as secondary.) This is the workflow-level reason [[concepts/covariance-ellipsoid|covariance realism]], not the Pc integral, is the binding constraint: the dilution flaw drove both the Balch–Martin–Ferson [false-confidence-theorem](https://arxiv.org/abs/1706.08565) critique and NASA CARA's 2023 program to *replace* Pc with an inference-on-miss-distance metric ([NTRS 20230018683](https://ntrs.nasa.gov/citations/20230018683)) — a live research front the agent should track, not treat as settled.
 
 ## 5. Decision Quality Factors
 
@@ -109,8 +119,10 @@ Pc alone is insufficient. The Firefly agent produces a structured decision recor
   "pc": 3.2e-5,
   "pc_method": "FOSTER-1992",
   "pc_tier": "yellow",
+  "pc_max": 1.1e-3,
+  "dilution_region": true,
   "covariance_confidence": "low",
-  "covariance_note": "secondary is TLE-only; no covariance in cdm_public → Pc may be unreliable",
+  "covariance_note": "secondary is TLE-only; no covariance in cdm_public → dilution region: low Pc is ambiguity, not safety → presume-risky, do not clear green",
   "hbr_combined_m": 2.1,
   "hbr_source": "default_lookup",
   "objects": ["primary_norad_12345", "debris_norad_67890"],
@@ -285,6 +297,7 @@ Every agent output that cites Pc should include:
 ⚠️ Secondary covariance: not available in cdm_public — Pc is 18 SDS estimate, cannot independently verify
 ⚠️ Yellow threshold: 7e-5 (NASA default) — your mission may use a different value
 ⚠️ Covariance realism: 18 SDS TLE-based covariances are known to be optimistic; Pc may be underestimated for small debris secondaries
+⚠️ Dilution region: if the secondary covariance is wide or absent, a LOW Pc reflects ambiguity, not safety — carry max Pc as an upper-bound flag and presume-risky until covariance tightens (never clear green on a low Pc with unreliable covariance)
 ⚠️ TraCSS transition: an *additive* civil interface at TraCSS.gov, NOT a confirmed Space-Track cutover — the program survived a proposed FY2026 termination (rescued by Congress at $52.5M), its "operational Jan 2026" target slipped, a user-fee model is under study, and the FY2027 request again seeks only ~$11M (≈83% below FY2024's $65M). Keep Space-Track (18 SDS) as the authoritative baseline; do not hard-code a TraCSS.gov migration date (fact-checked 2026-08-15).
 ```
 

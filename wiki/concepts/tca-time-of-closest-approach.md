@@ -31,6 +31,8 @@ Positional uncertainty grows with propagation time — a TCA 6 days out carries 
 
 NASA CARA tracks Pc evolution as a function of time-to-TCA; a rising Pc trend is more concerning than a high but stable Pc.
 
+**Why early CDMs live in the dilution region.** Time-to-TCA and the [[concepts/covariance-ellipsoid|covariance]]-driven [[concepts/pc-probability-of-collision|dilution region]] are the same axis seen from two ends. Days before TCA the covariance is wide (propagation uncertainty has had time to grow), so the encounter almost always sits on the falling tail of the Pc-vs-covariance curve — a **low Pc several days out is ambiguity, not reassurance**, and CARA notes such assessments "tend to be in the dilution region." As TCA approaches and orbit determination tightens, the covariance shrinks toward the max-Pc scaling and the reported Pc becomes trustworthy: if the miss geometry holds, Pc *climbs* toward its dilution-free value precisely *because* the uncertainty is collapsing. This is why a rising Pc trend is the alarm and a flat low Pc far from TCA is not a clearance — the triage rule (carry the max-Pc upper bound + a `dilution_region` flag, presume risky until the covariance tightens) is detailed on [[concepts/pc-probability-of-collision]].
+
 ## TCA Uncertainty
 
 TCA itself carries an uncertainty — the predicted epoch of closest approach shifts with each new CDM update (typically issued every 8 hours for high-risk events). An evolving TCA indicates an improving or worsening orbital solution. The standard deviation in TCA epoch is not a CCSDS required field but appears in operator-supplemented CDMs from commercial providers (LeoLabs, COMSPOC).
