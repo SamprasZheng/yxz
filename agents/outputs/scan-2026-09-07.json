@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-07",
+  "status": "STUB — pipeline missing + data feed blocked",
+  "blockers": [
+    {
+      "id": "TRADER_PIPELINE_MISSING",
+      "description": "agents/src/trader/ does not exist. Only agents/src/firefly/ is present. The trader scan CLI (trader research / trader scan) cannot be invoked.",
+      "resolution": "Implement agents/src/trader/ pipeline before re-running."
+    },
+    {
+      "id": "YFINANCE_PROXY_403",
+      "description": "yfinance connections to fc.yahoo.com fail with 'CONNECT tunnel failed, response 403' — the remote execution proxy blocks Yahoo Finance. All 15 tickers returned errors; no price data retrieved.",
+      "resolution": "Either whitelist Yahoo Finance in the proxy policy, or switch to an alternative price feed (Alpha Vantage, Polygon.io, Tiingo) that the proxy permits."
+    }
+  ],
+  "watchlist_seeded": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN", "AVGO", "PLTR", "ARM", "SMCI", "ORCL", "NFLX", "TSM"],
+  "tickers_with_data": [],
+  "scan_verdicts": [],
+  "fom_table": []
+}
