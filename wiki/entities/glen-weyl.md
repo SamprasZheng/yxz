@@ -35,13 +35,15 @@ He is described as a principal collaborator of Vitalik Buterin (Ethereum), Jaron
 
 ## Six-region note
 
-Weyl is the **US**-side intellectual anchor of the plural-governance field; [[entities/audrey-tang]] is the Taiwan-side practitioner anchor. The QF mechanism has its largest live deployment in the (globally distributed, US-led) Ethereum/Gitcoin ecosystem; QV experiments have appeared in US state legislatures (Colorado) and European municipal budgeting. The *Plurality* framework has now also crossed into a foreign legislature via Japan's **Team Mirai** (Takahiro Anno, 1 House-of-Councillors seat 2025) — an export path detailed on [[entities/audrey-tang]] and the [[synthesis/digital-democracy-user-owned-social-six-region|six-region map]].
+Weyl is the **US**-side intellectual anchor of the plural-governance field; [[entities/audrey-tang]] is the Taiwan-side practitioner anchor. The QF mechanism has its largest live deployment in the (globally distributed, US-led) Ethereum/Gitcoin ecosystem; QV experiments have appeared in US state legislatures (Colorado) and European municipal budgeting. The *Plurality* framework has now also crossed decisively into a foreign legislature via Japan's **Team Mirai** (Takahiro Anno, 1 House-of-Councillors seat 2025 → **11 House-of-Representatives seats 2026-02**) — an export path detailed on [[entities/audrey-tang]] and the [[synthesis/digital-democracy-user-owned-social-six-region|six-region map]].
+
+> **Update — Gitcoin's plural pivot (verified 2026-09-08).** The largest live QF deployer has itself gone *more* plural: Gitcoin sunset the Grants Stack (May 2025) and launched **"Gitcoin 3.0"** with **GG24** (Oct 2025) — a multi-mechanism funding model over six thematic domains in which QF is now one instrument among several, not the whole product; Sybil tooling moved to **Human Passport**. Weyl's QF idea thus survives as a *component* of a broader plural-funding stack rather than as the singular mechanism — arguably the *Plurality* thesis validating itself against its own most famous instrument.
 
 ## Historical lineage & long-horizon view
 
 **Lineage (back three decades).** Weyl's toolkit descends from a long line of mechanism-design work on protecting minority preferences against simple-majority rule: Vickrey–Clarke–Groves (1961–73) incentive-compatible mechanisms → the "quadratic" cost-of-votes idea Weyl formalized in *Radical Markets* (2018, with Eric Posner) → the QF matching formula (Buterin, Hitzig & Weyl 2018) that Gitcoin turned into the dominant crypto public-goods funding method. The intellectual arc runs from **market-design theory → crypto public goods → participatory AI governance**, each stage broadening the constituency for the same core claim: *widen the space of collective choice rather than collapse it to one price or one vote.*
 
-**Long-horizon view (scenario — not fact).** Weyl's century bet is that the primitives he formalized (QV, QF, plural credentials) become standard civic infrastructure for an AI-saturated public sphere — but, exactly like [[concepts/plurality]] and [[concepts/dsnp]], every mechanism collapses without robust [[concepts/proof-of-personhood]] (one actor minting a thousand identities breaks QV and QF alike). His 2026 pivots — into UN-level AI-governance dialogue and into faith-and-technology — read as an attempt to build the *legitimacy and coalition* layer that the mechanisms need to survive capture, whether by platforms (the risk [[entities/project-liberty]] fights) or by centralized AI.
+**Long-horizon view (scenario — not fact).** Weyl's century bet is that the primitives he formalized (QV, QF, plural credentials) become standard civic infrastructure for an AI-saturated public sphere — but, exactly like [[concepts/plurality]] and [[concepts/dsnp]], every mechanism collapses without robust [[concepts/proof-of-personhood]] (one actor minting a thousand identities breaks QV and QF alike). His 2026 pivots — into UN-level AI-governance dialogue and into faith-and-technology — read as an attempt to build the *legitimacy and coalition* layer that the mechanisms need to survive capture, whether by platforms (the risk [[entities/project-liberty]] fights) or by centralized AI. His AI-governance turn is the intellectual sibling of [[concepts/ai-mediated-deliberation]]: the same *Plurality* logic (widen collective choice, don't collapse it) now applied to the LLM layer that both threatens discourse and can mediate it.
 
 ## Sources
 
@@ -50,6 +52,7 @@ Weyl is the **US**-side intellectual anchor of the plural-governance field; [[en
 ## Related
 
 - [[concepts/plurality]] — the book and philosophy he co-authored
+- [[concepts/ai-mediated-deliberation]] — the LLM-era deliberation frontier his AI-governance turn parallels
 - [[entities/audrey-tang]] — co-author and practitioner counterpart
 - [[concepts/proof-of-personhood]] — QV/QF require Sybil-resistant personhood to function
 - [[entities/project-liberty]] — funds Plurality-aligned research

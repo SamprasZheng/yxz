@@ -159,6 +159,7 @@ type: index
 - [[concepts/orbit-dose-budgeting]] — Closed-form TID/SEE trade-study calculators; Poisson SEE framing; day-one mission sizing
 - [[concepts/dsnp]] — Decentralized Social Networking Protocol; user-owned portable social graph; hosted on Frequency
 - [[concepts/plurality]] — Audrey Tang's governance philosophy: multi-perspective, inclusive, adaptive; civic-tech ↔ on-chain OpenGov parallel
+- [[concepts/ai-mediated-deliberation]] — LLMs to scale/synthesize democratic deliberation: Polis→Talk-to-the-City clustering + DeepMind Habermas Machine statement-generation (*Science* 2024); Taiwan MODA Alignment Assemblies; Team Mirai "broadlistening"; welds Axis-B digital-democracy to the AI-agent stack + the "who owns the mediating model" capture risk
 - [[concepts/domain-specific-llm-agents]] — Narrow LLM agents = base model + curated KB + persona; knowledge-first, not scale-first
 - [[concepts/obsidian-llm-knowledge-base]] — Obsidian vault (sources/entities/concepts/synthesis) as canonical LLM knowledge corpus
 - [[concepts/rf-soc-debug-taxonomy]] — Four-layer NPI bug classification (HW / FW / SW / ENV); OTP/MCN# as cheapest cross-layer check

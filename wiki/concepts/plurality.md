@@ -21,11 +21,17 @@ Plurality is not free-floating philosophy; it is the popular synthesis of a conc
 | Mechanism | Origin | What it operationalizes |
 |---|---|---|
 | **Quadratic Voting (QV)** | Weyl & Posner, *Radical Markets* (2018) | vote intensity at quadratic cost → protects minorities from simple majority steamroll |
-| **Quadratic / Plural Funding (QF)** | Buterin, Hitzig & Weyl, *"Liberal Radicalism"* (2018) | matches public-goods funding by *breadth* of support, not size of donation; the math behind **Gitcoin Grants** |
+| **Quadratic / Plural Funding (QF)** | Buterin, Hitzig & Weyl, *"Liberal Radicalism"* (2018) | matches public-goods funding by *breadth* of support, not size of donation; the math behind **Gitcoin Grants** (but note: Gitcoin itself moved *beyond* pure QF in 2025 — see below) |
 | **Polis / bridging algorithms** | g0v / vTaiwan ([[entities/audrey-tang]]) | surface "rough consensus" across a population instead of amplifying the loudest poles |
 | **Plural identity / connected society** | *Plurality* book | model people as overlapping group memberships, not isolated individuals — the social-graph version of the same idea |
 
 The through-insight: *technology should widen the space of collective choice rather than narrow it*. Vitalik Buterin and the Ethereum public-goods ecosystem (Gitcoin) are the largest real-world deployers of the QF half; Taiwan's vTaiwan/Join is the largest deployer of the deliberation half.
+
+> **Update — Gitcoin's own "plural" pivot (verified 2026-09-08).** The QF flagship has itself moved past single-mechanism QF: Gitcoin **sunset the Grants Stack** infrastructure in **May 2025** (QF operations migrated to Giveth and mechanism-specific platforms), and **GG24** (donation window **2025-10-14 → 28**) launched **"Gitcoin 3.0"** — a *plural, multi-mechanism* funding model organized around six thematic domains rather than QF alone; identity/Sybil tooling now lives under **Human Passport**. Ironically, the largest QF deployer became *more* plural in exactly the [[concepts/plurality|Plurality]] sense — QF is now one mechanism among several, not the whole product. ([Gitcoin Grants 24](https://gitcoin.co/campaigns/gitcoin-grants-24-gg24), [Gitcoin review 2026](https://cryptoadventure.com/gitcoin-review-2026-grants-human-passport-and-public-goods-funding/))
+
+## AI-mediated deliberation — the 2024–26 frontier of the deliberation half
+
+The deliberation half of Plurality has a new operational layer: **[[concepts/ai-mediated-deliberation]]** — using LLMs to cluster, translate, and synthesize population-scale open-ended input (Polis → **Talk to the City**), and even to *draft* the consensus statement (DeepMind's **Habermas Machine**, *Science* 2024, which out-scored human mediators across >5,700 UK participants). Taiwan's **MODA Alignment Assemblies** already run this in real policy processes, and Japan's **Team Mirai** built its 2026 electoral breakthrough on AI "broadlistening." This is where the [[concepts/plurality|Plurality]] deliberation lineage fuses with the AI-agent stack ([[synthesis/open-weight-llm-agent-stack-six-region]]) — and inherits its risk: whoever owns the mediating model can shape the "consensus" it surfaces. See [[concepts/ai-mediated-deliberation]] for the full mechanism, six-region read, and capture-risk analysis.
 
 ## Two parallel implementations
 
@@ -46,7 +52,7 @@ Where the *plural-governance* practice actually runs (honest-N/A noted):
 | **US** | RadicalxChange + Gitcoin QF (crypto public goods); Colorado used **STAR/Quadratic-style** experiments | strong in crypto, niche in government |
 | **Europe** | Decidim (Barcelona), CONSUL, EU Conference on the Future of Europe; QF in some city budgets | municipal-led, regulation-friendly |
 | **Korea** | Seoul mVoting / Democracy Seoul participatory budgeting | municipal e-participation |
-| **Japan** | "Digital Democracy 2030" + **[[entities/audrey-tang|Team Mirai]]** (Takahiro Anno) — explicitly *Plurality*-inspired party, **won 1 House of Councillors seat 2025** (~2.3%) | **now electoral** — the model reached a foreign national legislature |
+| **Japan** | "Digital Democracy 2030" + **[[entities/audrey-tang|Team Mirai]]** (Takahiro Anno) — explicitly *Plurality*-inspired party running on AI "broadlistening"; **1 House of Councillors seat (2025) → 11 House of Representatives seats (2026-02, 3.97 M votes / 6.9%)** | **parliamentary force** — the model reached, then scaled inside, a foreign national legislature |
 | **China** | N/A — consultative e-gov portals only; open deliberation is structurally excluded | not applicable by design |
 
 ## Connections beyond the blog
@@ -68,6 +74,7 @@ If AI agents make text-based discourse untrustworthy, the *deliberation and plur
 
 ## Related
 
+- [[concepts/ai-mediated-deliberation]] — the LLM-era operational layer of the deliberation half
 - [[concepts/dsnp]]
 - [[entities/audrey-tang]]
 - [[entities/glen-weyl]]

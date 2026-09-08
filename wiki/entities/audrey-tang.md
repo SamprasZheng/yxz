@@ -25,6 +25,7 @@ Tang's reputation rests on *deployed civic infrastructure*, not theory:
 
 - **Polis** — a real-time opinion-clustering tool that maps where a population already agrees, used to surface "rough consensus" instead of amplifying the loudest poles. This is the operational core of the [[concepts/plurality]] "bridging" idea.
 - **vTaiwan / Join** — structured online-to-offline deliberation pipelines that fed citizen input into actual regulation (notably the ride-hailing and fintech-sandbox debates).
+- **Alignment Assemblies + [[concepts/ai-mediated-deliberation|Talk to the City]]** — the AI-era continuation: MODA partnered with the **Collective Intelligence Project** (from **May 2023**) to run population-scale deliberation on AI policy, using **Polis** to gather statements and the AI Objectives Institute's LLM tool **Talk to the City** to cluster/translate/visualize them (also applied to same-sex-marriage and 2024-election party-platform analysis). Tang's throughline — "Alignment Assemblies can enable us to govern AI collaboratively" — makes her the practitioner anchor of [[concepts/ai-mediated-deliberation]].
 - **Radical transparency** — publishing meeting transcripts by default; treating government as an open-source project.
 
 ## Six-region placement (水平展開)
@@ -37,12 +38,12 @@ Tang is the **Taiwan** node of the global digital-democracy field; the comparabl
 | **US** | [[entities/project-liberty]] (private, McCourt-funded) + a16z/Bluesky on the protocol side | philanthropy- and market-led |
 | **Europe** | EU **Conference on the Future of Europe** + Decidim (Barcelona) + eIDAS/EUDI identity rail | state-/municipal-led, regulation-anchored |
 | **Korea** | Seoul "mVoting" / Democracy Seoul participatory platforms | municipal e-participation |
-| **Japan** | **Team Mirai** — Takahiro Anno's explicitly [[concepts/plurality]]-inspired party won **1 House of Councillors seat in 2025** (~2.3%), after his 5th-place 2024 Tokyo-governor run; "Digital Democracy 2030" + Digital Agency | tech-led, **now electoral** — Tang's model exported into a foreign legislature |
+| **Japan** | **Team Mirai** — Takahiro Anno's explicitly [[concepts/plurality]]-inspired party, running on AI "broadlistening" ([[concepts/ai-mediated-deliberation]]): **1 House of Councillors seat (2025) → 11 House of Representatives seats (2026-02, 3.97 M votes / 6.9%)**, after his 5th-place 2024 Tokyo-governor run; "Digital Democracy 2030" + Digital Agency | tech-led, **now a parliamentary force** — Tang's model exported into, then scaled inside, a foreign legislature |
 | **China** | "consultative" e-government portals; no open deliberation layer | state-controlled, surveillance-adjacent |
 
 The throughline: Tang's distinctiveness is that Taiwan **institutionalized** grassroots civic-tech inside a ministry, where most peers are either private (US) or state-managed (China). This is why she became the connective node between Taiwan OpenGov and the on-chain OpenGov of [[entities/polkadot]] in [[sources/plurality-audrey-tang-sampras-2025]].
 
-**Cross-border export signal (2025–2026).** The Japan row is no longer a hypothetical: **Team Mirai**, founded by AI-engineer-turned-politician Takahiro Anno and explicitly citing the Tang/[[entities/glen-weyl]] *Plurality* framework, won a seat in Japan's 2025 House of Councillors election — the first time the Taiwan/Plurality model has moved from imitation into a *foreign national legislature*. It is the strongest evidence to date that Tang's civic-tech model travels beyond Taiwan's specific political conditions (though a single ~2.3% seat is a beachhead, not a wave). See [[synthesis/digital-democracy-user-owned-social-six-region]].
+**Cross-border export signal (2025–2026) — updated 2026-09-08.** The Japan row is no longer a beachhead: **Team Mirai**, founded by AI-engineer-turned-politician Takahiro Anno and explicitly citing the Tang/[[entities/glen-weyl]] *Plurality* framework, won a single House of Councillors seat in 2025 — then **11 House of Representatives seats in the February 2026 general election (3.97 M votes, 6.9% of the vote, all via proportional representation)**, exceeding its own "five or more" target. Crucially, Anno's core method is **AI "broadlistening" (ブロードリスニング)** — a Talk-to-the-City-style [[concepts/ai-mediated-deliberation]] pipeline — so the Plurality model didn't just travel; it *scaled inside a G7 legislature on the back of AI-mediated deliberation.* This is the strongest evidence to date that Tang's civic-tech model works beyond Taiwan's specific political conditions. See [[synthesis/digital-democracy-user-owned-social-six-region]].
 
 ## Long-horizon view (scenario / projection)
 
@@ -51,6 +52,7 @@ As AI agents flood public discourse (the same pressure driving [[concepts/proof-
 ## Related
 
 - [[concepts/plurality]] — the philosophy and book she co-authored
+- [[concepts/ai-mediated-deliberation]] — the LLM-era deliberation layer she anchors (Polis → Alignment Assemblies → Talk to the City)
 - [[entities/glen-weyl]] — co-author; RadicalxChange founder; QV/QF lineage
 - [[entities/project-liberty]] — she is a Senior Fellow of its Institute
 - [[concepts/dsnp]] — user-owned-social protocol her work connects to
