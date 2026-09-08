@@ -40,6 +40,7 @@ type: index
 - [[sources/llm-expert-agent-mission-ops-2025]] — "LLM Based Expert AI Agent for Mission Operation Management"; IAPGOS Vol. 15 No. 1, 2025; Mummaneni/Gudipati/Panda; RAG-only conceptual proposal; NOT IEEE (venue correction) (ingested 2026-05-24)
 - [[sources/astrea-orbital-thermal-autonomy-2025]] — ASTREA (arXiv 2509.13380, Thales Alenia Space/Europe): first agentic **LLM** on flight-heritage HW (TRL 9) — Qwen2.5-1.5B (4-bit) supervising an RL controller for live **thermal control aboard the ISS**; first ISS run lost to baseline (latency vs ~90-min cycle) then beat it after syncing cadence to orbit length (ingested 2026-09-01)
 - [[sources/navi-orbital-vlm-earth-obs-2026]] — NAVI-Orbital (arXiv 2606.18271, NASA JPL + Loft Orbital/US): first **in-orbit VLM** — Gemma 3 zero-shot + LangGraph state machine on a YAM-9 (Jetson Orin AGX), EO scene classification + operator dialogue via plain-English prompts; 88% zero-shot on 7,960 imgs, live 2026-04-16 (ingested 2026-09-01)
+- [[sources/kol-digest-2026-09-08]] — KOL + keyword digest 2026-09-08: 0 KOLs (list empty), 11 keywords swept (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks); ~30 items captured (automated, 2026-09-08)
 
 - [[sources/faa-ast-launch-licensing-2025]] — FAA AST licensing overview: 1,000th licensed operation Aug 2025, Part 450 license types, 180-day review, § 450.101 EC ≤ 10⁻⁴, § 450.161 NOTAM obligation (2025)
 - [[sources/faa-notam-search-2024]] — FAA NOTAM Search public API, DINS multi-ICAO query, SWIM FNS JMS subscription, ICAO codes for US launch sites (2024)
@@ -101,6 +102,7 @@ type: index
 - [[entities/glen-weyl]] — US economist; RadicalxChange founder; co-author of *Plurality* with Audrey Tang; originator of Quadratic Voting / Quadratic (Plural) Funding (Gitcoin math)
 - [[entities/jamia-gpt]] — Sampras's Custom GPT for Polkadot / JAM / Coretime / XCM / OpenGov
 - [[entities/spacesharks-gpt]] — Sampras's Custom GPT for LEO constellations, ODC, ISL, Taiwan space supply chain
+- [[entities/anthropic]] — US AI safety company; creator of Claude model family + Claude Code; Enterprise Frontier Safeguards (EFS) 2026-09-01; Fable 5.1 + Mythos 5.1 released 2026-09-01
 - [[entities/nvidia]] — NVIDIA Corp; GPU + Nemotron LLM vendor; GTC Taipei 2026 Agent Challenge host; cross-cuts AI, space (Starcloud H100), radiation (Orin TID)
 - [[entities/nous-research]] — Open-source AI lab founded 2023; CEO Jeffrey Quesnelle + Teknium/Karan4D/Shivani Mitra; $65M Series A April 2025 led by Paradigm at $1B valuation; builds Hermes LLMs, Hermes Agent, Psyche decentralized training
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
