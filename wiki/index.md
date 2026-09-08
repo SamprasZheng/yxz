@@ -102,6 +102,7 @@ type: index
 - [[entities/glen-weyl]] — US economist; RadicalxChange founder; co-author of *Plurality* with Audrey Tang; originator of Quadratic Voting / Quadratic (Plural) Funding (Gitcoin math)
 - [[entities/jamia-gpt]] — Sampras's Custom GPT for Polkadot / JAM / Coretime / XCM / OpenGov
 - [[entities/spacesharks-gpt]] — Sampras's Custom GPT for LEO constellations, ODC, ISL, Taiwan space supply chain
+- [[entities/anthropic]] — US AI safety company; creator of Claude model family + Claude Code; Enterprise Frontier Safeguards (EFS) 2026-09-01; Fable 5.1 + Mythos 5.1 released 2026-09-01
 - [[entities/nvidia]] — NVIDIA Corp; GPU + Nemotron LLM vendor; GTC Taipei 2026 Agent Challenge host; cross-cuts AI, space (Starcloud H100), radiation (Orin TID)
 - [[entities/nous-research]] — Open-source AI lab founded 2023; CEO Jeffrey Quesnelle + Teknium/Karan4D/Shivani Mitra; $65M Series A April 2025 led by Paradigm at $1B valuation; builds Hermes LLMs, Hermes Agent, Psyche decentralized training
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
