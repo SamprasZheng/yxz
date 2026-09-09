@@ -13,6 +13,30 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-09-09
+
+- Market/Sentiment stance: **neutral** (score 0)
+- Web signals collected: 4
+- Social-search signals collected: 10
+- Updated at: 2026-09-09T00:23:38.096Z
+
+Key web signals:
+- [Top Polkadot Projects in 2026: 14 Best DeFi, Privacy & RWA DApps - Coin Bureau](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ycGk3TXVQZTBWaVZGaHdkb01jOUFTQkpiWUgxRnZwZk10OVoyemRqMEVOY0cyQkhYcm42YkNXZ016MXczcHZYeU5DSFZpZnVRZmpieXd6czYyenl3SFdldFB2bw?oc=5)
+- [Polkadot (DOT) Price Prediction 2026 and 2030: A Hard Supply Cap, a Billion Minted Tokens, and the Question Nobody Can Answer - Cryptonews.net](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Hbkszc1FxVkVvclcxWDF3ZWVBc3ZXUXlnXzRRemR3SEZaOWVhckFGcHloZE5udXF0bS13T2taNk1MWlhtU1k2aF9iUy0zZk9jOS02Yy1hamFUTVE?oc=5)
+- [Polkadot (DOT) Review 2026: JAM, Hard Cap & The Honest Verdict - Coin Bureau](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYcnpBakw3WFNGZEpKTzRsWjRjb3o0OXlGTlNMaEFYa0x3ZGRlRHRINXdBdm1QT0JESHVIUDNyaVpEQ1V4X0RqODlUcjZnbGF3NE1aSw?oc=5)
+- [Polkadot 2.0 Explained: Agile Coretime and What It Changes for Developers - Cryptonews.net](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ydHJlaVB4NEFoR3VtdDdGM2pxQXNWUWh3dHVuV2dibzg2Qzg5cXVfUExBTUEyVXZUUUlVY0JLWkViWmJfSmxWQW0zUEtyeGthY1paQ1ctcWMyUQ?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Polkadot 2.0 Explained: Agile Coretime and What It Changes for ...](https://x.com/BSCNews/article/2064595663892189684)
+- [Polkadot (@Polkadot) / X](https://x.com/Polkadot)
+- [Polkadot has changed a lot since the parachain auction era. - Polkadot ...](https://x.com/coinbureau/status/2054677804919509395)
+- [Lucky on X: " Polkadot ($DOT) Network Turnaround - x.com](https://x.com/Lucky_m_X/status/2096855277525938304)
+- [Polkadot (@Polkadot) on X](https://x.com/Polkadot/status/2062509237381513283)
+- [Seen some FUD on Polkadot activity. Like "Last transaction was 12h ago ...](https://x.com/Defi_Warhol/status/2028843351391560134)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-09-08
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -253,28 +277,6 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Polkadot has changed a lot since the parachain auction era. - Polkadot ...](https://x.com/coinbureau/status/2054677804919509395)
 - [Polkadot (@Polkadot) / X](https://x.com/Polkadot)
 - [Seen some FUD on Polkadot activity. Like "Last transaction was 12h ago ...](https://x.com/Defi_Warhol/status/2028843351391560134)
-
-Data quality notes:
-- No major data-quality issue in this run.
-
-### 2026-08-28
-
-- Market/Sentiment stance: **neutral** (score 0)
-- Web signals collected: 2
-- Social-search signals collected: 10
-- Updated at: 2026-08-28T06:12:48.652Z
-
-Key web signals:
-- [Top Polkadot Projects in 2026: Best DOT DApps For DeFi, RWA & Privacy - Coin Bureau](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ycGk3TXVQZTBWaVZGaHdkb01jOUFTQkpiWUgxRnZwZk10OVoyemRqMEVOY0cyQkhYcm42YkNXZ016MXczcHZYeU5DSFZpZnVRZmpieXd6czYyenl3SFdldFB2bw?oc=5)
-- [Polkadot (DOT) Review 2026: JAM, Hard Cap & The Honest Verdict - Coin Bureau](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYcnpBakw3WFNGZEpKTzRsWjRjb3o0OXlGTlNMaEFYa0x3ZGRlRHRINXdBdm1QT0JESHVIUDNyaVpEQ1V4X0RqODlUcjZnbGF3NE1aSw?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Polkadot 2.0 Explained: Agile Coretime and What It Changes for ...](https://x.com/BSCNews/article/2064595663892189684)
-- [The Crypto Times on X: "POLKADOT UPDATE: The conversation around ...](https://x.com/CryptoTimes_io/status/2092850326277599688)
-- [Polkadot (@Polkadot) / X](https://x.com/Polkadot)
-- [Polkadot has changed a lot since the parachain auction era. - Polkadot ...](https://x.com/coinbureau/status/2054677804919509395)
-- [Seen some FUD on Polkadot activity. Like "Last transaction was 12h ago ...](https://x.com/Defi_Warhol/status/2028843351391560134)
-- [Polkadot (@Polkadot) on X](https://x.com/Polkadot/status/2062509237381513283)
 
 Data quality notes:
 - No major data-quality issue in this run.
