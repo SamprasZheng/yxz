@@ -6,6 +6,7 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-09-09]] — KOL + keyword digest 2026-09-09: Fable 5.1/Mythos 5.1, GPT-6 Astra, OpenClaw 2.0, NemoClaw memory-agent, DOT +11%; 0 KOLs / 11 keywords / ~50 items (automated)
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
@@ -64,6 +65,8 @@ type: index
 
 ## Entities
 
+- [[entities/anthropic]] — US AI safety company; Claude model family (Fable 5.1/Mythos 5.1 Sept 2026), Claude Code, EFS; IPO-stage 2026
+- [[entities/openai]] — US AI company; GPT-6 Astra (Sept 3 2026, 100% ExploitBench), DevDay 2026 Sept 29, ChatGPT Healthcare Public Data
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
 - [[entities/polkadot]] — Layer-0 relay chain + parachain protocol; DOT token; JAM roadmap; DOT hard cap March 2026
 - [[entities/mythical-games]] — Web3 gaming studio; migrated ETH→Polkadot 2024; MYTH token; NFL Rivals, Nitro Nation
