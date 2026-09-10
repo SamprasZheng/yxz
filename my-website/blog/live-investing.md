@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-09-10
+
+- Market/Sentiment stance: **neutral** (score 1)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-09-10T00:22:32.155Z
+
+Key web signals:
+- [ETHUSD CM Futures Contract (Sep 2027) Trade Ideas — OKX:ETHUSD24U2027 - TradingView](https://news.google.com/rss/articles/CBMijwFBVV95cUxOS0NoT24ya0Q0enVHTDQ1cTRnYV9MTnZlNlZxWlR1ZEdCZmpKU3lJdnB5TVFxelBxaW51M3E1RkRSVG4tNkMteWd5WVAwVk9Rb1lrNE1saDdCZHp4LW9lekd2Qkl4c29rZzljbWY4LTcyZnU4dDBmOHRDSDZnV0k5cHV4Z2ZfSGIwc0xXdVd1TQ?oc=5)
+- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - bitcoinfoundation.org](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
+- [Bitmine Immersion Technologies (BMNR) Announces ETH Holdings Reach 5.93 Million Tokens, and Total Crypto and Total Cash Holdings of $15.7 Billion - TradingView](https://news.google.com/rss/articles/CBMiqgJBVV95cUxPcVlrMGF2U242UDI0NHNQaGp5MkJEa3h5LVFhNHlFRGIyNURiSEZkU2ZiMGhhLTZ5eG1XcnluRk1ZcDVXeWFpQ0tkRmlVaTJKREhRZ2EwYUlmUzN2WklXOG0zVWpBSHp4OHhfcHQ5TjdkSHp6aDdfbFdGZ2lxT3IzaEtqZWR2S0hob3g5ZzhYZVl2dmxhWXo0T2hPQzRjclhuX3AtWWlZYkJ4d0g0Tk5URmRYU1NFb3hNYVMzQzZRQmVWMXAzdDZhczVZbTl6SWdGM2dGRUp6VHlnMFNJS1dxYUJ5eS1mTGNsMkV1Z2ZoMG5WR0dSU1R0SElvSVVKeHoyV1NZX0YxV1RyWTdINWR1Rm5rVThmd2V4WmJyMXlYWmFhQ2VQa3VTUUVR?oc=5)
+- [Bitcoin, Nasdaq investors are celebrating, while U.S. consumers turn gloomy. - CoinDesk](https://news.google.com/rss/articles/CBMiugFBVV95cUxOSmUwb205UGFnOC1kMnBRS1EzYUU2Q29taXdVX3k5Mld5VjZvTnpHV3RzSU0zak9nWENuOElGdThTX3VCZjRsVGFmblNJWmpoR3U1TGZieDFkRTV4eFotc0hVczZoYl81WE9yN3ZZYnBybDkteFo4XzJqaTRtSnExRWE2Uzk1d1o5Q0tOSXlpM3RLVlZKNHdnS1NId3R3UUljdGhrdmhUQXFnMzZjbUhVRkRoRGRnSGxmSVE?oc=5)
+- [March 2026 FOMC: BTC, ETH Price Impact and Fed Outlook - Crypto.com International - Crypto.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cakh4bmFTamVhc0VLaHE2YVpja0M2RDFWTC1vU2V1ZG5nQVlpUlZleW41V1lYQ2lSNHZVRl9OYTQweEJaUjRMUzh3bmhZUUdzdGFUOUk2NUgzUEtPc3ZoS1ZkVGNNYmZ2b0plTzZjZVFNTWtadEZNaUlGTjE?oc=5)
+- [Crypto Daily Market Report – August 31, 2026 - KuCoin](https://news.google.com/rss/articles/CBMihAFBVV95cUxQRFk1VUpuV1R1clNCS21hcTZQYVdRVkhpdkNra3NVeUQwWXJHdDUtbWdUaS00dmZrcVEyeUtfeUxNT2REa2tndjR6Nk9KZmhUVEhSaUtBcW9TUXdGODg3dWhIWHJlOHZlOW1iWHZOQ3hBd3VaVW9NVWFMZWVmQl9QV3dkMEo?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-09-09
 
 - Market/Sentiment stance: **neutral** (score 1)
@@ -237,27 +258,6 @@ Key web signals:
 - [ETHUSD Futures Contract (Sep 2026) - TradingView](https://news.google.com/rss/articles/CBMijwFBVV95cUxOdkI1U3RKSllSUy0zRHFnUGpWVzN6WXhWZ0ZhdXN5RFF3V1dCUXVDaGVxQUZiWUxvNDZON0RjXzNuNWZGcXJ2RTExUmlIOFBEZ1dYeHpneGZxWU1BVkppdVpuU2o0YTFoeFBFSEplUk1JZjB6YVdHbjZTVWFxZGFKcUdWRmN5cEo4NkF5SFZTTQ?oc=5)
 - [Market Indicator Hub Launches Comprehensive Platform for Smarter Market Analysis and Investment Research - WebWire](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kV0hWYk94QzVFaFNhRnh0ak92aG5iaUlORTRmbVFqak5zLVpwYW0xM0JIY2hOeEY5UjBCMjRiNGNRZFB5QndhWkF1dzcwMDZiMDF3eTBLVTBRMDRyX2g5Yw?oc=5)
 - [BTC Price News: Bitcoin rises to key level while analyst sets $100,000 target - CoinDesk](https://news.google.com/rss/articles/CBMizAFBVV95cUxOdWdHSmswZnBhMHRkS2dCaWFOTjA1M0dnN180TDdvbU54bFlzYnAxb09pM2dURTBfNEpuNEplTW1kaGFZTkxkUU0wd1ZRVGVvZFc5NlhuT3BXdmlxTGRjd1FEVHdtR0l6eFBYT2Via1NabWN0dWtIck5PTm1Ld3ZNb2lCTU9DbkJfME5zZkJpSUF6Z1NXeDdRVHJaSVo3eXBZSzY0c19KVGY2ZHlRNGFFbUozOHZFaHpvVXpXd0NlNFhIX0FBT043dElJYXY?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-08-29
-
-- Market/Sentiment stance: **neutral** (score 1)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-08-29T03:46:28.454Z
-
-Key web signals:
-- [Brent Crude Oil Near $90: Is The Stock Market Cracking & Rolling Over? - Fed, Bonds, Bitcoin & Gold Kim Petras (85y35BR8AL) - Mshale](https://news.google.com/rss/articles/CBMiYEFVX3lxTFAxbWdYQUs3TmhoTzlMeXBnOTZkY3dVNEowOWdYSG1sYjRfc05jZUhJazBKM2JkVDNHenNRbE1MV2RXU2dnQmVIM0NJTWtaWG9mWTJBUE5wVDQ4amE3RnZwdQ?oc=5)
-- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
-- [ETHUSD Futures Contract (Sep 2026) - TradingView](https://news.google.com/rss/articles/CBMijwFBVV95cUxOdkI1U3RKSllSUy0zRHFnUGpWVzN6WXhWZ0ZhdXN5RFF3V1dCUXVDaGVxQUZiWUxvNDZON0RjXzNuNWZGcXJ2RTExUmlIOFBEZ1dYeHpneGZxWU1BVkppdVpuU2o0YTFoeFBFSEplUk1JZjB6YVdHbjZTVWFxZGFKcUdWRmN5cEo4NkF5SFZTTQ?oc=5)
-- [Market Indicator Hub Launches Comprehensive Platform for Smarter Market Analysis and Investment Research - WebWire](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kV0hWYk94QzVFaFNhRnh0ak92aG5iaUlORTRmbVFqak5zLVpwYW0xM0JIY2hOeEY5UjBCMjRiNGNRZFB5QndhWkF1dzcwMDZiMDF3eTBLVTBRMDRyX2g5Yw?oc=5)
-- [BTC Price News: Bitcoin rises to key level while analyst sets $100,000 target - CoinDesk](https://news.google.com/rss/articles/CBMizAFBVV95cUxOdWdHSmswZnBhMHRkS2dCaWFOTjA1M0dnN180TDdvbU54bFlzYnAxb09pM2dURTBfNEpuNEplTW1kaGFZTkxkUU0wd1ZRVGVvZFc5NlhuT3BXdmlxTGRjd1FEVHdtR0l6eFBYT2Via1NabWN0dWtIck5PTm1Ld3ZNb2lCTU9DbkJfME5zZkJpSUF6Z1NXeDdRVHJaSVo3eXBZSzY0c19KVGY2ZHlRNGFFbUozOHZFaHpvVXpXd0NlNFhIX0FBT043dElJYXY?oc=5)
-- [March 2026 FOMC: BTC, ETH Price Impact and Fed Outlook - Crypto.com International - Crypto.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cakh4bmFTamVhc0VLaHE2YVpja0M2RDFWTC1vU2V1ZG5nQVlpUlZleW41V1lYQ2lSNHZVRl9OYTQweEJaUjRMUzh3bmhZUUdzdGFUOUk2NUgzUEtPc3ZoS1ZkVGNNYmZ2b0plTzZjZVFNTWtadEZNaUlGTjE?oc=5)
 
 Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
