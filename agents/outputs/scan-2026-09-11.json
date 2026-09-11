@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-11",
+  "status": "STUB",
+  "blockers": [
+    {
+      "id": 1,
+      "description": "agents/src/trader/ does not exist — trader pipeline not built",
+      "impact": "trader scan CLI unavailable"
+    },
+    {
+      "id": 2,
+      "description": "yfinance network-blocked — proxy returns 403 for Yahoo Finance endpoints",
+      "impact": "no price data available for backtest or forward scoring"
+    }
+  ],
+  "watchlist": [
+    "PLTR", "LMT", "NOC", "RTX", "NVDA",
+    "AMD", "MSFT", "GOOGL", "META", "AMZN",
+    "AAPL", "TSLA", "BA", "AXON", "HIMS"
+  ],
+  "scan_verdicts": null,
+  "tier1": ["PLTR", "NVDA", "LMT", "NOC", "AMD"],
+  "tier2": ["RTX", "MSFT", "GOOGL", "AMZN", "META"],
+  "dropped": ["TSLA", "AAPL", "BA", "AXON", "HIMS"],
+  "fom_formula": "FOM = 0.4 * confidence + 0.3 * normalized_sizing_sigma + 0.2 * recent_hit_rate + 0.1 * news_momentum",
+  "fom_table": null,
+  "hit_rate_prior": null,
+  "mean_realized_return_prior": null
+}
