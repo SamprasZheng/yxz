@@ -105,4 +105,4 @@ Where each component is normalized to [0, 1]:
 
 - Stub scan JSON: `agents/outputs/scan-2026-09-12.json`
 - Pipeline target: `agents/src/trader/` (not yet created)
-- Structural reference: [[synthesis/odc-mission-taiwan-sso-600km]] (firefly pipeline pattern)
+- Structural reference: `agents/src/firefly/` (firefly pipeline pattern — no odc-mission synthesis page exists yet)
