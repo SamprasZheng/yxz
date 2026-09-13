@@ -62,8 +62,12 @@ type: index
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
 
+- [[sources/kol-digest-2026-09-13]] — KOL + keyword daily digest 2026-09-13: 11 keywords (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks); KOL list empty; key items: Fable 5.1/Mythos 5.1, NemoClaw v0.0.120 Shields retirement, OpenAI Agents API public beta, DOT ~$1.10 on testnet-heavy surge
+
 ## Entities
 
+- [[entities/anthropic]] — US AI safety company (SF, est. 2021); Claude Fable/Opus/Sonnet/Haiku model families; Claude Code developer platform; EFS + self-hosted beta Sept 2026
+- [[entities/openai]] — US AI company (SF, est. 2015); GPT-6 Astra + o-series model families; Agents API public beta Sept 2026; CEO Sam Altman
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
 - [[entities/polkadot]] — Layer-0 relay chain + parachain protocol; DOT token; JAM roadmap; DOT hard cap March 2026
 - [[entities/mythical-games]] — Web3 gaming studio; migrated ETH→Polkadot 2024; MYTH token; NFL Rivals, Nitro Nation
