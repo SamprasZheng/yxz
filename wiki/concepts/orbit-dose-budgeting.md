@@ -85,6 +85,7 @@ This is the answer driver — it tells you whether ECC alone is sufficient or wh
 | Slant-thickness / spot shielding | Single mm-Al input ignores box-wall geometry. Real shielding is directional. |
 | Proton-induced SEU at low LET | The `(20/LET_th)^1.2` form is heavy-ion-style; proton SEU via nuclear reaction has different scaling. |
 | Advanced-node Qcrit | <28 nm CMOS exhibits multi-bit upsets and angular dependence that pure σ vs. LET misses. |
+| **Displacement damage (DDD)** — see [[concepts/displacement-damage-dose]] | **Not modeled at all here.** The TID krad budget captures *ionizing* dose only; solar cells, optocouplers, image sensors and LEDs are governed by *non-ionizing* NIEL-scaled displacement, a separate cumulative budget line (equivalent-1-MeV-electron-fluence or DDD in MeV/g) that a TID-only trade study silently omits. |
 
 ## Concept↔Code Conformance (向內消化)
 
@@ -131,6 +132,7 @@ For signoff you graduate to full tools. For weekly trade-study iteration, closed
 - [[sources/radtest-playbook-sampras-2021]] — runnable implementation
 - [[concepts/tid-total-ionizing-dose]] — dose physics
 - [[concepts/see-single-event-effects]] — LET / cross-section / Weibull background
+- [[concepts/displacement-damage-dose]] — the *third* budget line (NIEL-scaled, non-ionizing) this closed-form model does not cover
 - [[concepts/rha-radiation-hardening]] — RDM ties to the TID output
 - [[concepts/solar-cycle-25-leo-radiation]] — why 2024–2026 baselines deserve a derate
 - [[concepts/cots-gpu-radiation-risk]] — applied case (H100 ECC vs. SEL risk)

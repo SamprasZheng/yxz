@@ -5,7 +5,7 @@ tags: [rf-hardware, space, radiation, semiconductor, testing, mil-std]
 
 # TID — Total Ionizing Dose
 
-**Cumulative damage** caused by space radiation to semiconductors; one of the fundamental qualification items for satellite component reliability. Alongside [[concepts/see-single-event-effects]] (transient type), TID represents one of the two major space radiation threats.
+**Cumulative *ionizing* damage** caused by space radiation to semiconductors; one of the fundamental qualification items for satellite component reliability. TID is the **ionizing-dose** member of the **three-mechanism** space-radiation taxonomy — TID (ionizing, cumulative) + [[concepts/displacement-damage-dose|DDD]] (non-ionizing lattice displacement, cumulative) + [[concepts/see-single-event-effects|SEE]] (single-particle, transient/destructive). Older framings (including [[sources/space-radiation-tid-see-2025]]) call it "two major threats"; that omits DDD, which is the *dominant* mode for solar cells, optocouplers and image sensors — see [[concepts/displacement-damage-dose]].
 
 ## Damage Mechanism
 
@@ -85,18 +85,23 @@ The geographic axis for TID is **not** test-lab capacity (that is mapped on [[co
 
 **Rad-hard *by design* (RHBD) vs *by process* (RHBP):** RHBD hardens via layout libraries (enclosed-layout transistors, guard rings, TMR) on a *standard* commercial foundry — cheaper, scalable, the NewSpace default; RHBP uses a *special* process (SOI, epitaxial, HARDSIL) — more robust, more expensive. **Market split (fact-check, accessed 2026-07-23):** the two techniques are near-parity and the crossover year is analyst-contested — one house still has **RHBP ahead at ~54.5% (2025)**, another projects **RHBD taking ~52% (2026)** with the higher long-run CAGR; all agree RHBD is the *rising* share because it rides commodity nodes and the NewSpace cost curve. The overall rad-hard-electronics market is ≈**$1.77B (2025) → ~$2.30B (2030)**, ~5.4% CAGR, space the largest end-use (~58%). The RHBD tilt ties directly back to the COTS-upscreening economics on [[concepts/rha-radiation-hardening]]. Sources: [VORAGO RHBD vs RHBP](https://www.voragotech.com/blog/rhbd-vs-hardsil), [MarketsandMarkets rad-hard electronics](https://www.marketsandmarkets.com/Market-Reports/radiation-hardened-electronics-market-44047967.html), [JESD57 test standard (NASA NTRS)](https://ntrs.nasa.gov/api/citations/20160014892/downloads/20160014892.pdf), [Starfish Prime / List of artificial radiation belts (Wikipedia)](https://en.wikipedia.org/wiki/List_of_artificial_radiation_belts).
 
-## Differences from SEE
+## Differences from DDD and SEE
 
-| | TID | SEE |
-|---|---|---|
-| Damage type | Cumulative | Instantaneous |
-| Triggering particles | Any ionizing radiation (dose integral) | Single high-energy particle |
-| Recoverability | Irreversible (cumulative) | Partially recoverable (SEU/SEFI); partially irreversible (SEL/SEGR) |
-| Primary test source | Co-60 γ | Heavy-ion accelerator, proton accelerator |
+| | TID | DDD | SEE |
+|---|---|---|---|
+| Energy channel | **Ionizing** (e-h pairs) | Non-ionizing (lattice displacement) | Ionizing, single-track |
+| Damage type | Cumulative | Cumulative | Instantaneous |
+| Triggering particles | Any ionizing radiation (dose integral) | Protons / neutrons / electrons (NIEL integral) | Single high-energy particle |
+| Recoverability | Irreversible (cumulative) | Irreversible (partial anneal) | Partially recoverable (SEU/SEFI); partially irreversible (SEL/SEGR) |
+| Primary test source | Co-60 γ | Proton / neutron accelerator | Heavy-ion accelerator, proton accelerator |
+| Worst-hit devices | MOS, bipolar linear | Solar cells, optocouplers, image sensors | SRAM, FPGA, power MOSFET |
+
+Note that **protons deposit both ionizing (TID) and non-ionizing (DDD) energy simultaneously** — a proton campaign bundles the two, and isolating them requires a companion Co-60 (pure-TID) run. See [[concepts/displacement-damage-dose]].
 
 ## Related
 
 - [[concepts/see-single-event-effects]]
+- [[concepts/displacement-damage-dose]] — the *non-ionizing* cumulative mechanism; TID's twin (protons cause both at once), the third member of the taxonomy
 - [[concepts/rha-radiation-hardening]]
 - [[concepts/orbit-dose-budgeting]] — closed-form TID dose-vs-shielding calculator for trade studies
 - [[sources/space-radiation-tid-see-2025]]

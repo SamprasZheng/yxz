@@ -81,7 +81,7 @@ Traditional Co-60 facilities are scarce and expensive; **90Sr/90Y β electron so
 From [[sources/radtest-playbook-sampras-2021]], a TI-style five-step ordering that an engineer follows before locking a radiation test plan:
 
 1. **Mission profile first** — orbit, lifetime, shielding stack-up, reliability target. Without this, no test plan can be sized.
-2. **TID screen** with system-level assumptions (orbit × duration × shielding). Use closed-form [[concepts/orbit-dose-budgeting]] for trade studies; graduate to SPENVIS/OMERE for signoff.
+2. **TID screen** with system-level assumptions (orbit × duration × shielding). Use closed-form [[concepts/orbit-dose-budgeting]] for trade studies; graduate to SPENVIS/OMERE for signoff. **For optocouplers, solar cells, image sensors, LEDs and bipolar linear parts, add a companion [[concepts/displacement-damage-dose|DDD]] screen** — these are minority-carrier / optoelectronic devices whose *dominant* failure mode is non-ionizing displacement, invisible to a TID-only krad number. A proton run covers TID+DDD together; a Co-60 companion isolates the split.
 3. **SEE characterization** — extract LET threshold + saturation cross-section from heavy-ion accelerator data ([[concepts/see-single-event-effects]]). **Always run SEL before SEU** — a latch-up finding kills the part regardless of SEU performance.
 4. **Design-level mitigation**:
    - ECC + scrubbing for SRAM/HBM (covers SEU)
@@ -129,7 +129,7 @@ The rad-hard *device* line is easy to read as frozen heritage silicon (the [[con
 
 | Part | Region | What's new | Status (2026) |
 |---|---|---|---|
-| **Microchip PIC64-HPSC** | US | NASA **High-Performance Spaceflight Computing** part: 10 RISC-V cores (8 app = 2× SiFive X288 quad-complex of X280 w/ 512-bit vector + 2 system), AI/ML, virtualization, TSN Ethernet, PCIe, CXL 2.0, post-quantum crypto; ~**100× traditional space-processor** throughput; fielded in Moog Cascade | **In qualification, not flight-certified, behind schedule**; cert due **late-2026** to stay Artemis-eligible (~2028 crewed landing) ([Microchip](https://www.microchip.com/en-us/products/microprocessors/64-bit-mpus/pic64-hpsc)) |
+| **Microchip PIC64-HPSC** | US | NASA **High-Performance Spaceflight Computing** part: 10 RISC-V cores (8 app = 2× SiFive X288 quad-complex of X280 w/ 512-bit vector + 2 system), AI/ML, virtualization, TSN Ethernet, PCIe, CXL 2.0, post-quantum crypto; ~**100× traditional space-processor** throughput; fielded in Moog Cascade + **PDC Osiris compute module (2026)** | **QML-Y qualified** (fact-check, accessed 2026-09-13): the rad-hard PIC64-HPSC1000 now carries **QML Class Y** with published specs (**100 krad(Si) TID, tested to 200 krad; SEL >78 MeV·cm²/mg**) for MEO/GEO/deep-space, plus a rad-*tolerant* AEC-Q100 LEO variant (50 krad / 42 MeV·cm²/mg); engineering models (‑EM) sampling; Microchip's **Nantes (FR) line achieved QML-Y 2026-06-11** to support it — a clear advance on the earlier "in qualification / behind schedule" read, though flight *heritage* still pending ([Microchip Nantes QML-Y, GlobeNewswire 2026-06-11](https://www.globenewswire.com/news-release/2026/06/11/3310391/0/en/Microchip-s-Nantes-Facility-in-France-Achieves-QML-Class-Y-Certification-Expanding-High-Reliability-Capabilities.html)) |
 | **Frontgrade Gaisler GR765** | Europe | Octa-core, **user-selectable NOEL-V (RISC-V RV64) / LEON5 (SPARCv8e)**; STM 28 nm FDSOI; 800 MHz / 2600 DMIPS/core; 50 krad(Si) guaranteed, 100 krad screened; Linux/VxWorks/RTEMS/Zephyr | Hardware in development off autumn-2025 prototypes; TSIM3 sim in beta ([Gaisler](https://www.gaisler.com/products/gr765)) |
 | **BAE RH45 / RH12 Storefronts** | US | *Fabrication*, not a single part: **RHBD 45 nm SOI (RH45) + 12 nm (RH12) trusted-foundry** platforms letting customers design/fab custom rad-hard ASICs on qualified processes | RH45 restoration funded by **DoW DPA Title III $16M, announced 2026-07-02** ([Defense Daily](https://www.defensedaily.com/bae-gets-16-million-dod-investment-to-expand-u-s-rad-hardened-chips/business-financial/)) |
 
@@ -165,6 +165,7 @@ RHA is often taught as a static checklist; it is better read as a **process that
 
 - [[concepts/tid-total-ionizing-dose]]
 - [[concepts/see-single-event-effects]]
+- [[concepts/displacement-damage-dose]] — the third mechanism; adds an optocoupler/solar-cell/image-sensor DDD screening line to the assurance workflow
 - [[concepts/orbit-dose-budgeting]] — closed-form trade-study calculators used in step 2/3 of the workflow
 - [[concepts/taiwan-radiation-test-ecosystem]] — detailed page on Taiwan's testing ecosystem
 - [[sources/space-radiation-tid-see-2025]]

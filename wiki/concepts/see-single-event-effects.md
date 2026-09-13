@@ -5,7 +5,7 @@ tags: [rf-hardware, space, radiation, semiconductor, testing, sram, fpga, mosfet
 
 # SEE — Single Event Effects
 
-A single high-energy particle passing through the sensitive volume of a semiconductor deposits ionized charge along its track; if the collected charge exceeds the **critical charge (Qcrit)**, it triggers a logic upset or destructive failure. Alongside [[concepts/tid-total-ionizing-dose]] (cumulative type), SEE represents one of the two major space radiation threats.
+A single high-energy particle passing through the sensitive volume of a semiconductor deposits ionized charge along its track; if the collected charge exceeds the **critical charge (Qcrit)**, it triggers a logic upset or destructive failure. SEE is the **single-particle** member of the **three-mechanism** space-radiation taxonomy — [[concepts/tid-total-ionizing-dose|TID]] (ionizing, cumulative) + [[concepts/displacement-damage-dose|DDD]] (non-ionizing lattice displacement, cumulative) + SEE (single-particle, transient/destructive). The two *cumulative* mechanisms are TID and DDD; SEE is the only *per-event* one.
 
 ## Triggering Mechanism
 
@@ -120,6 +120,7 @@ SEE *test-capacity* by region (who owns the accelerators) is mapped in the testi
 ## Related
 
 - [[concepts/tid-total-ionizing-dose]]
+- [[concepts/displacement-damage-dose]] — the third mechanism; the *other* cumulative mode (non-ionizing), distinct from both SEE and TID
 - [[concepts/rha-radiation-hardening]]
 - [[concepts/orbit-dose-budgeting]] — Poisson SEE rate model from LET threshold + cross-section
 - [[sources/space-radiation-tid-see-2025]]
