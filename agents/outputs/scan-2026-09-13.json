@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-13",
+  "run_status": "stub",
+  "blockers": [
+    "trader_pipeline_missing: agents/src/trader/ does not exist; trader scan CLI not available",
+    "yfinance_blocked: Yahoo Finance connections return 403 via proxy tunnel; live price data unavailable"
+  ],
+  "llm_backend": "disabled",
+  "trader_offline": true,
+  "watchlist_seed": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+  "tickers": {
+    "NVDA": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": null, "error": "yfinance_blocked"},
+    "AAPL": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": null, "error": "yfinance_blocked"},
+    "TSLA": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": null, "error": "yfinance_blocked"},
+    "MSFT": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": null, "error": "yfinance_blocked"},
+    "AMD":  {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": null, "error": "yfinance_blocked"},
+    "GOOGL":{"direction": null, "confidence": null, "sizing_sigma": null, "thesis": null, "error": "yfinance_blocked"},
+    "META": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": null, "error": "yfinance_blocked"},
+    "AMZN": {"direction": null, "confidence": null, "sizing_sigma": null, "thesis": null, "error": "yfinance_blocked"}
+  },
+  "backtest": {
+    "prior_date": null,
+    "prior_report": null,
+    "hit_rate": null,
+    "mean_realized_return": null,
+    "note": "No prior daily-trader file found; first run of this routine."
+  },
+  "fom_formula": "FOM = 0.4 * confidence + 0.3 * normalized_sizing_sigma + 0.2 * recent_hit_rate + 0.1 * news_momentum",
+  "tier1": [],
+  "tier2": []
+}
