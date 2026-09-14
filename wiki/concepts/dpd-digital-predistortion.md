@@ -129,7 +129,7 @@ This is the bridge from the RF front-end cluster to the [[entities/nvidia|NVIDIA
 
 ## Sources (accessed 2026-05-31; six-region + vendor layer added 2026-07-10; Versal RF convergence datapoint added 2026-08-24)
 
-- AMD **Versal RF Series** (5th-gen direct-RF; DPD/DSP co-resident with 32 GSPS/~18 GHz RF converters + AI Engines, 80 TOPS, samples Q4 2025 / production H1 2027): [AMD Introduces Versal RF Series Adaptive SoCs (2024-12-10)](https://ir.amd.com/news-events/press-releases/detail/1231/)
+- AMD **Versal RF Series** (5th-gen direct-RF; DPD/DSP co-resident with 32 GSPS/~18 GHz RF converters + AI Engines, 80 TOPS): [AMD Introduces Versal RF Series Adaptive SoCs (2024-12-10)](https://ir.amd.com/news-events/press-releases/detail/1231/). Ramp re-verified 2026-09-14: VR1602 engineering samples now shipping, VR1652 Q1 2026, production H1 2027.
 
 - RFHIC GaN-on-SiC + MaxLinear DPD demonstration, IMS 2024: [RFHIC product demo](https://rfhic.com/product-demo/rfhics-gan-on-sic-solutions-featuring-maxlinears-dpd-at-ims-2024/)
 - Analog Devices ADRV904x integrated digital-front-end (DPD/CFR/CDUC/CDDC): [ADI Digital Pre-Distortion](https://www.analog.com/en/solutions/sdr-radioverse-pavilion-home/wideband-transceivers/digital-pre-distortion.html); tutorial [DPD for RF Communications: From Equations to Implementation (Analog Dialogue)](https://www.analog.com/en/resources/analog-dialogue/articles/digital-predistortion-for-rf-communication.html)
