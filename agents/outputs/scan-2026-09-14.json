@@ -1,0 +1,19 @@
+{
+  "scan_date": "2026-09-14",
+  "mode": "STUB — network blocked",
+  "blocker": "Yahoo Finance (finance.yahoo.com) is blocked by the remote execution environment's outbound network proxy (HTTP 403 CONNECT tunnel failure). All 8 tickers returned empty DataFrames. This is a known constraint of this sandboxed execution environment.",
+  "trader_pipeline_status": "not_implemented — agents/src/trader/ does not exist yet; scan used standalone yfinance script as fallback",
+  "watchlist": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+  "results": [],
+  "errors": [
+    {"ticker": "NVDA", "error": "ConnectionError — proxy 403, no data returned"},
+    {"ticker": "AAPL", "error": "ConnectionError — proxy 403, no data returned"},
+    {"ticker": "TSLA", "error": "ConnectionError — proxy 403, no data returned"},
+    {"ticker": "MSFT", "error": "ConnectionError — proxy 403, no data returned"},
+    {"ticker": "AMD",  "error": "ConnectionError — proxy 403, no data returned"},
+    {"ticker": "GOOGL","error": "ConnectionError — proxy 403, no data returned"},
+    {"ticker": "META", "error": "ConnectionError — proxy 403, no data returned"},
+    {"ticker": "AMZN", "error": "ConnectionError — proxy 403, no data returned"}
+  ],
+  "remediation": "To unblock: (1) add finance.yahoo.com to the environment's network allowlist, OR (2) switch to an alternative data source allowed by the proxy (e.g. Alpha Vantage, Polygon.io, a self-hosted price cache), OR (3) run the scan locally where Yahoo Finance is accessible."
+}
