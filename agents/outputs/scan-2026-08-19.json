@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-08-19T23:11:39.846852+00:00",
+  "watchlist_seed": [
+    "NVDA",
+    "AAPL",
+    "TSLA",
+    "MSFT",
+    "AMD",
+    "GOOGL",
+    "META",
+    "AMZN"
+  ],
+  "rows": [
+    {
+      "ticker": "NVDA",
+      "error": "exc:ConnectionError:Failed to perform, curl: (7) CONNECT tunnel failed, response 403. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+    },
+    {
+      "ticker": "AAPL",
+      "error": "no_history"
+    },
+    {
+      "ticker": "TSLA",
+      "error": "no_history"
+    },
+    {
+      "ticker": "MSFT",
+      "error": "no_history"
+    },
+    {
+      "ticker": "AMD",
+      "error": "no_history"
+    },
+    {
+      "ticker": "GOOGL",
+      "error": "no_history"
+    },
+    {
+      "ticker": "META",
+      "error": "no_history"
+    },
+    {
+      "ticker": "AMZN",
+      "error": "no_history"
+    }
+  ],
+  "notes": [
+    "Deterministic momentum scorer used in place of the LLM trader agents (agents/src/trader/ does not exist in this repo yet).",
+    "All prices/returns pulled live from yfinance."
+  ]
+}
