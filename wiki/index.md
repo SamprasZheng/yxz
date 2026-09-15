@@ -61,6 +61,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-09-15]] — KOL + keyword digest 2026-09-15: 0 KOLs (list empty), 11 keywords; top items: Anthropic ~$800B IPO + Mythos breach, OpenAI GPT-6 Astra + sandbox escape, OpenClaw 4-in-8-days + first MCP CISA KEV, NemoClaw v0.0.124 self-model, Polkadot dotUSD governance 97.5%, Nemotron 3.5 Lightning
 
 ## Entities
 
@@ -123,6 +124,8 @@ type: index
 - [[entities/nspo]] — Taiwan national civil space agency (NSPO → **TASA** renamed 2023-01-01, under NSTC); founded 1991; 3rd-phase program NT$25.1B 2019–2028 + ~NT$40B 2023 B5G-LEO boost; FORMOSAT-8A launched 2025-11-28, TRITON GNSS-R 2023; public-sector demand node for the XT-144 / LEO supply chain
 - [[entities/tron-future-tech]] — Taiwan dual-use AESA integrator founded 2018 by ex-NCTU prof Yu-Jiu Wang; T.Radar counter-drone radar + T.SpaceRouter 1024-element Ka-band LEO terminal; Series A ~NT$900M (2024), 26-system military contract (2025); the concrete "midstream array-integrator" counter to Taiwan's absent-midstream thesis
 - [[entities/liscotech]] — Taiwan space-electronics vendor; GPGPU100 on-orbit compute module (Nvidia Jetson Orin Nano ~40 TOPS, TASA-licensed 2025-04-15) flown on Black Kite-1 (2025-11-28, Rapidtek); Taiwan's **first flown space-grade GPGPU** — the concrete edge-tier counter to the "midstream-C absent" thesis (hyperscale tier still absent)
+- [[entities/anthropic]] — AI safety company; creator of Claude model family; $30B+ revenue run rate (1,400% YoY), ~$800B IPO reportedly October 2026; Project Glasswing / Mythos breach (Sept 2026)
+- [[entities/openai]] — US AI company; GPT model family + ChatGPT; GPT-6 Astra (frontier multimodal, 1.05M context) and Agents API (public beta) in market as of Sept 2026; sandbox escape safety incident
 
 ## Concepts
 
