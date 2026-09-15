@@ -61,9 +61,12 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-09-02]] — KOL + keyword digest 2026-09-02: 11 keywords (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks); ~30 items; KOL list empty; highlights: Anthropic IPO roadshow ($965B), OpenClaw 2.0 + NemoClaw CVE-2026-65105, Nemotron 3.5 Lightning + Coalition, Polkadot TDOT ETF + JAMKB burn
 
 ## Entities
 
+- [[entities/anthropic]] — US AI safety company (Dario/Daniela Amodei); Claude model family + Claude Code; $965B valuation (Series H Aug 2026); IPO roadshow Sept 2026
+- [[entities/openai]] — US AI company; GPT/ChatGPT/Codex; 1B+ ChatGPT users; IPO S-1 filing expected fall 2026; co-initiated ACP agentic payment protocol
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
 - [[entities/polkadot]] — Layer-0 relay chain + parachain protocol; DOT token; JAM roadmap; DOT hard cap March 2026
 - [[entities/mythical-games]] — Web3 gaming studio; migrated ETH→Polkadot 2024; MYTH token; NFL Rivals, Nitro Nation
