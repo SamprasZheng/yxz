@@ -1,0 +1,131 @@
+{
+  "date": "2026-08-13",
+  "mode": "STUB \u2014 blocker run",
+  "blockers": [
+    {
+      "id": "B1",
+      "description": "Trader pipeline missing: agents/src/trader/ does not exist. Only agents/src/firefly/ is implemented. The `trader scan` CLI entrypoint is not available.",
+      "impact": "Cannot run automated scan. All thesis/confidence/sizing_sigma values are qualitative stubs."
+    },
+    {
+      "id": "B2",
+      "description": "yfinance blocked: Yahoo Finance API returns HTTP 403 via outbound proxy (curl: (7) CONNECT tunnel failed). Real-time and historical price data unavailable.",
+      "impact": "Cannot compute realized 1d returns. Cannot backtest prior predictions. Cannot compute vol_ratio or price momentum signals."
+    },
+    {
+      "id": "B3",
+      "description": "No prior daily-trader file exists (first run). No yesterday watchlist to backtest.",
+      "impact": "Backtest section is empty; hit-rate history starts from zero."
+    }
+  ],
+  "watchlist": [
+    "NVDA",
+    "AAPL",
+    "TSLA",
+    "MSFT",
+    "AMD",
+    "GOOGL",
+    "META",
+    "AMZN",
+    "PLTR",
+    "AVGO",
+    "CRM",
+    "NFLX",
+    "SMCI",
+    "ARM",
+    "TSM"
+  ],
+  "stub_verdicts": {
+    "NVDA": {
+      "dir": "long",
+      "confidence": 0.75,
+      "sizing_sigma": 1.5,
+      "thesis": "AI infrastructure capex supercycle; dominant GPU/CUDA moat. Qualitative only \u2014 no live data."
+    },
+    "AAPL": {
+      "dir": "neutral",
+      "confidence": 0.45,
+      "sizing_sigma": 0.8,
+      "thesis": "Services growth but near-term iPhone China headwinds. Qualitative only."
+    },
+    "TSLA": {
+      "dir": "neutral",
+      "confidence": 0.4,
+      "sizing_sigma": 0.7,
+      "thesis": "Energy+FSD optionality vs margin compression risk. Qualitative only."
+    },
+    "MSFT": {
+      "dir": "long",
+      "confidence": 0.7,
+      "sizing_sigma": 1.2,
+      "thesis": "Azure AI + Copilot adoption curve; enterprise moat. Qualitative only."
+    },
+    "AMD": {
+      "dir": "long",
+      "confidence": 0.65,
+      "sizing_sigma": 1.1,
+      "thesis": "MI300X data center GPU share gains vs NVDA. Qualitative only."
+    },
+    "GOOGL": {
+      "dir": "long",
+      "confidence": 0.6,
+      "sizing_sigma": 1.0,
+      "thesis": "Search + Cloud TPU AI workloads; search moat intact. Qualitative only."
+    },
+    "META": {
+      "dir": "long",
+      "confidence": 0.68,
+      "sizing_sigma": 1.2,
+      "thesis": "Llama open-weight OS + ad efficiency flywheel. Qualitative only."
+    },
+    "AMZN": {
+      "dir": "long",
+      "confidence": 0.65,
+      "sizing_sigma": 1.1,
+      "thesis": "AWS GPU capacity + retail margin recovery. Qualitative only."
+    },
+    "PLTR": {
+      "dir": "long",
+      "confidence": 0.8,
+      "sizing_sigma": 1.8,
+      "thesis": "Q2-2026: rev $1.935B (+93% YoY), net income $1.06B; US-commercial +149%; FY guidance raised to $8.15B. Stock near ATH ~$156. Highest-confidence call in this run based on wiki-verified Q2 earnings."
+    },
+    "AVGO": {
+      "dir": "long",
+      "confidence": 0.7,
+      "sizing_sigma": 1.3,
+      "thesis": "Custom ASIC/XPU hyperscaler contracts; networking. Qualitative only."
+    },
+    "CRM": {
+      "dir": "neutral",
+      "confidence": 0.5,
+      "sizing_sigma": 0.9,
+      "thesis": "Agentforce AI CRM tailwinds vs SaaS multiple compression. Qualitative only."
+    },
+    "NFLX": {
+      "dir": "long",
+      "confidence": 0.6,
+      "sizing_sigma": 1.0,
+      "thesis": "Ad-tier subscriber growth + live content strategy. Qualitative only."
+    },
+    "SMCI": {
+      "dir": "short",
+      "confidence": 0.55,
+      "sizing_sigma": 1.0,
+      "thesis": "Accounting review risk + execution uncertainty vs AI server demand. Qualitative only."
+    },
+    "ARM": {
+      "dir": "long",
+      "confidence": 0.62,
+      "sizing_sigma": 1.1,
+      "thesis": "AI edge + mobile royalty ramp; v9 architecture uptake. Qualitative only."
+    },
+    "TSM": {
+      "dir": "long",
+      "confidence": 0.72,
+      "sizing_sigma": 1.4,
+      "thesis": "3nm/2nm capacity ramp; AI chip foundry monopoly. Qualitative only."
+    }
+  },
+  "note": "All verdicts are qualitative stubs. No automated pipeline, no live market data. Do not trade on this output."
+}
