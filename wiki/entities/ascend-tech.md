@@ -39,6 +39,15 @@ tags: [taiwan, rf-hardware, satellite, leo, filter, waveguide, supply-chain]
 
 > **Margin update (2026-08-23):** the canonical gross-margin figure on this page steps from **9M-2025 ≈47.3% → H1-2026 ≈56.9%** — a ~10-point expansion, driven by LEO product mix rising to ≈80% of revenue and satellite-grade pricing power. This is the concrete rebuttal to the cluster's "operators dual-source → Taiwan upstream margins compress" risk ([[synthesis/leo-taiwan-odc-gap]] falsifier #5): through mid-2026 the passive-precision moat is *widening* margins, not eroding them. Both the record-half framing and the margin are **company self-reported (自結)** ahead of audited financials — treat as directional-but-management-sourced.
 
+## Q3-2026 monthly prints — the LEO cycle re-accelerates (verified 2026-09-15)
+
+| Metric | Value | Source |
+|---|---|---|
+| Aug-2026 revenue | **NT$321 M** (NT$3.21 億), +39.56% MoM, **+93.19% YoY** | [Goodinfo 3491 月營收](https://goodinfo.tw/tw/ShowSaleMonChart.asp?STOCK_ID=3491) / [Yahoo TW 3491 營收](https://tw.stock.yahoo.com/quote/3491.TWO/revenue) |
+| 8M-2026 cumulative | **NT$2.474 B** (NT$24.74 億), **+73.4% YoY** | Goodinfo / Yahoo TW |
+
+The read: after Q2's slight QoQ dip (NT$902 M vs Q1's NT$1.02 B record), the monthly cadence turned sharply back up in Aug — a near-doubling YoY — consistent with management's guide that Q3 > Q2 and Q4 exceeds the Q1 record. The 8M cumulative already exceeds full-year 2025 revenue (NT$2.452 B) with a third of the year left, confirming 2026 as a step-change year and reinforcing that the LEO passive-RF franchise is scaling, not plateauing.
+
 ## LEO satellite positioning
 
 Widely reported as having entered the **Starlink** and **Amazon Kuiper** supply chains; among the highest-gross-margin Taiwan LEO upstream component makers. Revenue is now visibly LEO-cyclical — the Q4-2025 / FY-2025 records track the international constellations' deployment cadence, which is the cleanest evidence in the cluster that a Taiwan passive-RF vendor has cleared satellite-grade qualification rather than staying in terrestrial telecom.

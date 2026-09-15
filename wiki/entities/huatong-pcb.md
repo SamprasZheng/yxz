@@ -49,6 +49,15 @@ Compeq is a core PCB supplier to **SpaceX Starlink** and **Amazon Kuiper**, leve
 
 The satellite-board line is now framed by Taiwan analysts as **"only the appetizer"** — Compeq is pursuing a **three-theme growth map** (低軌衛星 LEO satellite boards + AI-data-center optical-transceiver-module boards + capex-driven capacity), with the satellite franchise the anchor and AI-datacenter boards the next leg. This is the same optical-datacenter demand vector now visible in [[entities/win-semiconductors|Win's]] 1.6T-PD ramp — the ODC/AI buildout pulling *two* Taiwan upstream nodes at once.
 
+## Q3-2026 monthly prints (verified 2026-09-15)
+
+| Metric | Value | Source |
+|---|---|---|
+| Aug-2026 revenue | **NT$7.012 B** (NT$70.12 億), **+6.87% YoY** | [cmoney 2313 公告](https://www.cmoney.tw/forum/article/184111057) / [Yahoo TW 2313 營收](https://tw.stock.yahoo.com/quote/2313.TW/revenue) |
+| 2026 satellite-board target (reaffirmed) | **≈NT$18.5 B (+22% YoY)**; some Taiwan press cite up to NT$20 B | [udn money 2026](https://money.udn.com/money/story/5710/9266904) |
+
+The read: Compeq's group revenue keeps compounding at a mid-to-high-single-digit YoY pace (Jun +21%, Jul +16%, Aug +6.9%) — a slower-but-broader base than the RF-component names because the satellite line is ~20% of a ~NT$76 B group, diluted by consumer/AI-server boards. The satellite-board franchise itself is the +22% leg; the group print is the blended figure. This is the *board/interconnect* node of the same LEO ramp lifting [[entities/win-semiconductors|Win]] (Aug +30.6% YoY) and [[entities/ascend-tech|Ascend]] (Aug +93% YoY) harder at the pure-play RF tier.
+
 > The frequently-cited **"~80% global market share in LEO-dedicated PCBs"** is an analyst/market-level figure repeated in Taiwan press; no independent primary audit of the denominator was found on a 2026-06-22 check — treat as directional dominance, not a precise audited share.
 
 ## Competitive advantages

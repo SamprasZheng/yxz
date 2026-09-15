@@ -20,7 +20,7 @@ This segment determines the performance ceiling of satellites and is where Taiwa
 RF component economics connect directly to the transmitter stack: [[concepts/aesa]] / [[concepts/hybrid-phased-array]] set the array architecture, [[concepts/zero-if-transmitter]] defines the X-band upconversion trade, [[concepts/evm-calibration]] keeps LO leakage/IQ imbalance inside spec, and [[concepts/dpd-digital-predistortion]] protects PA linearity/ACPR.
 
 - **Win Semiconductors ([[entities/win-semiconductors]], 3105)**: Global leader in LEO-spec PA (power amplifier) contract manufacturing
-- **Ascend Tech ([[entities/ascend-tech]], 3491)**: Filters, waveguides; has entered Starlink and Amazon Kuiper supply chains; gross margin stepped from **9M-2025 ≈47.3% → H1-2026 ≈56.9%** as LEO rose to ≈80% of revenue (H1-2026 profit alone beat every prior full year — canonical figures on [[entities/ascend-tech]], verified 2026-08-23)
+- **Ascend Tech ([[entities/ascend-tech]], 3491)**: Filters, waveguides; has entered Starlink and Amazon Kuiper supply chains; gross margin stepped from **9M-2025 ≈47.3% → H1-2026 ≈56.9%** as LEO rose to ≈80% of revenue (H1-2026 profit alone beat every prior full year; **Aug-2026 rev +93% YoY, 8-month revenue already exceeding full-year 2025** — canonical figures on [[entities/ascend-tech]], refreshed 2026-09-15)
 
 ### Space-Grade Solar Cells (High-Efficiency GaAs Cells)
 As per-satellite power requirements surge from 2 kW to over 10 kW (Starlink V3, AI compute on orbit), high-efficiency GaAs solar cells become an essential need.
@@ -36,7 +36,7 @@ High-band (Ka/V) satellite antennas and RF modules require low-loss microwave su
 ## Mid-stream A: Satellite Bus Manufacturing and Systems Integration
 
 ### PCB and Structural Boards
-**[[entities/huatong-pcb]] (Compeq/Huatong)**: Close to 80% global market share in LEO satellite-specific PCBs (as of end of 2025). **FY2025 satellite-board revenue ≈NT$15.1B** (~20% of ≈NT$76B total); **2026 satellite-board est. ≈NT$18.5B (+22%)**, with **H1-2026 group revenue NT$39.54B +13.2% YoY and Jul-2026 NT$6.96B +16% YoY** (canonical figures on [[entities/huatong-pcb]], verified 2026-08-23; the earlier "Q4 2025 >NT$15.5B" draft is superseded). Taiwan's PCB manufacturers collectively form a structural advantage.
+**[[entities/huatong-pcb]] (Compeq/Huatong)**: Close to 80% global market share in LEO satellite-specific PCBs (as of end of 2025). **FY2025 satellite-board revenue ≈NT$15.1B** (~20% of ≈NT$76B total); **2026 satellite-board est. ≈NT$18.5B (+22%)**, with **H1-2026 group revenue NT$39.54B +13.2% YoY and Aug-2026 NT$7.01B +6.9% YoY** (canonical figures on [[entities/huatong-pcb]], refreshed 2026-09-15; the earlier "Q4 2025 >NT$15.5B" draft is superseded). Taiwan's PCB manufacturers collectively form a structural advantage.
 
 ### Constellation Operator Satellites (Starlink V3 / Amazon Leo)
 - Starlink V3 increases the proportion of laser inter-satellite links (ISL), placing higher demands on RF components and thermal management
@@ -85,7 +85,7 @@ Core logic: Explosive growth in Earth data-center electricity (IEA *Energy and A
 24/7 solar power (no cloud cover) + passive radiative cooling toward the cosmic background is the differentiated energy advantage of ODC.
 
 ### Distributed Orbital Networks (China's Three-Body Computing / 2800-Satellite Target)
-[[entities/ada-space]]'s 2800-satellite constellation represents the strategic scaling route for ODC.
+[[entities/ada-space]]'s 2800-satellite constellation represents the strategic scaling route for ODC. Zhejiang Lab's parallel **Three-Body Computing Constellation** concluded ~9 months of on-orbit testing by early 2026 (SatNews, 2026-02), reported to have run large-scale AI models directly on satellite hardware — the China-leads-in-orbit datapoint developed in [[synthesis/leo-taiwan-odc-gap]] and [[synthesis/orbital-data-center-six-region]].
 
 ### AI Inference / Training (Google Suncatcher / TPU / Optical Communications)
 [[entities/google-suncatcher]] is a key signal of tech giants entering ODC: Google plans to deploy TPUs to orbit, integrating with ground-based model training infrastructure via optical communications to achieve low-cost large-scale AI compute expansion.

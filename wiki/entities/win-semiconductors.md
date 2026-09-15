@@ -38,6 +38,17 @@ The 2025 dip + deliberate pivot is the key dated update: handset GaAs is mature/
 
 The read: the FY2025 "handset-GaAs → optical-datacom + LEO RF" pivot narrative is now **backed by two consecutive record-trajectory quarters**. AI-datacenter high-speed optical (the 1.6T photodiode ramp) is the near-term engine; LEO-satellite RF is the twin Q3 driver Win explicitly names. This is the clearest evidence in the [[synthesis/leo-taiwan-odc-gap|upstream cluster]] that the ODC/AI-compute buildout pulls Taiwan's compound-semi foundry demand *up*, not just its board/passive suppliers.
 
+## Q3-2026 monthly prints — the ramp confirms into the second half (verified 2026-09-15)
+
+| Metric | Value | Source |
+|---|---|---|
+| Jul-2026 revenue | **NT$1.892 B** (NT$18.92 億) — a 56-month single-month high | [cnYES 焦點股 2026-09](https://news.cnyes.com/news/id/6601476) |
+| Aug-2026 revenue | **NT$1.937 B** (NT$19.37 億), +2.4% MoM, **+30.55% YoY** — second consecutive 56-month high | [cnYES 營收速報 2026-09-09](https://news.cnyes.com/news/id/6600148) |
+| 8M-2026 cumulative | **NT$13.676 B** (NT$136.76 億), **+33% YoY** | cnYES |
+| Q3 drivers | AI optical (datacom) + LEO-satellite demand; Wi-Fi turned QoQ-positive on router restocking | cnYES / [工商時報 2026-09-15](https://www.ctee.com.tw/news/20260915700895-430201) |
+
+The read: Jul + Aug are Win's **highest monthly revenues since Dec-2021**, extending the Q2 record trajectory into Q3 and validating the guidance that gross margin and revenue both grow QoQ. Foreign brokers lifted the target toward **NT$500**. The 8M print (+33% YoY) is the strongest single-name confirmation in the cluster that the *ODC/AI-optical + LEO* twin demand vector is now feeding the compound-semi foundry tier, not just boards/passives — the same signal now visible in [[entities/ascend-tech|Ascend]] (Aug +93% YoY) and [[entities/huatong-pcb|Compeq]].
+
 ## LEO Satellite Positioning
 
 **Global leader in LEO-spec PA foundry services.** LEO constellations (Starlink, Amazon Kuiper class) drive demand for the GaAs/GaN RF front-end PA chips Win fabricates; with Starlink V3 (more laser ISLs, higher power) and AI-computing-satellite RF demand, Win is one of the most direct upstream beneficiaries in the LEO supply chain. *(Specific named-customer foundry contracts are not publicly confirmed by Win; treat constellation attribution as market-level, not contractual.)*
