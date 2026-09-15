@@ -40,6 +40,7 @@ type: index
 - [[sources/llm-expert-agent-mission-ops-2025]] — "LLM Based Expert AI Agent for Mission Operation Management"; IAPGOS Vol. 15 No. 1, 2025; Mummaneni/Gudipati/Panda; RAG-only conceptual proposal; NOT IEEE (venue correction) (ingested 2026-05-24)
 - [[sources/astrea-orbital-thermal-autonomy-2025]] — ASTREA (arXiv 2509.13380, Thales Alenia Space/Europe): first agentic **LLM** on flight-heritage HW (TRL 9) — Qwen2.5-1.5B (4-bit) supervising an RL controller for live **thermal control aboard the ISS**; first ISS run lost to baseline (latency vs ~90-min cycle) then beat it after syncing cadence to orbit length (ingested 2026-09-01)
 - [[sources/navi-orbital-vlm-earth-obs-2026]] — NAVI-Orbital (arXiv 2606.18271, NASA JPL + Loft Orbital/US): first **in-orbit VLM** — Gemma 3 zero-shot + LangGraph state machine on a YAM-9 (Jetson Orin AGX), EO scene classification + operator dialogue via plain-English prompts; 88% zero-shot on 7,960 imgs, live 2026-04-16 (ingested 2026-09-01)
+- [[sources/kol-digest-2026-09-04]] — KOL + keyword digest (automated): 11 keywords (AI agents / Claude Code / Anthropic / OpenAI / Polkadot / OpenClaw / NemoClaw / Plurality / Audrey Tang / NVIDIA Nemotron / PolkaSharks); top signals: Anthropic triple-release (Fable 5.1+Mythos 5.1+EFS) + $2T IPO; OpenClaw 2.0; Polkadot Products Devnet; OpenAI Astra Preparedness-Critical threshold; 2026-09-04
 
 - [[sources/faa-ast-launch-licensing-2025]] — FAA AST licensing overview: 1,000th licensed operation Aug 2025, Part 450 license types, 180-day review, § 450.101 EC ≤ 10⁻⁴, § 450.161 NOTAM obligation (2025)
 - [[sources/faa-notam-search-2024]] — FAA NOTAM Search public API, DINS multi-ICAO query, SWIM FNS JMS subscription, ICAO codes for US launch sites (2024)
@@ -64,6 +65,7 @@ type: index
 
 ## Entities
 
+- [[entities/anthropic]] — AI safety company (SF, 2021); Claude model family (Fable/Mythos/Opus/Sonnet/Haiku), Claude Code CLI + Agent SDK; ~$965B private valuation May 2026, ~$2T IPO target Oct 2026; $35B Lambda pact Aug 2026; Fable 5.1 + Mythos 5.1 + EFS triple-release Sep 1 2026
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
 - [[entities/polkadot]] — Layer-0 relay chain + parachain protocol; DOT token; JAM roadmap; DOT hard cap March 2026
 - [[entities/mythical-games]] — Web3 gaming studio; migrated ETH→Polkadot 2024; MYTH token; NFL Rivals, Nitro Nation
