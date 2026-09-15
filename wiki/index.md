@@ -6,6 +6,7 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-09-03]] — KOL + keyword digest 2026-09-03: 0 KOLs tracked (list empty), 11 keywords swept; top signals: Claude Fable 5.1/Mythos 5.1 releases, Claudeforce (Anthropic×Salesforce), OpenAI IPO S-1 imminent, NVIDIA Nemotron 3.5 Lightning + NemoClaw v0.0.106, Polkadot JAM governance vote Q3-Q4 + Nakamoto Coefficient 172
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
