@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-29",
+  "run_type": "stub-blocker",
+  "blockers": [
+    {
+      "step": "trader-pipeline",
+      "detail": "agents/src/trader/ does not exist in this repository. Only agents/src/firefly/ is present. The scheduled task references a trader CLI (trader scan / trader research) that has not been built yet."
+    },
+    {
+      "step": "yfinance-market-data",
+      "detail": "Yahoo Finance outbound connections are blocked by the remote environment proxy (HTTP 403 on fc.yahoo.com). Retry with backoff was attempted; all 8 tickers returned network errors. Real 1-day % change data could not be fetched."
+    }
+  ],
+  "fallback": "LLM_BACKEND=disabled TRADER_OFFLINE=1 — not applicable because the trader CLI entrypoint does not exist.",
+  "watchlist": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+  "scan_results": null,
+  "fom_table": null,
+  "next_run_requirements": [
+    "Implement agents/src/trader/ pipeline with CLI entrypoints 'trader scan' and 'trader research'.",
+    "Ensure the remote execution environment allows outbound HTTPS to finance.yahoo.com, or substitute an alternative market-data source (e.g., Alpha Vantage, Polygon.io) that the proxy permits."
+  ]
+}
