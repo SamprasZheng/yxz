@@ -6,6 +6,7 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-08-12]] — KOL + keyword digest 2026-08-12: 0 KOLs (list empty), 11 keywords, ~50 items; top signals: NVIDIA Nemotron 3.5 Lightning released Aug 11, NemoClaw v0.0.102–103, Anthropic chip program + $15B debt, OpenAI IPO S-1 imminent, DOT near ATL.
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
