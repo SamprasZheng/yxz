@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-09-09] kol-digest | Automated daily sweep — 0 KOLs (list empty), 11 keywords, ~50 items captured; new digest source `sources/kol-digest-2026-09-09.md`; 2 new entity stubs (`entities/anthropic`, `entities/openai`); top signals: Anthropic Fable 5.1/Mythos 5.1 + IPO prospectus, OpenAI GPT-6 Astra (100% ExploitBench), OpenClaw 2.0, NemoClaw memory-agent blog, DOT +11% short-squeeze.
+
 ## [2026-08-07] deepen | Defense-tech / techno-industrial-state cluster — Palantir Q2-2026 (+93%) time-axis fact-refresh + multiple-compression-reversal resolution + Anduril ≈$100B/two-archetypes nuance
 **Rotation:** picked the **defense-tech / techno-industrial-state cluster** ([[concepts/technological-republic]] / [[concepts/soft-belief]] + [[entities/palantir]] / [[entities/alexander-karp]] + [[sources/technological-republic-karp-2025]] + [[synthesis/techno-industrial-state-defense-tech-six-region]]). Per the deepen log this was the **stalest cluster by a wide margin** — last deepened **2026-07-09 (29 days)**, every other domain worked 07-13→08-06. Also timely: **Palantir reported Q2-2026 on 2026-08-03**, so the cluster's Q1-2026-anchored numbers were exactly one earnings cycle stale. Public/citable research only; **no personal/financial data** (public-market figures on a NYSE-listed company only, no owner holdings); `agents/` not read or modified (no Firefly code instance in this cluster — no code/concept divergence to report); no trader/KOL/maintenance namespaces; explicit `git add` of only the 5 wiki files changed.
 
