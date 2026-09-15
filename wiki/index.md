@@ -34,6 +34,8 @@ type: index
 - [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
 - [[sources/noaa-swpc-product-catalog]] — NOAA SWPC product and data catalog: full JSON URL table with cadences for all operational space weather feeds (ingested 2026-05-24)
 
+- [[sources/kol-digest-2026-08-22]] — KOL + keyword digest 2026-08-22 (automated): 0 KOLs, 11 keywords; top signals — OpenAI Astra cybersecurity suspension, NVIDIA Nemotron 3.5 Lightning + Nemotron 4 confirmed, NemoClaw v0.0.108, OpenClaw 12%-malicious-skill registry crisis, Polkadot CLARITY Act spotlight + 17,200% tx spike
+
 - [[sources/msbai-orbitguard-dod-contract-2025]] — MSBAI OrbitGuard $1.2M DoD SBIR (Sept 2025): JEPA + MARL neuro-symbolic SDA copilot; 94–98% lab accuracy across ~15,000 objects; AMOS 2025 poster; CEO Grosvenor verbatim quote (ingested 2026-05-24)
 - [[sources/scnoc-agentic-sun-2025]] — SCNOC-Agentic paper (Electronics 2025, 14(16), 3320): first LLM multi-agent framework for satellite communications NetOps; four components (intent refinement / multi-agent workflow / long-term memory / graph-RAG); qwen2.5-70B improved network task planning accuracy 15.6%→32.2% (ingested 2026-05-24)
 - [[sources/developing-ai-agents-satellite-ops-2025]] — "Developing AI Agents for Satellite Operations"; Journal of Space Operations & Communicator Vol. 21 No. 3, 2025; ReAct + MCP + RAG + Satellite Digital Twin architecture proposal for ground-enterprise LLM integration (ingested 2026-05-24)
