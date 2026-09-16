@@ -13,6 +13,32 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-09-16
+
+- Market/Sentiment stance: **neutral** (score 2)
+- Web signals collected: 10
+- Social-search signals collected: 10
+- Updated at: 2026-09-16T00:36:22.170Z
+
+Key web signals:
+- [Satellite Edge Computing Market Size, Share & Growth 2035 - SNS Insider](https://news.google.com/rss/articles/CBMifEFVX3lxTE9RcFdaUF91OUlWVVpnT3NhWHlLU0ZmT1B4WjNEcXdCd1Z2N09zbVRLMHc1OEtOLXNwZEloZWxMc0s2ZGN1LVZhWjFqaTdHSUJVUENITkx5QkltS3hIRjN6Qk5VOHlqVG9INnRVTXF5Q0s1NXo3S0JLSG81Rmg?oc=5)
+- [When satellites become AI agents, space data centers become the next AI frontier - cio.com](https://news.google.com/rss/articles/CBMivAFBVV95cUxPa2VSekJYdFNTYy1id2l6N25oX19BQ0ZkdDducXl2VFJlRmtkYWNFVTRhLXRlNzZpaWR0MjJJb1Qwd1BGNFZLR3ViWVZVSThCUjdLaDRneTg3TXRGVXJOYl9mQU05Y1dFY3EtTy1Kdmp3ZWJzWWwyWE4wZ2RNM3dwQnljMkpubWZDZkJtWlpiTktRZmUtYUV2ZHlIdmVYUU8wREJ2TmxWZHdfSUcyTkNIS2ZveUNWTjk2b2JHMA?oc=5)
+- [Sophia Space and SLI Set Terms for $300 Million Asset Financing for 10-Satellite High-Performance Edge Computing Constellation - Lelezard](https://news.google.com/rss/articles/CBMiWkFVX3lxTE16ODd5c0N4X05IckZMMGZXTXJVQ2xjc05HSEEya1hsYXEyNzJPdmpkcm9sNlBBdFNhTUpyVGRNQkExZ2VqRUtUTXpTQnVwMkN3YV9POXVzeU1HUQ?oc=5)
+- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
+- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
+- [Are orbital AI data centers the next frontier for compute infrastructure? - Data Center Dynamics](https://news.google.com/rss/articles/CBMivAFBVV95cUxOWlgzcXpscFpoZjljMUx3VFVVRnpwdktGTGtGbU5nc0RxNnJRUm56WV9ydkV6c2tvVjAyYzU2TlBPOEp2N0NfN1JpMExnV3kzYWpEMlhERU5VcXhWNlJpaEVPdHlQWUEwZUtkenhxcDZIX3JpekNxNjA2MXVHMXB1RE5tNFRtX2t5QzVVX1FaN3hJczc3WmFOem8wYlVFNUNtcGpnU0VVd3YxcVFRdW9VTFVLdGpCd3g1SFRvZQ?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [For the very first time Elon Musk explains the "space data center plan ...](https://x.com/rohanpaul_ai/status/2064165951936094364)
+- [SpaceX Launches Starmind: AI Data Centers in Orbit](https://x.com/i/trending/2075373808211440079)
+- [SpaceX has unveiled the design of... - Space and Technology - Facebook](https://www.facebook.com/SpaceTechnologyPage/posts/spacex-has-unveiled-the-design-of-its-first-orbital-data-center-satellite-ai1-th/1827979351789482/)
+- [AI Innovations Hub | Elon Musk just outlined a vision that sounds like ...](https://www.instagram.com/p/DZaKVACDwqi/)
+- [Anthropic is considering using SpaceX&#x27;s orbital data center ... - Facebook](https://www.facebook.com/SpaceXFP/posts/anthropic-is-considering-using-spacexs-orbital-data-center-satellites-%EF%B8%8F-anthropi/1017809040767152/)
+- [TLDR Newsletter | Finding enough electricity is now the ... - Instagram](https://www.instagram.com/p/DbohjWaFMXw/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-09-15
 
 - Market/Sentiment stance: **neutral** (score 3)
@@ -287,32 +313,6 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [SpaceX has unveiled the design of... - Space and Technology - Facebook](https://www.facebook.com/SpaceTechnologyPage/posts/spacex-has-unveiled-the-design-of-its-first-orbital-data-center-satellite-ai1-th/1827979351789482/)
 - [AI Innovations Hub | Elon Musk just outlined a vision that sounds like ...](https://www.instagram.com/p/DZaKVACDwqi/)
 - [CRYPTOWZRD | SpaceX is taking AI infrastructure into orbit. $SPCX ...](https://www.instagram.com/p/DbtQNCDCbbJ/)
-
-Data quality notes:
-- No major data-quality issue in this run.
-
-### 2026-09-04
-
-- Market/Sentiment stance: **neutral** (score 2)
-- Web signals collected: 10
-- Social-search signals collected: 10
-- Updated at: 2026-09-04T00:13:34.425Z
-
-Key web signals:
-- [China Has 8-Billion-Parameter AI Running in Orbit as Shanghai Opens Space Computing Hub - Tech Times](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOS29VUk9lcXNfdWIwbnBLaXBVRk5HZ2hDbHJWTml0WVJSbkpIUnNkRXZnVk5uQ0ZCeDZnRHpiZkZ1dEZaX2ZqZ3hjY3pzMlhRVGk2cmZrN00xbjItaE9rQWpCTVBRdndTSzA5cUVJZkItNVU3cUpYODM2NElWT3pJbzBUUTd6aE1neXg5SWhuUXBxRWdqdDZhcEdhZC1hN0pPNHRCSjlVWnI5cTNhNTRrWjhZMjZQZEotS3ZpeGxtRHMtamFzdFZRX1hiV252SFNSMUE?oc=5)
-- [When satellites become AI agents, space data centers become the next AI frontier - cio.com](https://news.google.com/rss/articles/CBMivAFBVV95cUxPa2VSekJYdFNTYy1id2l6N25oX19BQ0ZkdDducXl2VFJlRmtkYWNFVTRhLXRlNzZpaWR0MjJJb1Qwd1BGNFZLR3ViWVZVSThCUjdLaDRneTg3TXRGVXJOYl9mQU05Y1dFY3EtTy1Kdmp3ZWJzWWwyWE4wZ2RNM3dwQnljMkpubWZDZkJtWlpiTktRZmUtYUV2ZHlIdmVYUU8wREJ2TmxWZHdfSUcyTkNIS2ZveUNWTjk2b2JHMA?oc=5)
-- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
-- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
-- [A typical AI-focused data centre can consume as much electricity as 100,000 homes. Now companies want to put them in orbit, where carefully chosen satellites can see almost continuous sunlight and dump their waste heat into space through giant radiators i - Space Daily](https://news.google.com/rss/articles/CBMihAFBVV95cUxNQVk5RWFBNldjZ3BmbmN2azRGNjI1akp3SDlWRkFnVGhwWG5WOGNjOG1OaEZ0bndVcE9QejRNU1hicHdvNVpFcmE0UHBMSzliNVJBSkVzYmZmOGdHdFR5bzNld1RGelI2LUhjZzdhYzI1eVQ2bk1lSXZqWXlnS2NHZjh4WXc?oc=5)
-- [NVIDIA Outlines Plans for Space Computing - Data Center Richness | Substack](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMENMT3hfeXRhOWhWMEFSSWdUS19TT0VMTFJvaTlRUVcxTUduMVUxSERSS0ZtX29GSF9zQU9WaGNmZmRNSV9GRnZPNnl6QmE3cWFqd1dLbUlwVHFNOTJYa3ppLU41NDd3MENtdU5NaFJpZGFuVXluSDBhcUhFQ3lHS20zQlBvalRqVXB3?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [For the very first time Elon Musk explains the "space data center plan ...](https://x.com/rohanpaul_ai/status/2064165951936094364)
-- [BREAKING: SpaceX wants to turn Space into the World&#x27;s Biggest AI Data ...](https://x.com/cb_doge/status/2017466825538474065)
-- [Ahead of the IPO, SpaceX has unveiled the AI1 — its first ... - Facebook](https://www.facebook.com/interestingengineering/videos/musk-shows-detailed-design-of-ai-data-center-satellite/1011966071311689/)
-- [SpaceX has unveiled the design of... - Space and Technology - Facebook](https://www.facebook.com/SpaceTechnologyPage/posts/spacex-has-unveiled-the-design-of-its-first-orbital-data-center-satellite-ai1-th/1827979351789482/)
-- [CRYPTOWZRD | SpaceX is taking AI infrastructure into orbit. $SPCX ...](https://www.instagram.com/p/DbtQNCDCbbJ/)
-- [AI Innovations Hub | Elon Musk just outlined a vision that sounds like ...](https://www.instagram.com/p/DZaKVACDwqi/)
 
 Data quality notes:
 - No major data-quality issue in this run.
