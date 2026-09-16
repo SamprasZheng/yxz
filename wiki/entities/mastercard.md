@@ -55,7 +55,7 @@ Same-day symmetry: [[entities/visa]] announced its **OpenAI ChatGPT** agent-paym
 - Selective Disclosure: each party obtains only the minimum necessary information
 - **Open standard foundations**: FIDO Alliance, EMVCo, IETF, W3C
 
-**Aligned protocols**: Google AP2 + Universal Commerce Protocol (UCP); designed to be protocol-agnostic (not tied to a specific payment protocol)
+**Aligned protocols**: Google AP2 + **Universal Commerce Protocol (UCP)**; designed to be protocol-agnostic (not tied to a specific payment protocol). **Deepened 2026-09-16:** UCP is Google's open commerce-orchestration standard launched **2026-01-11 at NRF** ([[concepts/agentic-payment-protocols|see the protocol comparison]]); Mastercard is a named **endorser**, and its **Verifiable Intent** framework — which Mastercard **donated to the FIDO Alliance** — serves as UCP's tamper-proof accountability layer (a signed log of user-authorized agent actions). This makes Mastercard a co-author of the convergence layer sitting *above* the settlement protocols, consistent with its "own the open trust layer, not the rail" bet — see the protocol-convergence dimension in [[synthesis/agentic-payments-six-region]].
 
 ### Ecosystem Partnerships
 

@@ -7,17 +7,22 @@ tags: [payments, ai-agents, protocols, agentic-commerce, x402, mpp, acp, ap2, l4
 
 ## Overview
 
-Between 2025–2026, five major protocol standards emerged around the question of "how AI agents pay autonomously," forming a layered ecosystem. They are not purely competing — they are complementary pieces covering different layers (authorization layer, settlement layer, process layer).
+Between 2025–2026, six major protocol standards emerged around the question of "how AI agents pay autonomously," forming a layered ecosystem. They are not purely competing — they are complementary pieces covering different layers (orchestration layer, authorization/consent layer, settlement layer, process layer).
 
-## Five Protocols at a Glance
+> **The 2026 inflection is *convergence*, not proliferation (拉高維度, added 2026-09-16).** Through 2025 the story was five rival standards multiplying. Through 2026 the market began *coalescing* around two integrating layers that sit *above* the individual rails: (1) **Google's Universal Commerce Protocol (UCP)** — a single open commerce-orchestration standard, launched 2026-01-11 at NRF, that AP2 now *plugs into* as its consent layer (UCP orchestrates the purchase lifecycle; AP2 signs the transaction) and that the big-box retail floor (Walmart / Target / Home Depot / Best Buy / Macy's) endorsed at once; and (2) **Visa Intelligent Commerce Connect** — a *protocol-agnostic on-ramp* (2026-04) that accepts TAP + MPP + ACP + UCP through one integration. The competitive question is shifting from "which of the five protocols wins?" to "who owns the aggregation/interoperability layer that makes the protocol choice invisible to the merchant?" — the same commoditize-the-rail-own-the-layer logic the [[synthesis/agent-runtime-orchestration-six-region|agent-runtime map]] identifies one stack down.
+
+## Six Protocols at a Glance
 
 | Protocol | Originator | Release Date | Positioning | Payment Method |
 |---|---|---|---|---|
+| **UCP** | Google + 20–60+ partners | 2026-01-11 (NRF) | **Commerce-orchestration / interoperability standard** (lifecycle: discovery → cart → checkout → fulfilment) | Payment-agnostic; PSP-integrated (Stripe/Adyen/PayPal/Google Pay) |
 | **x402** | Coinbase | 2025-05 (V2: 2025-12) | HTTP-native stablecoin settlement | USDC + multi-chain ERC-20 |
 | **ACP** | OpenAI + Stripe | 2025-09 | Merchant checkout process standard | Fiat (card/bank transfer) |
-| **AP2** | Google + 60+ partners | 2025-09-17 | Authorization trust framework (Mandate) | Payment-agnostic (fiat + crypto) |
+| **AP2** | Google + 60+ partners | 2025-09-17 | Authorization/consent trust framework (Mandate); now the **consent layer under UCP** | Payment-agnostic (fiat + crypto) |
 | **MPP** | Stripe + Tempo | 2026-03-18 | Session-based continuous micropayments | Stablecoin + fiat + BTC |
 | **L402** | Lightning Labs | 2020 (AI tools 2026-02) | Bitcoin Lightning HTTP micropayments | BTC (Lightning) |
+
+> **Aggregation layer (not a protocol, but the layer above them):** **Visa Intelligent Commerce Connect** (2026-04) — a network-, protocol-, and token-vault-agnostic *on-ramp* accepting **TAP, MPP, ACP, and UCP** through a single Visa Acceptance Platform integration; in pilot with Aldar/AWS/Diddo/Highnote/Mesh/Payabli/Sumvin. See [[entities/visa]].
 
 ## Protocol Details
 
@@ -40,6 +45,20 @@ Core mechanism: HTTP 402 status code triggers on-chain USDC payment, < 2 second 
 **Ecosystem position**: Stripe supports both MPP and x402; AP2 lists x402 as the official crypto extension.
 
 See [[concepts/x402-protocol]] for details.
+
+---
+
+### 6. UCP — Universal Commerce Protocol *(the 2026 orchestration/interoperability layer)*
+
+**Originator**: Google, announced **2026-01-11 at NRF** (the National Retail Federation "Big Show"). Site: [ucp.dev](http://ucp.dev/).
+
+**What it is**: an **open commerce-orchestration standard** — not a settlement rail but the layer that lets AI shopping agents, merchants, PSPs, and credential providers interoperate across the *whole* purchase lifecycle (discovery → cart → checkout → payment → fulfilment) **without bespoke per-platform integrations**. It is Google's structural successor to the narrower [AP2 consent framework]: **UCP orchestrates the purchase lifecycle while AP2 is the specialized layer that authorizes and signs the transaction** — they compose rather than compete. UCP integrates via **REST APIs, Agent2Agent (A2A), and MCP**, and works with existing PSPs (Stripe, Adyen, PayPal, Google Pay).
+
+**Governance — the tell that this is meant as the neutral standard:** a **Payments Technical Council (Payments TC)** whose inaugural members span the rail *and* the super-app camps — **Adyen, Ant International, Coinbase, Global Payments, Google, Shopify, Stripe**. [[entities/ant-group-alipay|Ant International]] sitting on a US-led open-commerce council is the concrete instance of the "domestic-closed / cross-border-open" logic in [[synthesis/agentic-payments-six-region]] — the first agentic-commerce standards body where a Chinese payment giant co-governs alongside Coinbase and Stripe.
+
+**Backing (the retail-floor signal):** co-developed with **Shopify, Etsy, Wayfair, Target, and Walmart**; endorsed by 20+→60+ partners including **Mastercard, Visa, American Express, Best Buy, Flipkart, Macy's, The Home Depot, Zalando, PayPal**. The presence of the physical big-box floor (Walmart/Target/Home Depot/Best Buy) is what distinguishes UCP from the crypto/fintech-led protocols — it is the standard the *incumbent retail economy* is lining up behind. [[entities/mastercard]] additionally aligned its **Verifiable Intent** framework (donated to FIDO) as UCP's accountability layer.
+
+**Positioning**: the orchestration/interoperability tier *above* the settlement protocols. A full agentic purchase increasingly looks like **UCP (orchestrate) → AP2 (consent/sign) → x402 | ACP | MPP | card rail (settle)** — UCP is the layer that makes the settlement-protocol choice a swappable back-end. This is why it is the strongest single 2026 evidence for the "proliferation → convergence" reframing above.
 
 ---
 
@@ -187,7 +206,7 @@ The five protocols above are all US-originated and assume an **open, permissionl
 ### Bank-led sovereign stablecoins — Japan / Korea / Europe / Taiwan
 
 - **Japan**: **JPYC** — first FSA-approved yen stablecoin (Oct 2025), explicitly building M2M AI-agent use cases on Ethereum/Polygon; LDP national AI+blockchain finance strategy (May 2026).
-- **Korea**: won-stablecoin race — KakaoBank wallet (May 2026), Naver/Dunamu Giwachain, 8-bank consortium; **KakaoPay is an x402 Foundation member** (hedging into the open layer). **Legislative acceleration (July 2026):** on 2026-07-20 the ruling Democratic Party + FSC agreed to fast-track the **Framework Act on Digital Assets** (Phase 2, which legalises won stablecoins) with National Assembly subcommittee reviews **twice a month**, targeting **September 2026**; on 2026-07-29 the FSC moved to consolidate ~10 separate crypto/stablecoin bills into a single **Digital Asset Basic Act** ([Crypto Times, 2026-07-20](https://www.cryptotimes.io/2026/07/20/south-korea-targets-september-for-won-stablecoin-bill-vows-fortnightly-reviews/); [Crypto Times, 2026-07-29](https://www.cryptotimes.io/2026/07/29/south-korea-fsc-moves-to-merge-crypto-bills-set-stablecoin-rules/)). Unresolved: whether won stablecoins must be issued through a **bank-led consortium under a proposed 51% rule**.
+- **Korea**: won-stablecoin race — KakaoBank wallet (May 2026), Naver/Dunamu Giwachain, 8-bank consortium; **KakaoPay is an x402 Foundation member** (hedging into the open layer). **Legislative acceleration (July 2026):** on 2026-07-20 the ruling Democratic Party + FSC agreed to fast-track the **Framework Act on Digital Assets** (Phase 2, which legalises won stablecoins) with National Assembly subcommittee reviews **twice a month**, targeting **September 2026**; on 2026-07-29 the FSC moved to consolidate ~10 separate crypto/stablecoin bills into a single **Digital Asset Basic Act** ([Crypto Times, 2026-07-20](https://www.cryptotimes.io/2026/07/20/south-korea-targets-september-for-won-stablecoin-bill-vows-fortnightly-reviews/); [Crypto Times, 2026-07-29](https://www.cryptotimes.io/2026/07/29/south-korea-fsc-moves-to-merge-crypto-bills-set-stablecoin-rules/)). **Update (2026-09):** the ruling Democratic Party has now *finalized* its **"Digital Asset Basic Law"** draft, which sets a **minimum issuer capital of 5 billion won (~US$3.5M)** for value-linked digital assets; the government/ruling-party unified bill is expected to "take shape during the September regular session," introduced as member-sponsored legislation (one tracker slips this to October) ([PANews](https://www.panewslab.com/en/articles/3256a8e1-a8b0-4331-9675-0d0b566c2bbc); [BigGo Finance, Aug 2026](https://finance.biggo.com/news/c3a7a361-39db-4cfd-b392-86e559eefd95)). **Still unresolved:** whether won stablecoins must be issued through a **bank-led consortium under the BoK's proposed 51%-ownership rule** — the FSC-vs-BoK deadlock the [[synthesis/agentic-payments-six-region|Korea row]] flags as the single fork gating launch.
 - **Europe**: EURC under MiCA (ClearBank approval Apr 2026); digital euro; "digital dollarization" anxiety. First live EU AI-agent payment = Mastercard + Santander + PayOS (Mar 2026).
 - **Taiwan**: NT$ stablecoin H2 2026 earliest; cautious; no agentic-commerce rail presence.
 
@@ -198,7 +217,7 @@ The five protocols above are all US-originated and assume an **open, permissionl
 | US | **GENIUS Act** (enacted 2025-07-18; 1:1 reserves; not a security/commodity) | live, OCC/FDIC rulemaking 2025–26 |
 | EU | **MiCA** + PSD2/PSD3 + EU AI Act | **Fully enforced 2026-07-01** — grandfathering closed; only ~244 CASPs authorised EEA-wide (~83% of prior registrants unlicensed); fines up to **12.5% of global turnover** |
 | Japan | FSA stablecoin framework | JPYC live Oct 2025 |
-| Korea | **Framework Act on Digital Assets** (Phase 2) + consolidated **Digital Asset Basic Act** | FSC fast-track July 2026; won-stablecoin bill targeted **Sept 2026**, fortnightly subcommittee reviews; 51%-bank-consortium rule unresolved |
+| Korea | **Framework Act on Digital Assets** (Phase 2) + consolidated **Digital Asset Basic Act/Law** | Ruling-party draft *finalized* (2026-09) — **5B-won (~$3.5M) min issuer capital**; unified bill expected in the **September regular session** (member-sponsored; one tracker slips to Oct); 51%-bank-consortium rule still unresolved |
 | China | PBoC/Ant supervision; e-CNY separate | operating inside existing regime |
 | Taiwan | VASP Act → FSC stablecoin rules | H2 2026 earliest |
 
@@ -209,7 +228,9 @@ The five protocols above are all US-originated and assume an **open, permissionl
 ## Protocol Layer Analysis
 
 ```
-[User Authorization Layer]    AP2 (Mandates)  ←→  Mastercard Verifiable Intent
+[Orchestration / Interop Layer]   UCP (Google) — discovery→cart→checkout→fulfilment
+                                   ↕  (Visa Intelligent Commerce Connect = protocol-agnostic on-ramp: TAP|MPP|ACP|UCP)
+[User Authorization / Consent]    AP2 (Mandates)  ←→  Mastercard Verifiable Intent (→ FIDO)
                                    ↓
 [Identity Layer]    Mastercard Agentic Token / Visa TAP / PayPal Agent Ready
                                    ↓
@@ -218,19 +239,21 @@ The five protocols above are all US-originated and assume an **open, permissionl
 
 ## Positioning Comparison with x402
 
-| | x402 | ACP | AP2 | MPP | L402 |
-|---|---|---|---|---|---|
-| Account-free M2M | ✅ | ❌ | N/A | ✅ | ✅ |
-| Fiat payment | Via facilitator | ✅ | ✅ | ✅ | ❌ |
-| Crypto-native | ✅ | ❌ | Extension | ✅ | BTC only |
-| Subscription/Session | ✅ since V2 | ✅ | N/A | ✅ Core | ❌ |
-| Open governance | x402 Foundation (now under **Linux Foundation**) | Apache 2.0 | Open | Stripe+Tempo | Lightning Labs |
-| Maturity (2026) | Medium | Early | Early | Just launched | Most mature |
+| | UCP | x402 | ACP | AP2 | MPP | L402 |
+|---|---|---|---|---|---|---|
+| Layer | Orchestration/interop | Settlement | Checkout | Consent | Settlement | Settlement |
+| Account-free M2M | N/A | ✅ | ❌ | N/A | ✅ | ✅ |
+| Fiat payment | ✅ (PSP-routed) | Via facilitator | ✅ | ✅ | ✅ | ❌ |
+| Crypto-native | Payment-agnostic | ✅ | ❌ | Extension | ✅ | BTC only |
+| Subscription/Session | N/A | ✅ since V2 | ✅ | N/A | ✅ Core | ❌ |
+| Open governance | Payments Technical Council | x402 Foundation (now under **Linux Foundation**) | Apache 2.0 | Open | Stripe+Tempo | Lightning Labs |
+| Maturity (2026) | New (NRF 2026-01) | Medium | Early | Early | Just launched | Most mature |
 
 ## Related Pages
 
-- [[synthesis/agentic-payments-six-region]] — six-region map (台美日韓中國歐洲), regional architecture families, 100-year micropayment thesis
+- [[synthesis/agentic-payments-six-region]] — six-region map (台美日韓中國歐洲), regional architecture families, protocol-convergence dimension, 100-year micropayment thesis
 - [[concepts/x402-protocol]] — x402 detailed specifications and V2 upgrade
+- [[synthesis/agent-runtime-orchestration-six-region]] — the "commoditize-the-rail, own-the-layer" pattern one stack down (agent runtime/orchestration)
 - [[concepts/agentic-payments]] — AI agent autonomous payment framework
 - [[entities/coinbase]] — x402 originator
 - [[entities/ripple]] — x402 Foundation Premier Member (XRP/RLUSD rail) + full MiCA CASP; bridges the US-rail and EU-regulatory layers

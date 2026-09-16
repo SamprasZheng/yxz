@@ -45,9 +45,10 @@ Between 2025–2026, five major protocols emerged, each covering different scena
 
 | Protocol | Originator | Positioning |
 |---|---|---|
+| **UCP** | Google | **Commerce-orchestration / interoperability layer** above the rails (NRF 2026-01-11); AP2 = its consent layer |
 | [[concepts/x402-protocol]] | Coinbase | HTTP-native stablecoin M2M payments (V2: 2025-12) |
 | ACP | OpenAI + Stripe | Fiat merchant checkout process |
-| AP2 | Google | Authorization trust framework (Mandate), payment-agnostic |
+| AP2 | Google | Authorization/consent trust framework (Mandate), payment-agnostic |
 | MPP | Stripe + Tempo | Session-based continuous micropayments (2026-03) |
 | L402 | Lightning Labs | Bitcoin Lightning HTTP micropayments (since 2020) |
 
@@ -105,8 +106,8 @@ For detailed comparison, see [[concepts/agentic-payment-protocols]].
 1. **Wallet security**: security model for agents holding private keys or authorizations
 2. **Cost runaway risk**: agent attack or logic error causing large uncontrolled expenditures
 3. **Regulatory compliance**: varying stablecoin payment regulations across countries
-4. **Demand validation**: x402 real daily volume was only ~$28,000 in 2026 Q1; by 2026-08 cumulative count had compounded to **160M+ txns** (Coinbase) / **~$41M settled on-chain**, with **95% of txns ≥ $1** and the 10¢–$1 wash band collapsing 46%→4% (test traffic receding), yet absolute settled value remains small versus China's ~300M Alipay AI Pay txns — the business model is validating slowly, not proven (see [[concepts/x402-protocol]])
-5. **Protocol fragmentation**: x402 / ACP / AP2 / MPP / L402 coexisting; complex developer choices
+4. **Demand validation**: x402 real daily volume was only ~$28,000 in 2026 Q1; by **2026-09-03 cumulative count had compounded to 182M txns** but **settled value stayed FLAT at ~$41.6M since April** (≈$0.23/txn, daily volume −93% YTD) — even with **95% of txns ≥ $1** (wash band receding), the count-up/value-flat split has *hardened into a plateau*, and absolute settled value remains tiny versus China's ~300M Alipay AI Pay txns: the business model is validating slowly, not proven (see [[concepts/x402-protocol]])
+5. **Protocol fragmentation → convergence**: x402 / ACP / AP2 / MPP / L402 coexisted through 2025; through 2026 the layer began *converging* on Google's **UCP** orchestration standard (NRF 2026-01) + Visa's protocol-agnostic **Intelligent Commerce Connect** on-ramp — the developer choice is shifting from "pick a protocol" to "pick an aggregation layer" (see [[concepts/agentic-payment-protocols]])
 
 ## Related Pages
 
