@@ -5,7 +5,7 @@ tags: [conjunction, cdm, ssa, space-debris, commercial-ssa, mission-desk, firefl
 
 # LeoLabs
 
-LeoLabs is a US commercial Space Situational Awareness (SSA) company that operates a global network of phased-array radar stations to provide high-precision tracking of LEO objects, including conjunction assessment and CDM delivery services to satellite operators. It is the best-documented commercial CDM alternative to Space-Track for the Firefly conjunction agent.
+LeoLabs is a US commercial Space Situational Awareness (SSA) company that operates a global network of phased-array radar stations to provide high-precision tracking of LEO objects, including conjunction assessment and CDM delivery services to satellite operators. It is the best-documented commercial CDM alternative to Space-Track for the Firefly conjunction agent. By 2026 its revenue mix has shifted decisively toward **US-government contracts** (radar hardware + catalog licensing) — the Tier-1 ("know") illustration of the [[synthesis/commercial-space-traffic-management-six-region|government-anchored commercial STM market]] thesis (see the government-contracts section below).
 
 ## Business and Background
 
@@ -28,7 +28,17 @@ Per the LeoLabs Conjunction Alerts product page (verified 2025):
 - CDMs include secondary object state vector and covariance for high-risk events
 - Dashboard integrates **both LeoLabs and U.S. Government CDMs** in a single view
 - Covariance realism assessments are performed by comparing propagated orbits against subsequent observations
-- Coverage: 22,000+ satellites, rocket bodies, and hazardous debris fragments (2025 figure)
+- Coverage: ~25,000 tracked resident space objects in the Object Catalog (2026 figure; 22,000+ was the 2025 figure)
+
+## US Government Contracts & the Tier-1 Government-Anchor (2025–26 fact-check)
+
+The most important development on this page since it was written: LeoLabs' *growth* is now overwhelmingly US-government-driven, which pushes the [[synthesis/commercial-space-traffic-management-six-region|"government-anchored commercial STM"]] thesis one tier *down* — the anchor reaches even the Tier-1 "know / independent data" layer, not just the Tier-2 conjunction-SaaS layer.
+
+- **First interagency catalog-license contract (awarded 2025-09-30):** the DoC **Office of Space Commerce (OSC)** + the USSF **Joint Commercial Operations (JCO)** cell jointly licensed LeoLabs' **Object Catalog** (~25,000 RSOs) to feed *both* the military **Unified Data Library (UDL)** and the civil **[[sources/tracss-oasis-announcement-2024|TraCSS]]** simultaneously — the first time multiple US agencies pooled a *commercial* catalog at scale (initial term through mid-March 2026, extendable). Validates the commercial sector as the "foundational data layer" for both the civil and military SSA missions. (LeoLabs press 2025-12; SpaceNews "LeoLabs lands interagency contract to feed TraCSS and track adversarial spacecraft.")
+- **$20.68M USSF Scout-S mobile-radar contract (2026-08-27):** the US Space Force awarded LeoLabs a **transportable/expeditionary Scout-S** surveillance-radar variant for LEO+VLEO space-domain-awareness tracking — a *hardware* sale, not a data subscription. The mobile Scout radar participated in the **Valiant Shield** exercise (2026-06); the Scout line was seeded by a 2025 USSF **TACFI** award + private investment, and a further Scout variant is being optimized for **missile tracking** (2026). (SatNews / Payload / Via Satellite, 2026-08.)
+- **Record 2025 book of business:** LeoLabs closed 2025 with **>$60M in total contract awards** and **186% YoY growth in US-government contracts**, entering 2026 with **11 operational radars across 7 sites**, a **NASA Space Act Agreement**, and the joint civil-military catalog license above. (PRNewswire 2025.)
+
+**Read:** LeoLabs began as the archetypal *commercial-subscription* SSA data vendor, but its 2025–26 revenue inflection is a government one (a radar-hardware contract + a dual-agency catalog license + triple-digit gov-contract growth). This is the same "customer-of-last-resort is the state" pattern the synthesis records at Tier 2 (Slingshot/Kayhan on TraCSS) — now demonstrated at Tier 1, and it is exactly what makes the TraCSS budget fight ([[synthesis/space-situational-awareness-six-region]] §3.1) load-bearing for the *whole* commercial SSA market, not just the screening-SaaS layer.
 
 ## API and Platform Access
 
@@ -62,4 +72,6 @@ LeoLabs is the recommended upgrade path once the Mission Desk validates its CDM 
 - [[entities/slingshot-aerospace]] — another commercial CDM provider
 - [[concepts/covariance-ellipsoid]] — why LeoLabs covariance quality matters
 - [[concepts/pc-probability-of-collision]] — higher-quality covariance → more reliable Pc
-- [[synthesis/space-situational-awareness-six-region]] — LeoLabs among the six regional SSA systems (Vyoma is the European analog)
+- [[synthesis/space-situational-awareness-six-region]] — LeoLabs among the six regional SSA systems (Vyoma is the European analog); §3.1 = the TraCSS budget fight that makes LeoLabs' gov-contract book load-bearing
+- [[synthesis/commercial-space-traffic-management-six-region]] — the commercial-market map; LeoLabs is the Tier-1 "know" node whose 2025–26 growth demonstrates the government-anchor reaches all three tiers
+- [[entities/kayhan-space]] · [[entities/slingshot-aerospace]] — Tier-2 "decide" vendors on the same TraCSS government-anchor

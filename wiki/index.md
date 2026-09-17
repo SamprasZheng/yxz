@@ -113,7 +113,7 @@ type: index
 
 - [[entities/18-sds]] — 18th Space Defense Squadron (USSF, Vandenberg SFB); maintains space surveillance catalog; generates CDMs via Space-Track.org; transitioning to TraCSS
 - [[entities/space-track-19sds]] — Space-Track.org / 18 SDS / 19 SDS operational structure: 18 SDS = catalog + data sharing; 19 SDS = conjunction assessment at Dahlgren VA; CDM email + API delivery; TraCSS transition
-- [[entities/leolabs]] — Commercial phased-array SSA company; CDMs in < 5 min, 400% more frequent than 18 SDS; covariance realism advantage; MVP upgrade path
+- [[entities/leolabs]] — Commercial phased-array SSA company; CDMs in < 5 min, 400% more frequent than 18 SDS; covariance realism advantage; MVP upgrade path; **2025–26 revenue now gov-contract-led** ($20.68M USSF Scout-S mobile radar 2026-08-27 + OSC/USSF-JCO catalog license → UDL+TraCSS; 186% YoY gov growth) — the Tier-1 face of the government-anchored STM market
 - [[entities/slingshot-aerospace]] — Commercial SSA + Beacon CDM platform; $13.3M NOAA TraCSS UI contract; fleet coordination and maneuver sharing; Agatha IRL anomaly AI (DARPA PRECOG, June 2024); ~$110–120M total funding
 - [[entities/cognitive-space]] — Houston AI satellite ops startup; CNTIENT.Optimize (87% ops time savings, 4× planning vs traditional); SDA/AFRL/NOAA customer; ~$5M combined SDA contracts 2025; $11.2M total funding; CEO Guy de Carufel
 - [[entities/kayhan-space]] — Boulder collision avoidance startup; Pathfinder/Satcat Suite (autonomous maneuver planning + M2M coordination); customers Capella/Lynk/Globalstar; $10.7M funding; CEO Siamak Hesar (founded 2019)

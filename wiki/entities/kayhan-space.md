@@ -23,7 +23,7 @@ Kayhan Space is a Boulder, Colorado-based space safety startup that provides aut
 | USSF STTR Phase 1 | $250K | September 2022 |
 | **Total VC** | ~$10.7M | — |
 
-The September 2023 seed extension was led by **Space Capital** and **Eve Atlas**. As of 2026-08 no Series A has been announced; startup trackers (Tracxn) now cite **~$12M total across 4 rounds**, ~$1M above the itemized rounds here — the delta is an undisclosed small round, not a priced Series A.
+The September 2023 seed extension was led by **Space Capital** and **Eve Atlas**. As of 2026-09 **no Series A has been announced**; startup trackers (Tracxn) cite **~$12.2M total across 4 rounds** — the extra ~$1.5M over the two itemized seed rounds is an earlier **~$600K pre-seed led by Overline** plus an undisclosed small round, *not* a priced Series A. Kayhan's 2026 growth push is therefore product/market-led (Satcat Terminal + investor/insurer buyers, below), not a fresh raise.
 
 ## Products
 
