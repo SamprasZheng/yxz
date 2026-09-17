@@ -50,7 +50,7 @@ Since no prior `daily-trader-*.md` exists, the watchlist is seeded from the core
 
 *All signals N/A due to `yfinance-proxy-403` blocker.*
 
-Raw scan artifact: `agents/outputs/scan-2026-09-17.json`
+Raw scan artifact: `agents/outputs/scan-2026-09-17.json` (gitignored; available locally only)
 
 ---
 
@@ -100,5 +100,5 @@ Where each component is normalized to [0, 1]:
 
 ---
 
-*Scan artifact:* [[../agents/outputs/scan-2026-09-17.json]]  
+*Scan artifact:* `agents/outputs/scan-2026-09-17.json` (gitignored; available locally only)  
 *Run mode:* `blocked-stub` — no live data fetched.
