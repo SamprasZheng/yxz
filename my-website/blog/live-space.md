@@ -13,6 +13,32 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-09-18
+
+- Market/Sentiment stance: **bullish** (score 4)
+- Web signals collected: 10
+- Social-search signals collected: 10
+- Updated at: 2026-09-18T00:32:46.569Z
+
+Key web signals:
+- [300km Orbit Space Battle Breaks Out: Who Will Seize Dominance in Next-Gen AI Infrastructure? - 36 Kr](https://news.google.com/rss/articles/CBMiU0FVX3lxTE91SXZrWnBhSFVsOEtxZ3FPdlpCbFY5T25JaXdlRlY5QThPQTliVTlPWTNhQUdsS21QMU5VdDdYNWNrM1B3eG5FZ0VZYlhnNWthTExV?oc=5)
+- [When satellites become AI agents, space data centers become the next AI frontier - cio.com](https://news.google.com/rss/articles/CBMivAFBVV95cUxPa2VSekJYdFNTYy1id2l6N25oX19BQ0ZkdDducXl2VFJlRmtkYWNFVTRhLXRlNzZpaWR0MjJJb1Qwd1BGNFZLR3ViWVZVSThCUjdLaDRneTg3TXRGVXJOYl9mQU05Y1dFY3EtTy1Kdmp3ZWJzWWwyWE4wZ2RNM3dwQnljMkpubWZDZkJtWlpiTktRZmUtYUV2ZHlIdmVYUU8wREJ2TmxWZHdfSUcyTkNIS2ZveUNWTjk2b2JHMA?oc=5)
+- [Data centers in space - JLL](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15RVYzNW8zQTRINzFsSlo3ZFBpQ2pobV9Yb1FESDN5ampzUjZGRVlfTkZkckpKU2RFZERobFBTdlBIZ28wUElkRnk4WGUtZGVXRUdzbmxYTjJnNWNsM3VDRGlpWW1PYlk?oc=5)
+- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
+- [Are orbital AI data centers the next frontier for compute infrastructure? - datacenterdynamics.com](https://news.google.com/rss/articles/CBMivAFBVV95cUxOWlgzcXpscFpoZjljMUx3VFVVRnpwdktGTGtGbU5nc0RxNnJRUm56WV9ydkV6c2tvVjAyYzU2TlBPOEp2N0NfN1JpMExnV3kzYWpEMlhERU5VcXhWNlJpaEVPdHlQWUEwZUtkenhxcDZIX3JpekNxNjA2MXVHMXB1RE5tNFRtX2t5QzVVX1FaN3hJczc3WmFOem8wYlVFNUNtcGpnU0VVd3YxcVFRdW9VTFVLdGpCd3g1SFRvZQ?oc=5)
+- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [For the very first time Elon Musk explains the "space data center plan ...](https://x.com/rohanpaul_ai/status/2064165951936094364)
+- [SpaceX Launches Starmind: AI Data Centers in Orbit](https://x.com/i/trending/2075373808211440079)
+- [Why Everyone Is Talking About Data Centers In Space - Facebook](https://www.facebook.com/groups/spaceXverse/posts/3789068354731495/)
+- [SpaceX has unveiled the design of... - Space and Technology - Facebook](https://www.facebook.com/SpaceTechnologyPage/posts/spacex-has-unveiled-the-design-of-its-first-orbital-data-center-satellite-ai1-th/1827979351789482/)
+- [CRYPTOWZRD | SpaceX is taking AI infrastructure into orbit. $SPCX ...](https://www.instagram.com/p/DbtQNCDCbbJ/)
+- [Future Tech | Elon Musk&#x27;s company SpaceX has filed a ... - Instagram](https://www.instagram.com/p/DUROItTCPgT/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-09-17
 
 - Market/Sentiment stance: **neutral** (score 3)
@@ -295,25 +321,4 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 
 Data quality notes:
 - No major data-quality issue in this run.
-
-### 2026-09-06
-
-- Market/Sentiment stance: **neutral** (score 1)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-09-06T00:04:03.505Z
-
-Key web signals:
-- [China Has 8-Billion-Parameter AI Running in Orbit as Shanghai Opens Space Computing Hub - Tech Times](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOS29VUk9lcXNfdWIwbnBLaXBVRk5HZ2hDbHJWTml0WVJSbkpIUnNkRXZnVk5uQ0ZCeDZnRHpiZkZ1dEZaX2ZqZ3hjY3pzMlhRVGk2cmZrN00xbjItaE9rQWpCTVBRdndTSzA5cUVJZkItNVU3cUpYODM2NElWT3pJbzBUUTd6aE1neXg5SWhuUXBxRWdqdDZhcEdhZC1hN0pPNHRCSjlVWnI5cTNhNTRrWjhZMjZQZEotS3ZpeGxtRHMtamFzdFZRX1hiV252SFNSMUE?oc=5)
-- [When satellites become AI agents, space data centers become the next AI frontier - cio.com](https://news.google.com/rss/articles/CBMivAFBVV95cUxPa2VSekJYdFNTYy1id2l6N25oX19BQ0ZkdDducXl2VFJlRmtkYWNFVTRhLXRlNzZpaWR0MjJJb1Qwd1BGNFZLR3ViWVZVSThCUjdLaDRneTg3TXRGVXJOYl9mQU05Y1dFY3EtTy1Kdmp3ZWJzWWwyWE4wZ2RNM3dwQnljMkpubWZDZkJtWlpiTktRZmUtYUV2ZHlIdmVYUU8wREJ2TmxWZHdfSUcyTkNIS2ZveUNWTjk2b2JHMA?oc=5)
-- [Are orbital AI data centers the next frontier for compute infrastructure? - datacenterdynamics.com](https://news.google.com/rss/articles/CBMivAFBVV95cUxOWlgzcXpscFpoZjljMUx3VFVVRnpwdktGTGtGbU5nc0RxNnJRUm56WV9ydkV6c2tvVjAyYzU2TlBPOEp2N0NfN1JpMExnV3kzYWpEMlhERU5VcXhWNlJpaEVPdHlQWUEwZUtkenhxcDZIX3JpekNxNjA2MXVHMXB1RE5tNFRtX2t5QzVVX1FaN3hJczc3WmFOem8wYlVFNUNtcGpnU0VVd3YxcVFRdW9VTFVLdGpCd3g1SFRvZQ?oc=5)
-- [NVIDIA Launches Space Computing, Rocketing AI Into Orbit - NVIDIA Newsroom](https://news.google.com/rss/articles/CBMiXkFVX3lxTFByTFhFdVBzclhIVjNSbWNVX0tSY0FpZWdKenRYLTJNVU53ZW12ZnFBeE5GaldHTERicEIxUDlWQnJhdFFSQnh6NHNVbXMyUlNTS3AwUFZkaWN4dUxmMkE?oc=5)
-- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
-- [A typical AI-focused data centre can consume as much electricity as 100,000 homes. Now companies want to put them in orbit, where carefully chosen satellites can see almost continuous sunlight and dump their waste heat into space through giant radiators i - spacedaily.com](https://news.google.com/rss/articles/CBMihAFBVV95cUxNQVk5RWFBNldjZ3BmbmN2azRGNjI1akp3SDlWRkFnVGhwWG5WOGNjOG1OaEZ0bndVcE9QejRNU1hicHdvNVpFcmE0UHBMSzliNVJBSkVzYmZmOGdHdFR5bzNld1RGelI2LUhjZzdhYzI1eVQ2bk1lSXZqWXlnS2NHZjh4WXc?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((space data center OR satellite compute OR orbital data center) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(space%20data%20center%20OR%20satellite%20compute%20OR%20orbital%20data%20center)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
 
