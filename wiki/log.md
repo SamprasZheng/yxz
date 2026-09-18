@@ -1,5 +1,20 @@
 # Wiki Log
 
+## [2026-09-18] lint | Daily maintenance scan — 208 pages clean, 16 dead wikilinks in log.md (informational)
+
+**Scope:** Automated daily maintenance pass. Scanned all 208 content pages under `wiki/sources/`, `wiki/entities/`, `wiki/concepts/`, `wiki/synthesis/`. Checked: required frontmatter fields (`type`, `tags`; source pages also `title`/`author`/`date`/`ingested`), wikilink resolution, markdown-URL internal references, and index.md coverage.
+
+**Findings — content pages:** 0 issues. All 208 content pages carry valid frontmatter. All wikilinks in content pages resolve. Zero markdown-style internal references. All 208 pages appear in the correct index.md section.
+
+**Findings — log.md (informational only):** 16 dead wikilinks detected in `log.md` historical entries — flagged for visibility per action policy, but not auto-fixed (log.md is append-only session history):
+- `[[wikilink]]` (7 instances, lines 436/694/708/715/957/983/1140) — intentional placeholder text in log narrative (e.g. "every touched page gained real dated `[[wikilink]]`-anchored citations"), not actual links to a page.
+- `[[wiki/index.md]]` / `[[wiki/index]]` / `[[wiki/AGENTS]]` / `[[index.md]]` (8 instances, lines 19/484/518/735/742/767×2/1422) — old log entries using an incorrect path convention (`wiki/` prefix + `.md` extension) that predates the settled `[[index]]` / `[[AGENTS]]` wikilink style.
+- `[[sources/polkasharks-jam]]` (1 instance, line 560) — documented within the same log entry as already corrected to `[[sources/polkasharks-jam-article]]`; the log text is a historical record of the repair, not an active dangling reference.
+
+**Action:** None required on content pages. No auto-fixes applied. PR opened with flagged issues for owner visibility.
+
+**Pages touched:** `wiki/log.md` (this entry). No content pages modified.
+
 ## [2026-08-07] deepen | Defense-tech / techno-industrial-state cluster — Palantir Q2-2026 (+93%) time-axis fact-refresh + multiple-compression-reversal resolution + Anduril ≈$100B/two-archetypes nuance
 **Rotation:** picked the **defense-tech / techno-industrial-state cluster** ([[concepts/technological-republic]] / [[concepts/soft-belief]] + [[entities/palantir]] / [[entities/alexander-karp]] + [[sources/technological-republic-karp-2025]] + [[synthesis/techno-industrial-state-defense-tech-six-region]]). Per the deepen log this was the **stalest cluster by a wide margin** — last deepened **2026-07-09 (29 days)**, every other domain worked 07-13→08-06. Also timely: **Palantir reported Q2-2026 on 2026-08-03**, so the cluster's Q1-2026-anchored numbers were exactly one earnings cycle stale. Public/citable research only; **no personal/financial data** (public-market figures on a NYSE-listed company only, no owner holdings); `agents/` not read or modified (no Firefly code instance in this cluster — no code/concept divergence to report); no trader/KOL/maintenance namespaces; explicit `git add` of only the 5 wiki files changed.
 
