@@ -43,15 +43,15 @@ Helsing is the test of whether Europe can build a defense-tech prime *at scale* 
 
 ## Comparative note (US vs Europe archetypes)
 
-| | Helsing (EU) | [[entities/palantir]] (US) | Anduril (US) |
+| | Helsing (EU) | [[entities/palantir]] (US) | [[entities/anduril]] (US) |
 |---|---|---|---|
 | Model | Sovereign-European software + autonomy | Software-margin intel/C2 prime | Hardware-scaling autonomy prime |
-| Valuation (2026) | $18B (Series E, private) | ≈$409B mkt cap (public, PLTR) | ≈$61B → **$100B in talks** (private, unclosed) |
+| Valuation (2026) | $18B (Series E, private) | ≈$409B mkt cap (public, PLTR) | ≈$61B → **$100B in talks, still unclosed 2026-09-18** (private) |
 | Soft-belief supply | Threat-forged + policy-mandated (rearmament) | Market + threat, *contested* | Market + threat |
 
 ## See also
 
 - [[synthesis/techno-industrial-state-defense-tech-six-region]] — Helsing as the Europe/sovereign-autonomy archetype in the six-region defense-tech map
 - [[concepts/technological-republic]] · [[concepts/soft-belief]] — the thesis Helsing instantiates in the European (fractured-sovereignty) mode
-- [[entities/palantir]] · [[entities/alexander-karp]] — the US archetype Helsing is positioned against
+- [[entities/palantir]] · [[entities/anduril]] · [[entities/alexander-karp]] — the US archetypes Helsing is positioned against (Anduril the *direct* sovereign-alternative rival: HX-2 vs Barracuda/Fury, Centaur vs Lattice)
 - [[synthesis/leo-taiwan-odc-gap]] — the upstream-strong/midstream-absent pattern the six-region map inherits
