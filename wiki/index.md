@@ -33,6 +33,7 @@ type: index
 - [[sources/nemoclaw-build-a-claw-portal-2026]] — NVIDIA "Build-a-Claw" onboarding portal: Brev / DGX Spark / Jetson install paths (2026)
 - [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
 - [[sources/noaa-swpc-product-catalog]] — NOAA SWPC product and data catalog: full JSON URL table with cadences for all operational space weather feeds (ingested 2026-05-24)
+- [[sources/kol-digest-2026-09-19]] — Automated daily KOL + keyword digest 2026-09-19: 11 keywords (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks); ~35 items; KOL list empty
 
 - [[sources/msbai-orbitguard-dod-contract-2025]] — MSBAI OrbitGuard $1.2M DoD SBIR (Sept 2025): JEPA + MARL neuro-symbolic SDA copilot; 94–98% lab accuracy across ~15,000 objects; AMOS 2025 poster; CEO Grosvenor verbatim quote (ingested 2026-05-24)
 - [[sources/scnoc-agentic-sun-2025]] — SCNOC-Agentic paper (Electronics 2025, 14(16), 3320): first LLM multi-agent framework for satellite communications NetOps; four components (intent refinement / multi-agent workflow / long-term memory / graph-RAG); qwen2.5-70B improved network task planning accuracy 15.6%→32.2% (ingested 2026-05-24)
@@ -108,6 +109,8 @@ type: index
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
 - [[entities/peter-steinberger]] — Austrian engineer (@steipete); PSPDFKit co-founder/CEO (€100M Insight exit 2021); creator of OpenClaw; OpenAI personal-agents lead (Feb 2026–)
 - [[entities/noaa-swpc]] — NOAA Space Weather Prediction Center: civilian space weather authority; Boulder CO; ISES flagship RWC; 24/7 alerts/watches/warnings; civil counterpart to USAF 557th Weather Wing
+- [[entities/anthropic]] — US AI safety company (2021); creator of the Claude LLM family + Claude Code; first operating profit expected Q3 2026; Claude leads 26% of own model R&D (stub 2026-09-19)
+- [[entities/openai]] — US AI company; creator of GPT/ChatGPT; GPT-6 Astra engine live; safety incidents disclosure framework launched Sept 2026; DevDay 2026 Sept 29 SF (stub 2026-09-19)
 
 - [[entities/lockheed-martin-space]] — Lockheed Martin Space AI/SDA product line: iSpace (C2 + sensor fusion), Space Fence (S-band radar), T-TAURI (onboard telemetry AI), ARISE; 80+ space AI/ML programs; no confirmed JEPA usage publicly
 - [[entities/msbai]] — MSBAI (Microsurgeonbot Inc.); LA-based defense AI startup; CEO Allan Grosvenor; OrbitGuard JEPA + MARL copilot; Air Force Techstars '20; $1.2M DoD SBIR 2025
