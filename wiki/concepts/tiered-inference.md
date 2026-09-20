@@ -69,6 +69,8 @@ Current API pricing for the tier mapping (via OpenRouter, **June 2026**). The li
 
 Sources: [openrouter.ai/nvidia](https://openrouter.ai/nvidia); [OpenRouter pricing 2026 guide (June update)](https://betonai.net/openrouter-pricing-2026-complete-guide-to-every-model-tier-and-hidden-cost/). The two-order-of-magnitude spread from cheapest tier-1 to tier-3 output tokens (~$0.16 → ~$2.20) is exactly the gradient the cascade exists to exploit.
 
+**Line-refresh (2026-09).** The Nemotron 3 generation is now fully shipped — Nano 30B-A3B (2025-12-15), Super 120B-A12B (GTC, 2026-03-11), Ultra 550B (2026-06-04) — and NVIDIA has confirmed a **Nemotron 4** family in training whose largest member targets **≥1 trillion parameters (~2× Ultra)** ([technology.org, 2026-08-12](https://www.technology.org/2026/08/12/nvidia-nemotron-4-trillion-parameter-open-model/)). This does not flatten the ladder — it *steepens the cost gradient the cascade exploits*: a trillion-parameter tier-3 ceiling widens the tier-1↔tier-3 token-cost spread further, making auditable early-exit routing more valuable, not less, for a 24/7 ops desk on the [[concepts/dgx-spark]] local ceiling.
+
 ## Six-region routing-ecosystem read (台美日韓中國歐洲)
 
 Where the routing layer's R&D and commercial supply live — and why the geography matters for a cascade's economics:

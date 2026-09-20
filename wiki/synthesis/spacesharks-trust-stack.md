@@ -136,6 +136,18 @@ A fact-check + dimension pass on the four Layer-2/3/4 concept pages surfaced two
 
 Also refreshed: RouteLLM figure (75%→85%, ICLR 2025), Nemotron 3 pricing line, the 2025 conformal-prediction wave for LLMs (ACM SIGKDD 2025 survey + ConU/TECP), and the LLM-router benchmark lineage (ROUTERBENCH → LLMRouterBench 2026 / RouterArena) with routing now a *default product feature* (GPT-5 built-in router, OpenRouter Auto Router). The 05-24 flag on [[concepts/calibrated-confidence-llm]]'s Guo/Kadavath citations was cleared by live web-verification. No layer's *architecture* changed — the stack thesis holds; the evidence under it is now current and dated.
 
+## 12. 2026-Q3 fact-check note (2026-09-20)
+
+A 向外抓取 / 數據查核比對 pass on the four Layer-1/2/3 concept pages (first content refresh since 2026-07-08) re-verified the load-bearing 2026 claims against primary/authoritative sources now that several anticipated dates have *passed*:
+
+1. **The provenance layer became live law on time; the calibration layer got a reprieve — the two AI-trust layers now diverge in Europe.** The July-2026 **Digital Omnibus** (Reg. (EU) 2026/1744, in force ~27 July 2026) *postponed the high-risk regime* (Annex III → 2 Dec 2027, Annex I → 2 Aug 2028) but deliberately **left EU AI Act Article 50 untouched** — so transparency/provenance marking **applied on schedule 2 Aug 2026** (Article 50(2) watermarking grace to 2 Dec 2026), while the accuracy/robustness conformity gate that makes *calibration* a market-access requirement slipped ~16 months. Net for the trust stack: **Layer 1/4 provenance is now enforceable EU law today; Layer 3 calibration-as-assurance is mandated-but-deferred.** The design invariant is unchanged (build both in from day one → over-compliant everywhere), but the *clocks* on the two layers have split. Full detail on [[concepts/agentic-provenance]] §2 + §2.5 and [[concepts/calibrated-confidence-llm]] §"six-region".
+
+2. **The reference marking format advanced: C2PA v2.4 (2026-04-21)** supersedes v2.3, broadening unstructured-text/LLM-output manifests (plus live-video-streaming and OGG Vorbis); >6,000 members as of Jan 2026 — the Layer-1 `evidence_hash` / Layer-4 `policy_preset_hash` still map cleanly onto the C2PA content-hash / software-assertion roles.
+
+3. **The tier ladder's ceiling is rising, not flattening.** NVIDIA's Nemotron 3 line is fully shipped (Ultra 550B, 2026-06-04) and a **Nemotron 4** family (largest ≥1T params, ~2× Ultra) is in training (announced ~2026-08-12) — which *steepens* the tier-1↔tier-3 cost gradient the [[concepts/tiered-inference]] cascade exploits, reinforcing (not eroding) the cost-spine argument. See [[concepts/tiered-inference]] §"Line-refresh (2026-09)".
+
+No layer's *architecture* changed — the four-layer stack thesis holds; the evidence under it is re-dated to 2026-Q3. The one page left unedited this pass, [[concepts/small-model-ensemble]], has no time-sensitive regulatory/pricing hook that moved (its Petri/MoA/PoLL evidence remains current); its decorrelation-needs-multipolar-supply argument is tracked on [[synthesis/open-weight-llm-agent-stack-six-region]].
+
 ## See also
 
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — canonical Mission Desk plan; this synthesis is the trust-architecture companion
