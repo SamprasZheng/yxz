@@ -12,7 +12,7 @@ Cognitive Space is a Houston, Texas-based startup that develops AI-powered autom
 - **CEO & Founder:** Guy de Carufel
 - **Headquarters:** Houston, TX (4203 Montrose Blvd., STE 525)
 - **Founded:** ~2020 (first funding round December 2020 per Crunchbase)
-- **Total funding raised:** $11.2M across 7 rounds (as of 2025); most recent known seed round $4M, October 2023
+- **Total funding raised:** $11.2M across 7 rounds (Crunchbase, as of 2025); most recent known priced round the **$4M seed+, October 2023**. ⚠️ **Discrepancy flagged 2026-09-21:** a 2026 startup tracker reports **~$8M total raised and 26 employees (as of Aug 2026)** — lower than the Crunchbase $11.2M. Sources disagree (equity-only vs incl. non-dilutive/SBIR); preserved unresolved rather than overwritten. Either way, no *new priced round* has surfaced since Oct-2023 — the company runs on gov contracts, not fresh venture capital.
 
 ## Products
 
@@ -38,7 +38,7 @@ Earth observation tasking product (details not publicly disclosed beyond product
 | SDA Other Transaction Authority | ~$1.8M (est.) | Mar 2025 | PWSA BMC3 mesh network management |
 | Combined SDA awards (2025) | ~$5M total | Mar 2025 | Two awards: sensor management + mesh networking |
 
-The March 2025 awards tasked Cognitive Space to (1) apply AI to enhance automated sensor management for missile-tracking satellites and (2) implement automated mesh network management for the Proliferated Warfighter Space Architecture (PWSA) Battle Management Command, Control and Communication (BMC3) ecosystem. The company also won a **NOAA contract (2025) for next-generation ground-system demonstrations**, broadening its customer set beyond SDA/AFRL to include DARPA and the USSF.
+The March 2025 awards tasked Cognitive Space to (1) apply AI to enhance automated sensor management for missile-tracking satellites and (2) implement automated mesh network management for the Proliferated Warfighter Space Architecture (PWSA) Battle Management Command, Control and Communication (BMC3) ecosystem. The company's first Federal *Civil* customer was **NOAA** — a **$900K Ground Processing Demonstrations (GPD) contract under BAA-NOAA-GPD-2023, announced 2024-04-10** (date/value/program corrected 2026-09-21; the prior "NOAA contract (2025)" mis-dated it — the award is 2024, part of NOAA's ~$3.46M GPD tranche across awardees), broadening its customer set beyond SDA/AFRL to include DARPA and the USSF. It applies CNTIENT.Optimize to NOAA's evaluation of next-generation ground systems.
 
 **Maturity signal (2025-2026):** Cognitive Space states **CNTIENT.Optimize has reached TRL 9** (commercially available, operating on-orbit spacecraft) — a meaningful step above the SBIR-demo stage and the clearest "fielded, not prototype" claim among the four US ops-automation/space-safety vendors in this cluster.
 
@@ -60,7 +60,7 @@ The SDA customer base confirms the US government is buying AI satellite-ops auto
 
 ## Commercial-Market Position (six-region)
 
-Cognitive Space sits in the **Operate (AI tasking/ops automation)** adjacency rather than the three core space-safety tiers — collection scheduling + sensor management, not conjunction screening or debris removal. But it shares the cluster's defining trait: **US government-anchored demand** (SDA/AFRL/NOAA/DARPA SBIR-scale), and it overlaps the [[synthesis/llm-satellite-operations-six-region|applied AI-ops software layer]]. **Re-verified 2026-08:** no new priced funding round surfaced beyond the ~$11.2M / Oct-2023 seed; the SBIR-scale, gov-anchored contract profile (SDA mesh-routing + USSF in-orbit data-sharing + NOAA next-gen ground demo) and the TRL-9 claim still hold — the cluster's "small SBIR engagements, not program-of-record" scale caveat is unchanged. Among the four US vendors here it is the **ops-automation** node (vs Slingshot/Kayhan = decide, Privateer = exited). Market structure + six-region: [[synthesis/commercial-space-traffic-management-six-region]].
+Cognitive Space sits in the **Operate (AI tasking/ops automation)** adjacency rather than the three core space-safety tiers — collection scheduling + sensor management, not conjunction screening or debris removal. But it shares the cluster's defining trait: **US government-anchored demand** (SDA/AFRL/NOAA/DARPA SBIR-scale), and it overlaps the [[synthesis/llm-satellite-operations-six-region|applied AI-ops software layer]]. **Re-verified 2026-09-21:** no new priced funding round surfaced beyond the Oct-2023 seed+ (funding-figure discrepancy flagged above); the SBIR-scale, gov-anchored contract profile (SDA mesh-routing + USSF in-orbit data-sharing + the 2024 NOAA GPD $900K demo) and the TRL-9 claim still hold — the cluster's "small SBIR engagements, not program-of-record" scale caveat is unchanged. Among the four US vendors here it is the **ops-automation** node (vs Slingshot/Kayhan = decide, Privateer = exited). Market structure + six-region: [[synthesis/commercial-space-traffic-management-six-region]].
 
 ## See Also
 

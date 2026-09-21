@@ -50,7 +50,9 @@ Autonomous maneuvering and in-orbit servicing software: collision avoidance, orb
 
 ### ASIMOV (2026 program)
 
-**Verified 2026-07-07:** AIKO leads **ASIMOV**, a program **funded by the Italian Space Agency (ASI)** that applies AIKO's autonomy stack to **rendezvous and proximity operations (RPO)**, with sustainability (debris mitigation / servicing) as the stated mission. Significance: it moves AIKO's autonomy from *detect* (GENE anomaly) and *plan* (OLIVER onboard OS) into the highest-consequence closed loop — autonomous maneuvering *near another object* — the RPO capability that JAXA/Astroscale (Japan) and the US SDA copilots also chase. Confirms AIKO is climbing the on-board twin-fidelity ladder rather than staying at ground anomaly detection. See [[concepts/satellite-digital-twin]] §Forward trajectory.
+**Verified 2026-07-07; extended 2026-09-21:** AIKO leads **ASIMOV** — *Autonomous System for In-orbit Mapping and Observation of non-cooperative Vehicles* — a two-year program **funded by the Italian Space Agency (ASI)** (consortium: AIKO + Politecnico di Milano + T4i + Tiny Bull Studios) applying AIKO's autonomy stack to **rendezvous and proximity operations (RPO)** against **non-cooperative** targets, with sustainability (debris mitigation / servicing) as the stated mission. Its GNC fuses vision DNNs (perception) with RL (guidance/control) into an autonomous onboard autopilot. Significance: it moves AIKO's autonomy from *detect* (GENE anomaly) and *plan* (OLIVER onboard OS) into the highest-consequence closed loop — autonomous maneuvering *near an uncooperative object* (strictly harder than cooperative docking) — the RPO capability that JAXA/Astroscale (Japan) and the US SDA copilots also chase. Confirms AIKO is climbing the on-board twin-fidelity ladder rather than staying at ground anomaly detection. See [[concepts/satellite-digital-twin]] §Forward trajectory.
+
+**Compute substrate — Axelera partnership (2026-02-09):** AIKO partnered with [[entities/axelera-ai|Axelera AI]] (Eindhoven; Metis/Europa in-memory-compute inference AIPU) to run `OLIVER`/`GENE` on a **European** edge accelerator rather than NVIDIA Jetson — pairing Europe's leading on-board-autonomy *software* with a European inference *chip* for a fully non-US on-board stack. Axelera separately partnered with ESA (2026-03-05) to standardize space-based inference. This is the substrate that gates how far up the twin-fidelity ladder AIKO can climb — see [[entities/axelera-ai]].
 
 ## Technical Approach
 
@@ -92,5 +94,6 @@ In the [[synthesis/llm-satellite-operations-six-region]] map, AIKO is **Europe's
 - [[concepts/llm-satellite-operations-landscape]] — full competitive map
 - [[synthesis/llm-satellite-operations-six-region]] — six-region (台美日韓中國歐洲) ops-AI map; AIKO is the Europe flagship
 - [[concepts/satellite-digital-twin]] — digital twin concept AIKO GENE partially instantiates
+- [[entities/axelera-ai]] — European inference-chip substrate under AIKO's on-board autonomy
 - [[entities/cognitive-space]] — US scheduling counterpart
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Spacesharks canonical plan
