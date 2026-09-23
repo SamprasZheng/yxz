@@ -65,7 +65,7 @@ On **[[entities/polkadot|Polkadot Hub]]**, Revive unifies **EVM + PVM** under on
 
 **Lineage (layer-up).** Smart-contract VMs recapitulate general computing's own move off stack machines: EVM/Wasm (stack, portable, slow-to-native) → register VMs mapped onto commodity RISC hardware (SVM, then RISC-V PolkaVM). PolkaVM is Gavin Wood's Yellow-Paper→Polkadot→JAM lineage reaching its **execution-substrate** layer: having generalised *consensus* (relay chain) and *scheduling* (coretime), the VM is the last Wasm-era component to be replaced.
 
-**Long-horizon (scenario — not fact).** If the RISC-V/PolkaVM substrate holds, the 100-year bet is that the *execution ISA* becomes as neutral and durable as TCP/IP is for transport: contracts, JAM services, and languages churn on top while the register-ISA substrate persists and rides the independent RISC-V *hardware* curve (chips optimised for the same ISA the VM speaks). The economic counterpart is on [[concepts/dot-hard-cap]] and [[concepts/agile-coretime]] — PolkaVM is *what* the burned coretime buys the right to execute, so the durability of the VM and the "fee-funded security" endgame are two faces of the same wager: a stable, cheap, trustless compute substrate with real, paid demand.
+**Long-horizon (scenario — not fact).** If the RISC-V/PolkaVM substrate holds, the 100-year bet is that the *execution ISA* becomes as neutral and durable as TCP/IP is for transport: contracts, JAM services, and languages churn on top while the register-ISA substrate persists and rides the independent RISC-V *hardware* curve (chips optimised for the same ISA the VM speaks). The economic counterpart is on [[concepts/dot-hard-cap]] and [[concepts/agile-coretime]] — PolkaVM is *what* the purchased coretime buys the right to execute (that coretime revenue is now routed to the **Dynamic Allocation Pool** governance buffer rather than burned, since the 2026-03 upgrade — see agile-coretime), so the durability of the VM and the "fee-funded security" endgame are two faces of the same wager: a stable, cheap, trustless compute substrate with real, paid demand.
 
 ## Sources
 
@@ -79,8 +79,8 @@ On **[[entities/polkadot|Polkadot Hub]]**, Revive unifies **EVM + PVM** under on
 ## Related
 
 - [[concepts/jam]] — PolkaVM *is* JAM's on-chain compute VM (Gray Paper "PVM"); the work-model layer above the VM
-- [[concepts/agile-coretime]] — coretime is the metering unit; PolkaVM is what the purchased/burned coretime executes
-- [[concepts/dot-hard-cap]] — burned coretime revenue is the demand sink for the compute PolkaVM runs
+- [[concepts/agile-coretime]] — coretime is the metering unit; PolkaVM is what the purchased coretime executes (coretime revenue → DAP since 2026-03, formerly burned)
+- [[concepts/dot-hard-cap]] — coretime revenue is the demand sink for the compute PolkaVM runs (routed to the DAP since 2026-03, formerly burned)
 - [[concepts/xcm]] — cross-chain messaging between PolkaVM-executing chains
 - [[synthesis/polkadot-2026-jam-tokenomics-six-region]] — canonical Polkadot-2026 integrating synthesis
 - [[entities/polkadot]] — Polkadot Hub; PolkaVM deployment surface

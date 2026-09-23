@@ -25,7 +25,7 @@ The 06-01 tokenomics synthesis framed Polkadot's protocol bet as *scarce token +
 
 - **Connect** → [[concepts/xcm]]: trust-minimised messaging *inside* the shared-security domain; bridges (Snowbridge, Hyperbridge) *outside* it.
 - **Settle** → [[concepts/hydration-omnipool]]: one unified liquidity pool + Aave-v3 money market + native CDP stablecoin (HOLLAR) = the money layer.
-- **Price the capacity** → [[concepts/regionx]]: a liquid secondary market over [[concepts/agile-coretime]] cores, with revenue burned back into [[concepts/dot-hard-cap|DOT scarcity]].
+- **Price the capacity** → [[concepts/regionx]]: a liquid secondary market over [[concepts/agile-coretime]] cores, with revenue routed to the DAP governance buffer (was burned into [[concepts/dot-hard-cap|DOT scarcity]] until the 2026-03 DAP upgrade — see the mechanism correction below).
 
 The three are not independent: **coretime (RegionX) funds the parachains, XCM connects them, and Hydration is where their assets settle** — and all three feed the same demand sink that gives the capped token value.
 

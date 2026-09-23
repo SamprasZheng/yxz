@@ -78,6 +78,6 @@ Coretime is one answer to "how do you price and allocate block-space?" The cross
 - [[synthesis/polkadot-interoperability-defi-coretime-app-layer]] — canonical app-layer synthesis (RegionX as the coretime-market pillar)
 - [[concepts/agile-coretime]] — the primary-market layer RegionX makes liquid
 - [[concepts/jam]] — the execution architecture coretime ultimately meters
-- [[concepts/dot-hard-cap]] — coretime revenue is burned, linking the market to DOT scarcity
+- [[concepts/dot-hard-cap]] — coretime revenue → DAP (Ref #1827 superseded the RFC-0010 burn, 2026-03), linking the market to DOT scarcity
 - [[concepts/xcm]] — coretime-funded parachains interoperate via XCM
 - [[entities/polkadot]]
