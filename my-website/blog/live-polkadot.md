@@ -13,6 +13,29 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-09-23
+
+- Market/Sentiment stance: **neutral** (score 0)
+- Web signals collected: 3
+- Social-search signals collected: 10
+- Updated at: 2026-09-23T00:47:43.063Z
+
+Key web signals:
+- [Top Polkadot Projects in 2026: 14 Best DeFi, Privacy & RWA DApps - Coin Bureau](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ycGk3TXVQZTBWaVZGaHdkb01jOUFTQkpiWUgxRnZwZk10OVoyemRqMEVOY0cyQkhYcm42YkNXZ016MXczcHZYeU5DSFZpZnVRZmpieXd6czYyenl3SFdldFB2bw?oc=5)
+- [Polkadot (DOT) Price Prediction 2026 and 2030: A Hard Supply Cap, a Billion Minted Tokens, and the Question Nobody Can Answer - cryptonews.net](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Hbkszc1FxVkVvclcxWDF3ZWVBc3ZXUXlnXzRRemR3SEZaOWVhckFGcHloZE5udXF0bS13T2taNk1MWlhtU1k2aF9iUy0zZk9jOS02Yy1hamFUTVE?oc=5)
+- [Polkadot (DOT) Review 2026: JAM, Hard Cap & The Honest Verdict - Coin Bureau](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYcnpBakw3WFNGZEpKTzRsWjRjb3o0OXlGTlNMaEFYa0x3ZGRlRHRINXdBdm1QT0JESHVIUDNyaVpEQ1V4X0RqODlUcjZnbGF3NE1aSw?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Polkadot has changed a lot since the parachain auction era. - Polkadot ...](https://x.com/coinbureau/status/2054677804919509395)
+- [Polkadot (@Polkadot) / X](https://x.com/Polkadot)
+- [Polkadot - Facebook](https://www.facebook.com/polkadotnetwork/)
+- [Polkadot DOT - Facebook](https://www.facebook.com/groups/polkadot.dot/)
+- [Polkadot Parachain Development - Instagram](https://www.instagram.com/popular/polkadot-parachain-development/)
+- [Moonriver Polkadot Parachain Benefits - Instagram](https://www.instagram.com/popular/moonriver-polkadot-parachain-benefits/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-09-22
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -244,29 +267,6 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Jus7Degen on X: "$DOT — POLKADOT One of the biggest old L1 bets that ...](https://x.com/Jus7Degen/status/2098309565825867907)
 - [Polkadot has changed a lot since the parachain auction era. - Polkadot ...](https://x.com/coinbureau/status/2054677804919509395)
 - [DOT-BEE | Alpha on X: "DOT is waking up After looking completely ...](https://x.com/BeeCrypto10/status/2098064352712524250)
-
-Data quality notes:
-- No major data-quality issue in this run.
-
-### 2026-09-11
-
-- Market/Sentiment stance: **neutral** (score 0)
-- Web signals collected: 3
-- Social-search signals collected: 10
-- Updated at: 2026-09-11T00:18:47.320Z
-
-Key web signals:
-- [Top Polkadot Projects in 2026: 14 Best DeFi, Privacy & RWA DApps - Coin Bureau](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ycGk3TXVQZTBWaVZGaHdkb01jOUFTQkpiWUgxRnZwZk10OVoyemRqMEVOY0cyQkhYcm42YkNXZ016MXczcHZYeU5DSFZpZnVRZmpieXd6czYyenl3SFdldFB2bw?oc=5)
-- [Polkadot (DOT) Price Prediction 2026 and 2030: A Hard Supply Cap, a Billion Minted Tokens, and the Question Nobody Can Answer - Cryptonews.net](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Hbkszc1FxVkVvclcxWDF3ZWVBc3ZXUXlnXzRRemR3SEZaOWVhckFGcHloZE5udXF0bS13T2taNk1MWlhtU1k2aF9iUy0zZk9jOS02Yy1hamFUTVE?oc=5)
-- [Polkadot (DOT) Review 2026: JAM, Hard Cap & The Honest Verdict - Coin Bureau](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYcnpBakw3WFNGZEpKTzRsWjRjb3o0OXlGTlNMaEFYa0x3ZGRlRHRINXdBdm1QT0JESHVIUDNyaVpEQ1V4X0RqODlUcjZnbGF3NE1aSw?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Polkadot (@Polkadot) / X](https://x.com/Polkadot)
-- [Polkadot has changed a lot since the parachain auction era. - Polkadot ...](https://x.com/coinbureau/status/2054677804919509395)
-- [Polkadot - Facebook](https://www.facebook.com/polkadotnetwork/)
-- [Polkadot DOT - Facebook](https://www.facebook.com/groups/polkadot.dot/)
-- [Polkadot (@polkadotnetwork) • Instagram photos and videos](https://www.instagram.com/polkadotnetwork/)
-- [Instagram](https://www.instagram.com/?hl=en-in)
 
 Data quality notes:
 - No major data-quality issue in this run.
