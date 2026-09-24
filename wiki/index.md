@@ -61,9 +61,11 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-09-24]] — Daily KOL + keyword digest (2026-09-24): 0 KOLs, 11 keywords; Claude Opus 5.5, NemoClaw v0.0.128, DOT +42%/dotUSD/JAM 2027, Nemotron 3 Diarization, OpenClaw security hardening, Audrey Tang/Plurality event
 
 ## Entities
 
+- [[entities/anthropic]] — US AI safety company; creator of the Claude family (Fable 5.1/Mythos 5.1/Opus 5.5); Claude Code + Claude API; SMB workflows
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
 - [[entities/polkadot]] — Layer-0 relay chain + parachain protocol; DOT token; JAM roadmap; DOT hard cap March 2026
 - [[entities/mythical-games]] — Web3 gaming studio; migrated ETH→Polkadot 2024; MYTH token; NFL Rivals, Nitro Nation
