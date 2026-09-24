@@ -1,10 +1,10 @@
 ---
 type: source
-title: "FCC Constellation Rulings — Starlink Gen2 (2022/2024), Kuiper (2020), AST SpaceMobile (2024)"
+title: "FCC Constellation Rulings — Starlink Gen2 (2022/2024/2026-V3), Kuiper→Amazon Leo (2020/2026), AST SpaceMobile (2024), 2026 Third Rounds"
 author: "Federal Communications Commission"
 date: "2024-11-26"
 ingested: "2026-05-24"
-tags: [fcc, ibfs, regulatory, spectrum, ngso, starlink, kuiper, ast-spacemobile, processing-round, mission-desk]
+tags: [fcc, ibfs, regulatory, spectrum, ngso, starlink, kuiper, amazon-leo, ast-spacemobile, processing-round, mission-desk]
 ---
 
 # FCC Constellation Rulings 2020–2024
@@ -80,6 +80,19 @@ AST SpaceMobile received authorization to deploy a **248-satellite constellation
 - Subject to additional approvals as the constellation scales (August 2025 grant extended Ka/V-band operations at 45.5–47 GHz for uplink)
 
 This ruling is significant for spectrum coordination because it authorises a LEO satellite to provide services in **cellular bands** that were not traditionally associated with Part 25 satellite services, requiring coordination with terrestrial wireless licensees as well as other satellite operators.
+
+## 2026 Grants and the Third Processing Round (addendum, verified 2026-09-24)
+
+The 2020-round-era grants above were substantially expanded in 2026, and the FCC opened a new round — bringing the landscape past this page's original "2022–2024" scope.
+
+### Starlink Gen2 "V3 Upgrade" Partial Grant — DA 26-36 (2026-01-09)
+The Space Bureau granted SpaceX authority for an **additional 7,500 Gen2 satellites**, doubling its authorized Gen2 fleet to **~15,000** and addressing part of the 2020 ~30,000-satellite application. Milestones: **50 % by 2028-12-01, 100 % by 2031-12-01**; ongoing collision-avoidance/disposal reporting; Bureau may pause deployment on debris-risk thresholds. The grant carried a **waiver of the processing-round rules conditioned on SpaceX participating in future rounds**. *(Sources: [SatNews 2026-01-12](https://satnews.com/2026/01/12/fcc-authorizes-7500-additional-starlink-gen2-satellites-for-global-gigabit-coverage/); [Via Satellite 2026-01-12](https://www.satellitetoday.com/connectivity/2026/01/12/fcc-gives-spacex-approval-for-7500-more-starlink-gen2-satellites/).)*
+
+### Amazon Leo (formerly Project Kuiper) Conditional Grant (2026-02-10)
+Amazon **rebranded Project Kuiper to "Amazon Leo"** (late 2025 / early 2026); the FCC now refers to both the constellation and the licensee (Kuiper Systems LLC) as **Amazon Leo**. The FCC authorized an **additional 4,504 satellites** — **3,212 Gen2** (Ku/V-band) + **1,292 polar-orbit** satellites (Arctic/Antarctic coverage) — bringing the full authorized constellation to **7,727**. A **50 %-deployed-by-2026-07-30** anti-warehousing milestone applies. Like SpaceX, the grant was **conditioned on future-round participation**. *(Sources: [Broadband Breakfast — Amazon rebrands to Amazon Leo](https://broadbandbreakfast.com/amazon-rebrands-prosatellite-internet-service-to-amazon-leo/); [GRANT — Kuiper Systems LLC / AmazonLeo-Gen2.pdf](https://cdn.geekwire.com/wp-content/uploads/2026/02/AmazonLeo-Gen2.pdf); [Wikipedia — Amazon Leo](https://en.wikipedia.org/wiki/Amazon_Leo).)*
+
+### Space Bureau Opens the Third Rounds — DA 26-552 / DA 26-553 (rel. 2026-06-05)
+The Bureau opened a **third Ku-/Ka-band processing round** (10.7–30.0 GHz) and a **third V-band processing round** (37.5–51.4 GHz), with a **2026-07-06 filing cut-off** for competing applications/petitions. SpaceX's and Amazon Leo's operations were folded into the respective rounds. These rounds run under the **legacy Part 25** rules — the new opt-in bonded [[concepts/processing-round|Part 100 round]] remains gated on OMB review as of 2026-09-24. *(Sources: FCC DA 26-552 / DA 26-553 "Space Bureau Opens Processing Rounds," rel. 2026-06-05 — primary docs.fcc.gov PDFs egress-blocked this run, corroborated via search-index summaries + [Exterra JSC](https://www.exterrajsc.com/p/fcc-opens-third-spectrum-processing).)*
 
 ## Interference-Attribution Implications
 
