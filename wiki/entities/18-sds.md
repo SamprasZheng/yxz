@@ -47,7 +47,8 @@ Under Space Policy Directive-3 (2018) and subsequent DoC/DoD agreements, the civ
 
 - September 2024: TraCSS 1.0 initial capabilities fielded; OSC CDMs distributed via Space-Track.org interface
 - February 2026: OSC opened TraCSS registration for operators
-- Mid-2026: expanded beta — **52 pilot users + the first two national-government accounts (UK, Australia), ~11,125 satellites** — registering directly via TraCSS.gov; 18 SDS retains the military space domain awareness (SDA) mission
+- March 2026: OSC released the TraCSS **production environment with 17 users**, formally starting the pilot period
+- August 2026: expanded beta — **70 pilot users + 10 national-government accounts (Australia, Brazil, Egypt, Finland, Germany, Norway, Republic of Korea, Singapore, Switzerland, United Kingdom), >11,345 satellites** — registering directly via TraCSS.gov, but **still pilot-mode "due to budget uncertainty"**; 18 SDS retains the military space domain awareness (SDA) mission
 
 **But the hand-off is now budget-contested, not a scheduled 2026 completion.** NOAA's FY2026 budget proposal (mid-2025) sought to *terminate* federal TraCSS funding (arguing commercial vendors should absorb it); the Space Force opposed the cut; Congress restored the money at **$52.5M enacted for FY2026** — while the **FY2027 request again seeks ~$11M to OSC (≈80% cut)**, the "fully operational by January 2026" target slipped, a **user-fee** model is under study, and a **2025-08-13 EO** elevated OSC to report directly to the Secretary of Commerce (out from under NOAA; Taylor Jordan named director 2025-12-02). Full fact-check + provider-selection implication: [[concepts/conjunction-screening-providers]] §"The 2025–2026 budget near-death and rescue"; geopolitical framing: [[synthesis/space-situational-awareness-six-region]] §2.
 
