@@ -13,6 +13,28 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-09-25
+
+- Market/Sentiment stance: **neutral** (score 0)
+- Web signals collected: 2
+- Social-search signals collected: 10
+- Updated at: 2026-09-25T00:38:46.547Z
+
+Key web signals:
+- [Top Polkadot Projects in 2026: 14 Best DeFi, Privacy & RWA DApps - Coin Bureau](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ycGk3TXVQZTBWaVZGaHdkb01jOUFTQkpiWUgxRnZwZk10OVoyemRqMEVOY0cyQkhYcm42YkNXZ016MXczcHZYeU5DSFZpZnVRZmpieXd6czYyenl3SFdldFB2bw?oc=5)
+- [Polkadot (DOT) Review 2026: JAM, Hard Cap & The Honest Verdict - Coin Bureau](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYcnpBakw3WFNGZEpKTzRsWjRjb3o0OXlGTlNMaEFYa0x3ZGRlRHRINXdBdm1QT0JESHVIUDNyaVpEQ1V4X0RqODlUcjZnbGF3NE1aSw?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Polkadot 2.0 Explained: Agile Coretime and What It Changes for ...](https://x.com/BSCNews/article/2064595663892189684)
+- [Polkadot has changed a lot since the parachain auction era. - Polkadot ...](https://x.com/coinbureau/status/2054677804919509395)
+- [Polkadot - Facebook](https://www.facebook.com/polkadotnetwork/)
+- [Polkadot DOT - Facebook](https://www.facebook.com/groups/polkadot.dot/)
+- [Polkadot Parachain Development - Instagram](https://www.instagram.com/popular/polkadot-parachain-development/)
+- [Moonriver Polkadot Parachain Benefits - Instagram](https://www.instagram.com/popular/moonriver-polkadot-parachain-benefits/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-09-24
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -247,27 +269,4 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 
 Data quality notes:
 - No major data-quality issue in this run.
-
-### 2026-09-13
-
-- Market/Sentiment stance: **neutral** (score 0)
-- Web signals collected: 0
-- Social-search signals collected: 10
-- Updated at: 2026-09-13T00:05:15.863Z
-
-Key web signals:
-- [Polkadot Docs: Obtain Coretime](https://docs.polkadot.com/parachains/launch-a-parachain/obtain-coretime/)
-- [Polkadot Wiki: Elastic Scaling](https://wiki.polkadot.com/docs/learn-elastic-scaling)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Polkadot (@Polkadot) / X](https://x.com/Polkadot)
-- [Polkadot has changed a lot since the parachain auction era. - Polkadot ...](https://x.com/coinbureau/status/2054677804919509395)
-- [Polkadot - Facebook](https://www.facebook.com/polkadotnetwork/)
-- [Polkadot DOT - Facebook](https://www.facebook.com/groups/polkadot.dot/)
-- [Polkadot (@polkadotnetwork) • Instagram photos and videos](https://www.instagram.com/polkadotnetwork/)
-- [Instagram](https://www.instagram.com/?hl=en-in)
-
-Data quality notes:
-- Web signals fetch failed: HTTP 503 Service Unavailable
-- No web news signals, fallback to empty set.
 
