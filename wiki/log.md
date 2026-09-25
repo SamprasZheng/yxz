@@ -1776,3 +1776,20 @@ Net: falsifier #5 ("operators dual-source → Taiwan upstream margins compress")
 **Code↔concept (向內消化):** this cluster maps to no `agents/` source (IBFS/round are external-data-retrieval concepts, not implemented Firefly code) — no divergence to report.
 
 **Contradictions/divergences for owner:** none source-vs-source unresolved. **Egress note:** docs.fcc.gov, federalregister.gov, www.exterrajsc.com, www.hklaw.com, www.telecompetitor.com were all egress-blocked this run; every 2026 fact is corroborated across ≥2 authoritative trade/law sources (SatNews/Via Satellite/Broadband Breakfast/DLA Piper/Holland & Knight/Exterra) + the search-index summaries of the primary FCC PDFs, dated + attributed inline. **Open re-check next pass:** whether the Part 100 R&O finally appears as a 2026 final rule in the Federal Register (sets the 60-day clock) and whether OMB clears the §§100.1–100.34 collections (activates the opt-in bonded round); the 2026-07-06 third-round cut-off outcomes (which competitors filed). **PUBLIC-repo guardrail honored:** all content general/citable US regulatory facts (FCC orders, trade/law coverage) — no personal/financial/private data, no `$hark`/finance sourcing. **Lane:** no other-agent namespaces (daily-trader-*/kol-digest-*/maintenance-*) or `agents/`/`.claude/`/`.github/`/`my-website/src` touched. **Lint:** `yarn lint:wiki` (see commit).
+
+## [2026-09-25] lint | daily maintenance scan — 1 flagged issue
+
+**Scope:** automated daily maintenance scan of all 210 wiki pages under `wiki/` (sources/, entities/, concepts/, synthesis/).
+
+**Checks run:**
+- Frontmatter presence and required fields (`type`, `tags`; source pages: `title`, `author`, `date`, `ingested`)
+- Wikilink resolution (all `[[target]]` references cross-checked against files on disk; anchor fragments stripped before resolution)
+- Markdown-style internal links that should be wikilinks
+- Index coverage (every page appears in `wiki/index.md`)
+- AGENTS.md synthesis registry vs. disk
+
+**Results:** 0 auto-fixes. 1 flagged issue for human review.
+
+**Flagged:** `synthesis/spacesharks-mission-desk-verification-plan` exists on disk and has a valid entry in `wiki/index.md`, but is **missing from the `wiki/AGENTS.md` synthesis page registry** (the "Current synthesis pages" bullet list). Schema says keep that list in sync when a new synthesis page is added. Human should add the entry or confirm whether this page warrants a registry entry.
+
+**Pages touched:** wiki/log.md (this entry only). No pages created or modified.
