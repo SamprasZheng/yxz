@@ -61,6 +61,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-09-26]] — KOL + keyword digest 2026-09-26: 0 KOLs (list empty), 11 keywords; top: Claude Opus 5.5 + Anthropic IPO, Polkadot 2.0 live, NemoClaw v0.0.124–129, GPT-6 Cyber, Audrey Tang Right Livelihood Award (2026-09-26)
 
 ## Entities
 
