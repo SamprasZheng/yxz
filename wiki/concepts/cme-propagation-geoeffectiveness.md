@@ -19,6 +19,15 @@ A single flare/CME event does **not** arrive as one signal. It splits into three
 
 **The load-bearing consequence:** only the CME gives usable warning. The R-scale radio blackout and the first SEUs are effectively **un-forecastable in real time** — the X-rays that cause them arrive at the same instant as the light announcing the flare. This is the physics-capped lead time the whole forecasting domain is built around (see the "warning is capped by physics" argument in [[synthesis/space-weather-forecasting-six-region]]).
 
+### The SEP sub-decoupling: flare soft-X-ray *class* ≠ proton-energy *spectrum*
+
+The SEP row hides a second decoupling that matters for the radiation-damage side of the corpus, distinct from the flare≠storm decoupling below. The NOAA **S-scale grades only the ≥10 MeV integral proton flux** ([[concepts/space-weather-operational-indices]]), but two SEP events at the *same* S-level can carry very different **energy spectra** — and it is the high-energy tail (≥100 MeV) that penetrates spacecraft shielding and reaches the die to cause SEE ([[concepts/see-single-event-effects]], [[concepts/cots-gpu-radiation-risk]]). Crucially, the *hardness* of that spectrum is set mainly by **CME-shock acceleration efficiency and connecting-field geometry**, not by the parent flare's soft-X-ray class:
+
+- **Big flare, soft SEP** — a large flare whose CME is slow or poorly connected can give a soft, low-energy proton event.
+- **Small flare, hard SEP** — a modest flare with a fast, well-connected CME shock can produce an *unusually hard* spectrum. The canonical 2026 instance: the **5 Sep 2026 M1.0 flare from Region 4520** (near the SW limb, a nearly *spotless* region) drove a fast CME and both a **≥10 MeV S1 event *and* an uncommon ≥100 MeV proton burst** — high-energy protons that punch through more shielding than an M1.0 flare would suggest ([space.com](https://www.space.com/astronomy/sun/sun-unleashes-extraordinary-solar-flare-barrage-as-new-volatile-sunspot-turns-toward-earth); SWPC `discussion.txt` via search).
+
+**Operator consequence:** an SEU/SEL watch cannot be gated on flare class alone (an M1.0 can be a real ≥100 MeV threat) — nor even on the S-scale number alone, since the S-scale collapses the spectrum to a single ≥10 MeV integral. Where possible the ≥100 MeV proton channel (GOES SEISS) should be watched as a distinct hard-radiation trigger ([[concepts/space-weather-operational-indices]] S-scale note; damage physics in [[concepts/solar-cycle-25-leo-radiation]]).
+
 ## Anatomy of an arriving CME (why the storm has structure)
 
 An Earth-directed CME hits as a **layered structure**, and each layer can drive geomagnetic activity differently:
