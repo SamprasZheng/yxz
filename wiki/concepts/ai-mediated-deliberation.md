@@ -36,6 +36,8 @@ So the deliberation layer both *runs on* LLMs and is *used to steer* LLMs — th
 
 The clearest sign this left the lab: **[[entities/audrey-tang|Team Mirai]]'s Takahiro Anno** built his campaign around **AI "broadlistening" (ブロードリスニング)** — a Talk-to-the-City-style pipeline that ingests citizen input at scale and surfaces convergence — and **Team Mirai won 11 House-of-Representatives seats (3.97 M votes, 6.9%) in Japan's February 2026 general election**, up from a single upper-house seat in 2025. A Plurality-inspired party running *on* AI-mediated deliberation is now a genuine parliamentary force, not a demo (see [[synthesis/digital-democracy-user-owned-social-six-region]]).
 
+**From bloc to governing influence (verified 2026-09-27).** The bloc is now *legislating*, not just sitting: in **December 2025 Team Mirai voted for the ruling coalition's supplementary budget** (alongside the LDP–Komeito government plus the DPP and Japan Innovation Party) **after reaching a policy agreement with the LDP on digital-transformation (DX) promotion** — the first time the AI-broadlistening party converted seats into a concrete cross-aisle policy deal. It continues to push structural electoral reforms (e.g. **ranked-choice voting**) and to run its own AI-interviewer voter-engagement tooling between elections. So the "would consider a coalition role if asked" posture (Anno, 2026-04) has already materialized into *issue-based* cooperation with the government — Axis-B deliberation tech is now inside the budgeting body it once only lobbied. ([Team Mirai — Wikipedia](https://en.wikipedia.org/wiki/Team_Mirai), [Takahiro Anno — Wikipedia](https://en.wikipedia.org/wiki/Takahiro_Anno))
+
 ## Six-region read (水平展開)
 
 | Region | Position | Note |
