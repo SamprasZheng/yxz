@@ -13,6 +13,28 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-09-28
+
+- Market/Sentiment stance: **neutral** (score 1)
+- Web signals collected: 2
+- Social-search signals collected: 10
+- Updated at: 2026-09-28T00:58:42.957Z
+
+Key web signals:
+- [Top Polkadot Projects in 2026: Best DOT DApps For DeFi, RWA & Privacy - Coin Bureau](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ycGk3TXVQZTBWaVZGaHdkb01jOUFTQkpiWUgxRnZwZk10OVoyemRqMEVOY0cyQkhYcm42YkNXZ016MXczcHZYeU5DSFZpZnVRZmpieXd6czYyenl3SFdldFB2bw?oc=5)
+- [Polkadot (DOT) Review 2026: JAM, Hard Cap & The Honest Verdict - Coin Bureau](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYcnpBakw3WFNGZEpKTzRsWjRjb3o0OXlGTlNMaEFYa0x3ZGRlRHRINXdBdm1QT0JESHVIUDNyaVpEQ1V4X0RqODlUcjZnbGF3NE1aSw?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Polkadot (@Polkadot) / X](https://x.com/Polkadot)
+- [Polkadot has changed a lot since the parachain auction era. - Polkadot ...](https://x.com/coinbureau/status/2054677804919509395)
+- [Polkadot - Facebook](https://www.facebook.com/polkadotnetwork/)
+- [Polkadot DOT - Facebook](https://www.facebook.com/groups/polkadot.dot/)
+- [polkadot (@polkadot.band) • Instagram photos and videos](https://www.instagram.com/polkadot.band/)
+- [polkadot design (@polkadot_athens) • Instagram photos and videos](https://www.instagram.com/polkadot_athens/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-09-27
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -248,27 +270,6 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Polkadot DOT - Facebook](https://www.facebook.com/groups/polkadot.dot/)
 - [Anye《: | *Polkadot days* and coffee talks ☕ - Instagram](https://www.instagram.com/p/DdFiS6wk2-G/)
 - [Polkadot (@polkadotnetwork) • Instagram photos and videos](https://www.instagram.com/polkadotnetwork/)
-
-Data quality notes:
-- No major data-quality issue in this run.
-
-### 2026-09-16
-
-- Market/Sentiment stance: **neutral** (score 1)
-- Web signals collected: 1
-- Social-search signals collected: 10
-- Updated at: 2026-09-16T00:36:22.170Z
-
-Key web signals:
-- [Top Polkadot Projects in 2026: 14 Best DeFi, Privacy & RWA DApps - coinbureau.com](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ycGk3TXVQZTBWaVZGaHdkb01jOUFTQkpiWUgxRnZwZk10OVoyemRqMEVOY0cyQkhYcm42YkNXZ016MXczcHZYeU5DSFZpZnVRZmpieXd6czYyenl3SFdldFB2bw?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Polkadot (@Polkadot) / X](https://x.com/Polkadot)
-- [Lucky on X: " THE WEB3 SUPERCOMPUTER: $DOT HOLDING STRONG AS HISTORIC ...](https://x.com/Lucky_m_X/status/2099864706366288085)
-- [Polkadot - Facebook](https://www.facebook.com/polkadotnetwork/)
-- [Polkadot DOT - Facebook](https://www.facebook.com/groups/polkadot.dot/)
-- [Polkadot (@polkadotnetwork) • Instagram photos and videos](https://www.instagram.com/polkadotnetwork/)
-- [Instagram](https://www.instagram.com/?hl=en-in)
 
 Data quality notes:
 - No major data-quality issue in this run.
