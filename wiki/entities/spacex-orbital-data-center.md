@@ -23,6 +23,23 @@ The **"SpaceX Orbital Data Center System"** is an NGSO satellite system SpaceX p
 
 Sources (WebFetch proxy-blocked 403; corroborated across ≥2 independently-named outlets via search): [SpaceNews](https://spacenews.com/spacex-files-plans-for-million-satellite-orbital-data-center-constellation/), [FCC — SB Accepts SpaceX ODC Application](https://www.fcc.gov/document/sb-accepts-filing-spacexs-application-orbital-data-centers), [SatNews (2026-01-31)](https://satnews.com/2026/01/31/spacex-files-fcc-application-for-million-satellite-orbital-data-center/), [DCD](https://www.datacenterdynamics.com/en/news/spacex-files-for-million-satellite-orbital-ai-data-center-megaconstellation/) (accessed 2026-07-20).
 
+## The AI1 satellite — the filing's hardware, and concrete radiator numbers
+
+The million-satellite filing named no spacecraft; on **2026-06-09** Musk/SpaceX revealed the design of that spacecraft — the **AI1 Compute Satellite** — turning the paper constellation into a concrete engineering object and, usefully for this wiki, publishing the **first hyperscale-class heat-rejection numbers** any ODC entrant has disclosed. Reported specifications (treat as *revealed design*, not flown):
+
+| Item | Value |
+|---|---|
+| Compute power | **~120 kW average / 150 kW peak** (SpaceX likens it to a rack of NVIDIA **GB300** GPUs) |
+| Solar array | **~70 m tip-to-tip** wingspan; **~20 m** tall when deployed |
+| Attitude | **"blade" posture edge-on to the Sun** — minimises absorbed flux, maximises radiator view to cold space |
+| Heat rejection | **double-sided deployable liquid-cooling radiators, ~110 m² per satellite, ~1,400 W/m² cooling density** |
+| Downlink | **laser inter-satellite links to the existing Starlink constellation** (no dedicated ground segment) |
+| Orbit / first launch | sun-synchronous; **first AI1 satellites targeted 2027** |
+
+Sources (WebFetch proxy-blocked; corroborated across ≥2 independently-named outlets via search): [Tom's Hardware](https://www.tomshardware.com/tech-industry/spacex-details-its-ai1-compute-satellite), [Quartz (2026-06-10)](https://qz.com/spacex-ai1-satellite-orbital-data-center-ipo-061026), [Light Reading](https://www.lightreading.com/data-centers/musk-magic-not-needed-for-spacex-s-orbital-ai-data-center-plan), [DCD](https://www.datacenterdynamics.com/en/news/spacex-ipo-musks-firm-set-to-launch-first-orbital-data-center-ai1-satellites-in-2027-will-put-compute-on-starlink-craft/) (accessed 2026-09-28).
+
+**Why the radiator numbers matter (the σT⁴ thesis made numeric).** The whole six-region read turns on heat rejection, not power, being the binding constraint ([[concepts/orbital-data-center]], [[synthesis/orbital-data-center-six-region]]). AI1 is the first design to quantify it at scale: **~110 m² of deployable radiator to shed ~120 kW** implies rejecting roughly **~1.1 kW per m²** of *radiator* — right at the ~1,400 W/m² cooling-density claim — and the **~110 m² radiator vs the ~70 m array** confirms the cluster's prediction that at gigawatt-class scale **radiator structures rival or exceed the solar arrays**. The **blade-to-sun posture** and **liquid-loop-to-deployable-panel** architecture are the physical expression of "lead with radiator geometry, not FLOPS." A million such nodes at ~120 kW each is the arithmetic path to the filing's ~100 GW/yr claim — and the arithmetic that keeps σT⁴, not energy, the 100-year ceiling.
+
 ## The xAI / Anthropic Demand Arm
 
 The compute-demand rationale is unusually concrete for an ODC filing. SpaceX **acquired xAI (Feb 2026)** in a deal reportedly valuing the combined entity at **~$1.25 trillion**, folding a frontier-model compute buyer into the launch provider. Reporting further indicates **Anthropic is paying ~$1.25 billion/month for access to xAI data-center compute** — i.e. a named, contracted demand signal for the compute SpaceX proposes to move to orbit. Treat the xAI-valuation and Anthropic-spend figures as **reported, not filing-confirmed** ([Via Satellite (2026-02-02)](https://www.satellitetoday.com/connectivity/2026/02/02/spacex-acquires-xai-to-pursue-orbital-data-center-constellation/)). This is the vertical-integration counter to the rest of the field: where [[entities/starcloud]] rents to AWS/Google Cloud/NVIDIA/Crusoe and [[entities/ada-space]] signed Tencent as an external customer, SpaceX would own launch **and** the model tenant.
