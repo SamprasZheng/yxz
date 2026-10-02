@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-09-25] kol-digest | Daily KOL + keyword sweep — 0 KOLs, 11 keywords, ~35 items; Claude Opus 5.5 launch + NemoClaw v0.0.129 + Polkadot 2.0 Agile Coretime as top signals; new file wiki/sources/kol-digest-2026-09-25.md
+
 ## [2026-08-07] deepen | Defense-tech / techno-industrial-state cluster — Palantir Q2-2026 (+93%) time-axis fact-refresh + multiple-compression-reversal resolution + Anduril ≈$100B/two-archetypes nuance
 **Rotation:** picked the **defense-tech / techno-industrial-state cluster** ([[concepts/technological-republic]] / [[concepts/soft-belief]] + [[entities/palantir]] / [[entities/alexander-karp]] + [[sources/technological-republic-karp-2025]] + [[synthesis/techno-industrial-state-defense-tech-six-region]]). Per the deepen log this was the **stalest cluster by a wide margin** — last deepened **2026-07-09 (29 days)**, every other domain worked 07-13→08-06. Also timely: **Palantir reported Q2-2026 on 2026-08-03**, so the cluster's Q1-2026-anchored numbers were exactly one earnings cycle stale. Public/citable research only; **no personal/financial data** (public-market figures on a NYSE-listed company only, no owner holdings); `agents/` not read or modified (no Firefly code instance in this cluster — no code/concept divergence to report); no trader/KOL/maintenance namespaces; explicit `git add` of only the 5 wiki files changed.
 
