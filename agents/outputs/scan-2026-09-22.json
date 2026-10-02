@@ -1,0 +1,104 @@
+{
+  "date": "2026-09-22",
+  "mode": "OFFLINE_FALLBACK \u2014 no trader CLI exists; yfinance direct fetch",
+  "watchlist": [
+    "NVDA",
+    "AAPL",
+    "TSLA",
+    "MSFT",
+    "AMD",
+    "GOOGL",
+    "META",
+    "AMZN"
+  ],
+  "results": [
+    {
+      "ticker": "NVDA",
+      "metrics": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "hit_rate": 0.5,
+      "news_momentum": 0.5,
+      "fom": 0.15,
+      "tier": "tier-1"
+    },
+    {
+      "ticker": "AAPL",
+      "metrics": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "hit_rate": 0.5,
+      "news_momentum": 0.5,
+      "fom": 0.15,
+      "tier": "tier-1"
+    },
+    {
+      "ticker": "TSLA",
+      "metrics": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "hit_rate": 0.5,
+      "news_momentum": 0.5,
+      "fom": 0.15,
+      "tier": "tier-1"
+    },
+    {
+      "ticker": "MSFT",
+      "metrics": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "hit_rate": 0.5,
+      "news_momentum": 0.5,
+      "fom": 0.15,
+      "tier": "tier-1"
+    },
+    {
+      "ticker": "AMD",
+      "metrics": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "hit_rate": 0.5,
+      "news_momentum": 0.5,
+      "fom": 0.15,
+      "tier": "tier-1"
+    },
+    {
+      "ticker": "GOOGL",
+      "metrics": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "hit_rate": 0.5,
+      "news_momentum": 0.5,
+      "fom": 0.15,
+      "tier": "tier-2"
+    },
+    {
+      "ticker": "META",
+      "metrics": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "hit_rate": 0.5,
+      "news_momentum": 0.5,
+      "fom": 0.15,
+      "tier": "tier-2"
+    },
+    {
+      "ticker": "AMZN",
+      "metrics": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "hit_rate": 0.5,
+      "news_momentum": 0.5,
+      "fom": 0.15,
+      "tier": "tier-2"
+    }
+  ]
+}
