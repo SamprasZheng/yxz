@@ -84,7 +84,7 @@ Modern AI GPUs (NVIDIA H100, Jetson AGX Orin, etc.) deployed to LEO as COTS comp
 | SEL detection power-cut circuit | Medium | ❌ | ❌ | ✅ | Prevents hard failure; essential |
 | Complete system-level (shielding+ECC+SEL protection+scrubbing) | Medium-high | ✅ | ✅ | ✅ | 3–5 year LEO commercial missions |
 | Rad-hard GPU (e.g., Aitech SP-A series) | High | ✅ | ✅ | ✅ | Government/military/deep space |
-| **Rad-hard AI MPU** (Microchip PIC64-HPSC RISC-V, node-behind) | High | ✅ | ✅ | ✅ | Deterministic on-orbit AI/control plane; **1–2 nodes behind, in qual** — see [[concepts/rha-radiation-hardening]] |
+| **Rad-hard AI MPU** (Microchip PIC64-HPSC RISC-V, node-behind) | High | ✅ | ✅ | ✅ | Deterministic on-orbit AI/control plane; **1–2 nodes behind; now QML-Y qualified (2026-06) but flight heritage still pending** (re-verified 2026-10-03) — see [[concepts/rha-radiation-hardening]] |
 
 ## Why COTS-Everything *Tightens* the Test Bottleneck (layer-up)
 
