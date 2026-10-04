@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-02",
+  "run_status": "STUB — blockers prevented live scan",
+  "blockers": [
+    {
+      "id": "B1",
+      "description": "No trader pipeline found. Expected agents/src/trader/ does not exist; only agents/src/firefly/ is present.",
+      "impact": "trader scan and backtest commands unavailable"
+    },
+    {
+      "id": "B2",
+      "description": "yfinance API calls fail with HTTP 403 (proxy CONNECT tunnel blocked by the remote execution environment's network policy). Yahoo Finance cookies and crumbs cannot be fetched.",
+      "impact": "no realized price data for backtest; no live scan data"
+    }
+  ],
+  "fallback": "LLM_BACKEND=disabled TRADER_OFFLINE=1 (stub mode — no live data)",
+  "watchlist": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+  "watchlist_source": "seed — no prior daily-trader-*.md file exists",
+  "scan_verdicts": [],
+  "backtest_results": [],
+  "tier1": [],
+  "tier2": [],
+  "fom_table": [],
+  "notes": "All tickers stubbed with null values. Re-run in an environment with outbound access to Yahoo Finance."
+}
