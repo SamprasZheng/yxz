@@ -6,6 +6,8 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-10-02]] — KOL + keyword digest 2026-10-02: 0 KOLs tracked, 11 keywords swept; top items: OpenAI Dots agents (DevDay 2026), NVIDIA Open Agent Safety Platform, Barclays × Claude Code expansion, Polkadot dotUSD stablecoin proposal (automated daily digest)
+
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
