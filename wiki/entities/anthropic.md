@@ -5,7 +5,7 @@ tags: [ai, llm, company, us]
 
 # Anthropic
 
-US AI safety company; creator of the Claude model family and [[concepts/claude-code-platform|Claude Code]] developer platform. Founded 2021 by Dario Amodei, Daniela Amodei, and other OpenAI alumni.
+US AI safety company; creator of the Claude model family and Claude Code developer platform. Founded 2021 by Dario Amodei, Daniela Amodei, and other OpenAI alumni.
 
 ## Key facts (2026)
 
