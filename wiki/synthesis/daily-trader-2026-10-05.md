@@ -130,4 +130,4 @@ Where each component is normalized to [0, 1]:
 
 ## Scan JSON
 
-Output saved to [[agents/outputs/scan-2026-10-05.json]] (stub, all fields null due to blockers).
+Output saved to `agents/outputs/scan-2026-10-05.json` (gitignored per repo design; stub with all fields null due to blockers).
