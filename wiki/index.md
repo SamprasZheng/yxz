@@ -6,6 +6,8 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-10-05]] — KOL + keyword digest 2026-10-05: 0 KOLs (list empty), 11 keywords swept (AI agents / Claude Code / Anthropic / OpenAI / Polkadot / OpenClaw / NemoClaw / Plurality / Audrey Tang / NVIDIA Nemotron / PolkaSharks); top signals: Anthropic IPO mid-Oct, OpenAI GPT-6.1 Astra canceled, Nemotron-4 1T in dev, DOT ~$1.04
+
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
