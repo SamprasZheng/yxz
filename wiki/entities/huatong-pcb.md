@@ -55,8 +55,11 @@ The satellite-board line is now framed by Taiwan analysts as **"only the appetiz
 |---|---|---|
 | Aug-2026 revenue | **NT$7.012 B** (NT$70.12 億), **+6.87% YoY** | [cmoney 2313 公告](https://www.cmoney.tw/forum/article/184111057) / [Yahoo TW 2313 營收](https://tw.stock.yahoo.com/quote/2313.TW/revenue) |
 | 2026 satellite-board target (reaffirmed) | **≈NT$18.5 B (+22% YoY)**; some Taiwan press cite up to NT$20 B | [udn money 2026](https://money.udn.com/money/story/5710/9266904) |
+| 2026 **data-center-board** target (analyst/法人) | **≈NT$7.1 B** — the AI-server-board leg now quantified alongside the satellite line | udn / ltn / ctee (~2026-08-06) |
 
 The read: Compeq's group revenue keeps compounding at a mid-to-high-single-digit YoY pace (Jun +21%, Jul +16%, Aug +6.9%) — a slower-but-broader base than the RF-component names because the satellite line is ~20% of a ~NT$76 B group, diluted by consumer/AI-server boards. The satellite-board franchise itself is the +22% leg; the group print is the blended figure. This is the *board/interconnect* node of the same LEO ramp lifting [[entities/win-semiconductors|Win]] (Aug +30.6% YoY) and [[entities/ascend-tech|Ascend]] (Aug +93% YoY) harder at the pure-play RF tier.
+
+**Three-theme map now dual-quantified (向外抓取, 2026-10-05):** the two growth legs of Compeq's "低軌衛星 + AI-資料中心 + capex" map now both carry analyst numbers — satellite-board **≈NT$18.5 B** and **data-center-board ≈NT$7.1 B** for 2026 (法人, per udn/ltn/ctee ~2026-08-06). The satellite leg is the anchor; the DC-board leg is the second franchise and the natural *path-B bridge* in [[synthesis/leo-taiwan-odc-gap]] — but both are **terrestrial** boards (satellite *ground/payload* PCBs + AI-*server* boards), **not** an orbital compute-board assembly, so this quantifies motion *toward* midstream-C without closing it. *(Figures are analyst projections surfaced via Taiwan financial press; the primary articles were not re-openable this pass due to an egress block — treat as directional-but-sourced, to be confirmed against company guidance.)*
 
 > The frequently-cited **"~80% global market share in LEO-dedicated PCBs"** is an analyst/market-level figure repeated in Taiwan press; no independent primary audit of the denominator was found on a 2026-06-22 check — treat as directional dominance, not a precise audited share.
 

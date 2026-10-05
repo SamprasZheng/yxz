@@ -61,7 +61,7 @@ Three paths (updated 2026-08-03 with which are now *live*):
 Vendors like [[entities/win-semiconductors]] and [[entities/ascend-tech]] that have "already entered the Starlink supply chain" are technically closest. The challenge is the business-model shift from "selling components" to "selling subsystems" — a cultural transformation difficult for gross-margin-sensitive foundries. **Status: not yet triggered** — Win's FY2025 pivot is toward optical-datacom + LEO RF *components*, not subsystems.
 
 ### B. PCB manufacturers moving up the board integration stack
-Players like [[entities/huatong-pcb]] and Unimicron who hold LEO PCBs have an opportunity to extend into "ODC computing board assemblies" (GPU mezzanine, thermal board integration). **Status: adjacent motion** — DigiTimes (2026-04) reports Taiwan's supply chain (boards, thermal/cooling) explicitly "setting sights on orbital data centers"; Compeq's dual satellite+AI-server board franchise is the natural bridge, but no space-grade compute-board *assembly* product is confirmed.
+Players like [[entities/huatong-pcb]] and Unimicron who hold LEO PCBs have an opportunity to extend into "ODC computing board assemblies" (GPU mezzanine, thermal board integration). **Status: adjacent motion** — DigiTimes (2026-04) reports Taiwan's supply chain (boards, thermal/cooling) explicitly "setting sights on orbital data centers"; Compeq's dual satellite+AI-server board franchise is the natural bridge, but no space-grade compute-board *assembly* product is confirmed. The AI-server-board leg is now *quantified*: Taiwan analysts (法人, ~2026-08) raise Compeq's 2026 **AI/data-center-board** revenue to **≈NT$7.1B** alongside the **≈NT$18.5B** satellite-board line ([[entities/huatong-pcb]]) — a real second franchise, but still *terrestrial* AI-server boards, not an *orbital* compute-board assembly; the bridge from "boards for ground AI servers" to "boards for orbital compute nodes" remains unconfirmed.
 
 ### C. Entry via defense/sovereign cloud
 ODC's earliest **paying use cases** are defense / sovereign cloud (geographically independent, hard to destroy, global coverage). **Status: partially live** — the [[entities/tron-future-tech]] AESA/T-Dome trajectory and [[entities/nspo|TASA]]'s B5G-LEO + GPGPU commercialisation are the demand pull; the [[synthesis/techno-industrial-state-defense-tech-six-region|defense-tech-state]] compact is the funding lever.
@@ -77,6 +77,15 @@ This is not one company vs. one company — it is **national-scale strategic cap
 
 > ⚠️ If Taiwan stays at the edge-inference tier while China and the US build **gigawatt-class** orbital compute, added value shifts from "hardware margins" to "ODC compute and data services." Taiwan's high-margin upstream (Win/UMT/Compeq) risks compression into an OEM/ODM role feeding others' hyperscale ODCs — the same *make-the-atoms, rent-the-system-elsewhere* pattern seen in [[synthesis/orbital-data-center-six-region]], [[synthesis/phased-array-rf-frontend-supply-chain]], and [[synthesis/radiation-test-rad-hard-six-region]].
 
+### The second gate — launch access (拉高維度, added 2026-10-05)
+
+The 2026 fact-check surfaces a bottleneck the "midstream-C compute-integration" framing understates: **launch access**. [[entities/starcloud]]'s **$2.3B August-2026 round was raised explicitly to *buy* launch capacity** — Falcon 9 rideshare slots are booked out beyond **late 2028**, so even a well-capitalised, compute-ready hyperscale-ODC player is now gated by *where it can get a ride*. This reframes the hyperscale-ODC barrier as **two gates, not one**:
+
+1. **Compute-integration** (kW-to-hyperscale rad-tolerant compute + thermal + power) — where Taiwan is *climbing* from the edge tier.
+2. **Launch access** — where Taiwan has **no sovereign launch** (its first national launch site is only being sited at Manzhou/Pingtung; see [[synthesis/space-launch-airspace-integration-six-region]] and [[synthesis/space-regulatory-regimes-six-region]]).
+
+The asymmetry with the upstream position is the point: Win/UMT/Compeq sell *components* that ride *any* rocket to orbit, so the upstream franchise is launch-agnostic. A would-be Taiwan **hyperscale-ODC integrator**, by contrast, would inherit the same launch-scarcity dependency that is currently forcing even US leaders to pre-buy capacity or weigh dedicated-vehicle buys — a structural reason the *system* tier is harder for a no-sovereign-launch economy than the component tier, independent of the compute-integration gap itself. China side-steps this gate with sovereign launch cadence (the near-weekly Wenchang/Jiuquan flow); the US with SpaceX in-house. *(Launch-booking fact sourced via [[entities/starcloud]]'s SpaceNews/implicator citations, 2026-08.)*
+
 ## Timeline
 
 | Date | Event |
@@ -89,7 +98,7 @@ This is not one company vs. one company — it is **national-scale strategic cap
 | 2026-04 | Orbital Chenguang (China) ¥57.7B/$8.4B credit lines for 1 GW+ LEO compute; DigiTimes: Taiwan supply chain "sets sights on orbital data centers" |
 | 2026-H1 | **UMT H1 rev NT$1.922B, GM 56.9%, EPS NT$8.15 (H1 profit > every prior full year), LEO 80% of rev; Win H1 rev NT$9.85B (Q2 +39% YoY); Compeq H1 rev NT$39.54B +13.2%** |
 | 2026-07 | China Three-Body constellation holds >8-day optical ISL (99.99% uptime, ≤1,000 km) — flown-endurance milestone; Compeq Jul rev NT$6.96B +16% YoY |
-| 2026-08 | **Starcloud-2 (Blackwell B200, 8 kW, ≈100× Starcloud-1 power) launch slips from Oct-2026 into 2027 on rideshare scarcity; +$250M raise** (customers now name Crusoe/AWS/Google Cloud + US government agencies, SSO ops by 2027) |
+| 2026-08-21 | **Starcloud $250M round at a $2.3B valuation** (Manhattan West led; **NVIDIA + Cisco Investments** new investors alongside returning Benchmark/EQT; **≈$450M total raised** since 2024) — capital earmarked explicitly to **buy scarce launch capacity** (Falcon 9 rideshare booked out beyond late 2028). Starcloud-2 = **two 8 kW Blackwell-B200 compute sats** slipping Oct-2026 → **rideshare 2027** (SSO ops 2027; customers Crusoe/AWS/Google Cloud + US-gov); ~88,000-sat FCC paper runway. *(Resolves the prior "$1.1B vs $2.3B" flag: the **$1.1B** was the 2026-03-30 **$170M Series A** (Benchmark/EQT); the **$2.3B** is this Aug extension — two rounds, not a discrepancy.)* Canonical detail + citations on [[entities/starcloud]] |
 | 2026-08 → 09 | **Taiwan upstream 8-month actuals: Win Aug NT$1.937B +30.6% YoY (Jul+Aug both 56-mo highs), 8M +33%; Ascend Aug NT$321M +93% YoY, 8M rev already > full-year 2025; Compeq Aug NT$7.01B +6.9% YoY** — the ramp holds into H2 |
 | 2026–2028 | First commercial wave for midstream-C hyperscale nodes (US/China lead) |
 
@@ -124,4 +133,4 @@ ITU spectrum/slot preemption remains the parallel scarcity: **first to file, fir
 - [[concepts/orbital-data-center]] · [[concepts/leo-value-chain]] · [[concepts/cots-gpu-radiation-risk]] · [[concepts/rha-radiation-hardening]]
 - Upstream/midstream entities: [[entities/win-semiconductors]] · [[entities/ascend-tech]] · [[entities/huatong-pcb]] · [[entities/tron-future-tech]] · [[entities/liscotech]] · [[entities/nspo]]
 - Global counterparts: [[entities/starcloud]] · [[entities/axiom-space]] · [[entities/ada-space]] · [[entities/google-suncatcher]]
-- Sibling six-region maps: [[synthesis/orbital-data-center-six-region]] · [[synthesis/phased-array-rf-frontend-supply-chain]] · [[synthesis/radiation-test-rad-hard-six-region]] · [[synthesis/space-regulatory-regimes-six-region]] · [[synthesis/techno-industrial-state-defense-tech-six-region]]
+- Sibling six-region maps: [[synthesis/orbital-data-center-six-region]] · [[synthesis/phased-array-rf-frontend-supply-chain]] · [[synthesis/radiation-test-rad-hard-six-region]] · [[synthesis/space-regulatory-regimes-six-region]] · [[synthesis/space-launch-airspace-integration-six-region]] · [[synthesis/techno-industrial-state-defense-tech-six-region]]

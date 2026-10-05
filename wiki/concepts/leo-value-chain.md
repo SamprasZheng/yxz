@@ -62,6 +62,7 @@ ISL is the key differentiator for LEO constellation latency performance:
 ### Heavy-Lift Rocket Launch (Falcon 9 / Starship)
 - Global LEO investment ~$25 billion in 2024; exceeded $45 billion in 2025
 - Continuously declining launch costs (SpaceX) are the key leverage point for lifecycle commercial viability
+- **Launch *access* is now a gating scarcity for orbital compute (added 2026-10-05):** by 2026 the binding constraint for hyperscale-ODC deployment flipped from launch *cost* to launch *access* — Falcon 9 rideshare slots are booked out beyond **late 2028**, and [[entities/starcloud]] raised **$250M (Aug-2026, $2.3B valuation) explicitly to buy launch capacity**. For the [[synthesis/leo-taiwan-odc-gap|Taiwan midstream-C gap]] this is a *second* gate on top of compute-integration: component vendors ride any rocket, but a would-be hyperscale-ODC integrator inherits launch-access dependency — and Taiwan has no sovereign launch (see [[synthesis/space-launch-airspace-integration-six-region]]). This compounds the ITU slot/spectrum scarcity below.
 
 ### Orbital Slots / Spectrum (ITU Ku/Ka/V Band Scarcity)
 Per ITU memos from late 2025 to early 2026: commercially valuable 500–1200 km orbital inclinations and Ku/Ka/V frequency bands are approaching exhaustion. Competition for LEO resources has escalated from a technical race to **strategic resource preemption**. ITU first-filed first-served rules give early movers SpaceX and OneWeb significant advantages.
