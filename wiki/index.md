@@ -33,6 +33,7 @@ type: index
 - [[sources/nemoclaw-build-a-claw-portal-2026]] — NVIDIA "Build-a-Claw" onboarding portal: Brev / DGX Spark / Jetson install paths (2026)
 - [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
 - [[sources/noaa-swpc-product-catalog]] — NOAA SWPC product and data catalog: full JSON URL table with cadences for all operational space weather feeds (ingested 2026-05-24)
+- [[sources/kol-digest-2026-10-08]] — KOL + keyword digest 2026-10-08: AI agents safety hearing + rogue agents, Claude Code 2.1.290 Mods, OpenAI DevDay + GPT-6.1 Sol, Polkadot Open Devnet + Ref 1944 dotUSD; 0 KOLs (list empty), 11 keywords, ~30 items
 
 - [[sources/msbai-orbitguard-dod-contract-2025]] — MSBAI OrbitGuard $1.2M DoD SBIR (Sept 2025): JEPA + MARL neuro-symbolic SDA copilot; 94–98% lab accuracy across ~15,000 objects; AMOS 2025 poster; CEO Grosvenor verbatim quote (ingested 2026-05-24)
 - [[sources/scnoc-agentic-sun-2025]] — SCNOC-Agentic paper (Electronics 2025, 14(16), 3320): first LLM multi-agent framework for satellite communications NetOps; four components (intent refinement / multi-agent workflow / long-term memory / graph-RAG); qwen2.5-70B improved network task planning accuracy 15.6%→32.2% (ingested 2026-05-24)
@@ -75,6 +76,8 @@ type: index
 - [[entities/palantir]] — US defense/intelligence data analytics company (Gotham, Foundry, AIP); co-founded by Karp and Peter Thiel
 - [[entities/helsing]] — German defense-AI company (founded 2021, Munich; UK/France/Estonia subsidiaries); the Europe/sovereign-autonomy archetype in the six-region defense-tech map; Altra/HX-2/Centaur/Lura/CA-1; **$1.8B Series E closed at $18B (2026-07-13, Europe's biggest-ever defense-startup round)**; positioned as the sovereign-European alternative to Anduril
 - [[entities/anduril]] — US defense-tech prime (founded 2017, Palmer Luckey; Costa Mesa CA); Lattice OS autonomy + hardware (Fury/YFQ-44A CCA, Barracuda, IVAS, TITAN, Arsenal-1); the US *hardware-scaling* archetype (vs Palantir *software-margin*) in the six-region defense-tech map; $61B Series H (2026-05-13) → ≈$100B in talks (still unclosed 2026-09-18); ≈$1.2B projected 2026 operating loss; split the Army TITAN line with Palantir 2026-09-01
+- [[entities/anthropic]] — US AI safety company (2021); creator of Claude model family + Claude Code; Barclays/enterprise adoption; Project Glasswing cybersecurity program
+- [[entities/openai]] — US AI company; GPT-6 Astra/GPT-6.1 Sol; Agents API + DevDay 2026 persistent-agent focus; ~$30 B funding round in talks
 - [[entities/coinbase]] — US cryptocurrency exchange (NASDAQ: COIN); x402 protocol initiator; Base L2 issuer; CDP developer platform
 - [[entities/ripple]] — US crypto-payments firm (XRP Ledger + RLUSD stablecoin ~$1.78B); x402 Foundation Premier Member 2026-07-14 (XRP/RLUSD settlement); full MiCA CASP via Luxembourg CSSF 2026-07-06 (30 EEA markets) but RLUSD not yet an ESMA EMT; the July-2026 bridge between the US-rail and EU-regulatory rows of the agentic-payments map
 - [[entities/stripe]] — Fintech payment infrastructure; MPP + ACP co-initiator; Agentic Commerce Suite; also supports x402
