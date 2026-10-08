@@ -1,5 +1,6 @@
 ---
 type: index
+tags: []
 ---
 
 # Wiki Index
