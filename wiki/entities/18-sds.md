@@ -56,7 +56,7 @@ Post-transition (if it completes), 18 SDS continues generating CDMs for military
 
 ## International Context
 
-The Space Surveillance Network is the most capable of six regional SSA systems and the only one whose catalog carries legal authority for collision-avoidance obligations. Its peers — Europe's federated [[synthesis/space-situational-awareness-six-region|EU SST Partnership]] (19 members as of 2026-04-12), China's sovereign CNSA + APSCO/APOSOS network (now adding the commercial space-based Gande Constellation), Japan's JAXA + military build-out (and host of the US SĀCHI/QZS-7 payload), Korea's KASI OWL-Net, and Taiwan's consumer posture — are mapped, with governance models, the 2026 shift of sensors to orbit, and the 100-year Kessler view, in [[synthesis/space-situational-awareness-six-region]].
+The Space Surveillance Network is the most capable of six regional SSA systems and the only one whose catalog carries legal authority for collision-avoidance obligations. Its peers — Europe's federated [[synthesis/space-situational-awareness-six-region|EU SST Partnership]] (19 members as of 2026-04-12), China's sovereign CNSA + APSCO/APOSOS network (now adding the commercial space-based [[entities/gande-constellation|Gande Constellation]]), Japan's JAXA + military build-out (and host of the US SĀCHI/QZS-7 payload), Korea's KASI OWL-Net, and Taiwan's consumer posture — are mapped, with governance models, the 2026 shift of sensors to orbit, and the 100-year Kessler view, in [[synthesis/space-situational-awareness-six-region]].
 
 ## See Also
 
