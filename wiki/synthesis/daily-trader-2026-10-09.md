@@ -81,4 +81,4 @@ Each component is min-max normalized to [0, 1] across the live watchlist. `recen
 
 ---
 
-*Scan artifact: [[../../agents/outputs/scan-2026-10-09.json]] (stub, no live data)*
+*Scan artifact: `agents/outputs/scan-2026-10-09.json` (stub, no live data — file is gitignored per outputs/ policy)*
