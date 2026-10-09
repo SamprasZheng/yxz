@@ -46,7 +46,7 @@ Helsing is the test of whether Europe can build a defense-tech prime *at scale* 
 | | Helsing (EU) | [[entities/palantir]] (US) | [[entities/anduril]] (US) |
 |---|---|---|---|
 | Model | Sovereign-European software + autonomy | Software-margin intel/C2 prime | Hardware-scaling autonomy prime |
-| Valuation (2026) | $18B (Series E, private) | ≈$409B mkt cap (public, PLTR) | ≈$61B → **$100B in talks, still unclosed 2026-09-18** (private) |
+| Valuation (2026) | $18B (Series E, private) | **≈$478B mkt cap — fresh all-time high, 2026-10-08** (public, PLTR) | ≈$61B (last closed) → **$100B in talks, STILL unclosed 2026-10-09 (~11 wks); aggregators ~$66B** (private) |
 | Soft-belief supply | Threat-forged + policy-mandated (rearmament) | Market + threat, *contested* | Market + threat |
 
 ## See also
