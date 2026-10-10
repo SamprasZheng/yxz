@@ -49,6 +49,16 @@ The read: the FY2025 "handset-GaAs → optical-datacom + LEO RF" pivot narrative
 
 The read: Jul + Aug are Win's **highest monthly revenues since Dec-2021**, extending the Q2 record trajectory into Q3 and validating the guidance that gross margin and revenue both grow QoQ. Foreign brokers lifted the target toward **NT$500**. The 8M print (+33% YoY) is the strongest single-name confirmation in the cluster that the *ODC/AI-optical + LEO* twin demand vector is now feeding the compound-semi foundry tier, not just boards/passives — the same signal now visible in [[entities/ascend-tech|Ascend]] (Aug +93% YoY) and [[entities/huatong-pcb|Compeq]].
 
+### Q3-2026 closes at a record — September print + derived quarter (verified 2026-10-10)
+
+| Metric | Value | Source |
+|---|---|---|
+| Sep-2026 revenue | **NT$2.030 B** (NT$20.30 億), **+4.8% MoM / +30.0% YoY** — a **third consecutive** record-trajectory month (the 56-month-high series continues; Win's highest monthly revenue of the current ramp) | [TechNews 財報快訊 2026-10-05](https://finance.technews.tw/2026/10/05/win-3105-202609-financial-report/) |
+| 9M-2026 cumulative | **NT$15.706 B** (NT$157.06 億), **+32.6% YoY** | TechNews |
+| Q3-2026 total (summed from monthly prints) | **≈NT$5.859 B** (18.92 + 19.37 + 20.30 億) = **≈+11.4% QoQ** over Q2's NT$5.257 B — at the low end of the guided "low-teens % QoQ"; **official Q3 法說 figures due late October 2026** | derived; guidance per [vocus 法說 2026-07-24](https://vocus.cc/article/6a68b0c0fd897800018799d9) |
+
+The read: the monthly cadence (Jul 18.92 → Aug 19.37 → **Sep 20.30**) is three straight new highs, and the derived Q3 (~NT$5.86 B) lands inside the guided QoQ range — so the FY2025 "handset-GaAs → optical-datacom + LEO RF" pivot is now carried by a *full* record quarter, not just two months. The +32.6%-YoY 9M print holds the strongest-in-cluster read above: the ODC/AI-optical + LEO twin vector is pulling the compound-semi foundry tier up through Q3-end. The one remaining unknown is the margin/mix breakdown — the official Q3 earnings call (late Oct) will show whether gross margin grew QoQ off Q2's low-30s and how much of the record is optical (1.6T PD) vs LEO RF vs the handset/3D-sensing seasonal peak.
+
 ## LEO Satellite Positioning
 
 **Global leader in LEO-spec PA foundry services.** LEO constellations (Starlink, Amazon Kuiper class) drive demand for the GaAs/GaN RF front-end PA chips Win fabricates; with Starlink V3 (more laser ISLs, higher power) and AI-computing-satellite RF demand, Win is one of the most direct upstream beneficiaries in the LEO supply chain. *(Specific named-customer foundry contracts are not publicly confirmed by Win; treat constellation attribution as market-level, not contractual.)*
