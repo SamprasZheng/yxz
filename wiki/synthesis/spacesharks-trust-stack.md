@@ -148,6 +148,17 @@ A 向外抓取 / 數據查核比對 pass on the four Layer-1/2/3 concept pages (
 
 No layer's *architecture* changed — the four-layer stack thesis holds; the evidence under it is re-dated to 2026-Q3. The one page left unedited this pass, [[concepts/small-model-ensemble]], has no time-sensitive regulatory/pricing hook that moved (its Petri/MoA/PoLL evidence remains current); its decorrelation-needs-multipolar-supply argument is tracked on [[synthesis/open-weight-llm-agent-stack-six-region]].
 
+## 13. 2026-Q4 fact-check note (2026-10-11)
+
+A 向外抓取 / 數據查核比對 pass re-verifying the cluster's fastest-moving dated claims against primary/authoritative sources, and deepening the one page the 09-20 pass left untouched ([[concepts/small-model-ensemble]]):
+
+1. **The EU provenance gate is now *enforceable*, not merely applied — and a hard deadline is imminent.** EU AI Act Article 50 transparency obligations became enforceable by national market-surveillance authorities on 2026-08-02 (final Commission Guidelines adopted 2026-07-20), with penalties up to **€15M or 3% of worldwide turnover**. **Time-sensitive:** the Article 50(2) machine-readable-marking grace for systems already on the market before 2026-08-02 **expires 2026-12-02** — after which an agent emitting unmarked machine-generated recommendations is out of compliance anywhere in the EU. This sharpens §11/§12's "provenance ahead of calibration" read into a dated cliff: Layer-1/4 provenance is a hard market-access gate from December; Layer-3 calibration-as-assurance still sits at 2027-12/2028-08. Detail on [[concepts/agentic-provenance]] §2 + §2.5 and [[concepts/calibrated-confidence-llm]] §"six-region".
+2. **Nemotron 4 (the rising tier-3 ceiling) is still unreleased.** Re-checked 2026-10-11: the ≥1T-parameter figure is an unconfirmed report (The Information, ~2026-08-11), NVIDIA has set no release date, final training is incomplete, earliest "late fall 2026". The "ceiling rising" argument in §5 holds as a *trajectory*, but the live tier-3 ceiling remains **Ultra 550B** — the cascade's cost-spine math is unchanged. See [[concepts/tiered-inference]] §"Nemotron 4 status re-check".
+3. **C2PA v2.4 (2026-04-21) re-confirmed as the latest** reference marking format — no v2.5; the Layer-1 `evidence_hash` / Layer-4 `policy_preset_hash` mapping onto C2PA content-hash / software-assertion is unchanged.
+4. **Layer-2 deepening — the jury is not a universal debias.** [[concepts/small-model-ensemble]] gained a 2024→2026 fact-check: the *A Survey on LLM-as-a-Judge* consolidation (arXiv 2411.15594) + a named single-judge bias taxonomy (self-preference / verbosity / position / stylistic) that a **disjoint-family** panel dilutes only for the *lineage-correlated* subset; task-agnostic and demographic biases are not auto-cancelled. This tightens §4's decorrelation claim: the different-base-family prescription buys down correlated-error risk but does **not** calibrate the arbiter — the arbiter's thresholds still need the independent test harness §4 names as the "new failure mode".
+
+No layer's *architecture* changed; the four-layer stack thesis holds and its evidence is re-dated to 2026-Q4.
+
 ## See also
 
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — canonical Mission Desk plan; this synthesis is the trust-architecture companion
