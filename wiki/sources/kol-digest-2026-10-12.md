@@ -97,8 +97,6 @@ _The `kols:` section of `.claude/skills/kol-tracker/kol-list.yaml` is empty. No 
 
 _Pages this digest touches or extends:_
 
-- [[entities/anthropic]] — IPO marketing expected mid-October; S-1 filed June 2026
-- [[concepts/claude-code]] — eight Oct 1–8 releases; Haiku 5.5 1M-context now default
 - [[entities/nvidia]] — Nemotron 3.5 Lightning released August; no October news
 - [[concepts/nemoclaw]] — v0.0.15 docs; no October release
 - [[concepts/openclaw]] — v2026.2.3 last confirmed release (Feb); no October news
