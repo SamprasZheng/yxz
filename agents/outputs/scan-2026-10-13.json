@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-13",
+  "mode": "TRADER_OFFLINE=1 / LLM_BACKEND=disabled",
+  "note": "No trader pipeline found in repo (only firefly). Stub scan using yfinance momentum signals.",
+  "ranked": [],
+  "errors": [
+    {
+      "ticker": "NVDA",
+      "error": "Failed to perform, curl: (7) CONNECT tunnel failed, response 403. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",
+      "fom": 0.0
+    },
+    {
+      "ticker": "AAPL",
+      "error": "Failed to perform, curl: (7) CONNECT tunnel failed, response 403. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",
+      "fom": 0.0
+    },
+    {
+      "ticker": "TSLA",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "MSFT",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "AMD",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "GOOGL",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "META",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "AMZN",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "TSM",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "SMCI",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "AVGO",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "ARM",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "QCOM",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "INTC",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    },
+    {
+      "ticker": "MU",
+      "error": "insufficient_data",
+      "rows": 0,
+      "fom": 0.0
+    }
+  ]
+}
