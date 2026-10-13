@@ -55,7 +55,7 @@ The core watchlist seeded per task instructions:
 | INTC | Semis | — | — | — | insufficient data (0 rows) |
 | MU | Memory | — | — | — | insufficient data (0 rows) |
 
-Scan artifact: `[[agents/outputs/scan-2026-10-13.json]]`
+Scan artifact: `agents/outputs/scan-2026-10-13.json`
 
 ---
 
@@ -112,4 +112,4 @@ All components default to neutral (0.5) pending live data.
 ## Related
 
 - [[synthesis/sampras-2026-engineering-thesis]]
-- Scan artifact: `agents/outputs/scan-2026-10-13.json`
+- Scan artifact: `agents/outputs/scan-2026-10-13.json` (repo path, not a wiki page)
