@@ -1,10 +1,10 @@
 ---
 type: source
-title: "FCC Constellation Rulings — Starlink Gen2 (2022/2024/2026-V3), Kuiper→Amazon Leo (2020/2026), AST SpaceMobile (2024), 2026 Third Rounds"
+title: "FCC Constellation Rulings — Starlink Gen2 (2022/2024/2026-V3) + Gen3 100k LOA (2026), Kuiper→Amazon Leo (2020/2026), AST SpaceMobile (2024), 2026 Third Rounds"
 author: "Federal Communications Commission"
 date: "2024-11-26"
 ingested: "2026-05-24"
-tags: [fcc, ibfs, regulatory, spectrum, ngso, starlink, kuiper, amazon-leo, ast-spacemobile, processing-round, mission-desk]
+tags: [fcc, ibfs, regulatory, spectrum, ngso, starlink, gen3, kuiper, amazon-leo, ast-spacemobile, processing-round, mission-desk]
 ---
 
 # FCC Constellation Rulings 2020–2024
@@ -93,6 +93,9 @@ Amazon **rebranded Project Kuiper to "Amazon Leo"** (late 2025 / early 2026); th
 
 ### Space Bureau Opens the Third Rounds — DA 26-552 / DA 26-553 (rel. 2026-06-05)
 The Bureau opened a **third Ku-/Ka-band processing round** (10.7–30.0 GHz) and a **third V-band processing round** (37.5–51.4 GHz), with a **2026-07-06 filing cut-off** for competing applications/petitions. SpaceX's and Amazon Leo's operations were folded into the respective rounds. These rounds run under the **legacy Part 25** rules — the new opt-in bonded [[concepts/processing-round|Part 100 round]] remains gated on OMB review as of 2026-09-24. *(Sources: FCC DA 26-552 / DA 26-553 "Space Bureau Opens Processing Rounds," rel. 2026-06-05 — primary docs.fcc.gov PDFs egress-blocked this run, corroborated via search-index summaries + [Exterra JSC](https://www.exterrajsc.com/p/fcc-opens-third-spectrum-processing).)*
+
+### The 2026-07-06 cut-off and the Gen3 filing (addendum, verified 2026-10-14)
+At the **2026-07-06** cut-off the third Ku/Ka/V round resolved to roughly **12 operators / 13 constellations**. The anchor filing is SpaceX's new **Gen3 Starlink LOA, SAT-LOA-20260630-00264 (filed 2026-07-06): up to 100,000 satellites** — the largest NGSO filing ever by count — in two VLEO shells (nom. ~323–327.5 km + ~473–477.5 km, incl. 26°–96.9°), ~1 Tbps/sat downlink, ~2,000 kg dry mass, requesting Ku/Ka/V/E **plus new W-/D-band (92–275 GHz)** spectrum; the FCC **accepted it for filing ~2026-09-18**, opening the comment/petition window (not a grant). This Gen3 LOA is **distinct** from SpaceX's separate ~1,000,000-sat "Starmind" orbital-data-center filing ([[entities/spacex-orbital-data-center]]). Other filers in the set: Amazon Leo, Blue Origin, CesiumAstro "Synchronicity" (newly revealed), Rivada Outernet (288→576 @ 1,050 km), LTS Systems reviving Theia (112 sats + $4.34 M lapsed-bond offer), SN Space Systems (Team-Telecom foreign-ownership review), and Logos. *(Sources: file number + shells via [S.E. Robinson Jr. quoting the filing](https://x.com/SERobinsonJr/status/2074483363654627426); [DataCenterDynamics](https://www.datacenterdynamics.com/en/news/spacex-files-fcc-application-for-100000-gen3-starlink-satellites/); roster via [Communications Daily 2026-07-08](https://communicationsdaily.com/news/2026/07/08/satellite-processing-round-sees-plans-for-multiple-constellations-in-ka-ku-v-bands-2607070003) (paywalled, via search-index) + Payload/Jack Kuhr; "accepted for filing" via [Advanced Television 2026-09-21](https://www.advanced-television.com/2026/09/21/fcc-accepts-starlink-100000-satellite-plan-for-filing/); primaries egress-blocked, corroborated across ≥2 trade sources. Accessed 2026-10-14.)*
 
 ## Interference-Attribution Implications
 

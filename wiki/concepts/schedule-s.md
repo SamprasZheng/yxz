@@ -81,6 +81,8 @@ Under FCC 24-97 (NPRM, Dec 2024), the FCC proposed:
 
 This split is intended to make machine-readable ingestion easier and to allow earth station applicants to cross-reference space station orbital data without duplicating it.
 
+> **Confirmed in the adopted Part 100 (re-verified 2026-10-14):** the Schedule O / Schedule F split carried through from NPRM proposal into the **adopted** R&O (FCC 26-47) — the Part 100 form model is **Form 312 + Schedule O (orbital) + Schedule F (frequency)**, and the adopted rules additionally **eliminate the standalone small-satellite framework** (the earlier separate streamlined small-sat license type; bond/milestone exposure now tracks [[concepts/processing-round|processing-round]] participation rather than satellite count). Schedule S nevertheless **remains the operative annex** until the OMB-gated §§ 100.1–100.34 sections take effect — as of 2026-10-14 the R&O still had not appeared in the Federal Register, so the O/F model is adopted-but-not-yet-live. *(Sources: [Horizon Highlights — short guide to Part 100](https://horizonhighlights.substack.com/p/a-short-guide-the-fcc-just-passed); [Mondaq / Hunton — "FCC Creates 2 Licensing Pathways for NGSO Systems, Eliminates Small Sat Framework"](https://www.mondaq.com/unitedstates/telecoms-mobile-cable-communications/1832488/); accessed 2026-10-14.)*
+
 ## Relevance to Mission-Desk / NemoClaw
 - The Schedule S orbital parameters section is the **primary structured source** for constellation geometry queries (altitude, inclination, RAAN, sat count per plane).
 - Frequency band and EIRP declarations in Schedule S are the **ground truth** for link-budget and interference-attribution tasks in the [[synthesis/spacesharks-mission-desk-hackathon-plan|Mission Desk]].
