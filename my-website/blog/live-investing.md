@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-10-18
+
+- Market/Sentiment stance: **neutral** (score 0)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-10-18T00:07:31.898Z
+
+Key web signals:
+- [US Dollar Hits 18-Month High: What It Means for Bitcoin and Stocks - CryptoRank](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTjYwTk9LSWhfVW9tcGw5T2RIZjA1S2N1cFBfXzlSekhQUk5laF92djZxRjBOdXNKSzdYdzJhekVpUm9BWHFzSjhMUXQzcFB1NTJsRVRWYnhVSVpaa1p3ejVYUFNYdS11N25UZDNfSzFNT0otamJQc0RldHMwaWNTTi1yckRNM002?oc=5)
+- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
+- [Bitmine Immersion Technologies (BMNR) Announces ETH Holdings Reach 6.02 Million Tokens, and Total Crypto and Total Cash & Marketable Securities Holdings of $17.4 Billion - TradingView](https://news.google.com/rss/articles/CBMixgJBVV95cUxPeXMwYzZiWDJiWl80WWRQalhlN081aGVJZUlVQ1RGWWlQRnBCRW9tWm56dWZNRzZiRXVGSkt2SXlPT1A0LUc0a0hSVXY1UldYX3JsS0l6dTdYMXU0X2VmcXE2WEZZZmlBRTlRQ0x6ZzhjWUdiQTZRQU1OYlBqcV9lRFFMVUp5T2ZzX3ZwU0lnWVRaQVNhb0Q0N2NjTHNzMmpud3FVeDc3MWMtWkF6a09LbDZzVi1RZFRZeW5sd2R4SVlNTkNjU2ZYQVlKaXVFcEo3UjVLV1VNTThXNW8yaGxfYXdheHVXWGVudlZNYjBDa1psUEltR21wV2MxQktleURBdWN0dmRXcmd5TE9XZ3ZBS0dxTno2NlBjS0M1dy1hNU5wOTdjMUwyNHd1Y2pnRk11ZXEzb0o5SUZuYnRvMTRyMWMzUWlTUQ?oc=5)
+- [XRP, XLM Test Critical Support as Inflation Data Stokes Fed Rate Fears - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTFB2YTVNTVIwQ1ZRS2NtbDhhY2EwUUgyR3AxZmk3QXZLeWlhbGxCazAtakVpbnVlU040aFVqNG9CN3BvcTFpR1pVbnhqekVFWFJRWUpadXVIR3JBZWJsX0pRYzNVVWhjVTJaWHJHTzRSdGM4X0VaQ0E?oc=5)
+- [Market Update (November 2025) - Crypto.com](https://news.google.com/rss/articles/CBMiY0FVX3lxTE5Td3IxZzhzNm5xMlg0aHpGaDVrV3lEUzVTaG1kRzQxTTdpbXZ0U1JyaTdVZDNfSDJmMEtVR1VOanE4d0pzYzZPVXNtbng2SWpROTZtd3NUU0ZqMU9ad3ZNaENhNA?oc=5)
+- [Stock Market Today: Live Updates 11.08.2026 - TechStock²](https://news.google.com/rss/articles/CBMiX0FVX3lxTE10RGtrWVQ1UHd3WHJ6RFlHb2VDOU9BMFNxb3FVSzhMcFpIb3liMkJjc2FlZktiampuM2s2TFdrelJURHh0Y0FrQ1dlc2E1a1hDQ0VfUmVoRVVFV2hHVnRZ?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-10-17
 
 - Market/Sentiment stance: **neutral** (score 3)
@@ -237,27 +258,6 @@ Key web signals:
 - [Bitcoin trades sideways near $70K as macro pressure caps upside - TradingView](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZkJqT2tfMEk3RTQ0amlTS1FqYkVMa3FHblZocTFSUWpTMzRLQVhBdWtSeFdwSE9BY3ZTSUkwVlhOUWp0WW95TjJWRUNuOUw0UEduSFhsVFd5OVFQU0p6d25Oa2FTQkFDcUVpaDhFM243cXJ1M3RXcDRpeFZHcWx4NTctWTRDUEgycVBuSlh4dlA3bTdsNExTSXdDRWdHYnhRaklxQTBsbldjMy11M2pMcVU0UFY1OEljT25R?oc=5)
 - [Bitcoin Inflation Hedge Analysis: Why BTC Hit $81K Amid 3.8% CPI Surge - Intellectia AI](https://news.google.com/rss/articles/CBMibEFVX3lxTFBwd2l2amFURU5SREE5MUlKTTBRVm9nUXJUYV8tcU5Ca2RGQmhYZTZ3MmRQZHVveGl0TXFfeHhRM2xwT3drM0piaXpiMVo0MzJCZEQzVXV5U2lNcEMwdlZ4RVRDSnh6bFl3NGJDaw?oc=5)
 - [Market Update (November 2025) - Crypto.com](https://news.google.com/rss/articles/CBMiY0FVX3lxTE4yR1hOZWZvakFQSmMtc3ZoUjdjX1lFMGdrdE5maW96VjZzdzdHWXRFUTFOaFZqYl9pZEtxMTdwdmw3V1BVOW5raWFMZWVZRUZGbUZibTlxUFFpZG9QelRJSEFGYw?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-10-06
-
-- Market/Sentiment stance: **neutral** (score 1)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-10-06T02:22:25.278Z
-
-Key web signals:
-- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
-- [Bitcoin, Nasdaq investors are celebrating, while U.S. consumers turn gloomy. - CoinDesk](https://news.google.com/rss/articles/CBMiugFBVV95cUxOSmUwb205UGFnOC1kMnBRS1EzYUU2Q29taXdVX3k5Mld5VjZvTnpHV3RzSU0zak9nWENuOElGdThTX3VCZjRsVGFmblNJWmpoR3U1TGZieDFkRTV4eFotc0hVczZoYl81WE9yN3ZZYnBybDkteFo4XzJqaTRtSnExRWE2Uzk1d1o5Q0tOSXlpM3RLVlZKNHdnS1NId3R3UUljdGhrdmhUQXFnMzZjbUhVRkRoRGRnSGxmSVE?oc=5)
-- [Crypto Market Braces for Impact as Fed Chair Kevin Warsh Speaks Today - CryptoRank](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdWRxcVc1dVZzZ2RsRFdsQ1lsRFNYaENvT2xicDlxNEdqY2NSTUhrb0lsdkctcW55Q2dwNmlBcTF2RWdvLTNXSDNmU1hEWnhIcFFFZ2RDUVZQTzRvUjV1bzFFUjVDNVllNGZjOE13S1YxTXJ4T0RDN3J5V0hUMlFmSjhzZmx1RUdTbm4yWGxrUUUwTEF0UHlrR2dDOTlHNU9ITmpVSVlIZHczNlU?oc=5)
-- [Crypto Market Rally Faces New Test as Trump’s EU Tariffs Threaten Inflation Comeback - CryptoTicker](https://news.google.com/rss/articles/CBMif0FVX3lxTE1pRFJNRjREanFvMnVXOWh6WXlCNnNueGpuek5nbHpqRHlPbW1vNHBSbkhBNGxrLWZ5aEtERW1vcFVocW55Rnd2M0p2VDJ5N3dGczNGU05uSGRldS11UjdodzQxa01mMzR1Unlqc3lMUXFObVNOc3U1YXRrMThPS2M?oc=5)
-- [Bitcoin trades sideways near $70K as macro pressure caps upside - TradingView](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZkJqT2tfMEk3RTQ0amlTS1FqYkVMa3FHblZocTFSUWpTMzRLQVhBdWtSeFdwSE9BY3ZTSUkwVlhOUWp0WW95TjJWRUNuOUw0UEduSFhsVFd5OVFQU0p6d25Oa2FTQkFDcUVpaDhFM243cXJ1M3RXcDRpeFZHcWx4NTctWTRDUEgycVBuSlh4dlA3bTdsNExTSXdDRWdHYnhRaklxQTBsbldjMy11M2pMcVU0UFY1OEljT25R?oc=5)
-- [Bitcoin Price Year-End 2025: From Christmas Flash Crashes to Macro Reality — What Will the Final Price Be? - CCN.com](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPS1FZZ09wR2FxYTFnSG9OWk92OGRTRjlqcUhtV0NoUHJRUzFoNXZid3Z1ZzFIWUZJUUlfeGNBeTZjOTJoQ0FhcThzRnlQdE1jaUZ1WjhrYmZkck5hRnlMQTFxUk5MdTZVTUc1SnAyNGF0R0hab2FGaGNQNC1ZWlJRbmVqTW53M1MwZlZ3?oc=5)
 
 Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
