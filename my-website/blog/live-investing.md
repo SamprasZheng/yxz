@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-10-24
+
+- Market/Sentiment stance: **neutral** (score 1)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-10-24T00:53:05.056Z
+
+Key web signals:
+- [Market Update (September 2026) - Crypto.com](https://news.google.com/rss/articles/CBMiZEFVX3lxTE53ZllwZjRhTWlCWkdJSnVrRFdSQWVCN1BXUnZ3ZUpCZmVaTXNyaVRFRXpNTWNiU28yRTFuZFJVWVZxQTd3RHE0M1dYMnNTZXByMnhRSFZERTV2OW5BTmMyalVuaWI?oc=5)
+- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
+- [US Dollar Hits 18-Month High: What It Means for Bitcoin and Stocks - CryptoRank](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTjYwTk9LSWhfVW9tcGw5T2RIZjA1S2N1cFBfXzlSekhQUk5laF92djZxRjBOdXNKSzdYdzJhekVpUm9BWHFzSjhMUXQzcFB1NTJsRVRWYnhVSVpaa1p3ejVYUFNYdS11N25UZDNfSzFNT0otamJQc0RldHMwaWNTTi1yckRNM002?oc=5)
+- [Crypto and Global Markets Plunge as Hot US Inflation Revives Fed Fears – What’s Next? - TradingView](https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSXRlbjdnMVdoWFJGcHlianc4djJSUW4wZDJyY0U0VS1IaFpUaVNRQXBpcEZGUzNNb19VSUdvNGJEYm0zcnZuZWtDeHF5Q2I3T0FSWVFoRmJCZ2tkZWZkZTBHZjRZU1I1R1A0MUdPUkYtalc1UzZCaVZpM2JJYjdMTFZhRWVrMVlqWVM1aHY0ekx5M2lwRXlmTnVrUU9JOFZBbGRHbm5zdTM1WHRoYnViVUpfRnFQMGZUdk1idE1TbTY4bWF2ajhac0Nrb2Q1dW5wZExHYlQ4WXFsQQ?oc=5)
+- [Bitmine Immersion Technologies (BMNR) Announces ETH Holdings Reach over 6 Million Tokens with Total Crypto, Cash & Marketable Securities Holdings of $17.2 Billion - TradingView](https://news.google.com/rss/articles/CBMivgJBVV95cUxPWXFnZVVBRGk3SDdzWkh6eHo2SFIza09YcG1sQ1pVbENTV1hwWGZJTWoxWDYtSFJWYlE5T01xZkNzc3loc3JuRktRaWU5T0k3cTh1MUtibUFtRFhfaDBTd0MzSTJ3eE5yRTgtQ1kyQ0FkdjdTYWl6cTRRSHoxQjNSeUNBMkpKWnZvVVpRM0piRkpIRUc3TUlPQmF1X2l4SjAzT3g3TTNCNnlLT0pvNTYwekw0MTdWa1hNN2Nva2c0Ylc2dEVzcnB1dnhxMXFZUlQ5LXp5Mnl2ZWx2TEhTNmJlaDVWbVJrZGEtSXlxRWdUQ0JnZXdSRldvZHpYMjNzQ2JpUDR2YzlTRDFqa0FFcnFKSWRILTVPSmdvRmswNWxVeTlUNVctRVlHZW5IUkxzUnkyRkJiRzdSRlVZZUZublE?oc=5)
+- [Bitget CEO: Bitcoin’s rebound may not last — plans to buy more near $50K - CryptoRank](https://news.google.com/rss/articles/CBMifEFVX3lxTE9LNUYyZnBGb04zSHRBN0dWYVk2LTVWVDJRYk5KbDNyc3pxSWxzOUh6Sks0c2pkWldoaGVRRTQ1S0NwUTdZUHV1eDJCNUtOZnZmYVlIdEtCNmVtQ3dpMFQ2T2FmbG9kTWE4Sng1VElUcmlVM2ItWk15bU5TRlo?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-10-23
 
 - Market/Sentiment stance: **neutral** (score 1)
@@ -237,27 +258,6 @@ Key web signals:
 - [Bitget CEO: Bitcoin’s rebound may not last — plans to buy more near $50K - CryptoRank](https://news.google.com/rss/articles/CBMifEFVX3lxTE9LNUYyZnBGb04zSHRBN0dWYVk2LTVWVDJRYk5KbDNyc3pxSWxzOUh6Sks0c2pkWldoaGVRRTQ1S0NwUTdZUHV1eDJCNUtOZnZmYVlIdEtCNmVtQ3dpMFQ2T2FmbG9kTWE4Sng1VElUcmlVM2ItWk15bU5TRlo?oc=5)
 - [Bitcoin trades sideways near $70K as macro pressure caps upside - TradingView](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZkJqT2tfMEk3RTQ0amlTS1FqYkVMa3FHblZocTFSUWpTMzRLQVhBdWtSeFdwSE9BY3ZTSUkwVlhOUWp0WW95TjJWRUNuOUw0UEduSFhsVFd5OVFQU0p6d25Oa2FTQkFDcUVpaDhFM243cXJ1M3RXcDRpeFZHcWx4NTctWTRDUEgycVBuSlh4dlA3bTdsNExTSXdDRWdHYnhRaklxQTBsbldjMy11M2pMcVU0UFY1OEljT25R?oc=5)
 - [March 2026 FOMC: BTC, ETH Price Impact and Fed Outlook - Crypto.com International - Crypto.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cakh4bmFTamVhc0VLaHE2YVpja0M2RDFWTC1vU2V1ZG5nQVlpUlZleW41V1lYQ2lSNHZVRl9OYTQweEJaUjRMUzh3bmhZUUdzdGFUOUk2NUgzUEtPc3ZoS1ZkVGNNYmZ2b0plTzZjZVFNTWtadEZNaUlGTjE?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-10-12
-
-- Market/Sentiment stance: **neutral** (score -1)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-10-12T01:28:00.799Z
-
-Key web signals:
-- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
-- [Bitget CEO: Bitcoin’s rebound may not last — plans to buy more near $50K - CryptoRank](https://news.google.com/rss/articles/CBMifEFVX3lxTE9LNUYyZnBGb04zSHRBN0dWYVk2LTVWVDJRYk5KbDNyc3pxSWxzOUh6Sks0c2pkWldoaGVRRTQ1S0NwUTdZUHV1eDJCNUtOZnZmYVlIdEtCNmVtQ3dpMFQ2T2FmbG9kTWE4Sng1VElUcmlVM2ItWk15bU5TRlo?oc=5)
-- [Bitcoin trades sideways near $70K as macro pressure caps upside - TradingView](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZkJqT2tfMEk3RTQ0amlTS1FqYkVMa3FHblZocTFSUWpTMzRLQVhBdWtSeFdwSE9BY3ZTSUkwVlhOUWp0WW95TjJWRUNuOUw0UEduSFhsVFd5OVFQU0p6d25Oa2FTQkFDcUVpaDhFM243cXJ1M3RXcDRpeFZHcWx4NTctWTRDUEgycVBuSlh4dlA3bTdsNExTSXdDRWdHYnhRaklxQTBsbldjMy11M2pMcVU0UFY1OEljT25R?oc=5)
-- [March 2026 FOMC: BTC, ETH Price Impact and Fed Outlook - Crypto.com International - Crypto.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cakh4bmFTamVhc0VLaHE2YVpja0M2RDFWTC1vU2V1ZG5nQVlpUlZleW41V1lYQ2lSNHZVRl9OYTQweEJaUjRMUzh3bmhZUUdzdGFUOUk2NUgzUEtPc3ZoS1ZkVGNNYmZ2b0plTzZjZVFNTWtadEZNaUlGTjE?oc=5)
-- [Crypto Daily Market Report – September 4, 2026 - KuCoin](https://news.google.com/rss/articles/CBMihwFBVV95cUxQRWNIVDlmZWxmQVVnRDRoUFgzLTk5SmhCazloQnpwTV9sSF9qNXpjRmNYWXJpZGJjVWZWR2sxT2dOa0RCM0JKOHhXUTh0c29PWGM3SWs1UmxneFFtaGdmMFBLUVAzQTRjVXFyYzdaNGdGSjJoR0dlZnhPOG91YmtyLTRwemt1ZkU?oc=5)
-- [Bitcoin Inflation Hedge Analysis: Why BTC Hit $81K Amid 3.8% CPI Surge - Intellectia AI](https://news.google.com/rss/articles/CBMibEFVX3lxTFBwd2l2amFURU5SREE5MUlKTTBRVm9nUXJUYV8tcU5Ca2RGQmhYZTZ3MmRQZHVveGl0TXFfeHhRM2xwT3drM0piaXpiMVo0MzJCZEQzVXV5U2lNcEMwdlZ4RVRDSnh6bFl3NGJDaw?oc=5)
 
 Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
