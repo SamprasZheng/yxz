@@ -1,0 +1,35 @@
+{
+  "scan_date": "2026-11-01",
+  "pipeline": "stub (agents/src/trader/ not found; best-effort yfinance script)",
+  "llm_backend": "disabled",
+  "blockers": [
+    {
+      "blocker": "trader_pipeline_missing",
+      "detail": "agents/src/trader/ does not exist. Only agents/src/firefly/ is present. The trader CLI and pipeline must be scaffolded before this scan can run properly."
+    },
+    {
+      "blocker": "yfinance_proxy_blocked",
+      "detail": "yfinance 1.7.0 installed successfully, but all Yahoo Finance HTTP requests fail with 403 CONNECT tunnel error via the remote execution environment proxy. Price data could not be fetched for any ticker."
+    }
+  ],
+  "tickers_requested": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN", "SMCI", "ARM", "INTC", "QCOM", "AVGO", "TSM", "PLTR"],
+  "tickers_scanned": 0,
+  "errors": [
+    {"ticker": "NVDA", "error": "403 CONNECT tunnel failed"},
+    {"ticker": "AAPL", "error": "403 CONNECT tunnel failed"},
+    {"ticker": "TSLA", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "MSFT", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "AMD", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "GOOGL", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "META", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "AMZN", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "SMCI", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "ARM", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "INTC", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "QCOM", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "AVGO", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "TSM", "error": "insufficient history (proxy blocked)"},
+    {"ticker": "PLTR", "error": "insufficient history (proxy blocked)"}
+  ],
+  "results": []
+}
