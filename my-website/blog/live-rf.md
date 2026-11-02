@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-11-02
+
+- Market/Sentiment stance: **neutral** (score 0)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-11-02T01:39:45.613Z
+
+Key web signals:
+- [Dimensionality reduced antenna array for beamforming/steering - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTFByS3pGS3VlR3IxZ0lvS3JIejZfY0dDNllnTzhPUExmbkQ2VmlGbGRFUWFJejUxVXlCVW5ZVm4zckUwUzJxUHFlYzY1aGI2TzJNRmU3dU96LU9mUHEzcVl3?oc=5)
+- [EnSilica Joins 5G-aNTeNna Consortium to Advance Ka-Band 5G-NTN User Terminals - SatNews Publishers](https://news.google.com/rss/articles/CBMirgFBVV95cUxPYWpodjlhYjBuUEhvM244RlA1Z283VnhuemdYMVc3MHp0MnpnXzNoLXNQZUJzUmNSU01oSDhyM3RTeEc2cG04OHpfWVNYR3J2SHBLRkxvMnB2R2NOcTFhQVYzdUVXMHhVX05yS1VyelRHT1o1TThoeFFiS240Ym51WUhnSFhJM3pveVdjMHpZRUpQbHNRV0h3X3kyQUxDZ3E5NVRTc2Y2UFQ0YWRVOWc?oc=5)
+- [Mobile World Congress 2026 roundup - 5G Technology World](https://news.google.com/rss/articles/CBMieEFVX3lxTFBrX1dKYkZKbUpCd0Z4WGQ1VmhKZWtzOXpCRnJmLWtqVk5PR1NsY3ZRMEl4bUhiZm14cFZSWnE4SFd3VWd1QWNPWkRCM0tOT3BtZExiRXBnM0tpcm9ucDlrWmlRTmg5a2FpV1ZObEsxMExmY3VFbV82QQ?oc=5)
+- [RF Test Equipment Market Size, Forecasts Report 2026-2035 - Global Market Insights Inc.](https://news.google.com/rss/articles/CBMieEFVX3lxTFBEdlNZLXVUOUZkVUVyNWdqN21lUWNidWRaVkpTSEh1dUF1Qmt3cGxWd3UzcnB0a05rWnJqbnZWSjUtakVyMXJmTk9pNjgwemY4OEplYmNWS3d0SjNfOE1xQzZxSzdwNU5DNUNCTDl0aHFpUGFCVUZwSA?oc=5)
+- [STARE: a semiconductor-integrated transmit-array architecture for 6G beamforming - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTE43RmV6VlN1YUVXZkVGTVJZaUp6dFJOZTVIdWk2XzRqNnFBdm9HU2xTcTdmM0ZEcWxEejNxZW1IN05KcmlMbXlYaFpTWVB3Nk1aMXRIWnN5MXlISnY4bFNR?oc=5)
+- [C-COM Satellite Systems Inc. Stock Slips 3.49%: LEO Constellation Competition, Phased Array Antenna Commercialization Pacing, and Hardware Transition Scrutinized - kalkine.ca](https://news.google.com/rss/articles/CBMimgJBVV95cUxQTFNvcW4xUmFpR2dpelQ2SzZ2UDNRcHluTTl5MmhjTm9RLWhHQlk4TEhZZEgyNGtKVEdhaGs1WUtqRjVkbFA4Zmh6QUl2VG9wajFqc2JrZFVuZVU5bWJnNFp0WVlTN0VoNXVkMGhMWml2ZTRncVZUQmdyU0VvYi1GV2EtZkdRa096QzlaaFRPanlBYUdpS1l5dDhKY2owcE1lRVJtZzBydEJpV0RQal9HMnBCWjFhdEQ4amRLRGJTb3dKSEY3aGk5TDRDbGxUc2FHdDV2RUwtZmItTk41YVBXeFE1bWRRLWttVUJCb0xIcHlGczFJc3cwVDZVeDZ3dmtEcGpnaURhZlYtTUY2NFg5b3FEMHc1MEdHVXc?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((phased array OR SATCOM OR beamforming OR satellite communication) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(phased%20array%20OR%20SATCOM%20OR%20beamforming%20OR%20satellite%20communication)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-11-01
 
 - Market/Sentiment stance: **neutral** (score -1)
@@ -237,27 +258,6 @@ Key web signals:
 - [Mobile World Congress 2026 roundup - 5G Technology World](https://news.google.com/rss/articles/CBMieEFVX3lxTFBrX1dKYkZKbUpCd0Z4WGQ1VmhKZWtzOXpCRnJmLWtqVk5PR1NsY3ZRMEl4bUhiZm14cFZSWnE4SFd3VWd1QWNPWkRCM0tOT3BtZExiRXBnM0tpcm9ucDlrWmlRTmg5a2FpV1ZObEsxMExmY3VFbV82QQ?oc=5)
 - [C-COM Satellite Systems Inc. Stock Slips 3.49%: LEO Constellation Competition, Phased Array Antenna Commercialization Pacing, and Hardware Transition Scrutinized - kalkine.ca](https://news.google.com/rss/articles/CBMimgJBVV95cUxQTFNvcW4xUmFpR2dpelQ2SzZ2UDNRcHluTTl5MmhjTm9RLWhHQlk4TEhZZEgyNGtKVEdhaGs1WUtqRjVkbFA4Zmh6QUl2VG9wajFqc2JrZFVuZVU5bWJnNFp0WVlTN0VoNXVkMGhMWml2ZTRncVZUQmdyU0VvYi1GV2EtZkdRa096QzlaaFRPanlBYUdpS1l5dDhKY2owcE1lRVJtZzBydEJpV0RQal9HMnBCWjFhdEQ4amRLRGJTb3dKSEY3aGk5TDRDbGxUc2FHdDV2RUwtZmItTk41YVBXeFE1bWRRLWttVUJCb0xIcHlGczFJc3cwVDZVeDZ3dmtEcGpnaURhZlYtTUY2NFg5b3FEMHc1MEdHVXc?oc=5)
 - [Low-voltage U-shaped RF MEMS shunt switch integration for K-band phased array beam steering - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zZFM5bkJRdm5CaDV2ajNBT01wRjFZeE1zSnRKTHp1RVlRcnR0S2FnbXdIWVBBcVBYMFV5SkdReFVvY2hwbFUtbVRWdmNPdTYzeFpDSVoxLW0xOG5aUFJz?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((phased array OR SATCOM OR beamforming OR satellite communication) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(phased%20array%20OR%20SATCOM%20OR%20beamforming%20OR%20satellite%20communication)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-10-21
-
-- Market/Sentiment stance: **neutral** (score 0)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-10-21T00:42:40.092Z
-
-Key web signals:
-- [STARE: a semiconductor-integrated transmit-array architecture for 6G beamforming - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTE43RmV6VlN1YUVXZkVGTVJZaUp6dFJOZTVIdWk2XzRqNnFBdm9HU2xTcTdmM0ZEcWxEejNxZW1IN05KcmlMbXlYaFpTWVB3Nk1aMXRIWnN5MXlISnY4bFNR?oc=5)
-- [EnSilica Joins 5G-aNTeNna Consortium to Advance Ka-Band 5G-NTN User Terminals - SatNews Publishers](https://news.google.com/rss/articles/CBMirgFBVV95cUxPYWpodjlhYjBuUEhvM244RlA1Z283VnhuemdYMVc3MHp0MnpnXzNoLXNQZUJzUmNSU01oSDhyM3RTeEc2cG04OHpfWVNYR3J2SHBLRkxvMnB2R2NOcTFhQVYzdUVXMHhVX05yS1VyelRHT1o1TThoeFFiS240Ym51WUhnSFhJM3pveVdjMHpZRUpQbHNRV0h3X3kyQUxDZ3E5NVRTc2Y2UFQ0YWRVOWc?oc=5)
-- [OQ Technology selected by ESA to advance 5G beamforming for next-generation satellite networks with BEAMSAT-5G - Satellite Evolution](https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZU5DSjZ2d0hjdnYzN1pobkhSUUZYZmV4aVpGOVBkdUFWaVpTLXNweERvOHhYLXZ4R1Q1bmUzajRjcElWdUNmeG9PRUVDX0NFTDVKb2FtWmF2YzdvQUJaVUY5RXVVdjNSTTV5NW90eXozS3M3MldvZWxhaTEyejUxN2lrNGlwTUdPUThlVnZtc1RJWmtnWWJsZ3B3YUkybWVLVVVTSEI0dFBvM0JWdm9CajRXVVpodkJqeHkxaVd0UmFZWnNMZmpXQUFwT09Pa0kxdzNJcXNR?oc=5)
-- [C-COM Satellite Systems Inc. Stock Slips 3.49%: LEO Constellation Competition, Phased Array Antenna Commercialization Pacing, and Hardware Transition Scrutinized - kalkine.ca](https://news.google.com/rss/articles/CBMimgJBVV95cUxQTFNvcW4xUmFpR2dpelQ2SzZ2UDNRcHluTTl5MmhjTm9RLWhHQlk4TEhZZEgyNGtKVEdhaGs1WUtqRjVkbFA4Zmh6QUl2VG9wajFqc2JrZFVuZVU5bWJnNFp0WVlTN0VoNXVkMGhMWml2ZTRncVZUQmdyU0VvYi1GV2EtZkdRa096QzlaaFRPanlBYUdpS1l5dDhKY2owcE1lRVJtZzBydEJpV0RQal9HMnBCWjFhdEQ4amRLRGJTb3dKSEY3aGk5TDRDbGxUc2FHdDV2RUwtZmItTk41YVBXeFE1bWRRLWttVUJCb0xIcHlGczFJc3cwVDZVeDZ3dmtEcGpnaURhZlYtTUY2NFg5b3FEMHc1MEdHVXc?oc=5)
-- [Dimensionality reduced antenna array for beamforming/steering - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTFByS3pGS3VlR3IxZ0lvS3JIejZfY0dDNllnTzhPUExmbkQ2VmlGbGRFUWFJejUxVXlCVW5ZVm4zckUwUzJxUHFlYzY1aGI2TzJNRmU3dU96LU9mUHEzcVl3?oc=5)
-- [Sivers Semiconductors Awarded European Space Agency Contract for Next-Generation SATCOM Beamforming ICs - Sivers Semiconductors](https://news.google.com/rss/articles/CBMi4gFBVV95cUxNV05XaGt2ckF6THFTSkJpcFdoSWVfSS1JX3pYTWNxUHFTM2w0cjBnWTgwSGxXZEhzVUtZTlpGbVB6OGZ0WTViTGJjNkJOQU8tZWtpRzBnYWNHdThnM1J5eVJkVFVkY1JjQThsNmhaY3lTQnd5d1JKLWxGV001bHJUcDhvYUlua1pJTkNiUlRVWjUwLUh1TXk5UkN2NTNZLUhQLWRVanJHQmZ4LVhlMTFJQVF0UkNKUXVBV0xGSVJUbXhrQ2RXYWNaNUtiS2UxdklLSHpYX01Rb1RZWEpiYWl0akFB?oc=5)
 
 Key social-search signals (X / Threads / Instagram / Facebook via search):
 - [Search this query on DuckDuckGo ((phased array OR SATCOM OR beamforming OR satellite communication) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(phased%20array%20OR%20SATCOM%20OR%20beamforming%20OR%20satellite%20communication)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
