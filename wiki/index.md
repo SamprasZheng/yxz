@@ -61,6 +61,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-11-03]] — KOL + keyword daily digest 2026-11-03: 11 keywords, 0 KOLs (empty list); Claude Code game-clone restriction, Nemotron 3.5 Super VL, DOT bearish at $0.94, no OpenClaw/NemoClaw/Plurality/PolkaSharks news in 24h
 
 ## Entities
 
