@@ -33,6 +33,7 @@ type: index
 - [[sources/nemoclaw-build-a-claw-portal-2026]] — NVIDIA "Build-a-Claw" onboarding portal: Brev / DGX Spark / Jetson install paths (2026)
 - [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
 - [[sources/noaa-swpc-product-catalog]] — NOAA SWPC product and data catalog: full JSON URL table with cadences for all operational space weather feeds (ingested 2026-05-24)
+- [[sources/kol-digest-2026-11-04]] — KOL + keyword digest 2026-11-04 (automated): 0 KOLs, 11 keywords; Anthropic IPO-week ($17B Q3 + RSI warning), Claude Code game-clone filter, AI agent safety (Apple/CrowdStrike), OpenAI election ops center, DOT bearish at $0.94, OpenClaw v2026.10.10, NemoClaw/Nemotron 3.5 family, Plurality/Audrey Tang circuit, PolkaSharks no new content.
 
 - [[sources/msbai-orbitguard-dod-contract-2025]] — MSBAI OrbitGuard $1.2M DoD SBIR (Sept 2025): JEPA + MARL neuro-symbolic SDA copilot; 94–98% lab accuracy across ~15,000 objects; AMOS 2025 poster; CEO Grosvenor verbatim quote (ingested 2026-05-24)
 - [[sources/scnoc-agentic-sun-2025]] — SCNOC-Agentic paper (Electronics 2025, 14(16), 3320): first LLM multi-agent framework for satellite communications NetOps; four components (intent refinement / multi-agent workflow / long-term memory / graph-RAG); qwen2.5-70B improved network task planning accuracy 15.6%→32.2% (ingested 2026-05-24)
@@ -127,6 +128,8 @@ type: index
 - [[entities/nspo]] — Taiwan national civil space agency (NSPO → **TASA** renamed 2023-01-01, under NSTC); founded 1991; 3rd-phase program NT$25.1B 2019–2028 + ~NT$40B 2023 B5G-LEO boost; FORMOSAT-8A launched 2025-11-28, TRITON GNSS-R 2023; public-sector demand node for the XT-144 / LEO supply chain
 - [[entities/tron-future-tech]] — Taiwan dual-use AESA integrator founded 2018 by ex-NCTU prof Yu-Jiu Wang; T.Radar counter-drone radar + T.SpaceRouter 1024-element Ka-band LEO terminal; Series A ~NT$900M (2024), 26-system military contract (2025); the concrete "midstream array-integrator" counter to Taiwan's absent-midstream thesis
 - [[entities/liscotech]] — Taiwan space-electronics vendor; GPGPU100 on-orbit compute module (Nvidia Jetson Orin Nano ~40 TOPS, TASA-licensed 2025-04-15) flown on Black Kite-1 (2025-11-28, Rapidtek); Taiwan's **first flown space-grade GPGPU** — the concrete edge-tier counter to the "midstream-C absent" thesis (hyperscale tier still absent)
+- [[entities/anthropic]] — US AI safety company (founded 2021); creator of Claude model family (Fable 5.1 / Opus 5.5 / Sonnet 5.5 / Haiku 5.5) and Claude Code agentic runtime; IPO expected Nov 2026 at ~$965B Series-H valuation; Q3-2026 revenue ~$17B; RSI self-improvement threshold warning in S-1/A
+- [[entities/openai]] — US AI company; creator of GPT series, ChatGPT, o-series reasoning models, and OpenAI Agents API; acquired OpenClaw creator Peter Steinberger Feb 2026; Election Operations Center for US midterms Nov 2026; funding round ~$20B at ~$1.25–1.4T valuation
 
 ## Concepts
 
