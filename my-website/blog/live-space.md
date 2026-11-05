@@ -13,6 +13,32 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-11-05
+
+- Market/Sentiment stance: **bullish** (score 5)
+- Web signals collected: 10
+- Social-search signals collected: 10
+- Updated at: 2026-11-05T02:38:09.950Z
+
+Key web signals:
+- [When satellites become AI agents, space data centers become the next AI frontier - CIO](https://news.google.com/rss/articles/CBMivAFBVV95cUxPa2VSekJYdFNTYy1id2l6N25oX19BQ0ZkdDducXl2VFJlRmtkYWNFVTRhLXRlNzZpaWR0MjJJb1Qwd1BGNFZLR3ViWVZVSThCUjdLaDRneTg3TXRGVXJOYl9mQU05Y1dFY3EtTy1Kdmp3ZWJzWWwyWE4wZ2RNM3dwQnljMkpubWZDZkJtWlpiTktRZmUtYUV2ZHlIdmVYUU8wREJ2TmxWZHdfSUcyTkNIS2ZveUNWTjk2b2JHMA?oc=5)
+- [Are Orbital Data Centers the Next Frontier of AI Infrastructure? - Via Satellite](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdndDNk5CWFRGaV8wcWFoQkFLVzU0WUdoa1NRaHpPMlRGVGZQVFc1aklYTlF1RWFIMDRLbXF0N2ZaelhQbGxfNHVCWm8yTEpYUDVSelB3VWFqZklwMDdSMWpnc1NMeXhGYmcxNUgta3VMWllITkZLSU1iMVgyOVpXN3k5Ulg0Qm1yeEsxbldVSVFScENxa2dYUXA0aTdueXBnal9rclRaY0VPMlBOaXNfbkZScXRNRTFo?oc=5)
+- [Data centers in space - JLL](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15RVYzNW8zQTRINzFsSlo3ZFBpQ2pobV9Yb1FESDN5ampzUjZGRVlfTkZkckpKU2RFZERobFBTdlBIZ28wUElkRnk4WGUtZGVXRUdzbmxYTjJnNWNsM3VDRGlpWW1PYlk?oc=5)
+- [Orbital data centers? Or just distributed LEO compute? - Data Center Dynamics](https://news.google.com/rss/articles/CBMiogFBVV95cUxQQU50MnNYeUN3OUdKd21Md0lkR21PNXhrU0Z3TEF3RWRnenFfaGFKY0V4anJaUy1HWEZUSmtZR3VxbXNfVVNfckppVVRmQ0R3eUp5RFRuSl91bkxoTldmd0c3TTZ2REdPMlpkQzE1aFN4eXpOTXM4SURyM3ZtSl96aUNpc1RfNm1NcTJXZzhMNG1lNVdkWkNWbjBZalpiTU8xWnc?oc=5)
+- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
+- [Cowboy Space and the Case for Orbital AI Data Centers - Data Center Frontier](https://news.google.com/rss/articles/CBMivAFBVV95cUxPc3pESU00aGZ6bUttNXRVUHZBbTI4N2sxVWR3YXRLeTRjZ0Q0MlFtNkQ1U3JTcmRKcUF6S0tBZC1XMHlaYWpPUUdvMHVQaGtrQ2NpTFBkMEluVHdiRU5pUlgtQkloWkR0T29xOXYzQ3V3SlNLVDRiQW1kbzZrOXgxS3lPLWhjekc2enVCWi1SYUZmNVpKdFliZjd0aDZSanZkR0Z1dXVSMjBRU1luNEVGQmR1TEhGRkQtSUpnUA?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Rohan Paul on X: "For the very first time Elon Musk explains the "space ...](https://x.com/rohanpaul_ai/status/2064165951936094364)
+- [SpaceX Launches Starmind: AI Data Centers in Orbit](https://x.com/i/trending/2075373808211440079)
+- [SpaceX AI1: A Data Center Launched Into Orbit to Escape the ... - Facebook](https://www.facebook.com/unboxfactory/videos/spacex-ai1-a-data-center-launched-into-orbit-to-escape-the-power-grid-spacex-unv/1037650485289698/)
+- [SpaceX is developing AI data... - Technology Innovation | Facebook](https://www.facebook.com/TechnologyInnovation1/posts/spacex-is-developing-ai-data-centers-that-would-operate-in-space-with-the-first-/1360921906194452/)
+- [Scientific American | What if data centers went to space? That&#x27;s what ...](https://www.instagram.com/reel/DcRM8DyuPSR/)
+- [Y Combinator | Starcloud recently made history by launching a satellite ...](https://www.instagram.com/p/DRAVZCwj_dm/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-11-04
 
 - Market/Sentiment stance: **neutral** (score 3)
@@ -279,32 +305,6 @@ Data quality notes:
 - Web signals collected: 10
 - Social-search signals collected: 10
 - Updated at: 2026-10-25T00:25:14.744Z
-
-Key web signals:
-- [When satellites become AI agents, space data centers become the next AI frontier - CIO](https://news.google.com/rss/articles/CBMivAFBVV95cUxPa2VSekJYdFNTYy1id2l6N25oX19BQ0ZkdDducXl2VFJlRmtkYWNFVTRhLXRlNzZpaWR0MjJJb1Qwd1BGNFZLR3ViWVZVSThCUjdLaDRneTg3TXRGVXJOYl9mQU05Y1dFY3EtTy1Kdmp3ZWJzWWwyWE4wZ2RNM3dwQnljMkpubWZDZkJtWlpiTktRZmUtYUV2ZHlIdmVYUU8wREJ2TmxWZHdfSUcyTkNIS2ZveUNWTjk2b2JHMA?oc=5)
-- [Google Launches AI Chips to Orbit in Space Data Center Push - The Tech Buzz](https://news.google.com/rss/articles/CBMilwFBVV95cUxPdi1nUE5jR0kyU2NtQzRQS2tNZXFRdm1yZEpURVRWdktLYzJxOXBrS3c1cFVzaXV0N01DQnRHdUJXblE0SXMzeFJsWG9NOV9IZ1JaNDRfMzZQRWNZb0hhbEg4a0VOZU9Hb3lWYjN5bUxjYVZXNDhiVTdSMmZwd1h0c2hodEpkc00xUG9ZaWxkYlk1RDdDeWlv?oc=5)
-- [Data centers in space - JLL](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15RVYzNW8zQTRINzFsSlo3ZFBpQ2pobV9Yb1FESDN5ampzUjZGRVlfTkZkckpKU2RFZERobFBTdlBIZ28wUElkRnk4WGUtZGVXRUdzbmxYTjJnNWNsM3VDRGlpWW1PYlk?oc=5)
-- [Are orbital AI data centers the next frontier for compute infrastructure? - Data Center Dynamics](https://news.google.com/rss/articles/CBMivAFBVV95cUxOWlgzcXpscFpoZjljMUx3VFVVRnpwdktGTGtGbU5nc0RxNnJRUm56WV9ydkV6c2tvVjAyYzU2TlBPOEp2N0NfN1JpMExnV3kzYWpEMlhERU5VcXhWNlJpaEVPdHlQWUEwZUtkenhxcDZIX3JpekNxNjA2MXVHMXB1RE5tNFRtX2t5QzVVX1FaN3hJczc3WmFOem8wYlVFNUNtcGpnU0VVd3YxcVFRdW9VTFVLdGpCd3g1SFRvZQ?oc=5)
-- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
-- [Sophia Space and SLI set the terms for a $300M deal that will finance an orbital computing constellation - GeekWire](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNU29Dbm5ZcERkbDVkRjBJeG1IX2VDZ2VfV2Z4R1ZWcHpqWnowOHVwa2NwUGtGQ2p3cG9RVDFQWmY2LWRRQ0VFTTZ4NmY5aFZhZFFEOTZuTXFjbkFZVHJQZWRUT0o0XzA1VndsZ2ZFRU92bm5fbW1PRnlRTXVRdUtVWXNKOElQR1BW?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [For the very first time Elon Musk explains the "space data center plan ...](https://x.com/rohanpaul_ai/status/2064165951936094364)
-- [SpaceX Launches Starmind: AI Data Centers in Orbit](https://x.com/i/trending/2075373808211440079)
-- [Why Everyone Is Talking About Data Centers In Space - Facebook](https://www.facebook.com/groups/spaceXverse/posts/3789068354731495/)
-- [SpaceX AI1: A Data Center Launched Into Orbit to Escape the ... - Facebook](https://www.facebook.com/unboxfactory/videos/spacex-ai1-a-data-center-launched-into-orbit-to-escape-the-power-grid-spacex-unv/1037650485289698/)
-- [Scientific American | What if data centers went to space? That&#x27;s what ...](https://www.instagram.com/reel/DcRM8DyuPSR/)
-- [Orbital Data Center - Instagram](https://www.instagram.com/popular/orbital-data-center/)
-
-Data quality notes:
-- No major data-quality issue in this run.
-
-### 2026-10-24
-
-- Market/Sentiment stance: **bullish** (score 5)
-- Web signals collected: 10
-- Social-search signals collected: 10
-- Updated at: 2026-10-24T00:53:05.056Z
 
 Key web signals:
 - [When satellites become AI agents, space data centers become the next AI frontier - CIO](https://news.google.com/rss/articles/CBMivAFBVV95cUxPa2VSekJYdFNTYy1id2l6N25oX19BQ0ZkdDducXl2VFJlRmtkYWNFVTRhLXRlNzZpaWR0MjJJb1Qwd1BGNFZLR3ViWVZVSThCUjdLaDRneTg3TXRGVXJOYl9mQU05Y1dFY3EtTy1Kdmp3ZWJzWWwyWE4wZ2RNM3dwQnljMkpubWZDZkJtWlpiTktRZmUtYUV2ZHlIdmVYUU8wREJ2TmxWZHdfSUcyTkNIS2ZveUNWTjk2b2JHMA?oc=5)
