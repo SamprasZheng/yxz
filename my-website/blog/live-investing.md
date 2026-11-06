@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-11-06
+
+- Market/Sentiment stance: **neutral** (score 3)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-11-06T02:39:13.159Z
+
+Key web signals:
+- [Crypto Market Rally: Why Bitcoin, Ethereum and XRP Are Surging Today - TradingView](https://news.google.com/rss/articles/CBMixAFBVV95cUxOQzhZajVlLXNPLUg0X0dmSmhyRkRJUGsyT1N6YnZiSUU5U1FDLXoyT3g2TlpQTktVRFhYRXdJeUpyd3NrSWVMazdWdHViOG1GQmZzSjVNX3RJUHlEcUJUVUU4cTlsTzFCMkdkQ1RHbkJsR2hjQzhnd3RhcVFJR0pmaS1rYWN1RFlEVFpjVE9rbEcxbXdzcUJEamJhc1NfNk05d1kwSHRCQVEyd0JOUjBCZ2pHaDd2U1RNbWNSZjctUU1WSm9K?oc=5)
+- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
+- [Bitcoin price analysis: Here's why BTC isn't rallying with S&P 500, Nasdaq. - CoinDesk](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNd2hneXMxOGtCLXEtdDltNmxCOEpRNHRoeWZJX3ctWVBNT1A1R0FlWks4Q1NkYW85N0JRRGlLRS0ydzZmRUdsc2xNbExUNnBNV0F2ODNYa1lqbWlTZUhzODZ3R0ZGQjJqRTI4RU9qYVRHcno2YzV1SzVRS21nSWVrZ3lhQWpPdFM0Z0NPUHJnTGxzaEw1MWNhQnBPOVRleHVfVUJMcFFtZFdXWTVmbG1HTU9xSHpHbE1Kam5Zc2x4eEhySkRXZjhucWpyZWZRU1REUVJLemxLeXMzb1czMnFz?oc=5)
+- [Bitcoin Volatility Trends: A Deep Dive into Market Dynamics and Risk - S&P Global](https://news.google.com/rss/articles/CBMingFBVV95cUxOcDBGbzdYLUlkMzJGdHk0blJkbjRxbGp0dEk3a2tmQXlEMlNQLTFDOUVsQTJxd0dkdmVrSUZqVThzVzBrMmJad0ZaWHpzLTdrcFEtRE1sZW42cjBSeUVyLXpqenFpMzlKT1UxVDFkWmNFV0FEajRtekRNNHI2MEpwUjNrOThsUE10cm9JaTFKLXlvYUY4WUZuWllxX3Nfdw?oc=5)
+- [The BTC price is outperforming Nasdaq, S&P 500 and correlating with gold just when it matters: Crypto Daily - CoinDesk](https://news.google.com/rss/articles/CBMiygFBVV95cUxPOXFVQWY0ZVY5YkEwQ3I4OFBaM0FjMVdHVU9yYy1RYk9UV25wN0F4Vkd0NkJmZkF2QVd3QjJwUDd5NW1QOHVCVjVyNURyMjNRQ0NYLUo5Vy0wMTBJMUZUWWtFZnY5MnRWMmdEYzhmMVJieko3ejAyQ2IteGY2VzhhNzVWZVlRVUplT1lfV1RTbW9ZVDQzNGlCT0Jvb19hb1Y5X2U0WDJsY0t6cnRwajVyVkZSMGJPVHc0OXBpVktBLWxLZ1MtT1VFR2x3?oc=5)
+- [Will 2026 Tame the Bull Market? - Morgan Stanley](https://news.google.com/rss/articles/CBMilgFBVV95cUxNRFlzYUhheG1zZjBzUXpiMTdoR19hdnF5UklXQU11UUtZdXhRVWlSbVF2X01wZjJELUUtdDItZXhWOE4xeFBuSW5MS1VabDA4VVFGUTJoVHB5T281cDcybkhxcTB5eUhSMHktTUJrdVprWVlMcWthQWRVR0N2R1ZxQTd2QXE3QmMxSmFCeEVIYnZQVzNSdnc?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-11-05
 
 - Market/Sentiment stance: **neutral** (score 2)
@@ -229,27 +250,6 @@ Data quality notes:
 - Web signals collected: 10
 - Social-search signals collected: 0
 - Updated at: 2026-10-26T00:30:43.326Z
-
-Key web signals:
-- [Market Update (September 2026) - Crypto.com](https://news.google.com/rss/articles/CBMiZEFVX3lxTE53ZllwZjRhTWlCWkdJSnVrRFdSQWVCN1BXUnZ3ZUpCZmVaTXNyaVRFRXpNTWNiU28yRTFuZFJVWVZxQTd3RHE0M1dYMnNTZXByMnhRSFZERTV2OW5BTmMyalVuaWI?oc=5)
-- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
-- [US Dollar Hits 18-Month High: What It Means for Bitcoin and Stocks - CryptoRank](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTjYwTk9LSWhfVW9tcGw5T2RIZjA1S2N1cFBfXzlSekhQUk5laF92djZxRjBOdXNKSzdYdzJhekVpUm9BWHFzSjhMUXQzcFB1NTJsRVRWYnhVSVpaa1p3ejVYUFNYdS11N25UZDNfSzFNT0otamJQc0RldHMwaWNTTi1yckRNM002?oc=5)
-- [Crypto and Global Markets Plunge as Hot US Inflation Revives Fed Fears – What’s Next? - TradingView](https://news.google.com/rss/articles/CBMi2gFBVV95cUxOSXRlbjdnMVdoWFJGcHlianc4djJSUW4wZDJyY0U0VS1IaFpUaVNRQXBpcEZGUzNNb19VSUdvNGJEYm0zcnZuZWtDeHF5Q2I3T0FSWVFoRmJCZ2tkZWZkZTBHZjRZU1I1R1A0MUdPUkYtalc1UzZCaVZpM2JJYjdMTFZhRWVrMVlqWVM1aHY0ekx5M2lwRXlmTnVrUU9JOFZBbGRHbm5zdTM1WHRoYnViVUpfRnFQMGZUdk1idE1TbTY4bWF2ajhac0Nrb2Q1dW5wZExHYlQ4WXFsQQ?oc=5)
-- [Bitcoin, Nasdaq investors are celebrating, while U.S. consumers turn gloomy. - CoinDesk](https://news.google.com/rss/articles/CBMiugFBVV95cUxOSmUwb205UGFnOC1kMnBRS1EzYUU2Q29taXdVX3k5Mld5VjZvTnpHV3RzSU0zak9nWENuOElGdThTX3VCZjRsVGFmblNJWmpoR3U1TGZieDFkRTV4eFotc0hVczZoYl81WE9yN3ZZYnBybDkteFo4XzJqaTRtSnExRWE2Uzk1d1o5Q0tOSXlpM3RLVlZKNHdnS1NId3R3UUljdGhrdmhUQXFnMzZjbUhVRkRoRGRnSGxmSVE?oc=5)
-- [Bitmine Immersion Technologies (BMNR) Announces ETH Holdings Reach over 6 Million Tokens with Total Crypto, Cash & Marketable Securities Holdings of $17.2 Billion - TradingView](https://news.google.com/rss/articles/CBMivgJBVV95cUxPWXFnZVVBRGk3SDdzWkh6eHo2SFIza09YcG1sQ1pVbENTV1hwWGZJTWoxWDYtSFJWYlE5T01xZkNzc3loc3JuRktRaWU5T0k3cTh1MUtibUFtRFhfaDBTd0MzSTJ3eE5yRTgtQ1kyQ0FkdjdTYWl6cTRRSHoxQjNSeUNBMkpKWnZvVVpRM0piRkpIRUc3TUlPQmF1X2l4SjAzT3g3TTNCNnlLT0pvNTYwekw0MTdWa1hNN2Nva2c0Ylc2dEVzcnB1dnhxMXFZUlQ5LXp5Mnl2ZWx2TEhTNmJlaDVWbVJrZGEtSXlxRWdUQ0JnZXdSRldvZHpYMjNzQ2JpUDR2YzlTRDFqa0FFcnFKSWRILTVPSmdvRmswNWxVeTlUNVctRVlHZW5IUkxzUnkyRkJiRzdSRlVZZUZublE?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-10-25
-
-- Market/Sentiment stance: **neutral** (score 2)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-10-25T00:25:14.744Z
 
 Key web signals:
 - [Market Update (September 2026) - Crypto.com](https://news.google.com/rss/articles/CBMiZEFVX3lxTE53ZllwZjRhTWlCWkdJSnVrRFdSQWVCN1BXUnZ3ZUpCZmVaTXNyaVRFRXpNTWNiU28yRTFuZFJVWVZxQTd3RHE0M1dYMnNTZXByMnhRSFZERTV2OW5BTmMyalVuaWI?oc=5)
