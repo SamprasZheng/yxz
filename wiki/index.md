@@ -6,6 +6,7 @@ type: index
 
 ## Sources
 
+- [[sources/kol-digest-2026-10-19]] — Daily KOL + keyword digest (2026-10-19): 0 KOLs / 11 keywords; top signals — Anthropic $30B Series G + Claude Code >$2.5B run-rate, GPT-6 Intelligent UI rollout, Polkadot dotUSD Ref. 1944 deciding, DOT +45.4% September, Nemotron Labs Teacher checkpoints Aug 2026
 - [[sources/polkasharks-ep1-polkadot-intro]] — Polkadot Decoded EP1: Polkadot intro, architecture, JAM/ETF/Pay preview (2024-08-26)
 - [[sources/polkasharks-ep3-hydration]] — Polkadot Decoded EP3: Hydration Omnipool DAMM, APY mechanics, liquidity bootstrapping (2024-09-02)
 - [[sources/polkasharks-ep4-mythical-games]] — Polkadot Decoded EP4: Mythical Games migration to Polkadot, MYTH token, Nitro Nation/NFL Rivals (2024-09-09)
