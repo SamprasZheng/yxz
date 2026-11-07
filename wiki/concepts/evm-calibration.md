@@ -139,13 +139,15 @@ EVM calibration is gated by the measurement instrument (VSA / signal analyzer / 
 | **US** | **Co-leads** the high-end VSA/oscilloscope tier | Keysight (89600 VSA, Infiniium — the toolchain on this page), Tektronix |
 | **Europe** | **Co-leads** — arguably the reference for 5G/6G modulation analysis | Rohde & Schwarz (Germany) |
 | **Japan** | Strong, especially production/field and modulation analysis | Anritsu, Advantest (ATE) |
-| **China** | Rising domestic T&M under sanction pressure; high-end VSA still imported | RIGOL, Ceyear (中电科思仪) |
+| **China** | Rising domestic T&M under sanction pressure; a domestic analyzer now *measures* up to **256-QAM** EVM (Ceyear 4052 + 5G-NR option, 2026), but the 1024-QAM ceiling and the 89600-class high-dynamic-range VSA tier stay imported | RIGOL, **Ceyear (中电科思仪) 4052 series** (2 Hz–50 GHz; 5G-NR S46D/S46U demod to 256-QAM) |
 | **Korea** | T&M largely imported; strength is in volume RF production lines | (no merchant high-end VSA vendor) |
 | **Taiwan** | T&M **imported**; strength is the device/foundry under test, not the analyzer | (relies on Keysight/R&S/Anritsu) |
 
 This mirrors the converter-layer gap in [[concepts/zero-if-transmitter]] and the front-end map in [[synthesis/phased-array-rf-frontend-supply-chain]]: Taiwan and Korea fab and assemble RF at world scale but depend on US/Europe/Japan for the instruments that *certify* it. Calibration know-how (this page) is portable IP; the instrument is the chokepoint.
 
 **Market anchor (re-verified 2026-08-24, unchanged):** the merchant vector-signal-analysis market is ≈**$422.9M (2025)**, ~7.1% CAGR to 2033, and **Keysight + Rohde & Schwarz + Anritsu together hold >50%** of it (Keysight ~27% / R&S ~19% of the adjacent VNA volume; the wider spectrum-and-signal-analyzer market ≈$1.48B in 2026 → ~$2.20B by 2035 carries the same three-vendor concentration). This narrow three-vendor concentration is *why* the instrument, not the calibration algorithm, is the least-substitutable link — and it is sub-layer C of the [[synthesis/rf-transmitter-acceptance-layer-six-region]] map.
+
+> **China sub-layer-C falsifier — partial move (verified 2026-11-07):** Ceyear's **4052-series** signal/spectrum analyzer (models to 50 GHz, 4052H) now ships a 5G-NR demod option (S46D/S46U) that measures **QPSK→256-QAM** EVM, frequency error, ACP and spectrum flatness — so the *highest fielded-mobile* order (256-QAM) is now measurable on a **domestic merchant** instrument, not only on an imported Keysight/R&S/Anritsu box. The "high-end VSA still imported" read is *narrowed, not falsified*: (1) it tops at 256-QAM, not the 1024-QAM FWA ceiling; (2) it is a spectrum analyzer with a 5G-NR VSA *option*, not a dedicated high-dynamic-range VSA in the Keysight-89600/UXA class, and its high-band amplitude accuracy is loose (±2.5 dB above 26.5 GHz per reseller spec); (3) the residual-EVM floor could not be primary-verified this pass (ceyear.com + distributor datasheet PDFs egress-blocked). Net: China's last instrument gap is now the **top order (1024-QAM) + the EVM-floor/dynamic-range tier**, no longer 256-QAM itself. Full cross-sub-layer read on [[synthesis/rf-transmitter-acceptance-layer-six-region]].
 
 ## Historical note
 
