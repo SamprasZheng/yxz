@@ -48,6 +48,17 @@ tags: [taiwan, rf-hardware, satellite, leo, filter, waveguide, supply-chain]
 
 The read: after Q2's slight QoQ dip (NT$902 M vs Q1's NT$1.02 B record), the monthly cadence turned sharply back up in Aug — a near-doubling YoY — consistent with management's guide that Q3 > Q2 and Q4 exceeds the Q1 record. The 8M cumulative already exceeds full-year 2025 revenue (NT$2.452 B) with a third of the year left, confirming 2026 as a step-change year and reinforcing that the LEO passive-RF franchise is scaling, not plateauing.
 
+## Q3-2026 close — record quarter; 9-month EPS already beats all of FY2025 (verified 2026-11-08)
+
+| Metric | Value | Source |
+|---|---|---|
+| **Q3-2026 EPS** | **NT$3.65** — single-quarter same-period record | [setn/Yahoo 2026](https://tw.news.yahoo.com/%E7%86%B1%E9%96%80%E8%82%A1-%E4%BD%8E%E8%BB%8C%E8%A1%9B%E6%98%9F%E7%8E%8B%E8%80%85-%E6%98%87%E9%81%94%E7%A7%91%E7%9B%AE%E6%A8%99%E5%83%B9%E4%BE%86%E4%BA%86-181800267.html) |
+| **9M-2026 cumulative EPS** | **NT$11.81** — already **exceeds all of FY2025 (NT$7.83)** with a quarter to spare | setn/Yahoo |
+| FY2026 EPS forecast (法人, 華南) | **NT$16.01** | setn/Yahoo |
+| H2-2026 LEO-revenue guide | **≥ +20% H/H**; Q4 to be the full-year operating peak; H2 gross-margin target **up to 60%** | [cnYES / management, Aug-2026](https://news.cnyes.com/news/id/6562930) |
+
+The read: the Q3 close converts the mid-year "self-reported record half" into an audited-trajectory **record quarter** — 9M EPS NT$11.81 is **~1.5× the entire FY2025 EPS (NT$7.83)**, the step-change the Aug monthly cadence (Aug +93% YoY) signalled. Combined with the H2 gross-margin target of **up to 60%** (from H1's ≈56.9%), UMT is the single sharpest counter in the cluster to the "LEO upstream margins compress" risk ([[synthesis/leo-taiwan-odc-gap]] falsifier #5): both revenue *and* margin are still climbing three-quarters into 2026. *(Sept + Oct 2026 single-month prints could not be pinned this pass — the Taiwan monthly-revenue outlets that carry 3491's month figures, Yahoo-TW stock and Goodinfo, were egress-blocked in this environment; the Q3 cumulative EPS above is the canonical Q3-close figure instead, corroborated across setn/uAnalyze summaries of the Q3 self-report.)*
+
 ## LEO satellite positioning
 
 Widely reported as having entered the **Starlink** and **Amazon Kuiper** supply chains; among the highest-gross-margin Taiwan LEO upstream component makers. Revenue is now visibly LEO-cyclical — the Q4-2025 / FY-2025 records track the international constellations' deployment cadence, which is the cleanest evidence in the cluster that a Taiwan passive-RF vendor has cleared satellite-grade qualification rather than staying in terrestrial telecom.

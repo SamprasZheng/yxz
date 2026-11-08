@@ -59,6 +59,22 @@ The read: Jul + Aug are Win's **highest monthly revenues since Dec-2021**, exten
 
 The read: the monthly cadence (Jul 18.92 → Aug 19.37 → **Sep 20.30**) is three straight new highs, and the derived Q3 (~NT$5.86 B) lands inside the guided QoQ range — so the FY2025 "handset-GaAs → optical-datacom + LEO RF" pivot is now carried by a *full* record quarter, not just two months. The +32.6%-YoY 9M print holds the strongest-in-cluster read above: the ODC/AI-optical + LEO twin vector is pulling the compound-semi foundry tier up through Q3-end. The one remaining unknown is the margin/mix breakdown — the official Q3 earnings call (late Oct) will show whether gross margin grew QoQ off Q2's low-30s and how much of the record is optical (1.6T PD) vs LEO RF vs the handset/3D-sensing seasonal peak.
 
+### Q3-2026 法說 — the margin answer, and "infra + optical > half the mix" (verified 2026-11-08, call held 2026-10-28)
+
+The official Q3 法說 (2026-10-28, self-reported/unaudited) resolves the margin/mix unknown flagged above — and the margin jump is the headline:
+
+| Metric | Value | Source |
+|---|---|---|
+| Q3-2026 consolidated revenue | **NT$5.859 B** (NT$58.59 億), **+11% QoQ / +31% YoY** — matches the monthly-summed derivation above to the decimal | [StockFeel 法說 2026-10-28](https://www.stockfeel.com.tw/?p=278338) |
+| **Q3-2026 consolidated gross margin** | **37.4%**, **+9.2 pt QoQ** — an **18-quarter high** (individual GM 40.7%, back above 40%) | StockFeel |
+| Q3-2026 net profit / EPS | NT$1.930 B / **EPS NT$4.55** — ~6-year single-quarter high | [LTN 2026-10](https://ec.ltn.com.tw/article/breakingnews/5621623) / [uAnalyze](https://uanalyze.com.tw/articles/3490457893) |
+| 9M-2026 gross margin / EPS | **31.1% / EPS NT$8.12** | StockFeel |
+| Capacity utilisation | **65% (Q2) → 75% (Q3)** | StockFeel |
+| Mix driver | **infrastructure (satellite / aerospace) + optical-comms now > 50% of revenue** — the explicit reason GM stepped up | StockFeel / uAnalyze |
+| Q4-2026 guidance | revenue **+1–3% QoQ**, gross margin **~37–39%** (holds the high-30s) | StockFeel |
+
+The read (the pass's load-bearing datapoint): the Q3 margin jump is **caused by the mix shift this cluster has been tracking** — Win management states **infrastructure (satellite/aerospace) + optical together are now more than half of revenue**, displacing the lower-margin handset-GaAs base. That is the cleanest *quantified* confirmation yet of the [[synthesis/leo-taiwan-odc-gap|upstream-cluster]] thesis that the ODC/AI-optical + LEO twin demand vector pulls Taiwan's compound-semi foundry tier *up in margin*, not just in revenue — and it hardens the cluster's falsifier-#5 rebuttal (the "operators dual-source → Taiwan upstream margins compress" risk): Win's consolidated GM went the *opposite* direction, +9.2 pt QoQ to an 18-quarter high. *(Note: the non-operating line included ≈NT$698 M of equity-method income from Win's ≈23% stake in ITEQ/聯茂 — i.e. part of the net-profit record is associate income, not core-foundry operating profit; the 37.4% gross margin is the clean operating read.)*
+
 ## LEO Satellite Positioning
 
 **Global leader in LEO-spec PA foundry services.** LEO constellations (Starlink, Amazon Kuiper class) drive demand for the GaAs/GaN RF front-end PA chips Win fabricates; with Starlink V3 (more laser ISLs, higher power) and AI-computing-satellite RF demand, Win is one of the most direct upstream beneficiaries in the LEO supply chain. *(Specific named-customer foundry contracts are not publicly confirmed by Win; treat constellation attribution as market-level, not contractual.)*

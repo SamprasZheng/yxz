@@ -20,7 +20,7 @@ This segment determines the performance ceiling of satellites and is where Taiwa
 RF component economics connect directly to the transmitter stack: [[concepts/aesa]] / [[concepts/hybrid-phased-array]] set the array architecture, [[concepts/zero-if-transmitter]] defines the X-band upconversion trade, [[concepts/evm-calibration]] keeps LO leakage/IQ imbalance inside spec, and [[concepts/dpd-digital-predistortion]] protects PA linearity/ACPR.
 
 - **Win Semiconductors ([[entities/win-semiconductors]], 3105)**: Global leader in LEO-spec PA (power amplifier) contract manufacturing
-- **Ascend Tech ([[entities/ascend-tech]], 3491)**: Filters, waveguides; has entered Starlink and Amazon Kuiper supply chains; gross margin stepped from **9M-2025 ≈47.3% → H1-2026 ≈56.9%** as LEO rose to ≈80% of revenue (H1-2026 profit alone beat every prior full year; **Aug-2026 rev +93% YoY, 8-month revenue already exceeding full-year 2025** — canonical figures on [[entities/ascend-tech]], refreshed 2026-09-15)
+- **Ascend Tech ([[entities/ascend-tech]], 3491)**: Filters, waveguides; has entered Starlink and Amazon Kuiper supply chains; gross margin stepped from **9M-2025 ≈47.3% → H1-2026 ≈56.9%** as LEO rose to ≈80% of revenue, with a **H2 GM target up to 60%**; **Q3-2026 EPS NT$3.65 → 9M EPS NT$11.81, already exceeding all of FY2025 (NT$7.83)** — canonical figures on [[entities/ascend-tech]], refreshed 2026-11-08
 
 ### Space-Grade Solar Cells (High-Efficiency GaAs Cells)
 As per-satellite power requirements surge from 2 kW to over 10 kW (Starlink V3, AI compute on orbit), high-efficiency GaAs solar cells become an essential need.
@@ -36,7 +36,7 @@ High-band (Ka/V) satellite antennas and RF modules require low-loss microwave su
 ## Mid-stream A: Satellite Bus Manufacturing and Systems Integration
 
 ### PCB and Structural Boards
-**[[entities/huatong-pcb]] (Compeq/Huatong)**: Close to 80% global market share in LEO satellite-specific PCBs (as of end of 2025). **FY2025 satellite-board revenue ≈NT$15.1B** (~20% of ≈NT$76B total); **2026 satellite-board est. ≈NT$18.5B (+22%)**, with **H1-2026 group revenue NT$39.54B +13.2% YoY and Aug-2026 NT$7.01B +6.9% YoY** (canonical figures on [[entities/huatong-pcb]], refreshed 2026-09-15; the earlier "Q4 2025 >NT$15.5B" draft is superseded). Taiwan's PCB manufacturers collectively form a structural advantage.
+**[[entities/huatong-pcb]] (Compeq/Huatong)**: Close to 80% global market share in LEO satellite-specific PCBs (as of end of 2025). **FY2025 satellite-board revenue ≈NT$15.1B** (~20% of ≈NT$76B total); **2026 satellite-board est. ≈NT$18.5B (+22%)**, with **Sep-2026 NT$8.617B and Oct-2026 NT$8.783B back-to-back monthly records, 10M rev NT$70.9B +≈14.3% YoY, 9M EPS NT$4.31**; the **Starlink-V3 upgrade ≈doubles PCB dollar-content per satellite** (canonical figures on [[entities/huatong-pcb]], refreshed 2026-11-08; the earlier "Q4 2025 >NT$15.5B" draft is superseded). Taiwan's PCB manufacturers collectively form a structural advantage.
 
 ### Constellation Operator Satellites (Starlink V3 / Amazon Leo)
 - Starlink V3 increases the proportion of laser inter-satellite links (ISL), placing higher demands on RF components and thermal management

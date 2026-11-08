@@ -61,6 +61,20 @@ The read: Compeq's group revenue keeps compounding at a mid-to-high-single-digit
 
 **Three-theme map now dual-quantified (向外抓取, 2026-10-05):** the two growth legs of Compeq's "低軌衛星 + AI-資料中心 + capex" map now both carry analyst numbers — satellite-board **≈NT$18.5 B** and **data-center-board ≈NT$7.1 B** for 2026 (法人, per udn/ltn/ctee ~2026-08-06). The satellite leg is the anchor; the DC-board leg is the second franchise and the natural *path-B bridge* in [[synthesis/leo-taiwan-odc-gap]] — but both are **terrestrial** boards (satellite *ground/payload* PCBs + AI-*server* boards), **not** an orbital compute-board assembly, so this quantifies motion *toward* midstream-C without closing it. *(Figures are analyst projections surfaced via Taiwan financial press; the primary articles were not re-openable this pass due to an egress block — treat as directional-but-sourced, to be confirmed against company guidance.)*
 
+## Q3-close + Sep/Oct-2026 monthly prints — back-to-back record months (verified 2026-11-08)
+
+| Metric | Value | Source |
+|---|---|---|
+| Sep-2026 revenue | **NT$8.617 B** (NT$86.17 億), **+22.89% MoM / +15.02% YoY** — monthly record (US-customer new-product shipments + **LEO satellite products resuming after the V3 generational changeover**) | [uAnalyze 2026-10](https://uanalyze.com.tw/articles/5582956516) |
+| Oct-2026 revenue | **NT$8.783 B** (NT$87.83 億), **+1.92% MoM / +24.74% YoY** — **second consecutive** monthly record | [TechNews 財報快訊 2026-11-05](https://finance.technews.tw/2026/11/05/compeq-mfg-2313-202610-financial-report/) |
+| 10M-2026 cumulative | **NT$70.908 B** (NT$709.08 億), **≈+14.3–14.7% YoY** (outlets differ slightly) | TechNews / uAnalyze |
+| Q3-2026 | **record quarter** (Sep + Q3 both all-time highs); satellite shipments rose clearly QoQ as the prior material-lead-time constraint eased | uAnalyze |
+| 9M-2026 net profit / EPS | **NT$5.183 B, +≈20% YoY / EPS NT$4.31** | [uAnalyze 前3季](https://uanalyze.com.tw/articles/5742858454) |
+| Capital raise / capex | **NT$18 B convertible bond** announced; capex held **> NT$20 B/yr across 2026–2028** | uAnalyze |
+| Q4-2026 outlook | targeting a **> NT$20 B** quarterly revenue record (LEO full-load + Apple peak) | [uAnalyze](https://uanalyze.com.tw/articles/8673834722) |
+
+**The Starlink-V3 catalyst, quantified (加深探究, 2026-11-08):** the satellite-board ramp has a concrete per-unit mechanism — the **SpaceX Starlink V3 architecture upgrade at least *doubles* the PCB dollar-content per satellite**, and Taiwan analysts (法人) model the **high-layer/HDI satellite-board share of Compeq's satellite business rising from ≈25% to ≈33%** as V3 scales from **late-2026 into 2027**. This is the content-per-satellite lever (not just unit count) behind the ≈NT$18.5 B → NT$20 B satellite-board trajectory, and the clearest datapoint that the LEO ramp lifting Compeq is *structural* (richer boards per bird) rather than purely cyclical. It remains, however, a **ground/payload PCB** value lift — still one tier below an orbital compute-board assembly ([[synthesis/leo-taiwan-odc-gap]] midstream-C). *(Sep/Oct monthly prints are primary company disclosures via TWSE; the Oct figure is from Compeq's 2026-11-05 announcement. The ~80% LEO-PCB share and Starlink/Kuiper attributions remain analyst/market-level.)*
+
 > The frequently-cited **"~80% global market share in LEO-dedicated PCBs"** is an analyst/market-level figure repeated in Taiwan press; no independent primary audit of the denominator was found on a 2026-06-22 check — treat as directional dominance, not a precise audited share.
 
 ## Competitive advantages
