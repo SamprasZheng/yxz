@@ -1,0 +1,172 @@
+{
+  "run_date": "2026-11-04",
+  "pipeline": "stub-offline",
+  "note": "agents/src/trader/ does not exist in this repo; using yfinance + technical signals stub",
+  "tickers": [
+    {
+      "ticker": "NVDA",
+      "error": "Failed to perform, curl: (7) CONNECT tunnel failed, response 403. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "AAPL",
+      "error": "Failed to perform, curl: (7) CONNECT tunnel failed, response 403. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "TSLA",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "MSFT",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "AMD",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "GOOGL",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "META",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "AMZN",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "PLTR",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "ARM",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "SMCI",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "TSM",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "AVGO",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "QCOM",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    },
+    {
+      "ticker": "INTC",
+      "error": "insufficient_data",
+      "close": null,
+      "prev_close": null,
+      "change_pct": null,
+      "direction": "abstain",
+      "confidence": 0.0,
+      "sizing_sigma": 0.0,
+      "news_momentum": 0.5
+    }
+  ]
+}
