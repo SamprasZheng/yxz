@@ -1,0 +1,46 @@
+{
+  "scan_date": "2026-11-10",
+  "run_mode": "stub-fallback",
+  "blockers": [
+    {
+      "blocker": "trader_pipeline_missing",
+      "detail": "agents/src/trader/ does not exist — only the Firefly (orbital/mission) pipeline lives at agents/src/firefly/. The trader CLI, orchestrator, schemas, and tools referenced in the task prompt have not been built yet.",
+      "impact": "Cannot run `uv run trader scan`. No LLM-generated thesis, confidence, or sizing_sigma values."
+    },
+    {
+      "blocker": "yfinance_network_blocked",
+      "detail": "Yahoo Finance outbound connections return HTTP 403 via the remote-environment proxy (curl: (7) CONNECT tunnel failed, response 403). Retry attempted, same result. All 15 tickers returned null price data.",
+      "impact": "No realized 1-day % change, no backtest, no vol_ratio or market_cap data."
+    }
+  ],
+  "watchlist": {
+    "source": "seed — no prior daily-trader file, core set + AI/semis theme",
+    "tickers": [
+      "NVDA", "AAPL", "TSLA", "MSFT", "AMD",
+      "GOOGL", "META", "AMZN", "PLTR", "AVGO",
+      "ARM", "SMCI", "INTC", "MU", "QCOM"
+    ],
+    "count": 15
+  },
+  "scan_results": {
+    "NVDA": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "AAPL": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "TSLA": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "MSFT": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "AMD":  {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "GOOGL": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "META": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "AMZN": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "PLTR": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "AVGO": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "ARM":  {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "SMCI": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "INTC": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "MU":   {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"},
+    "QCOM": {"direction": null, "confidence": null, "sizing_sigma": null, "error": "pipeline_missing + network_blocked"}
+  },
+  "fom_scores": null,
+  "tier1": [],
+  "tier2": [],
+  "note": "Full stub — both pipeline and market-data blockers prevented any real scoring. FOM formula is documented in wiki/synthesis/daily-trader-2026-11-10.md for future runs."
+}
