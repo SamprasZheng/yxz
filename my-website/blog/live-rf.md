@@ -13,6 +13,32 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-11-11
+
+- Market/Sentiment stance: **neutral** (score -1)
+- Web signals collected: 10
+- Social-search signals collected: 10
+- Updated at: 2026-11-11T02:01:40.628Z
+
+Key web signals:
+- [Dimensionality reduced antenna array for beamforming/steering - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTFByS3pGS3VlR3IxZ0lvS3JIejZfY0dDNllnTzhPUExmbkQ2VmlGbGRFUWFJejUxVXlCVW5ZVm4zckUwUzJxUHFlYzY1aGI2TzJNRmU3dU96LU9mUHEzcVl3?oc=5)
+- [Keysight to Showcase Spectrum Innovations at IMS 2026 - Business Wire](https://news.google.com/rss/articles/CBMirwFBVV95cUxOSlVfQmZYSmczREU1VUdzTHExVnNDVlVkSXhlUHU3aVAtQTB3SlNzUFpVbVJ6Z1k0anh0d2RjcFVxQkZnQ1U5RjBjcGJjTXpfbkIzUllQV0F1X0ZRekpWdkc4M3BLWFFwbUtKR0dHT0U3WG9KdFo4bERSVGpaOTQ0ckx5bG53b1phVXYwSFdFQmctQjJVTTVtTEd4ZXA1V0oyaTdpWXFnMHdUMElKOWY4?oc=5)
+- [Rohde & Schwarz and Pegatron collaborate to validate FR3 phased array technology - Engineer Live](https://news.google.com/rss/articles/CBMipwFBVV95cUxNT0g1SkNpek5jWWlDUUZUMUVrTHVjVnBvZnBUN2lQUW1naWJyOFlwcVFzRTdpakxtWmtvM08xQVdmQVVPNGlaSVp0NnZSaDE4OEJ3ZjFHc3NUeldCT0hZVnBhcmlsYnlfWmczRzMzOEZhUUhDb0pwZlgyZDNWUk9pSmxBZ1NsQldiR1FFejBpUVRXYUlrMzdHRk8yWjE1UWJRSk9GanllNA?oc=5)
+- [Dynamic beam-stabilized, additive-printed flexible antenna arrays with on-chip rapid insight generation - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5M1FDVm9vU0UxZzRWYWxBdEp3ejlQR2M4aXNoWnY5aHNHYWdhZjJPV2VoX1ljV2QyTjJjbVh4aWgxRXFRZWdQUVZFZFJuY1gwN0pnZXpGendIWE5oN2M0?oc=5)
+- [CesiumAstro Selects Keysight Technologies for State-of-the-Art Phased Array Calibration - Military Embedded Systems](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNmpnbnEyblhkZ0ZwRUZLUTVUUVJVVkpRZWtPd2VpVlluYzhhYzdlWHFONmlsNGJEY18xaThwRm5rQjBJcjlpblBsQnpUZjM1dVFSRDdhU20zTDhHZlRWQmFJMnZTSWpJWmpHWElFODROQ1Y1R0E4TjdMa2htWHZ4bEhmNmk4MVRBMHZYY2FKd0FMS0R6Smg3SVVZMTBtcjgyb1pwV1lETVc0Q1BjTWZFYzhHdk9BOFNrNmRWc2ZHVW1FOXJTTzVFOXp2TVBudS0wQy1j?oc=5)
+- [Low-voltage U-shaped RF MEMS shunt switch integration for K-band phased array beam steering - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zZFM5bkJRdm5CaDV2ajNBT01wRjFZeE1zSnRKTHp1RVlRcnR0S2FnbXdIWVBBcVBYMFV5SkdReFVvY2hwbFUtbVRWdmNPdTYzeFpDSVoxLW0xOG5aUFJz?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [#satcom_network - Search / X](https://x.com/hashtag/satcom_network)
+- [Aakash Gupta on X: "Raytheon&#x27;s latest SPY-6 radar contract is worth $3. ...](https://x.com/aakashgupta/status/2032679174716932497)
+- [US Military SATCOM - Facebook](https://www.facebook.com/groups/USMIL.SATCOM/)
+- [PCBsync | Phased array radar antenna PCBs are no ordinary boards. # ...](https://www.instagram.com/p/DeshHpdmBrG/)
+- [SATCOM Services - Facebook](https://www.facebook.com/satcomservices/)
+- [PY6CJ - João Grisi on-line | "A phased array does not create extra ...](https://www.instagram.com/reel/DcBUjfJT-Rj/)
+
+Data quality notes:
+- No major data-quality issue in this run.
+
 ### 2026-11-10
 
 - Market/Sentiment stance: **neutral** (score -1)
@@ -236,27 +262,6 @@ Key web signals:
 - [EnSilica Joins 5G-aNTeNna Consortium to Advance Ka-Band 5G-NTN User Terminals - SatNews Publishers](https://news.google.com/rss/articles/CBMirgFBVV95cUxPYWpodjlhYjBuUEhvM244RlA1Z283VnhuemdYMVc3MHp0MnpnXzNoLXNQZUJzUmNSU01oSDhyM3RTeEc2cG04OHpfWVNYR3J2SHBLRkxvMnB2R2NOcTFhQVYzdUVXMHhVX05yS1VyelRHT1o1TThoeFFiS240Ym51WUhnSFhJM3pveVdjMHpZRUpQbHNRV0h3X3kyQUxDZ3E5NVRTc2Y2UFQ0YWRVOWc?oc=5)
 - [Scaling the RF Digitizer Subsystem—Part 1: How SOMs Accelerate Integration and Deployment - Electronics Media](https://news.google.com/rss/articles/CBMid0FVX3lxTE9JeXo0UFZTXzlsSDM3cm9xWDdFOXdzdUJ2S0NBa1A2TWdtdVlXbTdGQTZ5dDJwNVRMYmVzUi03UEphNWlDYWRjem5tVVNBeFU1WWs2ZW5BRTNZQUZUTXZ0LUFyUGFYbzlRcnUzRVVfYUh1S2FsdEFZ?oc=5)
 - [RF Test Equipment Market Size, Forecasts Report 2026-2035 - Global Market Insights Inc.](https://news.google.com/rss/articles/CBMieEFVX3lxTFBEdlNZLXVUOUZkVUVyNWdqN21lUWNidWRaVkpTSEh1dUF1Qmt3cGxWd3UzcnB0a05rWnJqbnZWSjUtakVyMXJmTk9pNjgwemY4OEplYmNWS3d0SjNfOE1xQzZxSzdwNU5DNUNCTDl0aHFpUGFCVUZwSA?oc=5)
-- [STARE: a semiconductor-integrated transmit-array architecture for 6G beamforming - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTE43RmV6VlN1YUVXZkVGTVJZaUp6dFJOZTVIdWk2XzRqNnFBdm9HU2xTcTdmM0ZEcWxEejNxZW1IN05KcmlMbXlYaFpTWVB3Nk1aMXRIWnN5MXlISnY4bFNR?oc=5)
-- [SWaP benefits of highly integrated multibeam beamformers for payload phased-array antennas - Military Embedded Systems](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNREYtMk56U3dUN3BGd191akVyQjlfdlA2TmdhWEkzQ0JKX21OYW5pOXIyRjZjSzg1WkQ0ZTZGRmVuYTVqZm42Tm5JNHVvNnpxZDhCYzlBeTFMY0pMSndfNFEyTzNJN2RCUVY4cHQ0a2VOWnczbVpKNzEwd090TUxFV1JkaVhXREJ5TzZRSmpPTW5RWDNZMTFEMElGZDRRUU5nYXUzRDVILVB5a3dSSFh2YlpHZHlXRDVoWGxuYVZQNUlKT0gtMHVEUV9oWFA0bXNncnc?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((phased array OR SATCOM OR beamforming OR satellite communication) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(phased%20array%20OR%20SATCOM%20OR%20beamforming%20OR%20satellite%20communication)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-10-30
-
-- Market/Sentiment stance: **neutral** (score 0)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-10-30T02:03:07.174Z
-
-Key web signals:
-- [Dimensionality reduced antenna array for beamforming/steering - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTFByS3pGS3VlR3IxZ0lvS3JIejZfY0dDNllnTzhPUExmbkQ2VmlGbGRFUWFJejUxVXlCVW5ZVm4zckUwUzJxUHFlYzY1aGI2TzJNRmU3dU96LU9mUHEzcVl3?oc=5)
-- [EnSilica Joins 5G-aNTeNna Consortium to Advance Ka-Band 5G-NTN User Terminals - SatNews Publishers](https://news.google.com/rss/articles/CBMirgFBVV95cUxPYWpodjlhYjBuUEhvM244RlA1Z283VnhuemdYMVc3MHp0MnpnXzNoLXNQZUJzUmNSU01oSDhyM3RTeEc2cG04OHpfWVNYR3J2SHBLRkxvMnB2R2NOcTFhQVYzdUVXMHhVX05yS1VyelRHT1o1TThoeFFiS240Ym51WUhnSFhJM3pveVdjMHpZRUpQbHNRV0h3X3kyQUxDZ3E5NVRTc2Y2UFQ0YWRVOWc?oc=5)
-- [Scaling the RF Digitizer Subsystem—Part 1: How SOMs Accelerate Integration and Deployment - Electronics Media](https://news.google.com/rss/articles/CBMid0FVX3lxTE9JeXo0UFZTXzlsSDM3cm9xWDdFOXdzdUJ2S0NBa1A2TWdtdVlXbTdGQTZ5dDJwNVRMYmVzUi03UEphNWlDYWRjem5tVVNBeFU1WWs2ZW5BRTNZQUZUTXZ0LUFyUGFYbzlRcnUzRVVfYUh1S2FsdEFZ?oc=5)
-- [Mobile World Congress 2026 roundup - Electrical Engineering News and Products - eeworldonline.com](https://news.google.com/rss/articles/CBMic0FVX3lxTE5JM2g0MjJqNkd6Tmo2MlgxdTJ4RkZYVjJqcTBsVVF4aXJsWGMwQ1lvUThkQy1DajNEWUpoOWdnZ3hRZWZROWJ3bHZQMVMxNDdjNXNCVTF4WXR2cmRBQW0yUVhnN3lWdGkxb2xPZmgzakl0M0U?oc=5)
 - [STARE: a semiconductor-integrated transmit-array architecture for 6G beamforming - Nature](https://news.google.com/rss/articles/CBMiX0FVX3lxTE43RmV6VlN1YUVXZkVGTVJZaUp6dFJOZTVIdWk2XzRqNnFBdm9HU2xTcTdmM0ZEcWxEejNxZW1IN05KcmlMbXlYaFpTWVB3Nk1aMXRIWnN5MXlISnY4bFNR?oc=5)
 - [SWaP benefits of highly integrated multibeam beamformers for payload phased-array antennas - Military Embedded Systems](https://news.google.com/rss/articles/CBMi0gFBVV95cUxNREYtMk56U3dUN3BGd191akVyQjlfdlA2TmdhWEkzQ0JKX21OYW5pOXIyRjZjSzg1WkQ0ZTZGRmVuYTVqZm42Tm5JNHVvNnpxZDhCYzlBeTFMY0pMSndfNFEyTzNJN2RCUVY4cHQ0a2VOWnczbVpKNzEwd090TUxFV1JkaVhXREJ5TzZRSmpPTW5RWDNZMTFEMElGZDRRUU5nYXUzRDVILVB5a3dSSFh2YlpHZHlXRDVoWGxuYVZQNUlKT0gtMHVEUV9oWFA0bXNncnc?oc=5)
 
