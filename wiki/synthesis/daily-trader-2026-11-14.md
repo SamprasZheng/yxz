@@ -117,7 +117,7 @@ agents/src/trader/
     └── yfinance_client.py  # price fetch with retry + proxy fallback
 ```
 
-The CLI should emit JSON to `agents/outputs/scan-<date>.json` matching the schema in `agents/outputs/scan-2026-11-14.json`.
+The CLI should emit JSON to `agents/outputs/scan-<date>.json` (gitignored by design; inspect locally after each run).
 
 **Alternative data sources (proxy-compatible):**
 - `alpha_vantage` — free tier, 25 req/day
@@ -138,4 +138,4 @@ The CLI should emit JSON to `agents/outputs/scan-<date>.json` matching the schem
 
 ## Scan JSON
 
-See [[agents/outputs/scan-2026-11-14.json]] (stub, all fields empty due to blockers).
+Stub JSON written to `agents/outputs/scan-2026-11-14.json` (gitignored; inspect locally). All fields empty due to blockers.
