@@ -159,6 +159,16 @@ A 向外抓取 / 數據查核比對 pass re-verifying the cluster's fastest-movi
 
 No layer's *architecture* changed; the four-layer stack thesis holds and its evidence is re-dated to 2026-Q4.
 
+## 14. 2026-11-14 re-check (向外抓取 / 數據查核比對)
+
+A focused re-verification of §13's three fastest-moving dated claims, now that the Article 50 marking cliff is imminent:
+
+1. **The EU Article 50(2) marking cliff is confirmed and now ~18 days out (2026-12-02) — and its scope is narrower than the usual reading.** The Digital Omnibus grace covers *only* the machine-readable-marking obligation for generative-AI systems placed on the market **before 2026-08-02**; it does **not** cover systems placed on/after that date (no grace at all), the Article 50(1) chatbot/AI-interaction-disclosure duty, or the Article 50(4) deepfake-labelling duty — all live since 2026-08-02. Cross-verified against the Commission's own transparency fact sheet + post-Omnibus deadline breakdowns. For a Mission Desk agent this is clean: build provenance-complete (Layer-1 `evidence_hash` + Layer-4 `policy_preset_hash`) and the machine-readable marking is satisfied on every track from day one — the imminent cliff only bites retrofit deployers. Detail on [[concepts/agentic-provenance]] §2 + §2.5.
+2. **Nemotron 4 still has no confirmed release (re-checked 2026-11-14)** — no reporting newer than mid-August 2026, no model card / weights / date / size confirmation, and the "late fall 2026" window is now largely elapsed. The §5 "ceiling rising" read is downgraded from imminent to *projected*; the live tier-3 ceiling stays **Ultra 550B** and the cost-spine math is unchanged. See [[concepts/tiered-inference]] §"Nemotron 4 status re-check (2026-11-14)".
+3. **C2PA v2.4 (2026-04-21) re-confirmed as the latest** — no v2.5; the C2PA Content Credentials Deployment Guidance (2026-07) still describes the standard as on v2.4. The Layer-1 `evidence_hash` / Layer-4 `policy_preset_hash` → C2PA content-hash / software-assertion mapping is unchanged.
+
+No layer's *architecture* changed; the four-layer thesis holds and its evidence is re-dated to 2026-11.
+
 ## See also
 
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — canonical Mission Desk plan; this synthesis is the trust-architecture companion
