@@ -1,0 +1,26 @@
+{
+  "run_date": "2026-11-15",
+  "status": "STUB — pipeline not found + market data blocked",
+  "blockers": [
+    {
+      "component": "trader_pipeline",
+      "detail": "agents/src/trader/ does not exist — only agents/src/firefly/ is present. The trader CLI, orchestrator, schemas, and tools referenced in the task prompt have not yet been built."
+    },
+    {
+      "component": "yfinance",
+      "detail": "yfinance 1.8.0 installed to /tmp/yf_site but imports fail: numpy 2.5.5 was compiled for CPython 3.13 while the environment runs Python 3.11, so _multiarray_umath is unavailable."
+    },
+    {
+      "component": "yahoo_finance_api",
+      "detail": "Direct HTTPS to query1.finance.yahoo.com returns 403 from the HTTPS_PROXY agent (non-financial-data policy). uv-based fallback LLM_BACKEND=disabled TRADER_OFFLINE=1 also inapplicable — CLI entrypoint does not exist."
+    }
+  ],
+  "seed_watchlist": [
+    "NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN",
+    "PLTR", "CRWD", "SMCI", "ARM", "AVGO", "TSM", "INTC"
+  ],
+  "verdicts": null,
+  "scan_tiers": null,
+  "fom_table": null,
+  "note": "Full pipeline stub — all numeric outputs are null. No order placement, no money movement."
+}
