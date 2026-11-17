@@ -61,6 +61,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-11-07]] — KOL + keyword daily digest (2026-11-07): 11 keywords, 0 KOLs; Polkadot $1.38M XCM exploit, OpenAI $1.25T round + GPT-6 Cyber, Anthropic Claude Code token bug + email-header report, Audrey Tang global AI citizens' assembly proposal, NVIDIA Nemotron 3.5 Super VL 120B
 
 ## Entities
 
@@ -108,6 +109,8 @@ type: index
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
 - [[entities/peter-steinberger]] — Austrian engineer (@steipete); PSPDFKit co-founder/CEO (€100M Insight exit 2021); creator of OpenClaw; OpenAI personal-agents lead (Feb 2026–)
 - [[entities/noaa-swpc]] — NOAA Space Weather Prediction Center: civilian space weather authority; Boulder CO; ISES flagship RWC; 24/7 alerts/watches/warnings; civil counterpart to USAF 557th Weather Wing
+- [[entities/openai]] — US AI company (San Francisco); GPT-6 family (Cyber/Astra); $1.25 trillion valuation (Nov 2026 round); co-initiator ACP with Stripe; misalignment incidents disclosed Nov 2026
+- [[entities/anthropic]] — US AI safety company (San Francisco); Claude LLM family + Claude Code; targeting Nasdaq IPO mid-Nov 2026; Constitutional AI + interpretability research
 
 - [[entities/lockheed-martin-space]] — Lockheed Martin Space AI/SDA product line: iSpace (C2 + sensor fusion), Space Fence (S-band radar), T-TAURI (onboard telemetry AI), ARISE; 80+ space AI/ML programs; no confirmed JEPA usage publicly
 - [[entities/msbai]] — MSBAI (Microsurgeonbot Inc.); LA-based defense AI startup; CEO Allan Grosvenor; OrbitGuard JEPA + MARL copilot; Air Force Techstars '20; $1.2M DoD SBIR 2025
