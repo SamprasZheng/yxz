@@ -1,0 +1,37 @@
+{
+  "run_date": "2026-11-08",
+  "mode": "stub-offline",
+  "blocker": [
+    "agents/src/trader/ pipeline does not exist in this repository (only Firefly lives under agents/src/)",
+    "Yahoo Finance blocked by outbound proxy: HTTP 403 on CONNECT tunnel to query1.finance.yahoo.com:443"
+  ],
+  "fallback": "TRADER_OFFLINE=1 — no live price data fetched; all scan verdicts are stub/placeholder",
+  "watchlist": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN", "PLTR", "AVGO", "NFLX", "CRM", "ORCL", "NOW", "ARM"],
+  "scan_verdicts": [
+    {"ticker": "NVDA",  "direction": "long",    "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "AAPL",  "direction": "neutral",  "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "TSLA",  "direction": "long",    "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "MSFT",  "direction": "long",    "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "AMD",   "direction": "long",    "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "GOOGL", "direction": "neutral",  "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "META",  "direction": "long",    "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "AMZN",  "direction": "long",    "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "PLTR",  "direction": "long",    "confidence": null, "sizing_sigma": null, "note": "wiki-informed: Q2-2026 rev $1.935B +93% YoY, raised FY26 guidance to $8.15B"},
+    {"ticker": "AVGO",  "direction": "long",    "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "NFLX",  "direction": "neutral",  "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "CRM",   "direction": "neutral",  "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "ORCL",  "direction": "long",    "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "NOW",   "direction": "long",    "confidence": null, "sizing_sigma": null, "note": "stub"},
+    {"ticker": "ARM",   "direction": "long",    "confidence": null, "sizing_sigma": null, "note": "stub"}
+  ],
+  "fom_formula": "FOM = 0.4 * confidence + 0.3 * normalized_sizing_sigma + 0.2 * recent_hit_rate + 0.1 * news_momentum",
+  "fom_table": null,
+  "prior_backtest": null,
+  "meta": {
+    "pipeline_version": "stub-v0",
+    "trader_pipeline_path": "agents/src/trader/ — NOT FOUND",
+    "yfinance_version": "1.8.0",
+    "python_version": "3.13",
+    "proxy_block": "403 CONNECT tunnel to yahoo.com"
+  }
+}
