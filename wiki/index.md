@@ -62,8 +62,11 @@ type: index
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
 
+- [[sources/kol-digest-2026-11-13]] — KOL + keyword daily digest (automated): 11 keywords, 0 KOLs, ~43 items; top signals: Anthropic IPO roadshow (Nasdaq ANT), OpenAI $10B/quarter, Polkadot Ref 1966 validator cut 600→500 (2026-11-13)
+
 ## Entities
 
+- [[entities/anthropic]] — US AI safety company; Claude model family + Claude Code; IPO roadshow Nov 2026 (Nasdaq ANT)
 - [[entities/polkasharks]] — Taiwanese Polkadot educator; vocus.cc/salon/Polkasharks; Polkadot Decoded & PolkaSharks News Brief series
 - [[entities/polkadot]] — Layer-0 relay chain + parachain protocol; DOT token; JAM roadmap; DOT hard cap March 2026
 - [[entities/mythical-games]] — Web3 gaming studio; migrated ETH→Polkadot 2024; MYTH token; NFL Rivals, Nitro Nation
