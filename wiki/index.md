@@ -96,6 +96,7 @@ type: index
 - [[entities/shawn-tabrizi]] — Polkadot Technical Fellowship Architect; PBA lead instructor; coined "Polkadot Cloud" framing; "JAM is the beginning of the Polkadot cloud"; shawntabrizi.com
 - [[entities/bill-laboon]] — Web3 Foundation VP of Ecosystem (promoted Nov 2025); former Director of Education; launched Polkadot Agents Program; ex-CS lecturer at U of Pittsburgh
 - [[entities/dotleap-gbaci]] — DotLeap newsletter by gbaci/Gilbert Bassey; leading English weekly Polkadot ecosystem digest; newsletter.dotleap.com
+- [[entities/anthropic]] — US AI safety company; Claude model family (Haiku/Sonnet/Opus/Fable/Mythos lineage); Claude Code CLI/SDK; IPO ticker ANT (Nov 2026); $33.24B 9-month revenue
 - [[entities/sampras]] — Sampras Zheng; RF/hardware engineer, Polkadot ambassador, wiki owner, builder of Jamia & Spacesharks myGPTs
 - [[entities/audrey-tang]] — Former Taiwan Digital Minister; co-author of *Plurality*; civic-tech pioneer
 - [[entities/project-liberty]] — Sponsor of DSNP and cross-platform user-owned social networking push
