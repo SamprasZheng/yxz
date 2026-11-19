@@ -33,6 +33,7 @@ type: index
 - [[sources/nemoclaw-build-a-claw-portal-2026]] — NVIDIA "Build-a-Claw" onboarding portal: Brev / DGX Spark / Jetson install paths (2026)
 - [[sources/awesome-nemoclaw-voltagent-2026]] — VoltAgent curated NemoClaw presets, recipes, plugin layout (2026)
 - [[sources/noaa-swpc-product-catalog]] — NOAA SWPC product and data catalog: full JSON URL table with cadences for all operational space weather feeds (ingested 2026-05-24)
+- [[sources/kol-digest-2026-11-18]] — KOL + keyword digest 2026-11-18 (automated): Anthropic IPO imminent (Fable 5.2/Mythos 5.2, ANT ticker), Claude Code v2.1.317–319, Polkadot Referendum 1969 (500→400 validators today), OpenAI ChatGPT Wallet + Cursor cutoff, 0 KOLs / 11 keywords / ~40 items
 
 - [[sources/msbai-orbitguard-dod-contract-2025]] — MSBAI OrbitGuard $1.2M DoD SBIR (Sept 2025): JEPA + MARL neuro-symbolic SDA copilot; 94–98% lab accuracy across ~15,000 objects; AMOS 2025 poster; CEO Grosvenor verbatim quote (ingested 2026-05-24)
 - [[sources/scnoc-agentic-sun-2025]] — SCNOC-Agentic paper (Electronics 2025, 14(16), 3320): first LLM multi-agent framework for satellite communications NetOps; four components (intent refinement / multi-agent workflow / long-term memory / graph-RAG); qwen2.5-70B improved network task planning accuracy 15.6%→32.2% (ingested 2026-05-24)
@@ -95,6 +96,7 @@ type: index
 - [[entities/shawn-tabrizi]] — Polkadot Technical Fellowship Architect; PBA lead instructor; coined "Polkadot Cloud" framing; "JAM is the beginning of the Polkadot cloud"; shawntabrizi.com
 - [[entities/bill-laboon]] — Web3 Foundation VP of Ecosystem (promoted Nov 2025); former Director of Education; launched Polkadot Agents Program; ex-CS lecturer at U of Pittsburgh
 - [[entities/dotleap-gbaci]] — DotLeap newsletter by gbaci/Gilbert Bassey; leading English weekly Polkadot ecosystem digest; newsletter.dotleap.com
+- [[entities/anthropic]] — US AI safety company; Claude model family (Haiku/Sonnet/Opus/Fable/Mythos lineage); Claude Code CLI/SDK; IPO ticker ANT (Nov 2026); $33.24B 9-month revenue
 - [[entities/sampras]] — Sampras Zheng; RF/hardware engineer, Polkadot ambassador, wiki owner, builder of Jamia & Spacesharks myGPTs
 - [[entities/audrey-tang]] — Former Taiwan Digital Minister; co-author of *Plurality*; civic-tech pioneer
 - [[entities/project-liberty]] — Sponsor of DSNP and cross-platform user-owned social networking push
