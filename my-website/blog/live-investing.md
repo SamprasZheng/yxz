@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-11-19
+
+- Market/Sentiment stance: **neutral** (score 1)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-11-19T03:43:17.759Z
+
+Key web signals:
+- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
+- [Wintermute Weekly Market Report: Bitcoin Breaks Below 200-Week Moving Average, Defensive Strategies Amid Macro Rate Hik… - 深潮TechFlow](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1XaU1PSUJ5b0R5RlFCYWUzWHhoX1lYeXJXRVBvZzlOeF9PNG82eTNvOG1IY3lLS2VUSmJpT1JrZ00wQnk2eElSQmJ1bjVrRVBBY2RHZC1tYm9mTDJY?oc=5)
+- [Bitcoin Volatility Trends: A Deep Dive into Market Dynamics and Risk - S&P Global](https://news.google.com/rss/articles/CBMingFBVV95cUxOcDBGbzdYLUlkMzJGdHk0blJkbjRxbGp0dEk3a2tmQXlEMlNQLTFDOUVsQTJxd0dkdmVrSUZqVThzVzBrMmJad0ZaWHpzLTdrcFEtRE1sZW42cjBSeUVyLXpqenFpMzlKT1UxVDFkWmNFV0FEajRtekRNNHI2MEpwUjNrOThsUE10cm9JaTFKLXlvYUY4WUZuWllxX3Nfdw?oc=5)
+- [Will 2026 Tame the Bull Market? - Morgan Stanley](https://news.google.com/rss/articles/CBMilgFBVV95cUxNRFlzYUhheG1zZjBzUXpiMTdoR19hdnF5UklXQU11UUtZdXhRVWlSbVF2X01wZjJELUUtdDItZXhWOE4xeFBuSW5MS1VabDA4VVFGUTJoVHB5T281cDcybkhxcTB5eUhSMHktTUJrdVprWVlMcWthQWRVR0N2R1ZxQTd2QXE3QmMxSmFCeEVIYnZQVzNSdnc?oc=5)
+- [US Fed Holds Rates — Bitcoin Stays Near $64K, S&P 500 Posts Worst-Ever ‘Fed Day’ Reaction - Bitcoin Foundation](https://news.google.com/rss/articles/CBMidkFVX3lxTE9nR240eElISWlnakl2ZXhIY3NVS3lzSEttT2xnY1N4YmtIV3dhVVFTUkFkNjNMTWg5R3pyZXpZNmtPcGhlTWNscEdqSjR6UVEtcGtKVUY1dUxVUUNFTDZFZHN1LXhQNUU0M2p1czlpUHk3ZXJTNlE?oc=5)
+- [Why you shouldn’t worry about AI eating the stock market, top analyst says. The U.S. economy is ‘about to take off’ - Fortune](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMjU1aHpycm13bEFRellsUTJBbjg5N2JjbmR0WFphd28yVGNRMVFXR0pmRmgwS2xRdEZZV2tZWnZxSG0wUGpTTThpV0FJT0FvSENqODZnRXNBNjZnWUNXSGRPT2RvRUY2X2lKem9EVXB3dzNQcVVrVXhiLXdsUTJQWjNFcVc4UjN1Z2g4N09ZSzVIcUlycm9Ca0FfZXYydzNyS0tvOVJSRmQ3T3c?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-11-18
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -230,27 +251,6 @@ Data quality notes:
 - Web signals collected: 10
 - Social-search signals collected: 0
 - Updated at: 2026-11-08T01:39:07.496Z
-
-Key web signals:
-- [Crypto Market Rally: Why Bitcoin, Ethereum and XRP Are Surging Today - TradingView](https://news.google.com/rss/articles/CBMixAFBVV95cUxOQzhZajVlLXNPLUg0X0dmSmhyRkRJUGsyT1N6YnZiSUU5U1FDLXoyT3g2TlpQTktVRFhYRXdJeUpyd3NrSWVMazdWdHViOG1GQmZzSjVNX3RJUHlEcUJUVUU4cTlsTzFCMkdkQ1RHbkJsR2hjQzhnd3RhcVFJR0pmaS1rYWN1RFlEVFpjVE9rbEcxbXdzcUJEamJhc1NfNk05d1kwSHRCQVEyd0JOUjBCZ2pHaDd2U1RNbWNSZjctUU1WSm9K?oc=5)
-- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
-- [Bitcoin price analysis: Here's why BTC isn't rallying with S&P 500, Nasdaq. - CoinDesk](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNd2hneXMxOGtCLXEtdDltNmxCOEpRNHRoeWZJX3ctWVBNT1A1R0FlWks4Q1NkYW85N0JRRGlLRS0ydzZmRUdsc2xNbExUNnBNV0F2ODNYa1lqbWlTZUhzODZ3R0ZGQjJqRTI4RU9qYVRHcno2YzV1SzVRS21nSWVrZ3lhQWpPdFM0Z0NPUHJnTGxzaEw1MWNhQnBPOVRleHVfVUJMcFFtZFdXWTVmbG1HTU9xSHpHbE1Kam5Zc2x4eEhySkRXZjhucWpyZWZRU1REUVJLemxLeXMzb1czMnFz?oc=5)
-- [Bitcoin Volatility Trends: A Deep Dive into Market Dynamics and Risk - S&P Global](https://news.google.com/rss/articles/CBMingFBVV95cUxOcDBGbzdYLUlkMzJGdHk0blJkbjRxbGp0dEk3a2tmQXlEMlNQLTFDOUVsQTJxd0dkdmVrSUZqVThzVzBrMmJad0ZaWHpzLTdrcFEtRE1sZW42cjBSeUVyLXpqenFpMzlKT1UxVDFkWmNFV0FEajRtekRNNHI2MEpwUjNrOThsUE10cm9JaTFKLXlvYUY4WUZuWllxX3Nfdw?oc=5)
-- [The BTC price is outperforming Nasdaq, S&P 500 and correlating with gold just when it matters: Crypto Daily - CoinDesk](https://news.google.com/rss/articles/CBMiygFBVV95cUxPOXFVQWY0ZVY5YkEwQ3I4OFBaM0FjMVdHVU9yYy1RYk9UV25wN0F4Vkd0NkJmZkF2QVd3QjJwUDd5NW1QOHVCVjVyNURyMjNRQ0NYLUo5Vy0wMTBJMUZUWWtFZnY5MnRWMmdEYzhmMVJieko3ejAyQ2IteGY2VzhhNzVWZVlRVUplT1lfV1RTbW9ZVDQzNGlCT0Jvb19hb1Y5X2U0WDJsY0t6cnRwajVyVkZSMGJPVHc0OXBpVktBLWxLZ1MtT1VFR2x3?oc=5)
-- [Will 2026 Tame the Bull Market? - Morgan Stanley](https://news.google.com/rss/articles/CBMilgFBVV95cUxNRFlzYUhheG1zZjBzUXpiMTdoR19hdnF5UklXQU11UUtZdXhRVWlSbVF2X01wZjJELUUtdDItZXhWOE4xeFBuSW5MS1VabDA4VVFGUTJoVHB5T281cDcybkhxcTB5eUhSMHktTUJrdVprWVlMcWthQWRVR0N2R1ZxQTd2QXE3QmMxSmFCeEVIYnZQVzNSdnc?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-11-07
-
-- Market/Sentiment stance: **neutral** (score 3)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-11-07T02:07:17.702Z
 
 Key web signals:
 - [Crypto Market Rally: Why Bitcoin, Ethereum and XRP Are Surging Today - TradingView](https://news.google.com/rss/articles/CBMixAFBVV95cUxOQzhZajVlLXNPLUg0X0dmSmhyRkRJUGsyT1N6YnZiSUU5U1FDLXoyT3g2TlpQTktVRFhYRXdJeUpyd3NrSWVMazdWdHViOG1GQmZzSjVNX3RJUHlEcUJUVUU4cTlsTzFCMkdkQ1RHbkJsR2hjQzhnd3RhcVFJR0pmaS1rYWN1RFlEVFpjVE9rbEcxbXdzcUJEamJhc1NfNk05d1kwSHRCQVEyd0JOUjBCZ2pHaDd2U1RNbWNSZjctUU1WSm9K?oc=5)
