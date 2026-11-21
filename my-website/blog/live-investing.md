@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-11-21
+
+- Market/Sentiment stance: **neutral** (score 1)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-11-21T03:19:00.972Z
+
+Key web signals:
+- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
+- [Bitcoin Volatility Trends: A Deep Dive into Market Dynamics and Risk - S&P Global](https://news.google.com/rss/articles/CBMingFBVV95cUxOcDBGbzdYLUlkMzJGdHk0blJkbjRxbGp0dEk3a2tmQXlEMlNQLTFDOUVsQTJxd0dkdmVrSUZqVThzVzBrMmJad0ZaWHpzLTdrcFEtRE1sZW42cjBSeUVyLXpqenFpMzlKT1UxVDFkWmNFV0FEajRtekRNNHI2MEpwUjNrOThsUE10cm9JaTFKLXlvYUY4WUZuWllxX3Nfdw?oc=5)
+- [U.S. CPI rose stronger than expected 0.4% in October; core rate rose 0.3% - CoinDesk](https://news.google.com/rss/articles/CBMiswFBVV95cUxPdHFNQ2h0OXJRbGQxN2dWLVp5bV96cVdoejZvN0U4WmlWVmw5dTZYbWtraGpleXA1REZtaERNRDE5ODg4TFpQQk0xZjd2bWR6WHptbDBSM3UwbWJxbGVNdm9SbFVoUVFXVFlnQ3V4TFk5RXBLS24yUHExT2FBc2FjM0xYclpZUFZhUFJNTURKUkNPUV90QXJHQkhNLTROd05DNHJsMmttWjVlb1JVZU9zWGdYTQ?oc=5)
+- [Will 2026 Tame the Bull Market? - Morgan Stanley](https://news.google.com/rss/articles/CBMilgFBVV95cUxNRFlzYUhheG1zZjBzUXpiMTdoR19hdnF5UklXQU11UUtZdXhRVWlSbVF2X01wZjJELUUtdDItZXhWOE4xeFBuSW5MS1VabDA4VVFGUTJoVHB5T281cDcybkhxcTB5eUhSMHktTUJrdVprWVlMcWthQWRVR0N2R1ZxQTd2QXE3QmMxSmFCeEVIYnZQVzNSdnc?oc=5)
+- [US Fed Holds Rates — Bitcoin Stays Near $64K, S&P 500 Posts Worst-Ever ‘Fed Day’ Reaction - Bitcoin Foundation](https://news.google.com/rss/articles/CBMidkFVX3lxTE9nR240eElISWlnakl2ZXhIY3NVS3lzSEttT2xnY1N4YmtIV3dhVVFTUkFkNjNMTWg5R3pyZXpZNmtPcGhlTWNscEdqSjR6UVEtcGtKVUY1dUxVUUNFTDZFZHN1LXhQNUU0M2p1czlpUHk3ZXJTNlE?oc=5)
+- [Markets' 2026 watch list: Fed succession, political risk and AI of course - Reuters](https://news.google.com/rss/articles/CBMigAFBVV95cUxOWTB0WC1hQmlVZVFLODhLX243UEoyODdSYlZ2M0tyUHJGalBONEc2Z2hjYWRaSmxMNmhoRzFtUHdqS0hORHJtTHREVTlXVEtqUEE4Um8zM3k1Mm1pb2FzWXh4aFRkd1otUzZzbXJkRkttenNKYlZ1TGtra29xWDUzQw?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-11-20
 
 - Market/Sentiment stance: **neutral** (score 2)
@@ -243,26 +264,5 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 
 Data quality notes:
 - Social-search fetch failed: fetch failed
-- No social-search signals, fallback to empty set.
-
-### 2026-11-09
-
-- Market/Sentiment stance: **neutral** (score 1)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-11-09T01:47:52.307Z
-
-Key web signals:
-- [US Jobs Smash Forecasts, Sending Gold and Bitcoin Lower - BeInCrypto](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83RW4takp3TkVNM25zOEh0Z3V2b1l2TmZ6b1V2RHRFc19XamVLUUhSbVhFbEI5Q1AxRGU3dGNsOWhsNjN3aTd6dm9DMHFJY1ZERzlDSFR6azVQVi0zRkVjcFdjX1FSbUk?oc=5)
-- [US market crash: Nasdaq tumbles, Bitcoin falls below $77,000 - UkrMedia News](https://news.google.com/rss/articles/CBMijwFBVV95cUxNR1VzVW1LQWxfRWdtQkFIOFF3QWhRbHAzVFpDaDdRcnpYdm1pMjMtWGV6NzRWWmJ0ckhScmVyb0VPT2dhbmszYklKUnMwMlBVcGg0WlZKQ21FZTdvTFZrbEQ4aVYxVllkZ3NqLVdHRmt4YllDWGk2bHpuNTZoWDFSQS1yYk1BUDdSUE5reVE0cw?oc=5)
-- [Why U.S. Macroeconomic Data Drives Bitcoin Price in 2026: Inflation, Interest Rates, and Liquidity Impact Explained - Bitcoin Foundation](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ1lya1lkRlFlcEJYeHNVUHNQbGtaQ2FIMEJIWFN5UEVPWklnMnNfRDIyeUFiRElnejliX0I5QnhJdTZ3VEhtNUxURjRVOEN2LVlpVVpMM0IzYnZQTjg5UmtYU21tNnJET1Jid0JfUVZucUNlbjNrOUIwTmE2THZ1V1RZeWN1V2xQM0hhcGxRZGJkSjVGZGFmMXhwWGZGSi0zeGVVVEJHckFjMXJVVUFua0xBOXEtbk1yUDBuaDlxVkI2cFFhN2huOEs0Y1haWGVrTlZoX0lmc0hFa2o3SjRkSVNWWVRfam5qVW9r?oc=5)
-- [Bitcoin Volatility Trends: A Deep Dive into Market Dynamics and Risk - S&P Global](https://news.google.com/rss/articles/CBMingFBVV95cUxOcDBGbzdYLUlkMzJGdHk0blJkbjRxbGp0dEk3a2tmQXlEMlNQLTFDOUVsQTJxd0dkdmVrSUZqVThzVzBrMmJad0ZaWHpzLTdrcFEtRE1sZW42cjBSeUVyLXpqenFpMzlKT1UxVDFkWmNFV0FEajRtekRNNHI2MEpwUjNrOThsUE10cm9JaTFKLXlvYUY4WUZuWllxX3Nfdw?oc=5)
-- [Will 2026 Tame the Bull Market? - Morgan Stanley](https://news.google.com/rss/articles/CBMilgFBVV95cUxNRFlzYUhheG1zZjBzUXpiMTdoR19hdnF5UklXQU11UUtZdXhRVWlSbVF2X01wZjJELUUtdDItZXhWOE4xeFBuSW5MS1VabDA4VVFGUTJoVHB5T281cDcybkhxcTB5eUhSMHktTUJrdVprWVlMcWthQWRVR0N2R1ZxQTd2QXE3QmMxSmFCeEVIYnZQVzNSdnc?oc=5)
-- [Bitcoin price analysis: Here's why BTC isn't rallying with S&P 500, Nasdaq. - CoinDesk](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNd2hneXMxOGtCLXEtdDltNmxCOEpRNHRoeWZJX3ctWVBNT1A1R0FlWks4Q1NkYW85N0JRRGlLRS0ydzZmRUdsc2xNbExUNnBNV0F2ODNYa1lqbWlTZUhzODZ3R0ZGQjJqRTI4RU9qYVRHcno2YzV1SzVRS21nSWVrZ3lhQWpPdFM0Z0NPUHJnTGxzaEw1MWNhQnBPOVRleHVfVUJMcFFtZFdXWTVmbG1HTU9xSHpHbE1Kam5Zc2x4eEhySkRXZjhucWpyZWZRU1REUVJLemxLeXMzb1czMnFz?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((inflation OR fed OR bitcoin OR ethereum OR SP500 OR Nasdaq) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(inflation%20OR%20fed%20OR%20bitcoin%20OR%20ethereum%20OR%20SP500%20OR%20Nasdaq)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
 - No social-search signals, fallback to empty set.
 
