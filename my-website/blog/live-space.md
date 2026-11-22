@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-11-22
+
+- Market/Sentiment stance: **neutral** (score 1)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-11-22T02:26:04.340Z
+
+Key web signals:
+- [When satellites become AI agents, space data centers become the next AI frontier - CIO](https://news.google.com/rss/articles/CBMivAFBVV95cUxPa2VSekJYdFNTYy1id2l6N25oX19BQ0ZkdDducXl2VFJlRmtkYWNFVTRhLXRlNzZpaWR0MjJJb1Qwd1BGNFZLR3ViWVZVSThCUjdLaDRneTg3TXRGVXJOYl9mQU05Y1dFY3EtTy1Kdmp3ZWJzWWwyWE4wZ2RNM3dwQnljMkpubWZDZkJtWlpiTktRZmUtYUV2ZHlIdmVYUU8wREJ2TmxWZHdfSUcyTkNIS2ZveUNWTjk2b2JHMA?oc=5)
+- [Are Orbital Data Centers the Next Frontier of AI Infrastructure? - Via Satellite](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdndDNk5CWFRGaV8wcWFoQkFLVzU0WUdoa1NRaHpPMlRGVGZQVFc1aklYTlF1RWFIMDRLbXF0N2ZaelhQbGxfNHVCWm8yTEpYUDVSelB3VWFqZklwMDdSMWpnc1NMeXhGYmcxNUgta3VMWllITkZLSU1iMVgyOVpXN3k5Ulg0Qm1yeEsxbldVSVFScENxa2dYUXA0aTdueXBnal9rclRaY0VPMlBOaXNfbkZScXRNRTFo?oc=5)
+- [Orbital data centers? Or just distributed LEO compute? - Data Center Dynamics](https://news.google.com/rss/articles/CBMiogFBVV95cUxQQU50MnNYeUN3OUdKd21Md0lkR21PNXhrU0Z3TEF3RWRnenFfaGFKY0V4anJaUy1HWEZUSmtZR3VxbXNfVVNfckppVVRmQ0R3eUp5RFRuSl91bkxoTldmd0c3TTZ2REdPMlpkQzE1aFN4eXpOTXM4SURyM3ZtSl96aUNpc1RfNm1NcTJXZzhMNG1lNVdkWkNWbjBZalpiTU8xWnc?oc=5)
+- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
+- [Comparing Space-Driven Data Center Strategies: Modular Satellites vs. Integrated Rocket Nodes - Data Center Frontier](https://news.google.com/rss/articles/CBMi8gFBVV95cUxPZ1o5RmRUUkc0SzFERlpFekRXZFpPTjNKbW4zMkp2Y00tTl8xQW1ZQTZ2RFVaWHZVbXJxdGctaHpubjVndGNjbGg5MTNwa1dfZGlmSldVYlhOeUZqWDNsVlpaQ2s5UjVfSDRabndYNGE2YUxnWGpNZ2k1dGlnVHFzeV9obWd4U3JOZDY4NmxVdjBjS1VudDhxR0xGQ1ZpVmxuR3BUUUJodUphS1AwU2d5Z1A3eEUwaHdCWnN4NzU4Qk53UERvRDZKYmQxTXU5ZnU5blByWWhCaU9wc2tsbUp5X19qV0VMT2JVemY2bXRwTEM2Zw?oc=5)
+- [Four things we’d need to put data centers in space - MIT Technology Review](https://news.google.com/rss/articles/CBMipAFBVV95cUxOLUlRTUJSdlozb0JUdWdjWjlFQ2hVNmFNRklTZXU1OVhsR0Y2aS0xSU05d3lyd2pyT041QTdBeG1VYndOTkx6MEZwaWJWSkkyZTVKSDA4RFBUYWppcm5YdEFTOVNRcExsSGRiQXdtQUZHclA0Q3JDNFhNeXRILWtjS0gtaTBSdEhpU09NV0VBdl92RFJISkhOMHBGQkNWQzRvamtyTtIBqgFBVV95cUxPd21CU0lVOUdrNVZFZFVGSTc2eHdTWlF5WUY5UGRtOUdTU2p3VmVSYWFRM3EyWC1ESDFCSWduR1J4ekwza29tV2xJVE1tbTU0bTd2dGdiMlRNWlpXZmh2a1ZfUTEzSE10R3lZRGRlVktyc3dSUnMzUk5ubm90WlVPMlZjMG1CaFE4MlJqemQyUkRlVTJ3UGNKQ0QzbE92ZEEwckhSUlk3dU9wZw?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((space data center OR satellite compute OR orbital data center) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(space%20data%20center%20OR%20satellite%20compute%20OR%20orbital%20data%20center)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-11-21
 
 - Market/Sentiment stance: **neutral** (score 1)
@@ -253,26 +274,4 @@ Key social-search signals (X / Threads / Instagram / Facebook via search):
 
 Data quality notes:
 - No major data-quality issue in this run.
-
-### 2026-11-10
-
-- Market/Sentiment stance: **neutral** (score 1)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-11-10T04:13:34.577Z
-
-Key web signals:
-- [Elon Musk Says Nearly All AI Computing Will Move to Space – Can SpaceX Make Orbital Data Centers a Reality? - KuCoin](https://news.google.com/rss/articles/CBMilwFBVV95cUxNa2JmNUNmT2cwZkg3d2lvT0JiamlGVFc4Zl9kT1NEOV9WSTdBWlNtY3FWb3ZTbGFnZ2hFY2RsMWFDcXZDdVRDY1ZPOU5tamJjM2hLQ0ZvOWNFT0Z6cWVnV3hCUGRsWlR3VXBHcFBhcUVrVXZDb2Y4SC1iSGdVNnZSSHdOVVpRRUFsQ05qQy1jSWNkSzBuTnQw?oc=5)
-- [When satellites become AI agents, space data centers become the next AI frontier - CIO](https://news.google.com/rss/articles/CBMivAFBVV95cUxPa2VSekJYdFNTYy1id2l6N25oX19BQ0ZkdDducXl2VFJlRmtkYWNFVTRhLXRlNzZpaWR0MjJJb1Qwd1BGNFZLR3ViWVZVSThCUjdLaDRneTg3TXRGVXJOYl9mQU05Y1dFY3EtTy1Kdmp3ZWJzWWwyWE4wZ2RNM3dwQnljMkpubWZDZkJtWlpiTktRZmUtYUV2ZHlIdmVYUU8wREJ2TmxWZHdfSUcyTkNIS2ZveUNWTjk2b2JHMA?oc=5)
-- [Are Orbital Data Centers the Next Frontier of AI Infrastructure? - Via Satellite](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdndDNk5CWFRGaV8wcWFoQkFLVzU0WUdoa1NRaHpPMlRGVGZQVFc1aklYTlF1RWFIMDRLbXF0N2ZaelhQbGxfNHVCWm8yTEpYUDVSelB3VWFqZklwMDdSMWpnc1NMeXhGYmcxNUgta3VMWllITkZLSU1iMVgyOVpXN3k5Ulg0Qm1yeEsxbldVSVFScENxa2dYUXA0aTdueXBnal9rclRaY0VPMlBOaXNfbkZScXRNRTFo?oc=5)
-- [Data centers in space - JLL](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15RVYzNW8zQTRINzFsSlo3ZFBpQ2pobV9Yb1FESDN5ampzUjZGRVlfTkZkckpKU2RFZERobFBTdlBIZ28wUElkRnk4WGUtZGVXRUdzbmxYTjJnNWNsM3VDRGlpWW1PYlk?oc=5)
-- [Are orbital AI data centers the next frontier for compute infrastructure? - Data Center Dynamics](https://news.google.com/rss/articles/CBMivAFBVV95cUxOWlgzcXpscFpoZjljMUx3VFVVRnpwdktGTGtGbU5nc0RxNnJRUm56WV9ydkV6c2tvVjAyYzU2TlBPOEp2N0NfN1JpMExnV3kzYWpEMlhERU5VcXhWNlJpaEVPdHlQWUEwZUtkenhxcDZIX3JpekNxNjA2MXVHMXB1RE5tNFRtX2t5QzVVX1FaN3hJczc3WmFOem8wYlVFNUNtcGpnU0VVd3YxcVFRdW9VTFVLdGpCd3g1SFRvZQ?oc=5)
-- [AI’s Data Center Crunch Sends Compute Ambitions into Orbit - ERP Today](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdTdRbE9KNjVEV0VOT3dMZVlrS09FMGMxQlhhZXBCS3E5WjFHNDI5VHUtanpnYW5VdHNhQ1o2Zy1zTXlJeGhEUWtxdVVVMG1CNjZzc1l1MktVc0c2SW55WlgtNElFa25JSDFCNWxrS1hfeTl6UDFIQVplMldyQ0JVTg?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((space data center OR satellite compute OR orbital data center) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(space%20data%20center%20OR%20satellite%20compute%20OR%20orbital%20data%20center)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- Social-search fetch failed: fetch failed
-- No social-search signals, fallback to empty set.
 
