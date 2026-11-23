@@ -216,6 +216,10 @@ type: index
 
 ## Synthesis
 
+### Trader / Research
+
+- [[synthesis/daily-trader-2026-11-23]] — 2026-11-23 daily trader evaluation: BLOCKED (trader pipeline not yet built + Yahoo Finance proxy-403); 15-ticker seed watchlist (NVDA/AAPL/TSLA/MSFT/AMD/GOOGL/META/AMZN/PLTR/AVGO/ARM/TSM/SMCI/INTC/ORCL); FOM formula documented (0.4×confidence + 0.3×norm_sizing_σ + 0.2×hit_rate + 0.1×news_momentum); stub scan JSON at agents/outputs/scan-2026-11-23.json
+
 - [[synthesis/leo-taiwan-odc-gap]] — 2026 LEO × Taiwan "strong upstream, absent midstream C" gap, **now reframed (2026-08-03) as an edge-vs-hyperscale gradient**: edge on-orbit compute is *flown* ([[entities/liscotech]] GPGPU100 Orin-Nano 40 TOPS, Black Kite-1) + array integration exists ([[entities/tron-future-tech]]), but hyperscale (H100/Blackwell-class) integration stays absent while China (Orbital Chenguang $8.4B) + US build gigawatt-class; IEA 415→945 TWh anchor; four breakthrough paths (PCB→compute-board / defense-sovereign-cloud / upstream-extension / agency-catalysed edge); falsifier table (**deepened 2026-08-23**: H1-2026 actuals show the upstream thesis *accelerating with margin EXPANSION not compression* — UMT GM 47.3%→56.9% + H1 profit > every prior full year + LEO 80% of rev, Win Q2 +39% YoY / optical-datacom ≈2× YoY, Compeq H1 +13.2% / Jul +16%; China flown-endurance lead widened — Three-Body >8-day optical ISL 99.99% uptime Jul-2026; US Starcloud-2 Blackwell launch slipped Oct-2026→2027)
 - [[synthesis/sampras-2026-engineering-thesis]] — AI × Space × Crypto × RF × Radiation integrated stack thesis; 2026 convergence triggers and falsifiability table
 - [[synthesis/spacesharks-mission-desk-hackathon-plan]] — Canonical plan for NVIDIA Agent Challenge 2026 entry: satellite-lifecycle decision co-pilot (five phases × decision verbs × labeled dataset moat) on Nemotron + Hermes + NemoClaw; 2-day build + 2-day refine schedule; investment angle deliberately de-emphasised in favour of operator decisions
