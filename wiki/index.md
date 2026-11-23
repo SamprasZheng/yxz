@@ -40,6 +40,7 @@ type: index
 - [[sources/llm-expert-agent-mission-ops-2025]] — "LLM Based Expert AI Agent for Mission Operation Management"; IAPGOS Vol. 15 No. 1, 2025; Mummaneni/Gudipati/Panda; RAG-only conceptual proposal; NOT IEEE (venue correction) (ingested 2026-05-24)
 - [[sources/astrea-orbital-thermal-autonomy-2025]] — ASTREA (arXiv 2509.13380, Thales Alenia Space/Europe): first agentic **LLM** on flight-heritage HW (TRL 9) — Qwen2.5-1.5B (4-bit) supervising an RL controller for live **thermal control aboard the ISS**; first ISS run lost to baseline (latency vs ~90-min cycle) then beat it after syncing cadence to orbit length (ingested 2026-09-01)
 - [[sources/navi-orbital-vlm-earth-obs-2026]] — NAVI-Orbital (arXiv 2606.18271, NASA JPL + Loft Orbital/US): first **in-orbit VLM** — Gemma 3 zero-shot + LangGraph state machine on a YAM-9 (Jetson Orin AGX), EO scene classification + operator dialogue via plain-English prompts; 88% zero-shot on 7,960 imgs, live 2026-04-16 (ingested 2026-09-01)
+- [[sources/kol-digest-2026-09-29]] — KOL + keyword digest 2026-09-29: 11 keywords swept (AI agents, Claude Code, Anthropic, OpenAI, Polkadot, OpenClaw, NemoClaw, Plurality, Audrey Tang, NVIDIA Nemotron, PolkaSharks); KOL list empty; automated daily run
 
 - [[sources/faa-ast-launch-licensing-2025]] — FAA AST licensing overview: 1,000th licensed operation Aug 2025, Part 450 license types, 180-day review, § 450.101 EC ≤ 10⁻⁴, § 450.161 NOTAM obligation (2025)
 - [[sources/faa-notam-search-2024]] — FAA NOTAM Search public API, DINS multi-ICAO query, SWIM FNS JMS subscription, ICAO codes for US launch sites (2024)
@@ -108,6 +109,8 @@ type: index
 - [[entities/raymond-lo]] — NVIDIA Developer Advocate Manager (Robotics & Embedded, Oct 2025–); ex-Intel OpenVINO Global Lead, ex-CTO Meta AR, ex-Google/Samsung; PhD U Toronto under Steve Mann; edge AI / Jetson / LeRobot
 - [[entities/peter-steinberger]] — Austrian engineer (@steipete); PSPDFKit co-founder/CEO (€100M Insight exit 2021); creator of OpenClaw; OpenAI personal-agents lead (Feb 2026–)
 - [[entities/noaa-swpc]] — NOAA Space Weather Prediction Center: civilian space weather authority; Boulder CO; ISES flagship RWC; 24/7 alerts/watches/warnings; civil counterpart to USAF 557th Weather Wing
+- [[entities/anthropic]] — US AI safety company; Claude model family (Haiku / Sonnet / Opus / Fable / Mythos); Sonnet 5.5 + Opus 5.5 Sep 2026; targeting $2T IPO Oct 2026
+- [[entities/openai]] — US AI company; GPT/ChatGPT/Sora family; GPT-6 Sol + Luna + Astra Sep 2026; ACP agentic-payment protocol co-developed with Stripe
 
 - [[entities/lockheed-martin-space]] — Lockheed Martin Space AI/SDA product line: iSpace (C2 + sensor fusion), Space Fence (S-band radar), T-TAURI (onboard telemetry AI), ARISE; 80+ space AI/ML programs; no confirmed JEPA usage publicly
 - [[entities/msbai]] — MSBAI (Microsurgeonbot Inc.); LA-based defense AI startup; CEO Allan Grosvenor; OrbitGuard JEPA + MARL copilot; Air Force Techstars '20; $1.2M DoD SBIR 2025
