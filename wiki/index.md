@@ -61,6 +61,7 @@ type: index
 - [[sources/hsieh-xband-leo-transmitter-2020]] — NCTU X-band Zero-IF LEO transmitter thesis: calibration, SEM, BIST, XT-144 subsystem context
 - [[sources/thesis-aesa-modules-zheng-2021]] — Source stub for XT-144 / AESA module thesis context; stabilizes existing backlinks to the full system source
 - [[sources/hybrid-xband-phased-array-icase-2020]] — Source stub for hybrid X-band phased-array design context; stabilizes RF phased-array integration backlinks
+- [[sources/kol-digest-2026-11-19]] — KOL + keyword digest 2026-11-19: Anthropic IPO/Fable 5.2, Nemotron for Science (SC26), Polkadot dotUSD 97% approval + DOT ATL $0.68, OpenAI CA/OR lawsuits + GPT-6.2, OpenClaw 1yr anniversary
 
 ## Entities
 
@@ -102,6 +103,8 @@ type: index
 - [[entities/glen-weyl]] — US economist; RadicalxChange founder; co-author of *Plurality* with Audrey Tang; originator of Quadratic Voting / Quadratic (Plural) Funding (Gitcoin math)
 - [[entities/jamia-gpt]] — Sampras's Custom GPT for Polkadot / JAM / Coretime / XCM / OpenGov
 - [[entities/spacesharks-gpt]] — Sampras's Custom GPT for LEO constellations, ODC, ISL, Taiwan space supply chain
+- [[entities/openai]] — US AI research and deployment company; creator of GPT series + ChatGPT (>1.2B users); GPT-6.2 released Nov 2026; CA/OR lawsuits filed Nov 2026; backing OpenClaw Enterprise
+- [[entities/anthropic]] — US AI safety company; maker of Claude model family; Claude Fable/Mythos 5.2 released Nov 9 2026; IPO roadshow Nov 10 2026; Claude Code 2.1.327 agent-teams Code Mode Nov 2026
 - [[entities/nvidia]] — NVIDIA Corp; GPU + Nemotron LLM vendor; GTC Taipei 2026 Agent Challenge host; cross-cuts AI, space (Starcloud H100), radiation (Orin TID)
 - [[entities/nous-research]] — Open-source AI lab founded 2023; CEO Jeffrey Quesnelle + Teknium/Karan4D/Shivani Mitra; $65M Series A April 2025 led by Paradigm at $1B valuation; builds Hermes LLMs, Hermes Agent, Psyche decentralized training
 - [[entities/hermes-llm-series]] — Open-weight LLM lineage from Nous Research: Nous-Hermes → Hermes-2 Pro → Hermes-3 → Hermes-4 (70B/14B/405B on Llama-3.1 + Qwen-3 bases)
