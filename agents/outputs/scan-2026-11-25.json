@@ -1,0 +1,33 @@
+{
+  "scan_date": "2026-11-25",
+  "run_mode": "STUB — offline fallback (LLM_BACKEND=disabled, TRADER_OFFLINE=1)",
+  "blocker_summary": "Two independent blockers prevented a live scan: (1) trader pipeline does not exist — agents/src/trader/ is absent; the only agent sub-package is agents/src/firefly/. (2) yfinance network calls fail with curl: (7) CONNECT tunnel failed, response 403 — the remote execution environment's agent-proxy blocks outbound HTTPS to fc.yahoo.com and query2.finance.yahoo.com.",
+  "watchlist": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+  "watchlist_source": "seed — first run, no prior daily-trader wiki file found; using CLAUDE.md core set",
+  "tickers": {
+    "NVDA": {"price": null, "chg_1d_pct": null, "chg_7d_pct": null, "vol_7d_pct": null, "sizing_sigma": null, "momentum": null, "thesis_direction": null, "confidence": null, "error": "proxy 403"},
+    "AAPL": {"price": null, "chg_1d_pct": null, "chg_7d_pct": null, "vol_7d_pct": null, "sizing_sigma": null, "momentum": null, "thesis_direction": null, "confidence": null, "error": "proxy 403"},
+    "TSLA": {"price": null, "chg_1d_pct": null, "chg_7d_pct": null, "vol_7d_pct": null, "sizing_sigma": null, "momentum": null, "thesis_direction": null, "confidence": null, "error": "proxy 403"},
+    "MSFT": {"price": null, "chg_1d_pct": null, "chg_7d_pct": null, "vol_7d_pct": null, "sizing_sigma": null, "momentum": null, "thesis_direction": null, "confidence": null, "error": "proxy 403"},
+    "AMD":  {"price": null, "chg_1d_pct": null, "chg_7d_pct": null, "vol_7d_pct": null, "sizing_sigma": null, "momentum": null, "thesis_direction": null, "confidence": null, "error": "proxy 403"},
+    "GOOGL":{"price": null, "chg_1d_pct": null, "chg_7d_pct": null, "vol_7d_pct": null, "sizing_sigma": null, "momentum": null, "thesis_direction": null, "confidence": null, "error": "proxy 403"},
+    "META": {"price": null, "chg_1d_pct": null, "chg_7d_pct": null, "vol_7d_pct": null, "sizing_sigma": null, "momentum": null, "thesis_direction": null, "confidence": null, "error": "proxy 403"},
+    "AMZN": {"price": null, "chg_1d_pct": null, "chg_7d_pct": null, "vol_7d_pct": null, "sizing_sigma": null, "momentum": null, "thesis_direction": null, "confidence": null, "error": "proxy 403"}
+  },
+  "backtest": {
+    "note": "first run — no prior recommendations to backtest",
+    "hit_rate": null,
+    "mean_realized_return": null
+  },
+  "fom_scores": {},
+  "tier1": [],
+  "tier2": [],
+  "meta": {
+    "trader_pipeline_exists": false,
+    "yfinance_reachable": false,
+    "llm_backend": "disabled",
+    "trader_offline": true,
+    "retry_attempted": true,
+    "retry_result": "proxy 403 on second attempt after 3s backoff"
+  }
+}
