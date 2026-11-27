@@ -1,0 +1,25 @@
+{
+  "run_date": "2026-11-27",
+  "run_mode": "stub",
+  "blockers": [
+    {
+      "component": "trader_pipeline",
+      "detail": "agents/src/trader/ does not exist; only agents/src/firefly/ is present in the repo",
+      "severity": "critical"
+    },
+    {
+      "component": "yfinance",
+      "detail": "Yahoo Finance endpoint returns HTTP 403 through the managed proxy; curl CONNECT tunnel failed for all tickers",
+      "severity": "critical"
+    }
+  ],
+  "watchlist_seed": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN", "PLTR", "AVGO", "ARM", "SMCI", "QCOM", "INTC", "MU"],
+  "backtest": null,
+  "scan_verdicts": null,
+  "reranked_tiers": {
+    "tier_1": [],
+    "tier_2": []
+  },
+  "fom_table": [],
+  "notes": "Full run requires: (1) agents/src/trader/ pipeline scaffolding, (2) outbound market-data access (Yahoo Finance or alternative), (3) at least one prior daily-trader report for backtesting."
+}
