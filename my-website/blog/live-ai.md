@@ -13,6 +13,27 @@ This is a living post. It is designed to be continuously updated by automation.
 
 ## Timeline
 
+### 2026-11-27
+
+- Market/Sentiment stance: **neutral** (score -1)
+- Web signals collected: 10
+- Social-search signals collected: 0
+- Updated at: 2026-11-27T04:22:57.576Z
+
+Key web signals:
+- [How MCP Connects AI Agents — and What Production Adoption Requires - Snowflake](https://news.google.com/rss/articles/CBMifEFVX3lxTE9HbzNKTERyeDB0TEJ2ZnBLUU9KUlNpclE5YkxWNWFQeHVwSjUwQlpsYWp4U2g0SXFCRng1LVVJTlFOb1FTSGFqZDVOcjhzMVJUem8tUllpdm1ib3k4LVBsZkpmTXI4eXJYRS14Z043ZjlwV3JJUzNjYmNaNGQ?oc=5)
+- [Pinterest Deploys Production-Scale Model Context Protocol Ecosystem for AI Agent Workflows - infoq.com](https://news.google.com/rss/articles/CBMia0FVX3lxTE85amdNZ1R2cEpJYm1PNmhSQ0RoWDd0dWpQaU43elZRMXo4dGJaeUNrQ1ZPem1nVm9BUDhSSEhHQXNVUHNGcm9QOWtBQmU4cWREM0dqZk9sRm1wZ1Z4QW42Z2MtYzRvQml2ZHNz?oc=5)
+- [What We Learned Building Enterprise MCP at Bloomberg - Bloomberg.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxQUTcwQlJSSXlVMWVBMHFEc2cxeXRXeUlVSG5JSGtkQnVzZ3FyMGFFX1lHMk5DakM2VWdVTGk3VjkzS2YzTVRjamxrUzBXMlBpbklyT3VnZC1PVi1PX2xvTFJXS3VBRGhZX0VzX09hYlB5R0w0REFJVUVQWFBGQ0dMNjB0b3FOTkxMTnpOV0M0U1JLbWc1aXhQcXJobw?oc=5)
+- [Introducing Gemini Enterprise Agent Platform, powering the next wave of agents - Google Cloud](https://news.google.com/rss/articles/CBMipgFBVV95cUxNNmU3N0xMYmJaMXMzX0wxRU5pcUI4TUFlcXd3QkgzSzRMd19LbTlqdzNDbHp0LWpHS25Ea29Jd0pxSHgtZTZXanhOY2llU3dadDVsUXNxdU50SHFJeXlsLUNxMVNBaVNmeEkxd2N5RDdENzNka2tzSXl0dERNZG1kQmtaMV9ud2hVZGFoNFlsUm5adGxIQjdmTTFRYzVuZDFMS1h2cDl3?oc=5)
+- [CodeGuardian: a Model Context Protocol Server for AI-Assisted Code Quality Analysis and Security Scanning - infoq.com](https://news.google.com/rss/articles/CBMiXEFVX3lxTFA5dUFXbUpZaXg2a2g5WHBwSlY0VjJDaXRKYnQzYXBXX2ZxVXJqeU1UODZ5dWNFWEJrNWR3TXU3ckc5dDY3b0phR0E3RkxkaUwwV0lPTmZMWFZscHEz?oc=5)
+- [Top Model Context Protocol Use Cases for Enterprises - Goodcall](https://news.google.com/rss/articles/CBMidEFVX3lxTE5aZ2NwaExTNjB2WG5WWjd1NDB1ajBVQTlvNUtwTkpHVW5lMDkzSW5ONEp1QXN1RTNzREpDWlk0RWFEVDNUWnVNYW4xM184cGhDRFlUTGtJdF8xRnJaSmNSeGw0MHozX3F0TmQyNURQWVk3X0NF?oc=5)
+
+Key social-search signals (X / Threads / Instagram / Facebook via search):
+- [Search this query on DuckDuckGo ((MCP OR model context protocol OR applied AI engineering) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(MCP%20OR%20model%20context%20protocol%20OR%20applied%20AI%20engineering)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
+
+Data quality notes:
+- No social-search signals, fallback to empty set.
+
 ### 2026-11-26
 
 - Market/Sentiment stance: **neutral** (score 0)
@@ -228,27 +249,6 @@ Data quality notes:
 - Web signals collected: 10
 - Social-search signals collected: 0
 - Updated at: 2026-11-16T02:17:03.684Z
-
-Key web signals:
-- [How MCP Connects AI Agents — and What Production Adoption Requires - Snowflake](https://news.google.com/rss/articles/CBMifEFVX3lxTE9HbzNKTERyeDB0TEJ2ZnBLUU9KUlNpclE5YkxWNWFQeHVwSjUwQlpsYWp4U2g0SXFCRng1LVVJTlFOb1FTSGFqZDVOcjhzMVJUem8tUllpdm1ib3k4LVBsZkpmTXI4eXJYRS14Z043ZjlwV3JJUzNjYmNaNGQ?oc=5)
-- [Pinterest Deploys Production-Scale Model Context Protocol Ecosystem for AI Agent Workflows - infoq.com](https://news.google.com/rss/articles/CBMia0FVX3lxTE85amdNZ1R2cEpJYm1PNmhSQ0RoWDd0dWpQaU43elZRMXo4dGJaeUNrQ1ZPem1nVm9BUDhSSEhHQXNVUHNGcm9QOWtBQmU4cWREM0dqZk9sRm1wZ1Z4QW42Z2MtYzRvQml2ZHNz?oc=5)
-- [Exploring MCP: How Model Context Protocol supports the future of agentic healthcare - Wolters Kluwer](https://news.google.com/rss/articles/CBMiywFBVV95cUxPSmVwNzZQczFodTliSmNSZ083TE5lckwzQ1VWRWJqN3Y1aW1hdlZ5TGJYZXp5YnBrZXVnVUsyclM0M3M4YkFjV2IxMFNjYWdnVHltOHFVZzhqN0g3bGpxd1RDbXRRQlpTdlp4cm9uWFh0TnFKSjdXWUcySDBGSVFFUmZxUGdJb2NfSVlscTBTbjhFd2VSbzh4QVRUYk51ZWhBTC1JemJaelZ6eFV2RWRkU0h6ckhyRTI4RzluMDBLTE1pR3BZREhub29Idw?oc=5)
-- [Introducing Gemini Enterprise Agent Platform, powering the next wave of agents - Google Cloud](https://news.google.com/rss/articles/CBMipgFBVV95cUxNNmU3N0xMYmJaMXMzX0wxRU5pcUI4TUFlcXd3QkgzSzRMd19LbTlqdzNDbHp0LWpHS25Ea29Jd0pxSHgtZTZXanhOY2llU3dadDVsUXNxdU50SHFJeXlsLUNxMVNBaVNmeEkxd2N5RDdENzNka2tzSXl0dERNZG1kQmtaMV9ud2hVZGFoNFlsUm5adGxIQjdmTTFRYzVuZDFMS1h2cDl3?oc=5)
-- [Unlocking the power of Model Context Protocol (MCP) on AWS - Amazon Web Services (AWS)](https://news.google.com/rss/articles/CBMipgFBVV95cUxNS0htRDBaSlMyaThCMWNtN1pPSnVwcW5iMjY0X0lxUE9KWDdCUTh3dTdmZkhtYzkyb3VJaGxZUFdfTjk2T2ZMcUN6LVNsaWhNMW9TQ3AwbElOOGN5c3laYnR6blJXUEluUHFJNW9KWV9hV0R4c0JZaEh1TkFWS0RxbkNXeENNSHYtUElEVVpXUGp0azFCVFI5eWJUMWVnU0NkU1ZVbVZn?oc=5)
-- [Code execution with MCP for efficient agents - Anthropic](https://news.google.com/rss/articles/CBMiakFVX3lxTE1mdERMSE1GS1ZjU056TnlQY2M5ODlVY1pEbkFrc00wM0lObkdmM1NMcTI4UnNfTDkwTmxZSHRpNlpHLUZiWmZXc2x5Nk1nNkMtTXo3dzJITkVMSVhCMmRZMU9zdzdUNFdYd2c?oc=5)
-
-Key social-search signals (X / Threads / Instagram / Facebook via search):
-- [Search this query on DuckDuckGo ((MCP OR model context protocol OR applied AI engineering) (site:x.com OR site:threads.net OR site:facebook.com OR site:instagram.com))](https://duckduckgo.com/?q=(MCP%20OR%20model%20context%20protocol%20OR%20applied%20AI%20engineering)%20(site%3Ax.com%20OR%20site%3Athreads.net%20OR%20site%3Afacebook.com%20OR%20site%3Ainstagram.com))
-
-Data quality notes:
-- No social-search signals, fallback to empty set.
-
-### 2026-11-15
-
-- Market/Sentiment stance: **neutral** (score -1)
-- Web signals collected: 10
-- Social-search signals collected: 0
-- Updated at: 2026-11-15T02:00:49.031Z
 
 Key web signals:
 - [How MCP Connects AI Agents — and What Production Adoption Requires - Snowflake](https://news.google.com/rss/articles/CBMifEFVX3lxTE9HbzNKTERyeDB0TEJ2ZnBLUU9KUlNpclE5YkxWNWFQeHVwSjUwQlpsYWp4U2g0SXFCRng1LVVJTlFOb1FTSGFqZDVOcjhzMVJUem8tUllpdm1ib3k4LVBsZkpmTXI4eXJYRS14Z043ZjlwV3JJUzNjYmNaNGQ?oc=5)
