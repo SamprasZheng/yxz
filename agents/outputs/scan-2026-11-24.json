@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-24",
+  "run_mode": "stub_offline",
+  "blockers": [
+    "agents/src/trader/ pipeline does not exist — only agents/src/firefly/ is present",
+    "yfinance 1.8.0 installed but Yahoo Finance outbound (fc.yahoo.com) blocked by environment proxy with HTTP 403",
+    "No prior daily-trader-*.md file exists — first run, nothing to backtest"
+  ],
+  "watchlist": ["NVDA", "AAPL", "TSLA", "MSFT", "AMD", "GOOGL", "META", "AMZN"],
+  "tickers": [
+    {"ticker": "NVDA", "direction": null, "confidence": null, "sizing_sigma": null, "fom": null, "error": "proxy_blocked"},
+    {"ticker": "AAPL", "direction": null, "confidence": null, "sizing_sigma": null, "fom": null, "error": "proxy_blocked"},
+    {"ticker": "TSLA", "direction": null, "confidence": null, "sizing_sigma": null, "fom": null, "error": "proxy_blocked"},
+    {"ticker": "MSFT", "direction": null, "confidence": null, "sizing_sigma": null, "fom": null, "error": "proxy_blocked"},
+    {"ticker": "AMD",  "direction": null, "confidence": null, "sizing_sigma": null, "fom": null, "error": "proxy_blocked"},
+    {"ticker": "GOOGL","direction": null, "confidence": null, "sizing_sigma": null, "fom": null, "error": "proxy_blocked"},
+    {"ticker": "META", "direction": null, "confidence": null, "sizing_sigma": null, "fom": null, "error": "proxy_blocked"},
+    {"ticker": "AMZN", "direction": null, "confidence": null, "sizing_sigma": null, "fom": null, "error": "proxy_blocked"}
+  ],
+  "fom_formula": "FOM = 0.4 * confidence + 0.3 * normalized_sizing_sigma + 0.2 * recent_hit_rate + 0.1 * news_momentum",
+  "fom_components": {
+    "confidence": "LLM/model confidence in directional call, [0,1]",
+    "normalized_sizing_sigma": "risk-adjusted position size signal normalized to [0,1]; raw sigma / 10 clamped at 1",
+    "recent_hit_rate": "rolling 5-day hit rate for this ticker's prior directional calls, [0,1]; initialized at 0.5 for first run",
+    "news_momentum": "news-sentiment score from news_scout agent, [0,1]; 0.5 neutral when no live feed"
+  },
+  "note": "Stub run — all data fields null due to blockers above. FOM formula is defined and ready for next run. The trader pipeline (agents/src/trader/) needs to be built or the scan must run from an environment that allows outbound HTTPS to Yahoo Finance / data providers."
+}
